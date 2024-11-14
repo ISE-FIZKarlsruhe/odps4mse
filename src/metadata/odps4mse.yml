@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/odps4mse
+
+idspace: ODPS4MSE
+base_url: /obo/odps4mse
+
+products:
+- odps4mse.owl: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/odps4mse/main/odps4mse.owl
+- odps4mse.obo: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/odps4mse/main/odps4mse.obo
+
+term_browser: ontobee
+example_terms:
+- ODPS4MSE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/odps4mse/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ISE-FIZKarlsruhe/odps4mse/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ODPS4MSE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/odps4mse/main/
+
