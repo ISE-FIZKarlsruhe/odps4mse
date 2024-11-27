@@ -13,6 +13,7 @@ Ontology(<http://purl.obolibrary.org/obo/odps4mse.owl>
 
 
 Import(<http://purl.obolibrary.org/obo/odps4mse/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/odps4mse/imports/pmdco_import.owl>)
 
 
 

@@ -8,11 +8,11 @@
 @base <http://purl.obolibrary.org/obo/odps4mse/odps4mse-simple.ttl> .
 
 <http://purl.obolibrary.org/obo/odps4mse/odps4mse-simple.ttl> rdf:type owl:Ontology ;
-                                                               owl:versionIRI <http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-14/odps4mse-simple.ttl> ;
+                                                               owl:versionIRI <http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-27/odps4mse-simple.ttl> ;
                                                                terms:description "None" ;
                                                                terms:license <https://creativecommons.org/licenses/unspecified> ;
                                                                terms:title "Ontology Design Patterns for Materials Science and Engineering" ;
-                                                               owl:versionInfo "2024-11-14" .
+                                                               owl:versionInfo "2024-11-27" .
 
 #################################################################
 #    Annotation properties

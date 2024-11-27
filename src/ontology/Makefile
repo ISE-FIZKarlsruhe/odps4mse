@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                3984079599baff510dac3e81e26427a1aa924d2bc5112dc73c59f4453ad095c7
+CONFIG_HASH=                67852641956f90d08aca7e9abbd34ea17eece600b1e71d34d5eea74f57e6068c
 
 
 # ----------------------------------------
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  iao
+IMPORTS =  iao pmdco
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -376,6 +376,14 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: pmdco
+
+$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/pmdco_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -414,6 +422,13 @@ ifeq ($(strip $(MIR)),true)
 mirror-iao: | $(TMPDIR)
 	curl -L $(OBOBASE)/iao.owl --create-dirs -o $(TMPDIR)/iao-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/iao-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: pmdco
+.PHONY: mirror-pmdco
+.PRECIOUS: $(MIRRORDIR)/pmdco.owl
+mirror-pmdco: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/core-ontology/refs/tags/v2.0.8/pmd_core.ttl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

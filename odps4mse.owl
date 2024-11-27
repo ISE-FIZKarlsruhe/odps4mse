@@ -1,23 +1,27 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/odps4mse.owl#"
      xml:base="http://purl.obolibrary.org/obo/odps4mse.owl"
+     xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/odps4mse.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-14/odps4mse.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-27/odps4mse.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Ontology Design Patterns for Materials Science and Engineering</dcterms:title>
-        <owl:versionInfo>2024-11-14</owl:versionInfo>
+        <owl:versionInfo>2024-11-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -147,6 +151,12 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
@@ -162,6 +172,18 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -186,6 +208,120 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#constraints -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#constraints"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition">
+        <rdfs:comment xml:lang="en">A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm">
+        <rdfs:comment xml:lang="en">A reference to the principal section of the PROV-DM document that describes this concept.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedForm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedForm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/definitionSource -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/definitionSource"/>
     
 
 
@@ -370,6 +506,321 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>generated</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:editorialNote xml:lang="en">prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.</prov:editorialNote>
+        <prov:inverse>wasGeneratedBy</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadDerivation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadDerivation">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>hadDerivation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influenced">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>influenced</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:inverse>wasInfluencedBy</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasUsedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>used</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:inverse>wasUsedBy</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedUsage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasDerivedFrom</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:definition xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</prov:definition>
+        <prov:inverse>hadDerivation</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedDerivation"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:comment>Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>wasGeneratedBy</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:inverse>generated</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy">
+        <rdfs:domain rdf:nodeID="genid2"/>
+        <rdfs:range rdf:nodeID="genid7"/>
+        <rdfs:comment xml:lang="en">Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:comment>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href=&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>wasInfluencedBy</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:editorialNote xml:lang="en">The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .
+
+Subproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.
+
+prov:wasInfluencedBy should not be used without also using one of its subproperties. 
+</prov:editorialNote>
+        <prov:inverse>influenced</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    <owl:Class rdf:nodeID="genid2">
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+        </owl:unionOf>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid7">
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity"/>
+        </owl:unionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:nodeID="genid7"/>
+        <prov:definition>influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;</prov:definition>
+        <prov:dm>http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:nodeID="genid2"/>
+        <prov:definition>influencee: an identifier (o2) for an entity, activity, or agent; </prov:definition>
+        <prov:dm>http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasUsedBy">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o-inverses#"/>
+        <rdfs:label>wasUsedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/characteristic -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/characteristic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/characteristicOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/DigitalEntity"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Process"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/ProcessingNode"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Project"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/ValueObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <skos:altLabel xml:lang="en">has characteristic</skos:altLabel>
+        <skos:definition xml:lang="de">Die Objekteigenschaft characterisitc, wird in Verbindung mit ProzessKnoten, Prozess und Objekt verwendet und dient zur Herstellung einer Verbindung mit dem WerteObjekt. Diese Eigenschaft ermöglicht die Abbildung von Beziehungen zwischen ProzessKnoten, Prozessen und Objekten und den dazugehörigen Werten oder Attributen (Metadaten), die in WerteObjekt ausgedrückt sind.</skos:definition>
+        <skos:definition xml:lang="en">The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/characteristicOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/characteristicOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+        <skos:altLabel>is characteristic of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/input -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/input">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/inputOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">input</rdfs:label>
+        <skos:altLabel>has input</skos:altLabel>
+        <skos:definition xml:lang="en">This property is used to link the processes to their input objects.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/inputOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/inputOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasUsedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">input of</rdfs:label>
+        <skos:altLabel>is input of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/output -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/output">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/outputOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">output</rdfs:label>
+        <skos:altLabel>has output</skos:altLabel>
+        <skos:definition xml:lang="en">This property is used to link the processes to their output objects</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/outputOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/outputOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+        <skos:altLabel xml:lang="en">is output of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/participant -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/participant">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/co/Process"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/DigitalEntity"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/ValueObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">participant</rdfs:label>
+        <skos:altLabel>has participant</skos:altLabel>
+        <skos:definition xml:lang="en">A relation between a process and an object, in which the objects is somehow involved in the process.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/participantOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/participantOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">participant of</rdfs:label>
+        <skos:altLabel xml:lang="en">is participant of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/co/value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/co/value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="de">hat Wert</rdfs:label>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <skos:definition xml:lang="en">Provides the actual value a value object is referring to.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -435,18 +886,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/011-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000007"/>
@@ -486,6 +925,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/126-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/011-002"/>
     </owl:Axiom>
     
 
@@ -989,6 +1440,310 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Activity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Agent</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity. </prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Entity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. </prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/DataScope -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/DataScope">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Data Scope</rdfs:label>
+        <rdfs:label xml:lang="de">Datenkategorie</rdfs:label>
+        <skos:definition xml:lang="de">Die Entität Datenkategorie dient der Kategorisierung von Daten im Hinblick auf ihren Verwendungszweck in Übereinstimmung mit einem betrachteten Objekt oder Prozess.</skos:definition>
+        <skos:definition xml:lang="en">This class is used to categorize data with respect to their intended usage in accordance with a regarded object or process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/DigitalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/DigitalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Digital Entity</rdfs:label>
+        <skos:definition xml:lang="en">An entity with digital representation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/GeometryChangingProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/GeometryChangingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/Process"/>
+        <rdfs:isDefinedBy>https://w3id.org/pmd/co</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Geometry Changing Process</rdfs:label>
+        <skos:definition xml:lang="en">A process that is modifing the geometry of an object.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Length -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Length">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+        <rdfs:label xml:lang="de">Länge</rdfs:label>
+        <skos:definition xml:lang="en">A measured distance or dimension of an object, usually the longer or longest dimension of the object.</skos:definition>
+        <skos:definition xml:lang="de">Eine gemessene Entfernung oder Abmessung eines Objekts, normalerweise die längere oder längste Abmessung des Objekts.</skos:definition>
+        <co:definitionSource xml:lang="de">https://www.merriam-webster.com/dictionary/length</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/LengthChangingProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/LengthChangingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/GeometryChangingProcess"/>
+        <rdfs:comment>This class is used as an example of SWRL based reasoning. An instance belongs to the class if there are two embracing processes (previous and next) that determine different values after a length measurement (see SWRL rule).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/pmd/co</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Length Changing Process</rdfs:label>
+        <skos:definition xml:lang="en">A geometry changing process which changes the length characteristic of an object.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Measurement -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Measurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueScope"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+        <rdfs:label xml:lang="de">Messwert</rdfs:label>
+        <skos:definition xml:lang="de">Die Wertekategorie Messung ermöglicht die Kategorisierung von ValueObjects als gemessen.
+Messung ist die Quantifizierung von Eigenschaften eines Objekts oder Ereignisses, die zum Vergleich mit anderen Objekten oder Ereignissen verwendet werden können.</skos:definition>
+        <skos:definition xml:lang="en">The ValueScope category Measurement enables the categorization of ValueObjects as measured.
+Measurement is the quantification of attributes of an object or event, which can be used to compare with other objects or events.</skos:definition>
+        <skos:definition xml:lang="en">This value scope describes that a :ValueObject is the quantification of attributes of an object or event, which can be used to compare with other objects or events.</skos:definition>
+        <co:definitionSource xml:lang="en">https://en.wikipedia.org/wiki/Measurement</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Metadata -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Metadata">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/DataScope"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PrimaryData"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/SecondaryData"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Metadata</rdfs:label>
+        <rdfs:label xml:lang="de">Metadaten</rdfs:label>
+        <skos:definition xml:lang="de">Die DataScope Metadaten umfassen Attribute und zusätzliche Daten (Provenienz), die z.B. die Fabrik, das Labor, das Prozesssystem und die Objekte betreffen und die eine Bewertung der Qualität / Zuverlässigkeit der Messungen und eine systematische Suche in einer Datenbank ermöglichen.</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a :ValueObject refers to attributes and additional data (provenance) on production, laboratory, process system and objects that enable an evaluation of the quality/reliability of the measurements and a systematic search task in a database.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Object -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Object">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Object</rdfs:label>
+        <rdfs:label xml:lang="de">Objekt</rdfs:label>
+        <skos:definition xml:lang="en">A discernable, tangible or simulated entity that is processed in a process by a processing node.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PrimaryData -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PrimaryData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/DataScope"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/SecondaryData"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Primary Data</rdfs:label>
+        <rdfs:label xml:lang="de">Primärdaten</rdfs:label>
+        <skos:definition xml:lang="de">Die Datenkategorie Primärdaten umfasst Daten, die vor / nach einem Prozess erfasst werden, entweder bezogen auf die Geometrie des Objekts (z.B. ao, bo, do, au, bu, du, Lu) oder als Register des gesamten Aufbaus (z.B. Skizzen, Fotos oder Videos)</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a ValueObject refers to data that is directly acquired during a process by sensors (time, force, length, temperature)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Process -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Process">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <obo:IAO_0000117 xml:lang="en">A process is an activity comprising a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements.</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+        <rdfs:label xml:lang="de">Prozess</rdfs:label>
+        <skos:definition xml:lang="en">A process is an activity including a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/ProcessingNode -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/ProcessingNode">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Processing Node</rdfs:label>
+        <rdfs:label xml:lang="de">Prozessknoten</rdfs:label>
+        <skos:definition xml:lang="en">Processing nodes are tools, equipment and accessories as well as software that are relevant for the performance of processes, such as e.g. mechanical and chemical test as well as simulation, prediction, and machine learning. Accordingly, processing nodes may be machines, parts of machines, and software applications.</skos:definition>
+        <skos:definition xml:lang="de">Prozessknoten sind Werkzeuge, Geräte und Zubehör sowie Software, die für die Durchführung von Prozessen relevant sind, wie z. B. mechanische und chemische Tests sowie Simulationen, Vorhersagen und maschinelles Lernen. Dementsprechend können Prozessknoten Maschinen, Teile von Maschinen und Softwareanwendungen sein.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Project -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Project">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+        <rdfs:label xml:lang="de">Projekt</rdfs:label>
+        <skos:definition xml:lang="en">A series of goal-orientated (intent) activities and interactions to achieve a specific outcome.</skos:definition>
+        <skos:definition xml:lang="de">Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/SecondaryData -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/SecondaryData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/DataScope"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Secondary Data</rdfs:label>
+        <rdfs:label xml:lang="de">Sekundärdaten</rdfs:label>
+        <skos:definition xml:lang="de">Der Datenkategorie Sekundärdaten umfasst Werte (z. B. Testergebnisse), die durch Gleichungen oder Algorithmen unter Verwendung von Primärdaten und Metadaten ermittelt werden.</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a ValueObject refers to characteristic values (e.g. test results) determined by equations or algorithms using primary data and/or metadata.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/SetPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/SetPoint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueScope"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Set Point</rdfs:label>
+        <rdfs:label xml:lang="de">Sollwert</rdfs:label>
+        <skos:definition xml:lang="de">Die Wertekategorie Sollwert bezeichnet allgemein den gewünschten Wert eines quantitativen Merkmals eines Systems, von dem der Istwert möglichst wenig abweichen soll.</skos:definition>
+        <skos:definition xml:lang="de">Sollwert bezeichnet allgemein den angestrebten Wert eines quantitativen Merkmales eines Systems, von dem der tatsächliche Istwert so wenig wie möglich abweichen soll. Der Sollwert wird von einem anderen System (z. B. Technik, Mensch) vorgegeben.</skos:definition>
+        <skos:definition xml:lang="en">The ValueScope Setpoint generally refers to the desired value of a quantitative characteristic of a system, from which the actual value should deviate as little as possible.</skos:definition>
+        <skos:definition xml:lang="en">This value scope expresses that a :ValueObject is the desired or target value for an essential variable, or process value (PV) of a control system.</skos:definition>
+        <co:definitionSource xml:lang="de">https://de.wikipedia.org/wiki/Sollwert</co:definitionSource>
+        <co:definitionSource xml:lang="en">https://en.wikipedia.org/wiki/Setpoint_(control_system)</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/ValueObject -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/ValueObject">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Metadata"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Measurement"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/SetPoint"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PrimaryData"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/SecondaryData"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Value Object</rdfs:label>
+        <rdfs:label xml:lang="de">Wertobjekt</rdfs:label>
+        <skos:definition xml:lang="en">A :ValueObject is an entity which represents a specific value. This value can be a numerical, textual, or a more complex data structure. If a literal value is to be specified, the :value datatype property has to be used. In cases where the value is represented by a resource (e.g. URI), the :resource object property has to be used.
+
+A value object, respectively its value, is always associated with an entity of type :Process, :ProcessingNode, :Object (e.g. :Specimen), :DigitalEntity, :Project, or other :ValueObject. The value is meant to be a charactaristic of the associated entity. To express this association it is indended to use the :characteristic object property if the value decribes some \&quot;quality\&quot;, or the :participant (:input,:output) if it is participating a process.
+
+A value object might also refer to a unit. The :unit property might be used (e.g. with QUDT ontology).
+
+Instances of a value object might also be a type of :ValueScope, namely a :SetPoint (nominal value), or :Measurement (measured value). With :Setpoint the intend is to express, that the value is meant to be some preset, setting or nominal value. :Measurement expresses, that the value has been measured or determined somehow (see example).
+
+Instances of a value object might also be specified in a specific :DataScope (:Metadata, :PrimaryData, :SecondaryData).</skos:definition>
+        <skos:example xml:lang="en">- the length of a specimen
+- the model number of a machine
+- a person involved in a process
+- a force on an object</skos:example>
+        <skos:example xml:lang="en">:Length rdfs:subClass :ValueObject .
+ex:vo1 a :Length .
+ex:vo1 a :Measurement .
+ex:vo1 a :PrimaryData .
+ex:vo1 :unit qudt:MilliM . 
+ex:vo1 :value &quot;123.45&quot;
+ex:p1 a :LengthMeasuringProcess .
+ex:p1 :characteristic ex:vo1 .</skos:example>
+        <skos:example xml:lang="en">The length of a specimen, which has been measured as primary data. Its actual value is 123.45 millimeters.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/ValueScope -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/ValueScope">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Value Scope</rdfs:label>
+        <rdfs:label xml:lang="de">Wertekategorie</rdfs:label>
+        <skos:definition xml:lang="en">An entity that makes it possible to add categorization to &quot;ValueObjects&quot;.</skos:definition>
+        <skos:definition xml:lang="de">Eine Entität, die es ermöglicht &quot;ValueObjects&quot; zusätzlich zu kategorisieren.</skos:definition>
+        <skos:definition xml:lang="en">This class expresses the categorization of :ValueObjects into measurements and setpoints.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1257,6 +2012,36 @@ Previous. An information content entity is a non-realizable information entity t
     <rdf:Description rdf:about="urn:swrl#e">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/l1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/v1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/l2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/v2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/p2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/o2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/p3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/o3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/o1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -1423,6 +2208,288 @@ Previous. An information content entity is a non-realizable information entity t
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
                         <swrl:argument1 rdf:resource="urn:swrl#e"/>
                         <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:label>S1</rdfs:label>
+        <skos:definition>Detect processes which changes the length of object.</skos:definition>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/value"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/l1"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/v1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/value"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/l2"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/v2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/input"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p2"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/input"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p3"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o3"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Object"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/o3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Object"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/o2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/characteristic"/>
+                                                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                                                                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/l1"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/characteristic"/>
+                                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p3"/>
+                                                                                <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/l2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Process"/>
+                                                                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p3"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Length"/>
+                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/l1"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/output"/>
+                                                                                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o2"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/output"/>
+                                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p2"/>
+                                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o3"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/v1"/>
+                                                                                                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/v2"/>
+                                                                                                                        </swrl:arguments>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Process"/>
+                                                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Process"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p2"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Length"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/l2"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/LengthChangingProcess"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/output"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/pmd/co/input"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/pmd/co/Process"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/pmd/co/o2"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/pmd/co/o1"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

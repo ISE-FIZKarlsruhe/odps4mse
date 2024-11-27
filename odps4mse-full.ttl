@@ -1,23 +1,27 @@
 @prefix : <http://purl.obolibrary.org/obo/odps4mse/odps4mse-full.ttl#> .
+@prefix co: <https://w3id.org/pmd/co/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
 @base <http://purl.obolibrary.org/obo/odps4mse/odps4mse-full.ttl> .
 
 <http://purl.obolibrary.org/obo/odps4mse/odps4mse-full.ttl> rdf:type owl:Ontology ;
-                                                             owl:versionIRI <http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-14/odps4mse-full.ttl> ;
+                                                             owl:versionIRI <http://purl.obolibrary.org/obo/odps4mse/releases/2024-11-27/odps4mse-full.ttl> ;
                                                              dcterms:description "None" ;
                                                              dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                              dcterms:title "Ontology Design Patterns for Materials Science and Engineering" ;
-                                                             owl:versionInfo "2024-11-14" .
+                                                             owl:versionInfo "2024-11-27" .
 
 #################################################################
 #    Annotation properties
@@ -99,6 +103,10 @@ obo:RO_0001900 rdf:type owl:AnnotationProperty .
 dce:contributor rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/creator
+dce:creator rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/description
 dce:description rdf:type owl:AnnotationProperty .
 
@@ -109,6 +117,14 @@ dce:source rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/title
 dce:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
@@ -124,6 +140,82 @@ dcterms:license rdf:type owl:AnnotationProperty ;
 ###  http://purl.org/dc/terms/title
 dcterms:title rdf:type owl:AnnotationProperty ;
               rdfs:label "title" .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty ;
+             rdfs:comment ""@en ;
+             rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty ;
+           rdfs:comment ""@en ;
+           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#category
+prov:category rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#component
+prov:component rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#constraints
+prov:constraints rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#definition
+prov:definition rdf:type owl:AnnotationProperty ;
+                rdfs:comment "A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term."@en ;
+                rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+
+
+###  http://www.w3.org/ns/prov#dm
+prov:dm rdf:type owl:AnnotationProperty ;
+        rdfs:comment "A reference to the principal section of the PROV-DM document that describes this concept."@en ;
+        rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> .
+
+
+###  http://www.w3.org/ns/prov#editorialNote
+prov:editorialNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#inverse
+prov:inverse rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#n
+prov:n rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#qualifiedForm
+prov:qualifiedForm rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#sharesDefinitionWith
+prov:sharesDefinitionWith rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pmd/co/definitionSource
+co:definitionSource rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -267,6 +359,258 @@ obo:RO_0000092 rdf:type owl:ObjectProperty ;
                rdfs:label "disposition of"@en .
 
 
+###  http://www.w3.org/ns/prov#generated
+prov:generated rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf prov:influenced ;
+               owl:inverseOf prov:wasGeneratedBy ;
+               rdfs:domain prov:Activity ;
+               rdfs:range prov:Entity ;
+               rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ,
+                                <http://www.w3.org/ns/prov-o-inverses#> ;
+               rdfs:label "generated" ;
+               prov:category "expanded" ;
+               prov:component "entities-activities" ;
+               prov:editorialNote "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."@en ;
+               prov:inverse "wasGeneratedBy" ;
+               prov:sharesDefinitionWith prov:Generation .
+
+
+###  http://www.w3.org/ns/prov#hadDerivation
+prov:hadDerivation rdf:type owl:ObjectProperty ;
+                   owl:inverseOf prov:wasDerivedFrom ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/prov-o-inverses#> ;
+                   rdfs:label "hadDerivation" .
+
+
+###  http://www.w3.org/ns/prov#influenced
+prov:influenced rdf:type owl:ObjectProperty ;
+                owl:inverseOf prov:wasInfluencedBy ;
+                rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ,
+                                 <http://www.w3.org/ns/prov-o-inverses#> ;
+                rdfs:label "influenced" ;
+                prov:category "expanded" ;
+                prov:component "agents-responsibility" ;
+                prov:inverse "wasInfluencedBy" ;
+                prov:sharesDefinitionWith prov:Influence .
+
+
+###  http://www.w3.org/ns/prov#used
+prov:used rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf prov:wasInfluencedBy ;
+          owl:inverseOf prov:wasUsedBy ;
+          rdfs:domain prov:Activity ;
+          rdfs:range prov:Entity ;
+          rdfs:comment "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+          rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+          rdfs:label "used" ;
+          prov:category "starting-point" ;
+          prov:component "entities-activities" ;
+          prov:inverse "wasUsedBy" ;
+          prov:qualifiedForm prov:Usage ,
+                             prov:qualifiedUsage .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf prov:wasInfluencedBy ;
+                    rdfs:domain prov:Entity ;
+                    rdfs:range prov:Entity ;
+                    rdfs:comment "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+                    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                    rdfs:label "wasDerivedFrom" ;
+                    prov:category "starting-point" ;
+                    prov:component "derivations" ;
+                    prov:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en ;
+                    prov:inverse "hadDerivation" ;
+                    prov:qualifiedForm prov:Derivation ,
+                                       prov:qualifiedDerivation .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource prov:wasDerivedFrom ;
+   owl:annotatedProperty rdfs:subPropertyOf ;
+   owl:annotatedTarget prov:wasInfluencedBy ;
+   rdfs:comment "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."
+ ] .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+prov:wasGeneratedBy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf prov:wasInfluencedBy ;
+                    rdfs:domain prov:Entity ;
+                    rdfs:range prov:Activity ;
+                    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ,
+                                     <http://www.w3.org/ns/prov-o-inverses#> ;
+                    rdfs:label "wasGeneratedBy" ;
+                    prov:category "starting-point" ;
+                    prov:component "entities-activities" ;
+                    prov:inverse "generated" ;
+                    prov:qualifiedForm prov:Generation ,
+                                       prov:qualifiedGeneration .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+prov:wasInfluencedBy rdf:type owl:ObjectProperty ;
+                     rdfs:domain _:genid2 ;
+                     rdfs:range _:genid7 ;
+                     rdfs:comment "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en ,
+                                  "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+                     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ,
+                                      <http://www.w3.org/ns/prov-o-inverses#> ;
+                     rdfs:label "wasInfluencedBy" ;
+                     prov:category "qualified" ;
+                     prov:component "agents-responsibility" ;
+                     prov:editorialNote """The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .
+
+Subproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.
+
+prov:wasInfluencedBy should not be used without also using one of its subproperties. 
+"""@en ;
+                     prov:inverse "influenced" ;
+                     prov:qualifiedForm prov:Influence ,
+                                        prov:qualifiedInfluence ;
+                     prov:sharesDefinitionWith prov:Influence .
+
+_:genid2 rdf:type owl:Class ;
+          owl:unionOf ( prov:Activity
+                        prov:Agent
+                        prov:Entity
+                      ) .
+
+_:genid7 rdf:type owl:Class ;
+          owl:unionOf ( prov:Activity
+                        prov:Agent
+                        prov:Entity
+                      ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource prov:wasInfluencedBy ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget _:genid7 ;
+   prov:definition "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;" ;
+   prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource prov:wasInfluencedBy ;
+   owl:annotatedProperty rdfs:domain ;
+   owl:annotatedTarget _:genid2 ;
+   prov:definition "influencee: an identifier (o2) for an entity, activity, or agent; " ;
+   prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"
+ ] .
+
+
+###  http://www.w3.org/ns/prov#wasUsedBy
+prov:wasUsedBy rdf:type owl:ObjectProperty ;
+               rdfs:isDefinedBy <http://www.w3.org/ns/prov-o-inverses#> ;
+               rdfs:label "wasUsedBy" .
+
+
+###  https://w3id.org/pmd/co/characteristic
+co:characteristic rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  owl:inverseOf co:characteristicOf ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( co:DigitalEntity
+                                              co:Object
+                                              co:Process
+                                              co:ProcessingNode
+                                              co:Project
+                                              co:ValueObject
+                                            )
+                              ] ;
+                  rdfs:range co:ValueObject ;
+                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                  rdfs:label "characteristic"@en ;
+                  skos:altLabel "has characteristic"@en ;
+                  skos:definition "Die Objekteigenschaft characterisitc, wird in Verbindung mit ProzessKnoten, Prozess und Objekt verwendet und dient zur Herstellung einer Verbindung mit dem WerteObjekt. Diese Eigenschaft ermöglicht die Abbildung von Beziehungen zwischen ProzessKnoten, Prozessen und Objekten und den dazugehörigen Werten oder Attributen (Metadaten), die in WerteObjekt ausgedrückt sind."@de ,
+                                  "The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects."@en .
+
+
+###  https://w3id.org/pmd/co/characteristicOf
+co:characteristicOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                    rdfs:label "characteristic of"@en ;
+                    skos:altLabel "is characteristic of" .
+
+
+###  https://w3id.org/pmd/co/input
+co:input rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf prov:used ,
+                            co:participant ;
+         owl:inverseOf co:inputOf ;
+         rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+         rdfs:label "input"@en ;
+         skos:altLabel "has input" ;
+         skos:definition "This property is used to link the processes to their input objects."@en .
+
+
+###  https://w3id.org/pmd/co/inputOf
+co:inputOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf prov:wasUsedBy ,
+                              co:participantOf ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+           rdfs:label "input of"@en ;
+           skos:altLabel "is input of" .
+
+
+###  https://w3id.org/pmd/co/output
+co:output rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf prov:generated ,
+                             co:participant ;
+          owl:inverseOf co:outputOf ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+          rdfs:label "output"@en ;
+          skos:altLabel "has output" ;
+          skos:definition "This property is used to link the processes to their output objects"@en .
+
+
+###  https://w3id.org/pmd/co/outputOf
+co:outputOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf co:participantOf ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+            rdfs:label "output of"@en ;
+            skos:altLabel "is output of"@en .
+
+
+###  https://w3id.org/pmd/co/participant
+co:participant rdf:type owl:ObjectProperty ;
+               owl:inverseOf co:participantOf ;
+               rdfs:domain co:Process ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( co:DigitalEntity
+                                          co:Object
+                                          co:ValueObject
+                                        )
+                          ] ;
+               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+               rdfs:label "participant"@en ;
+               skos:altLabel "has participant" ;
+               skos:definition "A relation between a process and an object, in which the objects is somehow involved in the process."@en .
+
+
+###  https://w3id.org/pmd/co/participantOf
+co:participantOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                 rdfs:label "participant of"@en ;
+                 skos:altLabel "is participant of"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/pmd/co/value
+co:value rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain co:ValueObject ;
+         rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+         rdfs:label "hat Wert"@de ,
+                    "value"@en ;
+         skos:definition "Provides the actual value a value object is referring to."@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -323,20 +667,6 @@ obo:BFO_0000002 rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000002 ;
-   owl:annotatedProperty obo:IAO_0000602 ;
-   owl:annotatedTarget "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/008-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000002 ;
-   owl:annotatedProperty obo:IAO_0000602 ;
-   owl:annotatedTarget "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/011-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000002 ;
    owl:annotatedProperty obo:IAO_0000116 ;
    owl:annotatedTarget "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000007>
@@ -382,6 +712,20 @@ obo:BFO_0000002 rdf:type owl:Class ;
    owl:annotatedProperty obo:IAO_0000602 ;
    owl:annotatedTarget "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] " ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/126-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000002 ;
+   owl:annotatedProperty obo:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/008-002>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000002 ;
+   owl:annotatedProperty obo:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/011-002>
  ] .
 
 
@@ -855,6 +1199,247 @@ obo:ODPS4MSE_0000000 rdf:type owl:Class ;
                      rdfs:label "root node"@en .
 
 
+###  http://www.w3.org/ns/prov#Activity
+prov:Activity rdf:type owl:Class ;
+              owl:disjointWith prov:Entity ;
+              rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+              rdfs:label "Activity" ;
+              prov:category "starting-point" ;
+              prov:component "entities-activities" ;
+              prov:constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+              prov:definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
+              prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity"^^xsd:anyURI ;
+              prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class ;
+           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+           rdfs:label "Agent" ;
+           prov:category "starting-point" ;
+           prov:component "agents-responsibility" ;
+           prov:definition "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en ;
+           prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+           prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+            rdfs:label "Entity" ;
+            prov:category "starting-point" ;
+            prov:component "entities-activities" ;
+            prov:constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+            prov:definition "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "@en ;
+            prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity"^^xsd:anyURI ;
+            prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity"^^xsd:anyURI .
+
+
+###  https://w3id.org/pmd/co/DataScope
+co:DataScope rdf:type owl:Class ;
+             rdfs:subClassOf prov:Entity ;
+             rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+             rdfs:label "Data Scope"@en ,
+                        "Datenkategorie"@de ;
+             skos:definition "Die Entität Datenkategorie dient der Kategorisierung von Daten im Hinblick auf ihren Verwendungszweck in Übereinstimmung mit einem betrachteten Objekt oder Prozess."@de ,
+                             "This class is used to categorize data with respect to their intended usage in accordance with a regarded object or process."@en .
+
+
+###  https://w3id.org/pmd/co/DigitalEntity
+co:DigitalEntity rdf:type owl:Class ;
+                 rdfs:subClassOf prov:Entity ;
+                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                 rdfs:label "Digital Entity"@en ;
+                 skos:definition "An entity with digital representation."@en .
+
+
+###  https://w3id.org/pmd/co/GeometryChangingProcess
+co:GeometryChangingProcess rdf:type owl:Class ;
+                           rdfs:subClassOf co:Process ;
+                           rdfs:isDefinedBy "https://w3id.org/pmd/co" ;
+                           rdfs:label "Geometry Changing Process"@en ;
+                           skos:definition "A process that is modifing the geometry of an object."@en .
+
+
+###  https://w3id.org/pmd/co/Length
+co:Length rdf:type owl:Class ;
+          rdfs:subClassOf co:ValueObject ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+          rdfs:label "Length"@en ,
+                     "Länge"@de ;
+          skos:definition "A measured distance or dimension of an object, usually the longer or longest dimension of the object."@en ,
+                          "Eine gemessene Entfernung oder Abmessung eines Objekts, normalerweise die längere oder längste Abmessung des Objekts."@de ;
+          co:definitionSource "https://www.merriam-webster.com/dictionary/length"@de .
+
+
+###  https://w3id.org/pmd/co/LengthChangingProcess
+co:LengthChangingProcess rdf:type owl:Class ;
+                         rdfs:subClassOf co:GeometryChangingProcess ;
+                         rdfs:comment "This class is used as an example of SWRL based reasoning. An instance belongs to the class if there are two embracing processes (previous and next) that determine different values after a length measurement (see SWRL rule)." ;
+                         rdfs:isDefinedBy "https://w3id.org/pmd/co" ;
+                         rdfs:label "Length Changing Process"@en ;
+                         skos:definition "A geometry changing process which changes the length characteristic of an object."@en .
+
+
+###  https://w3id.org/pmd/co/Measurement
+co:Measurement rdf:type owl:Class ;
+               rdfs:subClassOf co:ValueScope ;
+               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+               rdfs:label "Measurement"@en ,
+                          "Messwert"@de ;
+               skos:definition """Die Wertekategorie Messung ermöglicht die Kategorisierung von ValueObjects als gemessen.
+Messung ist die Quantifizierung von Eigenschaften eines Objekts oder Ereignisses, die zum Vergleich mit anderen Objekten oder Ereignissen verwendet werden können."""@de ,
+                               """The ValueScope category Measurement enables the categorization of ValueObjects as measured.
+Measurement is the quantification of attributes of an object or event, which can be used to compare with other objects or events."""@en ,
+                               "This value scope describes that a :ValueObject is the quantification of attributes of an object or event, which can be used to compare with other objects or events."@en ;
+               co:definitionSource "https://en.wikipedia.org/wiki/Measurement"@en .
+
+
+###  https://w3id.org/pmd/co/Metadata
+co:Metadata rdf:type owl:Class ;
+            rdfs:subClassOf co:DataScope ,
+                            co:ValueObject ;
+            owl:disjointWith co:PrimaryData ,
+                             co:SecondaryData ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+            rdfs:label "Metadata"@en ,
+                       "Metadaten"@de ;
+            skos:definition "Die DataScope Metadaten umfassen Attribute und zusätzliche Daten (Provenienz), die z.B. die Fabrik, das Labor, das Prozesssystem und die Objekte betreffen und die eine Bewertung der Qualität / Zuverlässigkeit der Messungen und eine systematische Suche in einer Datenbank ermöglichen."@de ,
+                            "This data scope expresses that a :ValueObject refers to attributes and additional data (provenance) on production, laboratory, process system and objects that enable an evaluation of the quality/reliability of the measurements and a systematic search task in a database."@en .
+
+
+###  https://w3id.org/pmd/co/Object
+co:Object rdf:type owl:Class ;
+          rdfs:subClassOf prov:Entity ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+          rdfs:label "Object"@en ,
+                     "Objekt"@de ;
+          skos:definition "A discernable, tangible or simulated entity that is processed in a process by a processing node."@en .
+
+
+###  https://w3id.org/pmd/co/PrimaryData
+co:PrimaryData rdf:type owl:Class ;
+               rdfs:subClassOf co:DataScope ;
+               owl:disjointWith co:SecondaryData ;
+               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+               rdfs:label "Primary Data"@en ,
+                          "Primärdaten"@de ;
+               skos:definition "Die Datenkategorie Primärdaten umfasst Daten, die vor / nach einem Prozess erfasst werden, entweder bezogen auf die Geometrie des Objekts (z.B. ao, bo, do, au, bu, du, Lu) oder als Register des gesamten Aufbaus (z.B. Skizzen, Fotos oder Videos)"@de ,
+                               "This data scope expresses that a ValueObject refers to data that is directly acquired during a process by sensors (time, force, length, temperature)"@en .
+
+
+###  https://w3id.org/pmd/co/Process
+co:Process rdf:type owl:Class ;
+           rdfs:subClassOf prov:Activity ;
+           obo:IAO_0000117 "A process is an activity comprising a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements."@en ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+           rdfs:label "Process"@en ,
+                      "Prozess"@de ;
+           skos:definition "A process is an activity including a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements."@en .
+
+
+###  https://w3id.org/pmd/co/ProcessingNode
+co:ProcessingNode rdf:type owl:Class ;
+                  rdfs:subClassOf prov:Agent ;
+                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                  rdfs:label "Processing Node"@en ,
+                             "Prozessknoten"@de ;
+                  skos:definition "Processing nodes are tools, equipment and accessories as well as software that are relevant for the performance of processes, such as e.g. mechanical and chemical test as well as simulation, prediction, and machine learning. Accordingly, processing nodes may be machines, parts of machines, and software applications."@en ,
+                                  "Prozessknoten sind Werkzeuge, Geräte und Zubehör sowie Software, die für die Durchführung von Prozessen relevant sind, wie z. B. mechanische und chemische Tests sowie Simulationen, Vorhersagen und maschinelles Lernen. Dementsprechend können Prozessknoten Maschinen, Teile von Maschinen und Softwareanwendungen sein."@de .
+
+
+###  https://w3id.org/pmd/co/Project
+co:Project rdf:type owl:Class ;
+           rdfs:subClassOf prov:Activity ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+           rdfs:label "Project"@en ,
+                      "Projekt"@de ;
+           skos:definition "A series of goal-orientated (intent) activities and interactions to achieve a specific outcome."@en ,
+                           "Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen."@de .
+
+
+###  https://w3id.org/pmd/co/SecondaryData
+co:SecondaryData rdf:type owl:Class ;
+                 rdfs:subClassOf co:DataScope ;
+                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                 rdfs:label "Secondary Data"@en ,
+                            "Sekundärdaten"@de ;
+                 skos:definition "Der Datenkategorie Sekundärdaten umfasst Werte (z. B. Testergebnisse), die durch Gleichungen oder Algorithmen unter Verwendung von Primärdaten und Metadaten ermittelt werden."@de ,
+                                 "This data scope expresses that a ValueObject refers to characteristic values (e.g. test results) determined by equations or algorithms using primary data and/or metadata."@en .
+
+
+###  https://w3id.org/pmd/co/SetPoint
+co:SetPoint rdf:type owl:Class ;
+            rdfs:subClassOf co:ValueScope ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+            rdfs:label "Set Point"@en ,
+                       "Sollwert"@de ;
+            skos:definition "Die Wertekategorie Sollwert bezeichnet allgemein den gewünschten Wert eines quantitativen Merkmals eines Systems, von dem der Istwert möglichst wenig abweichen soll."@de ,
+                            "Sollwert bezeichnet allgemein den angestrebten Wert eines quantitativen Merkmales eines Systems, von dem der tatsächliche Istwert so wenig wie möglich abweichen soll. Der Sollwert wird von einem anderen System (z. B. Technik, Mensch) vorgegeben."@de ,
+                            "The ValueScope Setpoint generally refers to the desired value of a quantitative characteristic of a system, from which the actual value should deviate as little as possible."@en ,
+                            "This value scope expresses that a :ValueObject is the desired or target value for an essential variable, or process value (PV) of a control system."@en ;
+            co:definitionSource "https://de.wikipedia.org/wiki/Sollwert"@de ,
+                                "https://en.wikipedia.org/wiki/Setpoint_(control_system)"@en .
+
+
+###  https://w3id.org/pmd/co/ValueObject
+co:ValueObject rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( co:Metadata
+                                                   [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( co:Measurement
+                                                                                          co:SetPoint
+                                                                                        )
+                                                                          ]
+                                                                          [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( co:PrimaryData
+                                                                                          co:SecondaryData
+                                                                                        )
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                                                 )
+                                   ] ;
+               rdfs:subClassOf prov:Entity ;
+               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+               rdfs:label "Value Object"@en ,
+                          "Wertobjekt"@de ;
+               skos:definition """A :ValueObject is an entity which represents a specific value. This value can be a numerical, textual, or a more complex data structure. If a literal value is to be specified, the :value datatype property has to be used. In cases where the value is represented by a resource (e.g. URI), the :resource object property has to be used.
+
+A value object, respectively its value, is always associated with an entity of type :Process, :ProcessingNode, :Object (e.g. :Specimen), :DigitalEntity, :Project, or other :ValueObject. The value is meant to be a charactaristic of the associated entity. To express this association it is indended to use the :characteristic object property if the value decribes some \\\"quality\\\", or the :participant (:input,:output) if it is participating a process.
+
+A value object might also refer to a unit. The :unit property might be used (e.g. with QUDT ontology).
+
+Instances of a value object might also be a type of :ValueScope, namely a :SetPoint (nominal value), or :Measurement (measured value). With :Setpoint the intend is to express, that the value is meant to be some preset, setting or nominal value. :Measurement expresses, that the value has been measured or determined somehow (see example).
+
+Instances of a value object might also be specified in a specific :DataScope (:Metadata, :PrimaryData, :SecondaryData)."""@en ;
+               skos:example """- the length of a specimen
+- the model number of a machine
+- a person involved in a process
+- a force on an object"""@en ,
+                            """:Length rdfs:subClass :ValueObject .
+ex:vo1 a :Length .
+ex:vo1 a :Measurement .
+ex:vo1 a :PrimaryData .
+ex:vo1 :unit qudt:MilliM . 
+ex:vo1 :value \"123.45\"
+ex:p1 a :LengthMeasuringProcess .
+ex:p1 :characteristic ex:vo1 ."""@en ,
+                            "The length of a specimen, which has been measured as primary data. Its actual value is 123.45 millimeters."@en .
+
+
+###  https://w3id.org/pmd/co/ValueScope
+co:ValueScope rdf:type owl:Class ;
+              rdfs:subClassOf prov:Entity ;
+              rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+              rdfs:label "Value Scope"@en ,
+                         "Wertekategorie"@de ;
+              skos:definition "An entity that makes it possible to add categorization to \"ValueObjects\"."@en ,
+                              "Eine Entität, die es ermöglicht \"ValueObjects\" zusätzlich zu kategorisieren."@de ,
+                              "This class expresses the categorization of :ValueObjects into measurements and setpoints."@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -1049,6 +1634,26 @@ obo:OMO_0001000 rdf:type owl:NamedIndividual ,
 
 <urn:swrl#e> rdf:type swrl:Variable .
 
+co:l1 rdf:type swrl:Variable .
+
+co:v1 rdf:type swrl:Variable .
+
+co:l2 rdf:type swrl:Variable .
+
+co:v2 rdf:type swrl:Variable .
+
+co:p2 rdf:type swrl:Variable .
+
+co:o2 rdf:type swrl:Variable .
+
+co:p3 rdf:type swrl:Variable .
+
+co:o3 rdf:type swrl:Variable .
+
+co:p1 rdf:type swrl:Variable .
+
+co:o1 rdf:type swrl:Variable .
+
 [ rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
@@ -1144,6 +1749,161 @@ obo:OMO_0001000 rdf:type owl:NamedIndividual ,
                            swrl:propertyPredicate obo:RO_0000085 ;
                            swrl:argument1 <urn:swrl#e> ;
                            swrl:argument2 <urn:swrl#d>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:label "S1" ;
+   skos:definition "Detect processes which changes the length of object." ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate co:value ;
+                           swrl:argument1 co:l1 ;
+                           swrl:argument2 co:v1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate co:value ;
+                                      swrl:argument1 co:l2 ;
+                                      swrl:argument2 co:v2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate co:input ;
+                                                 swrl:argument1 co:p2 ;
+                                                 swrl:argument2 co:o2
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate co:input ;
+                                                            swrl:argument1 co:p3 ;
+                                                            swrl:argument2 co:o3
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate co:Object ;
+                                                                       swrl:argument1 co:o3
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate co:Object ;
+                                                                                  swrl:argument1 co:o2
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate co:characteristic ;
+                                                                                             swrl:argument1 co:p1 ;
+                                                                                             swrl:argument2 co:l1
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate co:characteristic ;
+                                                                                                        swrl:argument1 co:p3 ;
+                                                                                                        swrl:argument2 co:l2
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                                   swrl:classPredicate co:Process ;
+                                                                                                                   swrl:argument1 co:p3
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                                              swrl:classPredicate co:Length ;
+                                                                                                                              swrl:argument1 co:l1
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate co:output ;
+                                                                                                                                         swrl:argument1 co:p1 ;
+                                                                                                                                         swrl:argument2 co:o2
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                                    swrl:propertyPredicate co:output ;
+                                                                                                                                                    swrl:argument1 co:p2 ;
+                                                                                                                                                    swrl:argument2 co:o3
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                                   rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                               swrl:builtin swrlb:notEqual ;
+                                                                                                                                                               swrl:arguments ( co:v1
+                                                                                                                                                                                co:v2
+                                                                                                                                                                              )
+                                                                                                                                                             ] ;
+                                                                                                                                                   rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                                              rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                                                                                          swrl:classPredicate co:Process ;
+                                                                                                                                                                          swrl:argument1 co:p1
+                                                                                                                                                                        ] ;
+                                                                                                                                                              rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                                                         rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                                                                                                     swrl:classPredicate co:Process ;
+                                                                                                                                                                                     swrl:argument1 co:p2
+                                                                                                                                                                                   ] ;
+                                                                                                                                                                         rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                                                                    rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                                                                                                                swrl:classPredicate co:Length ;
+                                                                                                                                                                                                swrl:argument1 co:l2
+                                                                                                                                                                                              ] ;
+                                                                                                                                                                                    rdf:rest rdf:nil
+                                                                                                                                                                                  ]
+                                                                                                                                                                       ]
+                                                                                                                                                            ]
+                                                                                                                                                 ]
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate co:LengthChangingProcess ;
+                           swrl:argument1 co:p2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate co:output ;
+                           swrl:argument1 co:p1 ;
+                           swrl:argument2 co:o2
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate co:input ;
+                                      swrl:argument1 co:p1 ;
+                                      swrl:argument2 co:o1
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate co:Process ;
+                                                 swrl:argument1 co:p1
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate prov:wasDerivedFrom ;
+                           swrl:argument1 co:o2 ;
+                           swrl:argument2 co:o1
                          ] ;
                rdf:rest rdf:nil
              ]

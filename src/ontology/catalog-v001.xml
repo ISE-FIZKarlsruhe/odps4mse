@@ -5,6 +5,7 @@
   
   
   <uri name="http://purl.obolibrary.org/obo/odps4mse/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/odps4mse/imports/pmdco_import.owl" uri="imports/pmdco_import.owl"/>
   
   
 
