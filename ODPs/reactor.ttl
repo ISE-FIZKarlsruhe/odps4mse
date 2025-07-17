@@ -1,0 +1,75 @@
+@prefix rep: <http://purl.org/biomass/sep#> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix par: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+### Classes ###
+rep:ParametereticProcess a owl:Class ;
+    rdfs:subClassOf rep:Process ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            [ rdf:type owl:Restriction ;
+              owl:onProperty rep:hasInputParameter ;
+              owl:someValuesFrom rep:InputParameter
+            ]
+            [ rdf:type owl:Restriction ;
+              owl:onProperty rep:hasOutputParameter ;
+              owl:someValuesFrom rep:OutputParameter
+            ]
+            [ rdf:type owl:Restriction ;
+              owl:onProperty rep:triggeredBy ;
+              owl:someValuesFrom lode:Event
+            ]
+        )
+    ] .
+
+rep:ReactiveProcess a owl:Class ;
+    rdfs:subClassOf rep:ParametereticProcess ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty rep:hasEnvironmentalCondition ;
+        owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+        owl:onClass par:EnvironmentalCondition
+    ] .
+
+par:Parameter a owl:Class .
+
+rep:ProcessParameter a owl:Class ;
+    rdfs:subClassOf par:Parameter .
+
+rep:Measurement a owl:Class .
+
+rep:InputParameter a owl:Class ;
+    rdfs:subClassOf rep:ProcessParameter .
+
+rep:OutputParameter a owl:Class ;
+    rdfs:subClassOf rep:ProcessParameter .
+
+lode:Event a owl:Class .
+
+### Properties ###
+rep:hasInputParameter a owl:ObjectProperty ;
+    rdfs:domain rep:ParametereticProcess ;
+    rdfs:range rep:InputParameter .
+
+rep:hasOutputParameter a owl:ObjectProperty ;
+    rdfs:domain rep:ParametereticProcess ;
+    rdfs:range rep:OutputParameter .
+
+rep:triggeredBy a owl:ObjectProperty ;
+    rdfs:domain rep:ReactiveProcess ;
+    rdfs:range lode:Event .
+
+rep:hasParameter a owl:ObjectProperty ;
+    rdfs:domain rep:ParametereticProcess ;
+    rdfs:range par:ProcessParameter .
+
+rep:hasMeasurementCriteria a owl:ObjectProperty ;
+    rdfs:domain rep:ProcessParameter ;
+    rdfs:range rep:Measurement .
+
+rep:hasEnvironmentalCondition a owl:ObjectProperty ;
+    rdfs:domain rep:ReactiveProcess ;
+    rdfs:range par:EnvironmentalCondition .

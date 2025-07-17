@@ -1,0 +1,176 @@
+@prefix : <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix taskrole: <http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#> .
+@prefix agentrole: <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix participation: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
+@prefix taskexecution: <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#> .
+@prefix classification: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl> .
+
+<http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl> rdf:type owl:Ontology ;
+                                                                  owl:imports <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl> ,
+                                                                              <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> ,
+                                                                              <http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl> ;
+                                                                  cpannotationschema:coversRequirements """which task is executed through this action? 
+what actions can done in order to execute that task?""" ;
+                                                                  cpannotationschema:extractedFrom "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" ;
+                                                                  cpannotationschema:hasComponent "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl" ,
+                                                                                                  "http://www.ontologydesignpatterns.org/cp/owl/participation.owl" ,
+                                                                                                  "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl" ;
+                                                                  cpannotationschema:hasConsequences "This CP allows designers to make assertions on roles played by agents without involving the agents that play that roles, and vice versa. It allows to express neither the context type in which tasks are defined, not the particular context in which the action is carried out. Moreover, it does not allow to express the time at which the task is executed through the action (for actions that do not solely executed that certain task)." ;
+                                                                  cpannotationschema:hasIntent "To represent actions through which tasks are executed." ;
+                                                                  cpannotationschema:relatedCPs """The counting as CP available at http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl allows to represent temporariness of concepts that classify objects. By specializing naryclassification, it is possible to create a temporally-indexed version of taskexecution.
+Its imported component taskrole.owl allows to express also the dependence between tasks and roles.""" ;
+                                                                  cpannotationschema:scenarios "She smiled at us, so obtaining the effect of making us feeling positive." ;
+                                                                  owl:versionInfo "1.1 added rdfs:isDefinedBy for all named entities"^^xsd:string ,
+                                                                                  "Created by Aldo Gangemi"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements
+cpannotationschema:coversRequirements rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom
+cpannotationschema:extractedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent
+cpannotationschema:hasComponent rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences
+cpannotationschema:hasConsequences rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent
+cpannotationschema:hasIntent rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+cpannotationschema:relatedCPs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios
+cpannotationschema:scenarios rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies
+classification:classifies rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy
+classification:isClassifiedBy rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant
+participation:hasParticipant rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask
+taskexecution:executesTask rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf classification:isClassifiedBy ;
+                           owl:inverseOf taskexecution:isExecutedIn ;
+                           rdfs:domain taskexecution:Action ;
+                           rdfs:range taskrole:Task ;
+                           rdfs:comment "A relation between an action and a task, e.g. 'putting some water in a pot and putting the pot on a fire until the water starts bubbling' executes the task 'boiling'."^^xsd:string ;
+                           rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl> ;
+                           rdfs:label "esegue il task"@it ,
+                                      "executes task"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#isExecutedIn
+taskexecution:isExecutedIn rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf classification:classifies ;
+                           rdfs:domain taskrole:Task ;
+                           rdfs:range taskexecution:Action ;
+                           rdfs:comment "A relation between an action and a task, e.g. 'putting some water in a pot and putting the pot on a fire until the water starts bubbling' executes the task 'boiling'." ;
+                           rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl> ;
+                           rdfs:label "is executed in"@en ,
+                                      "è eseguito mediante"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent
+agentrole:Agent rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object
+objectrole:Object rdf:type owl:Class ;
+                  owl:equivalentClass participation:Object .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role
+objectrole:Role rdf:type owl:Class ;
+                owl:equivalentClass taskrole:Role .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event
+participation:Event rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object
+participation:Object rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action
+taskexecution:Action rdf:type owl:Class ;
+                     rdfs:subClassOf participation:Event ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty participation:hasParticipant ;
+                                       owl:someValuesFrom agentrole:Agent
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty taskexecution:executesTask ;
+                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                     ] ;
+                     rdfs:comment "An Event with at least one Agent that isParticipantIn it, and that executes a Task that typically isDefinedIn a Plan, Workflow, Project, etc."^^xsd:string ;
+                     rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl> ;
+                     rdfs:label "Action"@en ,
+                                "Azione"@it .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role
+taskrole:Role rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task
+taskrole:Task rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,473 @@
+@prefix : <https://w3id.org/pmd/co/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pmd/co/> .
+
+<https://w3id.org/pmd/co/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000233
+<http://purl.obolibrary.org/obo/IAO_0000233> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000234
+<http://purl.obolibrary.org/obo/IAO_0000234> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.org/dc/elements/1.1.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000056
+<http://purl.obolibrary.org/obo/BFO_0000056> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "250-BFO" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "participates in"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000057
+<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "248-BFO" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "has participant"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "p has participant c =Def c participates in p"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf :PMD_0000004 ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "This document is about information artifacts and their representations"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A (currently) primitive relation that relates an information artifact to an entity."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> """7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "is about"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000004
+:PMD_0000004 rdf:type owl:ObjectProperty ;
+             rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "is subject of"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Inverse of 'is about'."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000015
+:PMD_0000015 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+             rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "has input"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "relation from a process to someone or something physical or digital (continuant) that is a necessary precondition for the process to start" .
+
+
+###  https://w3id.org/pmd/co/PMD_0000016
+:PMD_0000016 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+             rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "has output"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "relation from a process to someone or something physical or digital (continuant) that participates in the process such that it is generated or modified during the process, and that it exists at the end of the process" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "077-BFO" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "occurrent"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant."@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "083-BFO" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "process"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#altLabel> "event"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/BFO_0000179> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> .
+
+
+<http://purl.obolibrary.org/obo/BFO_0000180> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000111> "example to be eventually removed"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "example to be eventually removed"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000111> "failed exploratory term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "failed exploratory term"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000118> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000111> "metadata complete"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "metadata complete"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000111> "organizational term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "organizational term"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000111> "ready for release"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "ready for release"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000111> "metadata incomplete"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "metadata incomplete"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000111> "uncurated"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "uncurated"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000111> "pending final vetting"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "pending final vetting"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000111> "placeholder removed"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "placeholder removed"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000111> "terms merged"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "terms merged"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000111> "term imported"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "term imported"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000229> <http://purl.obolibrary.org/obo/IAO_0000111> "term split"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "term split"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000111> "universal"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "universal"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000412> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000111> "defined class"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "defined class"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000421> <http://purl.obolibrary.org/obo/IAO_0000111> "named class expression"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "named class expression"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000111> "to be replaced with external ontology term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "to be replaced with external ontology term"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000428> <http://purl.obolibrary.org/obo/IAO_0000111> "requires discussion"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "requires discussion"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000600> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000601> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000602> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0010000> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/OMO_0001000> <http://purl.obolibrary.org/obo/IAO_0000115> "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0001-5208-3432> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000233> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000234> "https://orcid.org/0000-0001-5208-3432" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/omo.owl> ;
+                                             rdfs:label "out of scope" .
+
+
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+:PMD_0020006 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice triclinic primitve"@en .
+
+
+:PMD_0020007 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice monoclinic primitive"@en .
+
+
+:PMD_0020008 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice monoclinic base-centered"@en .
+
+
+:PMD_0020009 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice orthorombic primitive"@en .
+
+
+:PMD_0020010 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice orthorhombic base-centered"@en .
+
+
+:PMD_0020011 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice orthorhombic body-centered"@en .
+
+
+:PMD_0020012 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice orthorhombic face-centered"@en .
+
+
+:PMD_0020013 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice tetragonal primitive"@en .
+
+
+:PMD_0020014 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice tetragonal body-centered"@en .
+
+
+:PMD_0020015 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice hexagonal rhombohedral primitive"@en .
+
+
+:PMD_0020016 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice hexagonal hexagonal primitive"@en .
+
+
+:PMD_0020017 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice cubic primitive"@en .
+
+
+:PMD_0020018 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice cubic body-centered"@en .
+
+
+:PMD_0020019 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bravais lattice cubic face-centered"@en .
+
+
+:PMD_0020027 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "bainite"@en .
+
+
+:PMD_0020097 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "austenite"@en .
+
+
+:PMD_0020100 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "ferrite"@en .
+
+
+:PMD_0020107 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "ledeburite"@en .
+
+
+:PMD_0020109 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "pearlite"@en .
+
+
+:PMD_0020110 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "widmanstatten structure"@en .
+
+
+:PMD_0020111 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "martensite"@en .
+
+
+:PMD_0020117 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state solid"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state where the bonds between entites trasmit shear forces."@en .
+
+
+:PMD_0020118 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state liquid"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state where the bonds of the entites transmit no shear force."@en .
+
+
+:PMD_0020119 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state gasous"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state where the entities have no bonding."@en .
+
+
+:PMD_0020120 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state plasma"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "An aggregate state where the entites are atom nuclei and have no bonds."@en .
+
+
+:PMD_0020121 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state atom gas"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A gaseous state where the gas entities are atoms."@en .
+
+
+:PMD_0020122 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state supercritical fluid"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state with strong bindings between entites that do not transmit shear force."@en .
+
+
+:PMD_0020123 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state mesomorphic"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state where some bonds transmit shear stresses and some do not."@en .
+
+
+:PMD_0020124 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state suprafluid"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state with frictionless binding that transmits no shear force between entites."@en .
+
+
+:PMD_0020125 rdfs:isDefinedBy :pmd.owl ;
+             rdfs:label "aggregate state suprasolid"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A state that exhibits suprafluid and solid properties."@en .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

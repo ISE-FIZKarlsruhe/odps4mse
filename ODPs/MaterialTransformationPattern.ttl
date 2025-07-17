@@ -1,0 +1,197 @@
+@prefix : <http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#> .
+@prefix cpa: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@prefix mtp: <http://www.descartes-core.org/patterns/owl/MaterialTransformationPattern#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix materialtransformationpattern: <http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#> .
+@base <http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern> .
+
+<http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern> rdf:type owl:Ontology ;
+                                                                             owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ,
+                                                                                         <http://www.w3.org/2006/time> ;
+                                                                             cpa:coversRequirements """What material resources were required to produce a product?
+Where did the transformation take place?
+What was the time necessary for the transformation?
+What other materials or conditions were necessary for the transformation process to occur?
+What materials change during the transformation?
+How much energy is required for the transformation to take place?""" ;
+                                                                             cpa:hasConsequences "This is not a very generic pattern describing a change of states. It may not be applicable to broader types of transformation, like change of money, or change of political affiliations, etc." ;
+                                                                             cpa:hasIntent "To contextualize the transformation process from raw components and the required equipment to a final manufactured artifact." ;
+                                                                             cpa:relatedCPs "This pattern can be chained with the Semantic Trajectory ODP to  facilitate understanding of a complete manufacturing process from raw material extraction to assembly of all components needed for that product. More info about Semantic Trajectory ODP can be obtained from the following reference: Hu, Y., Janowicz, K., Carral, D., Scheider, S., Kuhn, W., Berg-Cross, G., Hitzler, P., Dean, M., Kolas, D.: A geo-ontology design pattern for semantic trajectories. In:Spatial Information Theory, pp. 438-456. Springer (2013)"^^xsd:string ;
+                                                                             cpa:scenarios """A pile of wood is transformed into ash by burning. 
+Emboddied energy involved in the process of mixing aggregate, water, cement and other binders to create concrete. 
+Materials required to construct a manufactured artifact such as a window (glass, wood, aluminum).""" ;
+                                                                             rdfs:comment """There are two axioms that we need in this pattern but not expressible in OWL. 
+The first says that there is at least one of the input that is not in the output of the transformation, which cannot be expressed in FOL as the formula:
+ALL x.( MaterialTransformation(x) IMPLIES Exists y.(hasInput(x,y) AND NOT hasOutput(x,y) ) )
+The second states that there is at least one of the output that is not part of the input of the transformation:
+ALL x.( MaterialTransformation(x) IMPLIES Exists y.(hasOutput(x,y) AND NOT hasInput(x,y) ) )
+Thus, this OWL encoding does not contain any axiom expressing the above two.""" ;
+                                                                             rdfs:label "Material Transformation Pattern" ;
+                                                                             owl:priorVersion <http://descartes-core.org/ontologies/mt/1.0/MaterialTransformationPattern> ;
+                                                                             owl:versionInfo "1.1"^^xsd:string ,
+                                                                                             "Contributions are also provided by Michelle Cheatham, Krzysztof Janowicz, Holly Ferguson, Pascal Hitzler, Aimee Bucellato, Krishnaprasad Thirunarayan, Gary Berg-Cross" ,
+                                                                                             "Created by Adila Krisnadhi and Charles Vardeman" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasCatalyst
+materialtransformationpattern:hasCatalyst rdf:type owl:ObjectProperty ;
+                                          rdfs:label "hasCatalyst" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput
+materialtransformationpattern:hasInput rdf:type owl:ObjectProperty ;
+                                       rdfs:label "hasInput" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput
+materialtransformationpattern:hasOutput rdf:type owl:ObjectProperty ;
+                                        rdfs:label "hasOutput" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring
+materialtransformationpattern:occursDuring rdf:type owl:ObjectProperty ;
+                                           rdfs:label "occursDuring" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood
+materialtransformationpattern:occursInNeighborhood rdf:type owl:ObjectProperty ;
+                                                   rdfs:label "occursInNeighborhood" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asLiteral
+materialtransformationpattern:asLiteral rdf:type owl:DatatypeProperty .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asNumeric
+materialtransformationpattern:asNumeric rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Catalyst
+materialtransformationpattern:Catalyst rdf:type owl:Class ;
+                                       rdfs:subClassOf [ owl:intersectionOf ( materialtransformationpattern:Input
+                                                                              materialtransformationpattern:Output
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:label "Catalyst" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input
+materialtransformationpattern:Input rdf:type owl:Class ;
+                                    rdfs:subClassOf materialtransformationpattern:MaterialObject ;
+                                    rdfs:label "Input" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialObject
+materialtransformationpattern:MaterialObject rdf:type owl:Class ;
+                                             rdfs:label "MaterialObject" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation
+materialtransformationpattern:MaterialTransformation rdf:type owl:Class ;
+                                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:hasInput ;
+                                                                       owl:someValuesFrom materialtransformationpattern:Input
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:hasOutput ;
+                                                                       owl:someValuesFrom materialtransformationpattern:Output
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:occursDuring ;
+                                                                       owl:someValuesFrom time:Interval
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:occursInNeighborhood ;
+                                                                       owl:someValuesFrom materialtransformationpattern:Neighborhood
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:hasCatalyst ;
+                                                                       owl:allValuesFrom materialtransformationpattern:Catalyst
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:hasInput ;
+                                                                       owl:allValuesFrom materialtransformationpattern:Input
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:hasOutput ;
+                                                                       owl:allValuesFrom materialtransformationpattern:Output
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:occursDuring ;
+                                                                       owl:allValuesFrom time:Interval
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty materialtransformationpattern:occursInNeighborhood ;
+                                                                       owl:allValuesFrom materialtransformationpattern:Neighborhood
+                                                                     ] ;
+                                                     rdfs:label "MaterialTransformation" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood
+materialtransformationpattern:Neighborhood rdf:type owl:Class ;
+                                           rdfs:label "Neighborhood" .
+
+
+###  http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output
+materialtransformationpattern:Output rdf:type owl:Class ;
+                                     rdfs:subClassOf materialtransformationpattern:MaterialObject ;
+                                     rdfs:label "Output" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty materialtransformationpattern:hasCatalyst ;
+  owl:someValuesFrom materialtransformationpattern:Catalyst ;
+  rdfs:subClassOf materialtransformationpattern:MaterialTransformation
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty materialtransformationpattern:hasInput ;
+  owl:someValuesFrom materialtransformationpattern:Input ;
+  rdfs:subClassOf materialtransformationpattern:MaterialTransformation
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty materialtransformationpattern:hasOutput ;
+  owl:someValuesFrom materialtransformationpattern:Output ;
+  rdfs:subClassOf materialtransformationpattern:MaterialTransformation
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty materialtransformationpattern:occursDuring ;
+  owl:someValuesFrom time:Interval ;
+  rdfs:subClassOf materialtransformationpattern:MaterialTransformation
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty materialtransformationpattern:occursInNeighborhood ;
+  owl:someValuesFrom materialtransformationpattern:Neighborhood ;
+  rdfs:subClassOf materialtransformationpattern:MaterialTransformation
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
