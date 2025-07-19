@@ -1,0 +1,721 @@
+@prefix : <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/nfdi4ing/metadata4ing#> .
+
+<http://w3id.org/nfdi4ing/metadata4ing#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty ;
+                                           rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype ;
+         rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimal
+xsd:decimal rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype ;
+             rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  https://schema.org/DateTime
+<https://schema.org/DateTime> rdf:type rdfs:Datatype ;
+                              rdfs:isDefinedBy <https://schema.org.owl> ;
+                              <http://www.w3.org/2004/02/skos/core#definition> "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601)"@en ;
+                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german label"@en ;
+                              <http://www.w3.org/2004/02/skos/core#prefLabel> "DateTime"@en ,
+                                                                              "Datum mit Zeit"@de .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000054
+<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000017> ;
+                                             rdfs:comment "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert in"@de ,
+                                                                                             "realized in"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000017> ;
+                                             rdfs:comment "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert"@de ,
+                                                                                             "realizes"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleUnit
+:hasAdmissibleUnit rdf:type owl:ObjectProperty ;
+                   owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor> ;
+                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "(x hasAdmissibleUnit y) means that y is a unit that can be associated with the variable x"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAdmissibleUnit"@en ,
+                                                                   "hat als zulässige Einheit"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue
+:hasAdmissibleValue rdf:type owl:ObjectProperty ;
+                    owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor> ;
+                    rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "(x hasAdmissibleValue y) means that y is a value that can be assigned to the variable x"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasAdmissibleValue"@en ,
+                                                                    "hat als zulässigen Wert"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue
+:hasAssignedValue rdf:type owl:ObjectProperty ;
+                  owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment> ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "(a hasAssignedValue y) means that a: x = y is an assignment where the value y is assigned to a variable x"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "has assigned value"@en ,
+                                                                  "hat zugewiesenen Wert"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasCoverageInterval
+:hasCoverageInterval rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasUncertaintyDeclaration ;
+                     rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Associates an si:Real quantity value with an si:CoverageInterval"@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "has coverage interval"@en ,
+                                                                     "hat Überdeckungsintervall"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasExpandedUnc
+:hasExpandedUnc rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasUncertaintyDeclaration ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Relates an si:Real to its expanded uncertainty"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has expanded uncertainty"@en ,
+                                                                "hat erweiterte Unsicherheit"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity
+:hasKindOfQuantity rdf:type owl:ObjectProperty ;
+                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Points to the property characterization (i.e., to the kind of quantity) from a controlled vocabulary"@en ;
+                   <http://www.w3.org/2004/02/skos/core#note> "we recommend using a persistent identifier resolving to a persistent URL"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has kind of quantity"@en ,
+                                                                   "hat Größenart"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Points to a parameter of a given method or tool."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "has parameter"@en ,
+                                                              "hat Parameter"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasRuntimeAssignment
+:hasRuntimeAssignment rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf [ owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor>
+                                         ] ;
+                      rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Points to an assignment that is neither input nor output"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "has runtime assignment"@en ,
+                                                                      "hat Laufzeitzuweisung"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration
+:hasUncertaintyDeclaration rdf:type owl:ObjectProperty ;
+                           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Associates an si:Real quantity value with its mandatory uncertainty declaration (i.e., with an expanded uncertainty or a coverage interval)"@en ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has uncertainty declaration"@en ,
+                                                                           "hat Unsicherheitsdeklaration"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+         <http://www.w3.org/2004/02/skos/core#closeMatch> <http://qudt.org/schema/qudt/unit> ,
+                                                          <https://ptb.de/si/hasUnit> ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Represents the unit of a numerical (real) value"@en ,
+                                                          "Repräsentiert die Einheit eines numerischen (reelen) Wertes"@de ;
+         <http://www.w3.org/2004/02/skos/core#note> "Kardinalität dieser Property bei der Beschreibung eines si:Real: 0-1"@de ,
+                                                    "Obligation dieser Property bei der Beschreibung eines si:Real: recommended"@de ,
+                                                    "We recommend using a resolvable PID from a controlled vocabulary, such as ISO 80000, IEC or QUDT"@en ,
+                                                    "cardinality of this property for the description of a si:Real: 0-1"@en ,
+                                                    "obligation of this property for the description of a si:Real: recommended"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "has unit"@en ,
+                                                         "hat Einheit"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasVariable
+:hasVariable rdf:type owl:ObjectProperty ;
+             owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment> ;
+             rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+             <http://www.w3.org/2004/02/skos/core#definition> "( a hasVariable x ) bedeutet, dass a: x = y eine Variablenzuordnung ist, in der der Variablen x ein Wert zugeordnet wird."@de ,
+                                                              "( a hasVariable x ) means that a: x = y is an assignment where the value y is assigned to a variable x"@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "has variable"@en ,
+                                                             "hat Variable"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#implementedByTool
+:implementedByTool rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :implementsMethod ;
+                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that implements a given method"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "implemented by"@en ,
+                                                                   "wird implementiert durch"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#implementsMethod
+:implementsMethod rdf:type owl:ObjectProperty ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is implemented by a given tool"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "implementiert"@de ,
+                                                                  "implements"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#inProject
+:inProject rdf:type owl:ObjectProperty ;
+           owl:inverseOf :projectParticipant ;
+           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a person or an organization with a project."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "associated to project"@en ,
+                                                           "gehört zu Projekt"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#investigatesProperty
+:investigatesProperty rdf:type owl:ObjectProperty ;
+                      rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                      <http://www.w3.org/2004/02/skos/core#broader> <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ,
+                                                                    <http://www.molmod.info/semantics/pims-ii.ttl#hasRepresentamen> ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "(x investigatesProperty y) means that x is about target property y, in the context of scientific research and development"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "investigates property"@en ,
+                                                                      "untersucht Eigenschaft"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#projectParticipant
+:projectParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a project with a person or an organisation."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hat Projektmitglied"@de ,
+                                                                    "project participant"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
+:realizesMethod rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is used within a given processing step"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert Methode"@de ,
+                                                                "realizes method"@en .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor
+<http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "(x isAdmissibleUnitFor y) means that x is a unit that can be associated with the variable y; subsumption under msHPIPIR is explained as follows: There is a sign z for the variable y (where z is a description of admissible values of y) of which x is constitutive (and with which x hence overlaps)"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "is admissible unit for"@en ,
+                                                                                                                   "ist zulässige Einheit für"@de .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor
+<http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "(x isAdmissibleValueFor y) means that x is a value that can be assigned to the variable y; subsumption under msIPIRIR is explained as follows: There is a sign z for the variable y (where z is the range of admissible values of y), for which in turn there is another sign z' (where z' lists members of z, explicitly including x) of which x is a part"@en ;
+                                                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "is admissible value for"@en ,
+                                                                                                                    "ist zulässiger Wert für"@de .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor
+<http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor> rdf:type owl:ObjectProperty ;
+                                                               rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                               <http://www.w3.org/2004/02/skos/core#broader> <http://www.molmod.info/semantics/pims-ii.ttl#isRepresentamenFor> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "(o isAssignment for d) means that d: x = y is an assignment that refers to o; e.g., x may be temperature, y may be a temperature value, and o may be an object of which the temperature has been measured or some other context to which the assignment refers"@en ;
+                                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "is assignment for"@en ,
+                                                                                                               "ist Zuweisung in Bezug auf"@de .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment
+<http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#broader> <http://www.molmod.info/semantics/pims-ii.ttl#isSemioticallyConstitutiveOf> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "(y isValueInAssignment a) means that a: x = y is an assignment where the value y is assigned to a variable x"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "is value in assignment"@en ,
+                                                                                                                   "ist Wert in Zuweisung"@de .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment
+<http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#broader> <http://www.molmod.info/semantics/pims-ii.ttl#isSemioticallyConstitutiveOf> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "(x isVariableInAssignment a) means that a: x = y is an assignment where a value y is assigned to the variable x"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "is variable in assignment"@en ,
+                                                                                                                      "ist Variable in Zuweisung"@de .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:ObjectProperty ,
+                                          owl:InverseFunctionalProperty ;
+                                 rdfs:comment "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that   there is (across time and change) at most one individual that ever has any particular value for foaf:mbox." ;
+                                 rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "E-Mail-Adresse"@de ,
+                                                                                 "personal mailbox"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction
+:UsageInstruction rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Textual description of a processing step within a research process to enable or facilitate its reproducibility"@en ,
+                                                                   "Textuelle Beschreibung eines Verarbeitungsschritts innerhalb eines Forschungsprozesses, um dessen Reproduzierbarkeit zu erleichtern oder zu ermöglichen"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Verwendungshinweis"@de ,
+                                                                  "usage instruction"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#endOfProject
+:endOfProject rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:date ;
+              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Projektenddatum"@de ,
+                                                               "end date of a project"@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektenddatum"@de ,
+                                                              "project end date"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasAssignmentTimestamp
+:hasAssignmentTimestamp rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf <https://schema.org/temporal> ;
+                        rdfs:range <https://schema.org/DateTime> ;
+                        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Points to a timestamp associated with an assignment; there are multiple kinds of timestamp datatype properties, which are included here from schema.org"@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has assignment timestamp"@en ,
+                                                                        "hat Zuweisungszeitstempel"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentCreated
+:hasDateAssignmentCreated rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :hasAssignmentTimestamp ;
+                          rdfs:range <https://schema.org/DateTime> ;
+                          rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                          <http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/dateCreated> ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Points to a date(time) of creation of an assignment"@en ;
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "has date assignment created"@en ,
+                                                                          "hat Datumszuweisung erzeugt"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentDeleted
+:hasDateAssignmentDeleted rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :hasAssignmentTimestamp ;
+                          rdfs:range <https://schema.org/DateTime> ;
+                          rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                          <http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/dateDeleted> ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Points to a date(time) of deletion of an assignment"@en ;
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "has date assignment deleted"@en ,
+                                                                          "hat Datumszuweisung gelöscht"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentModified
+:hasDateAssignmentModified rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :hasAssignmentTimestamp ;
+                           rdfs:range <https://schema.org/DateTime> ;
+                           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                           <http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/dateModified> ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Points to a date(time) of modification of an assignment"@en ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has date assignment modified"@en ,
+                                                                           "hat Datumszuweisung bearbeitet"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidFrom
+:hasDateAssignmentValidFrom rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :hasAssignmentTimestamp ;
+                            rdfs:range <https://schema.org/DateTime> ;
+                            rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                            <http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/validFrom> ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "Points to a date(time) at which the validity of an assignment begins"@en ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "has date assignment valid from"@en ,
+                                                                            "hat Datumszuweisung gültig ab"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidUntil
+:hasDateAssignmentValidUntil rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :hasAssignmentTimestamp ;
+                             rdfs:range <https://schema.org/DateTime> ;
+                             rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                             <http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/validThrough> ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Points to a date(time) at which the validity of an assignment ends"@en ;
+                             <http://www.w3.org/2004/02/skos/core#prefLabel> "has date assignment valid until"@en ,
+                                                                             "hat Datumszuweisung gültig bis"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue
+:hasNumericalValue rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                   <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/schema/qudt/value> ,
+                                                                 <http://www.molmod.info/semantics/pims-ii.ttl#isLiterally> ,
+                                                                 <https://ptb.de/si/hasValue> ;
+                   <http://www.w3.org/2004/02/skos/core#closeMatch> <https://ptb.de/si/hasNumericalValue> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Represents the numerical value of a real"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has numerical value"@en ,
+                                                                   "hat Zahlenwert"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasRorId
+:hasRorId rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :identifier ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:onDatatype xsd:string ;
+                       owl:withRestrictions ( [ xsd:pattern "https://ror.org/[0-9][0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][0-9][0-9]"
+                                              ]
+                                            )
+                     ] ;
+          rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "has research organization registry id"@en ,
+                                                         "hat Forschungsorganisationsid"@de ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A Research Organization Registry identifier, that points to a research organization"@en ,
+                                                           "Eine Identifier für Organisationen der Research Organization Registry, die eine Forschungseinrichtung eindeutig identifiziert."@de ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "has ROR ID"@en ,
+                                                          "hat ROR ID"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasSymbol
+:hasSymbol rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string ;
+           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+           <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/schema/qudt/symbol> ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Buchstabe oder Zeichenkette, die eine Variable repräsentiert"@de ,
+                                                            "Letter or string that denotes a variable"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "has symbol"@en ,
+                                                           "hat Symbol"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription
+:hasVariableDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string ;
+                        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Textual and human readable description of a variable in a research context"@en ,
+                                                                         "Textuelle und menschenlesbare Beschreibung einer Variablen im Forschungskontext"@de ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has variable description"@en ,
+                                                                        "hat Variablenbeschreibung"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+            <http://www.w3.org/2004/02/skos/core#altLabel> "besitzt eindeutigen Identifikator"@de ,
+                                                           "has unique identifier"@en ,
+                                                           "is represented through identifier"@en ,
+                                                           "wird durch Identifikator repräsentiert"@de ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A systematically built alphanumeric string that identifies a unique object (e.g. a person, a publication, an organisation, a research activity, a sample, etc.) or a unique class of objects."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "has identifier"@en ,
+                                                            "hat Identifikator"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#orcidId
+:orcidId rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :identifier ;
+         rdfs:range xsd:string ;
+         rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "has ORCID ID"@en ,
+                                                         "hat ORCID ID"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID
+:projectReferenceID rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :identifier ;
+                    rdfs:range xsd:string ;
+                    rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "An alphanumeric identifier for a project."@en ,
+                                                                     "Eine alphanumerische ID zur Referenzierung eines Projekts."@de ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "has project ID"@en ,
+                                                                    "hat Projekt-ID"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#startOfProject
+:startOfProject rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:date ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Startdatum eines Projekts"@de ,
+                                                                 "start date of a project"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektstartdatum"@de ,
+                                                                "project start date"@en .
+
+
+###  http://www.w3.org/ns/dcat#spatialResolutionInMeters
+<http://www.w3.org/ns/dcat#spatialResolutionInMeters> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:range xsd:decimal ;
+                                                      rdfs:isDefinedBy <http://www.w3.org/ns/dcat.owl> ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "Minimum spatial separation resolvable in a dataset, measured in metres."@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german labels, removed redundant notes, removed other languages than english in comment, label, changeNote and definition, adjusted spelling conform to SI"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "räumliche Auflösung (in Metern)"@de ,
+                                                                                                      "spatial resolution (in metres)"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#scopeNote> "Alternative spatial resolutions might be provided as different dataset distributions."@en ,
+                                                                                                      "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial dataset, this property will usually indicate the smallest distance between items in the dataset."@en .
+
+
+###  http://www.w3.org/ns/dcat#temporalResolution
+<http://www.w3.org/ns/dcat#temporalResolution> rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:duration ;
+                                               rdfs:isDefinedBy <http://www.w3.org/ns/dcat.owl> ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Minimum time period resolvable in a dataset."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german labels, removed redundant notes, removed other languages than english in comment, label, changeNote and definition, harmonized spelling to OBO naming conventions (lower case, space separated)"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "temporal resolution"@en ,
+                                                                                               "zeitliche Auflösung"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "Alternative temporal resolutions might be provided as different dataset distributions."@en ,
+                                                                                               "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset."@en .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:comment "The first name of a person." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Vorname"@de ,
+                                                                                      "first name"@en .
+
+
+###  http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> rdf:type owl:DatatypeProperty ;
+                                     rdfs:comment "The last name of a person." ;
+                                     rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Nachname"@de ,
+                                                                                     "last name"@en .
+
+
+###  http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> rdf:type owl:DatatypeProperty ;
+                                  rdfs:comment "Title (Mr, Mrs, Ms, Dr. etc)" ;
+                                  rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel, defined rdfs:domain and rdfs:range"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Titel"@de ,
+                                                                                  "title"@en .
+
+
+###  https://ptb.de/si/hasCoverageFactor
+<https://ptb.de/si/hasCoverageFactor> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                                   owl:onDatatype xsd:decimal ;
+                                                   owl:withRestrictions ( [ xsd:minInclusive 1.0
+                                                                          ]
+                                                                        )
+                                                 ] ;
+                                      rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "points to the coverage factor, i.e., to a factor (greater than or equal to unity) by which the expanded uncertainty relates to the standard uncertainty"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "has coverage factor"@en ,
+                                                                                      "hat Überdeckungsfaktor"@de .
+
+
+###  https://ptb.de/si/hasCoverageProbability
+<https://ptb.de/si/hasCoverageProbability> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:decimal ;
+                                                        owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                               ]
+                                                                               [ xsd:maxInclusive 1.0
+                                                                               ]
+                                                                             )
+                                                      ] ;
+                                           rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "points to the probability (between 0 and 1) ascribed to the event of the actual value falling within the range asserted by the given uncertainty declaration"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has coverage probability"@en ,
+                                                                                           "hat Deckungswahrscheinlichkeit"@de .
+
+
+###  https://ptb.de/si/hasDistribution
+<https://ptb.de/si/hasDistribution> rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "points to a descriptor/label of the assumed underlying distribution"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "has distribution"@en ,
+                                                                                    "hat Verteilung"@de .
+
+
+###  https://ptb.de/si/hasIntervalMax
+<https://ptb.de/si/hasIntervalMax> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range xsd:decimal ;
+                                   rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "upper boundary of the coverage interval"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has interval maximum"@en ,
+                                                                                   "hat Intervallmaximum"@de .
+
+
+###  https://ptb.de/si/hasIntervalMin
+<https://ptb.de/si/hasIntervalMin> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range xsd:decimal ;
+                                   rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "lower boundary of the coverage interval"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has interval minimum"@en ,
+                                                                                   "hat Intervallminimum"@de .
+
+
+###  https://ptb.de/si/hasStandardUnc
+<https://ptb.de/si/hasStandardUnc> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                owl:onDatatype xsd:decimal ;
+                                                owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                       ]
+                                                                     )
+                                              ] ;
+                                   rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "The standard measurement uncertainty is the measurement uncertainty expressed as a standard deviation"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has standard uncertainty"@en ,
+                                                                                   "hat Standardunsicherheit"@de .
+
+
+###  https://ptb.de/si/hasUncertainty
+<https://ptb.de/si/hasUncertainty> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                owl:onDatatype xsd:decimal ;
+                                                owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                       ]
+                                                                     )
+                                              ] ;
+                                   rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "absolute magnitude of the indicated uncertainty"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has uncertainty"@en ,
+                                                                                   "hat Unsicherheit"@de .
+
+
+###  https://schema.org/endTime
+<https://schema.org/endTime> rdf:type owl:DatatypeProperty ;
+                             rdfs:range <https://schema.org/DateTime> ;
+                             rdfs:comment """The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>
+
+Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."""@en ;
+                             rdfs:isDefinedBy <https://schema.org/> ;
+                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german label"@en ;
+                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Endzeit"@de ,
+                                                                             "end time"@en .
+
+
+###  https://schema.org/startTime
+<https://schema.org/startTime> rdf:type owl:DatatypeProperty ;
+                               rdfs:range <https://schema.org/DateTime> ;
+                               rdfs:comment """The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>
+
+Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."""@en ;
+                               rdfs:isDefinedBy <https://schema.org/> ;
+                               <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german label"@en ;
+                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Startzeit"@de ,
+                                                                               "start time"@en .
+
+
+###  https://schema.org/temporal
+<https://schema.org/temporal> rdf:type owl:DatatypeProperty ;
+                              rdfs:range <https://schema.org/DateTime> ;
+                              rdfs:isDefinedBy <https://schema.org.owl> ;
+                              <http://www.w3.org/2004/02/skos/core#definition> "The 'temporal' property can be used in cases where more specific properties (e.g., dateCreated, dateModified, datePublished) are not known to be appropriate"@en ;
+                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added different skos:prefLabel, added german label"@en ;
+                              <http://www.w3.org/2004/02/skos/core#prefLabel> "has timestamp"@en ,
+                                                                              "hat Zeitstempel"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisierbare Entität"@de ,
+                                                                                             "realizable entity"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rdfs:Literal rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

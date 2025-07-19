@@ -1,0 +1,459 @@
+@prefix : <https://w3id.org/pmd/co#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pmd/co> .
+
+<https://w3id.org/pmd/co> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty ;
+                                                                  rdfs:isDefinedBy <http://swrl.stanford.edu/ontologies/3.3/swrla.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty ;
+                                    rdfs:isDefinedBy <http://purl.org/dc/terms.owl> .
+
+
+###  http://purl.org/spar/datacite/hasIdentifier
+<http://purl.org/spar/datacite/hasIdentifier> rdf:type owl:ObjectProperty ;
+                                              rdfs:isDefinedBy <http://purl.org/spar/datacite.owl> .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> .
+
+
+###  https://w3id.org/pmd/co/belongsToProject
+<https://w3id.org/pmd/co/belongsToProject> rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf <https://w3id.org/pmd/co/process> ;
+                                           rdfs:range <https://w3id.org/pmd/co/Project> ;
+                                           rdfs:isDefinedBy <https://w3id.org/pmd/co.owl> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Association between a process and a project."@en ,
+                                                                                            "belongs to process"@en .
+
+
+###  https://w3id.org/pmd/co/characteristic
+<https://w3id.org/pmd/co/characteristic> rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf <https://w3id.org/pmd/co/characteristicOf> ;
+                                         rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                         rdfs:label "characteristic"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#altLabel> "has characteristic"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Die Objekteigenschaft characterisitc, wird in Verbindung mit ProzessKnoten, Prozess und Objekt verwendet und dient zur Herstellung einer Verbindung mit dem WerteObjekt. Diese Eigenschaft ermöglicht die Abbildung von Beziehungen zwischen ProzessKnoten, Prozessen und Objekten und den dazugehörigen Werten oder Attributen (Metadaten), die in WerteObjekt ausgedrückt sind."@de ,
+                                                                                          "The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects."@en .
+
+
+###  https://w3id.org/pmd/co/characteristicOf
+<https://w3id.org/pmd/co/characteristicOf> rdf:type owl:ObjectProperty ;
+                                           rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                           rdfs:label "characteristic of"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#altLabel> "is characteristic of" .
+
+
+###  https://w3id.org/pmd/co/composedOf
+<https://w3id.org/pmd/co/composedOf> rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf <https://w3id.org/pmd/co/composes> ;
+                                     rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                     rdfs:label "composed of"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> """This property is used to describe the fact that and which objects are composed of other objects, i.e. it is used to describe the specific constituents or ingredients that form a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole."""@en ,
+                                                                                      "This property is used to describe which voxels and materials an object is composed of."@en .
+
+
+###  https://w3id.org/pmd/co/composes
+<https://w3id.org/pmd/co/composes> rdf:type owl:ObjectProperty ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "composes"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> """Diese Eigenschaft wird verwendet, um die Tatsache zu beschreiben, dass und welche Objekte andere Objekte zusammensetzen, d. h. sie wird verwendet, um die spezifischen Bestandteile oder Zutaten zu beschreiben, aus denen ein bestimmtes Gebilde oder Objekt besteht. 
+Als Präpositionalphrase bezeichnet sie die Elemente, Teile oder Komponenten, aus denen sich ein anderes Objekt zusammensetzt."""@de ,
+                                                                                    """This property is used to describe the fact that and which objects compose other objects, i.e. it is used to describe the specific constituents or ingredients forming a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole of another object."""@en ,
+                                                                                    "This property is used to describe which objects a voxel or a material contributes to compose."@en .
+
+
+###  https://w3id.org/pmd/co/executedBy
+<https://w3id.org/pmd/co/executedBy> rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf <https://w3id.org/pmd/co/executes> ;
+                                     rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                     rdfs:label "executed by"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "This property represents which process is executed by which process node."@en .
+
+
+###  https://w3id.org/pmd/co/executes
+<https://w3id.org/pmd/co/executes> rdf:type owl:ObjectProperty ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "executes"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "This property represents which ProcessingNode executes a Process."@en .
+
+
+###  https://w3id.org/pmd/co/input
+<https://w3id.org/pmd/co/input> rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <https://w3id.org/pmd/co/participant> ;
+                                owl:inverseOf <https://w3id.org/pmd/co/inputOf> ;
+                                rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                rdfs:label "input"@en ;
+                                <http://www.w3.org/2004/02/skos/core#altLabel> "has input" ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "This property is used to link the processes to their input objects."@en .
+
+
+###  https://w3id.org/pmd/co/inputOf
+<https://w3id.org/pmd/co/inputOf> rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf <https://w3id.org/pmd/co/participantOf> ;
+                                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                  rdfs:label "input of"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#altLabel> "is input of" .
+
+
+###  https://w3id.org/pmd/co/isResourceOf
+<https://w3id.org/pmd/co/isResourceOf> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf <https://w3id.org/pmd/co/resource> ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                       rdfs:label "is resource of" .
+
+
+###  https://w3id.org/pmd/co/nextProcess
+<https://w3id.org/pmd/co/nextProcess> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <https://w3id.org/pmd/co/previousProcess> ;
+                                      rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                      rdfs:label "next process"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "has next process"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "This property is used to indicate the process that was run after the current process."@en .
+
+
+###  https://w3id.org/pmd/co/output
+<https://w3id.org/pmd/co/output> rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf <https://w3id.org/pmd/co/participant> ;
+                                 owl:inverseOf <https://w3id.org/pmd/co/outputOf> ;
+                                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                 rdfs:label "output"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#altLabel> "has output" ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> "This property is used to link the processes to their output objects"@en .
+
+
+###  https://w3id.org/pmd/co/outputOf
+<https://w3id.org/pmd/co/outputOf> rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf <https://w3id.org/pmd/co/participantOf> ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "output of"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#altLabel> "is output of"@en .
+
+
+###  https://w3id.org/pmd/co/participant
+<https://w3id.org/pmd/co/participant> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <https://w3id.org/pmd/co/participantOf> ;
+                                      rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                      rdfs:label "participant"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "has participant" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A relation between a process and an object, in which the objects is somehow involved in the process."@en .
+
+
+###  https://w3id.org/pmd/co/participantOf
+<https://w3id.org/pmd/co/participantOf> rdf:type owl:ObjectProperty ;
+                                        rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                        rdfs:label "participant of"@en ;
+                                        <http://www.w3.org/2004/02/skos/core#altLabel> "is participant of"@en .
+
+
+###  https://w3id.org/pmd/co/previousProcess
+<https://w3id.org/pmd/co/previousProcess> rdf:type owl:ObjectProperty ;
+                                          rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                          rdfs:label "previous process"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#altLabel> "has previous process" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "This property is used to indicate that which process was previously run."@en .
+
+
+###  https://w3id.org/pmd/co/process
+<https://w3id.org/pmd/co/process> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <https://w3id.org/pmd/co/Project> ;
+                                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                  rdfs:label "process"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#altLabel> "has process"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "Describes that a process is associated with a project."@en .
+
+
+###  https://w3id.org/pmd/co/relatesTo
+<https://w3id.org/pmd/co/relatesTo> rdf:type owl:ObjectProperty ;
+                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                    rdfs:label "relates to"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Describes a general relationship between domain objects."@en .
+
+
+###  https://w3id.org/pmd/co/relatesToElement
+<https://w3id.org/pmd/co/relatesToElement> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <https://w3id.org/pmd/co/relatesTo> ;
+                                           rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                           rdfs:label "relates to element"@en .
+
+
+###  https://w3id.org/pmd/co/resource
+<https://w3id.org/pmd/co/resource> rdf:type owl:ObjectProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "resource"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#altLabel> "has resource"@en .
+
+
+###  https://w3id.org/pmd/co/state
+<https://w3id.org/pmd/co/state> rdf:type owl:ObjectProperty ;
+                                rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                rdfs:label "state"@en .
+
+
+###  https://w3id.org/pmd/co/subordinateProcess
+<https://w3id.org/pmd/co/subordinateProcess> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <https://w3id.org/pmd/co/superordinateProcess> ;
+                                             rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                             rdfs:label "subordinate process"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#altLabel> "has subordinate process" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "This property is used to link a process to its subordinate processes."@en .
+
+
+###  https://w3id.org/pmd/co/superordinateProcess
+<https://w3id.org/pmd/co/superordinateProcess> rdf:type owl:ObjectProperty ;
+                                               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                               rdfs:label "superordinate process"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#altLabel> "has superordinate process"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "This property is used to link a process to its super ordinated processes."@en .
+
+
+###  https://w3id.org/pmd/co/unit
+<https://w3id.org/pmd/co/unit> rdf:type owl:ObjectProperty ;
+                               rdfs:comment "Examples for rdsf:range are units from qudt or wikidata or own defindes units." ;
+                               rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                               rdfs:label "unit"@en ;
+                               <http://www.w3.org/2004/02/skos/core#altLabel> "has unit"@en ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "Unit of measurement."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/pmd/co/fromValue
+<https://w3id.org/pmd/co/fromValue> rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf <https://w3id.org/pmd/co/value> ;
+                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                    rdfs:label "from value"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "refers to the begin of a value range" .
+
+
+###  https://w3id.org/pmd/co/maxValue
+<https://w3id.org/pmd/co/maxValue> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf <https://w3id.org/pmd/co/value> ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "max value"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "refers to all values equal or smaller than the given one"@en .
+
+
+###  https://w3id.org/pmd/co/minValue
+<https://w3id.org/pmd/co/minValue> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf <https://w3id.org/pmd/co/value> ;
+                                   rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                   rdfs:label "min value"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "refers to all values equal or larger than the given one"@en .
+
+
+###  https://w3id.org/pmd/co/toValue
+<https://w3id.org/pmd/co/toValue> rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf <https://w3id.org/pmd/co/value> ;
+                                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                  rdfs:label "to value"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "refers to the end of a value range" .
+
+
+###  https://w3id.org/pmd/co/value
+<https://w3id.org/pmd/co/value> rdf:type owl:DatatypeProperty ;
+                                rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                rdfs:label "hat Wert"@de ,
+                                           "value"@en ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "Provides the actual value a value object is referring to."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/pmd/co/Identifier
+<https://w3id.org/pmd/co/Identifier> rdf:type owl:Class ;
+                                     rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                     rdfs:label "Identifier"@en ,
+                                                "Identifikator"@de ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "A named value intended to distinguish between entities."@en .
+
+
+###  https://w3id.org/pmd/co/Project
+<https://w3id.org/pmd/co/Project> rdf:type owl:Class ;
+                                  rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                  rdfs:label "Project"@en ,
+                                             "Projekt"@de ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "A series of goal-orientated (intent) activities and interactions to achieve a specific outcome."@en ,
+                                                                                   "Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen."@de .
+
+
+###  https://w3id.org/pmd/co/ProjectIdentifier
+<https://w3id.org/pmd/co/ProjectIdentifier> rdf:type owl:Class ;
+                                            owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/pmd/co/Identifier>
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <https://w3id.org/pmd/co/characteristicOf> ;
+                                                                                         owl:someValuesFrom <https://w3id.org/pmd/co/Project>
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ] ;
+                                            rdfs:subClassOf <https://w3id.org/pmd/co/Identifier> ;
+                                            rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                            rdfs:label "Project Identifier"@en ,
+                                                       "Projektidentifikator"@de ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A colloquial, human-generated, descriptive text qualifying the nature of a project."@en ,
+                                                                                             "Ein umgangssprachlicher, von Menschen erstellter, beschreibender Text, der die Art eines Projekts qualifiziert."@de .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000111> "example to be eventually removed"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "example to be eventually removed"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000114> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000111> "metadata complete"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "metadata complete"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000111> "organizational term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "organizational term"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000111> "ready for release"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "ready for release"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000111> "metadata incomplete"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "metadata incomplete"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000111> "uncurated"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "uncurated"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000111> "pending final vetting"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "pending final vetting"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000111> "to be replaced with external ontology term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "to be replaced with external ontology term"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000428> <http://purl.obolibrary.org/obo/IAO_0000115> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "requires discussion"@en .
+
+
+rdfs:Literal rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+xsd:boolean rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+<http://www.w3.org/2004/02/skos/core#example> rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+<http://www.w3.org/ns/prov#constraints> rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> .
+
+
+<http://www.w3.org/ns/prov#editorialNote> rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> .
+
+
+<https://w3id.org/pmd/co/definitionSource> rdfs:isDefinedBy <https://w3id.org/pmd/co.owl> .
+
+
+<https://w3id.org/pmd/co/symbol> rdfs:isDefinedBy <https://w3id.org/pmd/co.owl> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
