@@ -1,0 +1,3 @@
+http://purl.org/wild/vocab#AtomicActivity
+http://purl.org/wild/vocab#SequentialActivity
+http://purl.org/wild/vocab#hasChildActivity

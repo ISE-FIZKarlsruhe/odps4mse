@@ -1,0 +1,5 @@
+https://gpo.ontology.link/GPO_1880a2e6_0c9f_425a_9615_d4bdf121215f
+https://gpo.ontology.link/GPO_a7003b69_ce78_48fe_a717_e04e1266c6cd
+http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
+http://emmo.info/emmo/middle/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22
+http://emmo.info/emmo#EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840

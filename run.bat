@@ -2,7 +2,15 @@
 setlocal enabledelayedexpansion
 
 REM Define the ontologies to process
-set ONTOLOGIES=pmdco.owl pmdcore.ttl
+set ONTOLOGIES=
+
+REM Loop through all .owl and .ttl files in the Ontologies directory
+for %%F in (Ontologies\*.owl Ontologies\*.ttl) do (
+    set "ONTOLOGIES=!ONTOLOGIES! %%~nxF"
+)
+
+REM Show the result
+echo ONTOLOGIES = %ONTOLOGIES%
 
 REM Define the methods to run
 set METHODS=STAR TOP BOT subset
@@ -10,20 +18,21 @@ set INTERMEDIATES=all minimal none
 
 REM Loop through each ontology
 for %%O in (%ONTOLOGIES%) do (
+    
     REM Extract base name (e.g., pmdcore from pmdcore.ttl)
     for %%F in (%%O) do (
         set "ONT_NAME=%%~nF"
     )
-
+    
     REM Find all term files in Terms/<ontology_name>/
-    for %%T in (Terms/!ONT_NAME!\*_terms.txt) do (
+    for %%T in (Terms/!ONT_NAME!\*.txt) do (
         REM Extract the term set name (e.g., process_steps from process_steps_terms.txt)
         for %%A in (%%~nT) do (
             set "TERM_FILENAME=%%~nA"
         )
-
+        echo !TERM_FILENAME!
         REM Remove "_terms" from the filename to get term set name
-        set "TERM_SET=!TERM_FILENAME:_terms=!"
+        set "TERM_SET=!TERM_FILENAME!"
 
         REM Set output directory
         set "OUTPUT_DIR=Patterns/!ONT_NAME!\!TERM_SET!"

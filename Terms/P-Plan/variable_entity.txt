@@ -1,0 +1,4 @@
+http://purl.org/net/p-plan#Entity
+http://purl.org/net/p-plan#Variable
+http://purl.org/net/p-plan#correspondsToVariable
+http://purl.org/net/p-plan#isVariableOfPlan

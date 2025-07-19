@@ -1,3 +1,0 @@
-http://purl.obolibrary.org/obo/BFO_0000015
-https://w3id.org/pmd/co/PMD_0000015
-https://w3id.org/pmd/co/PMD_0000016

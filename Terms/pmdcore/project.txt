@@ -1,0 +1,4 @@
+https://w3id.org/pmd/co/Project
+https://w3id.org/pmd/co/ProjectIdentifier
+https://w3id.org/pmd/co/belongsToProject
+https://w3id.org/pmd/co/characteristicOf

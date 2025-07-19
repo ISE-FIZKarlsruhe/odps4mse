@@ -1,0 +1,11 @@
+http://pims.org/vocab#Value
+http://qudt.org/vocab/unit#CEL
+http://qudt.org/vocab/unit#unit
+http://w3id.org/nfdi4ing/metadata4ing#Assignment
+http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity
+http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue
+http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity
+http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue
+http://w3id.org/nfdi4ing/metadata4ing#hasParameter
+http://w3id.org/nfdi4ing/metadata4ing#hasUnit
+http://w3id.org/nfdi4ing/metadata4ing#hasVariable

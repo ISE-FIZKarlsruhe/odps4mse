@@ -1,0 +1,2 @@
+http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState
+http://purl.org/wild/vocab#State

@@ -1,0 +1,6 @@
+http://purl.org/wild/vocab#ActivityInstance
+http://purl.org/wild/vocab#WorkflowInstance
+http://purl.org/wild/vocab#activityInstanceOf
+http://purl.org/wild/vocab#hasState
+http://purl.org/wild/vocab#inWorkflowInstance
+http://purl.org/wild/vocab#workflowInstanceOf
