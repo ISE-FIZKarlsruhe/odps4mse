@@ -1,0 +1,12 @@
+IRI,Similarity
+http://w3id.org/nfdi4ing/metadata4ing#realizesMethod,0.5803
+http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn,0.5588
+http://purl.obolibrary.org/obo/RO_0002352,0.5488
+http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool,0.5453
+http://purl.obolibrary.org/obo/RO_0002233,0.5452
+http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction,0.5401
+http://purl.obolibrary.org/obo/BFO_0000015,0.5362
+http://purl.obolibrary.org/obo/RO_0002353,0.4849
+http://www.molmod.info/semantics/pims-ii.ttl#Property,0.4225
+http://purl.obolibrary.org/obo/RO_0002234,0.4153
+http://purl.obolibrary.org/obo/RO_0000057,0.4149

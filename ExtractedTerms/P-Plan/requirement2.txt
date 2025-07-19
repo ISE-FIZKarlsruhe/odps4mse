@@ -1,0 +1,2 @@
+http://purl.org/net/p-plan#hasInputVar
+http://purl.org/net/p-plan#hasOutputVar

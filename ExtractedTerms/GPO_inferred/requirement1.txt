@@ -1,0 +1,9 @@
+https://gpo.ontology.link/GPO_ee8c37fd_9f2c_4047_b25d_4149894bd7c0
+https://gpo.ontology.link/GPO_01cd2578_8730_4ac9_a555_9112728ea939
+http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
+https://gpo.ontology.link/GPO_aa602472_ba16_4375_b8b3_868f84324ec7
+http://emmo.info/emmo#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7
+http://emmo.info/emmo#EMMO_4091d5ec_a4df_42b9_a073_9a090839279f
+http://emmo.info/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
+https://gpo.ontology.link/GPO_2680e8c9_b5d0_4d50_9a33_52e4270669d8
+http://emmo.info/emmo#EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca

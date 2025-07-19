@@ -1,0 +1,181 @@
+@prefix : <http://OntoCAPE/chemical_process_system/CPS_function/process.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://OntoCAPE/chemical_process_system/CPS_function/process.owl> .
+
+<http://OntoCAPE/chemical_process_system/CPS_function/process.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://OntoCAPE/upper_level/network_system.owl#enters
+<http://OntoCAPE/upper_level/network_system.owl#enters> rdf:type owl:ObjectProperty ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#hasInput
+<http://OntoCAPE/upper_level/network_system.owl#hasInput> rdf:type owl:ObjectProperty ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#hasOutput
+<http://OntoCAPE/upper_level/network_system.owl#hasOutput> rdf:type owl:ObjectProperty ;
+                                                           rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#leaves
+<http://OntoCAPE/upper_level/network_system.owl#leaves> rdf:type owl:ObjectProperty ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem
+<http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> rdf:type owl:ObjectProperty ;
+                                                            rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep
+:AggregatedProcessStep rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :ProcessStep
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                                                                    owl:someValuesFrom :ProcessStep
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:comment "An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence." ;
+                       rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct
+:IntermediateProduct rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :ProcessState
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                                                  owl:someValuesFrom :ProcessStep
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                                                  owl:someValuesFrom :ProcessStep
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     owl:disjointWith :RawMaterial ;
+                     rdfs:comment "An IntermediateProduct is a ChemicalProduct that is produced in a ProcessStep and is used in another ProcessStep in the whole processing system." ;
+                     rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct
+:OutputProduct rdf:type owl:Class ;
+               rdfs:subClassOf :ProcessState ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                 owl:someValuesFrom :ProcessStep
+                               ] ;
+               owl:disjointWith :RawMaterial ;
+               rdfs:comment "An OutputProduct is a Material that is output by a ProcessStep." ;
+               rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState
+:ProcessState rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                owl:allValuesFrom :ProcessStep
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                owl:allValuesFrom :ProcessStep
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :ProcessState
+                                                                  :ProcessStep
+                                                                )
+                                                  ]
+                              ] ;
+              rdfs:comment "A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step." ;
+              rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep
+:ProcessStep rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                               owl:someValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasOutput> ;
+                               owl:someValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                               owl:allValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasOutput> ;
+                               owl:allValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :ProcessState
+                                                                 :ProcessStep
+                                                               )
+                                                 ]
+                             ] ;
+             rdfs:comment "A ProcessStep is a certain material processing procedure." ;
+             rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial
+:RawMaterial rdf:type owl:Class ;
+             rdfs:subClassOf :ProcessState ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                               owl:someValuesFrom :ProcessStep
+                             ] ;
+             rdfs:comment "A RawMaterial is a Material that enters a ProcessStep." ;
+             rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Batch rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+:Continuous rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+<http://OntoCAPE/upper_level/system.owl#isSubsystemOf> rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

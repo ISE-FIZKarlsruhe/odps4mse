@@ -24,8 +24,8 @@ for %%O in (%ONTOLOGIES%) do (
         set "ONT_NAME=%%~nF"
     )
     
-    REM Find all term files in Terms/<ontology_name>/
-    for %%T in (Terms/!ONT_NAME!\*.txt) do (
+    REM Find all term files in GroundtruthTerms/<ontology_name>/
+    for %%T in (GroundtruthTerms/!ONT_NAME!\*.txt) do (
         REM Extract the term set name (e.g., process_steps from process_steps_terms.txt)
         for %%A in (%%~nT) do (
             set "TERM_FILENAME=%%~nA"
