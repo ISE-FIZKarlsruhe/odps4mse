@@ -1,4 +1,4 @@
 Evaluation Metrics:
-Precision: 0.0000
-Recall: 0.0000
-F1-score: 0.0000
+Precision: 0.3333
+Recall: 0.2500
+F1-score: 0.2857
