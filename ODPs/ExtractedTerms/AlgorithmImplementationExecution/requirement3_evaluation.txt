@@ -1,0 +1,25 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+http://purl.org/dc/elements/1.1/source: Source: (A related resource from which the described resource is derived.)
+http://purl.org/dc/elements/1.1/relation: Relation: (A related resource.)
+http://purl.org/dc/elements/1.1/contributor: Contributor: (An entity responsible for making contributions to the resource.)
+http://purl.org/dc/elements/1.1/creator: Creator: (An entity primarily responsible for making the resource.)
+http://purl.org/dc/elements/1.1/coverage: Coverage: (The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.)
+http://purl.org/dc/elements/1.1/publisher: Publisher: (An entity responsible for making the resource available.)
+http://purl.org/dc/elements/1.1/date: Date: (A point or period of time associated with an event in the lifecycle of the resource.)
+http://purl.org/dc/elements/1.1/subject: Subject: (The topic of the resource.)
+http://purl.org/dc/elements/1.1/description: Description: (An account of the resource.)
+http://purl.org/dc/elements/1.1/title: Title: (A name given to the resource.)
+http://purl.org/dc/elements/1.1/identifier: Identifier: (An unambiguous reference to the resource within a given context.)
+http://purl.org/dc/elements/1.1/format: Format: (The file format, physical medium, or dimensions of the resource.)
+http://purl.org/dc/elements/1.1/language: Language: (A language of the resource.)
+http://www.w3.org/ns/mls#hasPart: hasPart:
+http://purl.org/dc/elements/1.1/type: Type: (The nature or genre of the resource.)
+http://www.w3.org/ns/mls#implements: implements:
+http://purl.org/dc/elements/1.1/rights: Rights: (Information about rights held in and over the resource.)
+http://www.w3.org/ns/mls#Process: Process:
+http://www.w3.org/ns/mls#definedOn: definedOn:
+http://www.w3.org/ns/mls#hasInput: hasInput:
+http://www.w3.org/ns/mls#hasParameter: hasHyperParameter:

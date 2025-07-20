@@ -1,4 +1,299 @@
 Evaluation Metrics:
-Precision: 0.0000
-Recall: 0.0000
-F1-score: 0.0000
+Precision: 0.1500
+Recall: 0.6000
+F1-score: 0.2400
+https://w3id.org/pmd/co/MaterialRelated: Material Related: This property is used to qualitatively and quantitatively describe a material by providing information on a material, e.g., by including material properties, material structure, etc.
+https://w3id.org/pmd/co/TransformativeAnalysisProcess: Transformative Analysis Process: An analysis process that is transformative.
+https://w3id.org/pmd/co/AmorphousStructure: Amorphous Structure: Amorphous materials have an internal structure consisting of interconnected structural blocks that can be similar to the basic structural units found in the corresponding crystalline phase of the same compound. Unlike in crystalline materials, however, no long-range order exists. Amorphous materials therefore cannot be defined by a finite unit cell.
+https://w3id.org/pmd/co/MaterialQuality: Material Quality:
+https://w3id.org/pmd/co/executes: executes: This property represents which ProcessingNode executes a Process.
+https://w3id.org/pmd/co/MaterialStructure: Material Structure: The relevant structure of materials has a different length scale depending on the material. The structure and composition of a material can be determined by microscopy or spectroscopy.
+https://w3id.org/pmd/co/SemiCrystallineStructure: Semi Crystalline Structure: Solid materials exhibiting a semi-crystalline structure contain both crystalline and amorphous sections (domains). Crystalline substances that are polycrystals rather than single crystals are not designated as semicrystalline, even if there is a thin amorphous film between the crystallites.
+https://w3id.org/pmd/co/MechanicalTestingProcess: Mechanical Testing Process: A mechanical testing process ia process that determines mechanical properties.
+https://w3id.org/pmd/co/Biological: Biological: Biological is relating to biology or to life and living processes. Here specifically to the biological properties of a material.
+https://w3id.org/pmd/co/ThermalInsulation: Thermal Insulation: Thermal insulation is the reduction of heat transfer (i.e., the transfer of thermal energy between objects of differing temperature) between objects in thermal contact or in range of radiative influence. Thermal insulation can be achieved with specially engineered methods or processes, as well as with suitable object shapes and materials.
+https://w3id.org/pmd/co/ChemicalComposition: Chemical Composition: Chemical composition refers to the arrangement, type, and ratio of atoms in molecules of chemical substances. Chemical composition varies when chemicals are added or subtracted from a substance, when the ratio of substances changes, or when other chemical changes occur in chemicals.
+https://w3id.org/pmd/co/Diameter: Diameter: The length of a straight line through the center of an object or space.
+https://w3id.org/pmd/co/Temperature: Temperature: The degree of hotness or coldness measured on a definite scale.
+https://w3id.org/pmd/co/composes: composes: This property is used to describe the fact that and which objects compose other objects, i.e. it is used to describe the specific constituents or ingredients forming a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole of another object. This property is used to describe which objects a voxel or a material contributes to compose.
+https://w3id.org/pmd/co/process: process: Describes that a process is associated with a project.
+https://w3id.org/pmd/co/Operator: Operator: A person that operates a machine or device.
+https://w3id.org/pmd/co/ParticleNumber: Particle Number: The particle number enables the explicit assignment of measured properties to a specific particle.
+https://w3id.org/pmd/co/TemperatureMeasuringDevice: Temperature Measuring Device: This entity generically describes any tool that is used for the measurement of the temperature of a tangible object or the environment, e.g., a thermocouple and thermometers.
+https://w3id.org/pmd/co/DimensionMeasuringDevice: Dimension Measuring Device: This entity generically describes any tool that is used for the measurement of the dimensions of a tangible object, e.g., a caliper.
+https://w3id.org/pmd/co/TemperatureChangingProcess: Temperature Changing Process: A conditioning process which is run to increase or decrease the temperature of an object or a space. Usually, this involves heating or cooling devices such as furnaces or cooling media.
+https://w3id.org/pmd/co/Furnace: Furnace: An enclosed structure in which heat is produced (as for heating a house or for reducing ore).
+https://w3id.org/pmd/co/ProjectIdentifier: Project Identifier: A colloquial, human-generated, descriptive text qualifying the nature of a project.
+https://w3id.org/pmd/co/participantOf: participant of:
+https://w3id.org/pmd/co/Thermocouple: Thermocouple: A device for measuring temperature in which a pair of wires of dissimilar metals (such as copper and iron) are joined and the free ends of the wires are connected to an instrument (such as a voltmeter) that measures the difference in potential created at the junction of the two metals.
+https://w3id.org/pmd/co/FeretDiameter: Feret diameter: The Feret diameter or Feret's diameter is a measure of an object size along a specified direction. In general, it can be defined as the distance between the two parallel planes restricting the object perpendicular to that direction.
+(cf. Wikipedia: https://en.wikipedia.org/wiki/Feret_diameter)
+https://w3id.org/pmd/co/ManufacturingNode: Manufacturing Node: A processing node that implements transformative processes as well as consumes and creates tangible objects and typically requires inputs
+In general but not necessarily, a manufacture node includes intrinsic analysis nodes that create corresponding measurements with respect to the process implemented by the manufacture node.
+https://w3id.org/pmd/co/NotDetected: Not Detected: Indicates that an chemical element has not been detected in a corresponding experiment.
+https://w3id.org/pmd/co/PixelDensity: Pixel density: The pixel density of an electronic image device.
+https://w3id.org/pmd/co/OpticalMicroscopy: Optical Microscopy: A microscopy process in which light rays are seen directly by the observer as distinguished from one (as an electron microscope) in which some transformation or system of indirect viewing is use.
+https://w3id.org/pmd/co/RegionOfInterest: Region of Interest: Some region of interest (ROI) in an image. Describe the ROI by use of Web Annotation Vocabulary (https://www.w3.org/TR/annotation-vocab/). The ROI is understood as the target of a (body-less) annotation. 
+
+The web annotation model suggests the use of different fragment specifications (https://www.w3.org/TR/annotation-model/#fragment-selector), however we suggest to prefer media fragments (https://www.w3.org/TR/media-frags/).
+https://w3id.org/pmd/co/FurnaceCharacteristic: Furnace Characteristic: Properties that describe the functions and capabilities of a heat treatment process node.
+https://w3id.org/pmd/co/Width: Width: This entity describes a horizontal measurement of an object taken at right angles to the length of the object.
+https://w3id.org/pmd/co/Rectangular: Rectangular: Shaped like a rectangle.
+https://w3id.org/pmd/co/Regression: Regression: A functional relationship between two or more correlated variables that is often empirically determined from data and is used especially to predict values of one variable when given values of the others.
+Specifically : a function that yields the mean value of a random variable under the condition that one or more independent variables have specified values.
+https://w3id.org/pmd/co/ConditioningProcess: Conditioning Process: A process that comprises the procedure and measures by which a material object is adapted to predefined environmental conditions.
+https://w3id.org/pmd/co/Voxel: Voxel: An element representing a value on a grid in three dimensional space.
+In PMD, an infinitesimal part of an object which is made of a homogenuous material. Size depends on the observed material level. For now, geometrically, a cubus is assumed.
+Made of a material
+Different Voxels can have different material properties and material structure
+A (partial) logical object that describes (a part of) a physical object An element representing a value on a grid in three dimensional space.
+In PMD, an infinitesimal part of an object which is made of a homogenuous material. Size depends on the observed material level. For now, geometrically, a cubus is assumed.
+Different Voxels can have different material properties and material structure
+A (partial) logical object that describes (a part of) a physical object
+https://w3id.org/pmd/co/Manufacturer: Manufacturer: Processing Node's manufacturer name, e.g.: "Ipsen", "UPC" or "Bosch"
+https://w3id.org/pmd/co/WeightedYCoordinate: Weighted Y coordinate: Mass center of grey values in the other direction
+https://w3id.org/pmd/co/MinorAxisDiameter: Major axis diameter: The longest diameter of an ellipse.
+https://w3id.org/pmd/co/Medium: Medium: Substance that surrounds an object inside the system boundaries of a processing node.
+https://w3id.org/pmd/co/TestingRate: Testing Rate: rate (resp. rates) used during the test
+https://w3id.org/pmd/co/Elliptical: Elliptical: Shaped like an ellipse.
+https://w3id.org/pmd/co/TestPieceInfo: Test Piece Info: This property is used to provide information on a test piece such as its geometric shape, classification, and other parameters, including specifications and nominal values. The information is provided with respect to corresponding standards.
+https://w3id.org/pmd/co/IonicBond: Ionic Bond: Ionic bond is a chemical bond formed between oppositely charged species because of their mutual electrostatic attraction.
+https://w3id.org/pmd/co/TestPiece: Test Piece: Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test.
+https://w3id.org/pmd/co/jsonPath: json path: A path expression that allows the elements of a JSON document to be specifically addressed.
+https://w3id.org/pmd/co/NodeModel: Node Model: Processing Node short description, e.g. "Vacuum Furnace"
+https://w3id.org/pmd/co/NonTransformativeAnalysisProcess: Non Transformative Analysis Process: An analysis process that is non-transformative.
+https://w3id.org/pmd/co/StartTime: Start Time: The date and time when a plan/recipe or process is executed.
+https://w3id.org/pmd/co/BondingType: BondingType: Any of several forces, especially the ionic bond, covalent bond, and metallic bond, by which atoms or ions are bound in a molecule or crystal.
+https://w3id.org/pmd/co/output: output: This property is used to link the processes to their output objects
+https://w3id.org/pmd/co/WorkingRange: Working Range: This property describes the region between the limits within which a processing node (e.g., a machine) is capable of being used for its intended purpose, expressed by stating the lower and upper range values of interest.
+https://w3id.org/pmd/co/EnvironmentalTemperature: Environmental Temperature: This property describes the observed temperature surrounding a tangible object considered. This may include room temperature and temperatures measured in test chambers.
+https://w3id.org/pmd/co/Metadata: Metadata: This data scope expresses that a :ValueObject refers to attributes and additional data (provenance) on production, laboratory, process system and objects that enable an evaluation of the quality/reliability of the measurements and a systematic search task in a database.
+https://w3id.org/pmd/co/ChemicalObject: Chemical Object: Value object that describes the quantity (e.g. mass fraction) of a specific chemical object.
+https://w3id.org/pmd/co/ClassificationDocument: Classification Document: This entity describes a document used to define the working or application range of a process node in accordance with standardized graduations.
+https://w3id.org/pmd/co/Method: Method: A way, technique, or process of or for doing something
+https://w3id.org/pmd/co/xPath: x path: A non-XML-based path expression that allows the elements of an XML document to be specifically addressed.
+https://w3id.org/pmd/co/MetallicBond: Metallic Bond: Metallic bond is the chemical bond typical of the metallic state and characterized by mobile valence electrons that hold the atoms together usually in crystal lattices and are responsible for the good electrical and heat conductivity of metals.
+https://w3id.org/pmd/co/Stress: Stress: Dimensional Analysis: 
+ML*-1T*-2 Units: Pa (SI), psi At any moment during the test, force divided by the original cross-sectional area, S_o, of the test piece
+
+Note: Here, all references to stress are to engineering stress.
+https://w3id.org/pmd/co/Mechanical: Mechanical: Mechanical is relating to, governed by, or in accordance with the principles of mechanics. Here specifically to the mechanical properties of a material.
+https://w3id.org/pmd/co/Caliper: Caliper: any of various measuring instruments having two usually adjustable arms, legs, or jaws used especially to measure the dimensions of objects, such as diameters or thicknesses
+https://w3id.org/pmd/co/CrossSectionDetermination: Cross Section Determination: Cross section is a cutting or piece of something cut off at right angles to an axis
+also : a representation of such a cutting.
+https://w3id.org/pmd/co/Document: Document: An original or official paper relied on as the basis, proof, or support of something
+https://w3id.org/pmd/co/Component: Component: An object that serves a specific technical application. Constituent part of a compound of parts that builds a technical application.
+https://w3id.org/pmd/co/VolumeFraction: Volume Fraction: This value object describes one of several portions of the property of a body that is a measure of the amount of material it contains and causes it to have volume.
+https://w3id.org/pmd/co/PixelUnit: Pixel Unit: In digital imaging, a pixel (abbreviated px), pel, or picture element is the smallest addressable element in a raster image, or the smallest point in an all points addressable display device. In most digital display devices, pixels are the smallest element that can be manipulated through software. Here it is referred to as a unit of counted pixels. (It is not an officially recognized unit).
+https://w3id.org/pmd/co/ManufacturingProcess: Manufacture Process: A process that is driven by the primary intent to transform objects.
+https://w3id.org/pmd/co/Time: Time: A nonspatial continuum that is measured in terms of events which succeed one another from past through present to future.
+https://w3id.org/pmd/co/SetPoint: Set Point: This value scope expresses that a :ValueObject is the desired or target value for an essential variable, or process value (PV) of a control system. The ValueScope Setpoint generally refers to the desired value of a quantitative characteristic of a system, from which the actual value should deviate as little as possible.
+https://w3id.org/pmd/co/Thermal: Thermal: Thermal is relating to, or caused by heat. Here specifically to the thermal properties of a material.
+https://w3id.org/pmd/co/CoatingDesignation: Coating Designation: This property is a name or identifier of a material type which designates the most upper part of a component (coating).
+https://w3id.org/pmd/co/AgingInterval: Aging Interval: Timespan a Temperature during  an Aging Process is hold.
+https://w3id.org/pmd/co/LengthChangingProcess: Length Changing Process: A geometry changing process which changes the length characteristic of an object.
+https://w3id.org/pmd/co/ProvidedIdentifier: Provided Identifier: A colloquial, human-generated descriptor.
+https://w3id.org/pmd/co/Squared: Squared: Having four equal sides and four right angles.
+https://w3id.org/pmd/co/InspectionDocument: Inspection Document: This entity describes a document used to give information on the examination of a tangible object, usually including an examination date, a typical examination interval and the state of the examined object. Typically, this is used for processing nodes.
+https://w3id.org/pmd/co/DemountingProcess: Demounting Process: An assembling process in which a test piece or specimen is removed from a test machine.
+https://w3id.org/pmd/co/NodeSerialNumber: Node Serial Number: A unique identifier of a processing node, typically provided by the manufacturer (manufacturer serial number,  s/n).
+https://w3id.org/pmd/co/DataScope: Data Scope: This class is used to categorize data with respect to their intended usage in accordance with a regarded object or process.
+https://w3id.org/pmd/co/DigitalEntity: Digital Entity: An entity with digital representation.
+https://w3id.org/pmd/co/Sample: Sample: Portion of material, usually selected from a larger quantity of material, collected and taken away for testing
+https://w3id.org/pmd/co/AnalysingProcess: Analysing Process: A process that is driven by the primary intent to gain new measurements.
+https://w3id.org/pmd/co/Blank: Blank: A piece of material prepared to be made into something by a further operation.
+https://w3id.org/pmd/co/VanderwaalsBond: Vanderwaals Bond: Van der Waals bond is given by the relatively weak attractive forces that act on neutral atoms and molecules and that arise because of the electric polarization induced in each of the particles by the presence of other particles.
+https://w3id.org/pmd/co/ValueObject: Value Object: A :ValueObject is an entity which represents a specific value. This value can be a numerical, textual, or a more complex data structure. If a literal value is to be specified, the :value datatype property has to be used. In cases where the value is represented by a resource (e.g. URI), the :resource object property has to be used.
+
+A value object, respectively its value, is always associated with an entity of type :Process, :ProcessingNode, :Object (e.g. :Specimen), :DigitalEntity, :Project, or other :ValueObject. The value is meant to be a charactaristic of the associated entity. To express this association it is indended to use the :characteristic object property if the value decribes some \"quality\", or the :participant (:input,:output) if it is participating a process.
+
+A value object might also refer to a unit. The :unit property might be used (e.g. with QUDT ontology).
+
+Instances of a value object might also be a type of :ValueScope, namely a :SetPoint (nominal value), or :Measurement (measured value). With :Setpoint the intend is to express, that the value is meant to be some preset, setting or nominal value. :Measurement expresses, that the value has been measured or determined somehow (see example).
+
+Instances of a value object might also be specified in a specific :DataScope (:Metadata, :PrimaryData, :SecondaryData).
+https://w3id.org/pmd/co/MeasuringProcess: Measuring Process: A measurement process is an analysis process that acquires data (usually expressed in numbers) by using tools.
+http://purl.org/spar/datacite/Identifier: DataCite Identifier:
+https://w3id.org/pmd/co/AgingProcess: Aging Process: A process that applies a method that causes a constituent to precipitate from solid solution.
+https://w3id.org/pmd/co/Dataset: Dataset: A collection of data published in one or more files. Usually instances of this class are also instances of DCAT dataset (see https://www.w3.org/TR/vocab-dcat-2/).
+http://purl.obolibrary.org/obo/IAO_0000115: definition:
+https://w3id.org/pmd/co/TestPieceClassification: Test Piece Classification: This property is used to provide information on a test piece concerning its graduation in accordance with corresponding standards.
+https://w3id.org/pmd/co/ProcessIdentifier: Process Identifier: A colloquial, human-generated, descriptive text qualifying the nature of a process instance used as an identifier that is not strictly intended to be unique, e.g. “1050°C30 840°C10/ÖL”.
+https://w3id.org/pmd/co/MicrometerGauge: Micrometer Gauge: This entity describes a tool for making precise measurements having a spindle moved by a finely threaded screw.
+https://w3id.org/pmd/co/NodeVersion: Node Version: Processing Node Version Number, e.g. "2.24"
+https://w3id.org/pmd/co/Slide: Slide: A moving piece that is guided by a part along its path, providing the mount for objects.
+https://w3id.org/pmd/co/Object: Object: A discernable, tangible or simulated entity that is processed in a process by a processing node.
+https://w3id.org/pmd/co/TemperatureChangeDevice: Temperature Change Device: This entity generically describes any tool that is used for the alteration and adjustment of the temperature of a tangible object or the environment, e.g., a furnace and cooling media.
+https://w3id.org/pmd/co/Process: Process: A process is an activity including a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements.
+https://w3id.org/pmd/co/MicroscopyProcess: Microscopy Process: An analysing process in which an investigation is made with a microscope.
+https://w3id.org/pmd/co/DataCiteMetadata: DataCite Metadata: This value object refers to metadata which can be provided as DataCite element.
+https://w3id.org/pmd/co/ProcessDescription: Process Description: A descriptive text qualifying the nature of a process instance used as an identifier that is not strictly intended to be unique, e.g. "1050°C30 840°C10/ÖL". A human readable order of steps. Might include additional information that likes sketches and notes.
+https://w3id.org/pmd/co/MassFraction: Mass Fraction: This value object describes one of several portions of the property of a body that is a measure of the amount of material it contains and causes it to have weight in a gravitational field.
+https://w3id.org/pmd/co/MediaMovement: Media Movement: Displacement of media surrounding objects inside the system boundaries of a processing node.
+https://w3id.org/pmd/co/Extensometer: Extensometer: An instrument for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting.
+https://w3id.org/pmd/co/Image: Image: A visual representation of something
+https://w3id.org/pmd/co/Micropscope: Microscope: An optical instrument consisting of a lens or combination of lenses for making enlarged images of minute objects.
+https://w3id.org/pmd/co/fragmentPath: fragment path: A path expression that addresses a specific element in a document.
+https://w3id.org/pmd/co/ValueScope: Value Scope: An entity that makes it possible to add categorization to "ValueObjects". This class expresses the categorization of :ValueObjects into measurements and setpoints.
+https://w3id.org/pmd/co/YCoordinate: Y Coordinate: Y-coordinate is a coordinate whose value is determined by measuring parallel to a y-axis.
+https://w3id.org/pmd/co/Area: Area: The extent or measurement of a surface.
+https://w3id.org/pmd/co/NodeInfo: Node Info: Descriptive values to specify a processing node.
+https://w3id.org/pmd/co/resource: resource:
+https://w3id.org/pmd/co/Magnetic: Magnetic: Magnetic is relating relating to a magnet or to magnetism. Here specifically to the magnetic properties of a material.
+https://w3id.org/pmd/co/previousProcess: previous process: This property is used to indicate that which process was previously run.
+https://w3id.org/pmd/co/characteristic: characteristic: The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects.
+https://w3id.org/pmd/co/LoadCell: Load Cell: A load cell converts a force such as tension, compression, pressure, or torque into an electrical signal that can be measured and standardized. It is a force transducer. As the force applied to the load cell increases, the electrical signal changes proportionally. The most common types of load cell are pneumatic, hydraulic, and strain gauges.
+https://w3id.org/pmd/co/ErrorReportDocument: Error Report Document: This entity describes a document used to provide information on errors that occurred during the application of a process node, such as, e.g., an overshooting exceeding the working range of a measurement device.
+https://w3id.org/pmd/co/CovalentBond: Covalent Bond: Covalent bond is a chemical bond formed between atoms by the sharing of electrons.
+https://w3id.org/pmd/co/LaboratoryRole: Laboratory Role:
+https://w3id.org/pmd/co/Force: Force: Strength or energy exerted or brought to bear : cause of motion or change : active power.
+https://w3id.org/pmd/co/Index: Index: Some running number.
+https://w3id.org/pmd/co/MaterialProperty: Material Property: A materials property is an intensive property of a material, i.e., a physical property that does not depend on the amount of the material. These quantitative properties may be used as a metric by which the benefits of one material versus another can be compared, thereby aiding in materials selection.
+http://www.w3.org/ns/oa#FragmentSelector: Fragment Selector:
+https://w3id.org/pmd/co/SecondaryData: Secondary Data: This data scope expresses that a ValueObject refers to characteristic values (e.g. test results) determined by equations or algorithms using primary data and/or metadata.
+https://w3id.org/pmd/co/MountingProcess: Mounting Process: An assembly process in which a test piece or specimen is installed or otherwise integrated into a testing machine. This may also include the use of other processing nodes and components (e.g. grips).
+https://w3id.org/pmd/co/EngineeredMaterial: Engineered Material: A material that is synthesized within a manufacturing process.
+https://w3id.org/pmd/co/Duration: Duration: A period of time with its own timescale and an epoch anchored in another timescale. A duration can be expressed via a single value as it represents the time difference between two points in time, e.g. the difference between EndTime and StartTime or the difference between the current, momentary time and the StartTime.
+https://w3id.org/pmd/co/SimulationNode: Simulation Node: A simulation node is a processing node that represents a computational unit or processing element consuming and creating simulation objects and parameters. It performs specific tasks, calculations, or processes related to the simulation, and may be contributing to an overall simulation model. Simulation nodes are integral components in simulating dynamic processes, and they may interact with other nodes to collectively model complex systems or scenarios.
+https://w3id.org/pmd/co/CrossSectionArea: Cross Section Area: This property describes the area of a cutting or piece of an object cut off or broken at right angles or related to an axis.
+https://w3id.org/pmd/co/AgingTemperature: Aging Temperature: Variable Temperature during an Aging Process depending on the desired deposition formations.
+https://w3id.org/pmd/co/DataAcquisitionRate: Data Acquisition Rate: This property denotes the number of measurements / queries per time period for a considered measurement of a measurement parameter (sampling / query rate during data acquisition).
+https://w3id.org/pmd/co/LoadCellCapacity: Load cell capacity:
+https://w3id.org/pmd/co/HeatCapacity: Heat Capacity: Heat capacity or thermal capacity is a physical property of matter, defined as the amount of heat to be supplied to an object to produce a unit change in its temperature.
+https://w3id.org/pmd/co/Pixel: Pixel: Any of the small discrete elements that together constitute an image.
+https://w3id.org/pmd/co/ComputingNode: Computing Node: A computing system that provides an execution environment for, e.g., simulation processes or prediction models.
+A Computing Node can be virtual (e.g., a container or virtual machine) or physical (e.g., a bare-metal servers), uses digital represenations of objects as inputs and produces digital measurements, such as simulation results or predictions, as outputs.
+https://w3id.org/pmd/co/ClampingPressure: Clamping Pressure: This property describes the force per area (pressure) that is used during the mounting process of a sample, specimen, or test piece as a quantitative value. Typically, this process involves some sort of grips or the like.
+https://w3id.org/pmd/co/XCoordinate: X Coordinate: X-coordinate is a coordinate whose value is determined by measuring parallel to an x-axis.
+https://w3id.org/pmd/co/MaterialDesignation: Material Designation:
+https://w3id.org/pmd/co/AssemblingProcess: Assembling Process: A process to mount or demount a component.
+https://w3id.org/pmd/co/Algorithm: Algorithm: A procedure for solving a mathematical problem (as of finding the greatest common divisor) in a finite number of steps that frequently involves repetition of an operation.
+https://w3id.org/pmd/co/Chemical: Chemical: Chemical is relating to, used in, or produced by chemistry or the phenomena of chemistry Here specifically to the chemical properties of a material.
+https://w3id.org/pmd/co/InitiatorRole: Initiator Role A role indicating that its bearer has inititated a process.
+https://w3id.org/pmd/co/NodeName: Node Name: A human-generated identifier associated with a discernible, tangible or simulated entity intended to be unique in a given scope
+https://w3id.org/pmd/co/subordinateProcess: subordinate process: This property is used to link a process to its subordinate processes.
+https://w3id.org/pmd/co/Electrical: Electrical: Electrical is relating to electricity or something that is powered by electricity. Here specifically to the electrical properties of a material.
+https://w3id.org/pmd/co/MajorAxisDiameter: Minor axis diameter: The shortest diameter of an ellipse.
+https://w3id.org/pmd/co: (The PMD Core Ontology (PMDco) is a comprehensive framework for representing knowledge that encompasses fundamental concepts from the domains of materials science and engineering (MSE). The PMDco has been designed as a mid-level ontology to establish a connection between specific MSE application ontologies and the domain neutral concepts found in established top-level ontologies. The primary goal of the PMDco is to promote interoperability between diverse domains. PMDco's class structure is both understandable and extensible, making it an efficient tool for organizing MSE knowledge. It serves as a semantic intermediate layer that unifies MSE knowledge representations, enabling data and metadata to be systematically integrated on key terms within the MSE domain. With PMDco, it is possible to seamlessly trace data generation. The design of PMDco is based on the W3C Provenance Ontology (PROV-O), which provides a standard framework for capturing the generation, derivation, and attribution of resources. By building on this foundation, PMDco facilitates the integration of data from various sources and the creation of complex workflows. In summary, PMDco is a valuable tool for researchers and practitioners in the MSE domains. It provides a common language for representing and sharing knowledge, allowing for efficient collaboration and promoting interoperability between diverse domains. Its design allows for the systematic integration of data and metadata, enabling seamless traceability of data generation. Overall, PMDco is a crucial step towards a unified and comprehensive understanding of the MSE domain. PMDco at GitHub: https://github.com/materialdigital/core-ontology)
+https://w3id.org/pmd/co/CalibrationRange: Calibration range: This property describes the region between the limits within which a quantity is measured, received or transmitted (typically by a process node, e.g. a machine), expressed by stating the lower and upper range values.
+https://w3id.org/pmd/co/Circular: Circular: Having the form of a circle.
+https://w3id.org/pmd/co/relatesToElement: relates to element:
+https://w3id.org/pmd/co/MeasuringDevice: Measuring Device:
+https://w3id.org/pmd/co/Length: Length: A measured distance or dimension of an object, usually the longer or longest dimension of the object.
+https://w3id.org/pmd/co/minValue: min value: refers to all values equal or larger than the given one
+https://w3id.org/pmd/co/Description: Description:
+https://w3id.org/pmd/co/BaseFraction: Base fraction: The assumed base material of the objects or the remainder of the composition, e.g. for nickel-based alloy, iron-based alloy.
+http://purl.obolibrary.org/obo/IAO_0000119: definition source:
+https://w3id.org/pmd/co/GeometryChangingProcess: Geometry Changing Process: A process that is modifing the geometry of an object.
+https://w3id.org/pmd/co/InsertSurface: Insert Surface: This entity describes the state and quality of the exterior of the insert of a processing node, e.g., the inserts used in grips.
+https://w3id.org/pmd/co/Thickness: Thickness: This entity describes the measured dimension in one direction of a test piece.
+http://purl.obolibrary.org/obo/IAO_0000116: editor note:
+https://w3id.org/pmd/co/Note: Note: Additional information & knowledge for and by humans. Not expected to be parsable
+https://w3id.org/pmd/co/nextProcess: next process: This property is used to indicate the process that was run after the current process.
+https://w3id.org/pmd/co/Measurement: Measurement: The ValueScope category Measurement enables the categorization of ValueObjects as measured.
+Measurement is the quantification of attributes of an object or event, which can be used to compare with other objects or events. This value scope describes that a :ValueObject is the quantification of attributes of an object or event, which can be used to compare with other objects or events.
+https://w3id.org/pmd/co/ModulusOfElasticity: Modulus Of Elasticity: quotient of change of stress ΔR and change of percentage extension Δe in the range of evaluation, multiplied by 100 %
+
+Note: It is recommended to report the value in GPa rounded to the nearest 0.1 GPa and according to ISO 80000-1.
+https://w3id.org/pmd/co/AgingTime: Aging Time: The timespan that an Aging Process executes to completion.
+https://w3id.org/pmd/co/participant: participant: A relation between a process and an object, in which the objects is somehow involved in the process.
+https://w3id.org/pmd/co/Roughness: Roughness: Surface roughness, often shortened to roughness, is a component of surface finish (surface texture). It is quantified by the deviations in the direction of the normal vector of a real surface from its ideal form. If these deviations are large, the surface is rough; if they are small, the surface is smooth.
+https://w3id.org/pmd/co/TestingMachine: Testing Machine: This entity describes a processing node that is used to perform a defined test. A testing machine may be technically complex and contain several parts.
+https://w3id.org/pmd/co/RetortType: Retort Type: Geometry and and orientation of the inner system boundaries of the heat treatment processing node.
+http://purl.obolibrary.org/obo/IAO_0000111: editor preferred term:
+http://w3id.org/DMI/DigitalMaterialIdentifier: Digital Material Identifier: A dmi:DigitalMaterialIdentifier is a resource identifier (IRI) that represents the specification of a material (in the sense of a material class) described in a specification document. The specification document can be, e.g., a standard, a datasheet, or any other citable document. Typically, a specification document requires some qualities that a material (in the sense of a portion of matter) has to comply with. Typical requirements include chemical compositions or physical properties.
+https://w3id.org/pmd/co/composedOf: composed of: This property is used to describe which voxels and materials an object is composed of. This property is used to describe the fact that and which objects are composed of other objects, i.e. it is used to describe the specific constituents or ingredients that form a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole.
+https://w3id.org/pmd/co/SpecimenName: Specimen Name:
+https://w3id.org/pmd/co/TestPieceName: Test Piece Name: This property describes the designation of a test piece, usually given as human-readable identifier by humans.
+https://w3id.org/pmd/co/definitionSource: Indicates the source of the definition.
+https://w3id.org/pmd/co/AccreditationDocument: Accreditation Document: This entity describes a document used to state that an official authorization or approval to recognize or vouch for a conformation with a standard was granted to an organization, person, or entity. This may include, e.g., processes, (sets of) equipment, or entire laboratories.
+https://w3id.org/pmd/co/Norm: Norm: An authoritative standard.
+https://w3id.org/pmd/co/OperatorRole: Operator Role: A role indicating that its bearer participates a process as operator.
+https://w3id.org/pmd/co/Shape: Shape: The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.
+https://w3id.org/pmd/co/Distance: Distance: Spatial remoteness.
+https://w3id.org/pmd/co/toValue: to value:
+https://w3id.org/pmd/co/2DPixelCoordinates: 2D Pixel Coordinates: A pixel can be identified by a pair of integers indicating the column and row number, here the 2D pixel coordinates. For example, a pixel with coordinates (1,2) would be in column number 1 and row number 2. Typically, columns are numbered starting with zero from left to right.
+https://w3id.org/pmd/co/Acoustical: Acoustical: Acoustical is relating to the sense or organs of hearing, to sound, or to the science of sounds. Here specifically on the acoustic properties of a material.
+https://w3id.org/pmd/co/PixelPerNanometerUnit: Pixel Per Nanometer: Unit of counted pixels per nanometer. (It is not an official unit.)
+https://w3id.org/pmd/co/CalibrationDocument: Calibration Document: This entity describes a document used to state that a set of graduations to indicate values or positions has been performed. Typically, the calibration operator is included.
+https://w3id.org/pmd/co/QualifyingNodeAnnotation: Qualifying Node Annotation: Description for Processing Node's utility, e.g. "Rear Vacuum Furnace Oil Quenching"
+https://w3id.org/pmd/co/input: input: This property is used to link the processes to their input objects.
+https://w3id.org/pmd/co/Radiological: Radiological: Radiological is relating to radiology. Here specifically to the radiological properties of a material.
+https://w3id.org/pmd/co/NodeSeries: Node Series: Processing Node typename, e.g. "ProTherm500"
+https://w3id.org/pmd/co/superordinateProcess: superordinate process: This property is used to link a process to its super ordinated processes.
+https://w3id.org/pmd/co/WeightedXCoordinate: Weighted X coordinate: Mass center of grey values in one direction
+https://w3id.org/pmd/co/GripsAlignment: Grips Alignment: An assembly process in which the grips used to grasp a tangible object, such as a sample, specimen or test piece, are arranged in a line. This process is usually part of the assembly process during testing, if applicable.
+https://w3id.org/pmd/co/component: component: The object property component, which is used in connection with ProcessingNode and its (modular) elements. It enables the representation of the individual, different parts of processing nodes. Essentially, the 'component property' is a way of breaking down a complex system into manageable and distinct parts in order to understand and manage the role of each part within the overall system.
+http://purl.obolibrary.org/obo/IAO_0000423: to be replaced with external ontology term:
+https://w3id.org/pmd/co/CollectionInterfaceHint: Collection Interface Hint: A label in support of identifying a network interface and/or address used by a process node to provide primary data stored in ontologies
+https://w3id.org/pmd/co/EndTime: End Time: The date and time when the plan/recipe is supposed to have been finished
+https://w3id.org/pmd/co/Initiator: Initiator: The person that commisioned the process.
+https://w3id.org/pmd/co/maxValue: max value: refers to all values equal or smaller than the given one
+https://w3id.org/pmd/co/Date: Date: A statement of the day of execution or making. Based on an the gregorian calender system.
+https://w3id.org/pmd/co/Extension: Extension: Dimensional analysis: L
+Unit (e.g. SI): mm Increase in the extensometer gauge length at any moment during the test Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
+
+Note: Optical extensometry may require a specific data storage method.
+https://w3id.org/pmd/co/Project: Project: A series of goal-orientated (intent) activities and interactions to achieve a specific outcome.
+https://w3id.org/pmd/co/HydrogenBond: Hydrogen Bond: Hydrogen bond is an electrostatic attraction between a hydrogen atom in one polar molecule (as of water) and a small electronegative atom (as of oxygen, nitrogen, or fluorine) in usually another molecule of the same or a different polar substance.
+https://w3id.org/pmd/co/Stiffness: Stiffness: Stiffness is the extent to which an object resists deformation in response to an applied force.
+http://purl.obolibrary.org/obo/IAO_0000121: organizational term:
+http://purl.obolibrary.org/obo/CHEBI_24431: Chemical Entity:
+http://purl.obolibrary.org/obo/IAO_0000117: term editor:
+https://w3id.org/pmd/co/ElectronMicroscope: Electron Microscope: An electron-optical instrument in which a beam of electrons is used to produce an enlarged image of a minute object.
+https://w3id.org/pmd/co/fromValue: from value:
+https://w3id.org/pmd/co/ProcessDuration: Process Duration: A length of an interval of time in which a process is conducted.
+https://w3id.org/pmd/co/Grips: Grips: This entity describes a part by which something, usually a tangible object, is grasped. Typically, grips are part of a mounting system (processing node) referring to a testing system.
+https://w3id.org/pmd/co/Radius: Radius: A line segment extending from the center of a circle or sphere to the circumference or bounding surface.
+https://w3id.org/pmd/co/Coordinates: Coordinates: Any of a set of numbers used in specifying the location of a point on a line, on a surface, or in space.
+https://w3id.org/pmd/co/Optical: Optical: Optical is relating to the science of optics. Here specifically to the optical properties of a material.
+https://w3id.org/pmd/co/ManufacturerRole: Manufacturer Role: A role indicating that its bearer is a manufacturer. The role is realized in a manufacturing process.
+https://w3id.org/pmd/co/BaseMaterial: Base Material: This entity is used to describe the material that was taken as granted as such and used in the beginning of a process chain under consideration.
+https://w3id.org/pmd/co/inputOf: input of:
+https://w3id.org/pmd/co/Laboratory: Laboratory: A place equipped for experimental study in a science or for testing and analysis.
+https://w3id.org/pmd/co/SequenceNumber: Sequence Number: Strict monotonically increasing integer that indicates the position in an ordered list.
+https://w3id.org/pmd/co/Weight: Weight: The force with which a body is attracted toward the earth or a celestial body by gravitation and which is equal to the product of the mass and the local gravitational acceleration.
+https://w3id.org/pmd/co/value: value: Provides the actual value a value object is referring to.
+https://w3id.org/pmd/co/outputOf: output of:
+https://w3id.org/pmd/co/CommissionTime: Commission Time: Date and time an order or plan has been dispatched at.
+https://w3id.org/pmd/co/ProcessingNode: Processing Node: Processing nodes are tools, equipment and accessories as well as software that are relevant for the performance of processes, such as e.g. mechanical and chemical test as well as simulation, prediction, and machine learning. Accordingly, processing nodes may be machines, parts of machines, and software applications.
+https://w3id.org/pmd/co/Precision: Precision: The degree of refinement with which an operation is performed or a measurement stated.
+http://purl.obolibrary.org/obo/IAO_0000122: ready for release:
+https://w3id.org/pmd/co/CrystallineStructure: Crystalline Structure: In crystallography, crystal structure is a description of the ordered arrangement of atoms, ions or molecules in a crystalline material. Ordered structures occur from the intrinsic nature of the constituent particles to form symmetric patterns that repeat along the principal directions of three-dimensional space in matter.
+https://w3id.org/pmd/co/relatesTo: relates to: Describes a general relationship between domain objects.
+https://w3id.org/pmd/co/DigitalMaterialIdentifier: Digital Material Identifier: The DigitalMaterialIdentifier value object refers to a dmi:DigitalMaterialIdentifier.
+
+A dmi:DigitalMaterialIdentifier is a resource identifier (IRI) that represents the specification of a material (in the sense of a material class) described in a specification document. The specification document can be, e.g., a standard, a datasheet, or any other citable document. Typically, a specification document requires some qualities that a material (in the sense of a portion of matter) has to comply with. Typical requirements include chemical compositions or physical properties.
+https://w3id.org/pmd/co/unit: unit: Unit of measurement.
+https://w3id.org/pmd/co/RelatedProjectIdentifier: Related Project Identifier: This property describes a named value intended to distinguish between projects that are related to the project considered. For instance, two related projects could be a measurement project that is part of project with a broader scope.
+https://w3id.org/pmd/co/Perimeter: Perimeter: The perimeter of a two-dimensional shape is defined as the path or boundary that encloses the shape.
+https://w3id.org/pmd/co/PrimaryData: Primary Data: This data scope expresses that a ValueObject refers to data that is directly acquired during a process by sensors (time, force, length, temperature)
+http://purl.obolibrary.org/obo/IAO_0000120: metadata complete:
+https://w3id.org/pmd/co/Specimen: Specimen:
+https://w3id.org/pmd/co/Address: Address: A place where a person or organization may be communicated with.
+https://w3id.org/pmd/co/HeatTreatmentProcess: Heat Treatment Process: A heat treatment is a conditioning process at (with) a defined temperature (change) and holding in order to achieve a change in the microstructure, residual stresses, defect distribution or local chemical composition of a material.
+https://w3id.org/pmd/co/executedBy: executed by: This property represents which process is executed by which process node.
+https://w3id.org/pmd/co/CreepStress: Creep Stress: Is the strain occuring with time, when a constant force is applied to a physical body.
+https://w3id.org/pmd/co/ElectronMicroscopy: Electron Microscopy: A microscopy process using an electron-optical instrument in which a beam of accelerated electrons as a source of illumination is applied to produce a magnified image of a tiny object.
+http://purl.obolibrary.org/obo/IAO_0000124: uncurated:
+https://w3id.org/pmd/co/Location: Location: A position or site occupied or available for occupancy or marked by some distinguishing feature.
+https://w3id.org/pmd/co/SimulationProcess: Simulation Process:
+https://w3id.org/pmd/co/Filter: Filter: A filter is a computer program or subroutine to process a stream, producing another stream. While a single filter can be used individually, they are frequently strung together to form a pipeline.
+https://w3id.org/pmd/co/Identifier: Identifier: A named value intended to distinguish between entities.
+http://purl.obolibrary.org/obo/IAO_0000114: has curation status:
+http://purl.obolibrary.org/obo/RO_0000087: has role:
+http://purl.obolibrary.org/obo/IAO_0000078: curation status specification:
+http://purl.obolibrary.org/obo/IAO_0000428: requires discussion:
+https://w3id.org/pmd/co/Department: Department: A sub section of an organization.
+http://purl.obolibrary.org/obo/IAO_0000125: pending final vetting:
+https://w3id.org/pmd/co/belongsToProject: belongs to process Association between a process and a project.
+https://w3id.org/pmd/co/PercentageExtension: Percentage Extension: extension expressed as a percentage of the extensometer gauge length
+
+Note: The percentage extension is commonly called engineering strain.
+http://purl.obolibrary.org/obo/IAO_0000123: metadata incomplete:
+https://w3id.org/pmd/co/state: state:
+http://purl.obolibrary.org/obo/IAO_0000002: example to be eventually removed:
+https://w3id.org/pmd/co/characteristicOf: characteristic of:
+https://w3id.org/pmd/co/DepartmentRole: Department Role:

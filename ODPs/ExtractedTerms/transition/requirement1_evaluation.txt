@@ -1,0 +1,6 @@
+Evaluation Metrics:
+Precision: 1.0000
+Recall: 0.0500
+F1-score: 0.0952
+http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Process: Process:
+http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Transition: Transition:

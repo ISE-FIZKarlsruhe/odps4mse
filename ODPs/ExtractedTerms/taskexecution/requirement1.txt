@@ -1,0 +1,2 @@
+http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#isExecutedIn
+http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask

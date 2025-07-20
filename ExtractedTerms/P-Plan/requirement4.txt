@@ -1,0 +1,3 @@
+http://purl.org/net/p-plan#hasInputVar
+http://purl.org/net/p-plan#isPreceededBy
+http://purl.org/net/p-plan#hasOutputVar

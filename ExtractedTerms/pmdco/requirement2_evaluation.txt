@@ -2,3 +2,871 @@ Evaluation Metrics:
 Precision: 0.0000
 Recall: 0.0000
 F1-score: 0.0000
+https://w3id.org/pmd/co/PMD_0050014: Rigid PVC (uPVC): Rigid PVC is a Polyvinyl Chloride that is characterized by its stiffness and durability.
+https://w3id.org/pmd/co/PMD_0000633: environmental chamber: A device used to simulate environmental conditions such as temperature, humidity, and pressure to test materials and devices.
+https://w3id.org/pmd/co/PMD_0020020: interacts with: A relation between participants of a process indicating that some of the participants SDCs are affected during the process due to the interaction of the participants.
+https://w3id.org/pmd/co/PMD_0020044: portion of tantalum: A 'Portion Of Tantalum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tantalum atom. (A Portion Of Matter that consists of only tantalum atoms.)
+https://w3id.org/pmd/co/PMD_0000509: adhesion testing process: A Mechanical Property Analyzing Process that measures the strength of adhesion between two bonded surfaces, assessing the quality of adhesive joints.
+https://w3id.org/pmd/co/PMD_0000876: optical profilometer: An Optical Profilometer is a device that measures surface profiles and roughness by analyzing the interference patterns of light reflected from a specimen's surface.
+https://w3id.org/pmd/co/PMD_0001014: x-ray analyzing process: A Structural Property Analyzing Process that uses X-rays to investigate the internal structure, composition, and properties of materials by measuring the interaction of X-rays with the sample.
+http://purl.obolibrary.org/obo/IAO_0000007: action specification:
+https://w3id.org/pmd/co/PMD_0020046: portion of potassium: A 'Portion Of Potassium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:potassium atom. (A Portion Of Matter that consists of only potassium atoms.)
+https://w3id.org/pmd/co/PMD_0020049: portion of helium: A 'Portion Of Helium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:helium atom. (A Portion Of Matter that consists of only helium atoms.)
+https://w3id.org/pmd/co/PMD_0020126: foam: A foam is a material entity aggregate that conssists of some 'Composite Material' c. 
+The parts of c that bear the filler role are vacuum-filled or gas filled pores. 
+The parts of c that bear the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
+One pore with its sourrounding matrix is called 'cell'. 
+Depending of the interconnectedness of the pores the foam is open- or closed-cell.
+http://purl.obolibrary.org/obo/BFO_0000059: concretizes: b concretizes c =Def b is a process or a specifically dependent continuant & c is a generically dependent continuant & there is some time t such that c is the pattern or content which b shares at t with actual or potential copies
+https://w3id.org/pmd/co/PMD_0050007: high-density polyethylene: High-Density Polyethylene is a Polyethylene that is characterized by a linear molecular structure and high density.
+https://w3id.org/pmd/co/PMD_0050038: polyhydroxyalkanoates: Polyhydroxyalkanoates are Biodegradable Polymers that are biosynthesized by microorganisms from sugars or lipids.
+https://w3id.org/pmd/co/PMD_0020041: portion of argon: A 'Portion Of Argon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:argon atom. (A Portion Of Matter that consists of only argon atoms.)
+https://w3id.org/pmd/co/PMD_0000956: structural optimization simulation: A Simulation Process that aims to find the most stable structure of a molecular system by minimizing its energy.
+https://w3id.org/pmd/co/PMD_0000810: joining by welding: A joining process that involves fusing two or more metal parts by applying heat, pressure, or both, often with the addition of a filler material. This method creates a permanent and strong bond, essential in manufacturing and construction for durable structures and components.
+https://w3id.org/pmd/co/PMD_0000979: thermal conductivity measurement process: A Thermal Property Analyzing Process that measures the thermal conductivity of a material, determining its ability to conduct heat.
+http://purl.obolibrary.org/obo/IAO_0000410: universal:
+https://w3id.org/pmd/co/PMD_0020066: portion of ruthenium: A 'Portion Of Ruthenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:ruthenium atom. (A Portion Of Matter that consists of only ruthenium atoms.)
+https://w3id.org/pmd/co/PMD_0000914: removing: A Seperating process that involves removing material through thermical, chemical and electrochemical methods.
+https://w3id.org/pmd/co/PMD_0001013: welding function: A subfunction of joining performed to fuse materials together using welding techniques.
+http://purl.obolibrary.org/obo/BFO_0000115: has member part: b has member part c =Def c member part of b
+https://w3id.org/pmd/co/PMD_0020115: aerosol: An aerosol is a disconnected material entity aggregate which:
+1. consists of some portion of matter whose aggregate state quality concretizes gasous and 
+2. consists of some portion of matter whose aggregate state quality concretises solid or liquid (TODO: express that this portion is also a disconnected material entity aggregate)
+https://w3id.org/pmd/co/PMD_0050015: Flexible PVC (fPVC): Flexible PVC is a Polyvinyl Chloride that has been modified with plasticizers to impart flexibility.
+https://w3id.org/pmd/co/PMD_0020123: aggregate state mesomorphic: A state where some bonds transmit shear stresses and some do not.
+http://purl.obolibrary.org/obo/BFO_0000004: independent continuant: b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c (A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.)
+https://w3id.org/pmd/co/PMD_0050056: Alumina (Al₂O₃): Alumina is an Oxide Ceramic that is an Advanced Ceramic composed of aluminum oxide, renowned for its hardness and insulation properties.
+https://w3id.org/pmd/co/PMD_0000807: joining by primary shaping: A joining process that involves creating a part or component in its final shape from a liquid or semi-liquid material.
+https://w3id.org/pmd/co/PMD_0000022: scalar value specification:
+https://w3id.org/pmd/co/PMD_0000870: occurence of electic field: The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system.
+https://w3id.org/pmd/co/PMD_0020086: portion of gallium: A 'Portion Of Gallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gallium atom. (A Portion Of Matter that consists of only gallium atoms.)
+http://purl.obolibrary.org/obo/BFO_0000202: temporal interval: (Elucidation) A temporal interval is a one-dimensional temporal region that is continuous, thus without gaps or breaks
+https://w3id.org/pmd/co/PMD_0020051: portion of nickel: A 'Portion Of Nickel' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nickel atom. (A Portion Of Matter that consists of only nickel atoms.)
+https://w3id.org/pmd/co/PMD_0050046: aluminosilicates: Aluminosilicates are Silicate Ceramics that consist of aluminum and silicon oxides.
+https://w3id.org/pmd/co/PMD_0000988: thermomechanical treatment: A Changing Properties Of Material process that involves the simultaneous application of heat and mechanical stresses. Thermomechanical treatment is utilized to alter and improve the material's microstructure and mechanical properties.
+https://w3id.org/pmd/co/PMD_0000852: metal: A metal is an engineered material representing a class of materials characterized by high electrical and thermal conductivity, ductility, and metallic bonding.
+https://w3id.org/pmd/co/PMD_0000854: micrometer gauge: A measuring device for making precise measurements having a spindle moved by a finely threaded screw.
+https://w3id.org/pmd/co/PMD_0000053: melting process: A melting process is a thermally induced process during which a solid material undergoes a phase transition into a liquid state. It involves the absorption of heat and occurs at or above the material's melting point.
+https://w3id.org/pmd/co/PMD_0000874: optical microscope: A microscope that uses visible light and lenses to magnify and view small objects or details.
+http://purl.obolibrary.org/obo/BFO_0000030: object: (Elucidation) An object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested
+https://w3id.org/pmd/co/PMD_0000015: has input:
+https://w3id.org/pmd/co/PMD_0020058: portion of cerium: A 'Portion Of Cerium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cerium. (A Portion Of Matter that consists of only cerium atoms.)
+https://w3id.org/pmd/co/PMD_0000805: irradiation function: A function performed to expose materials to radiation for altering their properties.
+https://w3id.org/pmd/co/PMD_0020023: metallic grain structures: Metallic grain structures are descriptors for the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those.
+http://purl.obolibrary.org/obo/BFO_0000028: three-dimensional spatial region: (Elucidation) A three-dimensional spatial region is a whole consisting of a spatial volume together with zero or more spatial volumes which may have spatial regions of lower dimension as parts
+https://w3id.org/pmd/co/PMD_0020002: precipitate role: Precipitate is the role of a Portion Of Matter that implies being hosted in a Matrix and the Precipitate derives from the Matrix or the Precipitate derives from the Thing that the Matrix derives from.
+https://w3id.org/pmd/co/PMD_0000646: forming: A manufacturing process that changes the shape of a solid body through plastic deformation while retaining both mass and structural integrity.
+https://w3id.org/pmd/co/PMD_0000959: subject of adjustment role: Role of a device that is being adjusted. The role is realized in an adjustment process.
+https://w3id.org/pmd/co/PMD_0000784: high performance liquid chromatography system: A device used for separating, identifying, and quantifying compounds in liquid samples through high performance liquid chromatography.
+https://w3id.org/pmd/co/PMD_0000525: atomic force microscope: An Atomic Force Microscope (AFM) is a Measuring Device that maps the surface topography of materials at the nanoscale by scanning it with a mechanical probe.
+https://w3id.org/pmd/co/PMD_0000604: dielectric constant: The dielectric constant is an electrical property representing a measure of a material's ability to store electrical energy in an electric field.
+http://purl.obolibrary.org/obo/BFO_0000194: specifically depended on by: b specifically depended on by c =Def c specifically depends on b
+https://w3id.org/pmd/co/PMD_0000817: lasercutter: A device that utilizes laser beams to create precise cuts in various materials such as wood, plastic, metal, etc.
+https://w3id.org/pmd/co/PMD_0000649: forming under compressive and tensile conditions: A forming process that involves applying both tensile and compressive forces to a material.
+https://w3id.org/pmd/co/PMD_0050094: zirconia-based ceramics: Zirconia-Based Ceramics are Bioinert Ceramics that are composed primarily of zirconia, offering high strength and inertness.
+https://w3id.org/pmd/co/PMD_0050147: phosphate-based bioactive glass: Phosphate-Based Bioactive Glass is a Bioactive Glass that is composed predominantly of phosphate compounds.
+https://w3id.org/pmd/co/PMD_0000644: force measuring function: A subfunction of measuring performed to determine the force applied to or by an object.
+https://w3id.org/pmd/co/PMD_0000569: coating from the gaseous or vapour state: A Coating process that involves applying a coating from a gaseous or vapor state.
+https://w3id.org/pmd/co/PMD_0020152: component: A component is an object aggregate that bears a function in a technical system.
+https://w3id.org/pmd/co/PMD_0000618: elastic modulus: An elastic modulus is a measure of a material's stiffness, defined as the ratio of stress to strain in the elastic deformation region.
+https://w3id.org/pmd/co/PMD_0000845: matrix role: Matrix is the role of a PortionOfConnectedMatter that implies to host the Filler.
+https://w3id.org/pmd/co/PMD_0000980: thermal conductivity measuring function: A function that inheres in devices used to measure the thermal conductivity of materials.
+https://w3id.org/pmd/co/PMD_0000971: temperature measuring function: A subfunction of measuring performed to determine the temperature of an object or environment.
+https://w3id.org/pmd/co/PMD_0050025: novolac epoxy: Novolac Epoxy is an Epoxy Resin that is based on novolac resins to provide improved thermal and chemical resistance.
+https://w3id.org/pmd/co/PMD_0000544: caliper: A measuring device having two usually adjustable arms, legs, or jaws used especially to measure the dimensions of objects, such as diameters or thicknesses
+https://w3id.org/pmd/co/PMD_0000598: department: A sub section of an organization [FIXME]
+https://w3id.org/pmd/co/PMD_0020037: portion of lithium: A 'Portion Of Lithium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lithium atom. (A Portion Of Matter that consists of only lithium atoms.)
+https://w3id.org/pmd/co/PMD_0050058: Yttria-Stabilized Zirconia (YSZ): Yttria-Stabilized Zirconia is a Zirconia that is an Oxide Ceramic stabilized with yttria to enhance its thermal and mechanical performance.
+https://w3id.org/pmd/co/PMD_0000656: gas chromatography process: A Chromatography Process that separates and analyzes compounds that can be vaporized without decomposition, using a gas as the mobile phase and a solid or liquid stationary phase.
+https://w3id.org/pmd/co/PMD_0050140: nonlinear optical glass: Nonlinear Optical Glass is Functional Glass that is engineered to display nonlinear optical responses under intense light.
+https://w3id.org/pmd/co/PMD_0000565: coating by soldering: A Coating process that involves applying a coating using soldering techniques.
+http://purl.obolibrary.org/obo/BFO_0000184: history of: (Elucidation) history of is a relation between history b and material entity c such that b is the unique history of c
+https://w3id.org/pmd/co/PMD_0050001: covalent bond: A covalent bond is a bond that forms when nonmetal atoms share electrons to achieve a stable electron configuration.
+https://w3id.org/pmd/co/PMD_0050089: yttrium barium copper oxide: Yttrium Barium Copper Oxide is a Superconducting Ceramic that is composed of yttrium, barium, copper, and oxygen, notable for its high critical temperature.
+https://w3id.org/pmd/co/PMD_0050040: natural ceramics: Natural Ceramics (Traditional Ceramics) are Ceramics that are produced using conventional methods with natural raw materials such as clay and silica.
+https://w3id.org/pmd/co/PMD_0000983: thermocouple: A device for measuring temperature in which a pair of wires of dissimilar metals (such as copper and iron) are joined and the free ends of the wires are connected to an instrument (such as a voltmeter) that measures the difference in potential created at the junction of the two metals.
+https://w3id.org/pmd/co/PMD_0050083: Barium Titanate (BaTiO₃): Barium Titanate is a Dielectric Ceramic that is an Electroceramic composed of barium, titanium, and oxygen, noted for its ferroelectric properties.
+https://w3id.org/pmd/co/PMD_0020135: stimulation target role: See 'Stimulus role'
+https://w3id.org/pmd/co/PMD_0020122: aggregate state supercritical fluid: A state with strong bindings between entites that do not transmit shear force.
+http://purl.obolibrary.org/obo/BFO_0000029: site: (Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity
+https://w3id.org/pmd/co/PMD_0050084: lead zirconate titanate (pzt): Lead Zirconate Titanate is a Dielectric Ceramic that is an Electroceramic composed of lead, zirconium, and titanium, renowned for its piezoelectric behavior.
+https://w3id.org/pmd/co/PMD_0020040: portion of gold: A 'Portion Of Gold' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gold atom. (A Portion Of Matter that consists of only gold atoms.)
+https://w3id.org/pmd/co/PMD_0000510: adjustment device role: Role of a device that is used to adjust another device (SubjectOfAdjustmentRole). The role is realized in an adjustment process.
+https://w3id.org/pmd/co/PMD_0000869: occurence of chemical reaction: The occurrence of (a) chemical reaction is the process in which substances interact to form new chemical compounds or alter their molecular structure.
+https://w3id.org/pmd/co/PMD_0000898: pressure measuring function: A subfunction of measuring performed to determine the pressure of gases or liquids.
+https://w3id.org/pmd/co/PMD_0020062: portion of bismuth: A 'Portion Of Bismuth' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bismuth atom. (A Portion Of Matter that consists of only bismuth atoms.)
+https://w3id.org/pmd/co/PMD_0000946: spectrum: A spectrum is a 1-D information content entity that describes the range of wavelengths or frequencies of a physical property, often used in reference to light, sound, or electromagnetic radiation.
+http://purl.obolibrary.org/obo/BFO_0000009: two-dimensional spatial region: (Elucidation) A two-dimensional spatial region is a spatial region that is a whole consisting of a surface together with zero or more surfaces which may have spatial regions of lower dimension as parts
+https://w3id.org/pmd/co/PMD_0000960: subject of calibration role: Role of a device that is being calibrated. The role is realized in a calibration process.
+https://w3id.org/pmd/co/PMD_0000586: corpuscular irradiation: The corpuscular irradiation is an irradiation describing the exposure of a material to streams of particles, such as electrons or ions.
+https://w3id.org/pmd/co/PMD_0000941: spalling testing process: A Mechanical Property Analyzing Process that evaluates the resistance of a material to surface spalling or flaking under high impact or thermal stresses.
+https://w3id.org/pmd/co/PMD_0000827: magnetizing device: A device used for inducing a magnetic field in materials to alter their magnetic properties.
+https://w3id.org/pmd/co/PMD_0050101: silicate glasses: Silicate Glasses are Glasses that are composed primarily of silica.
+https://w3id.org/pmd/co/PMD_0000777: heat capacity: The heat capacity is a thermal property describing the amount of heat energy required to raise the temperature of a material by a given amount.
+https://w3id.org/pmd/co/PMD_0050108: aluminosilicate glass: Aluminosilicate Glass is a form of Silicate Glass that is specifically formulated to resist high temperatures.
+https://w3id.org/pmd/co/PMD_0000610: dimension measuring function: A subfunction of measuring performed to determine the dimensions of an object or material.
+https://w3id.org/pmd/co/PMD_0000955: structural material: A Structural Material S is an Engineered Material which has the disposition to be used for an Object O (O consists of S) and O's function is primarily mechanical load carrying.
+http://purl.obolibrary.org/obo/IAO_0000225: obsolescence reason specification:
+https://w3id.org/pmd/co/PMD_0000933: simulation process: A Computing Process that models the behavior of a system over time using mathematical or computational techniques.
+https://w3id.org/pmd/co/PMD_0020074: portion of caesium: A 'Portion Of Caesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:caesium atom. (A Portion Of Matter that consists of only caesium atoms.)
+https://w3id.org/pmd/co/PMD_0000657: gas chromatography system: A device used for separating and analyzing compounds in a gas mixture using a chromatographic column.
+https://w3id.org/pmd/co/PMD_0020030: portion of carbon: A 'Portion Of Carbon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:carbon atom. (A Portion Of Matter that consists of only carbon atoms.)
+https://w3id.org/pmd/co/PMD_0001008: waver irradiation: A waver irradiation is an irradiation describing an exposure of a material or system to electromagnetic waves or radiation.
+http://purl.obolibrary.org/obo/BFO_0000203: temporal instant: (Elucidation) A temporal instant is a zero-dimensional temporal region that has no proper temporal part
+https://w3id.org/pmd/co/PMD_0000769: hand held device role: Role of a device that is operated or used manually.
+https://w3id.org/pmd/co/PMD_0020092: portion of palladium: A 'Portion Of Palladium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:palladium. (A Portion Of Matter that consists of only palladium atoms.)
+https://w3id.org/pmd/co/PMD_0050086: soft ferrites: Soft Ferrites are Magnetic Ceramics that are characterized by low coercivity and high permeability, making them ideal for transformer cores.
+https://w3id.org/pmd/co/PMD_0000812: joining function: A function performed to connect or bond materials together through various methods such as welding or soldering.
+https://w3id.org/pmd/co/PMD_0000591: crystal structure: The crystal structure is a morphologic quality that describes the periodic geometric arrangement of entities in a crystalline material. The finite set of periodic geometric arrangements is described by the 14 possible Bravais Lattices in three-dimensional space.
+https://w3id.org/pmd/co/PMD_0020032: portion of tungsten: A 'Portion Of Tungsten' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tungsten. (A Portion Of Matter that consists of only tungsten atoms.)
+https://w3id.org/pmd/co/PMD_0050071: boride ceramics: Boride Ceramics are Non-Oxide Ceramics that consist of metal borides.
+https://w3id.org/pmd/co/PMD_0000589: creep testing process: A Mechanical Property Analyzing Process that evaluates a material's deformation over time under constant stress and temperature, determining its creep behavior.
+https://w3id.org/pmd/co/PMD_0000951: stochastic simulation: a simulation approach that incorporates random variables to model probabilistic systems or processes.
+https://w3id.org/pmd/co/PMD_0020083: portion of hydrogen: A 'Portion Of Hydrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hydrogen atom. (A Portion Of Matter that consists of only hydrogen atoms.)
+https://w3id.org/pmd/co/PMD_0020045: portion of antimony: A 'Portion Of Antimony' is a 'Portion Of Pure Substance' that 'consists of' only chebi:antimony atom. (A Portion Of Matter that consists of only antimony atoms.)
+https://w3id.org/pmd/co/PMD_0000977: textile joining: A joining process that involves connecting textile materials.
+https://w3id.org/pmd/co/PMD_0050098: bioresorbable ceramics: Bioresorbable Ceramics are Bioceramics that are designed to gradually be resorbed and replaced by natural tissue.
+https://w3id.org/pmd/co/PMD_0000621: electrical property: An electrical property is a material property that represents the characteristics of a material that determine its behavior under the influence of an electric field, such as conductivity, resistivity, and permittivity.
+https://w3id.org/pmd/co/PMD_0000574: coating from the pulpy or pasty state: A Coating process that involves applying a coating from a pulpy or pasty state.
+https://w3id.org/pmd/co/PMD_0050043: earthenware: Earthenware is a Clay-Based Ceramic that is formed at relatively low temperatures, resulting in a porous, rustic material.
+https://w3id.org/pmd/co/PMD_0000830: manufacturer company: Processing Node's manufacturer name, e.g.: "Ipsen", "UPC" or "Bosch"
+https://w3id.org/pmd/co/PMD_0020141: integral bearer of: Integral bearer of is a property chain linking an object or object aggregate O that consits of a portion of matter PM to a SDC Q that inheres in 'portions of matter' only:
+O -consists of-> PM -bearer of-> Q
+https://w3id.org/pmd/co/PMD_0050106: borosilicate glass: Borosilicate Glass is a Silicate Glass that is formulated with boron oxide to improve thermal resistance.
+https://w3id.org/pmd/co/PMD_0000847: measuring function: A function performed to determine the magnitude, quantity, or extent of a physical property or condition.
+https://w3id.org/pmd/co/PMD_0020060: portion of lead: A 'Portion Of Lead' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lead atom. (A Portion Of Matter that consists of only lead atoms.)
+https://w3id.org/pmd/co/PMD_0020203: notch: A notch is a geometric feature of the 'surface layer' of an object that introduces a strong change in shape or cross section.
+http://purl.obolibrary.org/obo/BFO_0000221: first instant of: t first instant of t' =Def t is a temporal instant & t' is a temporal region t' & t precedes all temporal parts of t' other than t
+https://w3id.org/pmd/co/PMD_0020112: grain size distribution: An intensive quality describing the lower length scale object aggregate (grains) that is part of the material.
+https://w3id.org/pmd/co/PMD_0050059: magnesia-stabilized zirconia: Magnesia-Stabilized Zirconia is a Zirconia that is an Oxide Ceramic stabilized with magnesia to improve its thermal stability.
+https://w3id.org/pmd/co/PMD_0000942: specific surface area: The specific surface area is a morphologic quality describing the total surface area of a material per unit of mass or volume.
+https://w3id.org/pmd/co/PMD_0000915: responding process: The responding process is a process describing the reaction of a material or system to an applied stimulus.
+http://purl.obolibrary.org/obo/BFO_0000117: has occurrent part: b has occurrent part c =Def c occurrent part of b
+https://w3id.org/pmd/co/PMD_0020072: portion of sodium: A 'Portion Of Sodium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sodium atom. (A Portion Of Matter that consists of only sodium atoms.)
+https://w3id.org/pmd/co/PMD_0020033: portion of erbium: A 'Portion Of Erbium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:erbium. (A Portion Of Matter that consists of only erbium atoms.)
+https://w3id.org/pmd/co/PMD_0050004: thermoplastics: A Thermoplastic is a Polymer that becomes moldable when heated and solidifies upon cooling.
+https://w3id.org/pmd/co/PMD_0050042: clay-based ceramics: Clay-Based Ceramics are Silicate Ceramics that are formed from natural clays.
+http://purl.obolibrary.org/obo/BFO_0000183: environs: b environs c =Def c occurs in b
+https://w3id.org/pmd/co/PMD_0000783: high throughput simulation: A Simulation Process that performs a large number of simulations automatically to explore a wide range of conditions.
+https://w3id.org/pmd/co/PMD_0000910: rebound hardness: The rebound hardness is representing a measure of a material's hardness based on the height of rebound of a hammer dropped on the material.
+https://w3id.org/pmd/co/PMD_0050135: indium tin oxide coated glass: Indium Tin Oxide Coated Glass is a form of Conductive Glass that is coated with a thin film of indium tin oxide to enable electrical conduction.
+https://w3id.org/pmd/co/PMD_0000968: temperature change device: A device that is used for the alteration and adjustment of the temperature of a tangible object or the environment, e.g., a furnace and cooling media.
+https://w3id.org/pmd/co/PMD_0020143: process chain: A process chain is a process that 'has contiuant part' subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1.
+https://w3id.org/pmd/co/PMD_0000542: cnc welding machine: A CNC Welding Machine is a Device that performs welding operations controlled by a computer numerical control system.
+https://w3id.org/pmd/co/PMD_0000932: simulation device: A processing node that implements foo as well as consumes and creates simulation objects and parameters.
+https://w3id.org/pmd/co/PMD_0000512: aggregate state: The aggregate state is a morphological quality representing the physical state of a material, such as solid, liquid, or gas.
+https://w3id.org/pmd/co/PMD_0000965: surface layer (fiat object part): A surface layer (fiat object part) is a fiat object part that is part of only object. The surface layer is the three dimensional region defining the outermost layer of an object, where surface-interactions with other material entities occur. What is considered as the surface is thus defined by the interaction process.
+https://w3id.org/pmd/co/PMD_0020073: portion of iodine: A 'Portion Of Iodine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iodine atom. (A Portion Of Matter that consists of only iodine atoms.)
+https://w3id.org/pmd/co/PMD_0000836: mass spectrometry: A Spectroscopy Process, that measures the mass-to-charge ratio of ions to identify and quantify molecules in a sample.
+https://w3id.org/pmd/co/PMD_0000564: coating application function: A subfunction of coating performed to apply a coating to a surface.
+https://w3id.org/pmd/co/PMD_0020034: portion of molybdenum: A 'Portion Of Molybdenum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:molybdenum atom. (A Portion Of Matter that consists of only molybdenum atoms.)
+https://w3id.org/pmd/co/PMD_0000849: mechanical property analyzing process: An assay that evaluates the mechanical characteristics of materials, such as strength, hardness, elasticity, and tensile properties, often through tests that measure response to forces and loads.
+https://w3id.org/pmd/co/PMD_0000864: morphological property: A morphological property is a material property representing the characteristics of a material's structure, such as shape, size, and distribution of its features.
+https://w3id.org/pmd/co/PMD_0000588: creep testing machine: A device used to test the creep behavior of materials under constant stress at high temperatures.
+http://purl.obolibrary.org/obo/BFO_0000084: generically depends on: b generically depends on c =Def b is a generically dependent continuant & c is an independent continuant that is not a spatial region & at some time t there inheres in c a specifically dependent continuant which concretizes b at t
+https://w3id.org/pmd/co/PMD_0000998: ultraviolet visible spectrophotometer: A device used to measure the absorbance of a sample in the ultraviolet and visible regions of the electromagnetic spectrum.
+http://purl.obolibrary.org/obo/IAO_0000114: Has Curation Status:
+https://w3id.org/pmd/co/PMD_0000862: monte carlo simulation: A Simulation Process that uses random sampling to solve physical and mathematical problems.
+http://purl.obolibrary.org/obo/BFO_0000017: realizable entity: (Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type
+https://w3id.org/pmd/co/PMD_0000994: torsion testing machine: A device used to test the resistance of materials to twisting forces by applying a torque and measuring the resulting deformation.
+https://w3id.org/pmd/co/PMD_0000858: microtome: A Microtome is a Measuring Device that cuts extremely thin slices of material, often for examination under a microscope. A device used to cut extremely thin slices of material, often for microscopic examination.
+https://w3id.org/pmd/co/PMD_0050061: Beryllia (BeO): Beryllia is an Oxide Ceramic that is an Advanced Ceramic composed of beryllium oxide, valued for its high thermal conductivity and electrical insulation.
+https://w3id.org/pmd/co/PMD_0050033: styrene-butadiene rubber: Styrene-Butadiene Rubber is a Synthetic Rubber that is composed of styrene and butadiene to enhance abrasion resistance.
+https://w3id.org/pmd/co/PMD_0020082: portion of neodymium: A 'Portion Of Neodymium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neodymium atom. (A Portion Of Matter that consists of only neodymium atoms.)
+http://purl.obolibrary.org/obo/BFO_0000210: occupies spatial region: b occupies spatial region r =Def b is an independent continuant that is not a spatial region & r is a spatial region & there is some time t such that every continuant part of b occupies some continuant part of r at t and no continuant part of b occupies any spatial region that is not a continuant part of r at t
+https://w3id.org/pmd/co/PMD_0020029: portion of chromium: A 'Portion Of Chromium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chromium atom. (A Portion Of Matter that consists of only chromium atoms.)
+https://w3id.org/pmd/co/PMD_0000899: primary shaping: A manufacturing process that creates a defined workpiece from shapeless material by producing cohesion, whereby the characteristic properties of the material become visible in the end product.
+https://w3id.org/pmd/co/PMD_0000943: specimen role: Role of an object which has been taken from a sample by forming and/or machining and/or heat treatment for the pupose of producing test pieces.
+https://w3id.org/pmd/co/PMD_0020144: product (chemical reaction): Product is the role of a material entity that is output of a chemical reaction and is created or transformed during the reaction.
+https://w3id.org/pmd/co/PMD_0000873: operator role: An operator role is a role indicating responsibility for operating equipment or systems, typically in a laboratory or manufacturing setting.
+http://purl.obolibrary.org/obo/BFO_0000176: continuant part of: b continuant part of c =Def b and c are continuants & there is some time t such that b and c exist at t & b continuant part of c at t
+http://purl.obolibrary.org/obo/BFO_0000062: preceded by: b preceded by c =Def b precedes c
+https://w3id.org/pmd/co/PMD_0000889: pore growth: Pore Growth is an evolution of damagfe describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties.
+https://w3id.org/pmd/co/PMD_0000871: occurence of magnetic field: The occurrence of (a) magenetic field is a process describing the presence or generation of a magnetic field in a material or system.
+https://w3id.org/pmd/co/PMD_0050099: tricalcium phosphate: Tricalcium Phosphate is a Bioresorbable Ceramic that is composed of calcium phosphate, commonly used in bone grafting applications.
+https://w3id.org/pmd/co/PMD_0050063: Carbide Ceramics: Carbide Ceramics are Non-Oxide Ceramics that consist of metal carbides.
+https://w3id.org/pmd/co/PMD_0000934: sintering: A changing properties of materials process in which granular and powdery materials, which have already been shaped in the first step, are mixed and combined and compacted by heating.
+https://w3id.org/pmd/co/PMD_0020081: portion of calcium: A 'Portion Of Calcium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:calcium atom. (A Portion Of Matter that consists of only calcium atoms.)
+https://w3id.org/pmd/co/PMD_0000517: application of accoustic wave: An application of (an) acoustic wave is an application of (a) mechanical load describing the use of sound waves in a material or system for testing or functional purposes.
+https://w3id.org/pmd/co/PMD_0000630: emission of wave radiation: The emission of wave radioation is an emission of radiation describing the release of energy in the form of waves, such as electromagnetic or acoustic waves, by a material or system.
+https://w3id.org/pmd/co/PMD_0020006: bravais lattice triclinic primitve:
+https://w3id.org/pmd/co/PMD_0000785: high temperature gas chromatography system: A device used for separating and analyzing compounds in a gas mixture at high temperatures using a chromatographic column.
+https://w3id.org/pmd/co/PMD_0050142: tellurite glass: Tellurite Glass is a Nonlinear Optical Glass that is formulated with tellurium oxide to achieve a high refractive index and nonlinear properties.
+https://w3id.org/pmd/co/PMD_0020075: portion of chlorine: A 'Portion Of Chlorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chlorine atom. (A Portion Of Matter that consists of only chlorine atoms.)
+https://w3id.org/pmd/co/PMD_0050076: alumina matrix composites: Alumina Matrix Composites are Oxide-Oxide Composites that use alumina as the primary matrix reinforced by secondary oxide phases.
+https://w3id.org/pmd/co/PMD_0050078: non-oxide composites: Non-Oxide Composites are Composite Ceramics that are formed by combining ceramic phases other than oxides.
+https://w3id.org/pmd/co/PMD_0050090: bismuth strontium calcium copper oxide: Bismuth Strontium Calcium Copper Oxide is a Superconducting Ceramic that is composed of bismuth, strontium, calcium, copper, and oxygen, featuring a layered crystal structure.
+https://w3id.org/pmd/co/PMD_0020018: bravais lattice cubic body-centered:
+https://w3id.org/pmd/co/PMD_0000920: saw: A saw is a device used to cut materials, especially wood. It usually consists of a thin, sharp metal blade fitted with teeth and a handle or frame that allows the user to guide the saw. There are different types of saws designed for different applications, including handsaws, circular saws, hacksaws and band saws. Each type of saw is designed for specific tasks and materials to enable efficient cutting.
+https://w3id.org/pmd/co/PMD_0020132: size: Size is the quality of a material entity that describes its spatial extend.
+https://w3id.org/pmd/co/PMD_0020087: portion of bromine: A 'Portion Of Bromine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bromine atom. (A Portion Of Matter that consists of only bromine atoms.)
+http://purl.obolibrary.org/obo/BFO_0000132: occurrent part of: (Elucidation) occurrent part of is a relation between occurrents b and c when b is part of c
+https://w3id.org/pmd/co/PMD_0000890: connected material entity aggregate: A material entity aggregate that is a mereological sum of separate material entities, which adhere to one another through chemical bonds or physical junctions that go beyond gravity.
+http://purl.obolibrary.org/obo/BFO_0000142: fiat line: (Elucidation) A fiat line is a one-dimensional continuant fiat boundary that is continuous
+https://w3id.org/pmd/co/PMD_0000891: disconnected material entity aggregate: A material entity aggregate that is a mereological sum of scattered (i.e. spatially separated) material entities, which do not adhere to one another through chemical bonds or physical junctions but, instead, relate to one another merely on grounds of metric proximity. The material entities are separated from one another through space or through other material entities that do not belong to the group.
+https://w3id.org/pmd/co/PMD_0000919: sample role: Role of an object, which is a quantity of material taken from a (sample) product, that is sufficient for the purpose of obtaining test pieces.
+https://w3id.org/pmd/co/PMD_0000014: plan:
+https://w3id.org/pmd/co/PMD_0020076: portion of silver: A 'Portion Of Silver' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silver atom. (A Portion Of Matter that consists of only silver atoms.)
+https://w3id.org/pmd/co/PMD_0000599: department role: A department role is a role describing a personal function or position within an organization that defines responsibilities or activities in a specified context. (This role is also an indication that an organization is a sub section of another organization.)
+http://purl.obolibrary.org/obo/BFO_0000035: process boundary: p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts
+https://w3id.org/pmd/co/PMD_0000800: ion spectroscopy: A Spectroscopy Process, that analyzes the properties and behavior of ions in a sample by measuring their interaction with electromagnetic fields or other ions.
+https://w3id.org/pmd/co/PMD_0001010: wear testing process: A Mechanical Property Analyzing Process that evaluates the resistance of a material to wear and abrasion, simulating real-life conditions of friction.
+https://w3id.org/pmd/co/PMD_0000503: ASTM  Grainsize: The ASTM grain size is a scalar specifically describing the size of grains in a crystalline material as defined by ASTM standards.
+https://w3id.org/pmd/co/PMD_0050124: ion-exchanged glass: Ion-Exchanged Glass is a form of Chemically Strengthened Glass that is produced by exchanging ions to improve durability.
+http://purl.obolibrary.org/obo/BFO_0000108: exists at: (Elucidation) exists at is a relation between a particular and some temporal region at which the particular exists
+https://w3id.org/pmd/co/PMD_0000779: heat treatment: A Changing Properties of Materials process in which a solid (ferrous) product is fully or partially exposed to specific time-temperature sequences through a series of process steps with the aim of modifying its properties and/or its internal structure.
+https://w3id.org/pmd/co/PMD_0000831: manufacturer role: The manufacturer role is a role that involves the production or fabrication of materials, components, or systems.
+https://w3id.org/pmd/co/PMD_0020103: molar proportion: The Molar Proportion is the proportion which quantifies the entities count of the part in relation to the entites count of the whole.
+https://w3id.org/pmd/co/PMD_0000788: impact testing process: A Mechanical Property Analyzing Process that determines a material's ability to absorb energy and withstand impact forces, typically using pendulum or drop-weight testers.
+https://w3id.org/pmd/co/PMD_0050126: toughened (tempered) glass: Toughened Glass is a Specialty Glass that is mechanically treated to increase its strength and safety.
+https://w3id.org/pmd/co/PMD_0050003: ionic bond: An ionic bond is a bond that occurs when one atom donates an electron to another atom, resulting in oppositely charged ions that attract each other.
+http://purl.obolibrary.org/obo/BFO_0000026: one-dimensional spatial region: (Elucidation) A one-dimensional spatial region is a whole consisting of a line together with zero or more lines which may have points as parts
+http://purl.obolibrary.org/obo/BFO_0000031: generically dependent continuant: (Elucidation) A generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies which is the content or the pattern that multiple copies would share (A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.)
+https://w3id.org/pmd/co/PMD_0020026: portion of iron: A 'Portion Of Iron' is a 'Poriton Of Pure Substance' that 'consists of' only chebi:iron atom. (A Portion Of Matter that consists of only Iron atoms.)
+https://w3id.org/pmd/co/PMD_0000802: irradiation process: An irradiation process is a process in which a radiation source (bearing a stimulus role) emits radiation towards a material entity (bearing the target role)
+https://w3id.org/pmd/co/PMD_0050130: thermochromic glass: Thermochromic Glass is a Specialty Glass that changes its optical properties as a function of temperature.
+https://w3id.org/pmd/co/PMD_0020106: polycrystal: A polycrystall is an object aggregate that has continuant part some crystal grains.
+https://w3id.org/pmd/co/PMD_0050120: crown glass: Crown Glass is an Optical Glass that is characterized by its low dispersion and high clarity.
+https://w3id.org/pmd/co/PMD_0000868: natural organic material: Natural organic materials are materials derived from natural biological sources, primarily composed of carbon-based compounds.
+https://w3id.org/pmd/co/PMD_0050119: fused silica glass: Fused Silica Glass is an Optical Glass that is made from pure silica, prized for its high transparency and thermal stability.
+https://w3id.org/pmd/co/PMD_0020150: volume: Volume is a universal extensive quality that affects those in processes where a spatial region/spatial extent is relevant.
+https://w3id.org/pmd/co/PMD_0050024: bisphenol a epoxy: Bisphenol A Epoxy is an Epoxy Resin that is formulated using bisphenol A to enhance its mechanical properties.
+https://w3id.org/pmd/co/PMD_0020145: educt: Educt is the role of a material entity that is input of a chemical reaction and is consumed or transformed during the reaction
+https://w3id.org/pmd/co/PMD_0050110: potash lead glass: Potash Lead Glass is a form of Lead Glass that utilizes potash as a flux in addition to lead oxide.
+https://w3id.org/pmd/co/PMD_0000665: gravimetric analyzer: A device used to measure the mass of a sample to determine its composition or concentration.
+https://w3id.org/pmd/co/PMD_0020133: mass: Mass is a quality that inheres in an object, object aggregate or fiat object part and affects those in processes where gravitation, acceleration, thermal mass etc are relevant.
+https://w3id.org/pmd/co/PMD_0000828: magnetizing function: A function performed to induce a magnetic field in materials to modify their magnetic properties.
+https://w3id.org/pmd/co/PMD_0020105: mineral: A mineral is a material that has part some crystal.
+https://w3id.org/pmd/co/PMD_0000639: ferrous alloy: A ferrous alloy is a metal describing an alloy containing iron as its principal element, often combined with other elements for enhanced properties.
+https://w3id.org/pmd/co/PMD_0001020: x-ray diffractometer: An X-Ray Diffractometer is a Measuring Device that determines the crystal structure of materials by analyzing the diffraction patterns of X-rays passed through a sample.
+https://w3id.org/pmd/co/PMD_0060002: starts with:
+https://w3id.org/pmd/co/PMD_0020155: interatomic interaction energy: Interatomic interaction energy is added/removed from the atom aggregate if one atom is moved infinitely away from the rest of the aggregate.
+https://w3id.org/pmd/co/PMD_0000903: primary shaping from the gaseous or vapor state: A Primary Shaping process that involves forming materials from a gaseous or vapor state.
+https://w3id.org/pmd/co/PMD_0050045: porcelain: Porcelain is a Clay-Based Ceramic that is distinguished by its translucency, strength, and refined appearance.
+https://w3id.org/pmd/co/PMD_0000005: behavioral material property: A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
+
+(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
+
+We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules. (Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
+As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
+ The 'unit idenifieres' of such properties (e.g. "HV1", "HV10", "HBW") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.)
+https://w3id.org/pmd/co/PMD_0001005: viscometry: A Rheological Property Analyzing Process that measures the viscosity of a fluid, which is its resistance to gradual deformation by shear or tensile stress, using viscometers or rheometers.
+https://w3id.org/pmd/co/PMD_0020148: extensive quality: An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size.
+http://purl.obolibrary.org/obo/IAO_0000219: denotes:
+https://w3id.org/pmd/co/PMD_0020064: portion of thallium: A 'Portion Of Thallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:thallium. (A Portion Of Matter that consists of only thallium atoms.)
+https://w3id.org/pmd/co/PMD_0000880: passing of time: Passing of time is a process that describes the progression of time, which can influence material aging and property changes.
+https://w3id.org/pmd/co/PMD_0000536: Brinell 2.5 62.5 ISO 6506: A Brinell Hardness measured with 2.5mm diameter ball and a load of 62.5 kgf.
+https://w3id.org/pmd/co/PMD_0050006: low-density polyethylene: Low-Density Polyethylene is a Polyethylene that is characterized by a branched molecular structure and low density.
+https://w3id.org/pmd/co/PMD_0050009: polypropylene: Polypropylene is a Thermoplastic that is composed of repeating propylene monomer units.
+https://w3id.org/pmd/co/PMD_0000936: slide: A moving piece that is guided by a part along its path, providing the mount for objects.
+https://w3id.org/pmd/co/PMD_0020079: portion of arsenic: A 'Portion Of Arsenic' is a 'Portion Of Pure Substance' that 'consists of' only chebi:arsenic atom. (A Portion Of Matter that consists of only arsenic atoms.)
+http://purl.obolibrary.org/obo/IAO_0000117: Term Editor:
+https://w3id.org/pmd/co/PMD_0020047: portion of phosphorus: A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom. (A Portion Of Matter that consists of only phosphorus atoms.)
+https://w3id.org/pmd/co/PMD_0000528: bandsaw: A band saw is a type of saw that uses a continuous, endless saw blade in the form of a band. This blade is usually a narrow, flexible steel blade with teeth along one edge. The band saw is mounted in a closed loop and is guided by two wheels, at least one of which is driven. The operation of the band saw enables precise and efficient cuts to be made in a variety of materials, including wood, metal and plastic.
+https://w3id.org/pmd/co/PMD_0000935: sizing saw: A sizing saw is an industrial circular saw designed for large cutting formats in woodworking and furniture production.
+https://w3id.org/pmd/co/PMD_0000962: supercritical fluid chromatography process: A Chromatography Process that utilizes a supercritical fluid as the mobile phase to separate components, offering higher speed and efficiency compared to traditional methods.
+https://w3id.org/pmd/co/PMD_0050146: S53P4 Bioglass: S53P4 Bioglass is a Silicate-Based Bioactive Glass formulated with a distinct composition for enhanced bioactivity.
+https://w3id.org/pmd/co/PMD_0001024: x-ray microanalysis system: A device used for microanalysis of materials using X-ray techniques to determine elemental composition at a microscopic scale.
+https://w3id.org/pmd/co/PMD_0050034: nitrile butadiene rubber: Nitrile Butadiene Rubber is a Synthetic Rubber that is formulated from acrylonitrile and butadiene to provide resistance to oils and chemicals.
+https://w3id.org/pmd/co/PMD_0020085: portion of iridium: A 'Portion Of Iridium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iridium atom. (A Portion Of Matter that consists of only iridium atoms.)
+https://w3id.org/pmd/co/PMD_0040001: A size that characterizes the main spatial extend of an object or distance between characteristic points of an object.
+https://w3id.org/pmd/co/PMD_0000521: application of magnetic field: An application of (a) magnetic field is the process of subjecting a material to a magnetic field to study its magnetic properties or induce magnetization.
+https://w3id.org/pmd/co/PMD_0000661: glass: A glass is an engineered material present as an amorphous solid typically formed by rapid cooling of a melt. (It is often composed of silica-based compounds.)
+http://purl.obolibrary.org/obo/BFO_0000011: spatiotemporal region: (Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime
+https://w3id.org/pmd/co/PMD_0000527: atomistic monte carlo simulation: A Monte Carlo Simulation process that focuses on the atomic scale, where the properties and behaviors of materials are modeled by considering individual atoms and their interactions.
+https://w3id.org/pmd/co/PMD_0050129: photochromic glass: Photochromic Glass is a Specialty Glass that alters its optical properties in response to exposure to light.
+https://w3id.org/pmd/co/PMD_0000570: coating from the granular or powdery state: A Coating process that involves applying a coating from a granular or powdery state.
+https://w3id.org/pmd/co/PMD_0000653: fracture toughness testing process: A Mechanical Property Analyzing Process that assesses a material's ability to resist crack propagation, determining its fracture toughness.
+https://w3id.org/pmd/co/PMD_0000815: laboratory role: A laboratory role is a role specifying the functions or activities specific to experimental and analytical tasks performed in a laboratory setting.
+https://w3id.org/pmd/co/PMD_0000984: thermocycler: A Thermocycler is a Temperature Change Device that rapidly changes the temperature of a sample in cycles, often used in polymerase chain reactions (PCR).
+https://w3id.org/pmd/co/PMD_0050018: high impact polystyrene: High Impact Polystyrene is a Polystyrene that is modified with rubber to improve its impact resistance.
+https://w3id.org/pmd/co/PMD_0000972: temporal property: A temporal property is a material property that represents attributes related to the time-dependent behavior of a material or process.
+https://w3id.org/pmd/co/PMD_0050141: chalcogenide glass: Chalcogenide Glass is a Nonlinear Optical Glass that is composed of chalcogen elements, offering infrared transmission and nonlinear optical behavior.
+https://w3id.org/pmd/co/PMD_0000814: laboratory: A place equipped for experimental study in a science or for testing and analysis.
+https://w3id.org/pmd/co/PMD_0050131: lithium disilicate glass-ceramics: Lithium Disilicate Glass-Ceramics are Glass-Ceramics that contain lithium disilicate crystals to provide high strength and aesthetic appeal.
+https://w3id.org/pmd/co/PMD_0001031: stimulates: A relation between a stimulating process and material property, where there is some material entity that is bearer of the material property and participates in the stimulating process, and the material property comes to be realized in the course of the stimulating process.
+https://w3id.org/pmd/co/PMD_0000875: optical microscopy: A Microscopy Process that uses visible light and lenses to magnify and image a specimen, widely used for examining the microstructure and morphology of materials.
+https://w3id.org/pmd/co/PMD_0050052: leucite-based glass-ceramics: Leucite-Based Glass-Ceramics are Glass-Ceramics that are Non-Clay Ceramics containing leucite crystals to enhance thermal and mechanical properties.
+https://w3id.org/pmd/co/PMD_0020117: aggregate state solid: A state where the bonds between entites trasmit shear forces.
+https://w3id.org/pmd/co/PMD_0000913: reinforcement learning: A Deep Learning process that involves training models to make sequences of decisions by rewarding desired actions and punishing undesired ones.
+https://w3id.org/pmd/co/PMD_0000600: deteriorative property: The deteriorative property is a material property representing characteristics that describe the susceptibility of a material to degradation over time.
+https://w3id.org/pmd/co/PMD_0000507: acoustical property analyzing process: An assay, that measures the acoustic properties of materials by analyzing how sound waves interact with the material. This process involves generating sound waves and observing their reflection, transmission, absorption, or scattering to determine properties such as acoustic impedance, absorption coefficient, and sound speed.
+http://purl.obolibrary.org/obo/BFO_0000018: zero-dimensional spatial region: (Elucidation) A zero-dimensional spatial region is one or a collection of more than one spatially disjoint points in space
+https://w3id.org/pmd/co/PMD_0000004: is subject of: Inverse of 'is about'.
+https://w3id.org/pmd/co/PMD_0000856: microscopy process: A Structural Property Analyzing Process that uses various types of microscopy techniques to visualize and analyze the microstructure and morphology of materials at different scales.
+https://w3id.org/pmd/co/PMD_0050123: chemically strengthened glass: Chemically Strengthened Glass is a Specialty Glass that is treated via chemical processes to enhance its strength.
+https://w3id.org/pmd/co/PMD_0020124: aggregate state suprafluid: A state with frictionless binding that transmits no shear force between entites.
+https://w3id.org/pmd/co/PMD_0050049: non-clay ceramics: Non-Clay Ceramics are Traditional Ceramics that are formed from raw materials other than clay.
+http://purl.obolibrary.org/obo/IAO_0000122: ready for release:
+https://w3id.org/pmd/co/PMD_0000865: multimodal deep learning: A Deep Learning process that integrates and processes data from multiple modalities (e.g., text, images, and audio) to improve performance and gain a more comprehensive understanding.
+https://w3id.org/pmd/co/PMD_0050143: bioactive glass: Bioactive Glass is Advanced Glass that is designed to interact beneficially with biological tissues.
+https://w3id.org/pmd/co/PMD_0000622: electrical property analyzing process: An assay that determines the electrical properties of materials, including electrical conductivity, resistivity, dielectric strength, and electrical charge storage capabilities.
+https://w3id.org/pmd/co/PMD_0000522: application of mechanical load: An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties.
+https://w3id.org/pmd/co/PMD_0050074: composite ceramics: Composite Ceramics are Advanced Ceramics that are produced by combining two or more ceramic phases to enhance overall performance.
+https://w3id.org/pmd/co/PMD_0050000: bond: A bond is a relational quality describing the force interaction between atoms.
+https://w3id.org/pmd/co/PMD_0050080: C-SiC Composites (Carbon-Silicon Carbide): C-SiC Composites are Non-Oxide Composites that consist of a carbon matrix reinforced with silicon carbide, enhancing high-temperature performance.
+https://w3id.org/pmd/co/PMD_0000966: surface profilometer: A device used to measure the surface profile and texture of materials.
+https://w3id.org/pmd/co/PMD_0020011: bravais lattice orthorhombic body-centered:
+http://purl.obolibrary.org/obo/BFO_0000019: quality: (Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized
+https://w3id.org/pmd/co/PMD_0000506: accoustic property: An accoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission.
+https://w3id.org/pmd/co/PMD_0000606: differential scanning calorimetry process: A Thermal Property Analyzing Process that measures the heat flow into or out of a material as it is heated, cooled, or held at a constant temperature, determining its thermal transitions such as melting, crystallization, and glass transitions.
+https://w3id.org/pmd/co/PMD_0020138: lot: A lot is an object aggregate whose parts are output of the same prodction process.
+https://w3id.org/pmd/co/PMD_0000799: ion spectrometer: A device used for analyzing ions in a sample to determine their composition and concentration.
+https://w3id.org/pmd/co/PMD_0050055: oxide ceramics: Oxide Ceramics are Advanced Ceramics that are composed primarily of metal oxides.
+https://w3id.org/pmd/co/PMD_0000557: chromatography system: A device used for separating mixtures into individual components using a chromatographic column and a mobile phase.
+https://w3id.org/pmd/co/PMD_0000796: ion exchange chromatography system: A device used for separating ions in a sample using ion exchange resins in a chromatographic column.
+http://purl.obolibrary.org/obo/BFO_0000001: entity: (Elucidation) An entity is anything that exists or has existed or will exist
+https://w3id.org/pmd/co/PMD_0000595: defect density: The defect density is a morphological quality describing the number of defects per unit volume or area in a material, which can affect its mechanical and electronic properties.
+http://purl.obolibrary.org/obo/BFO_0000015: process: (Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant
+https://w3id.org/pmd/co/PMD_0060001: specifies value of:
+https://w3id.org/pmd/co/PMD_0020071: portion of aluminium: A 'Portion Of Aluminium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:aluminium atom. (A Portion Of Matter that consists of only aluminium atoms.)
+https://w3id.org/pmd/co/PMD_0001032: term tracker annotation:
+https://w3id.org/pmd/co/PMD_0000967: temperature: The temperature is a universal intensive quality representing the average atomic or molcular movement or vibration of a portion of matter. (To express that an object has a temperature, the property 'intensive bearer of' can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature.)
+https://w3id.org/pmd/co/PMD_0000613: discrete-event simulation: a simulation method where events are processed at distinct points in time, commonly used for modeling systems with discrete state changes.
+https://w3id.org/pmd/co/PMD_0000626: electron spectroscopy: A Spectroscopy Process, that studies the energy distribution of electrons emitted from a sample when it is irradiated with electromagnetic radiation or bombarded with particles.
+https://w3id.org/pmd/co/PMD_0050053: fritted ceramics: Fritted Ceramics are Non-Clay Ceramics that are manufactured by fusing and subsequently grinding glass materials.
+https://w3id.org/pmd/co/PMD_0050150: iron-based metallic glass: Iron-Based Metallic Glass is an Amorphous Metal Glass that is predominantly composed of iron.
+https://w3id.org/pmd/co/PMD_0000666: gravimetrical analyzing process: A Structural Property Analyzing Process that measures the quantity of a substance by its mass, often involving the precipitation, filtration, drying, and weighing of the substance.
+https://w3id.org/pmd/co/PMD_0000922: scanning electron microscope: A Scanning Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons.
+http://purl.obolibrary.org/obo/IAO_0000109: measurement datum:
+https://w3id.org/pmd/co/PMD_0060004: simultaneous with:
+https://w3id.org/pmd/co/PMD_0050137: magnetic glass: Magnetic Glass is Functional Glass that is modified to exhibit magnetic properties.
+https://w3id.org/pmd/co/PMD_0000652: forming under tensile conditions: A forming process that involves stretching or elongating materials to achieve desired dimensions or shapes.
+https://w3id.org/pmd/co/PMD_0000056: melting furnace: A melting furnace is a device that bears a melting function, typically designed to raise the temperature of a solid material to initiate and sustain its transformation into a melt. (An electric arc furnace used in steelmaking.)
+http://purl.obolibrary.org/obo/IAO_0000124: uncurated:
+http://purl.obolibrary.org/obo/IAO_0000030: information content entity:
+https://w3id.org/pmd/co/PMD_0000976: testing function: A function performed to assess or evaluate the properties, performance, or quality of materials or devices.
+http://purl.obolibrary.org/obo/BFO_0000185: has history: b has history c =Def c history of b
+https://w3id.org/pmd/co/PMD_0020129: reversible process: A reversible process is a process whose participants form a thermodynamic system with an entropy S and S remains constant during the process.
+https://w3id.org/pmd/co/PMD_0000051: simulation entity role: Simulation entity role is a role that inheres in an independent continuant (IC) and is realized in a simulation process. This role enables the IC to participate in the simulation as a proxy, model, or representative of a real or hypothetical entity within the simulated context
+https://w3id.org/pmd/co/PMD_0050085: magnetic ceramics (ferrites): Magnetic Ceramics are Electroceramics that exhibit magnetic properties, typically based on iron oxides combined with other metal oxides.
+https://w3id.org/pmd/co/PMD_0000001: portion of matter: A material entity that is not demarcated by any physical discontinuities. At some finer level of granularity it is an object aggregate, at some coarser level of granularity it is a fiat object part,but at this level of granularity it is neither. (Lome explanation for portion of matter: "What is a molecule cluster at the cellular level? Contrary to the molecular level, at the cellular level of granularity the boundary of each molecule is outside of the level of granular focus. What forms a discontinuous cluster of countable individual molecules and thus bona fide objects at the molecular level, is a continuous and non-countable molecular substance at coarser levels of
+granularity. At these coarser levels, the individual molecules cannot be differentiated and demarcated anymore and the cluster as a whole possesses only fiat inner boundaries." It is also representing a distinct physical or conceptual part of a material or substance.
+
+The open energy ontology OEO defines portion of matter as a subclass of object aggregate, which implies countability. Our portion is not (precisely) countable and thus bearer of intensive properties.)
+https://w3id.org/pmd/co/PMD_0000969: temperature change function: A subfunction of heat treatment performed to induce changes in temperature to alter material properties.
+https://w3id.org/pmd/co/PMD_0000776: hardness testing process: A Mechanical Property Analyzing Process that measures a material's resistance to deformation, typically using indentation methods to determine hardness.
+https://w3id.org/pmd/co/PMD_0000826: magnetizing: A Changing Properties Of Material process in which ferromagnetic materials are exposed to an external magnetic field, causing the material to take on magnetic properties.
+https://w3id.org/pmd/co/PMD_0050151: magnesium-based metallic glass: Magnesium-Based Metallic Glass is an Amorphous Metal Glass that is primarily composed of magnesium, noted for its low density.
+https://w3id.org/pmd/co/PMD_0020063: portion of neon: A 'Portion Of Neon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neon atom. (A Portion Of Matter that consists of only neon atoms.)
+https://w3id.org/pmd/co/PMD_0020069: portion of mercury: A 'Portion Of Mercury' is a 'Portion Of Pure Substance' that 'consists of' only chebi:mercury atom. (A Portion Of Matter that consists of only mercury atoms.)
+https://w3id.org/pmd/co/PMD_0020078: portion of manganese: A 'Portion Of Manganese' is a 'Portion Of Pure Substance' that 'consists of' only chebi:manganese atom. (A Portion Of Matter that consists of only manganese atoms.)
+http://purl.obolibrary.org/obo/BFO_0000054: has realization: b has realization c =Def c realizes b
+http://purl.obolibrary.org/obo/BFO_0000127: material basis of: b material basis of c =Def c has material basis b
+http://purl.obolibrary.org/obo/BFO_0000224: has last instant: t has last instant t' =Def t' last instant of t
+https://w3id.org/pmd/co/PMD_0020067: portion of magnesium: A 'Portion Of Magnesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:magnesium atom. (A Portion Of Matter that consists of only magnesium atoms.)
+https://w3id.org/pmd/co/PMD_0000006: has value: data property that relates an information content entity to a literal
+https://w3id.org/pmd/co/PMD_0020142: energy: Energy is a quality of material entities which manifests as a capacity to perform work (such as causing motion or the interaction of molecules)
+https://w3id.org/pmd/co/PMD_0000000: material: A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process. (Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a Manufacturing Process may be SemiFinishedProdcuts. The sum of portions of matter of the same type form a portion of matter of that type.)
+https://w3id.org/pmd/co/PMD_0020039: portion of cobalt: A 'Portion Of Cobalt' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cobalt atom. (A Portion Of Matter that consists of only cobalt atoms.)
+https://w3id.org/pmd/co/PMD_0050077: zirconia matrix composites: Zirconia Matrix Composites are Oxide-Oxide Composites that use zirconia as the primary matrix reinforced by additional oxide phases.
+https://w3id.org/pmd/co/PMD_0000501: 1D: 1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis.
+https://w3id.org/pmd/co/PMD_0050044: stoneware: Stoneware is a Clay-Based Ceramic that is fired at higher temperatures than earthenware to yield a denser, more durable material.
+http://purl.obolibrary.org/obo/BFO_0000139: temporal part of: b temporal part of c =Def b occurrent part of c & (b and c are temporal regions) or (b and c are spatiotemporal regions & b temporally projects onto an occurrent part of the temporal region that c temporally projects onto) or (b and c are processes or process boundaries & b occupies a temporal region that is an occurrent part of the temporal region that c occupies)
+https://w3id.org/pmd/co/PMD_0000597: density: The density is a universal intensive quality representing the unit mass of a portion of matter per unit volume.
+https://w3id.org/pmd/co/PMD_0000853: metallographic texture: The metallographic texture is a morphological quality describing the arrangement and orientation of grains and phases in a metallic material, observed through metallographic analysis.
+https://w3id.org/pmd/co/PMD_0001007: waterjet cutter: A device that utilizes a high-pressure stream of water or a water stream with abrasive particles to cut materials such as metal, stone, plastic, etc.
+https://w3id.org/pmd/co/PMD_0050070: Boron Nitride (BN): Boron Nitride is a Nitride Ceramic that is a Non-Oxide Ceramic composed of boron and nitrogen, with a structure analogous to graphite.
+https://w3id.org/pmd/co/PMD_0050017: general purpose polystyrene: General Purpose Polystyrene is a Polystyrene that is valued for its clarity and ease of processing.
+https://w3id.org/pmd/co/PMD_0000579: compounding machine: A device used for mixing or compounding materials to achieve desired properties.
+http://purl.obolibrary.org/obo/BFO_0000020: specifically dependent continuant: b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b specifically depends on c (A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.)
+https://w3id.org/pmd/co/PMD_0000625: electron microscopy: A Microscopy Process that uses a beam of electrons to create an image of an object, allowing for high-resolution visualization of the material's surface and internal structures.
+https://w3id.org/pmd/co/PMD_0050132: transparent glass-ceramics: Transparent Glass-Ceramics are Glass-Ceramics that are engineered to maintain optical transparency despite partial crystallization.
+https://w3id.org/pmd/co/PMD_0000608: differential thermal analyzer: A device used to measure the temperature difference between a sample and a reference material as they are heated or cooled.
+https://w3id.org/pmd/co/PMD_0020095: portion of titanium: A 'Portion Of Titanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:titanium atom. (A Portion Of Matter that consists of only titanium atoms.)
+https://w3id.org/pmd/co/PMD_0060003: ends with:
+http://purl.obolibrary.org/obo/BFO_0000056: participates in: (Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way
+https://w3id.org/pmd/co/PMD_0020102: mass proportion: The Mass Proportion is a Proportion which quantifies the mass of the part relative to the mass of the whole.
+https://w3id.org/pmd/co/PMD_0050107: pyrex-type glass: Pyrex-Type Glass is a form of Borosilicate Glass that is renowned for its high resistance to thermal shock.
+https://w3id.org/pmd/co/PMD_0000781: heat treatment function: A function performed to alter the properties of materials through controlled heating and cooling processes.
+https://w3id.org/pmd/co/PMD_0000581: compression testing process: A Mechanical Property Analyzing Processs that determines a material's behavior under compressive forces, measuring its compressive strength and modulus.
+http://purl.obolibrary.org/obo/IAO_0000119: Definition Source:
+https://w3id.org/pmd/co/PMD_0000832: manufacturing function: A function that inheres in devices or processes that are used to produce or assemble goods or components.
+https://w3id.org/pmd/co/PMD_0050031: natural rubber: Natural Rubber is an Elastomer that is derived from the latex of rubber trees.
+http://purl.obolibrary.org/obo/BFO_0000140: continuant fiat boundary: (Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity
+https://w3id.org/pmd/co/PMD_0000575: coating function: A function performed to apply a layer or coating to a surface to enhance its properties or appearance.
+http://purl.obolibrary.org/obo/IAO_0000002: example to be eventually removed:
+https://w3id.org/pmd/co/PMD_0050012: atactic polypropylene: Atactic Polypropylene is a Polypropylene in which the methyl groups are randomly distributed along the polymer chain.
+https://w3id.org/pmd/co/PMD_0000772: hardening by forming: A Changing Properties Of Material process, that involves altering material properties by mechanical deformation.
+https://w3id.org/pmd/co/PMD_0050050: glass-ceramics: Glass-Ceramics are Non-Clay Ceramics that are produced by controlled crystallization of glass, combining properties of both glass and ceramics.
+https://w3id.org/pmd/co/PMD_0050082: dielectric ceramics: Dielectric Ceramics are Electroceramics that serve primarily as electrical insulators due to their high dielectric constants.
+http://purl.obolibrary.org/obo/BFO_0000146: fiat surface: (Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected
+https://w3id.org/pmd/co/PMD_0000638: fatigue testing process: A Mechanical Property Analyzing Process that assesses a material's ability to withstand cyclic loading, determining its fatigue life and endurance limit.
+https://w3id.org/pmd/co/PMD_0020031: portion of germanium: A 'Portion Of Germanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:germanium atom. (A Portion Of Matter that consists of only germanium atoms.)
+https://w3id.org/pmd/co/PMD_0000867: nanoindentation process: A Mechanical Property Analyzing Processs that measures the hardness and elastic modulus of materials at the nanoscale using a sharp indenter.
+https://w3id.org/pmd/co/PMD_0050035: ethylene propylene diene monomer: Ethylene Propylene Diene Monomer is a Synthetic Rubber produced from ethylene, propylene, and a diene monomer to offer excellent weather resistance.
+https://w3id.org/pmd/co/PMD_0050127: laminated glass: Laminated Glass is a Specialty Glass that is composed of multiple bonded layers to improve safety and acoustic performance.
+https://w3id.org/pmd/co/PMD_0050010: isotactic polypropylene: Isotactic Polypropylene is a Polypropylene in which all the methyl groups are aligned on the same side of the polymer chain.
+https://w3id.org/pmd/co/PMD_0000885: pole figure: A pole figure is a map representing a graphical representation of the orientation of crystallographic planes in a polycrystalline sample.
+https://w3id.org/pmd/co/PMD_0050121: flint glass: Flint Glass is an Optical Glass that is distinguished by its high refractive index and dispersion.
+https://w3id.org/pmd/co/PMD_0020004: chemical composition specification: A 'chemical composition specification' is an information content entity that 'specifies the value of' the chemical components of a material. The chemical components that are quanitfied are the 'portions of atomic species' or 'portions of matter' that the material 'consists of'. A 'chemical composition specification' 'has continuant parts' that quantify the mass proportions or molar proportions that the material 'conists of'.
+https://w3id.org/pmd/co/PMD_0050139: cobalt-borosilicate glass: Cobalt-Borosilicate Glass is a Magnetic Glass that is formulated with cobalt to enhance its magnetic properties.
+https://w3id.org/pmd/co/PMD_0000561: cleaning device: A device used for removing contaminants from materials or surfaces.
+https://w3id.org/pmd/co/PMD_0000939: soldering function: A subfunction of joining performed to connect materials using soldering techniques.
+https://w3id.org/pmd/co/PMD_0020134: stimulus role: The stimulus role is a role that an object bears in a process when causally influencing another object  that bears a stimulation target role in the same process. 'Role' implies here, that the 'bearing' assignment depends on the intent.
+https://w3id.org/pmd/co/PMD_0000615: drilling machine: A Drilling Machine is a Device that creates holes in a workpiece by means of a rotating drill bit.
+https://w3id.org/pmd/co/PMD_0001018: x-ray microanalysis: An X-ray Analyzing Process that determines the elemental composition and chemical properties of a specimen by detecting and analyzing the characteristic X-rays emitted from the sample when it is irradiated with a focused electron beam.
+https://w3id.org/pmd/co/PMD_0000857: microstructure: The microstructure represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope.
+http://purl.obolibrary.org/obo/BFO_0000024: fiat object part: (Elucidation) A fiat object part b is a material entity & such that if b exists then it is continuant part of some object c & demarcated from the remainder of c by one or more fiat surfaces
+https://w3id.org/pmd/co/PMD_0000907: primary shaping from the plastic state: A Primary Shaping process that involves forming materials from a plastic state.
+https://w3id.org/pmd/co/PMD_0000986: thermogravimetric analysis process: A Thermal Property Analyzing Process that measures the change in mass of a material as a function of temperature or time in a controlled atmosphere, determining its thermal stability and composition.
+http://purl.obolibrary.org/obo/IAO_0000005: objective specification:
+https://w3id.org/pmd/co/PMD_0000893: powder: A powder is a dry, solid disconnected material entity aggragate composed of many very fine particles. These particles can flow freely when shaken or tilted.
+http://purl.obolibrary.org/obo/BFO_0000058: is concretized by: c is concretized by b =Def b concretizes c
+https://w3id.org/pmd/co/PMD_0050029: urea formaldehyde: Urea Formaldehyde is a Thermosetting Polymer formed from urea and formaldehyde, commonly used in adhesives and molding compounds.
+https://w3id.org/pmd/co/PMD_0050057: Zirconia (ZrO₂): Zirconia is an Oxide Ceramic that is an Advanced Ceramic composed of zirconium dioxide, noted for its high strength and toughness.
+https://w3id.org/pmd/co/PMD_0050134: conductive glass: Conductive Glass is Functional Glass that has been modified to exhibit electrical conductivity.
+https://w3id.org/pmd/co/PMD_0000559: circular table saw: A stationary circular saw that is built into a table top. It is often used in workshops for precise wood cuts.
+https://w3id.org/pmd/co/PMD_0000813: knife: A tool with a sharp edge, typically made of metal, used for cutting food, materials, or other substances.
+https://w3id.org/pmd/co/PMD_0020055: portion of bohrium: A 'Portion Of Bohrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bohrium atom. (A Portion Of Matter that consists of only bohrium atoms.)
+https://w3id.org/pmd/co/PMD_0000543: calibration device role: Role of a device that is used for calibration of itself or another device, which has the "Subject Of Calibration Role". The role is realized in a calibration process.
+https://w3id.org/pmd/co/PMD_0020139: melt: A melt is an object (material entity) that exists in a liquid state as a result of the phase transition from solid due to thermal energy input. In materials science, it typically refers to metals, alloys, or other substances maintained above their melting point.
+https://w3id.org/pmd/co/PMD_0000642: flow cytometer: A Flow Cytometer is a Device used to measure the physical and chemical characteristics of a population of cells or particles.
+https://w3id.org/pmd/co/PMD_0000801: irradiating: A Changing Properties Of Material process that employs radiation exposure, to alter and enhance a material's physical or chemical attributes.
+https://w3id.org/pmd/co/PMD_0050020: Amorphous PET (APET): Amorphous PET is a Polyethylene Terephthalate that is characterized by a non-crystalline structure.
+https://w3id.org/pmd/co/PMD_0020202: crack: A crack is a physical separation of a material entity at the level of (atomic) Bonds.
+https://w3id.org/pmd/co/PMD_0001021: x-ray analyzer: A device used to analyze the composition and properties of materials through X-ray techniques such as diffraction or fluorescence.
+https://w3id.org/pmd/co/PMD_0000584: conditioning process: This activity describes the process of and the measures taken to set a tangible object to pre-defined environmental conditions.
+https://w3id.org/pmd/co/PMD_0000859: milling machine: A Milling Machine is a Device that performs machining operations to remove material from a workpiece using rotary cutters.
+https://w3id.org/pmd/co/PMD_0001016: x-ray diffraction process: An X-ray Analyzing Process, that involves the interaction of X-rays with the crystalline structure of a material.
+https://w3id.org/pmd/co/PMD_0000620: electrical conductivity: The electrical conductivity is an electrical property describing the ability of a material to conduct electric current, influenced by its structure and composition.
+https://w3id.org/pmd/co/PMD_0000773: hardness: The hardness is a mechanical property used as a measure of a material's resistance to localized plastic deformation, often tested by indentation or scratch methods.
+https://w3id.org/pmd/co/PMD_0000524: assembling process: A process to mount or demount a component.
+https://w3id.org/pmd/co/PMD_0020153: technical system: A technical system is an object aggretate: 
+1. that is output of a manufacturing process, 
+2. that bears some function 
+3. whose continuant parts are some components.
+https://w3id.org/pmd/co/PMD_0000660: generative deep learning: A Deep Learning process that involves creating models capable of generating new data instances that resemble the training data.
+https://w3id.org/pmd/co/PMD_0020050: portion of silicon: A 'Portion Of Silicon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silicon atom. (A Portion Of Matter that consists of only silicon atoms.)
+https://w3id.org/pmd/co/PMD_0000549: change of temperature: A change of temperature is a process describing the variation in thermal energy within a material or system over time or due to external influences.
+https://w3id.org/pmd/co/PMD_0000937: soldering device: A device used for joining materials together by melting and applying a filler metal.
+https://w3id.org/pmd/co/PMD_0050093: alumina-based ceramics: Alumina-Based Ceramics are Bioinert Ceramics that are composed primarily of alumina, valued for their biocompatibility.
+https://w3id.org/pmd/co/PMD_0001019: x-ray spectroscopy: A Spectroscopy Process, that analyzes the interaction of X-rays with matter to determine the material's composition and structure.
+https://w3id.org/pmd/co/PMD_0000925: scratch testing machine: A device used to test the scratch resistance of materials by applying a scratching force.
+https://w3id.org/pmd/co/PMD_0000909: project: A series of goal-orientated (intent) activities and interactions to achieve a specific outcome.
+https://w3id.org/pmd/co/PMD_0000578: compounding: A joining process that involves assembling various components or sub-assemblies to form a complex unit, commonly used in manufacturing processes where multiple parts are put together to create a final product.
+https://w3id.org/pmd/co/PMD_0050145: 45S5 Bioglass: 45S5 Bioglass is a Silicate-Based Bioactive Glass with a specific composition known for its ability to bond with bone.
+https://w3id.org/pmd/co/PMD_0000818: lathe: A Lathe is a Device that rotates a workpiece on its axis to perform various operations such as cutting, sanding, drilling, or deformation.
+https://w3id.org/pmd/co/PMD_0020101: proportion: A Proportion is a relational quality between two entites (the whole and the part) which quantifies the relation between the whole and its part.
+https://w3id.org/pmd/co/PMD_0020008: bravais lattice monoclinic base-centered:
+https://w3id.org/pmd/co/PMD_0000504: ab initio molecular dynamics simulation: A Simulation Process that uses quantum mechanical calculations to predict the behavior of molecular systems without empirical parameters.
+https://w3id.org/pmd/co/PMD_0020056: portion of fluorine: A 'Portion Of Fluorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:fluorine atom. (A Portion Of Matter that consists of only fluorine atoms.)
+http://purl.obolibrary.org/obo/OBI_0000379: mechanical function:
+https://w3id.org/pmd/co/PMD_0020070: portion of xenon: A 'Portion Of Xenon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:xenon atom. (A Portion Of Matter that consists of only xenon atoms.)
+https://w3id.org/pmd/co/PMD_0050128: electrochromic glass: Electrochromic Glass is a Specialty Glass that can reversibly change its light transmission properties when an electrical voltage is applied.
+https://w3id.org/pmd/co/PMD_0000820: load cell: A load cell converts a force such as tension, compression, pressure, or torque into an electrical signal that can be measured and standardized. It is a force transducer. As the force applied to the load cell increases, the electrical signal changes proportionally. The most common types of load cell are pneumatic, hydraulic, and strain gauges.
+https://w3id.org/pmd/co/PMD_0000895: pressing on - in: A joining process that involves mechanically pressing one component into or onto another to create a secure fit, thereby establishing a strong mechanical connection.
+https://w3id.org/pmd/co/PMD_0020021: causally influences: An entity (that is bearer of some stimulation role) causally influences another entity (that is bearer of the stimulation target role) in a process iff  the target objects qualites (and/or realizable entities?) are altered in a manner that is significant in the given context/domain of discourse..
+https://w3id.org/pmd/co/PMD_0000825: magnetic property: A magnetic property is a material property representing characteristics that describe how a material responds to magnetic fields, such as permeability and coercivity.
+http://purl.obolibrary.org/obo/BFO_0000216: spatially projects onto: (Elucidation) spatially projects onto is a relation between some spatiotemporal region b and spatial region c such that at some time t, c is the spatial extent of b at t
+https://w3id.org/pmd/co/PMD_0000793: initiator role: An initiator role is a role describing the position or function responsible for starting or catalyzing a process, often related to material testing or experiments.
+https://w3id.org/pmd/co/PMD_0000888: polymer: A polymer is an engineered material that consists of many repeated subunits (monomers) to form long chains. The atoms within a polymer chain are bonded together by covalent bonds. The intermolecular forces between polymer chains are typically represented by Van der Waals forces and hydrogen bonds.
+https://w3id.org/pmd/co/PMD_0050087: hard ferrites: Hard Ferrites are Magnetic Ceramics that are characterized by high coercivity, making them suitable for permanent magnets.
+https://w3id.org/pmd/co/PMD_0000650: forming under compressive conditions: A forming process that involves deforming materials under compressive forces, commonly used in techniques like rolling and die forming where metal is shaped by applying pressure.
+http://purl.obolibrary.org/obo/BFO_0000066: occurs in: b occurs in c =Def b is a process or a process boundary & c is a material entity or site & there exists a spatiotemporal region r & b occupies spatiotemporal region r & for all time t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t
+https://w3id.org/pmd/co/PMD_0000572: coating from the liquid state: A Coating process that involves applying a coating from a liquid state.
+https://w3id.org/pmd/co/PMD_0050109: lead glass: Lead Glass is a Silicate Glass that is formulated with lead oxide to increase brilliance and refractive index.
+https://w3id.org/pmd/co/PMD_0020090: portion of uranium: A 'Portion Of Uranium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:uranium atom. (A Portion Of Matter that consists of only uranium atoms.)
+https://w3id.org/pmd/co/PMD_0050096: hydroxyapatite: Hydroxyapatite is a Bioactive Ceramic that is composed of calcium phosphate and closely resembles the mineral component of bone.
+https://w3id.org/pmd/co/PMD_0050075: oxide-oxide composites: Oxide-Oxide Composites are Composite Ceramics that consist entirely of oxide ceramic phases.
+https://w3id.org/pmd/co/PMD_0020094: portion of scandium: A 'Portion Of Scandium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:scandium atom. (A Portion Of Matter that consists of only scandium atoms.)
+https://w3id.org/pmd/co/PMD_0050149: amorphous metal glass: Amorphous Metal Glass is Glass that is characterized by a disordered, non-crystalline atomic structure, resembling a frozen liquid.
+https://w3id.org/pmd/co/PMD_0000834: map: A map is a 2-D information content entity describing a representation of spatial data or relationships, often used in material science for visualizing properties or distributions.
+http://purl.obolibrary.org/obo/BFO_0000148: zero-dimensional temporal region: (Elucidation) A zero-dimensional temporal region is a temporal region that is a whole consisting of one or more separated temporal instants as parts
+https://w3id.org/pmd/co/PMD_0000975: test piece role: role of object which is a part taken from a specimen or sample; the part has specified dimensions, is machined or un-machined, brought to a required condition for submission to a given test
+https://w3id.org/pmd/co/PMD_0000571: coating from the ionized state: A Coating process that involves applying a coating from an ionized state.
+https://w3id.org/pmd/co/PMD_0000603: device role:
+https://w3id.org/pmd/co/PMD_0001022: x-ray computed tomography system: A device that uses X-ray computed tomography techniques to produce cross-sectional images of a material.
+https://w3id.org/pmd/co/PMD_0020007: bravais lattice monoclinic primitive:
+https://w3id.org/pmd/co/PMD_0000989: thin-layer chromatography process: A Chromatography Process that separates non-volatile mixtures by applying a sample on a thin layer of an adsorbent material and using a solvent to move the components up the layer based on their affinities.
+https://w3id.org/pmd/co/PMD_0020036: portion of rhenium: A 'Portion Of Rhenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:rhenium atom. (A Portion Of Matter that consists of only rhenium atoms.)
+https://w3id.org/pmd/co/PMD_0000819: light microscopy: An Optical Microscopy process that uses visible light and lenses to magnify and visualize specimens, enabling the study of the microstructure and morphology of materials.
+https://w3id.org/pmd/co/PMD_0020022: intensive bearer of: Intensive bearer of is a chain that allows to connect objects to intensive properties through "the matter they consist of". (TODO: check if we should force the 'o' to be a portion of matter' through:
+http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
+or
+https://www.w3.org/TR/swbp-n-aryRelations/)
+https://w3id.org/pmd/co/PMD_0050037: polylactic acid: Polylactic Acid is a Biodegradable Polymer produced from renewable resources such as corn starch.
+http://purl.obolibrary.org/obo/BFO_0000171: located in: b located in c =Def b is an independent continuant & c is an independent & neither is a spatial region & there is some time t such that the spatial region which b occupies at t is continuant part of the spatial region which c occupies at t
+https://w3id.org/pmd/co/PMD_0000648: forming machine: A device used for shaping materials under various conditions, including tensile, compressive, and shearing.
+https://w3id.org/pmd/co/PMD_0050027: phenol-formaldehyde resin: Phenol-Formaldehyde Resin is a Phenolic Resin that is synthesized from phenol and formaldehyde.
+https://w3id.org/pmd/co/PMD_0000947: speed of sound: The speed of sound is an accoustic property representing the rate at which sound waves travel through a material, dependent on its density and elastic properties.
+https://w3id.org/pmd/co/PMD_0000555: chromatography function: A function performed to separate compounds in a mixture based on their distribution between a stationary phase and a mobile phase.
+http://purl.obolibrary.org/obo/BFO_0000027: object aggregate: (Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit
+https://w3id.org/pmd/co/PMD_0020204: pore: A pore is a cavity in the 'bulk' of an object
+https://w3id.org/pmd/co/PMD_0020125: aggregate state suprasolid: A state that exhibits suprafluid and solid properties.
+https://w3id.org/pmd/co/PMD_0000641: filling: A joining process that involves the use of a filler material to connect parts.
+http://purl.obolibrary.org/obo/BFO_0000057: has participant: p has participant c =Def c participates in p
+https://w3id.org/pmd/co/PMD_0000658: gel permeation chromatography process: A Chromatography Process that separates molecules based on their size by passing the sample through a porous gel matrix, also known as size exclusion chromatography.
+https://w3id.org/pmd/co/PMD_0050091: bioceramics: Bioceramics are Ceramics that are engineered to be compatible with biological systems.
+https://w3id.org/pmd/co/PMD_0020048: portion of boron: A 'Portion Of Boron' is a 'Portion Of Pure Substance' that 'consists of' only chebi:boron atom. (A Portion Of Matter that consists of only boron atoms.)
+https://w3id.org/pmd/co/PMD_0000987: thermomechanical analysis process: A Thermoanalytical Process that measures the dimensional changes of a material as a function of temperature, determining its coefficient of thermal expansion.
+https://w3id.org/pmd/co/PMD_0050081: electroceramics: Electroceramics are Ceramics that are specifically engineered for electrical, magnetic, or superconducting applications.
+http://purl.obolibrary.org/obo/BFO_0000195: specifically depends on: (Elucidation) specifically depends on is a relation between a specifically dependent continuant b and specifically dependent continuant or independent continuant that is not a spatial region c such that b and c share no parts in common & b is of a nature such that at all times t it cannot exist unless c exists & b is not a boundary of c
+https://w3id.org/pmd/co/PMD_0000809: joining by soldering: A joining process that involves using a filler material (solder) to join metal parts by melting the solder between them without melting the base materials, a technique widely used in electronics and plumbing. This process creates a strong, conductive bond suitable for various applications.
+https://w3id.org/pmd/co/PMD_0000881: person: A person is a human being.
+https://w3id.org/pmd/co/PMD_0000905: primary shaping from the ionized state: A Primary Shaping process that involves forming materials from an ionized state.
+https://w3id.org/pmd/co/PMD_0000816: laser spectroscopy: A Spectroscopy Process, that uses laser light to probe the properties of materials.
+https://w3id.org/pmd/co/PMD_0000953: structural and chemical decay: The structural and chemical decay is an evolution of damage describing the deterioration of a material's structure and composition over time due to environmental or operational conditions.
+https://w3id.org/pmd/co/PMD_0000587: crack growth: The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress.
+https://w3id.org/pmd/co/PMD_0000008: process characteristic: A process characteristic is a dependent occurrent that existentially depends on a process.
+https://w3id.org/pmd/co/PMD_0000978: thermal conductivity: The thermal conductivity is a thermal property describing the ability of a material to conduct heat.
+https://w3id.org/pmd/co/PMD_0000929: shear testing process: A Mechanical Property Analyzing Process that measures a material's response to shear forces, determining its shear strength and shear modulus.
+http://purl.obolibrary.org/obo/IAO_0000420: defined class:
+https://w3id.org/pmd/co/PMD_0001003: unsupervised machine learning: A Machine Learning process that identifies patterns and relationships in data without using labeled outcomes.
+https://w3id.org/pmd/co/PMD_0050047: mullite: Mullite is an Aluminosilicate that is a Silicate Ceramic known for its excellent high-temperature stability.
+https://w3id.org/pmd/co/PMD_0050039: polybutylene succinate: Polybutylene Succinate is a Biodegradable Polymer that is a thermoplastic polyester recognized for its compostability.
+https://w3id.org/pmd/co/PMD_0000624: electron microscope: An electron-optical instrument in which a beam of electrons is used to produce an enlarged image of a minute object. A device that uses a beam of electrons to create high-resolution images of a sample's surface or structure.
+https://w3id.org/pmd/co/PMD_0000924: scratch hardness: The scratch hardness is a hardness representing a measure of a material's resistance to deformation or scratching by a harder material.
+https://w3id.org/pmd/co/PMD_0000767: hacksaw: A hacksaw is a hand saw designed for cutting various materials, particularly metal. It consists of a fine-toothed blade, tensioned in a frame, and a handle. The frame of a hacksaw is typically C-shaped, allowing the blade to be easily replaced when necessary. Hacksaws are commonly used in metalworking and other applications where a controlled and precise cut through metal is required. The fine teeth on the hacksaw blade enable it to cut through metal with efficiency, and the tensioned frame provides stability during the cutting process. Hacksaws are versatile tools and are often used for tasks such as cutting pipes, rods, and metal sheets. They are available in different sizes and tooth configurations to suit various cutting needs.
+https://w3id.org/pmd/co/PMD_0000057: melting function: A melting function is a heating function that, when realized, enables a device or system to initiate or sustain the phase transition of a solid material into a liquid by raising its temperature above the melting point.
+https://w3id.org/pmd/co/PMD_0000973: tensile testing machine: Ein Gerät zur Prüfung der Zugfestigkeit und Dehnung von Materialien durch Anwendung einer Dehnkraft. A device used to test the tensile strength and elongation of materials by applying a stretching force.
+https://w3id.org/pmd/co/PMD_0020084: portion of osmium: A 'Portion Of Osmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:osmium atom. (A Portion Of Matter that consists of only osmium atoms.)
+https://w3id.org/pmd/co/PMD_0020096: steel: Steel is a ferrous alloy that consists of iron and carbon and possibly other alloying elements (and possibly impurities).
+https://w3id.org/pmd/co/PMD_0050144: silicate-based bioactive glass: Silicate-Based Bioactive Glass is a Bioactive Glass that is composed primarily of silicate compounds to facilitate bonding with biological tissue.
+https://w3id.org/pmd/co/PMD_0020028: portion of indium: A 'Portion Of Indium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:indium atom. (A Portion Of Matter that consists of only indium atoms.)
+https://w3id.org/pmd/co/PMD_0000529: bending testing machine: A device used to test the bending strength and flexibility of materials by applying a load and measuring deformation.
+https://w3id.org/pmd/co/PMD_0000787: image: An image is a 2-D information content entity that is a visual representation of a material or system, often used for analysis or documentation.
+https://w3id.org/pmd/co/PMD_0000668: grips: This device is a part by which something, usually a tangible object, is grasped. Typically, grips are part of a mounting system (processing node) referring to a testing system.
+https://w3id.org/pmd/co/PMD_0000659: gel permeation chromatography system: A device used for separating and analyzing polymers based on their molecular size using gel permeation chromatography.
+https://w3id.org/pmd/co/PMD_0050095: bioactive ceramics: Bioactive Ceramics are Bioceramics that interact with biological tissues to promote bonding or regeneration.
+https://w3id.org/pmd/co/PMD_0000546: ceramic: Ceramics are engineered materials described as non-metallic, inorganic materials characterized by high hardness, brittleness, and heat resistance, commonly used in engineering applications.
+http://purl.obolibrary.org/obo/BFO_0000197: inheres in: b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c
+https://w3id.org/pmd/co/PMD_0000560: cleaning: A Seperating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning.
+https://w3id.org/pmd/co/PMD_0020001: filler role: Filler is the role of a PortionOfDisconnectedMatter that implies being hosted in a Matrix.
+https://w3id.org/pmd/co/PMD_0000878: optical property analyzing process: An assay that assesses the optical characteristics of materials, such as refractive index, absorption, transmission, reflectivity, and luminescence.
+https://w3id.org/pmd/co/PMD_0000851: melting point: The melting point is a phase boundary described by the temperature at which a solid becomes a liquid under standard atmospheric pressure.
+https://w3id.org/pmd/co/PMD_0050064: Silicon Carbide (SiC): Silicon Carbide is a Carbide Ceramic that is a Non-Oxide Ceramic composed of silicon and carbon, celebrated for its high hardness and thermal conductivity.
+https://w3id.org/pmd/co/PMD_0000991: 3d printer: A 3D Printer is an Additive Manufacturing Device that creates three-dimensional objects by building them layer by layer from a digital model.
+https://w3id.org/pmd/co/PMD_0020061: portion of krypton: A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom. (A Portion Of Matter that consists of only krypton atoms.)
+https://w3id.org/pmd/co/PMD_0000770: hand circular saw: A handheld circular saw is a portable circular saw that is guided by hand. It is well suited for precise cuts in construction and woodwork.
+https://w3id.org/pmd/co/PMD_0000780: heat treatment device: A device used for treating materials through heating and cooling processes to alter their properties.
+https://w3id.org/pmd/co/PMD_0000822: machining geometrically defined: A Seperating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations.
+https://w3id.org/pmd/co/PMD_0050125: aluminosilicate gorilla glass: Aluminosilicate Gorilla Glass is a Chemically Strengthened Glass that is enhanced with an aluminosilicate composition for superior scratch resistance.
+https://w3id.org/pmd/co/PMD_0000791: induction furnace: An Induction Furnace is a Furnace that heats materials using electromagnetic induction, generating heat directly within the material.
+http://purl.obolibrary.org/obo/BFO_0000147: fiat point: (Elucidation) A fiat point is a zero-dimensional continuant fiat boundary that consists of a single point
+https://w3id.org/pmd/co/PMD_0050066: Boron Carbide (B₄C): Boron Carbide is a Carbide Ceramic that is a Non-Oxide Ceramic composed of boron and carbon, known for its remarkable hardness and low density.
+https://w3id.org/pmd/co/PMD_0050118: optical glass: Optical Glass is Functional Glass that is formulated for high-precision light transmission and refractive performance.
+http://purl.obolibrary.org/obo/IAO_0000102: data about an ontology part:
+https://w3id.org/pmd/co/PMD_0000582: computing device: A computing system that provides an execution environment for, e.g., simulation processes or prediction models.
+A computing system can be virtual (e.g., a container or virtual machine) or physical (e.g., a bare-metal servers), uses digital representations of objects as inputs and produces digital measurements, such as simulation results or predictions, as outputs.
+https://w3id.org/pmd/co/PMD_0050122: specialty glasses: Specialty Glasses are Advanced Glasses that are engineered for specific functional roles.
+https://w3id.org/pmd/co/PMD_0000926: scratch testing process: A Mechanical Property Analyzing Process that evaluates a material's resistance to scratching, measuring hardness and adhesion properties.
+https://w3id.org/pmd/co/PMD_0050023: epoxy resins: Epoxy Resins are Thermosetting Polymers that form rigid, cross-linked networks upon curing.
+https://w3id.org/pmd/co/PMD_0000541: cnc machine: A CNC Machine is a Forming Machine that uses computer numerical control to precisely control machining tools for cutting, drilling, milling, and other tasks.
+https://w3id.org/pmd/co/PMD_0020099: bravais lattice (3d): The Bravais Lattice is a nature constant that describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements. 
+
+TODO: possibly extend for 2D (Graphene etc)
+
+More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso
+https://w3id.org/pmd/co/PMD_0000879: organization: An organization is an immaterial entity that has the organisation role and there exists some sort of legal framework that recognises the entity and its continued existence.
+https://w3id.org/pmd/co/PMD_0000884: physical simulation: a simulating approach describing the use of computational or experimental methods to replicate physical behaviors or processes under defined conditions.
+https://w3id.org/pmd/co/PMD_0000797: ion microscope: A device that uses ions to create high-resolution images of the surface or structure of a sample.
+https://w3id.org/pmd/co/PMD_0020110: widmanstatten structure:
+https://w3id.org/pmd/co/PMD_0000556: chromatography process: A Structural Property Analyzing Process that enables the separation and analysis of compounds in a mixture by their distribution between a mobile and a stationary phase.
+https://w3id.org/pmd/co/PMD_0050021: Crystalline PET (CPET): Crystalline PET is a Polyethylene Terephthalate that is distinguished by its ordered, crystalline structure.
+https://w3id.org/pmd/co/PMD_0000789: indentation hardness: The indentation hardness is a hardness representing the resistance of a material to deformation from an indenter, used to assess surface hardness.
+http://purl.obolibrary.org/obo/BFO_0000199: occupies temporal region: p occupies temporal region t =Def p is a process or process boundary & the spatiotemporal region occupied by p temporally projects onto t
+https://w3id.org/pmd/co/PMD_0050136: fluorine-doped tin oxide glass: Fluorine-Doped Tin Oxide Glass is a form of Conductive Glass that is coated with tin oxide doped with fluorine for enhanced conductivity.
+https://w3id.org/pmd/co/PMD_0020080: portion of beryllium: A 'Portion Of Beryllium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:beryllium atom. (A Portion Of Matter that consists of only beryllium atoms.)
+http://purl.obolibrary.org/obo/BFO_0000055: realizes: (Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c
+https://w3id.org/pmd/co/PMD_0020128: thermodynamic system: A thermodynamic system is an object aggregate whose objects are bearer of  thermodynamic properties. A thermodynamic system environs a thermodynamic process by which the thermodynamic properties of the objects of the thermodynamic system change over time.
+https://w3id.org/pmd/co/PMD_0000573: coating from the plastic state: A Coating process that involves applying a coating from a plastic state.
+https://w3id.org/pmd/co/PMD_0020116: aggregate state value: The aggregate state type is a nature constant that concretizes the aggregatge state quality.
+https://w3id.org/pmd/co/PMD_0000775: hardness testing machine: A device used to measure the hardness of materials through various testing methods such as indentation or scratch tests.
+https://w3id.org/pmd/co/PMD_0020038: portion of nitrogen: A 'Portion Of Nitrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nitrogen atom. (A Portion Of Matter that consists of only nitrogen atoms.)
+https://w3id.org/pmd/co/PMD_0000908: primary shaping from the pulpy or pasty state: A Primary Shaping process that involves forming materials through the transition from a pulpy or pasty state into a solid form.
+https://w3id.org/pmd/co/PMD_0050097: bioglass: Bioglass is a Bioactive Ceramic that is a silicate-based glass formulated to bond with and stimulate biological tissues.
+https://w3id.org/pmd/co/PMD_0000866: multiscale simulation: A Simulation Process that integrates models at different scales to study a system's behavior.
+https://w3id.org/pmd/co/PMD_0000020: has measurement unit label: An object property that specifies a relationship between a continuant entity and a measurement unit label that describes the unit associated with one of its quantitative attributes.  
+
+As a sub-property of "has continuant part", this property indicates that the measurement unit label is an integral and persistent part of the entity, providing a standardized reference for interpreting its measured values.
+https://w3id.org/pmd/co/PMD_0000508: additive manufacturing device: A device used for manufacturing objects layer by layer through additive processes such as 3D printing.
+https://w3id.org/pmd/co/PMD_0000798: ion microscopy: A Microscopy Process that uses a focused beam of ions to image a specimen, providing high-resolution images and compositional information, often used for surface analysis and depth profiling.
+https://w3id.org/pmd/co/PMD_0000635: evolution of damage: An evolution of damage is a process representing the progression of material degradation under mechanical, thermal, or chemical stresses.
+https://w3id.org/pmd/co/PMD_0020035: portion of niobium: A 'Portion Of Niobium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:niobium atom. (A Portion Of Matter that consists of only niobium atoms.)
+https://w3id.org/pmd/co/PMD_0000833: manufacturing process: A planned process that is driven by the primary intent to transform objects
+A manufacturing process is always a transformative process.
+https://w3id.org/pmd/co/PMD_0000531: biocompatibility analyzing process: An example of a biocompatibility analyzing process is an in vitro cell culture test, where cells are cultured in the presence of the implant material to observe any cytotoxic effects, such as changes in cell morphology, proliferation rate, or cell viability. A Biological Property Analyzing Process that evaluates the compatibility of a material with living tissues to ensure it does not provoke an adverse biological response.
+https://w3id.org/pmd/co/PMD_0000577: composite material: A Composite Material is an Engineered Material that 'consists of' some Material that has a Matrix role and of some Material that has a Filler role.
+https://w3id.org/pmd/co/PMD_0020109: pearlite:
+https://w3id.org/pmd/co/PMD_0001030: stimulated by: inverse of stimulates
+https://w3id.org/pmd/co/PMD_0050028: melamine formaldehyde: Melamine Formaldehyde is a Thermosetting Polymer produced from melamine and formaldehyde, known for its high hardness.
+https://w3id.org/pmd/co/PMD_0000538: bulk: The bulk is a fiat object part that describes the volume or mass of material considered as a whole, often in contrast to surface or interface phenomena.
+https://w3id.org/pmd/co/PMD_0050026: phenolic resins: Phenolic Resins are Thermosetting Polymers formed by the reaction of phenol with formaldehyde.
+https://w3id.org/pmd/co/PMD_0000786: hybrid simulation: a simulation approach that combines physical and computational models to analyze material behavior.
+https://w3id.org/pmd/co/PMD_0000631: empirical potential molecular dynamics simulation: A Simulation Process that uses empirical potentials derived from experimental data to model the behavior of molecular systems.
+https://w3id.org/pmd/co/PMD_0000580: compression testing machine: A device used to test the compressive strength of materials by applying a compressive force.
+https://w3id.org/pmd/co/PMD_0020027: bainite:
+https://w3id.org/pmd/co/PMD_0000790: index of refraction: The index of refraction is an optical property representing a measure of how much light bends when passing through a material, affecting its optical properties.
+http://purl.obolibrary.org/obo/BFO_0000034: function: (Elucidation) A function is a disposition that exists in virtue of its bearer's physical make-up & this physical make-up is something the bearer possesses because it came into being either through evolution (in the case of natural biological entities) or through intentional design (in the case of artefacts) in order to realize processes of a certain sort
+https://w3id.org/pmd/co/PMD_0050060: Titania (TiO₂): Titania is an Oxide Ceramic that is an Advanced Ceramic composed of titanium dioxide, used for its photocatalytic and pigment properties.
+https://w3id.org/pmd/co/PMD_0000961: sublimation point: The sublimation point is a phase boundary that describes the temperature at which a material transitions directly from a solid to a gaseous state without passing through the liquid phase.
+https://w3id.org/pmd/co/PMD_0020107: ledeburite:
+https://w3id.org/pmd/co/PMD_0050002: metallic bond: A metallic bond is a bond that forms between metal atoms, where electrons are shared in a "sea" of electrons that move freely around the metal ions. This type of bonding gives metals their characteristic properties such as conductivity and malleability.
+http://purl.obolibrary.org/obo/BFO_0000153: temporally projects onto: (Elucidation) temporally projects onto is a relation between a spatiotemporal region s and some temporal region which is the temporal extent of s
+https://w3id.org/pmd/co/PMD_0000535: boiling point: The boiling point is a phase boundary described by the temperature at which a liquid changes to a gas under standard atmospheric pressure.
+https://w3id.org/pmd/co/PMD_0050005: polyethylene: Polyethylene is a Thermoplastic that is composed of repeating ethylene monomer units.
+https://w3id.org/pmd/co/PMD_0001029: responds with:
+https://w3id.org/pmd/co/PMD_0000667: grinding machine: A Grinding Machine is a Forming Machine that uses an abrasive wheel to remove material from the surface of a workpiece, typically for finishing or precision work.
+https://w3id.org/pmd/co/PMD_0020057: portion of platinum: A 'Portion Of Platinum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:platinum. (A Portion Of Matter that consists of only platinum atoms.)
+https://w3id.org/pmd/co/PMD_0050067: Nitride Ceramics: Nitride Ceramics are Non-Oxide Ceramics that are composed of metal nitrides.
+https://w3id.org/pmd/co/PMD_0000601: deterministic simulation: a simulation approach where outcomes are precisely determined through known relationships without random variability.
+https://w3id.org/pmd/co/PMD_0000886: polishing machine: A Polishing Machine is a Forming Machine that smooths the surface of a material by rubbing it with a tool, abrasive, or chemical.
+https://w3id.org/pmd/co/PMD_0050105: tinted glass: Tinted Glass is a form of Soda-Lime Glass that is treated with coloring agents to alter its light transmission.
+https://w3id.org/pmd/co/PMD_0000794: injection molding machine: An Injection Molding Machine is a Device used to produce plastic parts by injecting molten plastic into molds under high pressure.
+https://w3id.org/pmd/co/PMD_0020015: bravais lattice hexagonal rhombohedral primitive:
+https://w3id.org/pmd/co/PMD_0000547: change of aggregate state: A change of aggregate state is a phase transition (change of phase) involving the collective state of particles in a material, such as melting or condensation.
+https://w3id.org/pmd/co/PMD_0000562: coarse grained simulation: multiscale simulation process that simplifies the system by grouping atoms or molecules into larger particles, thereby reducing computational complexity and allowing for the study of larger systems or longer time scales
+https://w3id.org/pmd/co/PMD_0000861: mohs hardness: Mohs Hardness is a scalar (scale) used to rank materials based on their ability to scratch one another.
+https://w3id.org/pmd/co/PMD_0020119: aggregate state gasous: A state where the entities have no bonding.
+http://purl.obolibrary.org/obo/BFO_0000222: has first instant: t has first instant t' =Def t' first instant of t
+https://w3id.org/pmd/co/PMD_0000883: photochemical process: A Changing Properties Of Material process in which light, typically ultraviolet (UV) light is used to trigger chemical reactions. In the printing industry and some additive manufacturing methods, this light exposure is used to harden photoresists or cure inks and resins. The process relies on the specific wavelengths of light to initiate chemical changes in the material.
+https://w3id.org/pmd/co/PMD_0000612: disassembling: A Seperating process that involves disassembling a composite or assembled unit into its constituent parts or sections.
+https://w3id.org/pmd/co/PMD_0000823: machining geometrically undefined: A Seperating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined.
+https://w3id.org/pmd/co/PMD_0020065: portion of selenium: A 'Portion Of Selenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:selenium atom. (A Portion Of Matter that consists of only selenium atoms.)
+https://w3id.org/pmd/co/PMD_0050019: polyethylene terephthalate: Polyethylene Terephthalate is a Thermoplastic that is synthesized from terephthalic acid and ethylene glycol.
+https://w3id.org/pmd/co/PMD_0000002: engineered material: An Engineered Material is a Material that is output of a Manufacturing Process. (We recognize that some of the materials in the subclasses also occur naturally. However, these are not within the scope of our consideration for technical use.)
+https://w3id.org/pmd/co/PMD_0000952: strength: The strength is a mechanical property describing the maximum stress a material can withstand before failure.
+https://w3id.org/pmd/co/PMD_0020042: portion of cadmium: A 'Portion Of Cadmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cadmium atom. (A Portion Of Matter that consists of only cadmium atoms.)
+http://purl.obolibrary.org/obo/BFO_0000196: bearer of: b bearer of c =Def c inheres in b
+https://w3id.org/pmd/co/PMD_0000811: joining device: A general device used for joining materials through various methods, including welding and soldering.
+https://w3id.org/pmd/co/PMD_0020108: graphite: A mineral that has part some crystal that in turn consists of some portion of carbon
+https://w3id.org/pmd/co/PMD_0020118: aggregate state liquid: A state where the bonds of the entites transmit no shear force.
+https://w3id.org/pmd/co/PMD_0000627: emission of accoustic wave: The emission of (an) accoustic wave is a deformation describing the release of sound waves by a material or system, often due to vibration or stress.
+https://w3id.org/pmd/co/PMD_0000619: electric potential: The electric potential is a thermodynamic quality describing the amount of work needed to move a unit charge from a reference point to a specific location in an electric field.
+https://w3id.org/pmd/co/PMD_0050054: technical ceramics: Technical Ceramics (Advanced Ceramics) are Ceramics that are engineered for high-performance applications.
+https://w3id.org/pmd/co/PMD_0000583: computing process: A process that involves the systematic use of computational methods and tools to perform simulations, analyses, or data transformations to achieve specific scientific or engineering goals.
+https://w3id.org/pmd/co/PMD_0000896: pressure: The pressure is a thermodynamic quality describing the force exerted per unit area on a material. (The pressure is commonly measured in Pascals.)
+https://w3id.org/pmd/co/PMD_0020100: ferrite:
+https://w3id.org/pmd/co/PMD_0050112: high-temperature resistant glass: High-Temperature Resistant Glass is an Aluminosilicate Glass that is engineered to maintain stability at elevated temperatures.
+https://w3id.org/pmd/co/PMD_0000917: rheometer: A device used to measure the flow and deformation properties of materials, particularly liquids and semi-solids.
+https://w3id.org/pmd/co/PMD_0001023: x-ray mapping device: A device used for mapping the spatial distribution of elements or compounds within a material using X-ray fluorescence or diffraction techniques.
+https://w3id.org/pmd/co/PMD_0020000: phase (spatial): A phase is a 3D spatial region occupied by a Portion Of Matter whose qualities or dispositions or Material Properties are (considered) uniform at the length scale of interest.
+https://w3id.org/pmd/co/PMD_0000607: differential thermal analysis process: A Thermal Property Analyzing Process that measures the temperature difference between a sample and a reference material as they are subjected to a controlled temperature program, identifying phase transitions and reactions.
+https://w3id.org/pmd/co/PMD_0000594: deep learning: A Simulation Process that employs artificial neural networks with many layers to model complex patterns in data.
+https://w3id.org/pmd/co/PMD_0001004: viscometer: A device used to measure the viscosity of liquids, providing information about their flow properties.
+https://w3id.org/pmd/co/PMD_0000894: precision lathe: A Precision Lathe is a Lathe that rotates a workpiece about an axis to perform various operations such as cutting, sanding, drilling, or deformation with extreme accuracy.
+https://w3id.org/pmd/co/PMD_0000628: emission of corpuscular radiation: The emission of corpuscular radiation is an emission of radiation describing the release of particle-based radiation, such as alpha or beta particles, from a material or system.
+https://w3id.org/pmd/co/PMD_0050100: calcium sulfate: Calcium Sulfate is a Bioresorbable Ceramic that is composed of calcium sulfate, known for its solubility in biological environments.
+https://w3id.org/pmd/co/PMD_0050148: borate-based bioactive glass: Borate-Based Bioactive Glass is a Bioactive Glass that is formulated with borate compounds to promote biological interaction.
+https://w3id.org/pmd/co/PMD_0000526: atomic structure: The atomic structure is a material structure that describes the arrangement and composition of atoms in a material, influencing its physical and chemical properties.
+https://w3id.org/pmd/co/PMD_0000616: dynamic mechanical analysis process: A Mechanical Property Analyzing Process that measures the mechanical properties of a material as a function of temperature, time, frequency, and stress, determining its viscoelastic behavior.
+https://w3id.org/pmd/co/PMD_0000513: aging process: The process of hardening an alloy by a method that causes a constituent to precipitate from solid solution.
+https://w3id.org/pmd/co/PMD_0050036: biodegradable polymers: Biodegradable Polymers are Polymers that can be decomposed by biological organisms into environmentally benign substances.
+https://w3id.org/pmd/co/PMD_0000637: fatigue testing machine: A device used to test the fatigue resistance of materials by subjecting them to repeated stress cycles.
+https://w3id.org/pmd/co/PMD_0020151: internal energy: Internal energy is a universal extensive quality that specifies the bearers potential to do work.
+https://w3id.org/pmd/co/PMD_0000916: rheological property analyzing process: A Mechanical Property Analyzing Process that determines the flow and deformation behavior of materials under applied forces, including viscosity, elasticity, and plasticity, often through rheometry and viscometry techniques.
+https://w3id.org/pmd/co/PMD_0050138: iron-borosilicate glass: Iron-Borosilicate Glass is a Magnetic Glass that incorporates iron and borosilicate compounds to display magnetic behavior.
+https://w3id.org/pmd/co/PMD_0050113: non-silicate glasses: Non-Silicate Glasses are Glasses that are not primarily composed of silica.
+https://w3id.org/pmd/co/PMD_0020093: portion of vanadium: A 'Portion Of Vanadium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:vanadium atom. (A Portion Of Matter that consists of only vanadium atoms.)
+https://w3id.org/pmd/co/PMD_0001025: assay: A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.
+https://w3id.org/pmd/co/PMD_0000611: dimension measuring process: A Structural Property Analyzing Process that determines the physical dimensions of a material or object, such as length, width, height, diameter, and thickness, with high accuracy and precision.
+https://w3id.org/pmd/co/PMD_0000944: spectrometer: A Spectrometer is a Measuring Device that measures the properties of light over a specific portion of the electromagnetic spectrum, typically to analyze the composition of a material.
+https://w3id.org/pmd/co/PMD_0000782: high-performance liquid chromatography process: A Chromatography Process that separates, identifies, and quantifies components in a liquid sample using high pressure to pass the sample through a column packed with a stationary phase.
+https://w3id.org/pmd/co/PMD_0050016: polystyrene: Polystyrene is a Thermoplastic that is produced by the polymerization of styrene monomers.
+https://w3id.org/pmd/co/PMD_0050104: patterned glass: Patterned Glass is a form of Soda-Lime Glass that is modified with surface textures for decorative purposes.
+https://w3id.org/pmd/co/PMD_0000806: joining: A manufacturing process that enables the continuous bonding or joining of two or more workpieces with a specific, fixed shape or of such workpieces with a shapeless material, whereby the cohesion is created at specific points and reinforced overall.
+https://w3id.org/pmd/co/PMD_0000997: ultrasonic cleaner: A device that uses ultrasound and a cleaning solvent to clean delicate or complex items. An Ultrasonic Cleaner is a Cleaning Device that uses high-frequency sound waves and a cleaning solvent to remove contaminants from delicate or complex items.
+https://w3id.org/pmd/co/PMD_0000602: device: A physical or virtual entity used to perform a specific function or task, often involving measurement, manipulation, or analysis of materials.
+https://w3id.org/pmd/co/PMD_0000906: primary shaping from the liquid state: A Primary Shaping process that involves forming materials from a liquid state.
+https://w3id.org/pmd/co/PMD_0000523: application of substance: The application of (a) substance is the process of applying a material or substance to a surface or within a system.
+https://w3id.org/pmd/co/PMD_0000054: heating function: A heating function is a (realizable) function that, when realized, enables a system or device to increase the thermal energy of a material, typically to reach temperatures required for processing, transformation, or reaction.
+https://w3id.org/pmd/co/PMD_0000592: cut function: A function performed to separate or divide materials using cutting devices.
+https://w3id.org/pmd/co/PMD_0000548: change of phase: A change of phase is a process describing the transition of a material from one state of matter to another, such as from solid to liquid or liquid to gas.
+https://w3id.org/pmd/co/PMD_0020014: bravais lattice tetragonal body-centered:
+https://w3id.org/pmd/co/PMD_0000931: simulation method specification: A plan specification that specifies the method of creating a computational or physical model to replicate the behavior of a material or system under specific conditions.
+https://w3id.org/pmd/co/PMD_0020077: portion of samarium: A 'Portion Of Samarium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:samarium atom. (A Portion Of Matter that consists of only samarium atoms.)
+https://w3id.org/pmd/co/PMD_0000551: chemical composition: The chemical composition is a morphological quality describing the types and proportions of elements or compounds present in a material.
+https://w3id.org/pmd/co/PMD_0000950: stimulating process: The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response.
+https://w3id.org/pmd/co/PMD_0020088: portion of tin: A 'Portion Of Tin' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tin atom. (A Portion Of Matter that consists of only tin atoms.)
+https://w3id.org/pmd/co/PMD_0000945: spectroscopy process: A Structural Property Analyzing Process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials.
+https://w3id.org/pmd/co/PMD_0050152: zirconium-based metallic glass: Zirconium-Based Metallic Glass is an Amorphous Metal Glass that is composed mainly of zirconium, valued for its corrosion resistance and strength.
+https://w3id.org/pmd/co/PMD_0000928: shear testing machine: A device used to measure the shear strength of materials by applying a shearing force and measuring deformation.
+https://w3id.org/pmd/co/PMD_0020054: portion of copper: A 'Portion Of Copper' is a 'Portion Of Pure Substance' that 'consists of' only chebi:copper atom. (A Portion Of Matter that consists of only copper atoms.)
+https://w3id.org/pmd/co/PMD_0060005: categorical measurement datum:
+https://w3id.org/pmd/co/PMD_0000617: dynamic mechanical analyzer: A device used to measure the mechanical properties of materials as a function of temperature, frequency, and time.
+https://w3id.org/pmd/co/PMD_0000771: handsaw:
+https://w3id.org/pmd/co/PMD_0050073: Zirconium Diboride (ZrB₂): Zirconium Diboride is a Boride Ceramic that is a Non-Oxide Ceramic composed of zirconium and boron, known for its excellent thermal conductivity and stability.
+https://w3id.org/pmd/co/PMD_0020016: bravais lattice hexagonal hexagonal primitive:
+http://purl.obolibrary.org/obo/IAO_0000027: data item:
+https://w3id.org/pmd/co/PMD_0000821: machine learning: A Simulation Process that uses algorithms to enable computers to learn from and make predictions based on data.
+https://w3id.org/pmd/co/PMD_0020097: austenite:
+https://w3id.org/pmd/co/PMD_0000017: identifier:
+http://purl.obolibrary.org/obo/BFO_0000101: is carrier of: b is carrier of c =Def there is some time t such that c generically depends on b at t
+https://w3id.org/pmd/co/PMD_0000563: coating: A manufacturing process that aims to deposit a permanently adhering layer of a material without a form onto a workpiece, whereby the immediate state of the coating material directly before application is essential.
+https://w3id.org/pmd/co/PMD_0000539: bulk modulus: The bulk modulus is an elastic modulus representing a measure of a material's resistance to uniform compression.
+http://purl.obolibrary.org/obo/BFO_0000016: disposition: (Elucidation) A disposition b is a realizable entity such that if b ceases to exist then its bearer is physically changed & b's realization occurs when and because this bearer is in some special physical circumstances & this realization occurs in virtue of the bearer's physical make-up
+https://w3id.org/pmd/co/PMD_0020052: portion of yttrium: A 'Portion Of Yttrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:yttrium atom. (A Portion Of Matter that consists of only yttrium atoms.)
+https://w3id.org/pmd/co/PMD_0000519: application of electric field: An application of (an) electric field is the process of subjecting a material to an electric field to observe its behavior or modify its properties.
+http://purl.obolibrary.org/obo/BFO_0000141: immaterial entity: b is an immaterial entity =Def b is an independent continuant which is such that there is no time t when it has a material entity as continuant part
+https://w3id.org/pmd/co/PMD_0050088: superconducting ceramics: Superconducting Ceramics are Electroceramics that exhibit zero electrical resistance below a critical temperature.
+http://purl.obolibrary.org/obo/BFO_0000003: occurrent: (Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region
+http://purl.obolibrary.org/obo/IAO_0000229: term split:
+https://w3id.org/pmd/co/PMD_0050114: phosphate glass: Phosphate Glass is a Non-Silicate Glass that is composed mainly of phosphate compounds, offering distinct optical properties.
+https://w3id.org/pmd/co/PMD_0000902: primary shaping from the chip or fiber state: A Primary Shaping process that involves forming materials from a chip or fiber state.
+https://w3id.org/pmd/co/PMD_0000511: age: The age is a quality denoting the temporal interval since a material entity came into existance.
+
+TODO: should move to "process characteristic"
+https://w3id.org/pmd/co/PMD_0000963: supercritical fluid chromatography system: A device used for separating and analyzing compounds using supercritical fluids as the mobile phase in chromatography.
+https://w3id.org/pmd/co/PMD_0050062: Non-Oxide Ceramics: Non-Oxide Ceramics are Advanced Ceramics that are composed of compounds other than metal oxides.
+https://w3id.org/pmd/co/PMD_0050079: SiC Matrix Composites: SiC Matrix Composites are Non-Oxide Composites that are built with silicon carbide as the primary matrix reinforced by other ceramic phases.
+http://purl.obolibrary.org/obo/BFO_0000178: has continuant part: b has continuant part c =Def c continuant part of b
+https://w3id.org/pmd/co/PMD_0000518: application of elastic impact: An application of (an) elastic impact represents an application of (a) mechanical load describing the process of applying a force or impact to a material to observe its elastic response.
+https://w3id.org/pmd/co/PMD_0000651: forming under shearing conditions: A forming process that involves displacement or twisting materials to achieve deformation, often used in operations where materials are shaped by applying torsional forces.
+https://w3id.org/pmd/co/PMD_0000981: thermal property: A thermal property is a material property representing attributes of a material that describe its behavior under temperature changes, such as thermal conductivity and expansion.
+https://w3id.org/pmd/co/PMD_0000901: primary shaping by welding: A Primary Shaping process that involves forming materials by welding.
+https://w3id.org/pmd/co/PMD_0000911: reflectivity: The reflectivity is an optical property that describes the proportion of incident light or radiation that a material reflects.
+https://w3id.org/pmd/co/PMD_0050008: linear low-density polyethylene: Linear Low-Density Polyethylene is a Polyethylene that is distinguished by its linear backbone with short-chain branching.
+https://w3id.org/pmd/co/PMD_0000530: bending testing process: A Mechanical Property Analyzing Process that measures the resistance of a material to bending forces, determining its flexural strength and stiffness.
+https://w3id.org/pmd/co/PMD_0000552: chemical composition analyzing process: A Structural Property Analyzing Process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds.
+https://w3id.org/pmd/co/PMD_0000974: tensile testing process: A Mechanical Property Analyzing Process that determines a material's response to tensile forces, measuring its tensile strength, elongation, and Young's modulus.
+http://purl.obolibrary.org/obo/BFO_0000002: continuant: (Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity
+https://w3id.org/pmd/co/PMD_0000520: application of heat flux: An application of heat flux describes the process of transferring thermal energy to or from a material, often used in thermal property measurements.
+http://purl.obolibrary.org/obo/IAO_0000417: is quality measured as:
+https://w3id.org/pmd/co/PMD_0000957: structural property analyzing process: An assay that examines the external and internal structure and morphology of materials, including the arrangement of atoms, crystals, grains, and phases, often using techniques like microscopy and diffraction.
+https://w3id.org/pmd/co/PMD_0020098: nature constant: A nature constant is a generically dependent continuant whose value, magintude or configuration is determined by nature including physics and mathematics.
+https://w3id.org/pmd/co/PMD_0000774: hardness tester: A Hardness Tester is a Hardness Testing Machine that measures the resistance of a material to deformation, typically by indentation.
+https://w3id.org/pmd/co/PMD_0000662: glueing: A joining process that involves using adhesives to bond materials together, suitable for a wide range of materials including metals, plastics, and composites, and used in various applications from automotive to aerospace.
+https://w3id.org/pmd/co/PMD_0050030: elastomers: An Elastomer is a Polymer that exhibits elasticity by returning to its original shape after deformation.
+https://w3id.org/pmd/co/PMD_0050069: Aluminum Nitride (AlN): Aluminum Nitride is a Nitride Ceramic that is a Non-Oxide Ceramic composed of aluminum and nitrogen, prized for its high thermal conductivity.
+https://w3id.org/pmd/co/PMD_0000566: coating by welding: A Coating process that involves applying a coating using welding techniques.
+https://w3id.org/pmd/co/PMD_0000663: crystal grain: A crystal grain is a crystal that is continuant part of a polycrystal.
+https://w3id.org/pmd/co/PMD_0020043: portion of barium: A 'Portion Of Barium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:barium atom. (A Portion Of Matter that consists of only barium atoms.)
+http://purl.obolibrary.org/obo/BFO_0000038: one-dimensional temporal region: (Elucidation) A one-dimensional temporal region is a temporal region that is a whole that has a temporal interval and zero or more temporal intervals and temporal instants as parts
+https://w3id.org/pmd/co/PMD_0000003: plan specification:
+https://w3id.org/pmd/co/PMD_0050011: syndiotactic polypropylene: Syndiotactic Polypropylene is a Polypropylene in which the methyl groups alternate regularly along the polymer chain.
+http://purl.obolibrary.org/obo/BFO_0000040: material entity: (Elucidation) A material entity is an independent continuant has some portion of matter as continuant part
+https://w3id.org/pmd/co/PMD_0000923: pair of scissors: A tool with two sharp blades that are brought together by pressure on the handles to cut paper, fabric, or other materials.
+https://w3id.org/pmd/co/PMD_0050103: clear float glass: Clear Float Glass is a form of Soda-Lime Glass that is known for its clarity and uniform thickness.
+https://w3id.org/pmd/co/PMD_0000927: separating: A manufacturing process in which the bond between objects is broken, resulting in a partial or complete reduction in cohesion.
+https://w3id.org/pmd/co/PMD_0000636: extensometer: A device for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting.
+https://w3id.org/pmd/co/PMD_0000576: colorimeter: A device used to measure the color of a sample, often used in quality control and material analysis.
+https://w3id.org/pmd/co/PMD_0001006: water purification system: A Water Purification System is a Device used to remove contaminants from water to produce clean and safe drinking water.
+http://purl.obolibrary.org/obo/IAO_0000228: term imported:
+https://w3id.org/pmd/co/PMD_0000995: torsion testing process: A Mechanical Property Analyzing Process that assesses a material's behavior when subjected to twisting forces, determining its torsional strength and shear modulus.
+https://w3id.org/pmd/co/PMD_0020053: portion of zirconium: A 'Portion Of Zirconium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zirconium atom. (A Portion Of Matter that consists of only zirconium atoms.)
+https://w3id.org/pmd/co/PMD_0020091: portion of oxygen: A 'Portion Of Oxygen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:oxygen atom. (A Portion Of Matter that consists of only oxygen atoms.)
+https://w3id.org/pmd/co/PMD_0000614: dividing: A Seperating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical.
+https://w3id.org/pmd/co/PMD_0020003: crystal: A crystal is an object that has part some entities that concretize a Bravais lattice.
+https://w3id.org/pmd/co/PMD_0000803: irradiation device: A device used for exposing materials to radiation to induce changes in their properties.
+https://w3id.org/pmd/co/PMD_0000623: electron beam welding machine: An Electron Beam Welding Machine is a Welding Device that uses a high-velocity electron beam to fuse materials together, typically in a vacuum environment.
+https://w3id.org/pmd/co/PMD_0020024: hydrogen bond: A hydrogen bond is a bond that binds one molecule’s hydrogen atom with the electronegative atoms of another molecule.
+https://w3id.org/pmd/co/PMD_0020200: force: Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects.
+http://purl.obolibrary.org/obo/BFO_0000121: has temporal part: b has temporal part c =Def c temporal part of b
+https://w3id.org/pmd/co/PMD_0000835: mass spectrometer: A device used to measure the mass-to-charge ratio of ions to identify and quantify compounds in a sample.
+http://purl.obolibrary.org/obo/IAO_0000409: denotator type:
+https://w3id.org/pmd/co/PMD_0000900: primary shaping by additive manufacturing: A Primary Shaping process that involves forming materials through additive manufacturing techniques.
+https://w3id.org/pmd/co/PMD_0000055: cooling function: A cooling function is a (realizable) function that, when realized, enables a system or device to lower the temperature of a material, often to control solidification or maintain a stable state below a desired thermal threshold.
+https://w3id.org/pmd/co/PMD_0000918: rheometry: A Rheological Property Analyzing Process that measures the flow and deformation behavior of materials, including complex fluids and soft solids, to provide comprehensive data on viscoelastic properties using rheometers.
+http://purl.obolibrary.org/obo/BFO_0000218: has material basis: b has material basis c =Def b is a disposition & c is a material entity & there is some d bearer of b & there is some time t such that c is a continuant part of d at t & d has disposition b because c is a continuant part of d at t
+http://purl.obolibrary.org/obo/IAO_0000226: placeholder removed:
+https://w3id.org/pmd/co/PMD_0020131: intensive quality: An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size.
+https://w3id.org/pmd/co/PMD_0000550: changing properties of material: A manufacturing process that modifies the characteristics of the material from which a workpiece is made, including by processes at the submicroscopic or atomic scale, such as atomic diffusion, dislocation formation and movement in the atomic lattice or chemical reactions, whereby the resulting shape changes are not characteristic of these processes.
+https://w3id.org/pmd/co/PMD_0001017: x-ray mapping: An X-ray Analyzing Process that generates a spatial distribution map of the elements within a specimen by scanning the sample with an electron or X-ray beam and detecting the emitted X-rays, providing detailed compositional information across the sample's surface.
+https://w3id.org/pmd/co/PMD_0000655: furnace: An enclosed structure in which heat is produced (as for heating a house or for reducing ore).
+http://purl.obolibrary.org/obo/BFO_0000008: temporal region: (Elucidation) A temporal region is an occurrent over which processes can unfold
+https://w3id.org/pmd/co/PMD_0000537: brinell hardness: The Brinell hardness is a scalar representing a measure of material hardness obtained by indenting the material with a steel or tungsten carbide ball under a specific load.
+https://w3id.org/pmd/co/PMD_0000808: joining by shaping: A joining process that involves deforming one or more components to achieve a mechanical interlock or fit, commonly used for press-fit joints, crimping, or swaging.
+https://w3id.org/pmd/co/PMD_0000654: functional material: A Functional Material F is an Engineered Material which has the disposition to be used for an Object O (O consists of F) and O's function is other/more than mechanical load carrying.
+https://w3id.org/pmd/co/PMD_0050133: functional glass: Functional Glass is Advanced Glass that is designed to perform specific roles beyond conventional optical applications.
+http://purl.obolibrary.org/obo/BFO_0000182: history: (Elucidation) A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by the material part of a material entity
+http://purl.obolibrary.org/obo/IAO_0000136: is about:
+https://w3id.org/pmd/co/PMD_0000505: accoustic absorption coefficient: The accoustic absorption coefficient is an accoustic property representing a measure of how much sound energy is absorbed by a material per unit area.
+https://w3id.org/pmd/co/PMD_0020010: bravais lattice orthorhombic base-centered:
+https://w3id.org/pmd/co/PMD_0020009: bravais lattice orthorombic primitive:
+https://w3id.org/pmd/co/PMD_0000904: primary shaping from the granular or powdered state: A Primary Shaping process that involves forming materials from a granular or powdered state.
+https://w3id.org/pmd/co/PMD_0000940: spalling testing machine: A device used to test the resistance of materials to spalling or flaking under various conditions.
+https://w3id.org/pmd/co/PMD_0000829: magneto electrical property analyzing process: An assay that investigates the magnetic and electrical properties of materials, including conductivity, resistivity, permittivity, permeability, and magnetization.
+http://purl.obolibrary.org/obo/BFO_0000023: role: (Elucidation) A role b is a realizable entity such that b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed
+http://purl.obolibrary.org/obo/BFO_0000129: member part of: b member part of c =Def b is an object & c is a material entity & there is some time t such that b continuant part of c at t & there is a mutually exhaustive and pairwise disjoint partition of c into objects x1, ..., xn (for some n ≠ 1) with b = xi (for some 1 <= i <= n)
+https://w3id.org/pmd/co/PMD_0000990: thin layer chromatography system: A device used for separating compounds in a sample using a thin layer of adsorbent material on a plate.
+https://w3id.org/pmd/co/PMD_0050115: borate glass: Borate Glass is a Non-Silicate Glass that is composed mainly of boron oxide and is known for its low melting point.
+http://purl.obolibrary.org/obo/BFO_0000223: last instant of: t last instant of t' =Def t is a temporal instant & t' is a temporal region & all temporal parts of t' other than t precede t
+https://w3id.org/pmd/co/PMD_0000795: ion exchange chromatography process: A Chromatography Process that separates ions and polar molecules based on their charge by using an ion exchange resin to attract and retain the ions from the sample.
+https://w3id.org/pmd/co/PMD_0000629: emission of radiation: The emission radiation is a process describing the release of energy in the form of electromagnetic waves or particles from a material.
+https://w3id.org/pmd/co/PMD_0001015: x-ray computed tomography: A X-ray Analyzing Process, that uses X-rays to create detailed cross-sectional images of an object.
+https://w3id.org/pmd/co/PMD_0050013: polyvinyl chloride: Polyvinyl Chloride is a Thermoplastic that is formed by the polymerization of vinyl chloride monomers.
+http://purl.obolibrary.org/obo/IAO_0000125: pending final vetting:
+http://purl.obolibrary.org/obo/BFO_0000124: location of: b location of c =Def c located in b
+https://w3id.org/pmd/co/PMD_0000964: A Machine Learning process that learns a function mapping from input data to labeled output data.
+https://w3id.org/pmd/co/PMD_0020025: pure substance: A Pure Substance is a Portion Of Matter that 'has part' only one kind of chebi:chemical entity or other similar entity. It has no structural qualities or realizable entites beyond representing its parts of a single enitiy type. (TODO: it is not clear if we really need the 'Portion of pure substance" or if we can just refer to the respecitve chemical entity directly (e.g. in chemical composition).)
+http://purl.obolibrary.org/obo/IAO_0000123: metadata incomplete:
+http://purl.obolibrary.org/obo/IAO_0000103: failed exploratory term:
+https://w3id.org/pmd/co/PMD_0000982: thermal property analyzing process: An assay that measures the thermal behavior of materials, including heat capacity, thermal conductivity, thermal expansion, and phase transitions in response to temperature changes.
+https://w3id.org/pmd/co/PMD_0000848: mechanical property: A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
+
+TODO: Check general class axiom and defintion altogether !!!
+https://w3id.org/pmd/co/PMD_0020205: defect (role): A defect role is a role of an independent continuant C indicating that C may affect a material entity E's ability to realize a function. C is continuant part of E.
+https://w3id.org/pmd/co/PMD_0050092: bioinert ceramics: Bioinert Ceramics are Bioceramics that are designed to remain inert in biological environments to minimize adverse reactions.
+https://w3id.org/pmd/co/PMD_0001026: complies with: complies with is a relation between an independent continuant and an information content entity (e.g., specification or objective) that it conforms to.
+https://w3id.org/pmd/co/PMD_0050041: silicate ceramics: Silicate Ceramics are Traditional Ceramics that are composed primarily of silicate minerals.
+https://w3id.org/pmd/co/PMD_0020146: catalyst: Catalyst is the role of a participant in a chemical reaction that does not alter its qualities/realizable entities  after the chemical reaction.
+https://w3id.org/pmd/co/PMD_0020089: portion of hafnium: A 'Portion Of Hafnium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hafnium atom. (A Portion Of Matter that consists of only hafnium atoms.)
+https://w3id.org/pmd/co/PMD_0020059: portion of sulfur: A 'Portion Of Sulfur' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sulfur atom. (A Portion Of Matter that consists of only sulfur atoms.)
+https://w3id.org/pmd/co/PMD_0050116: germanate glass: Germanate Glass is a Non-Silicate Glass that is composed primarily of germanium oxide, noted for its infrared transmission.
+https://w3id.org/pmd/co/PMD_0000540: burning: A changing the properties of material process that involves burning typically refers to the application of high heat, often resulting in combustion or thermal degradation, to alter the physical or chemical properties of a material, leading to changes like hardening, alteration in chemical composition, or reduction in mass,
+http://purl.obolibrary.org/obo/IAO_0000235: denoted by:
+https://w3id.org/pmd/co/PMD_0020121: aggregate state atom gas: A gaseous state where the gas entities are atoms.
+https://w3id.org/pmd/co/PMD_0020019: bravais lattice cubic face-centered:
+https://w3id.org/pmd/co/PMD_0050072: Titanium Diboride (TiB₂): Titanium Diboride is a Boride Ceramic that is a Non-Oxide Ceramic composed of titanium and boron, valued for its high hardness and melting point.
+https://w3id.org/pmd/co/PMD_0050065: Tungsten Carbide (WC): Tungsten Carbide is a Carbide Ceramic that is a Non-Oxide Ceramic composed of tungsten and carbon, recognized for its exceptional wear resistance.
+https://w3id.org/pmd/co/PMD_0000877: optical property: An optical property is a material property representing the characteristics that describe how a material interacts with light, including reflection, refraction, and absorption.
+https://w3id.org/pmd/co/PMD_0000882: phase boundary: A phase boundary is a morphological property denoting the interface between two distinct phases of a material, such as solid-liquid or liquid-gas boundaries.
+http://purl.obolibrary.org/obo/BFO_0000006: spatial region: (Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time
+https://w3id.org/pmd/co/PMD_0050022: thermosetting polymers: A Thermosetting Polymer is a Polymer that, once cured, irreversibly sets into a permanent shape.
+https://w3id.org/pmd/co/PMD_0020068: portion of zinc: A 'Portion Of Zinc' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zinc atom. (A Portion Of Matter that consists of only zinc atoms.)
+https://w3id.org/pmd/co/PMD_0000532: biological property analyzing process: An assay that examines the interaction of materials with biological systems, including biocompatibility, biodegradability, toxicity, and the effects of materials on living organisms and cells.
+https://w3id.org/pmd/co/PMD_0060007: material specification:
+https://w3id.org/pmd/co/PMD_0050048: kaolinite: Kaolinite is an Aluminosilicate that is a Silicate Ceramic based on the mineral kaolinite, valued for its fine particle size and plasticity.
+https://w3id.org/pmd/co/PMD_0000567: coating device: A device used for applying a coating or layer to materials to enhance their properties or appearance.
+https://w3id.org/pmd/co/PMD_0000502: 2D: A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena.
+https://w3id.org/pmd/co/PMD_0001028: in response to: inverse of responds with
+https://w3id.org/pmd/co/PMD_0000558: circular saw: The circular saw is an electric or motorized saw that is powered by a round, circular saw blade. The blade of a circular saw is equipped with teeth along its edge that are used to cut the material as it is fed into the saw. Circular saws are versatile tools and can be used for different materials such as wood, metal, plastic and even rock, depending on the specific saw blade that is installed.
+https://w3id.org/pmd/co/PMD_0000534: blank role: Role of an object, which is realized in a preparation process
+https://w3id.org/pmd/co/PMD_0000596: deformation: The deformation is a process describing a change in the shape, size, or structure of a material under the influence of stress or force.
+https://w3id.org/pmd/co/PMD_0060009: specification datum:
+https://w3id.org/pmd/co/PMD_0000585: continuous simulation: a simulation approach where changes in a system are modeled continuously over time.
+https://w3id.org/pmd/co/PMD_0001009: wear testing machine: A device used to test the wear resistance of materials by subjecting them to abrasive conditions.
+https://w3id.org/pmd/co/PMD_0000590: cryogenic freezer: A device used to preserve materials at extremely low temperatures, typically below -150°C. A Cryogenic Freezer is a Temperature Change Device that preserves materials at extremely low temperatures, often below -150°C.
+https://w3id.org/pmd/co/PMD_0000645: formation of notch or scratch: The formation of (a) notch or (a) scratch is a process that describes the creation of small surface imperfections, which can influence a material's mechanical properties.
+https://w3id.org/pmd/co/PMD_0000023: scalar measurement datum: A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.
+https://w3id.org/pmd/co/PMD_0000992: time series: A time series is a 1-D information content entity defined by a sequence of data points collected or recorded at successive time intervals, used for analyzing temporal properties or trends.
+https://w3id.org/pmd/co/PMD_0020111: martensite:
+https://w3id.org/pmd/co/PMD_0000855: microscope: A device used to magnify and view small objects or details that are not visible to the naked eye.
+https://w3id.org/pmd/co/PMD_0000768: half-life: The half-life is a temporal property describing the time required for a quantity to reduce to half its initial value, often applied to radioactive decay or material degradation.
+https://w3id.org/pmd/co/PMD_0020005: consists of: A continuant part property that relates Material Entity Aggregates in the direction of smaller length-scale.
+http://purl.obolibrary.org/obo/IAO_0000421: named class expression:
+https://w3id.org/pmd/co/PMD_0000554: chemical property analyzing process: An assay that determines the chemical composition, reactivity, and chemical stability of materials, including the identification and quantification of chemical elements and compounds.
+https://w3id.org/pmd/co/PMD_0050102: soda-lime glass: Soda-Lime Glass is a Silicate Glass that is formulated from silica, soda, and lime and is widely used in windows and containers.
+https://w3id.org/pmd/co/PMD_0020104: volume proportion: The Mass Proportion is a Proportion which quantifies the volume of the part relative to the volume of the whole.
+http://purl.obolibrary.org/obo/BFO_0000063: precedes: (Elucidation) precedes is a relation between occurrents o, o' such that if t is the temporal extent of o & t' is the temporal extent of o' then either the last instant of o is before the first instant of o' or the last instant of o is the first instant of o' & neither o nor o' are temporal instants
+https://w3id.org/pmd/co/PMD_0060000: has value specification:
+https://w3id.org/pmd/co/PMD_0000016: has output:
+https://w3id.org/pmd/co/PMD_0001011: welding device: A device used for joining materials by melting them together, typically with the addition of a filler material.
+http://purl.obolibrary.org/obo/BFO_0000200: occupies spatiotemporal region: (Elucidation) occupies spatiotemporal region is a relation between a process or process boundary p and the spatiotemporal region s which is its spatiotemporal extent
+https://w3id.org/pmd/co/PMD_0000949: stiffness: The stiffness is a mechanical property describing the resistance of a material to deformation under an applied force.
+https://w3id.org/pmd/co/PMD_0050068: Silicon Nitride (Si₃N₄): Silicon Nitride is a Nitride Ceramic that is a Non-Oxide Ceramic composed of silicon and nitrogen, offering high fracture toughness.
+https://w3id.org/pmd/co/PMD_0050032: synthetic rubber: Synthetic Rubber is an Elastomer that is produced through chemical synthesis to mimic natural rubber’s properties.
+https://w3id.org/pmd/co/PMD_0000553: chemical potential: The chemical potential is a thermodynamic quality describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure.
+http://purl.obolibrary.org/obo/IAO_0000423: to be replaced with external ontology term:
+http://purl.obolibrary.org/obo/IAO_0000121: organizational term:
+https://w3id.org/pmd/co/PMD_0020166: heat (metallurgy): A heat is a fixed amount of metallic alloy that may be input to some Manifacturing Process.
+https://w3id.org/pmd/co/PMD_0000605: differential scanning calorimeter: A device used to measure the heat flow associated with phase transitions in a sample as a function of temperature.
+https://w3id.org/pmd/co/PMD_0020120: aggregate state plasma: An aggregate state where the entites are atom nuclei and have no bonds.
+https://w3id.org/pmd/co/PMD_0060006: device specification:
+http://purl.obolibrary.org/obo/IAO_0000412: Imported From:
+http://purl.obolibrary.org/obo/IAO_0000120: metadata complete:
+https://w3id.org/pmd/co/PMD_0060008: recipe:
+https://w3id.org/pmd/co/PMD_0020012: bravais lattice orthorhombic face-centered:
+https://w3id.org/pmd/co/PMD_0000647: forming by bending: A forming process that involves bending materials, typically used in manipulating sheets, tubes, or profiles into curved shapes or angles, common in metalworking and fabrication industries.
+https://w3id.org/pmd/co/PMD_0050111: barium glass: Barium Glass is a form of Lead Glass that is modified with barium oxide to alter its optical properties.
+http://purl.obolibrary.org/obo/IAO_0000227: terms merged:
+https://w3id.org/pmd/co/PMD_0000996: triple point: The triple point is a phase boundary described by the specific temperature and pressure at which three phases of a substance coexist in equilibrium.
+http://purl.obolibrary.org/obo/IAO_0000078: curation status specification:
+http://purl.obolibrary.org/obo/IAO_0000428: requires discussion:
+https://w3id.org/pmd/co/PMD_0020017: bravais lattice cubic primitive:
+http://purl.obolibrary.org/obo/IAO_0000221: is quality measurement of:
+http://purl.obolibrary.org/obo/BFO_0000145: relational quality: b is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d
+http://purl.obolibrary.org/obo/IAO_0000033: directive information entity:
+https://w3id.org/pmd/co/PMD_0020013: bravais lattice tetragonal primitive:
+https://w3id.org/pmd/co/PMD_0000009: A relation between a process and a process characteristic that depends on it.

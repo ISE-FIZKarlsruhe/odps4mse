@@ -2,3 +2,12 @@ Evaluation Metrics:
 Precision: 0.3333
 Recall: 0.2500
 F1-score: 0.2857
+http://purl.org/net/p-plan#hasOutputVar: hasOutputVar:
+http://purl.org/net/p-plan#isStepOfPlan: isStepOfPlan:
+http://purl.org/net/p-plan#isVariableOfPlan: isVariableofPlan:
+http://purl.org/net/p-plan#correspondsToVariable: correspondsToVariable:
+http://purl.org/net/p-plan#isPreceededBy: isPreceededBy: (http://purl.org/net/p-plan#)
+http://purl.org/net/p-plan#hasInputVar: hasInputVar:
+http://purl.org/net/p-plan#isOutputVarOf: isOutputVarOf:
+http://purl.org/net/p-plan#isInputVarOf: isInputVarOf:
+http://purl.org/net/p-plan#correspondsToStep: correspondsToStep:
