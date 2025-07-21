@@ -6,9 +6,9 @@ https://w3id.org/pmd/co/previousProcess
 https://w3id.org/pmd/co/TransformativeAnalysisProcess
 https://w3id.org/pmd/co/subordinateProcess
 https://w3id.org/pmd/co/AnalysingProcess
-https://w3id.org/pmd/co/ProcessDescription
 https://w3id.org/pmd/co/AssemblingProcess
 https://w3id.org/pmd/co/MeasuringProcess
+https://w3id.org/pmd/co/ProcessDescription
 https://w3id.org/pmd/co/participant
 https://w3id.org/pmd/co/Object
 https://w3id.org/pmd/co/ClassificationDocument
@@ -30,6 +30,8 @@ https://w3id.org/pmd/co/AgingProcess
 https://w3id.org/pmd/co/TemperatureChangingProcess
 https://w3id.org/pmd/co/executedBy
 https://w3id.org/pmd/co/TemperatureChangeDevice
+https://w3id.org/pmd/co/InitiatorRole
+https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/Operator
 http://purl.obolibrary.org/obo/IAO_0000115
 https://w3id.org/pmd/co/unit
@@ -41,7 +43,6 @@ https://w3id.org/pmd/co/TemperatureMeasuringDevice
 https://w3id.org/pmd/co/SimulationNode
 https://w3id.org/pmd/co/output
 http://purl.obolibrary.org/obo/IAO_0000119
-https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/Slide
 https://w3id.org/pmd/co/Filter
 https://w3id.org/pmd/co/InsertSurface
@@ -62,7 +63,6 @@ https://w3id.org/pmd/co/WorkingRange
 https://w3id.org/pmd/co/DemountingProcess
 https://w3id.org/pmd/co/CalibrationRange
 https://w3id.org/pmd/co/ErrorReportDocument
-https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/MountingProcess
 https://w3id.org/pmd/co/MechanicalTestingProcess
 https://w3id.org/pmd/co/DimensionMeasuringDevice
@@ -107,5 +107,4 @@ https://w3id.org/pmd/co/Initiator
 https://w3id.org/pmd/co/Date
 https://w3id.org/pmd/co/outputOf
 https://w3id.org/pmd/co/ParticleNumber
-https://w3id.org/pmd/co/SetPoint
 https://w3id.org/pmd/co/ValueScope

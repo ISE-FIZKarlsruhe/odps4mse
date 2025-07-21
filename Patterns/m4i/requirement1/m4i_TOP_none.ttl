@@ -20,6 +20,10 @@ rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#altLabel
 <http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty ;
                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
@@ -43,6 +47,11 @@ rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
 <http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
                                                     rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
 
 
 ###  http://www.w3.org/2004/02/skos/core#note
@@ -99,10 +108,34 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #    Object Properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                             rdf:type owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a part and its whole"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Teil von"@de ,
+                                                                                             "part of"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty ,
+                                                      owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a whole and its part"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "has part"@en ,
+                                                                                             "hat Teil"@de .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000054
 <http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
                                              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000017> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                              rdfs:comment "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
                                              rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
@@ -112,12 +145,65 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000055
 <http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                              rdfs:range <http://purl.obolibrary.org/obo/BFO_0000017> ;
                                              rdfs:comment "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
                                              rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert"@de ,
                                                                                              "realizes"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000063
+<http://purl.obolibrary.org/obo/BFO_0000063> rdf:type owl:ObjectProperty ,
+                                                      owl:TransitiveProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "ist Voraussetzung für Schritt"@de ,
+                                                                                             "precedes"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002090
+<http://purl.obolibrary.org/obo/RO_0002090> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000063> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "X immediately precedes_Y iff: end(X) simultaneous_with start(Y)" ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "immediately precedes"@en ,
+                                                                                            "ist unmittelbare Voraussetzung für Schritt"@de .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002224
+<http://purl.obolibrary.org/obo/RO_0002224> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                            rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain :ProcessingStep ;
+                                            rdfs:range :ProcessingStep ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            rdfs:seeAlso <http://ontologydesignpatterns.org/wiki/Submissions:Componency> ;
+                                            <http://www.w3.org/2004/02/skos/core#altLabel> "started by"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "beginnt mit"@de ,
+                                                                                            "starts with"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002230
+<http://purl.obolibrary.org/obo/RO_0002230> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                            rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain :ProcessingStep ;
+                                            rdfs:range :ProcessingStep ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#altLabel> "finished by"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "endet mit"@de ,
+                                                                                            "ends with"@en .
 
 
 ###  http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleUnit
@@ -156,6 +242,18 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                                      "hat Überdeckungsintervall"@de .
 
 
+###  http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
+:hasEmployedTool rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://schema.org/instrument> ;
+                 owl:inverseOf :isEmployedToolIn ;
+                 rdfs:domain :ProcessingStep ;
+                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that is used within a given processing step"@en ,
+                                                                  "verweist auf ein Werkzeug, das in einem Arbeitsschritt verwendet wurde"@de ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has employed tool"@en ,
+                                                                 "hat eingesetztes Werkzeug"@de .
+
+
 ###  http://w3id.org/nfdi4ing/metadata4ing#hasExpandedUnc
 :hasExpandedUnc rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasUncertaintyDeclaration ;
@@ -186,6 +284,7 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 :hasRuntimeAssignment rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf [ owl:inverseOf <http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor>
                                          ] ;
+                      rdfs:domain :ProcessingStep ;
                       rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
                       <http://www.w3.org/2004/02/skos/core#definition> "Points to an assignment that is neither input nor output"@en ;
                       <http://www.w3.org/2004/02/skos/core#prefLabel> "has runtime assignment"@en ,
@@ -252,14 +351,34 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                            "gehört zu Projekt"@de .
 
 
+###  http://w3id.org/nfdi4ing/metadata4ing#investigates
+:investigates rdf:type owl:ObjectProperty ;
+              rdfs:domain :ProcessingStep ;
+              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "(x investigates y) means that x is about y, in the context of scientific research and development"@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "investigates"@en ,
+                                                              "untersucht"@de .
+
+
 ###  http://w3id.org/nfdi4ing/metadata4ing#investigatesProperty
 :investigatesProperty rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :investigates ;
                       rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
                       <http://www.w3.org/2004/02/skos/core#broader> <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ,
                                                                     <http://www.molmod.info/semantics/pims-ii.ttl#hasRepresentamen> ;
                       <http://www.w3.org/2004/02/skos/core#definition> "(x investigatesProperty y) means that x is about target property y, in the context of scientific research and development"@en ;
                       <http://www.w3.org/2004/02/skos/core#prefLabel> "investigates property"@en ,
                                                                       "untersucht Eigenschaft"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn
+:isEmployedToolIn rdf:type owl:ObjectProperty ;
+                  rdfs:range :ProcessingStep ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a processing step the tool has been used in"@en ,
+                                                                   "verweist auf einen Arbeitsschritt, in dem das Werkzeug eingesetzt wurde"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "is employed tool"@en ,
+                                                                  "ist eingesetztes Werkzeug"@de .
 
 
 ###  http://w3id.org/nfdi4ing/metadata4ing#projectParticipant
@@ -273,6 +392,7 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 ###  http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
 :realizesMethod rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                rdfs:domain :ProcessingStep ;
                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is used within a given processing step"@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert Methode"@de ,
@@ -327,6 +447,42 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                                                                                       "ist Variable in Zuweisung"@de .
 
 
+###  http://www.w3.org/ns/dcat#inSeries
+<http://www.w3.org/ns/dcat#inSeries> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                     rdfs:comment "Normally, child datasets in dataset series are represented as dcat:Dataset. The use of dcat:Distribution for typing child datasets is however recognized as a possible alternative, whenever it addresses more effectively the requirements of a given application scenario."@en ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/dcat#> ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "A dataset series of which the dataset is part."@en ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: changed subproperty relation from DCTerms to OBO_000050 added skos:prefLabel, added german labels,  removed redundant notes, extracted from DCAT3-Documentation https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "in Serie"@de ,
+                                                                                     "in series"@en .
+
+
+###  http://www.w3.org/ns/prov#qualifiedAssociation
+<http://www.w3.org/ns/prov#qualifiedAssociation> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/ns/prov#> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Allows to specify more information (e.g. a role) about an association between an agent (e.g. a person) and an Activity (e.g. a processing step)."@en ,
+                                                                                                  "Ermöglicht die Angabe weiterer Informationen (z.B. einer Rolle) zu einer Verknüpfung zwischen einem Agenten (z.B. einer Person) und einer Aktivität (z.B. einem Prozessschritt)."@de ;
+                                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label, added skos:prefLabel, added skos:definition, skos:example and skos:note"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#example> """Example application in m4i:
+:SomeProcess
+    a m4i:ProcessingStep; 
+    obo:RO_0000057 :SomePerson;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent   :SomePerson;
+        prov:hadRole :SomeRole;
+        rdfs:comment \":SomePerson had the :SomeRole in this :SomeProcess\"@en
+    ].
+
+The direct relation between an activity and an agent expressed with 'has participant' (http://purl.obolibrary.org/obo/RO_0000057) does not give details about the agent's role in that activity. Using the property prov:qualifiedAssociation one can point to a blank node (cf. https://en.wikipedia.org/w/index.php?title=Blank_node&oldid=1015446558) containing additional information about the participation relation.
+"""@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#note> "In metadata4ing use obo:RO_0000057 as unqualified form for the relation between an activity and an agent."@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "näher beschriebene Verbindung"@de ,
+                                                                                                 "qualified association"@en .
+
+
 ###  http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:ObjectProperty ,
                                           owl:InverseFunctionalProperty ;
@@ -337,12 +493,34 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                                                  "personal mailbox"@en .
 
 
+###  http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                   rdfs:comment "Indicates a member of a Group" ;
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel, defined as subproperty of obo:BFO_0000051"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Mitglied"@de ,
+                                                                                   "member"@en .
+
+
+###  https://schema.org/instrument
+<https://schema.org/instrument> rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                rdfs:isDefinedBy <https://schema.org.owl> ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "points to an object that helped the agent perform the action (e.g., John wrote a book with a pen)"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added different skos:prefLabel, added german label"@en ,
+                                                                                    "changed by m4i: domain changed to prov:Activity from schema:Action"@en ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "nutzt Instrument"@de ,
+                                                                                "uses instrument"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction
 :UsageInstruction rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ProcessingStep ;
                   rdfs:range xsd:string ;
                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Textual description of a processing step within a research process to enable or facilitate its reproducibility"@en ,
@@ -666,6 +844,7 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 
 ###  https://schema.org/endTime
 <https://schema.org/endTime> rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :ProcessingStep ;
                              rdfs:range <https://schema.org/DateTime> ;
                              rdfs:comment """The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>
 
@@ -678,6 +857,7 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
 
 ###  https://schema.org/startTime
 <https://schema.org/startTime> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :ProcessingStep ;
                                rdfs:range <https://schema.org/DateTime> ;
                                rdfs:comment """The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>
 
@@ -702,6 +882,16 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#Process> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Process, i.e., a physical entity with a temporal evolution that 'has a meaning for the ontologist'"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Prozess"@de ,
+                                                                                             "process"@en .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000017
 <http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
                                              rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
@@ -709,6 +899,27 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "realisierbare Entität"@de ,
                                                                                              "realizable entity"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep
+:ProcessingStep rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Specific action undertaken during research"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Arbeitsschritt"@de ,
+                                                                "processing step"@en .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                     <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#Action> ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en ,
+                                                                                      "Eine Aktivität ist etwas, das über einen Zeitraum und mit oder an Entitäten erfolgt; dazu kann das Verbrauchen, Verarbeiten, Transformieren, Modifizieren, Relokalisieren, Verwenden, oder die Genese von Entitäten gehören."@de ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german label"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Activity"@en ,
+                                                                                     "Aktivität"@de .
 
 
 #################################################################

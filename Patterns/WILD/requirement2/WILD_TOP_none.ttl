@@ -35,6 +35,18 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                     rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
+###  http://purl.org/wild/vocab#containsActivity
+:containsActivity rdf:type owl:ObjectProperty ;
+                  rdfs:domain :WorkflowModel ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasBehaviour
+:hasBehaviour rdf:type owl:ObjectProperty ;
+              rdfs:domain :WorkflowModel ;
+              rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#hasChildActivity
 :hasChildActivity rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasDescendantActivity ;
@@ -48,6 +60,12 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                        rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
+###  http://purl.org/wild/vocab#hasState
+:hasState rdf:type owl:ObjectProperty ;
+          rdfs:range :State ;
+          rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#inWorkflowInstance
 :inWorkflowInstance rdf:type owl:ObjectProperty ;
                     rdfs:domain :ActivityInstance ;
@@ -58,6 +76,7 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 ###  http://purl.org/wild/vocab#workflowInstanceOf
 :workflowInstanceOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :WorkflowInstance ;
+                    rdfs:range :WorkflowModel ;
                     rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
@@ -75,14 +94,36 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #    Classes
 #################################################################
 
+###  http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState
+:ActiveOrInitialisedInstanceState rdf:type owl:Class ;
+                                  rdfs:subClassOf :State ;
+                                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#ActivityInstance
 :ActivityInstance rdf:type owl:Class ;
                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
+###  http://purl.org/wild/vocab#State
+:State rdf:type owl:Class ;
+       rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#VirtualInstanceState
+:VirtualInstanceState rdf:type owl:Class ;
+                      rdfs:subClassOf :State ;
+                      rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#WorkflowInstance
 :WorkflowInstance rdf:type owl:Class ;
                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#WorkflowModel
+:WorkflowModel rdf:type owl:Class ;
+               rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 #################################################################

@@ -1,3 +1,10 @@
+http://purl.org/wild/vocab#Activity
 http://purl.org/wild/vocab#AtomicActivity
+http://purl.org/wild/vocab#CompositeActivity
 http://purl.org/wild/vocab#SequentialActivity
 http://purl.org/wild/vocab#hasChildActivity
+http://purl.org/wild/vocab#hasAtomicActivity
+http://purl.org/wild/vocab#ParallelActivity
+http://purl.org/wild/vocab#ConditionalActivity
+http://purl.org/wild/vocab#containsActivity
+http://purl.org/wild/vocab#activityInstanceOf

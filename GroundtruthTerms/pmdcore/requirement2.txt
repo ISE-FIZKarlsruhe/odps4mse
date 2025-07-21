@@ -2,4 +2,5 @@ https://w3id.org/pmd/co/MaterialProperty
 https://w3id.org/pmd/co/Object
 https://w3id.org/pmd/co/ValueObject
 https://w3id.org/pmd/co/characteristic
+https://w3id.org/pmd/co/composes
 https://w3id.org/pmd/co/composedOf

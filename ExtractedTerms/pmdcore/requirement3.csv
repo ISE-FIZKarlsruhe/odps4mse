@@ -10,7 +10,7 @@ https://w3id.org/pmd/co/Measurement,0.5370
 https://w3id.org/pmd/co/MicrometerGauge,0.5252
 https://w3id.org/pmd/co/Thickness,0.5176
 https://w3id.org/pmd/co/TemperatureChangeDevice,0.5159
-https://w3id.org/pmd/co/Extension,0.5119
+https://w3id.org/pmd/co/Extension,0.5101
 https://w3id.org/pmd/co/PrimaryData,0.5090
 https://w3id.org/pmd/co/definitionSource,0.5068
 https://w3id.org/pmd/co/Specimen,0.5046
@@ -24,11 +24,10 @@ https://w3id.org/pmd/co/process,0.4876
 https://w3id.org/pmd/co/relatesTo,0.4837
 https://w3id.org/pmd/co/input,0.4799
 https://w3id.org/pmd/co/ErrorReportDocument,0.4757
-https://w3id.org/pmd/co/Stress,0.4749
 https://w3id.org/pmd/co/SpecimenName,0.4733
+https://w3id.org/pmd/co/Stress,0.4713
 https://w3id.org/pmd/co/AccreditationDocument,0.4687
 https://w3id.org/pmd/co/value,0.4678
-https://w3id.org/pmd/co/belongsToProject,0.4678
 https://w3id.org/pmd/co/TestPiece,0.4677
 https://w3id.org/pmd/co/Thermocouple,0.4668
 https://w3id.org/pmd/co/InspectionDocument,0.4612
@@ -37,6 +36,7 @@ https://w3id.org/pmd/co/CalibrationDocument,0.4545
 https://w3id.org/pmd/co/ClassificationDocument,0.4545
 https://w3id.org/pmd/co/QualifyingNodeAnnotation,0.4541
 https://w3id.org/pmd/co/DataAcquisitionRate,0.4539
+https://w3id.org/pmd/co/InitiatorRole,0.4536
 https://w3id.org/pmd/co/Description,0.4533
 https://w3id.org/pmd/co/LaboratoryRole,0.4496
 https://w3id.org/pmd/co/Metadata,0.4491

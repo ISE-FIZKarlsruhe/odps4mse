@@ -8,12 +8,12 @@ https://w3id.org/pmd/co/characteristicOf
 https://w3id.org/pmd/co/process
 https://w3id.org/pmd/co/ManufacturingProcess
 https://w3id.org/pmd/co/ValueObject
+https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/TestPieceClassification
 https://w3id.org/pmd/co/participant
 https://w3id.org/pmd/co/FurnaceCharacteristic
 https://w3id.org/pmd/co/Process
 https://w3id.org/pmd/co/TestPieceName
-https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/value
 https://w3id.org/pmd/co/MeasuringProcess
 https://w3id.org/pmd/co/Object
@@ -28,7 +28,6 @@ https://w3id.org/pmd/co/ProcessingNode
 https://w3id.org/pmd/co/composedOf
 https://w3id.org/pmd/co/CoatingDesignation
 https://w3id.org/pmd/co/MaterialRelated
-https://w3id.org/pmd/co/composes
 https://w3id.org/pmd/co/executes
 https://w3id.org/pmd/co/ClassificationDocument
 https://w3id.org/pmd/co/Temperature
@@ -44,6 +43,7 @@ https://w3id.org/pmd/co/Medium
 https://w3id.org/pmd/co/TestPieceInfo
 https://w3id.org/pmd/co/DataAcquisitionRate
 https://w3id.org/pmd/co/executedBy
+https://w3id.org/pmd/co/composes
 https://w3id.org/pmd/co/EngineeredMaterial
 http://purl.obolibrary.org/obo/IAO_0000119
 https://w3id.org/pmd/co/Width
@@ -57,11 +57,11 @@ https://w3id.org/pmd/co/NodeName
 https://w3id.org/pmd/co/MaterialProperty
 https://w3id.org/pmd/co/Electrical
 https://w3id.org/pmd/co/Description
-https://w3id.org/pmd/co/ProcessDescription
 https://w3id.org/pmd/co/component
 https://w3id.org/pmd/co/EnvironmentalTemperature
 http://purl.obolibrary.org/obo/CHEBI_24431
 https://w3id.org/pmd/co/SimulationProcess
+https://w3id.org/pmd/co/ProcessDescription
 https://w3id.org/pmd/co/VolumeFraction
 https://w3id.org/pmd/co/resource
 https://w3id.org/pmd/co/MaterialDesignation
@@ -70,6 +70,7 @@ https://w3id.org/pmd/co/Blank
 https://w3id.org/pmd/co/DataScope
 https://w3id.org/pmd/co/previousProcess
 https://w3id.org/pmd/co/CollectionInterfaceHint
+https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/Biological
 https://w3id.org/pmd/co/MediaMovement
 https://w3id.org/pmd/co/ProvidedIdentifier
@@ -87,7 +88,6 @@ https://w3id.org/pmd/co/ParticleNumber
 https://w3id.org/pmd/co/DigitalMaterialIdentifier
 https://w3id.org/pmd/co/ErrorReportDocument
 https://w3id.org/pmd/co/Length
-https://w3id.org/pmd/co/SetPoint
 https://w3id.org/pmd/co/TransformativeAnalysisProcess
 https://w3id.org/pmd/co/Magnetic
 https://w3id.org/pmd/co/Coordinates
@@ -125,7 +125,6 @@ https://w3id.org/pmd/co/Thermal
 https://w3id.org/pmd/co/GeometryChangingProcess
 https://w3id.org/pmd/co/Filter
 https://w3id.org/pmd/co/Duration
-https://w3id.org/pmd/co/InitiatorRole
 http://purl.obolibrary.org/obo/IAO_0000121
 https://w3id.org/pmd/co/superordinateProcess
 https://w3id.org/pmd/co/Note
@@ -141,6 +140,7 @@ https://w3id.org/pmd/co/Time
 https://w3id.org/pmd/co/ManufacturerRole
 https://w3id.org/pmd/co/StartTime
 https://w3id.org/pmd/co/Voxel
+https://w3id.org/pmd/co/SetPoint
 https://w3id.org/pmd/co/TemperatureChangingProcess
 https://w3id.org/pmd/co/MicroscopyProcess
 https://w3id.org/pmd/co/Furnace

@@ -1,0 +1,5 @@
+http://purl.org/net/p-plan#Variable
+http://www.opmw.org/ontology/WorkflowTemplateArtifact
+http://www.opmw.org/ontology/WorkflowExecutionArtifact
+http://www.opmw.org/ontology/uses
+http://www.opmw.org/ontology/isGeneratedBy

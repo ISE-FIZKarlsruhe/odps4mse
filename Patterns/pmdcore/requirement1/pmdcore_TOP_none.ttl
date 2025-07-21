@@ -128,11 +128,6 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 ###  https://w3id.org/pmd/co/component
 <https://w3id.org/pmd/co/component> rdf:type owl:ObjectProperty ;
                                     rdfs:domain <https://w3id.org/pmd/co/ProcessingNode> ;
-                                    rdfs:range [ rdf:type owl:Class ;
-                                                 owl:unionOf ( <https://w3id.org/pmd/co/Component>
-                                                               <https://w3id.org/pmd/co/ProcessingNode>
-                                                             )
-                                               ] ;
                                     rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
                                     rdfs:label "component"@en ;
                                     <http://www.w3.org/2004/02/skos/core#altLabel> "has component"@en ;
@@ -152,8 +147,6 @@ As a prepositional phrase, it indicates the elements, parts, or components that 
 
 ###  https://w3id.org/pmd/co/composes
 <https://w3id.org/pmd/co/composes> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <https://w3id.org/pmd/co/Object> ;
-                                   rdfs:range <https://w3id.org/pmd/co/Object> ;
                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
                                    rdfs:label "composes"@en ;
                                    <http://www.w3.org/2004/02/skos/core#definition> """Diese Eigenschaft wird verwendet, um die Tatsache zu beschreiben, dass und welche Objekte andere Objekte zusammensetzen, d. h. sie wird verwendet, um die spezifischen Bestandteile oder Zutaten zu beschreiben, aus denen ein bestimmtes Gebilde oder Objekt besteht. 
@@ -376,16 +369,6 @@ As a prepositional phrase, it indicates the elements, parts, or components that 
 #    Classes
 #################################################################
 
-###  https://w3id.org/pmd/co/Component
-<https://w3id.org/pmd/co/Component> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/pmd/co/Object> ;
-                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
-                                    rdfs:label "Component"@en ,
-                                               "Komponente"@de ;
-                                    <http://www.w3.org/2004/02/skos/core#definition> "An object that serves a specific technical application. Constituent part of a compound of parts that builds a technical application."@en ,
-                                                                                     "Ein Objekt, das einer bestimmten technischen Anwendung dient. Bestandteil einer Zusammensetzung von Teilen, die eine technische Anwendung bilden."@de .
-
-
 ###  https://w3id.org/pmd/co/Method
 <https://w3id.org/pmd/co/Method> rdf:type owl:Class ;
                                  owl:disjointWith <https://w3id.org/pmd/co/Process> ;
@@ -394,14 +377,6 @@ As a prepositional phrase, it indicates the elements, parts, or components that 
                                             "Methode"@de ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "A way, technique, or process of or for doing something"@en ;
                                  <https://w3id.org/pmd/co/definitionSource> "“Method.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/method. Accessed 5 Dec. 2022."@en .
-
-
-###  https://w3id.org/pmd/co/Object
-<https://w3id.org/pmd/co/Object> rdf:type owl:Class ;
-                                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
-                                 rdfs:label "Object"@en ,
-                                            "Objekt"@de ;
-                                 <http://www.w3.org/2004/02/skos/core#definition> "A discernable, tangible or simulated entity that is processed in a process by a processing node."@en .
 
 
 ###  https://w3id.org/pmd/co/Process

@@ -12,6 +12,20 @@
 #    Annotation properties
 #################################################################
 
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
                                                  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
@@ -40,8 +54,85 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                             rdf:type owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a part and its whole"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Teil von"@de ,
+                                                                                             "part of"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty ,
+                                                      owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a whole and its part"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "has part"@en ,
+                                                                                             "hat Teil"@de .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000063
+<http://purl.obolibrary.org/obo/BFO_0000063> rdf:type owl:ObjectProperty ,
+                                                      owl:TransitiveProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "ist Voraussetzung für Schritt"@de ,
+                                                                                             "precedes"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002224
+<http://purl.obolibrary.org/obo/RO_0002224> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                            rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain :ProcessingStep ;
+                                            rdfs:range :ProcessingStep ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            rdfs:seeAlso <http://ontologydesignpatterns.org/wiki/Submissions:Componency> ;
+                                            <http://www.w3.org/2004/02/skos/core#altLabel> "started by"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "beginnt mit"@de ,
+                                                                                            "starts with"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002230
+<http://purl.obolibrary.org/obo/RO_0002230> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                            rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain :ProcessingStep ;
+                                            rdfs:range :ProcessingStep ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#altLabel> "finished by"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "endet mit"@de ,
+                                                                                            "ends with"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#Process> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Process, i.e., a physical entity with a temporal evolution that 'has a meaning for the ontologist'"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Prozess"@de ,
+                                                                                             "process"@en .
+
 
 ###  http://purl.obolibrary.org/obo/BFO_0000017
 <http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
@@ -50,6 +141,27 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "realisierbare Entität"@de ,
                                                                                              "realizable entity"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep
+:ProcessingStep rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Specific action undertaken during research"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Arbeitsschritt"@de ,
+                                                                "processing step"@en .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                     <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#Action> ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en ,
+                                                                                      "Eine Aktivität ist etwas, das über einen Zeitraum und mit oder an Entitäten erfolgt; dazu kann das Verbrauchen, Verarbeiten, Transformieren, Modifizieren, Relokalisieren, Verwenden, oder die Genese von Entitäten gehören."@de ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german label"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Activity"@en ,
+                                                                                     "Aktivität"@de .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

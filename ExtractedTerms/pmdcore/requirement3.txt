@@ -23,11 +23,10 @@ https://w3id.org/pmd/co/process
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/co/input
 https://w3id.org/pmd/co/ErrorReportDocument
-https://w3id.org/pmd/co/Stress
 https://w3id.org/pmd/co/SpecimenName
+https://w3id.org/pmd/co/Stress
 https://w3id.org/pmd/co/AccreditationDocument
 https://w3id.org/pmd/co/value
-https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/TestPiece
 https://w3id.org/pmd/co/Thermocouple
 https://w3id.org/pmd/co/InspectionDocument
@@ -36,6 +35,7 @@ https://w3id.org/pmd/co/CalibrationDocument
 https://w3id.org/pmd/co/ClassificationDocument
 https://w3id.org/pmd/co/QualifyingNodeAnnotation
 https://w3id.org/pmd/co/DataAcquisitionRate
+https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/Description
 https://w3id.org/pmd/co/LaboratoryRole
 https://w3id.org/pmd/co/Metadata

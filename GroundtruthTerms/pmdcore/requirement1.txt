@@ -1,15 +1,9 @@
 https://w3id.org/pmd/co/Process
-https://w3id.org/pmd/co/executedBy
 https://w3id.org/pmd/co/nextProcess
 https://w3id.org/pmd/co/previousProcess
 https://w3id.org/pmd/co/subordinateProcess
-https://w3id.org/pmd/co/Component
+https://w3id.org/pmd/co/component
 https://w3id.org/pmd/co/ProcessingNode
-https://w3id.org/pmd/co/characteristic
 https://w3id.org/pmd/co/executedBy
-https://w3id.org/pmd/co/outputOf
-https://w3id.org/pmd/co/Component
-https://w3id.org/pmd/co/ProcessingNode
 https://w3id.org/pmd/co/characteristic
-https://w3id.org/pmd/co/executedBy
 https://w3id.org/pmd/co/outputOf

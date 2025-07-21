@@ -1,6 +1,6 @@
 IRI,Similarity
 https://w3id.org/pmd/co/Project,0.8331
-https://w3id.org/pmd/co/belongsToProject,0.7313
+https://w3id.org/pmd/co/belongsToProject,0.7289
 https://w3id.org/pmd/co/process,0.7176
 https://w3id.org/pmd/co/ProjectIdentifier,0.6561
 https://w3id.org/pmd/co/Process,0.6522
@@ -16,16 +16,16 @@ https://w3id.org/pmd/co/ProcessingNode,0.5683
 https://w3id.org/pmd/co/TransformativeAnalysisProcess,0.5553
 https://w3id.org/pmd/co/ClassificationDocument,0.5543
 https://w3id.org/pmd/co/ManufacturerRole,0.5496
-https://w3id.org/pmd/co/ProcessDescription,0.5480
 https://w3id.org/pmd/co/Blank,0.5477
+https://w3id.org/pmd/co/InitiatorRole,0.5471
 https://w3id.org/pmd/co/ManufacturingProcess,0.5459
 https://w3id.org/pmd/co/TestingMachine,0.5444
 https://w3id.org/pmd/co/ProcessDuration,0.5435
 https://w3id.org/pmd/co/AnalysingProcess,0.5392
 https://w3id.org/pmd/co/MeasuringProcess,0.5388
+https://w3id.org/pmd/co/ProcessDescription,0.5350
 https://w3id.org/pmd/co/AccreditationDocument,0.5343
 https://w3id.org/pmd/co/InspectionDocument,0.5331
-https://w3id.org/pmd/co/InitiatorRole,0.5280
 https://w3id.org/pmd/co/NonTransformativeAnalysisProcess,0.5261
 https://w3id.org/pmd/co/Object,0.5240
 https://w3id.org/pmd/co/ProcessIdentifier,0.5226
@@ -57,7 +57,7 @@ https://w3id.org/pmd/co/AgingProcess,0.4812
 https://w3id.org/pmd/co/nextProcess,0.4802
 https://w3id.org/pmd/co/TemperatureMeasuringDevice,0.4800
 https://w3id.org/pmd/co/LengthChangingProcess,0.4775
-https://w3id.org/pmd/co/SetPoint,0.4736
+https://w3id.org/pmd/co/SetPoint,0.4732
 https://w3id.org/pmd/co/Medium,0.4731
 https://w3id.org/pmd/co/relatesTo,0.4715
 https://w3id.org/pmd/co/Filter,0.4709

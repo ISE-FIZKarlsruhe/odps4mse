@@ -29,11 +29,29 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #    Object Properties
 #################################################################
 
+###  http://purl.org/wild/vocab#activityInstanceOf
+:activityInstanceOf rdf:type owl:ObjectProperty ;
+                    rdfs:range :Activity ;
+                    rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#containsActivity
+:containsActivity rdf:type owl:ObjectProperty ;
+                  rdfs:range :Activity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#hasAtomicActivity
 :hasAtomicActivity rdf:type owl:ObjectProperty ;
                    rdfs:domain :CompositeActivity ;
                    rdfs:range :AtomicActivity ;
                    rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasBehaviour
+:hasBehaviour rdf:type owl:ObjectProperty ;
+              rdfs:range :Activity ;
+              rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 ###  http://purl.org/wild/vocab#hasChildActivities
@@ -46,6 +64,7 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 :hasChildActivity rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasDescendantActivity ;
                   rdfs:domain :CompositeActivity ;
+                  rdfs:range :Activity ;
                   <http://purl.org/list/vocab#accompanying> :hasChildActivities ;
                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
@@ -54,6 +73,7 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 :hasDescendantActivity rdf:type owl:ObjectProperty ,
                                 owl:TransitiveProperty ;
                        rdfs:domain :CompositeActivity ;
+                       rdfs:range :Activity ;
                        rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
@@ -61,6 +81,18 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 :hasHttpRequest rdf:type owl:ObjectProperty ;
                 rdfs:domain :AtomicActivity ;
                 rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasPostcondition
+:hasPostcondition rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Activity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasPrecondition
+:hasPrecondition rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Activity ;
+                 rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 #################################################################
@@ -77,14 +109,21 @@ xsd:dateTime rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #    Classes
 #################################################################
 
+###  http://purl.org/wild/vocab#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#AtomicActivity
 :AtomicActivity rdf:type owl:Class ;
+                rdfs:subClassOf :Activity ;
                 owl:disjointWith :CompositeActivity ;
                 rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 ###  http://purl.org/wild/vocab#CompositeActivity
 :CompositeActivity rdf:type owl:Class ;
+                   rdfs:subClassOf :Activity ;
                    rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 

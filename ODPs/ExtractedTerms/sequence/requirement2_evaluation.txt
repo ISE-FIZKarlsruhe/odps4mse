@@ -2,7 +2,7 @@ Evaluation Metrics:
 Precision: 0.0000
 Recall: 0.0000
 F1-score: 0.0000
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows: follows:
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes: precedes:
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows: directly follows:
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes: directly precedes:
+GroundTruth: 0
+Predicted: 2
+predicted http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows: 0.4276138246059418
+predicted http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows: 0.4243469536304474

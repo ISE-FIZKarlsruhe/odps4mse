@@ -2,24 +2,23 @@ Evaluation Metrics:
 Precision: 0.0000
 Recall: 0.0000
 F1-score: 0.0000
-http://purl.org/dc/elements/1.1/source: Source: (A related resource from which the described resource is derived.)
-http://purl.org/dc/elements/1.1/relation: Relation: (A related resource.)
-http://purl.org/dc/elements/1.1/contributor: Contributor: (An entity responsible for making contributions to the resource.)
-http://purl.org/dc/elements/1.1/creator: Creator: (An entity primarily responsible for making the resource.)
-http://purl.org/dc/elements/1.1/coverage: Coverage: (The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.)
-http://purl.org/dc/elements/1.1/publisher: Publisher: (An entity responsible for making the resource available.)
-http://purl.org/dc/elements/1.1/date: Date: (A point or period of time associated with an event in the lifecycle of the resource.)
-http://purl.org/dc/elements/1.1/subject: Subject: (The topic of the resource.)
-http://purl.org/dc/elements/1.1/description: Description: (An account of the resource.)
-http://purl.org/dc/elements/1.1/title: Title: (A name given to the resource.)
-http://purl.org/dc/elements/1.1/identifier: Identifier: (An unambiguous reference to the resource within a given context.)
-http://purl.org/dc/elements/1.1/format: Format: (The file format, physical medium, or dimensions of the resource.)
-http://purl.org/dc/elements/1.1/language: Language: (A language of the resource.)
-http://www.w3.org/ns/mls#hasPart: hasPart:
-http://purl.org/dc/elements/1.1/type: Type: (The nature or genre of the resource.)
-http://www.w3.org/ns/mls#implements: implements:
-http://purl.org/dc/elements/1.1/rights: Rights: (Information about rights held in and over the resource.)
-http://www.w3.org/ns/mls#Process: Process:
-http://www.w3.org/ns/mls#definedOn: definedOn:
-http://www.w3.org/ns/mls#hasInput: hasInput:
-http://www.w3.org/ns/mls#hasParameter: hasHyperParameter:
+GroundTruth: 0
+Predicted: 18
+predicted http://www.w3.org/ns/mls#Process: 0.529747724533081
+predicted http://www.w3.org/ns/mls#hasPart: 0.4968694746494293
+predicted http://purl.org/dc/elements/1.1/relation: 0.49677181243896484
+predicted http://purl.org/dc/elements/1.1/title: 0.48988595604896545
+predicted http://www.w3.org/ns/mls#hasInput: 0.4878707528114319
+predicted http://purl.org/dc/elements/1.1/contributor: 0.4877878427505493
+predicted http://purl.org/dc/elements/1.1/date: 0.4853481948375702
+predicted http://purl.org/dc/elements/1.1/source: 0.4819258451461792
+predicted http://purl.org/dc/elements/1.1/subject: 0.48151808977127075
+predicted http://purl.org/dc/elements/1.1/format: 0.48122552037239075
+predicted http://purl.org/dc/elements/1.1/rights: 0.4797649085521698
+predicted http://purl.org/dc/elements/1.1/language: 0.4699285924434662
+predicted http://purl.org/dc/elements/1.1/coverage: 0.46704357862472534
+predicted http://purl.org/dc/elements/1.1/identifier: 0.4640536308288574
+predicted http://purl.org/dc/elements/1.1/creator: 0.4620565176010132
+predicted http://purl.org/dc/elements/1.1/description: 0.43725213408470154
+predicted http://purl.org/dc/elements/1.1/publisher: 0.42735639214515686
+predicted http://purl.org/dc/elements/1.1/type: 0.4162205755710602

@@ -21,6 +21,25 @@
 #    Object Properties
 #################################################################
 
+###  http://purl.org/wild/vocab#activityInstanceOf
+:activityInstanceOf rdf:type owl:ObjectProperty ;
+                    rdfs:range :Activity ;
+                    rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#containsActivity
+:containsActivity rdf:type owl:ObjectProperty ;
+                  rdfs:range :Activity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasAtomicActivity
+:hasAtomicActivity rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CompositeActivity ;
+                   rdfs:range :AtomicActivity ;
+                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#hasChildActivity
 :hasChildActivity rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasDescendantActivity ;
@@ -58,6 +77,21 @@
 :CompositeActivity rdf:type owl:Class ;
                    rdfs:subClassOf :Activity ;
                    rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#ConditionalActivity
+:ConditionalActivity rdf:type owl:Class ;
+                     rdfs:subClassOf :CompositeActivity ;
+                     owl:disjointWith :ParallelActivity ,
+                                      :SequentialActivity ;
+                     rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#ParallelActivity
+:ParallelActivity rdf:type owl:Class ;
+                  rdfs:subClassOf :CompositeActivity ;
+                  owl:disjointWith :SequentialActivity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 ###  http://purl.org/wild/vocab#SequentialActivity

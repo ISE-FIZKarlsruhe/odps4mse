@@ -7,9 +7,9 @@ https://w3id.org/pmd/co/previousProcess,0.6206
 https://w3id.org/pmd/co/TransformativeAnalysisProcess,0.6199
 https://w3id.org/pmd/co/subordinateProcess,0.6141
 https://w3id.org/pmd/co/AnalysingProcess,0.6108
-https://w3id.org/pmd/co/ProcessDescription,0.6106
 https://w3id.org/pmd/co/AssemblingProcess,0.6065
 https://w3id.org/pmd/co/MeasuringProcess,0.6050
+https://w3id.org/pmd/co/ProcessDescription,0.5994
 https://w3id.org/pmd/co/participant,0.5991
 https://w3id.org/pmd/co/Object,0.5974
 https://w3id.org/pmd/co/ClassificationDocument,0.5958
@@ -31,6 +31,8 @@ https://w3id.org/pmd/co/AgingProcess,0.5443
 https://w3id.org/pmd/co/TemperatureChangingProcess,0.5375
 https://w3id.org/pmd/co/executedBy,0.5319
 https://w3id.org/pmd/co/TemperatureChangeDevice,0.5293
+https://w3id.org/pmd/co/InitiatorRole,0.5266
+https://w3id.org/pmd/co/belongsToProject,0.5259
 https://w3id.org/pmd/co/Operator,0.5233
 http://purl.obolibrary.org/obo/IAO_0000115,0.5186
 https://w3id.org/pmd/co/unit,0.5184
@@ -42,7 +44,6 @@ https://w3id.org/pmd/co/TemperatureMeasuringDevice,0.5032
 https://w3id.org/pmd/co/SimulationNode,0.5029
 https://w3id.org/pmd/co/output,0.5013
 http://purl.obolibrary.org/obo/IAO_0000119,0.5011
-https://w3id.org/pmd/co/belongsToProject,0.4966
 https://w3id.org/pmd/co/Slide,0.4934
 https://w3id.org/pmd/co/Filter,0.4917
 https://w3id.org/pmd/co/InsertSurface,0.4885
@@ -63,7 +64,6 @@ https://w3id.org/pmd/co/WorkingRange,0.4644
 https://w3id.org/pmd/co/DemountingProcess,0.4639
 https://w3id.org/pmd/co/CalibrationRange,0.4636
 https://w3id.org/pmd/co/ErrorReportDocument,0.4628
-https://w3id.org/pmd/co/InitiatorRole,0.4592
 https://w3id.org/pmd/co/MountingProcess,0.4591
 https://w3id.org/pmd/co/MechanicalTestingProcess,0.4586
 https://w3id.org/pmd/co/DimensionMeasuringDevice,0.4569
@@ -108,5 +108,4 @@ https://w3id.org/pmd/co/Initiator,0.4023
 https://w3id.org/pmd/co/Date,0.4021
 https://w3id.org/pmd/co/outputOf,0.4017
 https://w3id.org/pmd/co/ParticleNumber,0.4011
-https://w3id.org/pmd/co/SetPoint,0.4005
 https://w3id.org/pmd/co/ValueScope,0.4001

@@ -1,0 +1,120 @@
+@prefix : <http://OntoCAPE/chemical_process_system/CPS_function/process.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://OntoCAPE/chemical_process_system/CPS_function/process.owl> .
+
+<http://OntoCAPE/chemical_process_system/CPS_function/process.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://OntoCAPE/upper_level/network_system.owl#enters
+<http://OntoCAPE/upper_level/network_system.owl#enters> rdf:type owl:ObjectProperty ;
+                                                        rdfs:comment "The relation Enters interconnects an ingoing DirectedConnection  to its target Device." ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasProperty
+<http://OntoCAPE/upper_level/system.owl#hasProperty> rdf:type owl:ObjectProperty ,
+                                                              owl:InverseFunctionalProperty ;
+                                                     rdfs:range <http://OntoCAPE/upper_level/system.owl#Property> ;
+                                                     rdfs:comment "The relation hasProperty indicates the Properties of a System." ;
+                                                     rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure
+<http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure> rdf:type owl:ObjectProperty ,
+                                                                   owl:FunctionalProperty ;
+                                                          rdfs:range <http://OntoCAPE/upper_level/system.owl#UnitOfMeasure> ;
+                                                          rdfs:comment "The relation hasUnitOfMeasure establishes the UnitOfMeasure of a ScalarValue." ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasValue
+<http://OntoCAPE/upper_level/system.owl#hasValue> rdf:type owl:ObjectProperty ,
+                                                           owl:InverseFunctionalProperty ;
+                                                  rdfs:domain <http://OntoCAPE/upper_level/system.owl#Property> ;
+                                                  rdfs:range <http://OntoCAPE/upper_level/system.owl#Value> ;
+                                                  rdfs:comment "The hasValue relation designates the Values of a Property." ;
+                                                  rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#qualitativeValue
+<http://OntoCAPE/upper_level/system.owl#qualitativeValue> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://OntoCAPE/upper_level/system.owl#QualitativeValue> ;
+                                                          rdfs:range <http://OntoCAPE/upper_level/system.owl#ValueEnumeration> ;
+                                                          rdfs:comment "The relation qualitativeValue specifies the actual value of a QualitativeValue." ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial
+:RawMaterial rdf:type owl:Class ;
+             rdfs:comment "A RawMaterial is a Material that enters a ProcessStep." ;
+             rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#Property
+<http://OntoCAPE/upper_level/system.owl#Property> rdf:type owl:Class ;
+                                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasValue> ;
+                                                                    owl:allValuesFrom <http://OntoCAPE/upper_level/system.owl#Value>
+                                                                  ] ;
+                                                  owl:disjointWith <http://OntoCAPE/upper_level/system.owl#Value> ;
+                                                  rdfs:comment "The Property class represents the individual properties (traits, qualities) of a System, which distinguish the System from others. Typical examples are Size, Color, or Weight, which are modeled as subclasses of Property." ;
+                                                  rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#QualitativeValue
+<http://OntoCAPE/upper_level/system.owl#QualitativeValue> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://OntoCAPE/upper_level/system.owl#Value> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://OntoCAPE/upper_level/system.owl#qualitativeValue> ;
+                                                                            owl:allValuesFrom <http://OntoCAPE/upper_level/system.owl#ValueEnumeration>
+                                                                          ] ;
+                                                          rdfs:comment "A QualitativeValue is a value that is not (numerically) quantifiable." ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#UnitOfMeasure
+<http://OntoCAPE/upper_level/system.owl#UnitOfMeasure> rdf:type owl:Class ;
+                                                       rdfs:comment "A UnitOfMeasure is a standard measure for the ScalarValue of a of PhysicalQuantity." ;
+                                                       rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#Value
+<http://OntoCAPE/upper_level/system.owl#Value> rdf:type owl:Class ;
+                                               rdfs:comment "The Value class denotes the different values of a Property." ;
+                                               rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#ValueEnumeration
+<http://OntoCAPE/upper_level/system.owl#ValueEnumeration> rdf:type owl:Class ;
+                                                          rdfs:comment "A ValueEnumeration specifies a (finite) set of possible values of a QualitativeValue." ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -256,6 +256,16 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                                                                           "Zuweisung"@de .
 
 
+###  http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue
+<http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.molmod.info/semantics/pims-ii.ttl#Value> ;
+                                                             rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "Quantity value, i.e., a value that has a numerical magnitude and a physical unit"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels, harmonized spelling to OBO naming conventions (lower case, space separated)" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Größenwert"@de ,
+                                                                                                             "Quantity value"@en .
+
+
 ###  http://www.molmod.info/semantics/pims-ii.ttl#Value
 <http://www.molmod.info/semantics/pims-ii.ttl#Value> rdf:type owl:Class ;
                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -290,7 +300,7 @@ owl:Thing rdfs:isDefinedBy <http://www.w3.org/2002/07/owl.owl> .
 
 ###  https://ptb.de/si/Real
 <https://ptb.de/si/Real> rdf:type owl:Class ;
-                         rdfs:subClassOf <http://www.molmod.info/semantics/pims-ii.ttl#Value> ,
+                         rdfs:subClassOf <http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue> ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :hasUncertaintyDeclaration ;
                                            owl:cardinality "1"^^xsd:nonNegativeInteger

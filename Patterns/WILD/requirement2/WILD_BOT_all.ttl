@@ -44,6 +44,12 @@
 #    Classes
 #################################################################
 
+###  http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState
+:ActiveOrInitialisedInstanceState rdf:type owl:Class ;
+                                  rdfs:subClassOf :State ;
+                                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#Activity
 :Activity rdf:type owl:Class ;
           rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
@@ -63,6 +69,12 @@
 ###  http://purl.org/wild/vocab#State
 :State rdf:type owl:Class ;
        rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#VirtualInstanceState
+:VirtualInstanceState rdf:type owl:Class ;
+                      rdfs:subClassOf :State ;
+                      rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 ###  http://purl.org/wild/vocab#WorkflowInstance

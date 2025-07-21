@@ -1,0 +1,11 @@
+http://OntoCAPE/upper_level/system.owl#hasProperty
+http://OntoCAPE/upper_level/system.owl#Property
+http://OntoCAPE/upper_level/system.owl#hasValue
+http://OntoCAPE/upper_level/system.owl#Value
+http://OntoCAPE/upper_level/system.owl#QualitativeValue
+http://OntoCAPE/upper_level/system.owl#UnitOfMeasure
+http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure
+http://OntoCAPE/upper_level/system.owl#qualitativeValue
+http://OntoCAPE/upper_level/system.owl#ValueEnumeration
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial
+http://OntoCAPE/upper_level/network_system.owl#enters

@@ -9,12 +9,12 @@ https://w3id.org/pmd/co/characteristicOf,0.6026
 https://w3id.org/pmd/co/process,0.5985
 https://w3id.org/pmd/co/ManufacturingProcess,0.5954
 https://w3id.org/pmd/co/ValueObject,0.5931
+https://w3id.org/pmd/co/belongsToProject,0.5910
 https://w3id.org/pmd/co/TestPieceClassification,0.5795
 https://w3id.org/pmd/co/participant,0.5788
 https://w3id.org/pmd/co/FurnaceCharacteristic,0.5752
 https://w3id.org/pmd/co/Process,0.5749
 https://w3id.org/pmd/co/TestPieceName,0.5721
-https://w3id.org/pmd/co/belongsToProject,0.5677
 https://w3id.org/pmd/co/value,0.5676
 https://w3id.org/pmd/co/MeasuringProcess,0.5631
 https://w3id.org/pmd/co/Object,0.5623
@@ -26,10 +26,9 @@ https://w3id.org/pmd/co/inputOf,0.5545
 https://w3id.org/pmd/co/Chemical,0.5543
 https://w3id.org/pmd/co/TemperatureChangeDevice,0.5530
 https://w3id.org/pmd/co/ProcessingNode,0.5492
-https://w3id.org/pmd/co/composedOf,0.5469
+https://w3id.org/pmd/co/composedOf,0.5444
 https://w3id.org/pmd/co/CoatingDesignation,0.5437
 https://w3id.org/pmd/co/MaterialRelated,0.5436
-https://w3id.org/pmd/co/composes,0.5409
 https://w3id.org/pmd/co/executes,0.5395
 https://w3id.org/pmd/co/ClassificationDocument,0.5384
 https://w3id.org/pmd/co/Temperature,0.5378
@@ -45,6 +44,7 @@ https://w3id.org/pmd/co/Medium,0.5315
 https://w3id.org/pmd/co/TestPieceInfo,0.5308
 https://w3id.org/pmd/co/DataAcquisitionRate,0.5294
 https://w3id.org/pmd/co/executedBy,0.5272
+https://w3id.org/pmd/co/composes,0.5270
 https://w3id.org/pmd/co/EngineeredMaterial,0.5268
 http://purl.obolibrary.org/obo/IAO_0000119,0.5245
 https://w3id.org/pmd/co/Width,0.5240
@@ -58,11 +58,11 @@ https://w3id.org/pmd/co/NodeName,0.5180
 https://w3id.org/pmd/co/MaterialProperty,0.5123
 https://w3id.org/pmd/co/Electrical,0.5120
 https://w3id.org/pmd/co/Description,0.5112
-https://w3id.org/pmd/co/ProcessDescription,0.5095
 https://w3id.org/pmd/co/component,0.5092
 https://w3id.org/pmd/co/EnvironmentalTemperature,0.5087
 http://purl.obolibrary.org/obo/CHEBI_24431,0.5087
 https://w3id.org/pmd/co/SimulationProcess,0.5083
+https://w3id.org/pmd/co/ProcessDescription,0.5080
 https://w3id.org/pmd/co/VolumeFraction,0.5069
 https://w3id.org/pmd/co/resource,0.5043
 https://w3id.org/pmd/co/MaterialDesignation,0.5039
@@ -71,6 +71,7 @@ https://w3id.org/pmd/co/Blank,0.5030
 https://w3id.org/pmd/co/DataScope,0.5003
 https://w3id.org/pmd/co/previousProcess,0.5002
 https://w3id.org/pmd/co/CollectionInterfaceHint,0.4997
+https://w3id.org/pmd/co/InitiatorRole,0.4994
 https://w3id.org/pmd/co/Biological,0.4993
 https://w3id.org/pmd/co/MediaMovement,0.4976
 https://w3id.org/pmd/co/ProvidedIdentifier,0.4967
@@ -88,7 +89,6 @@ https://w3id.org/pmd/co/ParticleNumber,0.4865
 https://w3id.org/pmd/co/DigitalMaterialIdentifier,0.4864
 https://w3id.org/pmd/co/ErrorReportDocument,0.4858
 https://w3id.org/pmd/co/Length,0.4854
-https://w3id.org/pmd/co/SetPoint,0.4848
 https://w3id.org/pmd/co/TransformativeAnalysisProcess,0.4831
 https://w3id.org/pmd/co/Magnetic,0.4827
 https://w3id.org/pmd/co/Coordinates,0.4819
@@ -126,7 +126,6 @@ https://w3id.org/pmd/co/Thermal,0.4470
 https://w3id.org/pmd/co/GeometryChangingProcess,0.4469
 https://w3id.org/pmd/co/Filter,0.4468
 https://w3id.org/pmd/co/Duration,0.4463
-https://w3id.org/pmd/co/InitiatorRole,0.4459
 http://purl.obolibrary.org/obo/IAO_0000121,0.4459
 https://w3id.org/pmd/co/superordinateProcess,0.4454
 https://w3id.org/pmd/co/Note,0.4454
@@ -141,7 +140,8 @@ https://w3id.org/pmd/co/Mechanical,0.4355
 https://w3id.org/pmd/co/Time,0.4354
 https://w3id.org/pmd/co/ManufacturerRole,0.4351
 https://w3id.org/pmd/co/StartTime,0.4332
-https://w3id.org/pmd/co/Voxel,0.4320
+https://w3id.org/pmd/co/Voxel,0.4328
+https://w3id.org/pmd/co/SetPoint,0.4327
 https://w3id.org/pmd/co/TemperatureChangingProcess,0.4290
 https://w3id.org/pmd/co/MicroscopyProcess,0.4290
 https://w3id.org/pmd/co/Furnace,0.4285

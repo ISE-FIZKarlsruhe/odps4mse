@@ -132,6 +132,16 @@ owl:topObjectProperty rdfs:isDefinedBy <http://www.w3.org/2002/07/owl.owl> .
                                            <http://www.w3.org/2004/02/skos/core#altLabel> "is characteristic of" .
 
 
+###  https://w3id.org/pmd/co/component
+<https://w3id.org/pmd/co/component> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <https://w3id.org/pmd/co/ProcessingNode> ;
+                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                    rdfs:label "component"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "has component"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Die Objekt-Eigenschaft Komponente, die in Verbindung mit ProzessKnoten und seinen (modularen) Elementen verwendet wird. Sie ermöglicht die Darstellung der einzelnen, unterschiedlichen Teile von ProzessKnoten. Im Wesentlichen ist die  \"Komponenten-Eigenschaft\" eine Möglichkeit, ein komplexes System in überschaubare und eindeutige Teile zu zerlegen, um die Rolle der einzelnen Teile innerhalb des Gesamtsystems zu verstehen und zu verwalten."@de ,
+                                                                                     "The object property component, which is used in connection with ProcessingNode and its (modular) elements. It enables the representation of the individual, different parts of processing nodes. Essentially, the 'component property' is a way of breaking down a complex system into manageable and distinct parts in order to understand and manage the role of each part within the overall system."@en .
+
+
 ###  https://w3id.org/pmd/co/executedBy
 <https://w3id.org/pmd/co/executedBy> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
@@ -280,24 +290,6 @@ owl:topDataProperty rdfs:isDefinedBy <http://www.w3.org/2002/07/owl.owl> .
 ###  http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
                                   rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> .
-
-
-###  https://w3id.org/pmd/co/Component
-<https://w3id.org/pmd/co/Component> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/pmd/co/Object> ;
-                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
-                                    rdfs:label "Component"@en ,
-                                               "Komponente"@de ;
-                                    <http://www.w3.org/2004/02/skos/core#definition> "An object that serves a specific technical application. Constituent part of a compound of parts that builds a technical application."@en ,
-                                                                                     "Ein Objekt, das einer bestimmten technischen Anwendung dient. Bestandteil einer Zusammensetzung von Teilen, die eine technische Anwendung bilden."@de .
-
-
-###  https://w3id.org/pmd/co/Object
-<https://w3id.org/pmd/co/Object> rdf:type owl:Class ;
-                                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
-                                 rdfs:label "Object"@en ,
-                                            "Objekt"@de ;
-                                 <http://www.w3.org/2004/02/skos/core#definition> "A discernable, tangible or simulated entity that is processed in a process by a processing node."@en .
 
 
 ###  https://w3id.org/pmd/co/Process

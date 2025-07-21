@@ -2,11 +2,7 @@ Evaluation Metrics:
 Precision: 1.0000
 Recall: 0.0667
 F1-score: 0.1250
-http://www.w3id.org/hsu-aut/VDI3682#dependency: (This ObjectProperty is not explicitly contained within the VDI 3682. It is used to describe dependencies of In- and Outputs. Due to open world assumption (OWA) the case that more than one In- or Outputs occur does always mean an alternative Input. For the case, that In- and Outputs are depending on each other, the ObjectProperty Dependency can be used. It can be interpreted as an "AND" constructor between In- and/or Outputs of a process.
-
-E.g.: A process has two Inputs. If they are alternatives, then this fact must not  be explcitly modelled. If both Inputs have to go into the process, then the "Dependency" ObjectProperty is assigned between them.
-
-More complex example: Input A and B have to go into a process, while Input C and D are alternatives for A and B. The Inputs have to go as groups in the process. This equals: A AND B OR C AND D. The Dependency Operator is used between A and B as well as between C and D.
-
-Furthermore, the Operator can be used to express dependencies between In- and Outputs. If A and B are alternative Inputs that result in the Ouputs C for A or D for B then this equals: A AND C or D AND B. The ObjectProperty can be used between both, In- and/or Outputs.)
-http://www.w3id.org/hsu-aut/VDI3682#consistsOf: (Describes containment of process elements (state, process operator, system limit) within a process)
+GroundTruth: 30
+Predicted: 2
+predicted http://www.w3id.org/hsu-aut/VDI3682#consistsOf: 0.7041996121406555
+predicted http://www.w3id.org/hsu-aut/VDI3682#dependency: 0.4066663086414337

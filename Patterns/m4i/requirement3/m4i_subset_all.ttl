@@ -1,0 +1,137 @@
+@prefix : <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/nfdi4ing/metadata4ing#> .
+
+<http://w3id.org/nfdi4ing/metadata4ing#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000017> ;
+                                             rdfs:comment "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert"@de ,
+                                                                                             "realizes"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
+:hasEmployedTool rdf:type owl:ObjectProperty ;
+                 rdfs:range :Tool ;
+                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that is used within a given processing step"@en ,
+                                                                  "verweist auf ein Werkzeug, das in einem Arbeitsschritt verwendet wurde"@de ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has employed tool"@en ,
+                                                                 "hat eingesetztes Werkzeug"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Method
+                                          :Tool
+                                        )
+                          ] ;
+              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Points to a parameter of a given method or tool."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "has parameter"@en ,
+                                                              "hat Parameter"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#implementsMethod
+:implementsMethod rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Tool ;
+                  rdfs:range :Method ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is implemented by a given tool"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "implementiert"@de ,
+                                                                  "implements"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
+:realizesMethod rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                rdfs:range :Method ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is used within a given processing step"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert Methode"@de ,
+                                                                "realizes method"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisierbare Entität"@de ,
+                                                                                             "realizable entity"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#Method
+:Method rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ;
+        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Abstract description of a method for analysis, generation and transformation of data and material objects like, e.g., 'Fourier Transform Infrared Spectroscopy' or 'Molecular Dynamics Simulation'. Note that while values for relevant parameters should be provided, m4i:Method does not refer to the actual execution of the process that is described (use m4i:ProcessingStep for that), but rather a description of the underlying principle."@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Methode"@de ,
+                                                        "method"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Object that helps an agent perform an action (e.g., John wrote a book with a pen), i.e., an object of the relation schema:instrument or m4i:hasTool"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Tool"@en ,
+                                                      "Werkzeug"@de .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

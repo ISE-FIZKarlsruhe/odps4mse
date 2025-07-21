@@ -1,7 +1,7 @@
-http://pims.org/vocab#Value
-http://qudt.org/vocab/unit#CEL
-http://qudt.org/vocab/unit#unit
-http://w3id.org/nfdi4ing/metadata4ing#Assignment
+http://www.molmod.info/semantics/pims-ii.ttl#Value
+http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue
+https://ptb.de/si/Real
+http://www.molmod.info/semantics/pims-ii.ttl#Assignment
 http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity
 http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue
 http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity

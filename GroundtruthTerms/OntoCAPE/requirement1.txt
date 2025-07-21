@@ -1,0 +1,10 @@
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep
+http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process
+http://OntoCAPE/upper_level/network_system.owl#hasInput
+http://OntoCAPE/upper_level/network_system.owl#leaves
+http://OntoCAPE/upper_level/network_system.owl#hasOutput
+http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf
+http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf

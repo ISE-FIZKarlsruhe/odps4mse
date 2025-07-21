@@ -9,16 +9,62 @@
 <http://purl.org/wild/vocab> rdf:type owl:Ontology .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/wild/vocab#containsActivity
+:containsActivity rdf:type owl:ObjectProperty ;
+                  rdfs:range :Activity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#hasAtomicActivity
+:hasAtomicActivity rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CompositeActivity ;
+                   rdfs:range :AtomicActivity ;
+                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+#################################################################
 #    Classes
 #################################################################
 
+###  http://purl.org/wild/vocab#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
 ###  http://purl.org/wild/vocab#AtomicActivity
 :AtomicActivity rdf:type owl:Class ;
+                rdfs:subClassOf :Activity ;
+                owl:disjointWith :CompositeActivity ;
                 rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#CompositeActivity
+:CompositeActivity rdf:type owl:Class ;
+                   rdfs:subClassOf :Activity ;
+                   rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#ConditionalActivity
+:ConditionalActivity rdf:type owl:Class ;
+                     rdfs:subClassOf :CompositeActivity ;
+                     owl:disjointWith :ParallelActivity ,
+                                      :SequentialActivity ;
+                     rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
+
+
+###  http://purl.org/wild/vocab#ParallelActivity
+:ParallelActivity rdf:type owl:Class ;
+                  rdfs:subClassOf :CompositeActivity ;
+                  owl:disjointWith :SequentialActivity ;
+                  rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 
 ###  http://purl.org/wild/vocab#SequentialActivity
 :SequentialActivity rdf:type owl:Class ;
+                    rdfs:subClassOf :CompositeActivity ;
                     rdfs:isDefinedBy <http://purl.org/wild/vocab.owl> .
 
 

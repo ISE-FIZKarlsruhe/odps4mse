@@ -1,8 +1,0 @@
-http://OntoCAPE/upper_level/system.owl#hasProperty
-http://OntoCAPE/upper_level/network_system.owl#Property
-http://OntoCAPE/upper_level/network_system.owl#hasValue
-http://OntoCAPE/upper_level/network_system.owl#Value
-http://OntoCAPE/upper_level/network_system.owl#QualitativeValue
-http://OntoCAPE/upper_level/network_system.owl#QuantitativeValue
-http://OntoCAPE/upper_level/network_system.owl#UnitOfMeasure
-http://OntoCAPE/upper_level/network_system.owl#hasUnitOfMeasure

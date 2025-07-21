@@ -73,6 +73,16 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
                                                                                           "The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects."@en .
 
 
+###  https://w3id.org/pmd/co/component
+<https://w3id.org/pmd/co/component> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <https://w3id.org/pmd/co/ProcessingNode> ;
+                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
+                                    rdfs:label "component"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "has component"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Die Objekt-Eigenschaft Komponente, die in Verbindung mit ProzessKnoten und seinen (modularen) Elementen verwendet wird. Sie ermöglicht die Darstellung der einzelnen, unterschiedlichen Teile von ProzessKnoten. Im Wesentlichen ist die  \"Komponenten-Eigenschaft\" eine Möglichkeit, ein komplexes System in überschaubare und eindeutige Teile zu zerlegen, um die Rolle der einzelnen Teile innerhalb des Gesamtsystems zu verstehen und zu verwalten."@de ,
+                                                                                     "The object property component, which is used in connection with ProcessingNode and its (modular) elements. It enables the representation of the individual, different parts of processing nodes. Essentially, the 'component property' is a way of breaking down a complex system into manageable and distinct parts in order to understand and manage the role of each part within the overall system."@en .
+
+
 ###  https://w3id.org/pmd/co/executedBy
 <https://w3id.org/pmd/co/executedBy> rdf:type owl:ObjectProperty ;
                                      rdfs:domain <https://w3id.org/pmd/co/Process> ;
@@ -123,15 +133,6 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #################################################################
 #    Classes
 #################################################################
-
-###  https://w3id.org/pmd/co/Component
-<https://w3id.org/pmd/co/Component> rdf:type owl:Class ;
-                                    rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
-                                    rdfs:label "Component"@en ,
-                                               "Komponente"@de ;
-                                    <http://www.w3.org/2004/02/skos/core#definition> "An object that serves a specific technical application. Constituent part of a compound of parts that builds a technical application."@en ,
-                                                                                     "Ein Objekt, das einer bestimmten technischen Anwendung dient. Bestandteil einer Zusammensetzung von Teilen, die eine technische Anwendung bilden."@de .
-
 
 ###  https://w3id.org/pmd/co/Process
 <https://w3id.org/pmd/co/Process> rdf:type owl:Class ;
