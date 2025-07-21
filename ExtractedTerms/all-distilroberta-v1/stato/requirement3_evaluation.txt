@@ -1,0 +1,11 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 5
+predicted http://purl.obolibrary.org/obo/OBI_0000437: 0.5161963105201721
+predicted http://purl.obolibrary.org/obo/IAO_0000109: 0.46638253331184387
+predicted http://purl.obolibrary.org/obo/IAO_0000003: 0.45005473494529724
+predicted http://purl.obolibrary.org/obo/IAO_0000584: 0.4249166250228882
+predicted http://purl.obolibrary.org/obo/IAO_0000004: 0.407944917678833

@@ -1,0 +1,9 @@
+IRI,Similarity
+http://purl.org/dc/terms/isReferencedBy,0.5356
+http://purl.org/dc/terms/title,0.5328
+http://purl.org/dc/terms/description,0.5292
+http://purl.org/dc/terms/references,0.5214
+http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution,0.5184
+http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4,0.4155
+https://schema.org/Intangible,0.4134
+http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity,0.4068

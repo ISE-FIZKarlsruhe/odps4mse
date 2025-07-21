@@ -1,0 +1,10 @@
+IRI,Similarity
+http://www.opmw.org/ontology/uses,0.4734
+http://www.opmw.org/ontology/hasLocation,0.4563
+http://www.opmw.org/ontology/WorkflowExecutionArtifact,0.4351
+http://www.opmw.org/ontology/hasExecutableComponent,0.4257
+http://www.opmw.org/ontology/createdInWorkflowSystem,0.4228
+http://www.opmw.org/ontology/hasExecutionDiagram,0.4226
+http://www.opmw.org/ontology/executedInWorkflowSystem,0.4171
+http://www.opmw.org/ontology/WorkflowTemplateProcess,0.4149
+http://www.opmw.org/ontology/isGeneratedBy,0.4100

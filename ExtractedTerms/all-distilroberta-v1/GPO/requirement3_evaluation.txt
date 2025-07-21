@@ -1,0 +1,9 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 3
+Predicted: 3
+predicted http://emmo.info/emmo#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929: 0.5152051448822021
+predicted http://emmo.info/emmo#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb: 0.4296934902667999
+predicted http://emmo.info/emmo#EMMO_f2523820_04a6_44ab_bb67_8237dda2b0c2: 0.4224516451358795

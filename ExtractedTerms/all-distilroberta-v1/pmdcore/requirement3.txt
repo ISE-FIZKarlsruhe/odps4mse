@@ -1,0 +1,9 @@
+https://w3id.org/pmd/co/MeasuringDevice
+https://w3id.org/pmd/co/DimensionMeasuringDevice
+https://w3id.org/pmd/co/resource
+https://w3id.org/pmd/co/TemperatureMeasuringDevice
+https://w3id.org/pmd/co/MeasuringProcess
+https://w3id.org/pmd/co/Extensometer
+https://w3id.org/pmd/co/MicrometerGauge
+https://w3id.org/pmd/co/PrimaryData
+https://w3id.org/pmd/co/Component

@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted https://w3id.org/pmd/co/MeasuringDevice: 0.7576970458030701
+predicted https://w3id.org/pmd/co/DimensionMeasuringDevice: 0.5959641337394714
+predicted https://w3id.org/pmd/co/TemperatureMeasuringDevice: 0.5731383562088013
+predicted https://w3id.org/pmd/co/Caliper: 0.530512809753418
+predicted https://w3id.org/pmd/co/Measurement: 0.5265116691589355
+predicted https://w3id.org/pmd/co/MeasuringProcess: 0.5227564573287964
+predicted https://w3id.org/pmd/co/MicrometerGauge: 0.5103425979614258
+predicted https://w3id.org/pmd/co/input: 0.5077659487724304
+predicted https://w3id.org/pmd/co/previousProcess: 0.5000708699226379
+predicted https://w3id.org/pmd/co/Extensometer: 0.4962907135486603
+predicted https://w3id.org/pmd/co/executedBy: 0.4686323404312134
+predicted https://w3id.org/pmd/co/process: 0.4681283235549927
+predicted https://w3id.org/pmd/co/output: 0.46710798144340515
+predicted https://w3id.org/pmd/co/CollectionInterfaceHint: 0.4600183963775635
+predicted https://w3id.org/pmd/co/nextProcess: 0.4477035105228424
+predicted https://w3id.org/pmd/co/executes: 0.44640669226646423
+predicted https://w3id.org/pmd/co/DataScope: 0.4463256001472473
+predicted http://w3id.org/DMI/DigitalMaterialIdentifier: 0.44611895084381104
+predicted https://w3id.org/pmd/co/relatesTo: 0.44129881262779236
+predicted https://w3id.org/pmd/co/DigitalMaterialIdentifier: 0.4387723207473755

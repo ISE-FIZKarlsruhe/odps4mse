@@ -1,0 +1,13 @@
+Evaluation Metrics:
+Precision: 0.5714
+Recall: 0.3077
+F1-score: 0.4000
+GroundTruth: 13
+Predicted: 7
+predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.47373533248901367
+predicted http://www.opmw.org/ontology/WorkflowExecutionProcess: 0.4731123745441437
+predicted http://www.opmw.org/ontology/WorkflowTemplateProcess: 0.4670264422893524
+predicted http://www.opmw.org/ontology/hasExecutableComponent: 0.41301363706588745
+predicted http://www.opmw.org/ontology/hasExecutionDiagram: 0.40895697474479675
+predicted http://www.opmw.org/ontology/WorkflowTemplate: 0.400907963514328
+predicted http://www.opmw.org/ontology/WorkflowExecutionArtifact: 0.40044063329696655

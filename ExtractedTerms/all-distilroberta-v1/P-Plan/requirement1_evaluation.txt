@@ -1,0 +1,7 @@
+Evaluation Metrics:
+Precision: 1.0000
+Recall: 0.1250
+F1-score: 0.2222
+GroundTruth: 8
+Predicted: 1
+predicted http://purl.org/net/p-plan#isStepOfPlan: 0.4538285434246063

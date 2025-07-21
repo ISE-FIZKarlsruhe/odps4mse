@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1000
+Recall: 0.3333
+F1-score: 0.1538
+GroundTruth: 6
+Predicted: 20
+predicted https://w3id.org/pmd/co/characteristic: 0.6941652894020081
+predicted https://w3id.org/pmd/co/output: 0.6818189024925232
+predicted https://w3id.org/pmd/co/input: 0.6600504517555237
+predicted https://w3id.org/pmd/co/characteristicOf: 0.6585043668746948
+predicted https://w3id.org/pmd/co/Identifier: 0.6524192690849304
+predicted https://w3id.org/pmd/co/Force: 0.6409925222396851
+predicted https://w3id.org/pmd/co/ValueObject: 0.6354402899742126
+predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.6347591280937195
+predicted https://w3id.org/pmd/co/OperatorRole: 0.5946052670478821
+predicted https://w3id.org/pmd/co/NodeName: 0.5688111782073975
+predicted https://w3id.org/pmd/co/EngineeredMaterial: 0.5486962795257568
+predicted https://w3id.org/pmd/co/value: 0.5444605946540833
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.5409789085388184
+predicted https://w3id.org/pmd/co/TransformativeAnalysisProcess: 0.526321291923523
+predicted https://w3id.org/pmd/co/DataScope: 0.5261523127555847
+predicted https://w3id.org/pmd/co/executes: 0.525030255317688
+predicted https://w3id.org/pmd/co/ValueScope: 0.5245235562324524
+predicted https://w3id.org/pmd/co/relatesTo: 0.5234526991844177
+predicted https://w3id.org/pmd/co/belongsToProject: 0.5185476541519165
+predicted https://w3id.org/pmd/co/BaseMaterial: 0.5174954533576965

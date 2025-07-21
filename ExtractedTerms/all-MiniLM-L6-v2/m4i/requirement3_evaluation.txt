@@ -1,0 +1,20 @@
+Evaluation Metrics:
+Precision: 0.0714
+Recall: 0.1250
+F1-score: 0.0909
+GroundTruth: 8
+Predicted: 14
+predicted http://purl.org/dc/terms/title: 0.6326683163642883
+predicted http://purl.org/dc/terms/description: 0.6204285025596619
+predicted http://purl.org/dc/terms/references: 0.582116425037384
+predicted http://purl.org/dc/terms/isReferencedBy: 0.5679036378860474
+predicted http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4: 0.4813515841960907
+predicted http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution: 0.4519171416759491
+predicted http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity: 0.44682207703590393
+predicted https://ptb.de/si/Real: 0.4364282488822937
+predicted http://w3id.org/nfdi4ing/metadata4ing#Editor: 0.4262049198150635
+predicted http://w3id.org/nfdi4ing/metadata4ing#Tool: 0.42397168278694153
+predicted http://w3id.org/nfdi4ing/metadata4ing#projectParticipant: 0.41816607117652893
+predicted http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson: 0.4128133952617645
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.41129982471466064
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.4009961783885956

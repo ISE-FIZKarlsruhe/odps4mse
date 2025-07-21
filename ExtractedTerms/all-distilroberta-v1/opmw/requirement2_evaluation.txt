@@ -1,0 +1,12 @@
+Evaluation Metrics:
+Precision: 0.1667
+Recall: 0.2000
+F1-score: 0.1818
+GroundTruth: 5
+Predicted: 6
+predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.4460088312625885
+predicted http://www.opmw.org/ontology/DataVariable: 0.4300418496131897
+predicted http://www.opmw.org/ontology/isGeneratedBy: 0.4107837378978729
+predicted http://www.opmw.org/ontology/executedInWorkflowSystem: 0.4089064598083496
+predicted http://www.opmw.org/ontology/ParameterVariable: 0.4015854597091675
+predicted http://www.opmw.org/ontology/hasExecutionDiagram: 0.40026888251304626

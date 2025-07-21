@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1500
+Recall: 0.7500
+F1-score: 0.2500
+GroundTruth: 4
+Predicted: 20
+predicted https://w3id.org/pmd/co/belongsToProject: 0.7421855926513672
+predicted https://w3id.org/pmd/co/process: 0.6703364849090576
+predicted https://w3id.org/pmd/co/Project: 0.6116414666175842
+predicted https://w3id.org/pmd/co/OperatorRole: 0.57143634557724
+predicted https://w3id.org/pmd/co/ProjectIdentifier: 0.558786153793335
+predicted https://w3id.org/pmd/co/input: 0.5387576222419739
+predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5355693101882935
+predicted http://purl.obolibrary.org/obo/RO_0000087: 0.5330091118812561
+predicted https://w3id.org/pmd/co/Process: 0.5180664658546448
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.5150192975997925
+predicted https://w3id.org/pmd/co/InitiatorRole: 0.5049280524253845
+predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.5031876564025879
+predicted https://w3id.org/pmd/co/ProcessingNode: 0.5010910630226135
+predicted https://w3id.org/pmd/co/ClassificationDocument: 0.48131200671195984
+predicted https://w3id.org/pmd/co/output: 0.47925999760627747
+predicted https://w3id.org/pmd/co/executes: 0.47075164318084717
+predicted https://w3id.org/pmd/co/InspectionDocument: 0.4697794020175934
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.46840712428092957
+predicted https://w3id.org/pmd/co/DataScope: 0.45880067348480225
+predicted https://w3id.org/pmd/co/AnalysingProcess: 0.44959303736686707

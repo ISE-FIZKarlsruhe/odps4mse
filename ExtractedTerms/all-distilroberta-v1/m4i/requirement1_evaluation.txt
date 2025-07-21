@@ -1,0 +1,19 @@
+Evaluation Metrics:
+Precision: 0.1538
+Recall: 0.2500
+F1-score: 0.1905
+GroundTruth: 8
+Predicted: 13
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5655291676521301
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.5632146596908569
+predicted http://purl.obolibrary.org/obo/RO_0002352: 0.556867241859436
+predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.5523145794868469
+predicted http://w3id.org/nfdi4ing/metadata4ing#realizesMethod: 0.5311493873596191
+predicted http://purl.obolibrary.org/obo/RO_0002233: 0.5008609890937805
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.48970744013786316
+predicted http://purl.obolibrary.org/obo/RO_0002353: 0.473000168800354
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.45429331064224243
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.44172826409339905
+predicted http://purl.obolibrary.org/obo/BFO_0000063: 0.4406396150588989
+predicted http://purl.obolibrary.org/obo/RO_0000057: 0.41992565989494324
+predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.41051608324050903

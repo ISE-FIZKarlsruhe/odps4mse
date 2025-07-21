@@ -1,0 +1,15 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 9
+predicted https://w3id.org/pmd/co/MeasuringDevice: 0.7012448310852051
+predicted https://w3id.org/pmd/co/DimensionMeasuringDevice: 0.5490577816963196
+predicted https://w3id.org/pmd/co/resource: 0.5194891095161438
+predicted https://w3id.org/pmd/co/TemperatureMeasuringDevice: 0.4655221104621887
+predicted https://w3id.org/pmd/co/MeasuringProcess: 0.43712523579597473
+predicted https://w3id.org/pmd/co/Extensometer: 0.4248701333999634
+predicted https://w3id.org/pmd/co/MicrometerGauge: 0.4217424690723419
+predicted https://w3id.org/pmd/co/PrimaryData: 0.40522828698158264
+predicted https://w3id.org/pmd/co/Component: 0.40172693133354187

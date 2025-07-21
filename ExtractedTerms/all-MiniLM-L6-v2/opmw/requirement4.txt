@@ -1,0 +1,4 @@
+http://www.opmw.org/ontology/WorkflowExecutionProcess
+http://www.opmw.org/ontology/correspondsToTemplateProcess
+http://www.opmw.org/ontology/WorkflowTemplateProcess
+http://www.opmw.org/ontology/hasExecutableComponent

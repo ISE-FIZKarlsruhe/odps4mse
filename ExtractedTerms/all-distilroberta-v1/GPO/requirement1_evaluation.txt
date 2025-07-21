@@ -1,0 +1,11 @@
+Evaluation Metrics:
+Precision: 0.2000
+Recall: 0.1000
+F1-score: 0.1333
+GroundTruth: 10
+Predicted: 5
+predicted https://gpo.ontology.link/GPO_ee8c37fd_9f2c_4047_b25d_4149894bd7c0: 0.5356821417808533
+predicted https://gpo.ontology.link/GPO_2680e8c9_b5d0_4d50_9a33_52e4270669d8: 0.48529955744743347
+predicted http://emmo.info/emmo#EMMO_65a007dc_2550_46b0_b394_3346c67fbb69: 0.46512570977211
+predicted http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce: 0.4426327049732208
+predicted http://emmo.info/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77: 0.41006436944007874
