@@ -6,7 +6,7 @@ GroundTruth: 10
 Predicted: 20
 predicted https://gpo.ontology.link/GPO_ee8c37fd_9f2c_4047_b25d_4149894bd7c0: 0.6588853001594543
 predicted https://gpo.ontology.link/GPO_01cd2578_8730_4ac9_a555_9112728ea939: 0.5786824226379395
-predicted http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce: 0.5747671127319336
+predicted http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce: 0.5747670531272888
 predicted http://emmo.info/emmo#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7: 0.5660110712051392
 predicted https://gpo.ontology.link/GPO_aa602472_ba16_4375_b8b3_868f84324ec7: 0.5567968487739563
 predicted https://gpo.ontology.link/GPO_2680e8c9_b5d0_4d50_9a33_52e4270669d8: 0.5461255311965942

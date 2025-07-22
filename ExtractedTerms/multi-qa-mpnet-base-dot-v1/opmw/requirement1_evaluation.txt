@@ -5,17 +5,17 @@ F1-score: 0.5714
 GroundTruth: 13
 Predicted: 15
 predicted http://www.opmw.org/ontology/WorkflowExecutionProcess: 0.5594601035118103
-predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.5374594926834106
+predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.5374595522880554
 predicted http://www.opmw.org/ontology/WorkflowTemplateProcess: 0.5373886823654175
-predicted http://www.opmw.org/ontology/executedInWorkflowSystem: 0.4590454399585724
-predicted http://www.opmw.org/ontology/hasExecutableComponent: 0.4495307505130768
-predicted http://www.opmw.org/ontology/correspondsToTemplate: 0.43924680352211
-predicted http://www.opmw.org/ontology/correspondsToTemplateArtifact: 0.43269145488739014
+predicted http://www.opmw.org/ontology/executedInWorkflowSystem: 0.45904549956321716
+predicted http://www.opmw.org/ontology/hasExecutableComponent: 0.44953086972236633
+predicted http://www.opmw.org/ontology/correspondsToTemplate: 0.4392467737197876
+predicted http://www.opmw.org/ontology/correspondsToTemplateArtifact: 0.4326915442943573
 predicted http://www.opmw.org/ontology/hasTemplateDiagram: 0.43072831630706787
 predicted http://www.opmw.org/ontology/isConcrete: 0.4256649911403656
 predicted http://www.opmw.org/ontology/WorkflowExecutionArtifact: 0.4246096611022949
-predicted http://www.opmw.org/ontology/hasNativeSystemTemplate: 0.42315125465393066
-predicted http://www.opmw.org/ontology/WorkflowTemplate: 0.42315027117729187
-predicted http://www.opmw.org/ontology/ParameterVariable: 0.4201732277870178
-predicted http://www.opmw.org/ontology/WorkflowExecutionAccount: 0.4191645681858063
-predicted http://www.opmw.org/ontology/hasExecutionDiagram: 0.40263158082962036
+predicted http://www.opmw.org/ontology/hasNativeSystemTemplate: 0.4231512248516083
+predicted http://www.opmw.org/ontology/WorkflowTemplate: 0.42315030097961426
+predicted http://www.opmw.org/ontology/ParameterVariable: 0.42017313838005066
+predicted http://www.opmw.org/ontology/WorkflowExecutionAccount: 0.41916465759277344
+predicted http://www.opmw.org/ontology/hasExecutionDiagram: 0.4026315212249756

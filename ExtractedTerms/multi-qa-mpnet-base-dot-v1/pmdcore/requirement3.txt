@@ -9,7 +9,6 @@ https://w3id.org/pmd/co/Measurement
 https://w3id.org/pmd/co/MicrometerGauge
 https://w3id.org/pmd/co/Thickness
 https://w3id.org/pmd/co/TemperatureChangeDevice
-https://w3id.org/pmd/co/Extension
 https://w3id.org/pmd/co/PrimaryData
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/Specimen
@@ -21,10 +20,11 @@ https://w3id.org/pmd/co/AnalysingProcess
 https://w3id.org/pmd/co/ProcessingNode
 https://w3id.org/pmd/co/process
 https://w3id.org/pmd/co/relatesTo
+https://w3id.org/pmd/co/Stress
 https://w3id.org/pmd/co/input
+https://w3id.org/pmd/co/Extension
 https://w3id.org/pmd/co/ErrorReportDocument
 https://w3id.org/pmd/co/SpecimenName
-https://w3id.org/pmd/co/Stress
 https://w3id.org/pmd/co/AccreditationDocument
 https://w3id.org/pmd/co/value
 https://w3id.org/pmd/co/TestPiece

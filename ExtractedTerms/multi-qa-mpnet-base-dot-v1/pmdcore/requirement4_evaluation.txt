@@ -8,7 +8,7 @@ predicted https://w3id.org/pmd/co/Project: 0.8331144452095032
 predicted https://w3id.org/pmd/co/belongsToProject: 0.7289069294929504
 predicted https://w3id.org/pmd/co/process: 0.7176194190979004
 predicted https://w3id.org/pmd/co/ProjectIdentifier: 0.6560803055763245
-predicted https://w3id.org/pmd/co/Process: 0.6522004008293152
+predicted https://w3id.org/pmd/co/Process: 0.6522003412246704
 predicted https://w3id.org/pmd/co/OperatorRole: 0.632759153842926
 predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.6236910223960876
 predicted https://w3id.org/pmd/co/Operator: 0.6062925457954407

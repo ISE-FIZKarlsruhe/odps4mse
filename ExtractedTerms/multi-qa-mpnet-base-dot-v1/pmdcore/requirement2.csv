@@ -140,8 +140,8 @@ https://w3id.org/pmd/co/Mechanical,0.4355
 https://w3id.org/pmd/co/Time,0.4354
 https://w3id.org/pmd/co/ManufacturerRole,0.4351
 https://w3id.org/pmd/co/StartTime,0.4332
-https://w3id.org/pmd/co/Voxel,0.4328
 https://w3id.org/pmd/co/SetPoint,0.4327
+https://w3id.org/pmd/co/Voxel,0.4320
 https://w3id.org/pmd/co/TemperatureChangingProcess,0.4290
 https://w3id.org/pmd/co/MicroscopyProcess,0.4290
 https://w3id.org/pmd/co/Furnace,0.4285
@@ -186,5 +186,6 @@ https://w3id.org/pmd/co/WorkingRange,0.4042
 https://w3id.org/pmd/co/XCoordinate,0.4042
 https://w3id.org/pmd/co/QualifyingNodeAnnotation,0.4013
 https://w3id.org/pmd/co/Radiological,0.4002
+https://w3id.org/pmd/co/Stress,0.4001
 https://w3id.org/pmd/co/HeatTreatmentProcess,0.4001
 https://w3id.org/pmd/co/state,0.4000

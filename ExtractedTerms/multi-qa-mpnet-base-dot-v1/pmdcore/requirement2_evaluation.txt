@@ -4,7 +4,7 @@ Recall: 0.5000
 F1-score: 0.2308
 GroundTruth: 6
 Predicted: 20
-predicted https://w3id.org/pmd/co/characteristic: 0.701318085193634
+predicted https://w3id.org/pmd/co/characteristic: 0.7013179659843445
 predicted https://w3id.org/pmd/co/Identifier: 0.6586800813674927
 predicted https://w3id.org/pmd/co/Force: 0.6364060640335083
 predicted https://w3id.org/pmd/co/Shape: 0.632555365562439
@@ -13,7 +13,7 @@ predicted https://w3id.org/pmd/co/output: 0.6294841766357422
 predicted https://w3id.org/pmd/co/characteristicOf: 0.6026045680046082
 predicted https://w3id.org/pmd/co/process: 0.598476767539978
 predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.5953660607337952
-predicted https://w3id.org/pmd/co/ValueObject: 0.5930691361427307
+predicted https://w3id.org/pmd/co/ValueObject: 0.5930690169334412
 predicted https://w3id.org/pmd/co/belongsToProject: 0.5909605026245117
 predicted https://w3id.org/pmd/co/TestPieceClassification: 0.5794698596000671
 predicted https://w3id.org/pmd/co/participant: 0.5788319706916809

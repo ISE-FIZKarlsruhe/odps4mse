@@ -8,7 +8,7 @@ predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.6722398400306702
 predicted http://w3id.org/nfdi4ing/metadata4ing#realizesMethod: 0.6494828462600708
 predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.6463558077812195
 predicted http://purl.obolibrary.org/obo/RO_0002352: 0.6345171332359314
-predicted http://purl.obolibrary.org/obo/BFO_0000063: 0.621296763420105
+predicted http://purl.obolibrary.org/obo/BFO_0000063: 0.6212967038154602
 predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.608672559261322
 predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.6081084609031677
 predicted http://purl.obolibrary.org/obo/RO_0000057: 0.6075391173362732
@@ -18,7 +18,7 @@ predicted http://purl.obolibrary.org/obo/RO_0002353: 0.5841531753540039
 predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.5604475140571594
 predicted https://schema.org/Intangible: 0.5325852036476135
 predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5249539017677307
-predicted http://purl.obolibrary.org/obo/RO_0002230: 0.5239810347557068
+predicted http://purl.obolibrary.org/obo/RO_0002230: 0.5239809155464172
 predicted http://www.w3.org/ns/prov#Activity: 0.522388219833374
 predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.5191301703453064
 predicted http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4: 0.5012701749801636

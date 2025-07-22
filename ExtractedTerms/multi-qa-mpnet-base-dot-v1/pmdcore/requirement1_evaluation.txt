@@ -5,7 +5,7 @@ F1-score: 0.2759
 GroundTruth: 9
 Predicted: 20
 predicted https://w3id.org/pmd/co/nextProcess: 0.7343409657478333
-predicted https://w3id.org/pmd/co/Process: 0.7203953266143799
+predicted https://w3id.org/pmd/co/Process: 0.7203953862190247
 predicted https://w3id.org/pmd/co/process: 0.7130171656608582
 predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.6417200565338135
 predicted https://w3id.org/pmd/co/previousProcess: 0.6205805540084839
@@ -14,7 +14,7 @@ predicted https://w3id.org/pmd/co/subordinateProcess: 0.6140584945678711
 predicted https://w3id.org/pmd/co/AnalysingProcess: 0.610775351524353
 predicted https://w3id.org/pmd/co/AssemblingProcess: 0.6065235733985901
 predicted https://w3id.org/pmd/co/MeasuringProcess: 0.6050415635108948
-predicted https://w3id.org/pmd/co/ProcessDescription: 0.5994258522987366
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.5994259715080261
 predicted https://w3id.org/pmd/co/participant: 0.5990551710128784
 predicted https://w3id.org/pmd/co/Object: 0.5974085330963135
 predicted https://w3id.org/pmd/co/ClassificationDocument: 0.5958458781242371
