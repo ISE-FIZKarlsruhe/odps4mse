@@ -11,10 +11,10 @@ https://w3id.org/pmd/co/NodeName
 https://w3id.org/pmd/co/EngineeredMaterial
 https://w3id.org/pmd/co/value
 https://w3id.org/pmd/co/subordinateProcess
+https://w3id.org/pmd/co/ValueScope
 https://w3id.org/pmd/co/TransformativeAnalysisProcess
 https://w3id.org/pmd/co/DataScope
 https://w3id.org/pmd/co/executes
-https://w3id.org/pmd/co/ValueScope
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/co/belongsToProject
 https://w3id.org/pmd/co/BaseMaterial
@@ -24,7 +24,6 @@ https://w3id.org/pmd/co/ProcessIdentifier
 https://w3id.org/pmd/co/NodeInfo
 https://w3id.org/pmd/co/Operator
 https://w3id.org/pmd/co/Metadata
-https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/ProcessDescription
 https://w3id.org/pmd/co/executedBy
 https://w3id.org/pmd/co/superordinateProcess
@@ -49,6 +48,7 @@ https://w3id.org/pmd/co/Medium
 https://w3id.org/pmd/co/Chemical
 https://w3id.org/pmd/co/SecondaryData
 https://w3id.org/pmd/co/CoatingDesignation
+https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/ManufacturingNode
 https://w3id.org/pmd/co/MaterialDesignation
 https://w3id.org/pmd/co/DigitalMaterialIdentifier

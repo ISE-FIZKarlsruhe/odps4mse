@@ -2,10 +2,10 @@ https://w3id.org/pmd/co/MeasuringDevice
 https://w3id.org/pmd/co/DimensionMeasuringDevice
 https://w3id.org/pmd/co/TemperatureMeasuringDevice
 https://w3id.org/pmd/co/Caliper
-https://w3id.org/pmd/co/Measurement
 https://w3id.org/pmd/co/MeasuringProcess
 https://w3id.org/pmd/co/MicrometerGauge
 https://w3id.org/pmd/co/input
+https://w3id.org/pmd/co/Measurement
 https://w3id.org/pmd/co/previousProcess
 https://w3id.org/pmd/co/Extensometer
 https://w3id.org/pmd/co/executedBy
@@ -30,3 +30,4 @@ https://w3id.org/pmd/co/MaterialRelated
 https://w3id.org/pmd/co/ValueObject
 https://w3id.org/pmd/co/Micropscope
 https://w3id.org/pmd/co/NodeInfo
+https://w3id.org/pmd/co/Extension

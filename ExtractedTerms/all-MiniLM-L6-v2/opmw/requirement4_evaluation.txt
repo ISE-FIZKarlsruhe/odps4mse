@@ -5,6 +5,6 @@ F1-score: 0.0000
 GroundTruth: 0
 Predicted: 4
 predicted http://www.opmw.org/ontology/WorkflowExecutionProcess: 0.46978282928466797
-predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.44705119729042053
-predicted http://www.opmw.org/ontology/WorkflowTemplateProcess: 0.44452646374702454
+predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.44705095887184143
+predicted http://www.opmw.org/ontology/WorkflowTemplateProcess: 0.4445263147354126
 predicted http://www.opmw.org/ontology/hasExecutableComponent: 0.43792524933815

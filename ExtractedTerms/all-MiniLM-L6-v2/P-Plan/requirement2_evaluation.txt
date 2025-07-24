@@ -4,4 +4,4 @@ Recall: 0.0000
 F1-score: 0.0000
 GroundTruth: 6
 Predicted: 1
-predicted http://purl.org/net/p-plan#correspondsToStep: 0.40337589383125305
+predicted http://purl.org/net/p-plan#correspondsToStep: 0.40337586402893066

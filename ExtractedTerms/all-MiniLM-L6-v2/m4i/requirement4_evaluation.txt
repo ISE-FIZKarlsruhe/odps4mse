@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.2000
+Precision: 0.2667
 Recall: 0.3333
-F1-score: 0.2500
+F1-score: 0.2963
 GroundTruth: 12
-Predicted: 20
-predicted http://www.w3.org/ns/prov#Role: 0.5920476317405701
-predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectManager: 0.5898023843765259
-predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader: 0.585612416267395
+Predicted: 15
+predicted http://www.w3.org/ns/prov#Role: 0.5920476913452148
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectManager: 0.5898023247718811
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader: 0.5856122970581055
 predicted http://w3id.org/nfdi4ing/metadata4ing#projectParticipant: 0.5574741363525391
-predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectMember: 0.5506865382194519
-predicted http://w3id.org/nfdi4ing/metadata4ing#inProject: 0.5391901731491089
-predicted https://schema.org/Project: 0.5261099338531494
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectMember: 0.5506864190101624
+predicted http://w3id.org/nfdi4ing/metadata4ing#inProject: 0.5391900539398193
+predicted https://schema.org/Project: 0.5261097550392151
 predicted http://purl.obolibrary.org/obo/RO_0002352: 0.5142117142677307
-predicted http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson: 0.5126051306724548
-predicted http://purl.obolibrary.org/obo/RO_0002353: 0.5049645900726318
-predicted http://w3id.org/nfdi4ing/metadata4ing#endOfProject: 0.5040963292121887
-predicted http://w3id.org/nfdi4ing/metadata4ing#startOfProject: 0.4895718991756439
-predicted http://www.w3.org/ns/prov#hadRole: 0.4799690246582031
-predicted http://w3id.org/nfdi4ing/metadata4ing#Distributor: 0.47087639570236206
-predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.46451202034950256
-predicted http://purl.org/dc/terms/isReferencedBy: 0.4636797308921814
-predicted http://www.w3.org/ns/prov#Activity: 0.46014779806137085
-predicted http://www.w3.org/ns/prov#agent: 0.45647674798965454
-predicted http://purl.obolibrary.org/obo/RO_0002233: 0.4518232047557831
-predicted http://purl.obolibrary.org/obo/RO_0002234: 0.45142662525177
+predicted http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson: 0.5126053094863892
+predicted http://purl.obolibrary.org/obo/RO_0002353: 0.5049646496772766
+predicted http://w3id.org/nfdi4ing/metadata4ing#endOfProject: 0.5040964484214783
+predicted http://w3id.org/nfdi4ing/metadata4ing#startOfProject: 0.48957201838493347
+predicted http://www.w3.org/ns/prov#hadRole: 0.47996893525123596
+predicted http://w3id.org/nfdi4ing/metadata4ing#Distributor: 0.4708762764930725
+predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.4645119607448578

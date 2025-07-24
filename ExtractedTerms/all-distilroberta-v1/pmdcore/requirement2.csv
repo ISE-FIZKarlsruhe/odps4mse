@@ -28,6 +28,8 @@ https://w3id.org/pmd/co/InsertSurface,0.4123
 https://w3id.org/pmd/co/relatesTo,0.4100
 https://w3id.org/pmd/co/MaterialProperty,0.4090
 https://w3id.org/pmd/co/Process,0.4066
+https://w3id.org/pmd/co/SetPoint,0.4048
 https://w3id.org/pmd/co/ManufacturingNode,0.4021
 https://w3id.org/pmd/co/Metadata,0.4013
 https://w3id.org/pmd/co/MountingProcess,0.4010
+https://w3id.org/pmd/co/ValueScope,0.4009

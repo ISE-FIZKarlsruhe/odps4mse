@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.1500
+Precision: 0.2000
 Recall: 0.5000
-F1-score: 0.2308
+F1-score: 0.2857
 GroundTruth: 6
-Predicted: 20
+Predicted: 15
 predicted https://w3id.org/pmd/co/characteristic: 0.7403222322463989
-predicted https://w3id.org/pmd/co/output: 0.6858444809913635
-predicted https://w3id.org/pmd/co/input: 0.6824923157691956
-predicted https://w3id.org/pmd/co/characteristicOf: 0.6557735800743103
-predicted https://w3id.org/pmd/co/Identifier: 0.5859898924827576
+predicted https://w3id.org/pmd/co/output: 0.6858445405960083
+predicted https://w3id.org/pmd/co/input: 0.6824922561645508
+predicted https://w3id.org/pmd/co/characteristicOf: 0.6557734608650208
+predicted https://w3id.org/pmd/co/Identifier: 0.585989773273468
 predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5389093160629272
-predicted https://w3id.org/pmd/co/inputOf: 0.5236093401908875
+predicted https://w3id.org/pmd/co/inputOf: 0.5236092209815979
 predicted https://w3id.org/pmd/co/ValueObject: 0.508629322052002
-predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.493600070476532
-predicted https://w3id.org/pmd/co/Force: 0.4789324402809143
-predicted https://w3id.org/pmd/co/outputOf: 0.4774356186389923
-predicted https://w3id.org/pmd/co/OperatorRole: 0.46882373094558716
-predicted https://w3id.org/pmd/co/Object: 0.46817073225975037
-predicted https://w3id.org/pmd/co/ProcessDescription: 0.46378710865974426
-predicted https://w3id.org/pmd/co/executedBy: 0.46148988604545593
-predicted https://w3id.org/pmd/co/EngineeredMaterial: 0.46083909273147583
-predicted https://w3id.org/pmd/co/executes: 0.4461207389831543
-predicted https://w3id.org/pmd/co/belongsToProject: 0.4443722069263458
-predicted https://w3id.org/pmd/co/process: 0.44071340560913086
-predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.43129631876945496
+predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.49360018968582153
+predicted https://w3id.org/pmd/co/Force: 0.47893261909484863
+predicted https://w3id.org/pmd/co/outputOf: 0.4774356782436371
+predicted https://w3id.org/pmd/co/OperatorRole: 0.4688236117362976
+predicted https://w3id.org/pmd/co/Object: 0.46817076206207275
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.4637872576713562
+predicted https://w3id.org/pmd/co/executedBy: 0.46148961782455444

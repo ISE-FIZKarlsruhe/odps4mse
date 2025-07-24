@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.2500
-Recall: 0.4545
-F1-score: 0.3226
+Precision: 0.2000
+Recall: 0.2727
+F1-score: 0.2308
 GroundTruth: 11
-Predicted: 20
-predicted http://purl.obolibrary.org/obo/RO_0002352: 0.6400558948516846
-predicted http://purl.obolibrary.org/obo/RO_0002233: 0.6164983510971069
-predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5497082471847534
-predicted http://www.w3.org/ns/ssn/hasProperty: 0.5427153706550598
-predicted http://www.molmod.info/semantics/pims-ii.ttl#Assignment: 0.5421231985092163
-predicted http://purl.obolibrary.org/obo/RO_0002353: 0.5278986096382141
-predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.522861897945404
-predicted http://www.w3.org/ns/ssn/isPropertyOf: 0.5121690034866333
-predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.5092301964759827
-predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5075797438621521
-predicted http://www.w3.org/ns/dcat#Dataset: 0.500779390335083
-predicted http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment: 0.4851870536804199
-predicted http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue: 0.4718722403049469
+Predicted: 15
+predicted http://purl.obolibrary.org/obo/RO_0002352: 0.6400557160377502
+predicted http://purl.obolibrary.org/obo/RO_0002233: 0.6164985299110413
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5497081279754639
+predicted http://www.w3.org/ns/ssn/hasProperty: 0.542715311050415
+predicted http://www.molmod.info/semantics/pims-ii.ttl#Assignment: 0.5421229004859924
+predicted http://purl.obolibrary.org/obo/RO_0002353: 0.5278988480567932
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.5228619575500488
+predicted http://www.w3.org/ns/ssn/isPropertyOf: 0.5121689438819885
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.5092304348945618
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5075796842575073
+predicted http://www.w3.org/ns/dcat#Dataset: 0.5007792711257935
+predicted http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment: 0.4851868748664856
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue: 0.4718722105026245
 predicted http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity: 0.46723106503486633
-predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.4611133635044098
-predicted http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity: 0.45458805561065674
-predicted http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment: 0.4507434070110321
-predicted http://w3id.org/nfdi4ing/metadata4ing#identifier: 0.44279026985168457
-predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.4328760802745819
-predicted http://www.molmod.info/semantics/pims-ii.ttl#Value: 0.4296760857105255
+predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.4611131548881531

@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.2500
-Recall: 0.6250
-F1-score: 0.3571
+Precision: 0.1333
+Recall: 0.2500
+F1-score: 0.1739
 GroundTruth: 8
-Predicted: 20
-predicted http://purl.obolibrary.org/obo/RO_0002353: 0.6106840968132019
+Predicted: 15
+predicted http://purl.obolibrary.org/obo/RO_0002353: 0.6106841564178467
 predicted http://purl.obolibrary.org/obo/RO_0002352: 0.5890417695045471
 predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.5426112413406372
-predicted http://purl.obolibrary.org/obo/RO_0002234: 0.534322202205658
-predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.5302326083183289
-predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5193568468093872
-predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.5190800428390503
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5343222618103027
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.5302326679229736
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5193570852279663
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.5190799236297607
 predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.5144458413124084
-predicted http://purl.obolibrary.org/obo/RO_0002233: 0.5138814449310303
-predicted http://w3id.org/nfdi4ing/metadata4ing#realizesMethod: 0.4967662990093231
-predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.4930712580680847
-predicted http://purl.obolibrary.org/obo/RO_0000057: 0.4860803782939911
+predicted http://purl.obolibrary.org/obo/RO_0002233: 0.5138815641403198
+predicted http://w3id.org/nfdi4ing/metadata4ing#realizesMethod: 0.4967663288116455
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.49307122826576233
+predicted http://purl.obolibrary.org/obo/RO_0000057: 0.4860803186893463
 predicted http://purl.obolibrary.org/obo/RO_0000056: 0.4702323079109192
-predicted http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity: 0.46373432874679565
-predicted http://www.w3.org/ns/prov#Activity: 0.4572460353374481
-predicted http://purl.obolibrary.org/obo/BFO_0000063: 0.43527883291244507
-predicted http://purl.obolibrary.org/obo/RO_0002224: 0.430495947599411
-predicted https://schema.org/Intangible: 0.41675445437431335
-predicted https://ptb.de/si/ExpandedUnc: 0.41428086161613464
-predicted http://purl.obolibrary.org/obo/RO_0002230: 0.4069991409778595
+predicted http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity: 0.46373435854911804
+predicted http://www.w3.org/ns/prov#Activity: 0.45724618434906006

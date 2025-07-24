@@ -12,9 +12,9 @@ https://w3id.org/pmd/co/Operator
 https://w3id.org/pmd/co/Process
 https://w3id.org/pmd/co/ManufacturingProcess
 https://w3id.org/pmd/co/AssemblingProcess
-https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/subordinateProcess
 http://purl.obolibrary.org/obo/RO_0000087
+https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/participant
 https://w3id.org/pmd/co/ManufacturerRole
 https://w3id.org/pmd/co/relatesTo

@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.2000
+Precision: 0.2667
 Recall: 0.4444
-F1-score: 0.2759
+F1-score: 0.3333
 GroundTruth: 9
-Predicted: 20
-predicted https://w3id.org/pmd/co/nextProcess: 0.7284377813339233
-predicted https://w3id.org/pmd/co/process: 0.6426635384559631
-predicted https://w3id.org/pmd/co/previousProcess: 0.618257462978363
+Predicted: 15
+predicted https://w3id.org/pmd/co/nextProcess: 0.7284375429153442
+predicted https://w3id.org/pmd/co/process: 0.6426634788513184
+predicted https://w3id.org/pmd/co/previousProcess: 0.6182572841644287
 predicted https://w3id.org/pmd/co/output: 0.6115646958351135
-predicted https://w3id.org/pmd/co/subordinateProcess: 0.5979216694831848
-predicted https://w3id.org/pmd/co/ProcessDescription: 0.5893781781196594
-predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.5838703513145447
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.5979214906692505
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.5893781185150146
+predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.5838704109191895
 predicted https://w3id.org/pmd/co/input: 0.5812652111053467
-predicted https://w3id.org/pmd/co/Process: 0.5757381916046143
-predicted https://w3id.org/pmd/co/AssemblingProcess: 0.5429577827453613
-predicted https://w3id.org/pmd/co/superordinateProcess: 0.5412874817848206
-predicted https://w3id.org/pmd/co/belongsToProject: 0.5287376046180725
-predicted https://w3id.org/pmd/co/InitiatorRole: 0.5218685865402222
-predicted https://w3id.org/pmd/co/Medium: 0.5170451998710632
-predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5149767994880676
-predicted https://w3id.org/pmd/co/AnalysingProcess: 0.4850890040397644
-predicted https://w3id.org/pmd/co/OperatorRole: 0.480556458234787
-predicted https://w3id.org/pmd/co/MeasuringProcess: 0.4792574942111969
-predicted https://w3id.org/pmd/co/executes: 0.47600117325782776
-predicted https://w3id.org/pmd/co/participant: 0.47309768199920654
+predicted https://w3id.org/pmd/co/Process: 0.5757380723953247
+predicted https://w3id.org/pmd/co/AssemblingProcess: 0.5429579615592957
+predicted https://w3id.org/pmd/co/superordinateProcess: 0.5412873029708862
+predicted https://w3id.org/pmd/co/belongsToProject: 0.5287376642227173
+predicted https://w3id.org/pmd/co/Medium: 0.517045259475708
+predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5149768590927124
+predicted https://w3id.org/pmd/co/AnalysingProcess: 0.485088974237442

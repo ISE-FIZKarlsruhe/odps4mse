@@ -4,5 +4,5 @@ Recall: 0.1111
 F1-score: 0.1818
 GroundTruth: 9
 Predicted: 2
-predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5404154658317566
-predicted http://purl.obolibrary.org/obo/OBI_0000011: 0.423214852809906
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5404155254364014
+predicted http://purl.obolibrary.org/obo/OBI_0000011: 0.4232150912284851

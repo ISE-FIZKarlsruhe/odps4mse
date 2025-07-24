@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.1500
+Precision: 0.2000
 Recall: 0.7500
-F1-score: 0.2500
+F1-score: 0.3158
 GroundTruth: 4
-Predicted: 20
-predicted https://w3id.org/pmd/co/belongsToProject: 0.8275101184844971
-predicted https://w3id.org/pmd/co/process: 0.7647269368171692
-predicted https://w3id.org/pmd/co/ProjectIdentifier: 0.6983242630958557
-predicted https://w3id.org/pmd/co/Project: 0.6349358558654785
-predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.6160982251167297
-predicted https://w3id.org/pmd/co/OperatorRole: 0.5768229365348816
-predicted https://w3id.org/pmd/co/input: 0.5556529760360718
-predicted https://w3id.org/pmd/co/output: 0.5334778428077698
-predicted https://w3id.org/pmd/co/executes: 0.5315003395080566
-predicted https://w3id.org/pmd/co/ClassificationDocument: 0.5200722217559814
-predicted https://w3id.org/pmd/co/Operator: 0.5187674760818481
-predicted https://w3id.org/pmd/co/Process: 0.5099027752876282
-predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.4872868061065674
-predicted https://w3id.org/pmd/co/AssemblingProcess: 0.4741247594356537
-predicted https://w3id.org/pmd/co/InitiatorRole: 0.46352967619895935
-predicted https://w3id.org/pmd/co/subordinateProcess: 0.46298035979270935
-predicted http://purl.obolibrary.org/obo/RO_0000087: 0.4534056782722473
-predicted https://w3id.org/pmd/co/participant: 0.44665804505348206
-predicted https://w3id.org/pmd/co/ManufacturerRole: 0.44364091753959656
-predicted https://w3id.org/pmd/co/relatesTo: 0.44314244389533997
+Predicted: 15
+predicted https://w3id.org/pmd/co/belongsToProject: 0.8275101780891418
+predicted https://w3id.org/pmd/co/process: 0.7647268772125244
+predicted https://w3id.org/pmd/co/ProjectIdentifier: 0.6983240842819214
+predicted https://w3id.org/pmd/co/Project: 0.6349360346794128
+predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.6160982847213745
+predicted https://w3id.org/pmd/co/OperatorRole: 0.5768229961395264
+predicted https://w3id.org/pmd/co/input: 0.5556528568267822
+predicted https://w3id.org/pmd/co/output: 0.533477783203125
+predicted https://w3id.org/pmd/co/executes: 0.5315002202987671
+predicted https://w3id.org/pmd/co/ClassificationDocument: 0.5200721025466919
+predicted https://w3id.org/pmd/co/Operator: 0.5187675356864929
+predicted https://w3id.org/pmd/co/Process: 0.5099025964736938
+predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.4872867465019226
+predicted https://w3id.org/pmd/co/AssemblingProcess: 0.47412487864494324
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.46298038959503174

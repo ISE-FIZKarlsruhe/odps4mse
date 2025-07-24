@@ -10,3 +10,4 @@ bin/
 .github/token.txt
 ExtractedTerms/*
 ODPs/ExtractedTerms/*
+Latex/*

@@ -2,8 +2,8 @@ https://gpo.ontology.link/GPO_1880a2e6_0c9f_425a_9615_d4bdf121215f
 https://gpo.ontology.link/GPO_ee8c37fd_9f2c_4047_b25d_4149894bd7c0
 http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456
 https://gpo.ontology.link/GPO_2680e8c9_b5d0_4d50_9a33_52e4270669d8
-http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
 http://emmo.info/emmo#EMMO_251cfb4f_5c75_4778_91ed_6c8395212fd8
+http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
 http://emmo.info/emmo#EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66
 https://gpo.ontology.link/GPO_aa602472_ba16_4375_b8b3_868f84324ec7
 http://emmo.info/emmo#EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c
@@ -15,4 +15,3 @@ http://emmo.info/emmo#EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca
 http://emmo.info/emmo#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978
 http://emmo.info/emmo#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2
 http://emmo.info/emmo#EMMO_080052a1_f295_44be_a60f_1326ce13f1ba
-http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec

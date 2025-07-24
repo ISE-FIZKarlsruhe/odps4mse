@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.1500
-Recall: 0.2727
-F1-score: 0.1935
+Precision: 0.0667
+Recall: 0.0909
+F1-score: 0.0769
 GroundTruth: 11
-Predicted: 20
-predicted http://purl.obolibrary.org/obo/RO_0002352: 0.6215746998786926
-predicted http://w3id.org/nfdi4ing/metadata4ing#identifier: 0.5928336977958679
-predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5917243361473083
-predicted http://purl.obolibrary.org/obo/RO_0002233: 0.5755689144134521
+Predicted: 15
+predicted http://purl.obolibrary.org/obo/RO_0002352: 0.6215746402740479
+predicted http://w3id.org/nfdi4ing/metadata4ing#identifier: 0.5928337574005127
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.5917243957519531
+predicted http://purl.obolibrary.org/obo/RO_0002233: 0.5755687952041626
 predicted http://purl.obolibrary.org/obo/RO_0002353: 0.57444167137146
 predicted http://www.w3.org/ns/ssn/isPropertyOf: 0.5740942358970642
 predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.5659093260765076
-predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5426435470581055
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.542643666267395
 predicted http://www.w3.org/ns/ssn/hasProperty: 0.5362287759780884
-predicted http://www.molmod.info/semantics/pims-ii.ttl#Value: 0.5267928838729858
-predicted http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID: 0.5220862627029419
-predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.5008251667022705
-predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.5003899335861206
-predicted http://purl.org/dc/terms/isReferencedBy: 0.500004768371582
-predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.4980262815952301
-predicted http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment: 0.48589199781417847
-predicted http://www.molmod.info/semantics/pims-ii.ttl#Assignment: 0.4852825701236725
-predicted http://www.w3.org/ns/dcat#Dataset: 0.48486942052841187
-predicted http://w3id.org/nfdi4ing/metadata4ing#projectParticipant: 0.4779965281486511
-predicted http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity: 0.4765256345272064
+predicted http://www.molmod.info/semantics/pims-ii.ttl#Value: 0.5267929434776306
+predicted http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID: 0.5220862030982971
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.5008251070976257
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.500389814376831
+predicted http://purl.org/dc/terms/isReferencedBy: 0.5000048875808716
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.4980263113975525

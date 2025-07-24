@@ -1,26 +1,21 @@
 Evaluation Metrics:
-Precision: 0.2500
+Precision: 0.3333
 Recall: 0.5556
-F1-score: 0.3448
+F1-score: 0.4167
 GroundTruth: 9
-Predicted: 20
-predicted https://w3id.org/pmd/co/Process: 0.6791712045669556
-predicted https://w3id.org/pmd/co/process: 0.6541110277175903
+Predicted: 15
+predicted https://w3id.org/pmd/co/Process: 0.6791713237762451
+predicted https://w3id.org/pmd/co/process: 0.6541109085083008
 predicted https://w3id.org/pmd/co/nextProcess: 0.5745182633399963
-predicted https://w3id.org/pmd/co/ProcessDescription: 0.5725549459457397
-predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5646706223487854
-predicted https://w3id.org/pmd/co/subordinateProcess: 0.5340963006019592
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.572554886341095
+predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.5646708011627197
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.5340965986251831
 predicted https://w3id.org/pmd/co/input: 0.5244550704956055
-predicted https://w3id.org/pmd/co/MeasuringProcess: 0.5221763253211975
-predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.5200185179710388
-predicted https://w3id.org/pmd/co/ProcessingNode: 0.5057791471481323
-predicted https://w3id.org/pmd/co/output: 0.4981015622615814
-predicted https://w3id.org/pmd/co/previousProcess: 0.4969611167907715
-predicted https://w3id.org/pmd/co/Medium: 0.49474167823791504
-predicted https://w3id.org/pmd/co/superordinateProcess: 0.48577532172203064
-predicted https://w3id.org/pmd/co/Object: 0.4816833436489105
-predicted https://w3id.org/pmd/co/executes: 0.47172629833221436
-predicted https://w3id.org/pmd/co/AnalysingProcess: 0.45490437746047974
-predicted https://w3id.org/pmd/co/Filter: 0.4466448128223419
-predicted https://w3id.org/pmd/co/AssemblingProcess: 0.4465584456920624
-predicted https://w3id.org/pmd/co/MediaMovement: 0.44180193543434143
+predicted https://w3id.org/pmd/co/MeasuringProcess: 0.5221763849258423
+predicted https://w3id.org/pmd/co/ManufacturingProcess: 0.520018458366394
+predicted https://w3id.org/pmd/co/ProcessingNode: 0.5057793855667114
+predicted https://w3id.org/pmd/co/output: 0.4981014132499695
+predicted https://w3id.org/pmd/co/previousProcess: 0.49696117639541626
+predicted https://w3id.org/pmd/co/Medium: 0.49474164843559265
+predicted https://w3id.org/pmd/co/superordinateProcess: 0.4857754111289978
+predicted https://w3id.org/pmd/co/Object: 0.48168331384658813

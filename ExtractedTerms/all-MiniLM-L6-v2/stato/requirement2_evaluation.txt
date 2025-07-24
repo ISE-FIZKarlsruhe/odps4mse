@@ -3,24 +3,19 @@ Precision: 0.0000
 Recall: 0.0000
 F1-score: 0.0000
 GroundTruth: 9
-Predicted: 20
+Predicted: 15
 predicted http://purl.obolibrary.org/obo/OBI_0000047: 0.6075950264930725
-predicted http://purl.obolibrary.org/obo/IAO_0000030: 0.5775863528251648
+predicted http://purl.obolibrary.org/obo/IAO_0000030: 0.57758629322052
 predicted http://purl.obolibrary.org/obo/IAO_0000578: 0.5319455862045288
-predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.5317594408988953
-predicted http://purl.obolibrary.org/obo/STATO_0000034: 0.5284672379493713
-predicted http://purl.obolibrary.org/obo/OBI_0000094: 0.5265281200408936
-predicted http://purl.obolibrary.org/obo/BFO_0000001: 0.5099362134933472
-predicted http://purl.obolibrary.org/obo/IAO_0000015: 0.49284595251083374
-predicted http://purl.obolibrary.org/obo/IAO_0000577: 0.4840346574783325
-predicted http://purl.obolibrary.org/obo/RO_0001001: 0.4704347252845764
-predicted http://purl.obolibrary.org/obo/OBI_0000312: 0.46712636947631836
-predicted http://purl.obolibrary.org/obo/OBI_0000299: 0.4662350118160248
-predicted http://purl.obolibrary.org/obo/STATO_0000379: 0.46365854144096375
-predicted http://purl.obolibrary.org/obo/BFO_0000017: 0.4636002480983734
-predicted http://purl.obolibrary.org/obo/IAO_0000589: 0.46152743697166443
-predicted http://purl.obolibrary.org/obo/OBI_0000401: 0.461336612701416
-predicted http://purl.obolibrary.org/obo/IAO_0000300: 0.45959776639938354
-predicted http://purl.obolibrary.org/obo/IAO_0000417: 0.4507256746292114
-predicted http://purl.obolibrary.org/obo/IAO_0000221: 0.4507202208042145
-predicted http://purl.obolibrary.org/obo/IAO_0000579: 0.44745248556137085
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.53175950050354
+predicted http://purl.obolibrary.org/obo/STATO_0000034: 0.5284672975540161
+predicted http://purl.obolibrary.org/obo/OBI_0000094: 0.5265281796455383
+predicted http://purl.obolibrary.org/obo/BFO_0000001: 0.5099363327026367
+predicted http://purl.obolibrary.org/obo/IAO_0000015: 0.492845743894577
+predicted http://purl.obolibrary.org/obo/IAO_0000577: 0.48403462767601013
+predicted http://purl.obolibrary.org/obo/RO_0001001: 0.47043484449386597
+predicted http://purl.obolibrary.org/obo/OBI_0000312: 0.4671262502670288
+predicted http://purl.obolibrary.org/obo/OBI_0000299: 0.46623462438583374
+predicted http://purl.obolibrary.org/obo/STATO_0000379: 0.4636584222316742
+predicted http://purl.obolibrary.org/obo/BFO_0000017: 0.4636003077030182
+predicted http://purl.obolibrary.org/obo/IAO_0000589: 0.46152740716934204

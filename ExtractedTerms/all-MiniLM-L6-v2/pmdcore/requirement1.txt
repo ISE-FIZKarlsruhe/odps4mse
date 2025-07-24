@@ -10,10 +10,10 @@ https://w3id.org/pmd/co/Process
 https://w3id.org/pmd/co/AssemblingProcess
 https://w3id.org/pmd/co/superordinateProcess
 https://w3id.org/pmd/co/belongsToProject
-https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/Medium
 https://w3id.org/pmd/co/ProcessIdentifier
 https://w3id.org/pmd/co/AnalysingProcess
+https://w3id.org/pmd/co/InitiatorRole
 https://w3id.org/pmd/co/OperatorRole
 https://w3id.org/pmd/co/MeasuringProcess
 https://w3id.org/pmd/co/executes
