@@ -1,8 +1,0 @@
-http://purl.org/dc/terms/isReferencedBy
-http://purl.org/dc/terms/title
-http://purl.org/dc/terms/description
-http://purl.org/dc/terms/references
-http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution
-http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4
-https://schema.org/Intangible
-http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity

@@ -1,3 +1,0 @@
-http://purl.org/net/p-plan#hasInputVar
-http://purl.org/net/p-plan#hasOutputVar
-http://purl.org/net/p-plan#correspondsToVariable

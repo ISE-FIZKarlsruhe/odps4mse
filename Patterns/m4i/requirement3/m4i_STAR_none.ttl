@@ -20,6 +20,10 @@ rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
                                                  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
@@ -28,6 +32,16 @@ rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
 <http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
                                                     rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty ;
+                                           rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
@@ -51,120 +65,174 @@ xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
 #    Object Properties
 #################################################################
 
-###  http://purl.obolibrary.org/obo/BFO_0000054
-<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty ;
-                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
-                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000017> ;
-                                             rdfs:comment "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
-                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
-                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert in"@de ,
-                                                                                             "realized in"@en .
+###  http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                             rdf:type owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a part and its whole"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Teil von"@de ,
+                                                                                             "part of"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000055
-<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty ;
-                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000017> ;
-                                             rdfs:comment "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
-                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/> ;
-                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert"@de ,
-                                                                                             "realizes"@en .
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty ,
+                                                      owl:TransitiveProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a core relation that holds between a whole and its part"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                 "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "has part"@en ,
+                                                                                             "hat Teil"@de .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
-:hasEmployedTool rdf:type owl:ObjectProperty ;
-                 owl:inverseOf :isEmployedToolIn ;
-                 rdfs:range :Tool ;
-                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that is used within a given processing step"@en ,
-                                                                  "verweist auf ein Werkzeug, das in einem Arbeitsschritt verwendet wurde"@de ;
-                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has employed tool"@en ,
-                                                                 "hat eingesetztes Werkzeug"@de .
+###  http://purl.obolibrary.org/obo/RO_0000056
+<http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "ist beteiligt an"@de ,
+                                                                                            "participates in"@en .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#hasParameter
-:hasParameter rdf:type owl:ObjectProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( :Method
-                                          :Tool
-                                        )
-                          ] ;
-              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Points to a parameter of a given method or tool."@en ;
-              <http://www.w3.org/2004/02/skos/core#prefLabel> "has parameter"@en ,
-                                                              "hat Parameter"@de .
+###  http://purl.obolibrary.org/obo/RO_0000057
+<http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added a property chain axiom for use with prov:qualifiedAssociation"@en ,
+                                                                                                "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "has participant"@en ,
+                                                                                            "hat Teilnehmer"@de .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#implementedByTool
-:implementedByTool rdf:type owl:ObjectProperty ;
-                   owl:inverseOf :implementsMethod ;
-                   rdfs:domain :Method ;
-                   rdfs:range :Tool ;
-                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that implements a given method"@en ;
-                   <http://www.w3.org/2004/02/skos/core#prefLabel> "implemented by"@en ,
-                                                                   "wird implementiert durch"@de .
+###  http://w3id.org/nfdi4ing/metadata4ing#inProject
+:inProject rdf:type owl:ObjectProperty ;
+           owl:inverseOf :projectParticipant ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://xmlns.com/foaf/0.1/Organization>
+                                       <http://xmlns.com/foaf/0.1/Person>
+                                     )
+                       ] ;
+           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a person or an organization with a project."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "associated to project"@en ,
+                                                           "gehört zu Projekt"@de .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#implementsMethod
-:implementsMethod rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Tool ;
-                  rdfs:range :Method ;
-                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is implemented by a given tool"@en ;
-                  <http://www.w3.org/2004/02/skos/core#prefLabel> "implementiert"@de ,
-                                                                  "implements"@en .
+###  http://w3id.org/nfdi4ing/metadata4ing#projectParticipant
+:projectParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( <http://xmlns.com/foaf/0.1/Organization>
+                                               <http://xmlns.com/foaf/0.1/Person>
+                                             )
+                               ] ;
+                    rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a project with a person or an organisation."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hat Projektmitglied"@de ,
+                                                                    "project participant"@en .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn
-:isEmployedToolIn rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Tool ;
-                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a processing step the tool has been used in"@en ,
-                                                                   "verweist auf einen Arbeitsschritt, in dem das Werkzeug eingesetzt wurde"@de ;
-                  <http://www.w3.org/2004/02/skos/core#prefLabel> "is employed tool"@en ,
-                                                                  "ist eingesetztes Werkzeug"@de .
+###  http://www.w3.org/ns/prov#hadRole
+<http://www.w3.org/ns/prov#hadRole> rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf <http://www.w3.org/ns/prov#wasRoleIn> ;
+                                    rdfs:domain <http://www.w3.org/ns/prov#Association> ;
+                                    rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                    rdfs:label "had role"@en ,
+                                               "hatte Rolle"@de ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity)"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label"@en ,
+                                                                                        "changed by m4i: simplified definition"@en ,
+                                                                                        "changed by m4i: simplified rdfs:domain to prov:Association"@en .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
-:realizesMethod rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
-                rdfs:range :Method ;
-                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is used within a given processing step"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert Methode"@de ,
-                                                                "realizes method"@en .
+###  http://www.w3.org/ns/prov#qualifiedAssociation
+<http://www.w3.org/ns/prov#qualifiedAssociation> rdf:type owl:ObjectProperty ;
+                                                 rdfs:range <http://www.w3.org/ns/prov#Association> ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/ns/prov#> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Allows to specify more information (e.g. a role) about an association between an agent (e.g. a person) and an Activity (e.g. a processing step)."@en ,
+                                                                                                  "Ermöglicht die Angabe weiterer Informationen (z.B. einer Rolle) zu einer Verknüpfung zwischen einem Agenten (z.B. einer Person) und einer Aktivität (z.B. einem Prozessschritt)."@de ;
+                                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label, added skos:prefLabel, added skos:definition, skos:example and skos:note"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#example> """Example application in m4i:
+:SomeProcess
+    a m4i:ProcessingStep; 
+    obo:RO_0000057 :SomePerson;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent   :SomePerson;
+        prov:hadRole :SomeRole;
+        rdfs:comment \":SomePerson had the :SomeRole in this :SomeProcess\"@en
+    ].
+
+The direct relation between an activity and an agent expressed with 'has participant' (http://purl.obolibrary.org/obo/RO_0000057) does not give details about the agent's role in that activity. Using the property prov:qualifiedAssociation one can point to a blank node (cf. https://en.wikipedia.org/w/index.php?title=Blank_node&oldid=1015446558) containing additional information about the participation relation.
+"""@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#note> "In metadata4ing use obo:RO_0000057 as unqualified form for the relation between an activity and an agent."@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "näher beschriebene Verbindung"@de ,
+                                                                                                 "qualified association"@en .
+
+
+###  http://www.w3.org/ns/prov#wasRoleIn
+<http://www.w3.org/ns/prov#wasRoleIn> rdf:type owl:ObjectProperty ;
+                                      rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                      rdfs:label "war Rolle in"@de ,
+                                                 "wasRoleIn"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "prov:wasRoleIn references the association (e.g. between an agent and an activity) in which a role shall be defined. Inverse property of prov:hadRole." ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label, added skos:definition"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://purl.obolibrary.org/obo/BFO_0000017
-<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
-                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
-                                             <http://www.w3.org/2004/02/skos/core#definition> "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" ;
-                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
-                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "realisierbare Entität"@de ,
-                                                                                             "realizable entity"@en .
+###  http://www.w3.org/ns/prov#Association
+<http://www.w3.org/ns/prov#Association> rdf:type owl:Class ;
+                                        rdfs:comment "An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ]."@en ;
+                                        rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Association"@en ,
+                                                                                        "Verknüpfung"@de .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#Method
-:Method rdf:type owl:Class ;
-        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ;
-        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Abstract description of a method for analysis, generation and transformation of data and material objects like, e.g., 'Fourier Transform Infrared Spectroscopy' or 'Molecular Dynamics Simulation'. Note that while values for relevant parameters should be provided, m4i:Method does not refer to the actual execution of the process that is described (use m4i:ProcessingStep for that), but rather a description of the underlying principle."@en ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Methode"@de ,
-                                                        "method"@en .
+###  http://www.w3.org/ns/prov#Role
+<http://www.w3.org/ns/prov#Role> rdf:type owl:Class ;
+                                 rdfs:isDefinedBy <http://www.w3.org/ns/prov#> ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel, added skos:definition, added german definition, added instances"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Role"@en ,
+                                                                                 "Rolle des Akteurs"@de .
 
 
-###  http://w3id.org/nfdi4ing/metadata4ing#Tool
-:Tool rdf:type owl:Class ;
-      rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Object that helps an agent perform an action (e.g., John wrote a book with a pen), i.e., an object of the relation schema:instrument or m4i:hasTool"@en ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Tool"@en ,
-                                                      "Werkzeug"@de .
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+                                  rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Agent"@en ,
+                                                                                  "Akteur"@de .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                         owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ;
+                                         rdfs:comment "An organization." ;
+                                         rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation"@de ,
+                                                                                         "Organization"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                   rdfs:comment "A person." ;
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Person"@de ,
+                                                                                   "Person"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -1,6 +1,0 @@
-http://www.opmw.org/ontology/correspondsToTemplateProcess
-http://www.opmw.org/ontology/DataVariable
-http://www.opmw.org/ontology/isGeneratedBy
-http://www.opmw.org/ontology/executedInWorkflowSystem
-http://www.opmw.org/ontology/ParameterVariable
-http://www.opmw.org/ontology/hasExecutionDiagram

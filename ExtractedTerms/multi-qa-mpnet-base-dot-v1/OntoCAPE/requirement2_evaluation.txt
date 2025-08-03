@@ -1,6 +1,0 @@
-Evaluation Metrics:
-Precision: 0.0000
-Recall: 0.0000
-F1-score: 0.0000
-GroundTruth: 11
-Predicted: 0

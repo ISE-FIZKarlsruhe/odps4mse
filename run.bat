@@ -12,9 +12,9 @@ for %%F in (Ontologies\*.owl Ontologies\*.ttl) do (
 REM Show the result
 echo ONTOLOGIES = %ONTOLOGIES%
 
-REM Define the methods to run
-set METHODS=STAR TOP BOT subset
-set INTERMEDIATES=all minimal none
+REM Define the methods (STAR TOP BOT subset) and Intermediates (all minimal none) to run
+set METHODS=STAR
+set INTERMEDIATES=none
 
 REM Loop through each ontology
 for %%O in (%ONTOLOGIES%) do (

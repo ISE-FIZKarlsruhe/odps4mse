@@ -1,1 +1,0 @@
-http://purl.org/net/p-plan#correspondsToStep

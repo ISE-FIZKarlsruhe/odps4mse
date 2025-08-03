@@ -1,9 +1,0 @@
-Evaluation Metrics:
-Precision: 0.0000
-Recall: 0.0000
-F1-score: 0.0000
-GroundTruth: 0
-Predicted: 3
-predicted http://purl.org/net/p-plan#hasInputVar: 0.4478714168071747
-predicted http://purl.org/net/p-plan#isPreceededBy: 0.40927380323410034
-predicted http://purl.org/net/p-plan#hasOutputVar: 0.40251147747039795
