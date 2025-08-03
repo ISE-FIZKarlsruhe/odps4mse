@@ -6,4 +6,3 @@ https://w3id.org/pmd/co/component
 https://w3id.org/pmd/co/ProcessingNode
 https://w3id.org/pmd/co/executedBy
 https://w3id.org/pmd/co/characteristic
-https://w3id.org/pmd/co/outputOf

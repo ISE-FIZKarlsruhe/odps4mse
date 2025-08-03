@@ -4,3 +4,6 @@ https://w3id.org/pmd/co/ValueObject
 https://w3id.org/pmd/co/characteristic
 https://w3id.org/pmd/co/composes
 https://w3id.org/pmd/co/composedOf
+https://w3id.org/pmd/co/outputOf
+https://w3id.org/pmd/co/input
+https://w3id.org/pmd/co/participant
