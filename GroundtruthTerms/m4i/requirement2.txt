@@ -9,3 +9,11 @@ http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue
 http://w3id.org/nfdi4ing/metadata4ing#hasParameter
 http://w3id.org/nfdi4ing/metadata4ing#hasUnit
 http://w3id.org/nfdi4ing/metadata4ing#hasVariable
+http://purl.obolibrary.org/obo/BFO_0000017
+http://w3id.org/nfdi4ing/metadata4ing#Method
+http://w3id.org/nfdi4ing/metadata4ing#Tool
+http://purl.obolibrary.org/obo/BFO_0000055
+http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
+http://w3id.org/nfdi4ing/metadata4ing#hasParameter
+http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
+http://w3id.org/nfdi4ing/metadata4ing#implementsMethod
