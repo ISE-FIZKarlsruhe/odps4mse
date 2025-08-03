@@ -4,7 +4,6 @@ http://purl.org/wild/vocab#activityInstanceOf
 http://purl.org/wild/vocab#hasState
 http://purl.org/wild/vocab#inWorkflowInstance
 http://purl.org/wild/vocab#workflowInstanceOf
-http://purl.org/wild/vocab#WorkflowModel
 http://purl.org/wild/vocab#State
 http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState
 http://purl.org/wild/vocab#VirtualInstanceState

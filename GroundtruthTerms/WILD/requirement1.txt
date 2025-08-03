@@ -8,3 +8,4 @@ http://purl.org/wild/vocab#ParallelActivity
 http://purl.org/wild/vocab#ConditionalActivity
 http://purl.org/wild/vocab#containsActivity
 http://purl.org/wild/vocab#activityInstanceOf
+http://purl.org/wild/vocab#WorkflowModel
