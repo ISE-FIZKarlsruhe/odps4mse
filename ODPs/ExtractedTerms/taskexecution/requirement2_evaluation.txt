@@ -1,9 +1,0 @@
-Evaluation Metrics:
-Precision: 0.0000
-Recall: 0.0000
-F1-score: 0.0000
-GroundTruth: 0
-Predicted: 3
-predicted http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask: 0.4649249315261841
-predicted http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#isExecutedIn: 0.4583762288093567
-predicted http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action: 0.40986618399620056

@@ -1,2 +1,0 @@
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows

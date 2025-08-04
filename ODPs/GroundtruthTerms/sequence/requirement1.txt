@@ -1,9 +1,0 @@
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows
-http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes
-http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements
-http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom
-http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor
-http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences
-http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent

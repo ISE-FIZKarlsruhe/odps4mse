@@ -1,8 +1,0 @@
-Evaluation Metrics:
-Precision: 1.0000
-Recall: 0.0667
-F1-score: 0.1250
-GroundTruth: 30
-Predicted: 2
-predicted http://www.w3id.org/hsu-aut/VDI3682#consistsOf: 0.7041996121406555
-predicted http://www.w3id.org/hsu-aut/VDI3682#dependency: 0.4066663086414337

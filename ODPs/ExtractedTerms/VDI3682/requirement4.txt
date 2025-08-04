@@ -1,2 +1,0 @@
-http://www.w3id.org/hsu-aut/VDI3682#consistsOf
-http://www.w3id.org/hsu-aut/VDI3682#dependency

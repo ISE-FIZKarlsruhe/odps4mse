@@ -1,2 +1,0 @@
-http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Process
-http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Transition
