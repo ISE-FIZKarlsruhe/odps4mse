@@ -33,4 +33,4 @@ Performance varies depending on annotation richness and alignment of the ontolog
 
 ## License
 
-[MIT License](License.txt)
+[MIT License](License)
