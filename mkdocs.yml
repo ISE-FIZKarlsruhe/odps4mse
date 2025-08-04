@@ -1,6 +1,6 @@
-site_name: Ontology Design Patterns for Process Modeling
-site_url: https://odps4mse.github.io/ProcessODPs/
-repo_url: https://github.com/ODPS4MSE/ProcessODPs
+site_name: Ontology Design Patterns for Materials Science and Engineering
+site_url: https://ise-fizkarlsruhe.github.io/odps4mse/
+repo_url: https://github.com/ISE-FIZKarlsruhe/odps4mse
 theme:
   name: material
   custom_dir: docs/overrides

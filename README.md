@@ -1,6 +1,6 @@
 # Ontology Design Patterns for Materials Science and Engineering
 
-This repository provides a baseline framework for extracting Ontology Design Patterns (ODPs) aligned with process modeling requirements in the Materials Science and Engineering (MSE) domain.
+This repository provides a baseline framework for extracting Ontology Design Patterns (ODPs) in the Materials Science and Engineering (MSE) domain.
 
 ## Repository Structure
 
