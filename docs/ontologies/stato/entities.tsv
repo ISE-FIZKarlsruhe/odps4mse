@@ -1,0 +1,1155 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+has measurement datum	IAO_0000583	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000583			
+ridge regression best linear unbiaised predictor	STATO_0000480	Class	http://purl.obolibrary.org/obo/STATO_0000480			
+absolute difference	STATO_0000614	Class	http://purl.obolibrary.org/obo/STATO_0000614			
+mode calculation	OBI_0200117	Class	http://purl.obolibrary.org/obo/OBI_0200117			
+Helmert contrast	STATO_0000305	Class	http://purl.obolibrary.org/obo/STATO_0000305			
+linear regression for analysis of continuous dependent variable	STATO_0000108	Class	http://purl.obolibrary.org/obo/STATO_0000108			
+multinomial distribution	STATO_0000103	Class	http://purl.obolibrary.org/obo/STATO_0000103			
+executes	STATO_0000102	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000102			
+stratification rule	STATO_0000124	Class	http://purl.obolibrary.org/obo/STATO_0000124			
+eigen value	STATO_0000566	Class	http://purl.obolibrary.org/obo/STATO_0000566			
+material to be added	OBI_1110108	Class	http://purl.obolibrary.org/obo/OBI_1110108			
+cloning insert role	OBI_0000416	Class	http://purl.obolibrary.org/obo/OBI_0000416			
+light emission device	OBI_0001032	Class	http://purl.obolibrary.org/obo/OBI_0001032			
+confidence interval calculation	STATO_0000175	Class	http://purl.obolibrary.org/obo/STATO_0000175			
+relative difference	STATO_0000615	Class	http://purl.obolibrary.org/obo/STATO_0000615			
+number of true negative	STATO_0000597	Class	http://purl.obolibrary.org/obo/STATO_0000597			
+realizes	BFO_0000055	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000055			Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+genome-wide association study	STATO_0000091	Class	http://purl.obolibrary.org/obo/STATO_0000091			
+standard deviation for sample	STATO_0000684	Class	http://purl.obolibrary.org/obo/STATO_0000684			
+mortality	STATO_0000414	Class	http://purl.obolibrary.org/obo/STATO_0000414			
+declares	STATO_0000001	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000001			
+Wald test	STATO_0000559	Class	http://purl.obolibrary.org/obo/STATO_0000559			
+Z-test	STATO_0000052	Class	http://purl.obolibrary.org/obo/STATO_0000052			
+alternative hypothesis	STATO_0000208	Class	http://purl.obolibrary.org/obo/STATO_0000208			
+conclusion textual entity	IAO_0000144	Class	http://purl.obolibrary.org/obo/IAO_0000144			
+Rand index	STATO_0000592	Class	http://purl.obolibrary.org/obo/STATO_0000592			
+mass	PATO_0000125	Class	http://purl.obolibrary.org/obo/PATO_0000125			
+study design	OBI_0500000	Class	http://purl.obolibrary.org/obo/OBI_0500000			
+percentage	STATO_0000639	Class	http://purl.obolibrary.org/obo/STATO_0000639			
+contrast	STATO_0000290	Class	http://purl.obolibrary.org/obo/STATO_0000290			
+posterior predictive value	STATO_0000660	Class	http://purl.obolibrary.org/obo/STATO_0000660			
+imported from	IAO_0000412	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000412			
+Dunn’s multiple comparison test	STATO_0000490	Class	http://purl.obolibrary.org/obo/STATO_0000490			
+DNA sequence data	OBI_0001573	Class	http://purl.obolibrary.org/obo/OBI_0001573			
+dimensionality reduction	OBI_0200050	Class	http://purl.obolibrary.org/obo/OBI_0200050			
+95% credible interval	STATO_0000456	Class	http://purl.obolibrary.org/obo/STATO_0000456			
+additive dominant genetic and epistatic inheritance model	STATO_0000489	Class	http://purl.obolibrary.org/obo/STATO_0000489			
+specimen collection process	OBI_0000659	Class	http://purl.obolibrary.org/obo/OBI_0000659			
+reciprocal of difference	STATO_0000634	Class	http://purl.obolibrary.org/obo/STATO_0000634			
+family wise error rate correction method	OBI_0200073	Class	http://purl.obolibrary.org/obo/OBI_0200073			
+association between categorical variables testing objective	STATO_0000121	Class	http://purl.obolibrary.org/obo/STATO_0000121			
+averaging objective	OBI_0000425	Class	http://purl.obolibrary.org/obo/OBI_0000425			
+material combination	OBI_0000652	Class	http://purl.obolibrary.org/obo/OBI_0000652			
+molecular-labeled material	OBI_0001936	Class	http://purl.obolibrary.org/obo/OBI_0001936			
+L'Abbe plot	STATO_0000422	Class	http://purl.obolibrary.org/obo/STATO_0000422			
+statistical test hypothesis	OBI_0000673	Class	http://purl.obolibrary.org/obo/OBI_0000673			
+mesure of calibration	STATO_0000685	Class	http://purl.obolibrary.org/obo/STATO_0000685			
+value specification	OBI_0001933	Class	http://purl.obolibrary.org/obo/OBI_0001933			
+analyte role	OBI_0000275	Class	http://purl.obolibrary.org/obo/OBI_0000275			
+number needed to screen to prevent	STATO_0000636	Class	http://purl.obolibrary.org/obo/STATO_0000636			
+curator note	IAO_0000232	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000232			
+k-nearest neighbour data imputation	STATO_0000523	Class	http://purl.obolibrary.org/obo/STATO_0000523			
+two-dimensional spatial region	BFO_0000009	Class	http://purl.obolibrary.org/obo/BFO_0000009			
+number needed to screen to detect	STATO_0000637	Class	http://purl.obolibrary.org/obo/STATO_0000637			
+deoxyribonucleic acid	CHEBI_16991	Class	http://purl.obolibrary.org/obo/CHEBI_16991			
+M matrix	STATO_0000495	Class	http://purl.obolibrary.org/obo/STATO_0000495			
+cool function	OBI_0000387	Class	http://purl.obolibrary.org/obo/OBI_0000387			
+Pareto type-IV probability distribution	STATO_0000395	Class	http://purl.obolibrary.org/obo/STATO_0000395			
+Homo sapiens	NCBITaxon_9606	Class	http://purl.obolibrary.org/obo/NCBITaxon_9606			
+culture medium	OBI_0000079	Class	http://purl.obolibrary.org/obo/OBI_0000079			
+IEDB alternative term	OBI_9991118	AnnotationProperty	http://purl.obolibrary.org/obo/OBI_9991118			
+scatterplot matrix	STATO_0000387	Class	http://purl.obolibrary.org/obo/STATO_0000387			
+microarray	OBI_0400147	Class	http://purl.obolibrary.org/obo/OBI_0400147			
+panel sampling	STATO_0000511	Class	http://purl.obolibrary.org/obo/STATO_0000511			
+loadings	STATO_0000568	Class	http://purl.obolibrary.org/obo/STATO_0000568			
+F-statistic	STATO_0000282	Class	http://purl.obolibrary.org/obo/STATO_0000282			
+Fagan nomogram	STATO_0000407	Class	http://purl.obolibrary.org/obo/STATO_0000407			
+is_supported_by_data	OBI_0000124	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000124			
+Creator	creator	AnnotationProperty	http://purl.org/dc/elements/1.1/creator			"An entity primarily responsible for making the content 
+         of the resource."
+RNA-seq assay	OBI_0001271	Class	http://purl.obolibrary.org/obo/OBI_0001271			
+standard error of the mean	STATO_0000037	Class	http://purl.obolibrary.org/obo/STATO_0000037			
+descriptive statistical calculation data transformation	OBI_0200184	Class	http://purl.obolibrary.org/obo/OBI_0200184			
+TPM-transcript per million	STATO_0000589	Class	http://purl.obolibrary.org/obo/STATO_0000589			
+phage display library	OBI_1000029	Class	http://purl.obolibrary.org/obo/OBI_1000029			
+Cohen's d	STATO_0000618	Class	http://purl.obolibrary.org/obo/STATO_0000618			
+denominator degrees of freedom	STATO_0000527	Class	http://purl.obolibrary.org/obo/STATO_0000527			
+split split plot design	STATO_0000445	Class	http://purl.obolibrary.org/obo/STATO_0000445			
+binomial distribution	STATO_0000276	Class	http://purl.obolibrary.org/obo/STATO_0000276			
+has specified value	OBI_0002135	DatatypeProperty	http://purl.obolibrary.org/obo/OBI_0002135			
+first order autoregressive moving average covariance structure	STATO_0000364	Class	http://purl.obolibrary.org/obo/STATO_0000364			
+definition	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+STATO alternative term	STATO_0000032	AnnotationProperty	http://purl.obolibrary.org/obo/STATO_0000032			
+systematic sampling	STATO_0000509	Class	http://purl.obolibrary.org/obo/STATO_0000509			
+permutation numbering	STATO_0000271	Class	http://purl.obolibrary.org/obo/STATO_0000271			
+family	STATO_0000257	Class	http://purl.obolibrary.org/obo/STATO_0000257			
+Forest plot	STATO_0000174	Class	http://purl.obolibrary.org/obo/STATO_0000174			
+has_specified_output	OBI_0000299	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000299			
+Chi-square test for homogeneity	STATO_0000701	Class	http://purl.obolibrary.org/obo/STATO_0000701			
+quality of	RO_0000080	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000080			
+fluorescence detection assay	OBI_0001501	Class	http://purl.obolibrary.org/obo/OBI_0001501			
+Source	source	AnnotationProperty	http://purl.org/dc/elements/1.1/source			"A reference to a resource from which the present resource
+         is derived."
+Bayes C pi	STATO_0000533	Class	http://purl.obolibrary.org/obo/STATO_0000533			
+cultured cell population	OBI_0100060	Class	http://purl.obolibrary.org/obo/OBI_0100060			The extent of a 'cultured cell population' is restricted only in that all cell members must share a propagation history (ie be derived through a common lineage of passages from an initial culture). In being defined in this way, this class can be used to refer to the populations that researchers actually use in the practice of science - ie are the inputs to culturing, experimentation, and sharing. The cells in such populations will be a relatively uniform population as they have experienced similar selective pressures due to their continuous co-propagation. And this population will also have a single passage number, again owing to their common passaging history. Cultured cell populations represent only a collection of cells (ie do not include media, culture dishes, etc), and include populations of cultured unicellular organisms or cultured multicellular organism cells. They can exist under active culture, stored in a quiescent state for future use, or applied experimentally.
+cutoff	STATO_0000633	Class	http://purl.obolibrary.org/obo/STATO_0000633			
+genetic association study	STATO_0000235	Class	http://purl.obolibrary.org/obo/STATO_0000235			
+frequency	STATO_0000674	Class	http://purl.obolibrary.org/obo/STATO_0000674			
+atom	CHEBI_33250	Class	http://purl.obolibrary.org/obo/CHEBI_33250			
+documenting	IAO_0000572	Class	http://purl.obolibrary.org/obo/IAO_0000572			
+x-axis	STATO_0000006	Class	http://purl.obolibrary.org/obo/STATO_0000006			
+Newman-Keuls test post-hoc analysis	STATO_0000261	Class	http://purl.obolibrary.org/obo/STATO_0000261			
+Euarchontoglires	NCBITaxon_314146	Class	http://purl.obolibrary.org/obo/NCBITaxon_314146			
+polychotomous variable	STATO_0000087	Class	http://purl.obolibrary.org/obo/STATO_0000087			
+percentile	STATO_0000293	Class	http://purl.obolibrary.org/obo/STATO_0000293			
+Wilcoxon signed rank test	STATO_0000092	Class	http://purl.obolibrary.org/obo/STATO_0000092			
+evaluant role	OBI_0000067	Class	http://purl.obolibrary.org/obo/OBI_0000067			
+metadata incomplete	IAO_0000123	Individual	http://purl.obolibrary.org/obo/IAO_0000123			
+Cleveland dot plot	STATO_0000066	Class	http://purl.obolibrary.org/obo/STATO_0000066			
+datum label	IAO_0000009	Class	http://purl.obolibrary.org/obo/IAO_0000009			
+group randomization	OBI_0302900	Class	http://purl.obolibrary.org/obo/OBI_0302900			
+Date	date	AnnotationProperty	http://purl.org/dc/elements/1.1/date			"A date associated with an event in the life cycle of the
+         resource."
+Altman box and whisker plot	STATO_0000128	Class	http://purl.obolibrary.org/obo/STATO_0000128			
+two sample t-test with equal variance	STATO_0000303	Class	http://purl.obolibrary.org/obo/STATO_0000303			
+k-nearest neighbors	OBI_0000727	Class	http://purl.obolibrary.org/obo/OBI_0000727			
+negative likelihood ratio	STATO_0000410	Class	http://purl.obolibrary.org/obo/STATO_0000410			
+violin plot	STATO_0000154	Class	http://purl.obolibrary.org/obo/STATO_0000154			
+error correction objective	OBI_0200186	Class	http://purl.obolibrary.org/obo/OBI_0200186			
+realizable entity	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
+data normalization objective	OBI_0200167	Class	http://purl.obolibrary.org/obo/OBI_0200167			
+split-plot design	STATO_0000444	Class	http://purl.obolibrary.org/obo/STATO_0000444			
+normal distribution hypothesis	STATO_0000019	Class	http://purl.obolibrary.org/obo/STATO_0000019			
+improved Kernel PLS	STATO_0000579	Class	http://purl.obolibrary.org/obo/STATO_0000579			
+Q-Q plot	STATO_0000241	Class	http://purl.obolibrary.org/obo/STATO_0000241			
+statistical model selection	STATO_0000328	Class	http://purl.obolibrary.org/obo/STATO_0000328			
+equal diagonal Factor Analytic covariance structure	STATO_0000359	Class	http://purl.obolibrary.org/obo/STATO_0000359			
+mean calibration	STATO_0000686	Class	http://purl.obolibrary.org/obo/STATO_0000686			
+q-value	OBI_0001442	Class	http://purl.obolibrary.org/obo/OBI_0001442			
+Least significance different test	STATO_0000157	Class	http://purl.obolibrary.org/obo/STATO_0000157			
+figure	IAO_0000308	Class	http://purl.obolibrary.org/obo/IAO_0000308			
+F-distribution	STATO_0000204	Class	http://purl.obolibrary.org/obo/STATO_0000204			
+child-parents trio	STATO_0000273	Class	http://purl.obolibrary.org/obo/STATO_0000273			
+one sample t-test	STATO_0000302	Class	http://purl.obolibrary.org/obo/STATO_0000302			
+specimen from organism	OBI_0001479	Class	http://purl.obolibrary.org/obo/OBI_0001479			
+Vertebrata <Metazoa>	NCBITaxon_7742	Class	http://purl.obolibrary.org/obo/NCBITaxon_7742			
+precision-recall curve	STATO_0000695	Class	http://purl.obolibrary.org/obo/STATO_0000695			
+weighted least squares estimation	STATO_0000371	Class	http://purl.obolibrary.org/obo/STATO_0000371			
+scalar value specification	OBI_0001931	Class	http://purl.obolibrary.org/obo/OBI_0001931			
+probability distribution shape parameter	STATO_0000436	Class	http://purl.obolibrary.org/obo/STATO_0000436			
+binary classification	STATO_0000031	Class	http://purl.obolibrary.org/obo/STATO_0000031			
+selection criterion	OBI_0001755	Class	http://purl.obolibrary.org/obo/OBI_0001755			
+addition of molecular label	OBI_0600038	Class	http://purl.obolibrary.org/obo/OBI_0600038			
+Pearson's Chi square test of independence between categorical variables	STATO_0000081	Class	http://purl.obolibrary.org/obo/STATO_0000081			
+entity	BFO_0000001	Class	http://purl.obolibrary.org/obo/BFO_0000001			
+bug-database	bug-database	AnnotationProperty	http://usefulinc.com/ns/doap#bug-database			
+single fragment library	OBI_0000736	Class	http://purl.obolibrary.org/obo/OBI_0000736			
+has random effect on	STATO_0000381	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000381			
+standard error of a contrast estimate	STATO_0000385	Class	http://purl.obolibrary.org/obo/STATO_0000385			
+hierarchical clustering	OBI_0200042	Class	http://purl.obolibrary.org/obo/OBI_0200042			
+Dixon Q test	STATO_0000440	Class	http://purl.obolibrary.org/obo/STATO_0000440			
+molecular entity	CHEBI_23367	Class	http://purl.obolibrary.org/obo/CHEBI_23367			
+Tukey HSD for Post-Hoc Analysis	STATO_0000187	Class	http://purl.obolibrary.org/obo/STATO_0000187			
+function of	RO_0000079	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000079			
+model error term	STATO_0000470	Class	http://purl.obolibrary.org/obo/STATO_0000470			
+Barnard's test	STATO_0000310	Class	http://purl.obolibrary.org/obo/STATO_0000310			
+Eukaryota	NCBITaxon_2759	Class	http://purl.obolibrary.org/obo/NCBITaxon_2759			
+one tailed test	STATO_0000286	Class	http://purl.obolibrary.org/obo/STATO_0000286			
+time sampled measurement data set	IAO_0000584	Class	http://purl.obolibrary.org/obo/IAO_0000584			
+has measurement value	IAO_0000004	DatatypeProperty	http://purl.obolibrary.org/obo/IAO_0000004			
+to be replaced with external ontology term	IAO_0000423	Individual	http://purl.obolibrary.org/obo/IAO_0000423			
+derives into	RO_0001001	ObjectProperty	http://purl.obolibrary.org/obo/RO_0001001			
+minimum observed value	STATO_0000150	Class	http://purl.obolibrary.org/obo/STATO_0000150			
+organism	OBI_0100026	Class	http://purl.obolibrary.org/obo/OBI_0100026			
+eta-squared	STATO_0000317	Class	http://purl.obolibrary.org/obo/STATO_0000317			
+specimen collection objective	OBI_0000684	Class	http://purl.obolibrary.org/obo/OBI_0000684			
+Bayes A	STATO_0000483	Class	http://purl.obolibrary.org/obo/STATO_0000483			
+additive genetic inheritance model	STATO_0000487	Class	http://purl.obolibrary.org/obo/STATO_0000487			
+is denoted by	STATO_0000205	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000205			
+survival rate	OBI_0000789	Class	http://purl.obolibrary.org/obo/OBI_0000789			
+class discovery data transformation	OBI_0200175	Class	http://purl.obolibrary.org/obo/OBI_0200175			
+measure of heterogeneity	STATO_0000418	Class	http://purl.obolibrary.org/obo/STATO_0000418			
+mean difference	STATO_0000457	Class	http://purl.obolibrary.org/obo/STATO_0000457			
+zero-dimensional spatial region	BFO_0000018	Class	http://purl.obolibrary.org/obo/BFO_0000018			
+standard error of the difference between independent proportions	STATO_0000649	Class	http://purl.obolibrary.org/obo/STATO_0000649			
+calibration intercept	STATO_0000688	Class	http://purl.obolibrary.org/obo/STATO_0000688			
+generalized extreme studentized deviate test	STATO_0000443	Class	http://purl.obolibrary.org/obo/STATO_0000443			
+genetic characteristics information	OBI_0001404	Class	http://purl.obolibrary.org/obo/OBI_0001404			
+has value specification	OBI_0001938	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0001938			
+hazard ratio	STATO_0000677	Class	http://purl.obolibrary.org/obo/STATO_0000677			
+probability distribution variance	STATO_0000693	Class	http://purl.obolibrary.org/obo/STATO_0000693			
+Hosmer-Lemeshow goodness-of-fit test	STATO_0000653	Class	http://purl.obolibrary.org/obo/STATO_0000653			
+residual	STATO_0000234	Class	http://purl.obolibrary.org/obo/STATO_0000234			
+geometric distribution	STATO_0000145	Class	http://purl.obolibrary.org/obo/STATO_0000145			
+regression coefficient	STATO_0000565	Class	http://purl.obolibrary.org/obo/STATO_0000565			
+median of the ratios corrected count	STATO_0000590	Class	http://purl.obolibrary.org/obo/STATO_0000590			
+pedigree chart	STATO_0000122	Class	http://purl.obolibrary.org/obo/STATO_0000122			
+McNemar test	STATO_0000433	Class	http://purl.obolibrary.org/obo/STATO_0000433			
+BFO OWL specification label	BFO_0000179	AnnotationProperty	http://purl.obolibrary.org/obo/BFO_0000179			
+kernel mixture distribution	STATO_0000333	Class	http://purl.obolibrary.org/obo/STATO_0000333			
+is quality measured as	IAO_0000417	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000417			
+maintaining cell culture	OBI_0600024	Class	http://purl.obolibrary.org/obo/OBI_0600024			
+Viruses	NCBITaxon_10239	Class	http://purl.obolibrary.org/obo/NCBITaxon_10239			
+material separation device	OBI_0000932	Class	http://purl.obolibrary.org/obo/OBI_0000932			
+survival distribution	STATO_0000335	Class	http://purl.obolibrary.org/obo/STATO_0000335			
+stacked bar chart	STATO_0000159	Class	http://purl.obolibrary.org/obo/STATO_0000159			
+subject pairing	STATO_0000139	Class	http://purl.obolibrary.org/obo/STATO_0000139			
+partial least square weight	STATO_0000477	Class	http://purl.obolibrary.org/obo/STATO_0000477			
+lower confidence limit	STATO_0000315	Class	http://purl.obolibrary.org/obo/STATO_0000315			
+temporal interpretation	RO_0001900	AnnotationProperty	http://purl.obolibrary.org/obo/RO_0001900			
+example to be eventually removed	IAO_0000002	Individual	http://purl.obolibrary.org/obo/IAO_0000002			
+Kolmogorov-Smirnov test	STATO_0000083	Class	http://purl.obolibrary.org/obo/STATO_0000083			
+genetic inheritance model	STATO_0000534	Class	http://purl.obolibrary.org/obo/STATO_0000534			
+extract	OBI_0000423	Class	http://purl.obolibrary.org/obo/OBI_0000423			
+partitioning data transformation	OBI_0200171	Class	http://purl.obolibrary.org/obo/OBI_0200171			
+primary structure of DNA macromolecule	OBI_0000811	Class	http://purl.obolibrary.org/obo/OBI_0000811			
+polar coordinate system	STATO_0000016	Class	http://purl.obolibrary.org/obo/STATO_0000016			
+device	OBI_0000968	Class	http://purl.obolibrary.org/obo/OBI_0000968			
+upper confidence limit	STATO_0000314	Class	http://purl.obolibrary.org/obo/STATO_0000314			
+substrate concentration	STATO_0000072	Class	http://purl.obolibrary.org/obo/STATO_0000072			
+Plackett-Burman design	STATO_0000313	Class	http://purl.obolibrary.org/obo/STATO_0000313			
+rate measurement datum	OBI_0001554	Class	http://purl.obolibrary.org/obo/OBI_0001554			
+Format	format	AnnotationProperty	http://purl.org/dc/elements/1.1/format			The physical or digital manifestation of the resource.
+material combination objective	OBI_0000686	Class	http://purl.obolibrary.org/obo/OBI_0000686			
+Michaelis-Menten constant	STATO_0000272	Class	http://purl.obolibrary.org/obo/STATO_0000272			
+probability distribution	STATO_0000225	Class	http://purl.obolibrary.org/obo/STATO_0000225			
+Galbraith plot	STATO_0000263	Class	http://purl.obolibrary.org/obo/STATO_0000263			
+Akaike information criterion	STATO_0000325	Class	http://purl.obolibrary.org/obo/STATO_0000325			
+homogeneity test objective	STATO_0000173	Class	http://purl.obolibrary.org/obo/STATO_0000173			
+post-hoc analysis	STATO_0000133	Class	http://purl.obolibrary.org/obo/STATO_0000133			
+assay array	OBI_0001865	Class	http://purl.obolibrary.org/obo/OBI_0001865			
+meta analysis	STATO_0000155	Class	http://purl.obolibrary.org/obo/STATO_0000155			
+Lineweaver-Burk plot	STATO_0000186	Class	http://purl.obolibrary.org/obo/STATO_0000186			
+Python command	STATO_0000391	AnnotationProperty	http://purl.obolibrary.org/obo/STATO_0000391			
+physical store	OBI_0002089	Class	http://purl.obolibrary.org/obo/OBI_0002089			
+difference in differences	STATO_0000665	Class	http://purl.obolibrary.org/obo/STATO_0000665			
+paired-end library	OBI_0000722	Class	http://purl.obolibrary.org/obo/OBI_0000722			
+multiple testing correction method	OBI_0200089	Class	http://purl.obolibrary.org/obo/OBI_0200089			
+PLS2	STATO_0000578	Class	http://purl.obolibrary.org/obo/STATO_0000578			
+graeco latin square design	OBI_0500012	Class	http://purl.obolibrary.org/obo/OBI_0500012			
+material maintenance	OBI_0000838	Class	http://purl.obolibrary.org/obo/OBI_0000838			
+scalar measurement datum	IAO_0000032	Class	http://purl.obolibrary.org/obo/IAO_0000032			
+continuous variable discretization	STATO_0000213	Class	http://purl.obolibrary.org/obo/STATO_0000213			
+risk	STATO_0000620	Class	http://purl.obolibrary.org/obo/STATO_0000620			
+presence of between group difference hypothesis	STATO_0000146	Class	http://purl.obolibrary.org/obo/STATO_0000146			
+has_specified_input	OBI_0000293	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000293			
+specifically dependent continuant	BFO_0000020	Class	http://purl.obolibrary.org/obo/BFO_0000020			
+has member	STATO_0000115	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000115			
+measurement device	OBI_0000832	Class	http://purl.obolibrary.org/obo/OBI_0000832			
+MAF matrix	STATO_0000494	Class	http://purl.obolibrary.org/obo/STATO_0000494			
+is member of organization	OBI_0000846	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000846			
+scaled t distribution	STATO_0000529	Class	http://purl.obolibrary.org/obo/STATO_0000529			
+Cochran's q test for heterogeneity	STATO_0000434	Class	http://purl.obolibrary.org/obo/STATO_0000434			
+multiple testing correction objective	OBI_0000791	Class	http://purl.obolibrary.org/obo/OBI_0000791			
+part of	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+real time quantitative pcr plot	STATO_0000168	Class	http://purl.obolibrary.org/obo/STATO_0000168			
+alpha spending procedure	STATO_0000605	Class	http://purl.obolibrary.org/obo/STATO_0000605			
+transcription profiling assay	OBI_0000424	Class	http://purl.obolibrary.org/obo/OBI_0000424			
+log signal intensity ratio	STATO_0000105	Class	http://purl.obolibrary.org/obo/STATO_0000105			
+temporal relation	RO_0002222	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002222			A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
+population variance	STATO_0000646	Class	http://purl.obolibrary.org/obo/STATO_0000646			
+Bayesian least absolute shrinkage and selection operator	STATO_0000492	Class	http://purl.obolibrary.org/obo/STATO_0000492			
+variable importance in projection	STATO_0000580	Class	http://purl.obolibrary.org/obo/STATO_0000580			
+I-squared	STATO_0000420	Class	http://purl.obolibrary.org/obo/STATO_0000420			
+number needed to treat	STATO_0000635	Class	http://purl.obolibrary.org/obo/STATO_0000635			
+meta analysis by DerSimonian and Leard method	STATO_0000431	Class	http://purl.obolibrary.org/obo/STATO_0000431			
+dose	OBI_0000984	Class	http://purl.obolibrary.org/obo/OBI_0000984			
+ribonucleic acid	CHEBI_33697	Class	http://purl.obolibrary.org/obo/CHEBI_33697			
+Barlett's test	STATO_0000079	Class	http://purl.obolibrary.org/obo/STATO_0000079			
+PLS1	STATO_0000577	Class	http://purl.obolibrary.org/obo/STATO_0000577			
+categorical variable	STATO_0000252	Class	http://purl.obolibrary.org/obo/STATO_0000252			
+date	STATO_0000093	Class	http://purl.obolibrary.org/obo/STATO_0000093			
+standard deviation	STATO_0000237	Class	http://purl.obolibrary.org/obo/STATO_0000237			
+sequence data	OBI_0000973	Class	http://purl.obolibrary.org/obo/OBI_0000973			
+paired t-test	STATO_0000095	Class	http://purl.obolibrary.org/obo/STATO_0000095			
+whole plot number	STATO_0000447	Class	http://purl.obolibrary.org/obo/STATO_0000447			
+sequencing assay	OBI_0600047	Class	http://purl.obolibrary.org/obo/OBI_0600047			
+hypothesis	STATO_0000065	Class	http://purl.obolibrary.org/obo/STATO_0000065			
+flow cytometer	OBI_0400044	Class	http://purl.obolibrary.org/obo/OBI_0400044			
+axiom holds for all times	RO_0001901	Entity	http://purl.obolibrary.org/obo/RO_0001901			
+2 step Fagan nomogram	STATO_0000408	Class	http://purl.obolibrary.org/obo/STATO_0000408			
+textual entity	IAO_0000300	Class	http://purl.obolibrary.org/obo/IAO_0000300			
+three dimensional cartesian coordinate system	STATO_0000024	Class	http://purl.obolibrary.org/obo/STATO_0000024			
+matched pairs design	OBI_0500005	Class	http://purl.obolibrary.org/obo/OBI_0500005			
+random variable	STATO_0000221	Class	http://purl.obolibrary.org/obo/STATO_0000221			
+number needed to harm	STATO_0000638	Class	http://purl.obolibrary.org/obo/STATO_0000638			
+degree of freedom approximation	STATO_0000472	Class	http://purl.obolibrary.org/obo/STATO_0000472			
+logarithmic transformation	OBI_0200094	Class	http://purl.obolibrary.org/obo/OBI_0200094			
+random effect model	STATO_0000099	Class	http://purl.obolibrary.org/obo/STATO_0000099			
+line intercept sampling	STATO_0000504	Class	http://purl.obolibrary.org/obo/STATO_0000504			
+best linear unbiased estimator	STATO_0000582	Class	http://purl.obolibrary.org/obo/STATO_0000582			
+studentized range distribution	STATO_0000023	Class	http://purl.obolibrary.org/obo/STATO_0000023			
+number of predictive components	STATO_0000555	Class	http://purl.obolibrary.org/obo/STATO_0000555			
+excitation function	OBI_0000374	Class	http://purl.obolibrary.org/obo/OBI_0000374			
+Bacteria	NCBITaxon_2	Class	http://purl.obolibrary.org/obo/NCBITaxon_2			
+DNA sequencing	OBI_0000626	Class	http://purl.obolibrary.org/obo/OBI_0000626			
+standard error of the difference between independent means	STATO_0000648	Class	http://purl.obolibrary.org/obo/STATO_0000648			
+group assignment based on blocking variable specification	STATO_0000223	Class	http://purl.obolibrary.org/obo/STATO_0000223			
+specifying null and alternate hypothesis	STATO_0000207	Class	http://purl.obolibrary.org/obo/STATO_0000207			
+high throughput screening	STATO_0000239	Class	http://purl.obolibrary.org/obo/STATO_0000239			
+measurement datum	IAO_0000109	Class	http://purl.obolibrary.org/obo/IAO_0000109			
+Cochran-Armitage test for trend	STATO_0000148	Class	http://purl.obolibrary.org/obo/STATO_0000148			
+number of factor level combinations	STATO_0000195	Class	http://purl.obolibrary.org/obo/STATO_0000195			
+factorial design	OBI_0500014	Class	http://purl.obolibrary.org/obo/OBI_0500014			
+study intervention	OBI_0000931	Class	http://purl.obolibrary.org/obo/OBI_0000931			
+Chi-Squared statistic	STATO_0000030	Class	http://purl.obolibrary.org/obo/STATO_0000030			
+non-iterative Partial Least Squares	STATO_0000575	Class	http://purl.obolibrary.org/obo/STATO_0000575			
+Brown Forsythe test	STATO_0000080	Class	http://purl.obolibrary.org/obo/STATO_0000080			
+minimum possible value	STATO_0000667	Class	http://purl.obolibrary.org/obo/STATO_0000667			
+inheres in	RO_0000052	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000052			
+histogram distribution	STATO_0000331	Class	http://purl.obolibrary.org/obo/STATO_0000331			
+measure of correlation	STATO_0000611	Class	http://purl.obolibrary.org/obo/STATO_0000611			
+hybridization chamber	OBI_0400110	Class	http://purl.obolibrary.org/obo/OBI_0400110			
+data distribution	STATO_0000161	Class	http://purl.obolibrary.org/obo/STATO_0000161			
+count	STATO_0000047	Class	http://purl.obolibrary.org/obo/STATO_0000047			
+F1 score	STATO_0000628	Class	http://purl.obolibrary.org/obo/STATO_0000628			
+analyte measurement objective	OBI_0000437	Class	http://purl.obolibrary.org/obo/OBI_0000437			
+slope	STATO_0000656	Class	http://purl.obolibrary.org/obo/STATO_0000656			
+proportion	STATO_0000607	Class	http://purl.obolibrary.org/obo/STATO_0000607			
+normalization data transformation	OBI_0200169	Class	http://purl.obolibrary.org/obo/OBI_0200169			
+completely randomized design	STATO_0000583	Class	http://purl.obolibrary.org/obo/STATO_0000583			
+Poisson distribution	STATO_0000051	Class	http://purl.obolibrary.org/obo/STATO_0000051			
+kurtosis	STATO_0000178	Class	http://purl.obolibrary.org/obo/STATO_0000178			
+fluorescence	PATO_0000018	Class	http://purl.obolibrary.org/obo/PATO_0000018			
+Wilkinson dot plot	STATO_0000125	Class	http://purl.obolibrary.org/obo/STATO_0000125			
+variance	STATO_0000113	Class	http://purl.obolibrary.org/obo/STATO_0000113			
+regression data imputation	STATO_0000520	Class	http://purl.obolibrary.org/obo/STATO_0000520			
+odds ratio homogeneity test	STATO_0000247	Class	http://purl.obolibrary.org/obo/STATO_0000247			
+population stratification prior to sampling	STATO_0000096	Class	http://purl.obolibrary.org/obo/STATO_0000096			
+breeding value estimation using phenotypic data	STATO_0000340	Class	http://purl.obolibrary.org/obo/STATO_0000340			
+homepage	homepage	AnnotationProperty	http://usefulinc.com/ns/doap#homepage			
+centrally registered identifier symbol	IAO_0000577	Class	http://purl.obolibrary.org/obo/IAO_0000577			
+smooth kernel distribution	STATO_0000332	Class	http://purl.obolibrary.org/obo/STATO_0000332			
+metadata complete	IAO_0000120	Individual	http://purl.obolibrary.org/obo/IAO_0000120			
+Bayes R	STATO_0000546	Class	http://purl.obolibrary.org/obo/STATO_0000546			
+degree of freedom calculation	STATO_0000585	Class	http://purl.obolibrary.org/obo/STATO_0000585			
+measure of dispersion	STATO_0000028	Class	http://purl.obolibrary.org/obo/STATO_0000028			
+Benjamini and Hochberg false discovery rate correction method	OBI_0200036	Class	http://purl.obolibrary.org/obo/OBI_0200036			
+number of PCR cycle	STATO_0000232	Class	http://purl.obolibrary.org/obo/STATO_0000232			
+statistical test power analysis	STATO_0000097	Class	http://purl.obolibrary.org/obo/STATO_0000097			
+heritability	STATO_0000544	Class	http://purl.obolibrary.org/obo/STATO_0000544			
+Z matrix	STATO_0000497	Class	http://purl.obolibrary.org/obo/STATO_0000497			
+material sample role	OBI_0000740	Class	http://purl.obolibrary.org/obo/OBI_0000740			
+time series design	OBI_0500020	Class	http://purl.obolibrary.org/obo/OBI_0500020			
+two sample Hotelling T2 test	STATO_0000098	Class	http://purl.obolibrary.org/obo/STATO_0000098			
+interquartile mean	STATO_0000399	Class	http://purl.obolibrary.org/obo/STATO_0000399			
+coefficient of determination	STATO_0000564	Class	http://purl.obolibrary.org/obo/STATO_0000564			
+meta analysis by Hartung-Knapp-Sidik-Jonkman method	STATO_0000430	Class	http://purl.obolibrary.org/obo/STATO_0000430			
+sampling distribution estimation by bootstrapping	STATO_0000548	Class	http://purl.obolibrary.org/obo/STATO_0000548			
+Partial Least Square regression	STATO_0000571	Class	http://purl.obolibrary.org/obo/STATO_0000571			
+absence of enrichment hypothesis	STATO_0000296	Class	http://purl.obolibrary.org/obo/STATO_0000296			
+substitution by the mean data imputation	STATO_0000521	Class	http://purl.obolibrary.org/obo/STATO_0000521			
+normalized data set	OBI_0000451	Class	http://purl.obolibrary.org/obo/OBI_0000451			
+discrete probability distribution	STATO_0000117	Class	http://purl.obolibrary.org/obo/STATO_0000117			
+2 by 2 contingency table	STATO_0000138	Class	http://purl.obolibrary.org/obo/STATO_0000138			
+goodness of fit testing objective	STATO_0000224	Class	http://purl.obolibrary.org/obo/STATO_0000224			
+observation design	OBI_0300311	Class	http://purl.obolibrary.org/obo/OBI_0300311			
+role of	RO_0000081	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000081			
+count difference	STATO_0000616	Class	http://purl.obolibrary.org/obo/STATO_0000616			
+obi.owl	obi.owl	Entity	http://purl.obolibrary.org/obo/obi.owl			Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.
+mode	STATO_0000033	Class	http://purl.obolibrary.org/obo/STATO_0000033			
+Pearson's correlation coefficient	STATO_0000280	Class	http://purl.obolibrary.org/obo/STATO_0000280			
+editor preferred label	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+relative mean difference	STATO_0000625	Class	http://purl.obolibrary.org/obo/STATO_0000625			
+Hotelling-Lawley trace	STATO_0000452	Class	http://purl.obolibrary.org/obo/STATO_0000452			
+relative risk	STATO_0000245	Class	http://purl.obolibrary.org/obo/STATO_0000245			
+symbol	IAO_0000028	Class	http://purl.obolibrary.org/obo/IAO_0000028			
+genomic coordinate datum	STATO_0000063	Class	http://purl.obolibrary.org/obo/STATO_0000063			
+study design execution	OBI_0000471	Class	http://purl.obolibrary.org/obo/OBI_0000471			
+imaging assay	OBI_0000185	Class	http://purl.obolibrary.org/obo/OBI_0000185			
+k-means clustering	OBI_0200041	Class	http://purl.obolibrary.org/obo/OBI_0200041			
+assess statistical evidence	STATO_0000116	Class	http://purl.obolibrary.org/obo/STATO_0000116			
+conclusion based on data	OBI_0001909	Class	http://purl.obolibrary.org/obo/OBI_0001909			
+material anatomical entity	UBERON_0000465	Class	http://purl.obolibrary.org/obo/UBERON_0000465			
+pretest probability	STATO_0000417	Class	http://purl.obolibrary.org/obo/STATO_0000417			
+voluntary sampling	STATO_0000513	Class	http://purl.obolibrary.org/obo/STATO_0000513			
+recombinant vector cloning	OBI_0600064	Class	http://purl.obolibrary.org/obo/OBI_0600064			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+measurement unit label	IAO_0000003	Class	http://purl.obolibrary.org/obo/IAO_0000003			
+homoskedasticity hypothesis	STATO_0000054	Class	http://purl.obolibrary.org/obo/STATO_0000054			
+quadratic mean	STATO_0000400	Class	http://purl.obolibrary.org/obo/STATO_0000400			
+two dimensional cartesian spatial coordinate datum	IAO_0000402	Class	http://purl.obolibrary.org/obo/IAO_0000402			
+singular value decomposition	STATO_0000581	Class	http://purl.obolibrary.org/obo/STATO_0000581			
+ordinary least squares estimation	STATO_0000370	Class	http://purl.obolibrary.org/obo/STATO_0000370			
+covariance	STATO_0000301	Class	http://purl.obolibrary.org/obo/STATO_0000301			
+statistical sampling	STATO_0000502	Class	http://purl.obolibrary.org/obo/STATO_0000502			
+data about an ontology part	IAO_0000102	Class	http://purl.obolibrary.org/obo/IAO_0000102			
+absence of positive difference hypothesis	STATO_0000295	Class	http://purl.obolibrary.org/obo/STATO_0000295			
+standard error of estimate	STATO_0000562	Class	http://purl.obolibrary.org/obo/STATO_0000562			
+survival analysis data transformation	OBI_0200194	Class	http://purl.obolibrary.org/obo/OBI_0200194			
+latin square design	OBI_0500011	Class	http://purl.obolibrary.org/obo/OBI_0500011			
+ratio-based measure of association	STATO_0000622	Class	http://purl.obolibrary.org/obo/STATO_0000622			
+population mean	STATO_0000402	Class	http://purl.obolibrary.org/obo/STATO_0000402			
+fold change	STATO_0000169	Class	http://purl.obolibrary.org/obo/STATO_0000169			
+material sampling process	OBI_0000744	Class	http://purl.obolibrary.org/obo/OBI_0000744			
+screening library	OBI_0100064	Class	http://purl.obolibrary.org/obo/OBI_0100064			
+RT-PCR standard curve	STATO_0000219	Class	http://purl.obolibrary.org/obo/STATO_0000219			
+Huynh-Feldt covariance structure	STATO_0000358	Class	http://purl.obolibrary.org/obo/STATO_0000358			
+genomic selection objective	STATO_0000342	Class	http://purl.obolibrary.org/obo/STATO_0000342			
+genomic best linear unbiased prediction	STATO_0000481	Class	http://purl.obolibrary.org/obo/STATO_0000481			
+binomial logistic regression for analysis of dichotomous dependent variable	STATO_0000149	Class	http://purl.obolibrary.org/obo/STATO_0000149			
+absence of between group difference hypothesis	STATO_0000061	Class	http://purl.obolibrary.org/obo/STATO_0000061			
+ranking	STATO_0000118	Class	http://purl.obolibrary.org/obo/STATO_0000118			
+Tarone's test for homogeneity of odds ratio	STATO_0000136	Class	http://purl.obolibrary.org/obo/STATO_0000136			
+biological_process	GO_0008150	Class	http://purl.obolibrary.org/obo/GO_0008150			
+spatial linear geometric anisotropic covariance structure	STATO_0000349	Class	http://purl.obolibrary.org/obo/STATO_0000349			
+g2	g2	Entity	urn:swrl:var#g2			
+log normal distribution	STATO_0000438	Class	http://purl.obolibrary.org/obo/STATO_0000438			
+filter function	OBI_0000378	Class	http://purl.obolibrary.org/obo/OBI_0000378			
+analyte assay	OBI_0000443	Class	http://purl.obolibrary.org/obo/OBI_0000443			
+material separation function	OBI_0000372	Class	http://purl.obolibrary.org/obo/OBI_0000372			
+environment control function	OBI_0000401	Class	http://purl.obolibrary.org/obo/OBI_0000401			
+last observation carried forward data imputation	STATO_0000519	Class	http://purl.obolibrary.org/obo/STATO_0000519			
+allele information	OBI_0001352	Class	http://purl.obolibrary.org/obo/OBI_0001352			
+sample mean	STATO_0000401	Class	http://purl.obolibrary.org/obo/STATO_0000401			
+pending final vetting	IAO_0000125	Individual	http://purl.obolibrary.org/obo/IAO_0000125			
+90% confidence interval	STATO_0000021	Class	http://purl.obolibrary.org/obo/STATO_0000021			
+protein complex	GO_0043234	Class	http://purl.obolibrary.org/obo/GO_0043234			
+calibration slope	STATO_0000687	Class	http://purl.obolibrary.org/obo/STATO_0000687			
+true negative rate	STATO_0000134	Class	http://purl.obolibrary.org/obo/STATO_0000134			
+area under curve	STATO_0000209	Class	http://purl.obolibrary.org/obo/STATO_0000209			
+drawing a conclusion	OBI_0001834	Class	http://purl.obolibrary.org/obo/OBI_0001834			
+incidence	STATO_0000413	Class	http://purl.obolibrary.org/obo/STATO_0000413			
+between-within denominator degrees of freedom approximation	STATO_0000475	Class	http://purl.obolibrary.org/obo/STATO_0000475			
+Hotelling T2 distribution	STATO_0000132	Class	http://purl.obolibrary.org/obo/STATO_0000132			
+transcription profiling identification objective	OBI_0001331	Class	http://purl.obolibrary.org/obo/OBI_0001331			
+action specification	IAO_0000007	Class	http://purl.obolibrary.org/obo/IAO_0000007			
+solid support function	OBI_0000399	Class	http://purl.obolibrary.org/obo/OBI_0000399			
+coefficient of variation	STATO_0000236	Class	http://purl.obolibrary.org/obo/STATO_0000236			
+number of false positive	STATO_0000596	Class	http://purl.obolibrary.org/obo/STATO_0000596			
+assumes values specified by	STATO_0000110	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000110			
+adjusted Rand index	STATO_0000593	Class	http://purl.obolibrary.org/obo/STATO_0000593			
+Wilk's lambda distribution	STATO_0000017	Class	http://purl.obolibrary.org/obo/STATO_0000017			
+biplot	STATO_0000563	Class	http://purl.obolibrary.org/obo/STATO_0000563			
+numerator degrees of freedom	STATO_0000498	Class	http://purl.obolibrary.org/obo/STATO_0000498			
+covariance matrix	STATO_0000525	Class	http://purl.obolibrary.org/obo/STATO_0000525			
+rate	STATO_0000645	Class	http://purl.obolibrary.org/obo/STATO_0000645			
+processed material	OBI_0000047	Class	http://purl.obolibrary.org/obo/OBI_0000047			
+mean time-to-event	STATO_0000658	Class	http://purl.obolibrary.org/obo/STATO_0000658			
+model parameter estimation	STATO_0000119	Class	http://purl.obolibrary.org/obo/STATO_0000119			
+planning	OBI_0000339	Class	http://purl.obolibrary.org/obo/OBI_0000339			
+Anderson-Darling test	STATO_0000042	Class	http://purl.obolibrary.org/obo/STATO_0000042			
+Gibbs sampling	STATO_0000536	Class	http://purl.obolibrary.org/obo/STATO_0000536			
+defaultLanguage	defaultLanguage	AnnotationProperty	http://protege.stanford.edu/plugins/owl/protege#defaultLanguage			
+statistic	STATO_0000039	Class	http://purl.obolibrary.org/obo/STATO_0000039			
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+alpha debt	STATO_0000603	Class	http://purl.obolibrary.org/obo/STATO_0000603			
+genomic estimated breeding value	STATO_0000542	Class	http://purl.obolibrary.org/obo/STATO_0000542			
+Bayesian inference	STATO_0000706	Class	http://purl.obolibrary.org/obo/STATO_0000706			
+third quartile	STATO_0000170	Class	http://purl.obolibrary.org/obo/STATO_0000170			
+prevalence ratio	STATO_0000678	Class	http://purl.obolibrary.org/obo/STATO_0000678			
+number of cross-validation segments	STATO_0000554	Class	http://purl.obolibrary.org/obo/STATO_0000554			
+one dimensional cartesian coordinate system	STATO_0000022	Class	http://purl.obolibrary.org/obo/STATO_0000022			
+event frequency rate	STATO_0000673	Class	http://purl.obolibrary.org/obo/STATO_0000673			
+Metropolis–Hastings sampling	STATO_0000537	Class	http://purl.obolibrary.org/obo/STATO_0000537			
+outlier	STATO_0000036	Class	http://purl.obolibrary.org/obo/STATO_0000036			
+scree plot	STATO_0000386	Class	http://purl.obolibrary.org/obo/STATO_0000386			
+measure of central tendency	STATO_0000029	Class	http://purl.obolibrary.org/obo/STATO_0000029			
+alpha investing procedure	STATO_0000604	Class	http://purl.obolibrary.org/obo/STATO_0000604			
+sub sub-plot number	STATO_0000449	Class	http://purl.obolibrary.org/obo/STATO_0000449			
+editor note	IAO_0000116	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000116			
+null hypothesis	STATO_0000057	Class	http://purl.obolibrary.org/obo/STATO_0000057			
+genotype data set	STATO_0000343	Class	http://purl.obolibrary.org/obo/STATO_0000343			
+cartesian product 2 sets	STATO_0000194	Class	http://purl.obolibrary.org/obo/STATO_0000194			
+located in	RO_0001025	ObjectProperty	http://purl.obolibrary.org/obo/RO_0001025			
+compound symmetry covariance structure	STATO_0000362	Class	http://purl.obolibrary.org/obo/STATO_0000362			
+volcano plot	STATO_0000126	Class	http://purl.obolibrary.org/obo/STATO_0000126			
+participates in	RO_0000056	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000056			
+diagnostic yield	STATO_0000621	Class	http://purl.obolibrary.org/obo/STATO_0000621			
+matrix	STATO_0000642	Class	http://purl.obolibrary.org/obo/STATO_0000642			
+ΔRn	STATO_0000244	Class	http://purl.obolibrary.org/obo/STATO_0000244			
+two sample t-test with unequal variance	STATO_0000304	Class	http://purl.obolibrary.org/obo/STATO_0000304			
+has specified numeric value	OBI_0001937	DatatypeProperty	http://purl.obolibrary.org/obo/OBI_0001937			
+generalized least squares estimation	STATO_0000372	Class	http://purl.obolibrary.org/obo/STATO_0000372			
+information carrier	IAO_0000015	Class	http://purl.obolibrary.org/obo/IAO_0000015			
+within subject comparison objective	STATO_0000253	Class	http://purl.obolibrary.org/obo/STATO_0000253			
+manhattan plot for gwas	STATO_0000256	Class	http://purl.obolibrary.org/obo/STATO_0000256			
+title	title	AnnotationProperty	http://purl.org/dc/elements/1.1/title			
+Pareto type-II probability distribution	STATO_0000393	Class	http://purl.obolibrary.org/obo/STATO_0000393			
+statistical error	STATO_0000242	Class	http://purl.obolibrary.org/obo/STATO_0000242			
+hypergeometric test	STATO_0000285	Class	http://purl.obolibrary.org/obo/STATO_0000285			
+model fixed effect term	STATO_0000468	Class	http://purl.obolibrary.org/obo/STATO_0000468			
+factor level combination	STATO_0000264	Class	http://purl.obolibrary.org/obo/STATO_0000264			
+absence of within subject difference hypothesis	STATO_0000062	Class	http://purl.obolibrary.org/obo/STATO_0000062			
+z-score	STATO_0000104	Class	http://purl.obolibrary.org/obo/STATO_0000104			
+t-score	STATO_0000699	Class	http://purl.obolibrary.org/obo/STATO_0000699			
+precedes	BFO_0000063	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000063			
+Kenward-Roger degree of freedom approximation	STATO_0000473	Class	http://purl.obolibrary.org/obo/STATO_0000473			
+Cochran-Mantel-Haenzel test for repeated tests of independence	STATO_0000074	Class	http://purl.obolibrary.org/obo/STATO_0000074			
+correction objective	OBI_0200168	Class	http://purl.obolibrary.org/obo/OBI_0200168			
+trimmed mean	STATO_0000163	Class	http://purl.obolibrary.org/obo/STATO_0000163			
+flow cytometry assay	OBI_0000916	Class	http://purl.obolibrary.org/obo/OBI_0000916			
+molecular label	REO_0000280	Class	http://purl.obolibrary.org/obo/REO_0000280			
+mass measurement datum	IAO_0000414	Class	http://purl.obolibrary.org/obo/IAO_0000414			
+FPKM-fragments per kilobase of transcript per million fragments mapped	STATO_0000172	Class	http://purl.obolibrary.org/obo/STATO_0000172			
+biological feature identification objective	OBI_0000015	Class	http://purl.obolibrary.org/obo/OBI_0000015			
+difference	STATO_0000613	Class	http://purl.obolibrary.org/obo/STATO_0000613			
+breeding value estimation using genotype data	STATO_0000338	Class	http://purl.obolibrary.org/obo/STATO_0000338			
+multivariate analysis of variance	STATO_0000454	Class	http://purl.obolibrary.org/obo/STATO_0000454			
+planned process	OBI_0000011	Class	http://purl.obolibrary.org/obo/OBI_0000011			
+maximum observed value	STATO_0000151	Class	http://purl.obolibrary.org/obo/STATO_0000151			
+Conover-Iman test of multiple comparisons using rank sums	STATO_0000491	Class	http://purl.obolibrary.org/obo/STATO_0000491			
+cartesian spatial coordinate origin	STATO_0000026	Class	http://purl.obolibrary.org/obo/STATO_0000026			
+macromolecule	CHEBI_33839	Class	http://purl.obolibrary.org/obo/CHEBI_33839			
+investigation	OBI_0000066	Class	http://purl.obolibrary.org/obo/OBI_0000066			
+empirical measure	STATO_0000465	Class	http://purl.obolibrary.org/obo/STATO_0000465			
+participant under investigation role	OBI_0000097	Class	http://purl.obolibrary.org/obo/OBI_0000097			
+Contributor	contributor	AnnotationProperty	http://purl.org/dc/elements/1.1/contributor			"An entity responsible for making contributions to the
+         content of the resource."
+correlation coefficient	STATO_0000142	Class	http://purl.obolibrary.org/obo/STATO_0000142			
+principal components analysis dimensionality reduction	OBI_0200051	Class	http://purl.obolibrary.org/obo/OBI_0200051			
+Fisher's exact test	STATO_0000073	Class	http://purl.obolibrary.org/obo/STATO_0000073			
+F-test	STATO_0000086	Class	http://purl.obolibrary.org/obo/STATO_0000086			
+obscuration bar	OBI_0400078	Class	http://purl.obolibrary.org/obo/OBI_0400078			
+spatial spherical geometric anisotropic covariance structure	STATO_0000350	Class	http://purl.obolibrary.org/obo/STATO_0000350			
+document	IAO_0000310	Class	http://purl.obolibrary.org/obo/IAO_0000310			
+time unit	UO_0000003	Class	http://purl.obolibrary.org/obo/UO_0000003			
+assay objective	OBI_0000441	Class	http://purl.obolibrary.org/obo/OBI_0000441			
+dichotomous variable	STATO_0000090	Class	http://purl.obolibrary.org/obo/STATO_0000090			"'has part' exactly 1 ('categorical measurement datum'
+ and ('has category label' exactly 2 'categorical label'))"
+nucleic acid extract	OBI_0001010	Class	http://purl.obolibrary.org/obo/OBI_0001010			
+regression model	STATO_0000390	Class	http://purl.obolibrary.org/obo/STATO_0000390			
+estimated breeding value	STATO_0000485	Class	http://purl.obolibrary.org/obo/STATO_0000485			
+selectivity ratio	STATO_0000570	Class	http://purl.obolibrary.org/obo/STATO_0000570			
+statistical model	STATO_0000107	Class	http://purl.obolibrary.org/obo/STATO_0000107			
+scale estimator	STATO_0000437	Class	http://purl.obolibrary.org/obo/STATO_0000437			
+diagram	IAO_0000309	Class	http://purl.obolibrary.org/obo/IAO_0000309			
+center value	OBI_0000674	Class	http://purl.obolibrary.org/obo/OBI_0000674			
+sequence feature identification objective	OBI_0000113	Class	http://purl.obolibrary.org/obo/OBI_0000113			
+light emission function	OBI_0000367	Class	http://purl.obolibrary.org/obo/OBI_0000367			
+gene expression	GO_0010467	Class	http://purl.obolibrary.org/obo/GO_0010467			
+statistical hypothesis test objective	OBI_0000675	Class	http://purl.obolibrary.org/obo/OBI_0000675			
+harmonic mean	STATO_0000397	Class	http://purl.obolibrary.org/obo/STATO_0000397			
+is quality measurement of	IAO_0000221	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000221			
+term tracker item	IAO_0000233	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000233			The 'tracker item' can associate a tracker with a specific ontology term.
+definition source	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
+is_specified_input_of	OBI_0000295	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000295			
+non-parametric test	STATO_0000198	Class	http://purl.obolibrary.org/obo/STATO_0000198			
+odds ratio homogeneity hypothesis	STATO_0000211	Class	http://purl.obolibrary.org/obo/STATO_0000211			
+pedigree data set	STATO_0000478	Class	http://purl.obolibrary.org/obo/STATO_0000478			
+two dimensional cartesian spatial coordinate origin	STATO_0000020	Class	http://purl.obolibrary.org/obo/STATO_0000020			
+probability distribution mean	STATO_0000692	Class	http://purl.obolibrary.org/obo/STATO_0000692			
+specimen	OBI_0100051	Class	http://purl.obolibrary.org/obo/OBI_0100051			
+kappa	STATO_0000682	Class	http://purl.obolibrary.org/obo/STATO_0000682			
+Breusch-Pagan test	STATO_0000284	Class	http://purl.obolibrary.org/obo/STATO_0000284			
+measure of association	STATO_0000610	Class	http://purl.obolibrary.org/obo/STATO_0000610			
+has participant	RO_0000057	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000057			
+material separation objective	OBI_0000639	Class	http://purl.obolibrary.org/obo/OBI_0000639			
+5 % false positive rate	STATO_0000043	Entity	http://purl.obolibrary.org/obo/STATO_0000043			
+Hedges's g	STATO_0000319	Class	http://purl.obolibrary.org/obo/STATO_0000319			
+iteratively reweighted least squares estimation	STATO_0000373	Class	http://purl.obolibrary.org/obo/STATO_0000373			
+prevalence	STATO_0000412	Class	http://purl.obolibrary.org/obo/STATO_0000412			
+incidence rate	STATO_0000670	Class	http://purl.obolibrary.org/obo/STATO_0000670			
+sequence read count	STATO_0000064	Class	http://purl.obolibrary.org/obo/STATO_0000064			
+exponential distribution	STATO_0000160	Class	http://purl.obolibrary.org/obo/STATO_0000160			
+Subject and Keywords	subject	AnnotationProperty	http://purl.org/dc/elements/1.1/subject			The topic of the content of the resource.
+multiway ANOVA	STATO_0000048	Class	http://purl.obolibrary.org/obo/STATO_0000048			
+data imputation	STATO_0000518	Class	http://purl.obolibrary.org/obo/STATO_0000518			
+ordered probit regression for analysis of ordinal dependent variable	STATO_0000215	Class	http://purl.obolibrary.org/obo/STATO_0000215			
+Rao's score	STATO_0000560	Class	http://purl.obolibrary.org/obo/STATO_0000560			
+study group population size	STATO_0000088	Class	http://purl.obolibrary.org/obo/STATO_0000088			
+statistical inference	STATO_0000299	Class	http://purl.obolibrary.org/obo/STATO_0000299			
+Pareto type-III probability distribution	STATO_0000394	Class	http://purl.obolibrary.org/obo/STATO_0000394			
+beta distribution	STATO_0000177	Class	http://purl.obolibrary.org/obo/STATO_0000177			
+organizational term	IAO_0000121	Individual	http://purl.obolibrary.org/obo/IAO_0000121			
+high-content screening	STATO_0000238	Class	http://purl.obolibrary.org/obo/STATO_0000238			
+numerator relationship matrix	STATO_0000526	Class	http://purl.obolibrary.org/obo/STATO_0000526			
+repeated measure ANOVA	STATO_0000260	Class	http://purl.obolibrary.org/obo/STATO_0000260			
+peptide	CHEBI_16670	Class	http://purl.obolibrary.org/obo/CHEBI_16670			
+centrally registered identifier	IAO_0000578	Class	http://purl.obolibrary.org/obo/IAO_0000578			
+transmission disequilibrium test	STATO_0000275	Class	http://purl.obolibrary.org/obo/STATO_0000275			
+genotype matrix	STATO_0000493	Class	http://purl.obolibrary.org/obo/STATO_0000493			
+p-value	STATO_0000700	Class	http://purl.obolibrary.org/obo/STATO_0000700			
+scatter plot	IAO_0000184	Class	http://purl.obolibrary.org/obo/IAO_0000184			
+convenience sampling	STATO_0000514	Class	http://purl.obolibrary.org/obo/STATO_0000514			
+length unit	UO_0000001	Class	http://purl.obolibrary.org/obo/UO_0000001			
+randomized complete block design	OBI_0500007	Class	http://purl.obolibrary.org/obo/OBI_0500007			
+genotyping assay	OBI_0000435	Class	http://purl.obolibrary.org/obo/OBI_0000435			
+genotyping design	OBI_0001444	Class	http://purl.obolibrary.org/obo/OBI_0001444			
+first order autoregressive covariance structure	STATO_0000365	Class	http://purl.obolibrary.org/obo/STATO_0000365			
+average value	OBI_0000679	Class	http://purl.obolibrary.org/obo/OBI_0000679			
+standard error of the proportion	STATO_0000647	Class	http://purl.obolibrary.org/obo/STATO_0000647			
+has part	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+phenotype	OGMS_0000023	Class	http://purl.obolibrary.org/obo/OGMS_0000023			
+cylindrical coordinate system	STATO_0000015	Class	http://purl.obolibrary.org/obo/STATO_0000015			
+genotype information	OBI_0001305	Class	http://purl.obolibrary.org/obo/OBI_0001305			
+date	date	Entity	http://www.w3.org/2001/XMLSchema#date			
+simple chance-corrected agreement coefficient	STATO_0000683	Class	http://purl.obolibrary.org/obo/STATO_0000683			
+Scott's pi	STATO_0000629	Class	http://purl.obolibrary.org/obo/STATO_0000629			
+Brewer sampling	STATO_0000515	Class	http://purl.obolibrary.org/obo/STATO_0000515			
+absence of depletion hypothesis	STATO_0000297	Class	http://purl.obolibrary.org/obo/STATO_0000297			
+R command	STATO_0000041	AnnotationProperty	http://purl.obolibrary.org/obo/STATO_0000041			
+true positive rate	STATO_0000233	Class	http://purl.obolibrary.org/obo/STATO_0000233			
+DNA sequencer	OBI_0400103	Class	http://purl.obolibrary.org/obo/OBI_0400103			
+OBO foundry unique label	IAO_0000589	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000589			
+score	STATO_0000569	Class	http://purl.obolibrary.org/obo/STATO_0000569			
+measure of hypothesis testing	STATO_0000609	Class	http://purl.obolibrary.org/obo/STATO_0000609			
+Bayes B	STATO_0000484	Class	http://purl.obolibrary.org/obo/STATO_0000484			
+is_specified_output_of	OBI_0000312	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000312			
+reaction rate	STATO_0000071	Class	http://purl.obolibrary.org/obo/STATO_0000071			
+area under the receiver operator characteristic curve	STATO_0000608	Class	http://purl.obolibrary.org/obo/STATO_0000608			
+two-way ANOVA	STATO_0000045	Class	http://purl.obolibrary.org/obo/STATO_0000045			
+independent continuant	BFO_0000004	Class	http://purl.obolibrary.org/obo/BFO_0000004			
+stratified sampling	STATO_0000508	Class	http://purl.obolibrary.org/obo/STATO_0000508			
+complete linkage hierarchical clustering	OBI_0200044	Class	http://purl.obolibrary.org/obo/OBI_0200044			
+number density	STATO_0000676	Class	http://purl.obolibrary.org/obo/STATO_0000676			
+mixed effect model	STATO_0000189	Class	http://purl.obolibrary.org/obo/STATO_0000189			
+error corrected data set	OBI_0000662	Class	http://purl.obolibrary.org/obo/OBI_0000662			
+Matern function anisotropic covariance structure	STATO_0000347	Class	http://purl.obolibrary.org/obo/STATO_0000347			
+grouped bar chart	STATO_0000267	Class	http://purl.obolibrary.org/obo/STATO_0000267			
+portioning objective	OBI_0000678	Class	http://purl.obolibrary.org/obo/OBI_0000678			
+alpha distribution	STATO_0000388	Class	http://purl.obolibrary.org/obo/STATO_0000388			
+spatial gaussian geometric anisotropic covariance structure	STATO_0000351	Class	http://purl.obolibrary.org/obo/STATO_0000351			
+model parameter	STATO_0000034	Class	http://purl.obolibrary.org/obo/STATO_0000034			
+simple random sampling	STATO_0000503	Class	http://purl.obolibrary.org/obo/STATO_0000503			
+dye swap design	OBI_0500017	Class	http://purl.obolibrary.org/obo/OBI_0500017			
+protein	PR_000000001	Class	http://purl.obolibrary.org/obo/PR_000000001			
+nucleic acid	CHEBI_33696	Class	http://purl.obolibrary.org/obo/CHEBI_33696			
+Chi-square probability distribution	STATO_0000229	Class	http://purl.obolibrary.org/obo/STATO_0000229			
+covariance structure	STATO_0000346	Class	http://purl.obolibrary.org/obo/STATO_0000346			
+y-axis	STATO_0000008	Class	http://purl.obolibrary.org/obo/STATO_0000008			
+genomic coordinate system	STATO_0000197	Class	http://purl.obolibrary.org/obo/STATO_0000197			
+concretizes	RO_0000059	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000059			
+is model for	STATO_0000341	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000341			
+confusion matrix	STATO_0000594	Class	http://purl.obolibrary.org/obo/STATO_0000594			
+channel1/channel2 fluorescence intensity ratio	STATO_0000210	Class	http://purl.obolibrary.org/obo/STATO_0000210			
+specifies value of	OBI_0001927	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0001927			
+has associated axiom(fol)	IAO_0000602	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000602			
+mixture distribution	STATO_0000334	Class	http://purl.obolibrary.org/obo/STATO_0000334			
+algorithm	IAO_0000064	Class	http://purl.obolibrary.org/obo/IAO_0000064			
+study design independent variable	OBI_0000750	Class	http://purl.obolibrary.org/obo/OBI_0000750			
+example of usage	IAO_0000112	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000112			
+breeding value estimation using pedigree data	STATO_0000339	Class	http://purl.obolibrary.org/obo/STATO_0000339			
+model interaction effect term	STATO_0000469	Class	http://purl.obolibrary.org/obo/STATO_0000469			
+has numerator	STATO_0000101	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000101			
+is concretized as	RO_0000058	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000058			
+between group comparison objective	STATO_0000255	Class	http://purl.obolibrary.org/obo/STATO_0000255			
+quantitative confidence value	OBI_0000071	Class	http://purl.obolibrary.org/obo/OBI_0000071			
+cluster sampling	STATO_0000506	Class	http://purl.obolibrary.org/obo/STATO_0000506			
+Holm-Bonferroni family-wise error rate correction method	OBI_0200066	Class	http://purl.obolibrary.org/obo/OBI_0200066			
+discrete multivariate probability distribution	STATO_0000539	Class	http://purl.obolibrary.org/obo/STATO_0000539			
+enzyme	OBI_0000427	Class	http://purl.obolibrary.org/obo/OBI_0000427			
+Opisthokonta	NCBITaxon_33154	Class	http://purl.obolibrary.org/obo/NCBITaxon_33154			
+occurrent	BFO_0000003	Class	http://purl.obolibrary.org/obo/BFO_0000003			
+hypergeometric distribution	STATO_0000060	Class	http://purl.obolibrary.org/obo/STATO_0000060			
+center calculation objective	OBI_0200177	Class	http://purl.obolibrary.org/obo/OBI_0200177			
+m2	m2	Entity	urn:swrl:var#m2			
+false discovery rate correction method	OBI_0200163	Class	http://purl.obolibrary.org/obo/OBI_0200163			
+goodness of fit statistical test	STATO_0000191	Class	http://purl.obolibrary.org/obo/STATO_0000191			
+50% confidence interval	STATO_0000214	Class	http://purl.obolibrary.org/obo/STATO_0000214			
+F-beta score	STATO_0000663	Class	http://purl.obolibrary.org/obo/STATO_0000663			
+sampling from a probability distribution	STATO_0000535	Class	http://purl.obolibrary.org/obo/STATO_0000535			
+calibration	STATO_0000652	Class	http://purl.obolibrary.org/obo/STATO_0000652			
+disposition	BFO_0000016	Class	http://purl.obolibrary.org/obo/BFO_0000016			
+deviance information criterion	STATO_0000378	Class	http://purl.obolibrary.org/obo/STATO_0000378			
+between group comparison statistical test	STATO_0000279	Class	http://purl.obolibrary.org/obo/STATO_0000279			
+immaterial entity	BFO_0000141	Class	http://purl.obolibrary.org/obo/BFO_0000141			
+one dimensional cartesian spatial coordinate origin	STATO_0000025	Class	http://purl.obolibrary.org/obo/STATO_0000025			
+centrally registered identifier registry	IAO_0000579	Class	http://purl.obolibrary.org/obo/IAO_0000579			
+interim analysis	STATO_0000460	Class	http://purl.obolibrary.org/obo/STATO_0000460			
+one sample Hotelling T2 test	STATO_0000153	Class	http://purl.obolibrary.org/obo/STATO_0000153			
+mailing-list	mailing-list	AnnotationProperty	http://usefulinc.com/ns/doap#mailing-list			
+cell	CL_0000000	Class	http://purl.obolibrary.org/obo/CL_0000000			
+material processing	OBI_0000094	Class	http://purl.obolibrary.org/obo/OBI_0000094			
+Tau squared	STATO_0000421	Class	http://purl.obolibrary.org/obo/STATO_0000421			
+2 by n contingency table	STATO_0000185	Class	http://purl.obolibrary.org/obo/STATO_0000185			
+Mauchly's test for sphericity	STATO_0000199	Class	http://purl.obolibrary.org/obo/STATO_0000199			
+plan specification	IAO_0000104	Class	http://purl.obolibrary.org/obo/IAO_0000104			"2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them"
+homogeneity test	STATO_0000697	Class	http://purl.obolibrary.org/obo/STATO_0000697			
+ratio	STATO_0000184	Class	http://purl.obolibrary.org/obo/STATO_0000184			
+pairing rule	STATO_0000278	Class	http://purl.obolibrary.org/obo/STATO_0000278			
+droplet sorter	OBI_0400153	Class	http://purl.obolibrary.org/obo/OBI_0400153			
+sub-plot number	STATO_0000448	Class	http://purl.obolibrary.org/obo/STATO_0000448			
+accuracy	STATO_0000415	Class	http://purl.obolibrary.org/obo/STATO_0000415			
+mean of differences	STATO_0000664	Class	http://purl.obolibrary.org/obo/STATO_0000664			
+is duration of	IAO_0000413	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000413			
+O'brien-Flemming boundary analysis	STATO_0000461	Class	http://purl.obolibrary.org/obo/STATO_0000461			
+heat function	OBI_0000371	Class	http://purl.obolibrary.org/obo/OBI_0000371			
+area under the value-time curve	STATO_0000690	Class	http://purl.obolibrary.org/obo/STATO_0000690			
+Laplace probability distribution	STATO_0000547	Class	http://purl.obolibrary.org/obo/STATO_0000547			
+Holm false discovery rate correction	STATO_0000551	Class	http://purl.obolibrary.org/obo/STATO_0000551			
+modified Cohen’s kappa for more than 2 raters	STATO_0000631	Class	http://purl.obolibrary.org/obo/STATO_0000631			
+Mallows' Cp	STATO_0000368	Class	http://purl.obolibrary.org/obo/STATO_0000368			
+contrast weight matrix	STATO_0000323	Class	http://purl.obolibrary.org/obo/STATO_0000323			
+contrast weight	STATO_0000322	Class	http://purl.obolibrary.org/obo/STATO_0000322			
+median difference	STATO_0000617	Class	http://purl.obolibrary.org/obo/STATO_0000617			
+contrast estimation	STATO_0000383	Class	http://purl.obolibrary.org/obo/STATO_0000383			
+material transformation objective	OBI_0000456	Class	http://purl.obolibrary.org/obo/OBI_0000456			
+cartesian spatial coordinate datum	IAO_0000400	Class	http://purl.obolibrary.org/obo/IAO_0000400			
+Tietjen-Moore test for outliers	STATO_0000442	Class	http://purl.obolibrary.org/obo/STATO_0000442			
+rule	IAO_0000055	Class	http://purl.obolibrary.org/obo/IAO_0000055			
+Wilk's Lambda	STATO_0000450	Class	http://purl.obolibrary.org/obo/STATO_0000450			
+data set of features	OBI_0000649	Class	http://purl.obolibrary.org/obo/OBI_0000649			
+population	OBI_0000181	Class	http://purl.obolibrary.org/obo/OBI_0000181			
+equal variance testing objective	STATO_0000226	Class	http://purl.obolibrary.org/obo/STATO_0000226			
+has role	RO_0000087	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000087			
+Hardy-Weinberg equilibrium testing	STATO_0000181	Class	http://purl.obolibrary.org/obo/STATO_0000181			
+two dimensional cartesian coordinate system	STATO_0000013	Class	http://purl.obolibrary.org/obo/STATO_0000013			
+variable	STATO_0000258	Class	http://purl.obolibrary.org/obo/STATO_0000258			
+cartesian coordinate system	STATO_0000009	Class	http://purl.obolibrary.org/obo/STATO_0000009			
+contrast weight estimate	STATO_0000324	Class	http://purl.obolibrary.org/obo/STATO_0000324			
+is member of	STATO_0000114	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000114			
+central composite design	STATO_0000311	Class	http://purl.obolibrary.org/obo/STATO_0000311			
+clustered data set	OBI_0000648	Class	http://purl.obolibrary.org/obo/OBI_0000648			
+separation into different composition objective	OBI_0000681	Class	http://purl.obolibrary.org/obo/OBI_0000681			
+has coordinate unit label	IAO_0000407	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000407			relating a cartesian spatial coordinate datum to a unit label that together with the values represent a point
+cohort	STATO_0000203	Class	http://purl.obolibrary.org/obo/STATO_0000203			
+acute toxicity study	STATO_0000141	Class	http://purl.obolibrary.org/obo/STATO_0000141			
+multinomial logistic regression for analysis of dichotomous dependent variable	STATO_0000109	Class	http://purl.obolibrary.org/obo/STATO_0000109			
+model random effect term	STATO_0000467	Class	http://purl.obolibrary.org/obo/STATO_0000467			
+adding a material entity into a target	OBI_0000274	Class	http://purl.obolibrary.org/obo/OBI_0000274			
+negative binomial distribution	STATO_0000283	Class	http://purl.obolibrary.org/obo/STATO_0000283			
+log-rank test	STATO_0000640	Class	http://purl.obolibrary.org/obo/STATO_0000640			
+random forest procedure	STATO_0000549	Class	http://purl.obolibrary.org/obo/STATO_0000549			
+generically dependent continuant	BFO_0000031	Class	http://purl.obolibrary.org/obo/BFO_0000031			
+repeated measure design	OBI_0500002	Class	http://purl.obolibrary.org/obo/OBI_0500002			
+restricted randomized design	STATO_0000586	Class	http://purl.obolibrary.org/obo/STATO_0000586			
+cDNA library	OBI_0000164	Class	http://purl.obolibrary.org/obo/OBI_0000164			
+has curation status	IAO_0000114	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000114			
+probability-proportional-to-size sampling	STATO_0000507	Class	http://purl.obolibrary.org/obo/STATO_0000507			
+Spearman's rank correlation coefficient	STATO_0000201	Class	http://purl.obolibrary.org/obo/STATO_0000201			
+positive likelihood ratio	STATO_0000411	Class	http://purl.obolibrary.org/obo/STATO_0000411			
+sign test	STATO_0000644	Class	http://purl.obolibrary.org/obo/STATO_0000644			
+categorical measurement datum	OBI_0000938	Class	http://purl.obolibrary.org/obo/OBI_0000938			
+protocol	OBI_0000272	Class	http://purl.obolibrary.org/obo/OBI_0000272			
+banded heterogeneous Toeplitz covariance structure	STATO_0000354	Class	http://purl.obolibrary.org/obo/STATO_0000354			
+FWER adjusted p-value	OBI_0001265	Class	http://purl.obolibrary.org/obo/OBI_0001265			
+labeled nucleic acid extract	OBI_0001143	Class	http://purl.obolibrary.org/obo/OBI_0001143			
+average log signal intensity	STATO_0000188	Class	http://purl.obolibrary.org/obo/STATO_0000188			
+stratum population	STATO_0000216	Class	http://purl.obolibrary.org/obo/STATO_0000216			
+density	STATO_0000675	Class	http://purl.obolibrary.org/obo/STATO_0000675			
+presence of association hypothesis	STATO_0000158	Class	http://purl.obolibrary.org/obo/STATO_0000158			
+decile	STATO_0000292	Class	http://purl.obolibrary.org/obo/STATO_0000292			
+MA plot	STATO_0000040	Class	http://purl.obolibrary.org/obo/STATO_0000040			
+negative predictive value	STATO_0000619	Class	http://purl.obolibrary.org/obo/STATO_0000619			
+data transformation	OBI_0200000	Class	http://purl.obolibrary.org/obo/OBI_0200000			
+cultured cell	CL_0000010	Class	http://purl.obolibrary.org/obo/CL_0000010			
+container	OBI_0000967	Class	http://purl.obolibrary.org/obo/OBI_0000967			
+DNA microarray hybridization	STATO_0000249	Class	http://purl.obolibrary.org/obo/STATO_0000249			
+area under the precision-recall curve	STATO_0000691	Class	http://purl.obolibrary.org/obo/STATO_0000691			
+material component separation	OBI_0600014	Class	http://purl.obolibrary.org/obo/OBI_0600014			
+interval estimate	STATO_0000600	Class	http://purl.obolibrary.org/obo/STATO_0000600			
+has effect on	STATO_0000344	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000344			
+measure function	OBI_0000453	Class	http://purl.obolibrary.org/obo/OBI_0000453			
+measure of agreement	STATO_0000623	Class	http://purl.obolibrary.org/obo/STATO_0000623			
+Cohen's kappa	STATO_0000630	Class	http://purl.obolibrary.org/obo/STATO_0000630			
+cloning vector role	OBI_0000411	Class	http://purl.obolibrary.org/obo/OBI_0000411			
+version number	IAO_0000129	Class	http://purl.obolibrary.org/obo/IAO_0000129			
+estimate of	STATO_0000403	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000403			
+focused information criterion	STATO_0000379	Class	http://purl.obolibrary.org/obo/STATO_0000379			
+inter quartile range	STATO_0000164	Class	http://purl.obolibrary.org/obo/STATO_0000164			
+chi square test	OBI_0200200	Class	http://purl.obolibrary.org/obo/OBI_0200200			
+Funnel plot	STATO_0000112	Class	http://purl.obolibrary.org/obo/STATO_0000112			
+objective_achieved_by	OBI_0000833	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000833			
+time measurement datum	IAO_0000416	Class	http://purl.obolibrary.org/obo/IAO_0000416			
+skewness	STATO_0000068	Class	http://purl.obolibrary.org/obo/STATO_0000068			
+DerSimonian-Laird estimator	STATO_0000429	Class	http://purl.obolibrary.org/obo/STATO_0000429			
+Toeplitz covariance structure	STATO_0000357	Class	http://purl.obolibrary.org/obo/STATO_0000357			
+confidence interval	STATO_0000196	Class	http://purl.obolibrary.org/obo/STATO_0000196			
+statistical test power	STATO_0000200	Class	http://purl.obolibrary.org/obo/STATO_0000200			
+heterogeneous first-order autoregressive covariance structure	STATO_0000366	Class	http://purl.obolibrary.org/obo/STATO_0000366			
+outlier detection testing objective	STATO_0000439	Class	http://purl.obolibrary.org/obo/STATO_0000439			
+spatial exponential anisotropic covariance structure	STATO_0000353	Class	http://purl.obolibrary.org/obo/STATO_0000353			
+odds	STATO_0000627	Class	http://purl.obolibrary.org/obo/STATO_0000627			
+molecular label role	REO_0000171	Class	http://purl.obolibrary.org/obo/REO_0000171			
+genetic population background information	OBI_0001225	Class	http://purl.obolibrary.org/obo/OBI_0001225			
+hazard rate	STATO_0000671	Class	http://purl.obolibrary.org/obo/STATO_0000671			
+trait-specific relationship matrix best linear unbiaised prediction	STATO_0000482	Class	http://purl.obolibrary.org/obo/STATO_0000482			
+z-axis	STATO_0000012	Class	http://purl.obolibrary.org/obo/STATO_0000012			
+cytometry assay	OBI_0001977	Class	http://purl.obolibrary.org/obo/OBI_0001977			
+cross over design	OBI_0500003	Class	http://purl.obolibrary.org/obo/OBI_0500003			
+design matrix	STATO_0000289	Class	http://purl.obolibrary.org/obo/STATO_0000289			
+ready for release	IAO_0000122	Individual	http://purl.obolibrary.org/obo/IAO_0000122			
+augmented experimental design	STATO_0000499	Class	http://purl.obolibrary.org/obo/STATO_0000499			
+digital file	STATO_0000002	Class	http://purl.obolibrary.org/obo/STATO_0000002			
+Hunter-Schmidt estimator	STATO_0000426	Class	http://purl.obolibrary.org/obo/STATO_0000426			
+denotes	IAO_0000219	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000219			
+Hommel false discovery rate correction	STATO_0000552	Class	http://purl.obolibrary.org/obo/STATO_0000552			
+Roy’s Maximum Root	STATO_0000453	Class	http://purl.obolibrary.org/obo/STATO_0000453			
+strictly standardized mean difference	STATO_0000135	Class	http://purl.obolibrary.org/obo/STATO_0000135			
+Wald statistic	STATO_0000584	Class	http://purl.obolibrary.org/obo/STATO_0000584			
+DNA microarray	OBI_0400148	Class	http://purl.obolibrary.org/obo/OBI_0400148			
+Partial Least Square Discriminant Analysis	STATO_0000572	Class	http://purl.obolibrary.org/obo/STATO_0000572			
+has denominator	STATO_0000259	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000259			
+99% credible interval	STATO_0000458	Class	http://purl.obolibrary.org/obo/STATO_0000458			
+treatment contrast	STATO_0000307	Class	http://purl.obolibrary.org/obo/STATO_0000307			
+one dimensional cartesian spatial coordinate datum	IAO_0000401	Class	http://purl.obolibrary.org/obo/IAO_0000401			
+frequentist inference	STATO_0000707	Class	http://purl.obolibrary.org/obo/STATO_0000707			
+Pearson's Chi square test of goodness of fit	STATO_0000309	Class	http://purl.obolibrary.org/obo/STATO_0000309			
+prior probability	STATO_0000702	Class	http://purl.obolibrary.org/obo/STATO_0000702			
+extraction	OBI_0302884	Class	http://purl.obolibrary.org/obo/OBI_0302884			
+average linkage hierarchical clustering	OBI_0200043	Class	http://purl.obolibrary.org/obo/OBI_0200043			
+is declared by	STATO_0000004	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000004			
+log likelihood	STATO_0000550	Class	http://purl.obolibrary.org/obo/STATO_0000550			
+stato.owl	stato.owl	Entity	http://purl.obolibrary.org/obo/stato.owl			
+center calculation data transformation	OBI_0200181	Class	http://purl.obolibrary.org/obo/OBI_0200181			
+standardized mean difference	STATO_0000100	Class	http://purl.obolibrary.org/obo/STATO_0000100			
+Bernoulli distribution	STATO_0000262	Class	http://purl.obolibrary.org/obo/STATO_0000262			
+recombinant vector	OBI_0000731	Class	http://purl.obolibrary.org/obo/OBI_0000731			
+material to be added role	OBI_0000319	Class	http://purl.obolibrary.org/obo/OBI_0000319			
+expected value	STATO_0000230	Class	http://purl.obolibrary.org/obo/STATO_0000230			
+Weibull probability distribution	STATO_0000501	Class	http://purl.obolibrary.org/obo/STATO_0000501			
+standard normal distribution	STATO_0000180	Class	http://purl.obolibrary.org/obo/STATO_0000180			
+has interaction effect on	STATO_0000380	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000380			
+fractional factorial design	OBI_0500016	Class	http://purl.obolibrary.org/obo/OBI_0500016			
+sort function	OBI_0000403	Class	http://purl.obolibrary.org/obo/OBI_0000403			
+Archaea	NCBITaxon_2157	Class	http://purl.obolibrary.org/obo/NCBITaxon_2157			
+two tailed test	STATO_0000287	Class	http://purl.obolibrary.org/obo/STATO_0000287			
+pie chart	STATO_0000165	Class	http://purl.obolibrary.org/obo/STATO_0000165			
+uncurated	IAO_0000124	Individual	http://purl.obolibrary.org/obo/IAO_0000124			
+breeding value estimation	STATO_0000337	Class	http://purl.obolibrary.org/obo/STATO_0000337			
+parallel group design	OBI_0500006	Class	http://purl.obolibrary.org/obo/OBI_0500006			
+statistical model term testing	STATO_0000558	Class	http://purl.obolibrary.org/obo/STATO_0000558			
+first quartile	STATO_0000167	Class	http://purl.obolibrary.org/obo/STATO_0000167			
+linear mixed model	STATO_0000464	Class	http://purl.obolibrary.org/obo/STATO_0000464			
+BFO CLIF specification label	BFO_0000180	AnnotationProperty	http://purl.obolibrary.org/obo/BFO_0000180			
+Chi-squared statistic for homogeneity	http://purl.obolibrary.org/obo/STATO_0000698	Class	http://purl.obolibrary.org/obo/stato.owl#http://purl.obolibrary.org/obo/STATO_0000698			
+rarefaction curve	STATO_0000075	Class	http://purl.obolibrary.org/obo/STATO_0000075			
+partial area under the receiver operator characteristic curve	STATO_0000689	Class	http://purl.obolibrary.org/obo/STATO_0000689			
+posterior probability distribution	STATO_0000532	Class	http://purl.obolibrary.org/obo/STATO_0000532			
+complete randomization	STATO_0000517	Class	http://purl.obolibrary.org/obo/STATO_0000517			
+categorical value specification	OBI_0001930	Class	http://purl.obolibrary.org/obo/OBI_0001930			
+Goodman and Kruskal's gamma	STATO_0000612	Class	http://purl.obolibrary.org/obo/STATO_0000612			
+establishing cell culture	OBI_0600036	Class	http://purl.obolibrary.org/obo/OBI_0600036			A 'cell culture' as used here referes to a new lineage of cells in culture deriving from a single biological source.. New cultures are established through the initial isolation and culturing of cells from an organismal source, or through changes in an existing cell culture or line that result in a new culture with unique characteristics.  This can occur through the passaging/selection of a primary culture into a secondary culture or line, or experimental modifications of an existing cell culture or line such as an immortalization process or other stable genetic modification. This class covers establishment of cultures of either multicellular organism cells or unicellular organisms.
+sphericity test	STATO_0000131	Class	http://purl.obolibrary.org/obo/STATO_0000131			
+point estimate	STATO_0000599	Class	http://purl.obolibrary.org/obo/STATO_0000599			
+quantile	STATO_0000291	Class	http://purl.obolibrary.org/obo/STATO_0000291			
+dose response curve	OBI_0001172	Class	http://purl.obolibrary.org/obo/OBI_0001172			
+threshold cycle	STATO_0000190	Class	http://purl.obolibrary.org/obo/STATO_0000190			
+principal component regression	OBI_0200104	Class	http://purl.obolibrary.org/obo/OBI_0200104			
+block design	STATO_0000046	Class	http://purl.obolibrary.org/obo/STATO_0000046			
+averaging data transformation	OBI_0200170	Class	http://purl.obolibrary.org/obo/OBI_0200170			
+probability distribution location parameter	STATO_0000500	Class	http://purl.obolibrary.org/obo/STATO_0000500			
+relative risk difference	STATO_0000626	Class	http://purl.obolibrary.org/obo/STATO_0000626			
+continuous probability distribution	STATO_0000067	Class	http://purl.obolibrary.org/obo/STATO_0000067			
+Hardy-Weinberg equilibrium hypothesis	STATO_0000049	Class	http://purl.obolibrary.org/obo/STATO_0000049			
+Gini index	STATO_0000624	Class	http://purl.obolibrary.org/obo/STATO_0000624			
+is_proxy_for	OBI_0000314	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000314			
+false negative rate	STATO_0000220	Class	http://purl.obolibrary.org/obo/STATO_0000220			
+test of association between categorical variables	STATO_0000027	Class	http://purl.obolibrary.org/obo/STATO_0000027			
+contrast estimate	STATO_0000384	Class	http://purl.obolibrary.org/obo/STATO_0000384			
+target of material addition	OBI_1110109	Class	http://purl.obolibrary.org/obo/OBI_1110109			
+box and whisker plot	STATO_0000243	Class	http://purl.obolibrary.org/obo/STATO_0000243			
+model parameter estimate	STATO_0000144	Class	http://purl.obolibrary.org/obo/STATO_0000144			
+polynomial contrast	STATO_0000306	Class	http://purl.obolibrary.org/obo/STATO_0000306			
+experimentally modified cell in vitro	CL_0000578	Class	http://purl.obolibrary.org/obo/CL_0000578			
+ANCOVA	STATO_0000179	Class	http://purl.obolibrary.org/obo/STATO_0000179			
+fixed effect model	STATO_0000082	Class	http://purl.obolibrary.org/obo/STATO_0000082			
+absence of difference hypothesis	STATO_0000288	Class	http://purl.obolibrary.org/obo/STATO_0000288			
+achieves_planned_objective	OBI_0000417	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000417			
+image	IAO_0000101	Class	http://purl.obolibrary.org/obo/IAO_0000101			
+2x2 factorial design	OBI_0500015	Class	http://purl.obolibrary.org/obo/OBI_0500015			
+intercept	STATO_0000657	Class	http://purl.obolibrary.org/obo/STATO_0000657			
+narrow sense heritability	STATO_0000545	Class	http://purl.obolibrary.org/obo/STATO_0000545			
+Pillai's trace	STATO_0000451	Class	http://purl.obolibrary.org/obo/STATO_0000451			
+effect size estimate	STATO_0000085	Class	http://purl.obolibrary.org/obo/STATO_0000085			
+p-value for one-sided test	STATO_0000661	Class	http://purl.obolibrary.org/obo/STATO_0000661			
+contain function	OBI_0000370	Class	http://purl.obolibrary.org/obo/OBI_0000370			
+spatial exponential geometric anisotropic covariance structure	STATO_0000352	Class	http://purl.obolibrary.org/obo/STATO_0000352			
+gene list visualization	OBI_0200191	Class	http://purl.obolibrary.org/obo/OBI_0200191			
+coordinate system	STATO_0000010	Class	http://purl.obolibrary.org/obo/STATO_0000010			
+axis	STATO_0000007	Class	http://purl.obolibrary.org/obo/STATO_0000007			
+measurand role	OBI_0002444	Class	http://purl.obolibrary.org/obo/OBI_0002444			
+cell freezing medium	OBI_0001912	Class	http://purl.obolibrary.org/obo/OBI_0001912			
+case-control study design	STATO_0000089	Class	http://purl.obolibrary.org/obo/STATO_0000089			
+continuant	BFO_0000002	Class	http://purl.obolibrary.org/obo/BFO_0000002			
+probability distribution standard deviation	STATO_0000694	Class	http://purl.obolibrary.org/obo/STATO_0000694			
+symmetric distribution	STATO_0000329	Class	http://purl.obolibrary.org/obo/STATO_0000329			
+model term	STATO_0000466	Class	http://purl.obolibrary.org/obo/STATO_0000466			
+Student's t distribution	STATO_0000059	Class	http://purl.obolibrary.org/obo/STATO_0000059			
+class discovery objective	OBI_0200178	Class	http://purl.obolibrary.org/obo/OBI_0200178			
+preceded by	BFO_0000062	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000062			
+normal distribution	STATO_0000227	Class	http://purl.obolibrary.org/obo/STATO_0000227			
+spatial region	BFO_0000006	Class	http://purl.obolibrary.org/obo/BFO_0000006			
+Friedman test	STATO_0000641	Class	http://purl.obolibrary.org/obo/STATO_0000641			
+has time stamp	IAO_0000581	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000581			
+incidence rate ratio	STATO_0000680	Class	http://purl.obolibrary.org/obo/STATO_0000680			
+measurement accuracy as a percentage	STATO_0000705	Class	http://purl.obolibrary.org/obo/STATO_0000705			
+bearer of	RO_0000053	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000053			
+differential expression analysis data transformation	OBI_0000650	Class	http://purl.obolibrary.org/obo/OBI_0000650			
+maximum possible value	STATO_0000666	Class	http://purl.obolibrary.org/obo/STATO_0000666			
+study design dependent variable	OBI_0000751	Class	http://purl.obolibrary.org/obo/OBI_0000751			
+P matrix	STATO_0000496	Class	http://purl.obolibrary.org/obo/STATO_0000496			
+minimax sampling	STATO_0000516	Class	http://purl.obolibrary.org/obo/STATO_0000516			
+feasible generalized least squares estimation	STATO_0000374	Class	http://purl.obolibrary.org/obo/STATO_0000374			
+concentration	STATO_0000704	Class	http://purl.obolibrary.org/obo/STATO_0000704			
+false positive rate	STATO_0000053	Class	http://purl.obolibrary.org/obo/STATO_0000053			
+value-time curve	STATO_0000696	Class	http://purl.obolibrary.org/obo/STATO_0000696			
+factor analysis	STATO_0000567	Class	http://purl.obolibrary.org/obo/STATO_0000567			
+balanced design	STATO_0000003	Class	http://purl.obolibrary.org/obo/STATO_0000003			
+rights	rights	AnnotationProperty	http://purl.org/dc/elements/1.1/rights			
+weighted arithmetic mean	STATO_0000398	Class	http://purl.obolibrary.org/obo/STATO_0000398			
+residual mean square	STATO_0000375	Class	http://purl.obolibrary.org/obo/STATO_0000375			
+is about	IAO_0000136	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000136			
+preferred mathematical notation	STATO_0000404	AnnotationProperty	http://purl.obolibrary.org/obo/STATO_0000404			
+one-way ANOVA	STATO_0000044	Class	http://purl.obolibrary.org/obo/STATO_0000044			
+posterior probability	STATO_0000703	Class	http://purl.obolibrary.org/obo/STATO_0000703			
+Shapiro-Wilk test	STATO_0000077	Class	http://purl.obolibrary.org/obo/STATO_0000077			
+rational quadratic anisotropic covariance structure	STATO_0000348	Class	http://purl.obolibrary.org/obo/STATO_0000348			
+time stamped measurement datum	IAO_0000582	Class	http://purl.obolibrary.org/obo/IAO_0000582			
+role	BFO_0000023	Class	http://purl.obolibrary.org/obo/BFO_0000023			
+Bayesian information criterion	STATO_0000327	Class	http://purl.obolibrary.org/obo/STATO_0000327			
+study group population	STATO_0000193	Class	http://purl.obolibrary.org/obo/STATO_0000193			
+continuous multivariate probability distribution	STATO_0000538	Class	http://purl.obolibrary.org/obo/STATO_0000538			
+mass unit	UO_0000002	Class	http://purl.obolibrary.org/obo/UO_0000002			
+quartile	STATO_0000152	Class	http://purl.obolibrary.org/obo/STATO_0000152			
+number of true positive	STATO_0000595	Class	http://purl.obolibrary.org/obo/STATO_0000595			
+risk difference	STATO_0000424	Class	http://purl.obolibrary.org/obo/STATO_0000424			
+requires discussion	IAO_0000428	Individual	http://purl.obolibrary.org/obo/IAO_0000428			
+prior probability distribution	STATO_0000531	Class	http://purl.obolibrary.org/obo/STATO_0000531			
+estimate	STATO_0000471	Class	http://purl.obolibrary.org/obo/STATO_0000471			
+calibration plot	STATO_0000655	Class	http://purl.obolibrary.org/obo/STATO_0000655			
+specimen role	OBI_0000112	Class	http://purl.obolibrary.org/obo/OBI_0000112			
+power law distribution	STATO_0000389	Class	http://purl.obolibrary.org/obo/STATO_0000389			
+non-parametric distribution	STATO_0000321	Class	http://purl.obolibrary.org/obo/STATO_0000321			Initially discussed at https://github.com/incf-nidash/nidm/pull/191
+categorical label	OBI_0000963	Class	http://purl.obolibrary.org/obo/OBI_0000963			
+chromosome coordinate system	STATO_0000055	Class	http://purl.obolibrary.org/obo/STATO_0000055			
+probit regression for analysis of polychotomous dependent variable	STATO_0000106	Class	http://purl.obolibrary.org/obo/STATO_0000106			
+ANOVA	OBI_0200201	Class	http://purl.obolibrary.org/obo/OBI_0200201			
+corrected Akaike information criterion	STATO_0000326	Class	http://purl.obolibrary.org/obo/STATO_0000326			
+quota sampling	STATO_0000510	Class	http://purl.obolibrary.org/obo/STATO_0000510			
+hyper graeco latin square design	OBI_0500013	Class	http://purl.obolibrary.org/obo/OBI_0500013			
+Breslow-Day test for homogeneity of odds ratio	STATO_0000130	Class	http://purl.obolibrary.org/obo/STATO_0000130			
+RNA extraction	OBI_0666666	Class	http://purl.obolibrary.org/obo/OBI_0666666			
+matched pair of subjects	STATO_0000038	Class	http://purl.obolibrary.org/obo/STATO_0000038			
+geometric mean	STATO_0000396	Class	http://purl.obolibrary.org/obo/STATO_0000396			
+confidence level	STATO_0000561	Class	http://purl.obolibrary.org/obo/STATO_0000561			
+dye role	OBI_0000250	Class	http://purl.obolibrary.org/obo/OBI_0000250			
+Amniota	NCBITaxon_32524	Class	http://purl.obolibrary.org/obo/NCBITaxon_32524			
+signal to noise ratio	STATO_0000050	Class	http://purl.obolibrary.org/obo/STATO_0000050			
+agglomerative hierarchical clustering	OBI_0200154	Class	http://purl.obolibrary.org/obo/OBI_0200154			
+probability distribution scale parameter	STATO_0000435	Class	http://purl.obolibrary.org/obo/STATO_0000435			
+1 % false positive rate	STATO_0000281	Entity	http://purl.obolibrary.org/obo/STATO_0000281			
+SIMPLS	STATO_0000576	Class	http://purl.obolibrary.org/obo/STATO_0000576			
+material maintenance objective	OBI_0000806	Class	http://purl.obolibrary.org/obo/OBI_0000806			
+t-statistic	STATO_0000176	Class	http://purl.obolibrary.org/obo/STATO_0000176			
+processed specimen	OBI_0000953	Class	http://purl.obolibrary.org/obo/OBI_0000953			A tissue sample that has been sliced and stained for a histology study.
+Matthews correlation coefficient	STATO_0000524	Class	http://purl.obolibrary.org/obo/STATO_0000524			
+dimensionless ratio	STATO_0000300	Class	http://purl.obolibrary.org/obo/STATO_0000300			
+material entity	BFO_0000040	Class	http://purl.obolibrary.org/obo/BFO_0000040			
+has measurement unit label	IAO_0000039	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000039			
+multivariate imputation with chained equations	STATO_0000522	Class	http://purl.obolibrary.org/obo/STATO_0000522			
+q-statistic	STATO_0000606	Class	http://purl.obolibrary.org/obo/STATO_0000606			
+Box–Behnkens design	STATO_0000312	Class	http://purl.obolibrary.org/obo/STATO_0000312			
+GO:molecular_function	GO_0003674	Class	http://purl.obolibrary.org/obo/GO_0003674			
+Levene's test	STATO_0000078	Class	http://purl.obolibrary.org/obo/STATO_0000078			
+diagnostic odd ratio	STATO_0000679	Class	http://purl.obolibrary.org/obo/STATO_0000679			
+polyA RNA extraction	OBI_0000848	Class	http://purl.obolibrary.org/obo/OBI_0000848			
+Ante-dependence covariance structure	STATO_0000367	Class	http://purl.obolibrary.org/obo/STATO_0000367			
+Z-statistic	STATO_0000376	Class	http://purl.obolibrary.org/obo/STATO_0000376			
+survival analysis objective	OBI_0200083	Class	http://purl.obolibrary.org/obo/OBI_0200083			
+full factorial design	STATO_0000270	Class	http://purl.obolibrary.org/obo/STATO_0000270			
+material sample	OBI_0000747	Class	http://purl.obolibrary.org/obo/OBI_0000747			
+quadrat sampling	STATO_0000505	Class	http://purl.obolibrary.org/obo/STATO_0000505			
+anatomical cluster	UBERON_0000477	Class	http://purl.obolibrary.org/obo/UBERON_0000477			
+has quality	RO_0000086	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000086			
+single factor design	STATO_0000005	Class	http://purl.obolibrary.org/obo/STATO_0000005			
+Yate's corrected Chi-Squared test	STATO_0000070	Class	http://purl.obolibrary.org/obo/STATO_0000070			
+quality	BFO_0000019	Class	http://purl.obolibrary.org/obo/BFO_0000019			
+collecting specimen from organism	OBI_0600005	Class	http://purl.obolibrary.org/obo/OBI_0600005			
+Euteleostomi	NCBITaxon_117571	Class	http://purl.obolibrary.org/obo/NCBITaxon_117571			
+has order in sequence	STATO_0000382	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000382			
+homoskedasticity test	STATO_0000137	Class	http://purl.obolibrary.org/obo/STATO_0000137			
+has associated axiom(nl)	IAO_0000601	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000601			
+heterogeneous compound symmetry covariance structure	STATO_0000363	Class	http://purl.obolibrary.org/obo/STATO_0000363			
+Spear box and whisker plot	STATO_0000171	Class	http://purl.obolibrary.org/obo/STATO_0000171			
+labeled specimen	OBI_0000924	Class	http://purl.obolibrary.org/obo/OBI_0000924			
+multinomial probit regression for analysis of polychotomous dependent variable	STATO_0000084	Class	http://purl.obolibrary.org/obo/STATO_0000084			
+cytometer	OBI_0400137	Class	http://purl.obolibrary.org/obo/OBI_0400137			
+graph	IAO_0000038	Class	http://purl.obolibrary.org/obo/IAO_0000038			
+additive dominant genetic inheritance model	STATO_0000488	Class	http://purl.obolibrary.org/obo/STATO_0000488			
+absence of association hypothesis	STATO_0000056	Class	http://purl.obolibrary.org/obo/STATO_0000056			
+catalytic activity	GO_0003824	Class	http://purl.obolibrary.org/obo/GO_0003824			
+absence of negative difference hypothesis	STATO_0000294	Class	http://purl.obolibrary.org/obo/STATO_0000294			
+data item	IAO_0000027	Class	http://purl.obolibrary.org/obo/IAO_0000027			
+Gamma distribution	STATO_0000268	Class	http://purl.obolibrary.org/obo/STATO_0000268			
+partitioning objective	OBI_0200172	Class	http://purl.obolibrary.org/obo/OBI_0200172			
+Cochran's Q statistic	STATO_0000419	Class	http://purl.obolibrary.org/obo/STATO_0000419			
+gene list	OBI_0000118	Class	http://purl.obolibrary.org/obo/OBI_0000118			
+deviance	STATO_0000377	Class	http://purl.obolibrary.org/obo/STATO_0000377			
+Woolf's test	STATO_0000246	Class	http://purl.obolibrary.org/obo/STATO_0000246			
+misclassification rate	STATO_0000632	Class	http://purl.obolibrary.org/obo/STATO_0000632			
+Satterthwaite degree of freedom approximation	STATO_0000474	Class	http://purl.obolibrary.org/obo/STATO_0000474			
+absolute value	STATO_0000668	Class	http://purl.obolibrary.org/obo/STATO_0000668			
+computed from	STATO_0000557	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000557			
+Factor Analytic covariance structure	STATO_0000361	Class	http://purl.obolibrary.org/obo/STATO_0000361			
+ISA alternative term	OBI_0001847	AnnotationProperty	http://purl.obolibrary.org/obo/OBI_0001847			
+event rate	STATO_0000672	Class	http://purl.obolibrary.org/obo/STATO_0000672			
+number of orthogonal components	STATO_0000556	Class	http://purl.obolibrary.org/obo/STATO_0000556			
+ordinal variable	STATO_0000228	Class	http://purl.obolibrary.org/obo/STATO_0000228			
+differential expression analysis objective	OBI_0200031	Class	http://purl.obolibrary.org/obo/OBI_0200031			
+organization	OBI_0000245	Class	http://purl.obolibrary.org/obo/OBI_0000245			
+has grain	OBI_0000643	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000643			
+data transformation objective	OBI_0200166	Class	http://purl.obolibrary.org/obo/OBI_0200166			
+drawing a conclusion based on data	OBI_0000338	Class	http://purl.obolibrary.org/obo/OBI_0000338			
+sequence read	STATO_0000111	Class	http://purl.obolibrary.org/obo/STATO_0000111			
+has function	RO_0000085	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000085			
+goodness of fit hypothesis	STATO_0000058	Class	http://purl.obolibrary.org/obo/STATO_0000058			
+function	BFO_0000034	Class	http://purl.obolibrary.org/obo/BFO_0000034			
+bar chart	STATO_0000166	Class	http://purl.obolibrary.org/obo/STATO_0000166			
+term editor	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
+experimental unit role	STATO_0000162	Class	http://purl.obolibrary.org/obo/STATO_0000162			
+Sidik-Jonkman estimator	STATO_0000425	Class	http://purl.obolibrary.org/obo/STATO_0000425			
+information content entity	IAO_0000030	Class	http://purl.obolibrary.org/obo/IAO_0000030			
+range	STATO_0000035	Class	http://purl.obolibrary.org/obo/STATO_0000035			
+page	page	AnnotationProperty	http://xmlns.com/foaf/0.1/page			
+d	d	Entity	urn:swrl:var#d			
+paired observation comparison objective	STATO_0000654	Class	http://purl.obolibrary.org/obo/STATO_0000654			
+nucleic acid extraction	OBI_0666667	Class	http://purl.obolibrary.org/obo/OBI_0666667			
+adding material objective	OBI_0000434	Class	http://purl.obolibrary.org/obo/OBI_0000434			
+photodetector	OBI_0400082	Class	http://purl.obolibrary.org/obo/OBI_0400082			
+spherical coordinate system	STATO_0000014	Class	http://purl.obolibrary.org/obo/STATO_0000014			
+Scheffe test	STATO_0000156	Class	http://purl.obolibrary.org/obo/STATO_0000156			
+Mammalia	NCBITaxon_40674	Class	http://purl.obolibrary.org/obo/NCBITaxon_40674			
+model fitting	STATO_0000218	Class	http://purl.obolibrary.org/obo/STATO_0000218			
+sampling variance	STATO_0000650	Class	http://purl.obolibrary.org/obo/STATO_0000650			
+center value	STATO_0000574	Class	http://purl.obolibrary.org/obo/STATO_0000574			
+repeated measure analysis	STATO_0000369	Class	http://purl.obolibrary.org/obo/STATO_0000369			
+three dimensional cartesian spatial coordinate origin	STATO_0000018	Class	http://purl.obolibrary.org/obo/STATO_0000018			
+reagent role	OBI_0000086	Class	http://purl.obolibrary.org/obo/OBI_0000086			"(copied from ReO)
+Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
+
+Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
+
+In regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique)."
+factor level	STATO_0000265	Class	http://purl.obolibrary.org/obo/STATO_0000265			
+chain-referral sampling	STATO_0000512	Class	http://purl.obolibrary.org/obo/STATO_0000512			
+Benjamini and Yekutieli false discovery rate correction method	OBI_0200049	Class	http://purl.obolibrary.org/obo/OBI_0200049			
+derives from	RO_0001000	ObjectProperty	http://purl.obolibrary.org/obo/RO_0001000			
+RPKM-reads per kilobase of transcript per million fragments mapped	STATO_0000206	Class	http://purl.obolibrary.org/obo/STATO_0000206			
+Haybittle-Peto boundary analysis	STATO_0000463	Class	http://purl.obolibrary.org/obo/STATO_0000463			
+Bayesian model selection	STATO_0000143	Class	http://purl.obolibrary.org/obo/STATO_0000143			
+continuous variable	STATO_0000251	Class	http://purl.obolibrary.org/obo/STATO_0000251			
+realized in	BFO_0000054	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000054			Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+precision	STATO_0000416	Class	http://purl.obolibrary.org/obo/STATO_0000416			
+Bayes factor	STATO_0000266	Class	http://purl.obolibrary.org/obo/STATO_0000266			
+process	BFO_0000015	Class	http://purl.obolibrary.org/obo/BFO_0000015			
+no diagonal Factor Analytic covariance structure	STATO_0000360	Class	http://purl.obolibrary.org/obo/STATO_0000360			
+Pocock boundary analysis	STATO_0000462	Class	http://purl.obolibrary.org/obo/STATO_0000462			
+curation status specification	IAO_0000078	Class	http://purl.obolibrary.org/obo/IAO_0000078			
+banded Toeplitz covariance structure	STATO_0000356	Class	http://purl.obolibrary.org/obo/STATO_0000356			
+restricted maximum likelihood estimation	STATO_0000427	Class	http://purl.obolibrary.org/obo/STATO_0000427			
+variance for sample	STATO_0000643	Class	http://purl.obolibrary.org/obo/STATO_0000643			
+Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
+directive information entity	IAO_0000033	Class	http://purl.obolibrary.org/obo/IAO_0000033			
+Bilateria	NCBITaxon_33213	Class	http://purl.obolibrary.org/obo/NCBITaxon_33213			
+likelihood ratio	STATO_0000409	Class	http://purl.obolibrary.org/obo/STATO_0000409			
+region	SO_0000001	Class	http://purl.obolibrary.org/obo/SO_0000001			
+observed risk	STATO_0000423	Class	http://purl.obolibrary.org/obo/STATO_0000423			
+sphericity testing objective	STATO_0000183	Class	http://purl.obolibrary.org/obo/STATO_0000183			
+assay	OBI_0000070	Class	http://purl.obolibrary.org/obo/OBI_0000070			
+cartesian product	STATO_0000192	Class	http://purl.obolibrary.org/obo/STATO_0000192			
+line graph	IAO_0000573	Class	http://purl.obolibrary.org/obo/IAO_0000573			
+Kendall's correlation coefficient	STATO_0000240	Class	http://purl.obolibrary.org/obo/STATO_0000240			
+objective specification	IAO_0000005	Class	http://purl.obolibrary.org/obo/IAO_0000005			
+group sequential design	STATO_0000459	Class	http://purl.obolibrary.org/obo/STATO_0000459			
+has value	STATO_0000129	DatatypeProperty	http://purl.obolibrary.org/obo/STATO_0000129			
+error correction data transformation	OBI_0000668	Class	http://purl.obolibrary.org/obo/OBI_0000668			
+root-mean-square standardized effect	STATO_0000316	Class	http://purl.obolibrary.org/obo/STATO_0000316			
+Student's t-test	OBI_0000739	Class	http://purl.obolibrary.org/obo/OBI_0000739			
+Bayesian model	STATO_0000530	Class	http://purl.obolibrary.org/obo/STATO_0000530			
+alternative term	IAO_0000118	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000118			
+heterogeneous Toeplitz covariance structure	STATO_0000355	Class	http://purl.obolibrary.org/obo/STATO_0000355			
+data set	IAO_0000100	Class	http://purl.obolibrary.org/obo/IAO_0000100			
+Pareto type-I probability distribution	STATO_0000392	Class	http://purl.obolibrary.org/obo/STATO_0000392			
+one-dimensional spatial region	BFO_0000026	Class	http://purl.obolibrary.org/obo/BFO_0000026			
+percentage of variance	STATO_0000587	Class	http://purl.obolibrary.org/obo/STATO_0000587			
+LD plot	STATO_0000147	Class	http://purl.obolibrary.org/obo/STATO_0000147			
+three-dimensional spatial region	BFO_0000028	Class	http://purl.obolibrary.org/obo/BFO_0000028			
+location of	RO_0001015	ObjectProperty	http://purl.obolibrary.org/obo/RO_0001015			
+Description	description	AnnotationProperty	http://purl.org/dc/elements/1.1/description			An account of the content of the resource.
+sum contrast	STATO_0000308	Class	http://purl.obolibrary.org/obo/STATO_0000308			
+cloning vector	OBI_0000737	Class	http://purl.obolibrary.org/obo/OBI_0000737			
+data visualization	OBI_0200111	Class	http://purl.obolibrary.org/obo/OBI_0200111			
+median time-to-event	STATO_0000659	Class	http://purl.obolibrary.org/obo/STATO_0000659			
+within subject comparison statistical test	STATO_0000202	Class	http://purl.obolibrary.org/obo/STATO_0000202			
+omega-squared	STATO_0000318	Class	http://purl.obolibrary.org/obo/STATO_0000318			
+has fixed effect on	STATO_0000345	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000345			
+sample from organism	OBI_0000671	Class	http://purl.obolibrary.org/obo/OBI_0000671			
+cartesian coordinate axis	STATO_0000011	Class	http://purl.obolibrary.org/obo/STATO_0000011			
+divisive hierarchical clustering	OBI_0200155	Class	http://purl.obolibrary.org/obo/OBI_0200155			
+meta analysis by Hunter-Schmidt method	STATO_0000432	Class	http://purl.obolibrary.org/obo/STATO_0000432			
+has organization member	OBI_0001688	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0001688			
+reproducing kernel Hilbert space procedure	STATO_0000540	Class	http://purl.obolibrary.org/obo/STATO_0000540			
+simultaneous multiple testing correction	STATO_0000601	Class	http://purl.obolibrary.org/obo/STATO_0000601			
+has y coordinate value	IAO_0000406	DatatypeProperty	http://purl.obolibrary.org/obo/IAO_0000406			
+Likelihood-ratio test	OBI_0000861	Class	http://purl.obolibrary.org/obo/OBI_0000861			
+allele frequency	STATO_0000254	Class	http://purl.obolibrary.org/obo/STATO_0000254			
+elucidation	IAO_0000600	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000600			
+regression analysis method	OBI_0200102	Class	http://purl.obolibrary.org/obo/OBI_0200102			
+odds ratio	STATO_0000182	Class	http://purl.obolibrary.org/obo/STATO_0000182			
+95% confidence interval	STATO_0000231	Class	http://purl.obolibrary.org/obo/STATO_0000231			
+descriptive statistical calculation objective	OBI_0200078	Class	http://purl.obolibrary.org/obo/OBI_0200078			
+Mann-Whitney U-test	STATO_0000076	Class	http://purl.obolibrary.org/obo/STATO_0000076			
+TMM-trimmed mean of M-values corrected count	STATO_0000591	Class	http://purl.obolibrary.org/obo/STATO_0000591			
+optical filter	OBI_0400079	Class	http://purl.obolibrary.org/obo/OBI_0400079			
+group comparison objective	STATO_0000250	Class	http://purl.obolibrary.org/obo/STATO_0000250			
+intervention design	OBI_0000115	Class	http://purl.obolibrary.org/obo/OBI_0000115			
+graeco-latin square design	STATO_0000222	Class	http://purl.obolibrary.org/obo/STATO_0000222			
+empirical distribution	STATO_0000330	Class	http://purl.obolibrary.org/obo/STATO_0000330			
+m1	m1	Entity	urn:swrl:var#m1			
+bean plot	STATO_0000120	Class	http://purl.obolibrary.org/obo/STATO_0000120			
+G matrix	STATO_0000528	Class	http://purl.obolibrary.org/obo/STATO_0000528			
+receiver operational characteristics curve	STATO_0000274	Class	http://purl.obolibrary.org/obo/STATO_0000274			
+light source	OBI_0400065	Class	http://purl.obolibrary.org/obo/OBI_0400065			
+average value	STATO_0000573	Class	http://purl.obolibrary.org/obo/STATO_0000573			
+sum	http://purl.obolibrary.org/obo/STATO_0000669	Class	http://purl.obolibrary.org/obo/stato.owl#http://purl.obolibrary.org/obo/STATO_0000669			
+sequential multiple testing correction method	STATO_0000602	Class	http://purl.obolibrary.org/obo/STATO_0000602			
+scaled identity covariance structure	STATO_0000588	Class	http://purl.obolibrary.org/obo/STATO_0000588			
+Glass's delta	STATO_0000320	Class	http://purl.obolibrary.org/obo/STATO_0000320			
+Yuen t-Test with trimmed means	STATO_0000406	Class	http://purl.obolibrary.org/obo/STATO_0000406			
+sphericity hypothesis	STATO_0000217	Class	http://purl.obolibrary.org/obo/STATO_0000217			
+fluorescent reporter intensity	OBI_0000010	Class	http://purl.obolibrary.org/obo/OBI_0000010			
+nucleic acid hybridization	OBI_0302903	Class	http://purl.obolibrary.org/obo/OBI_0302903			
+in live cell assay	OBI_0000964	Class	http://purl.obolibrary.org/obo/OBI_0000964			
+dot plot	IAO_0000037	Class	http://purl.obolibrary.org/obo/IAO_0000037			
+r2 measure of linkage desequilibrium	STATO_0000123	Class	http://purl.obolibrary.org/obo/STATO_0000123			
+group assignment	OBI_0600015	Class	http://purl.obolibrary.org/obo/OBI_0600015			
+restricted randomization	STATO_0000446	Class	http://purl.obolibrary.org/obo/STATO_0000446			
+p-value for two-sided test	STATO_0000662	Class	http://purl.obolibrary.org/obo/STATO_0000662			
+is modeled by	STATO_0000476	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000476			
+state space model	STATO_0000541	Class	http://purl.obolibrary.org/obo/STATO_0000541			
+genetic alteration information	OBI_0001364	Class	http://purl.obolibrary.org/obo/OBI_0001364			
+tetrachoric correlation coefficient	STATO_0000212	Class	http://purl.obolibrary.org/obo/STATO_0000212			
+Cochran-Armitage Chi-Square Statistic for Trend	STATO_0000708	Class	http://purl.obolibrary.org/obo/STATO_0000708			
+number of false negative	STATO_0000598	Class	http://purl.obolibrary.org/obo/STATO_0000598			
+Kruskal Wallis test	STATO_0000094	Class	http://purl.obolibrary.org/obo/STATO_0000094			
+Grubbs' test	STATO_0000441	Class	http://purl.obolibrary.org/obo/STATO_0000441			
+conditional specification	IAO_0000001	Class	http://purl.obolibrary.org/obo/IAO_0000001			
+best linear unbiased predictor	STATO_0000336	Class	http://purl.obolibrary.org/obo/STATO_0000336			
+99% confidence interval	STATO_0000127	Class	http://purl.obolibrary.org/obo/STATO_0000127			
+statistical sample	STATO_0000651	Class	http://purl.obolibrary.org/obo/STATO_0000651			
+maximum likelihood estimation	STATO_0000428	Class	http://purl.obolibrary.org/obo/STATO_0000428			
+has x coordinate value	IAO_0000404	DatatypeProperty	http://purl.obolibrary.org/obo/IAO_0000404			
+standardized incidence ratio	STATO_0000681	Class	http://purl.obolibrary.org/obo/STATO_0000681			
+contingency table	STATO_0000140	Class	http://purl.obolibrary.org/obo/STATO_0000140			
+polychoric correlation coefficient	STATO_0000269	Class	http://purl.obolibrary.org/obo/STATO_0000269			
+molecular feature identification objective	OBI_0000131	Class	http://purl.obolibrary.org/obo/OBI_0000131			
+exact binomial test	STATO_0000298	Class	http://purl.obolibrary.org/obo/STATO_0000298			"scipy.stats.binom_test(x, n=None, p=0.5)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom_test.html#scipy.stats.binom_test
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1605"
+number of degrees of freedom	STATO_0000069	Class	http://purl.obolibrary.org/obo/STATO_0000069			
+survival curve	OBI_0000889	Class	http://purl.obolibrary.org/obo/OBI_0000889			
+g1	g1	Entity	urn:swrl:var#g1			
+median calculation	OBI_0200119	Class	http://purl.obolibrary.org/obo/OBI_0200119			
+blocking variable	STATO_0000248	Class	http://purl.obolibrary.org/obo/STATO_0000248			
+unstructured covariance structure	STATO_0000405	Class	http://purl.obolibrary.org/obo/STATO_0000405			
+Tetrapoda	NCBITaxon_32523	Class	http://purl.obolibrary.org/obo/NCBITaxon_32523			
+table	IAO_0000306	Class	http://purl.obolibrary.org/obo/IAO_0000306			
+target of material addition role	OBI_0000444	Class	http://purl.obolibrary.org/obo/OBI_0000444			
+environmental control device	OBI_0001034	Class	http://purl.obolibrary.org/obo/OBI_0001034			
+hit selection	STATO_0000277	Class	http://purl.obolibrary.org/obo/STATO_0000277			
+credible interval	STATO_0000455	Class	http://purl.obolibrary.org/obo/STATO_0000455			
+single linkage hierarchical clustering	OBI_0200045	Class	http://purl.obolibrary.org/obo/OBI_0200045			
+flow cell	OBI_0400043	Class	http://purl.obolibrary.org/obo/OBI_0400043			

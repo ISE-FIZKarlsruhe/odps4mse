@@ -1,0 +1,356 @@
+@prefix : <http://OntoCAPE/chemical_process_system/CPS_function/process.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://OntoCAPE/chemical_process_system/CPS_function/process.owl> .
+
+<http://OntoCAPE/chemical_process_system/CPS_function/process.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://OntoCAPE/upper_level/network_system.owl#enters
+<http://OntoCAPE/upper_level/network_system.owl#enters> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf> ;
+                                                        owl:inverseOf <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                                                        rdfs:domain <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> ;
+                                                        rdfs:range <http://OntoCAPE/upper_level/network_system.owl#Device> ;
+                                                        rdfs:comment "The relation Enters interconnects an ingoing DirectedConnection  to its target Device." ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#hasInput
+<http://OntoCAPE/upper_level/network_system.owl#hasInput> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf <http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf> ;
+                                                          rdfs:domain <http://OntoCAPE/upper_level/network_system.owl#Device> ;
+                                                          rdfs:range <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> ;
+                                                          rdfs:comment "The relation hasInput connects a Device to an incoming DirectedConnection." ;
+                                                          rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#hasOutput
+<http://OntoCAPE/upper_level/network_system.owl#hasOutput> rdf:type owl:ObjectProperty ;
+                                                           rdfs:subPropertyOf <http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf> ;
+                                                           owl:inverseOf <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                                           rdfs:domain <http://OntoCAPE/upper_level/network_system.owl#Device> ;
+                                                           rdfs:range <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> ;
+                                                           rdfs:comment "The relation hasOutput connects a Device to an outgoing DirectedConnection." ;
+                                                           rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf
+<http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isConnectedTo> ;
+                                                                 owl:inverseOf <http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf> ;
+                                                                 rdf:type owl:TransitiveProperty ;
+                                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                             <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                                           )
+                                                                             ] ;
+                                                                 rdfs:range [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                            <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                                          )
+                                                                            ] ;
+                                                                 rdfs:comment "The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one." ;
+                                                                 rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf
+<http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isConnectedTo> ;
+                                                               rdf:type owl:TransitiveProperty ;
+                                                               rdfs:domain [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                           <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                                         )
+                                                                           ] ;
+                                                               rdfs:range [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                          <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                                        )
+                                                                          ] ;
+                                                               rdfs:comment "The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one." ;
+                                                               rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#leaves
+<http://OntoCAPE/upper_level/network_system.owl#leaves> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf> ;
+                                                        rdfs:domain <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> ;
+                                                        rdfs:range <http://OntoCAPE/upper_level/network_system.owl#Device> ;
+                                                        rdfs:comment "The relation Leaves connects an outgoing DirectedConnection to its source Device." ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem
+<http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#hasSubsystem> ,
+                                                                               <http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo> ;
+                                                            owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf> ;
+                                                            rdfs:comment "The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem." ;
+                                                            rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#hasSubsystem
+<http://OntoCAPE/upper_level/system.owl#hasSubsystem> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isRelatedTo> ;
+                                                      owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isSubsystemOf> ;
+                                                      rdf:type owl:TransitiveProperty ;
+                                                      rdfs:comment "The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem." ;
+                                                      rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem
+<http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                                                               owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf> ;
+                                                               rdfs:comment "The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem." ;
+                                                               rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isConnectedTo
+<http://OntoCAPE/upper_level/system.owl#isConnectedTo> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isRelatedTo> ;
+                                                       owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isConnectedTo> ;
+                                                       rdf:type owl:SymmetricProperty ,
+                                                                owl:TransitiveProperty ;
+                                                       rdfs:comment "The relation isConnectedTo represents topological connectivity between System." ;
+                                                       rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf
+<http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo> ,
+                                                                                <http://OntoCAPE/upper_level/system.owl#isSubsystemOf> ;
+                                                             rdfs:comment "The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem." ;
+                                                             rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo
+<http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isRelatedTo> ;
+                                                             owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo> ;
+                                                             rdf:type owl:SymmetricProperty ;
+                                                             rdfs:comment "The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations." ;
+                                                             rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf
+<http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf> ;
+                                                                  rdfs:comment "The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem." ;
+                                                                  rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isRelatedTo
+<http://OntoCAPE/upper_level/system.owl#isRelatedTo> rdf:type owl:ObjectProperty ;
+                                                     owl:inverseOf <http://OntoCAPE/upper_level/system.owl#isRelatedTo> ;
+                                                     rdf:type owl:SymmetricProperty ,
+                                                              owl:TransitiveProperty ;
+                                                     rdfs:comment "The relation isRelatedTo subsumes all kinds of inter-system relations." ;
+                                                     rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  http://OntoCAPE/upper_level/system.owl#isSubsystemOf
+<http://OntoCAPE/upper_level/system.owl#isSubsystemOf> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://OntoCAPE/upper_level/system.owl#isRelatedTo> ;
+                                                       rdf:type owl:TransitiveProperty ;
+                                                       rdfs:comment "The relation isSubsystemOf refers from a Subsystem to its Supersystem." ;
+                                                       rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep
+:AggregatedProcessStep rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :ProcessStep
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                                                                    owl:someValuesFrom :ProcessStep
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:comment "An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence." ;
+                       rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct
+:OutputProduct rdf:type owl:Class ;
+               rdfs:subClassOf :ProcessState ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                 owl:someValuesFrom :ProcessStep
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                 owl:cardinality "0"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "An OutputProduct is a Material that is output by a ProcessStep." ;
+               rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process
+:Process rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AggregatedProcessStep
+                                                    [ rdf:type owl:Class ;
+                                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://OntoCAPE/upper_level/system.owl#isSubsystemOf> ;
+                                                                         owl:someValuesFrom :ProcessStep
+                                                                       ]
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:comment "An AggregatedProcessStep representing the entire function of the Process considered" ;
+         rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState
+:ProcessState rdf:type owl:Class ;
+              rdfs:subClassOf <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                owl:allValuesFrom :ProcessStep
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                owl:allValuesFrom :ProcessStep
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :ProcessState
+                                                                  :ProcessStep
+                                                                )
+                                                  ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :ProcessState
+                                                                  :ProcessStep
+                                                                )
+                                                  ]
+                              ] ;
+              rdfs:comment "A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step." ;
+              rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep
+:ProcessStep rdf:type owl:Class ;
+             rdfs:subClassOf <http://OntoCAPE/upper_level/network_system.owl#Device> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                               owl:someValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasOutput> ;
+                               owl:someValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                               owl:allValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasOutput> ;
+                               owl:allValuesFrom :ProcessState
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem> ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :ProcessState
+                                                                 :ProcessStep
+                                                               )
+                                                 ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf> ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :ProcessState
+                                                                 :ProcessStep
+                                                               )
+                                                 ]
+                             ] ;
+             rdfs:comment "A ProcessStep is a certain material processing procedure." ;
+             rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#Device
+<http://OntoCAPE/upper_level/network_system.owl#Device> rdf:type owl:Class ;
+                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasInput> ;
+                                                                          owl:allValuesFrom <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#hasOutput> ;
+                                                                          owl:allValuesFrom <http://OntoCAPE/upper_level/network_system.owl#DirectedConnection>
+                                                                        ] ;
+                                                        rdfs:comment "Devices are the crucial elements of a NetworkSystem, holding the major functionality." ;
+                                                        rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://OntoCAPE/upper_level/network_system.owl#DirectedConnection
+<http://OntoCAPE/upper_level/network_system.owl#DirectedConnection> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                                                                      owl:allValuesFrom <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                                                                      owl:allValuesFrom <http://OntoCAPE/upper_level/network_system.owl#Device>
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#enters> ;
+                                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://OntoCAPE/upper_level/network_system.owl#leaves> ;
+                                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                                    ] ;
+                                                                    rdfs:comment "DirectedConnection is a specialization of Connection and represents likewise the connecting element between Devices. However, the usage of DirectedConnection implies the indication of a directed interconnection." ;
+                                                                    rdfs:isDefinedBy <http://ontocape/upper_level/network_system.owl> .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:isDefinedBy <http://www.w3.org/2002/07/owl.owl> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Batch rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+:Continuous rdfs:isDefinedBy <http://ontocape/chemical_process_system/cps_function/process.owl> .
+
+
+<http://OntoCAPE/upper_level/system.owl#S> rdfs:comment "Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties." ;
+                                           rdfs:isDefinedBy <http://ontocape/upper_level/system.owl> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

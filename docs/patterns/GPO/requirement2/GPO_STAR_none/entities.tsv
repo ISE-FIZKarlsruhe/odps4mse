@@ -1,0 +1,74 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+hasProcessInput	EMMO_36e69413_8c59_4799_946c_10b05d266e22	ObjectProperty	http://emmo.info/emmo/middle/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22			
+gpo.ontology.link	gpo.ontology.link	Entity	https://gpo.ontology.link			
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+hasParticipant	EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a	ObjectProperty	http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a			"Participation is a parthood relation: you must be part of the process to contribute to it. A participant whose 4D extension is totally contained within the process.
+
+Participation is not under direct parthood since a process is not strictly related to reductionism, but it's a way to categorize temporal regions by the interpreters."
+hasHolisticOvercross	EMMO_53e5b1e1_6026_4ddc_8a4a_3aaaa5fdbdb7	ObjectProperty	http://emmo.info/emmo#EMMO_53e5b1e1_6026_4ddc_8a4a_3aaaa5fdbdb7			This relation is about two wholes that overlap, and whose intersection is an holistic part of both.
+SymbolicConstruct	EMMO_89a0c87c_0804_4013_937a_6fe234d9499c	Class	http://emmo.info/emmo#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c			This class collects individuals that represents arrangements of strings, or other symbolic compositions, without any particular predifined arrangement schema.
+hasHolisticSpatialPart	EMMO_5ceab41b_2aea_4041_9e9c_a243f7562cee	ObjectProperty	http://emmo.info/emmo#EMMO_5ceab41b_2aea_4041_9e9c_a243f7562cee			
+hasOvercrossing	EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420	ObjectProperty	http://emmo.info/emmo#EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420			
+EMMORelation	EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5	ObjectProperty	http://emmo.info/emmo#EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5			
+Sign	EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d	Class	http://emmo.info/emmo#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d			"A 'Sign' can have temporal-direct-parts which are 'Sign' themselves.
+
+A 'Sign' usually havs 'sign' spatial direct parts only up to a certain elementary semiotic level, in which the part is only a 'Physical' and no more a 'Sign' (i.e. it stands for nothing). This elementary semiotic level is peculiar to each particular system of signs (e.g. text, painting).
+
+Just like an 'Elementary' in the 'Physical' branch, each 'Sign' branch should have an a-tomistic mereological part."
+hasSpatialEssentialPart	EMMO_f68030be_94b8_4c61_a161_886468558054	ObjectProperty	http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054			In EMMO FOL this is a defined property. In OWL spatial relations are primitive.
+hasMember	EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4	ObjectProperty	http://emmo.info/emmo#EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4			
+Information	GPO_a7003b69_ce78_48fe_a717_e04e1266c6cd	Class	https://gpo.ontology.link/GPO_a7003b69_ce78_48fe_a717_e04e1266c6cd			
+hasProperPart	EMMO_9380ab64_0363_4804_b13f_3a8a94119a76	ObjectProperty	http://emmo.info/emmo#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76			
+hasProcessOutput	EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840	ObjectProperty	http://emmo.info/emmo#EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840	hasProduct		The partial overlapping is required since the creating process is distinct with the process in which the product is used or consumed.
+anyURI	anyURI	Entity	http://www.w3.org/2001/XMLSchema#anyURI			
+EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84	EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84	AnnotationProperty	http://emmo.info/emmo#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84			
+Nothing	Nothing	Entity	http://www.w3.org/2002/07/owl#Nothing			
+hasPart	EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f	ObjectProperty	http://emmo.info/emmo#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f			All other mereology relations are defined using hasPart as primitive. It is expressed in FOL by predicate P.
+Participant	EMMO_13191289_6c2b_4741_93e1_82d53bd0e703	Class	http://emmo.info/emmo#EMMO_13191289_6c2b_4741_93e1_82d53bd0e703			
+EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9	EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9	AnnotationProperty	http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9			
+EMMO_705f27ae_954c_4f13_98aa_18473fc52b25	EMMO_705f27ae_954c_4f13_98aa_18473fc52b25	AnnotationProperty	http://emmo.info/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25			
+Field	EMMO_70dac51e_bddd_48c2_8a98_7d8395e91fc2	Class	http://emmo.info/emmo#EMMO_70dac51e_bddd_48c2_8a98_7d8395e91fc2			
+Energy	GPO_1880a2e6_0c9f_425a_9615_d4bdf121215f	Class	https://gpo.ontology.link/GPO_1880a2e6_0c9f_425a_9615_d4bdf121215f			Energy as physical concept
+Item	EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de	Class	http://emmo.info/emmo#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de			"A world object is self-connected if any two parts that make up the whole are topologically connected to each other. 
+
+In the EMMO, topological connectivity is based on causality.
+
+All physical systems, i.e. systems whose behaviour is explained by physics laws, are represented only by 'Item'-s.
+
+Members of a 'Collection' lack of causality connection, i.e. they do not constitute a physical system as a whole."
+hasHolisticPart	EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b	ObjectProperty	http://emmo.info/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b			
+Tool	EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe	Class	http://emmo.info/emmo#EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe			
+mereological	EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee	ObjectProperty	http://emmo.info/emmo#EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee			The EMMO adheres to Atomistic General Extensional Mereology (AGEM).
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+Object	EMMO_90ae56e4_d197_49b6_be1a_0049e4756606	Class	http://emmo.info/emmo#EMMO_90ae56e4_d197_49b6_be1a_0049e4756606	Continuant | Endurant		"A continuant (here called object) is usually defined as a whole whose all possible temporal parts are always satisfying a specific criterion (wich is the classical definition of continuants).
+
+However that's not possible in general, since we will finally end to temporal parts whose temporal extension is so small that the connectivity relations that define the object will no longer hold. That's the case when the temporal interval is lower than the interval that characterize the causality interactions between the object parts.
+
+In other terms, if the time span of a temporal part is lower than the inverse of the frequency of interactions between the constituents, then the constituents in such temporal part are not connected. The object is no more an object, neither an item, but simply a collection of fundamental parts.
+
+To overcome this issue, we can identify an minimum holistic temporal part (a lower time interval value), below which a specific definition for an object type does not hold anymore, that is called a fundamental."
+Quantum	EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68	Class	http://emmo.info/emmo#EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68			"A 'Quantum' is the most fundamental subclass of 'Item', since its individuals stand for the simplest possible world objects, and are considered self-connected by definition.
+
+The quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.
+
+Space and time emerge following the network of causal connections between quantum objects. So quantum objects are adimensional objects, that precede space and time dimensions.
+
+A quantum is the EMMO mereological atomistic entity. 
+
+To avoid confusion with the concept of atom coming from physics, we will use the expression quantum mereology, instead of atomistic mereology."
+Universe	EMMO_08cb807c_e626_447b_863f_e2835540e918	Entity	http://emmo.info/emmo#EMMO_08cb807c_e626_447b_863f_e2835540e918			
+hasTemporalPart	EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6	ObjectProperty	http://emmo.info/emmo#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6			In EMMO FOL this is a defined property. In OWL temporal relations are primitive.
+Symbolic	EMMO_057e7d57_aff0_49de_911a_8861d85cef40	Class	http://emmo.info/emmo#EMMO_057e7d57_aff0_49de_911a_8861d85cef40			"A symbolic object possesses a reductionistic oriented structure.
+
+For example, text is made of words, spaces and punctuations. Words are made of characters (i.e. atomic symbols)."
+hasHolisticRelation	EMMO_646cdc47_f955_4da3_9398_9aac0edf48a6	ObjectProperty	http://emmo.info/emmo#EMMO_646cdc47_f955_4da3_9398_9aac0edf48a6			
+EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f	EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f	Entity	http://emmo.info/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+seeAlso	seeAlso	Entity	http://www.w3.org/2000/01/rdf-schema#seeAlso			
+EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a	EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a	AnnotationProperty	http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a			
+Matter	EMMO_5b2222df_4da6_442f_8244_96e9e45887d1	Class	http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+hasOverlap	EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6	ObjectProperty	http://emmo.info/emmo#EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+hasSpatialPart	EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846	ObjectProperty	http://emmo.info/emmo#EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846			
+Material	EMMO_4207e895_8b83_4318_996a_72cfb32acd94	Class	http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94			A instance of a material (e.g. nitrogen) can represent different states of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found.

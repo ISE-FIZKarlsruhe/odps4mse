@@ -1,0 +1,15 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+CompositeActivity	CompositeActivity	Class	http://purl.org/wild/vocab#CompositeActivity			
+hasChildActivity	hasChildActivity	ObjectProperty	http://purl.org/wild/vocab#hasChildActivity			
+AtomicActivity	AtomicActivity	Class	http://purl.org/wild/vocab#AtomicActivity			
+Activity	Activity	Class	http://purl.org/wild/vocab#Activity			
+ConditionalActivity	ConditionalActivity	Class	http://purl.org/wild/vocab#ConditionalActivity			
+SequentialActivity	SequentialActivity	Class	http://purl.org/wild/vocab#SequentialActivity			
+WorkflowModel	WorkflowModel	Class	http://purl.org/wild/vocab#WorkflowModel			
+hasAtomicActivity	hasAtomicActivity	ObjectProperty	http://purl.org/wild/vocab#hasAtomicActivity			
+ParallelActivity	ParallelActivity	Class	http://purl.org/wild/vocab#ParallelActivity			
+accompanying	accompanying	AnnotationProperty	http://purl.org/list/vocab#accompanying			
+activityInstanceOf	activityInstanceOf	ObjectProperty	http://purl.org/wild/vocab#activityInstanceOf			
+hasDescendantActivity	hasDescendantActivity	ObjectProperty	http://purl.org/wild/vocab#hasDescendantActivity			
+containsActivity	containsActivity	ObjectProperty	http://purl.org/wild/vocab#containsActivity			
+vocab	vocab	Entity	http://purl.org/wild/vocab			

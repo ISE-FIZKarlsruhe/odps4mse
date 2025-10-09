@@ -1,0 +1,14 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+isInputVarOf	isInputVarOf	ObjectProperty	http://purl.org/net/p-plan#isInputVarOf			
+correspondsToVariable	correspondsToVariable	ObjectProperty	http://purl.org/net/p-plan#correspondsToVariable			
+definition	definition	AnnotationProperty	http://www.w3.org/ns/prov#definition			
+Variable	Variable	Class	http://purl.org/net/p-plan#Variable			
+		Entity	http://purl.org/net/p-plan#			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+hasInputVar	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
+isVariableofPlan	isVariableOfPlan	ObjectProperty	http://purl.org/net/p-plan#isVariableOfPlan			
+isOutputVarOf	isOutputVarOf	ObjectProperty	http://purl.org/net/p-plan#isOutputVarOf			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+Entity	Entity	Class	http://purl.org/net/p-plan#Entity			
+hasOutputVar	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			

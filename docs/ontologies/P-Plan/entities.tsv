@@ -1,0 +1,28 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+Plan	Plan	Class	http://www.w3.org/ns/prov#Plan			
+correspondsToVariable	correspondsToVariable	ObjectProperty	http://purl.org/net/p-plan#correspondsToVariable			
+Bundle	Bundle	Class	http://www.w3.org/ns/prov#Bundle			
+preferredNamespaceUri	preferredNamespaceUri	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespaceUri			
+preferredNamespacePrefix	preferredNamespacePrefix	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespacePrefix			
+isVariableofPlan	isVariableOfPlan	ObjectProperty	http://purl.org/net/p-plan#isVariableOfPlan			
+correspondsToStep	correspondsToStep	ObjectProperty	http://purl.org/net/p-plan#correspondsToStep			
+Activity	Activity	Class	http://purl.org/net/p-plan#Activity			A p-plan:Activity represents the execution process planned in a p-plan:Step
+created	created	AnnotationProperty	http://purl.org/dc/terms/created			
+title	title	AnnotationProperty	http://purl.org/dc/terms/title			
+hasOutputVar	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
+isPreceededBy	isPreceededBy	ObjectProperty	http://purl.org/net/p-plan#isPreceededBy			http://purl.org/net/p-plan#
+isInputVarOf	isInputVarOf	ObjectProperty	http://purl.org/net/p-plan#isInputVarOf			
+definition	definition	AnnotationProperty	http://www.w3.org/ns/prov#definition			
+Plan	Plan	Class	http://purl.org/net/p-plan#Plan			
+Variable	Variable	Class	http://purl.org/net/p-plan#Variable			
+		Individual	http://purl.org/net/p-plan#			PROV extension for linking Plans and parts of plans to their respective executions. Created by Daniel Garijo and Yolanda Gil
+modified	modified	AnnotationProperty	http://purl.org/dc/terms/modified			
+hasInputVar	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+Entity	Entity	Class	http://www.w3.org/ns/prov#Entity			
+Bundle	Bundle	Class	http://purl.org/net/p-plan#Bundle			
+isStepOfPlan	isStepOfPlan	ObjectProperty	http://purl.org/net/p-plan#isStepOfPlan			
+isOutputVarOf	isOutputVarOf	ObjectProperty	http://purl.org/net/p-plan#isOutputVarOf			
+Entity	Entity	Class	http://purl.org/net/p-plan#Entity			
+Step	Step	Class	http://purl.org/net/p-plan#Step			
+description	description	AnnotationProperty	http://purl.org/dc/terms/description			

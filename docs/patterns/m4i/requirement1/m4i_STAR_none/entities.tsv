@@ -1,0 +1,19 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+closeMatch	closeMatch	AnnotationProperty	http://www.w3.org/2004/02/skos/core#closeMatch			
+ist Voraussetzung für Schritt	BFO_0000063	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000063			
+		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
+ends with	RO_0002230	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002230	finished by		
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+Teil von	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+Prozess	BFO_0000015	Class	http://purl.obolibrary.org/obo/BFO_0000015			
+realisierbare Entität	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
+seeAlso	seeAlso	Entity	http://www.w3.org/2000/01/rdf-schema#seeAlso			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+Arbeitsschritt	ProcessingStep	Class	http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep			
+hat Teil	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+beginnt mit	RO_0002224	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002224	started by		

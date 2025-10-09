@@ -1,0 +1,272 @@
+- **corresponds to Template** (*ObjectProperty*) — `correspondsToTemplate` — <http://www.opmw.org/ontology/correspondsToTemplate> — _comment:_ "Property that binds an execution account to the template of the whole workflow. The template contains the plan for the workflow.
+  <span class='search-tokens' style='display:none'>corresponds To Template corresponds to  Template corresponds to  template corresponds to Template corresponds to template correspondsToTemplate correspondstotemplate http://www.opmw.org/ontology/corresponds To Template http://www.opmw.org/ontology/corresponds to template http://www.opmw.org/ontology/correspondsToTemplate http://www.opmw.org/ontology/correspondstotemplate</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix opmo: <http://openprovenance.org/model/opmo#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmo: <http://openprovenance.org/model/opmo#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowExecutionProcess/acc1>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Execution Process/acc1> <http://www.opmw.org/export/resource/ workflow execution process/acc1> <http://www.opmw.org/export/resource/WorkflowExecutionProcess/acc1> <http://www.opmw.org/export/resource/workflowexecutionprocess/acc1></span>
+- **     a opmo:Account, opmw:workflowExecutionAccount;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmo: Account, opmw:workflow Execution Account;      a opmo: account, opmw:workflow execution account;      a opmo:Account, opmw:workflowExecutionAccount;      a opmo:account, opmw:workflowexecutionaccount;</span>
+- **     opmw:correspondsToTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:corresponds To Template <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW EDM>."      opmw:corresponds to template <http://www.opmw.org/export/resource/ workflow template/aquaflow edm>."      opmw:correspondsToTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW EDM>."      opmw:correspondsToTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."      opmw:correspondstotemplate <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_edm>."</span>
+- **is Variable of Template** (*ObjectProperty*) — `isVariableOfTemplate` — <http://www.opmw.org/ontology/isVariableOfTemplate> — _comment:_ "Property used to dessignate which workflow Data Variables belong to a workflow template.
+  <span class='search-tokens' style='display:none'>http://www.opmw.org/ontology/is Variable Of Template http://www.opmw.org/ontology/is variable of template http://www.opmw.org/ontology/isVariableOfTemplate http://www.opmw.org/ontology/isvariableoftemplate is  Variable of  Template is  variable of  template is Variable Of Template is Variable of Template is variable of template isVariableOfTemplate isvariableoftemplate</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/page/resource/DataVariable/AQUAFLOW_EDM_HOURLYDATA>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/page/resource/ Data Variable/AQUAFLOW EDM HOURLYDATA> <http://www.opmw.org/export/page/resource/ data variable/aquaflow edm hourlydata> <http://www.opmw.org/export/page/resource/DataVariable/AQUAFLOW EDM HOURLYDATA> <http://www.opmw.org/export/page/resource/DataVariable/AQUAFLOW_EDM_HOURLYDATA> <http://www.opmw.org/export/page/resource/datavariable/aquaflow_edm_hourlydata></span>
+- **     a opmw:DataVariable;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmw: Data Variable;      a opmw: data variable;      a opmw:DataVariable;      a opmw:datavariable;</span>
+- **     opmw:isVariableOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:is Variable Of Template <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW EDM>."      opmw:is variable of template <http://www.opmw.org/export/resource/ workflow template/aquaflow edm>."      opmw:isVariableOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW EDM>."      opmw:isVariableOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."      opmw:isvariableoftemplate <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_edm>."</span>
+- **comment** (*Entity*) — `comment` — <http://www.w3.org/2000/01/rdf-schema#comment>
+  <span class='search-tokens' style='display:none'>comment http://www.w3.org/2000/01/rdf schema#comment http://www.w3.org/2000/01/rdf-schema#comment</span>
+- **is Parameter of Template** (*ObjectProperty*) — `isParameterOfTemplate` — <http://www.opmw.org/ontology/isParameterOfTemplate> — _comment:_ "Property used to dessignate which workflow Parameter Variables belong to a workflow template.
+  <span class='search-tokens' style='display:none'>http://www.opmw.org/ontology/is Parameter Of Template http://www.opmw.org/ontology/is parameter of template http://www.opmw.org/ontology/isParameterOfTemplate http://www.opmw.org/ontology/isparameteroftemplate is  Parameter of  Template is  parameter of  template is Parameter Of Template is Parameter of Template is parameter of template isParameterOfTemplate isparameteroftemplate</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DATE>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Parameter Variable/AQUAFLOW EDM DATE> <http://www.opmw.org/export/resource/ parameter variable/aquaflow edm date> <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW EDM DATE> <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DATE> <http://www.opmw.org/export/resource/parametervariable/aquaflow_edm_date></span>
+- **     a opmw:ParameterVariable;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmw: Parameter Variable;      a opmw: parameter variable;      a opmw:ParameterVariable;      a opmw:parametervariable;</span>
+- **     opmw:isParameterOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:is Parameter Of Template <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW EDM>."      opmw:is parameter of template <http://www.opmw.org/export/resource/ workflow template/aquaflow edm>."      opmw:isParameterOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW EDM>."      opmw:isParameterOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."      opmw:isparameteroftemplate <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_edm>."</span>
+- **Workflow Template Process** (*Class*) — `WorkflowTemplateProcess` — <http://www.opmw.org/ontology/WorkflowTemplateProcess> — _comment:_ "A workflow process template is an abstraction of the workflow execution process step that aims to describe the method followed by the scientist instead of its specific instantiation.
+  <span class='search-tokens' style='display:none'>Workflow  Template  Process Workflow Template Process WorkflowTemplateProcess http://www.opmw.org/ontology/ Workflow Template Process http://www.opmw.org/ontology/ workflow template process http://www.opmw.org/ontology/WorkflowTemplateProcess http://www.opmw.org/ontology/workflowtemplateprocess workflow  template  process workflow template process workflowtemplateprocess</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix water: <http://www.isi.edu/ac/Water/library.owl#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix water: <http://www.isi.edu/ac/ Water/library.owl#> . @prefix water: <http://www.isi.edu/ac/ water/library.owl#> . @prefix water: <http://www.isi.edu/ac/Water/library.owl#> . @prefix water: <http://www.isi.edu/ac/water/library.owl#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CALCULATEHOURLYAVERAGES>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Template Process/AQUAFLOW NTM CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/ workflow template process/aquaflow ntm calculatehourlyaverages> <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW NTM CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/workflowtemplateprocess/aquaflow_ntm_calculatehourlyaverages></span>
+- **      a opmw:ProcessTemplate, water:CalculateHourlyAverages;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      a opmw: Process Template, water: Calculate Hourly Averages;       a opmw: process template, water: calculate hourly averages;       a opmw:ProcessTemplate, water:CalculateHourlyAverages;       a opmw:processtemplate, water:calculatehourlyaverages;</span>
+- **      opmw:template <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM>;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:template <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW NTM>;       opmw:template <http://www.opmw.org/export/resource/ workflow template/aquaflow ntm>;       opmw:template <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW NTM>;       opmw:template <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM>;       opmw:template <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_ntm>;</span>
+- **      opmw:uses <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_FILTEREDDATA>.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:uses <http://www.opmw.org/export/resource/ Data Variable/AQUAFLOW NTM FILTEREDDATA>.       opmw:uses <http://www.opmw.org/export/resource/ data variable/aquaflow ntm filtereddata>.       opmw:uses <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW NTM FILTEREDDATA>.       opmw:uses <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_FILTEREDDATA>.       opmw:uses <http://www.opmw.org/export/resource/datavariable/aquaflow_ntm_filtereddata>.</span>
+- **      "** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      "</span>
+- **corresponds to Template Artifact** (*ObjectProperty*) — `correspondsToTemplateArtifact` — <http://www.opmw.org/ontology/correspondsToTemplateArtifact> — _comment:_ "Property that binds a workflow execution artifact to its correspondant workflow template artifact.
+  <span class='search-tokens' style='display:none'>corresponds To Template Artifact corresponds to  Template  Artifact corresponds to  template  artifact corresponds to Template Artifact corresponds to template artifact correspondsToTemplateArtifact correspondstotemplateartifact http://www.opmw.org/ontology/corresponds To Template Artifact http://www.opmw.org/ontology/corresponds to template artifact http://www.opmw.org/ontology/correspondsToTemplateArtifact http://www.opmw.org/ontology/correspondstotemplateartifact</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix opmv: <http://purl.org/net/opmv/ns#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmv: <http://purl.org/net/opmv/ns#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DEPTH1.2150836> ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Execution Artifact/DEPTH1.2150836>  <http://www.opmw.org/export/resource/ workflow execution artifact/depth1.2150836>  <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DEPTH1.2150836>  <http://www.opmw.org/export/resource/workflowexecutionartifact/depth1.2150836> </span>
+- **       a opmv:Artifact, opmw:WorkflowExecutionArtifact;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>       a opmv: Artifact, opmw: Workflow Execution Artifact;        a opmv: artifact, opmw: workflow execution artifact;        a opmv:Artifact, opmw:WorkflowExecutionArtifact;        a opmv:artifact, opmw:workflowexecutionartifact;</span>
+- **       opmw:correspondsToTemplateArtifact <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DEPTH>."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>       opmw:corresponds To Template Artifact <http://www.opmw.org/export/resource/ Parameter Variable/AQUAFLOW EDM DEPTH>."        opmw:corresponds to template artifact <http://www.opmw.org/export/resource/ parameter variable/aquaflow edm depth>."        opmw:correspondsToTemplateArtifact <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW EDM DEPTH>."        opmw:correspondsToTemplateArtifact <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DEPTH>."        opmw:correspondstotemplateartifact <http://www.opmw.org/export/resource/parametervariable/aquaflow_edm_depth>."</span>
+- **corresponds to Template Process** (*ObjectProperty*) — `correspondsToTemplateProcess` — <http://www.opmw.org/ontology/correspondsToTemplateProcess> — _comment:_ "Property that binds a workflow execution process  to its correspondant process template.
+  <span class='search-tokens' style='display:none'>corresponds To Template Process corresponds to  Template  Process corresponds to  template  process corresponds to Template Process corresponds to template process correspondsToTemplateProcess correspondstotemplateprocess http://www.opmw.org/ontology/corresponds To Template Process http://www.opmw.org/ontology/corresponds to template process http://www.opmw.org/ontology/correspondsToTemplateProcess http://www.opmw.org/ontology/correspondstotemplateprocess</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix opmv: <http://purl.org/net/opmv/ns#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmv: <http://purl.org/net/opmv/ns#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDM133549210450086>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Execution Process/REAERATIONEDM133549210450086> <http://www.opmw.org/export/resource/ workflow execution process/reaerationedm133549210450086> <http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDM133549210450086> <http://www.opmw.org/export/resource/workflowexecutionprocess/reaerationedm133549210450086></span>
+- **     a opmv:Process, opmw:WorkflowExecutionProcess;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmv: Process, opmw: Workflow Execution Process;      a opmv: process, opmw: workflow execution process;      a opmv:Process, opmw:WorkflowExecutionProcess;      a opmv:process, opmw:workflowexecutionprocess;</span>
+- **     opmw:correspondsToTemplateProcess <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_REAERATIONEDM>. "** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:corresponds To Template Process <http://www.opmw.org/export/resource/ Workflow Template Process/AQUAFLOW EDM REAERATIONEDM>. "      opmw:corresponds to template process <http://www.opmw.org/export/resource/ workflow template process/aquaflow edm reaerationedm>. "      opmw:correspondsToTemplateProcess <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW EDM REAERATIONEDM>. "      opmw:correspondsToTemplateProcess <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_REAERATIONEDM>. "      opmw:correspondstotemplateprocess <http://www.opmw.org/export/resource/workflowtemplateprocess/aquaflow_edm_reaerationedm>. "</span>
+- **Workflow Template Artifact** (*Class*) — `WorkflowTemplateArtifact` — <http://www.opmw.org/ontology/WorkflowTemplateArtifact> — _comment:_ "A workflow template artifact is part of a workflow template. It explains what kind of artifact is used or generated by the process template, along with possible restrictions that it may have.
+  <span class='search-tokens' style='display:none'>Workflow  Template  Artifact Workflow Template Artifact WorkflowTemplateArtifact http://www.opmw.org/ontology/ Workflow Template Artifact http://www.opmw.org/ontology/ workflow template artifact http://www.opmw.org/ontology/WorkflowTemplateArtifact http://www.opmw.org/ontology/workflowtemplateartifact workflow  template  artifact workflow template artifact workflowtemplateartifact</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **There are two different types of workflow template artifacts: data variables and parameter variables."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>There are two different types of workflow template artifacts: data variables and parameter variables." there are two different types of workflow template artifacts: data variables and parameter variables."</span>
+- **is Step of Template** (*ObjectProperty*) — `isStepOfTemplate` — <http://www.opmw.org/ontology/isStepOfTemplate> — _comment:_ "Property used to dessignate which workflow Steps (or Workflow Template Processes) belong to a workflow template.
+  <span class='search-tokens' style='display:none'>http://www.opmw.org/ontology/is Step Of Template http://www.opmw.org/ontology/is step of template http://www.opmw.org/ontology/isStepOfTemplate http://www.opmw.org/ontology/isstepoftemplate is  Step of  Template is  step of  template is Step Of Template is Step of Template is step of template isStepOfTemplate isstepoftemplate</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CALCULATEHOURLYAVERAGES>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Template Process/AQUAFLOW EDM CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/ workflow template process/aquaflow edm calculatehourlyaverages> <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW EDM CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CALCULATEHOURLYAVERAGES> <http://www.opmw.org/export/resource/workflowtemplateprocess/aquaflow_edm_calculatehourlyaverages></span>
+- **     a opmw:WorkflowTemplateProcess;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmw: Workflow Template Process;      a opmw: workflow template process;      a opmw:WorkflowTemplateProcess;      a opmw:workflowtemplateprocess;</span>
+- **     opmw:isStepOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:is Step Of Template <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW EDM>."      opmw:is step of template <http://www.opmw.org/export/resource/ workflow template/aquaflow edm>."      opmw:isStepOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW EDM>."      opmw:isStepOfTemplate <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM>."      opmw:isstepoftemplate <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_edm>."</span>
+- **Parameter Variable** (*Class*) — `ParameterVariable` — <http://www.opmw.org/ontology/ParameterVariable> — _comment:_ "An parameter variable represents a description of an input parameter of a process. Parameter variables can only be used by process.
+  <span class='search-tokens' style='display:none'>Parameter  Variable Parameter Variable ParameterVariable http://www.opmw.org/ontology/ Parameter Variable http://www.opmw.org/ontology/ parameter variable http://www.opmw.org/ontology/ParameterVariable http://www.opmw.org/ontology/parametervariable parameter  variable parameter variable parametervariable</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix rdfs: <http://www.w3.org/2000/01/rdf schema#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_LATITUDE>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Parameter Variable/AQUAFLOW NTM LATITUDE> <http://www.opmw.org/export/resource/ parameter variable/aquaflow ntm latitude> <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW NTM LATITUDE> <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_LATITUDE> <http://www.opmw.org/export/resource/parametervariable/aquaflow_ntm_latitude></span>
+- **      a      opmw:/WorkflowTemplateArtifact , opmw:ParameterVariable ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      a      opmw:/ Workflow Template Artifact , opmw: Parameter Variable ;       a      opmw:/ workflow template artifact , opmw: parameter variable ;       a      opmw:/WorkflowTemplateArtifact , opmw:ParameterVariable ;       a      opmw:/workflowtemplateartifact , opmw:parametervariable ;</span>
+- **      rdfs:label ""Parameter variable Latitude"" ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      rdfs:label "" Parameter variable  Latitude"" ;       rdfs:label "" parameter variable  latitude"" ;       rdfs:label ""Parameter variable Latitude"" ;       rdfs:label ""parameter variable latitude"" ;</span>
+- **      opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM> ."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:template              <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW NTM> ."       opmw:template              <http://www.opmw.org/export/resource/ workflow template/aquaflow ntm> ."       opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW NTM> ."       opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM> ."       opmw:template              <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_ntm> ."</span>
+- **label** (*Entity*) — `label` — <http://www.w3.org/2000/01/rdf-schema#label>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#label http://www.w3.org/2000/01/rdf-schema#label label</span>
+- **Workflow Execution Process** (*Class*) — `WorkflowExecutionProcess` — <http://www.opmw.org/ontology/WorkflowExecutionProcess> — _comment:_ "A workflow execution process represents the execution of a step in workflow template. The execution process also describes the specific method used to acomplish the task described in the proces template.
+  <span class='search-tokens' style='display:none'>Workflow  Execution  Process Workflow Execution Process WorkflowExecutionProcess http://www.opmw.org/ontology/ Workflow Execution Process http://www.opmw.org/ontology/ workflow execution process http://www.opmw.org/ontology/WorkflowExecutionProcess http://www.opmw.org/ontology/workflowexecutionprocess workflow  execution  process workflow execution process workflowexecutionprocess</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix rdfs: <http://www.w3.org/2000/01/rdf schema#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix opmv: <http://purl.org/net/opmv/ns#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmv: <http://purl.org/net/opmv/ns#> .</span>
+- **@prefix opmo: <http://openprovenance.org/model/opmo#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmo: <http://openprovenance.org/model/opmo#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMAT133553>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Execution Process/CONVERTTOSTANDARDFORMAT133553> <http://www.opmw.org/export/resource/ workflow execution process/converttostandardformat133553> <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMAT133553> <http://www.opmw.org/export/resource/workflowexecutionprocess/converttostandardformat133553></span>
+- **      a      opmw:/WorkflowExecutionProcess , opmv:Process ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      a      opmw:/ Workflow Execution Process , opmv: Process ;       a      opmw:/ workflow execution process , opmv: process ;       a      opmw:/WorkflowExecutionProcess , opmv:Process ;       a      opmw:/workflowexecutionprocess , opmv:process ;</span>
+- **      rdfs:label ""Execution process ConvertToStandardFormat"" ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      rdfs:label "" Execution process  Convert To Standard Format"" ;       rdfs:label "" execution process  convert to standard format"" ;       rdfs:label ""Execution process ConvertToStandardFormat"" ;       rdfs:label ""execution process converttostandardformat"" ;</span>
+- **      opmo:account              <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmo:account              <http://www.opmw.org/export/resource/ Workflow Execution Account/ACCOUNT1335533097598> ;       opmo:account              <http://www.opmw.org/export/resource/ workflow execution account/account1335533097598> ;       opmo:account              <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598> ;       opmo:account              <http://www.opmw.org/export/resource/workflowexecutionaccount/account1335533097598> ;</span>
+- **      opmv:used              <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/6C7CF277338D9590EE18534D4D78924F> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmv:used              <http://www.opmw.org/export/resource/ Workflow Execution Artifact/6C7CF277338D9590EE18534D4D78924F> ;       opmv:used              <http://www.opmw.org/export/resource/ workflow execution artifact/6c7cf277338d9590ee18534d4d78924f> ;       opmv:used              <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/6C7CF277338D9590EE18534D4D78924F> ;       opmv:used              <http://www.opmw.org/export/resource/workflowexecutionartifact/6c7cf277338d9590ee18534d4d78924f> ;</span>
+- **      opmv:wasControlledBy               <http://www.opmw.org/export/resource/Agent/ADMIN> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmv:was Controlled By               <http://www.opmw.org/export/resource/ Agent/ADMIN> ;       opmv:was controlled by               <http://www.opmw.org/export/resource/ agent/admin> ;       opmv:wasControlledBy               <http://www.opmw.org/export/resource/Agent/ADMIN> ;       opmv:wascontrolledby               <http://www.opmw.org/export/resource/agent/admin> ;</span>
+- **      opmw:hasWorkflowTemplateProcess              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CONVERTTOSTANDARDFORMAT> ."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:has Workflow Template Process              <http://www.opmw.org/export/resource/ Workflow Template Process/AQUAFLOW EDM CONVERTTOSTANDARDFORMAT> ."       opmw:has workflow template process              <http://www.opmw.org/export/resource/ workflow template process/aquaflow edm converttostandardformat> ."       opmw:hasWorkflowTemplateProcess              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW EDM CONVERTTOSTANDARDFORMAT> ."       opmw:hasWorkflowTemplateProcess              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CONVERTTOSTANDARDFORMAT> ."       opmw:hasworkflowtemplateprocess              <http://www.opmw.org/export/resource/workflowtemplateprocess/aquaflow_edm_converttostandardformat> ."</span>
+- **Workflow Execution Account** (*Class*) — `WorkflowExecutionAccount` — <http://www.opmw.org/ontology/WorkflowExecutionAccount> — _comment:_ "A workflow execution account represents the execution from the perspective of the system.
+  <span class='search-tokens' style='display:none'>Workflow  Execution  Account Workflow Execution Account WorkflowExecutionAccount http://www.opmw.org/ontology/ Workflow Execution Account http://www.opmw.org/ontology/ workflow execution account http://www.opmw.org/ontology/WorkflowExecutionAccount http://www.opmw.org/ontology/workflowexecutionaccount workflow  execution  account workflow execution account workflowexecutionaccount</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix rdfs: <http://www.w3.org/2000/01/rdf schema#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **@prefix opmo: <http://openprovenance.org/model/opmo#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmo: <http://openprovenance.org/model/opmo#> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Execution Account/ACCOUNT1335533097598> <http://www.opmw.org/export/resource/ workflow execution account/account1335533097598> <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598> <http://www.opmw.org/export/resource/workflowexecutionaccount/account1335533097598></span>
+- **      a       opmo:Account , opmw:WorkflowExecutionAccount> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      a       opmo: Account , opmw: Workflow Execution Account> ;       a       opmo: account , opmw: workflow execution account> ;       a       opmo:Account , opmw:WorkflowExecutionAccount> ;       a       opmo:account , opmw:workflowexecutionaccount> ;</span>
+- **      rdfs:label ""Execution account created on 1335533097598"" ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      rdfs:label "" Execution account created on 1335533097598"" ;       rdfs:label "" execution account created on 1335533097598"" ;       rdfs:label ""Execution account created on 1335533097598"" ;       rdfs:label ""execution account created on 1335533097598"" ;</span>
+- **      opmw:executedInWorkflowSystem** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:executed In Workflow System       opmw:executed in workflow system       opmw:executedInWorkflowSystem       opmw:executedinworkflowsystem</span>
+- **              <http://www.opmw.org/export/resource/Agent/SHELL> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>              <http://www.opmw.org/export/resource/ Agent/SHELL> ;               <http://www.opmw.org/export/resource/ agent/shell> ;               <http://www.opmw.org/export/resource/Agent/SHELL> ;               <http://www.opmw.org/export/resource/agent/shell> ;</span>
+- **     opmw:hasEndTime** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:has End Time      opmw:has end time      opmw:hasEndTime      opmw:hasendtime</span>
+- **              ""2012-04-25T07:17:48-07:00""^^xsd:dateTime ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>              ""2012 04 25T07:17:48 07:00""^^xsd:date Time ;               ""2012 04 25T07:17:48 07:00""^^xsd:dateTime ;               ""2012 04 25t07:17:48 07:00""^^xsd:date time ;               ""2012-04-25T07:17:48-07:00""^^xsd:dateTime ;               ""2012-04-25t07:17:48-07:00""^^xsd:datetime ;</span>
+- **      opmw:hasExecutionDiagram ""http://wind.isi.edu/marbles/assets/components/workflow_portal/users/1/Water/runs/run_144.png""^^xsd:anyURI ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:has Execution Diagram ""http://wind.isi.edu/marbles/assets/components/workflow portal/users/1/ Water/runs/run 144.png""^^xsd:anyURI ;       opmw:has execution diagram ""http://wind.isi.edu/marbles/assets/components/workflow portal/users/1/ water/runs/run 144.png""^^xsd:anyuri ;       opmw:hasExecutionDiagram ""http://wind.isi.edu/marbles/assets/components/workflow portal/users/1/Water/runs/run 144.png""^^xsd:anyURI ;       opmw:hasExecutionDiagram ""http://wind.isi.edu/marbles/assets/components/workflow_portal/users/1/Water/runs/run_144.png""^^xsd:anyURI ;       opmw:hasexecutiondiagram ""http://wind.isi.edu/marbles/assets/components/workflow_portal/users/1/water/runs/run_144.png""^^xsd:anyuri ;</span>
+- **      opmw:hasStartTime               ""2012-04-25T07:17:05-07:00""^^xsd:dateTime ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:has Start Time               ""2012 04 25T07:17:05 07:00""^^xsd:date Time ;       opmw:has start time               ""2012 04 25t07:17:05 07:00""^^xsd:date time ;       opmw:hasStartTime               ""2012 04 25T07:17:05 07:00""^^xsd:dateTime ;       opmw:hasStartTime               ""2012-04-25T07:17:05-07:00""^^xsd:dateTime ;       opmw:hasstarttime               ""2012-04-25t07:17:05-07:00""^^xsd:datetime ;</span>
+- **      opmw:hasStatus ""SUCCESS"" ;"** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:has Status ""SUCCESS"" ;"       opmw:has status ""success"" ;"       opmw:hasStatus ""SUCCESS"" ;"       opmw:hasstatus ""success"" ;"</span>
+- **Data Variable** (*Class*) — `DataVariable` — <http://www.opmw.org/ontology/DataVariable> — _comment:_ "A Data variable is a workflow template artifact that represents a variable in the workflow specification.
+  <span class='search-tokens' style='display:none'>Data  Variable Data Variable DataVariable data  variable data variable datavariable http://www.opmw.org/ontology/ Data Variable http://www.opmw.org/ontology/ data variable http://www.opmw.org/ontology/DataVariable http://www.opmw.org/ontology/datavariable</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix rdfs: <http://www.w3.org/2000/01/rdf schema#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_SUM_CORRDO>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Data Variable/AQUAFLOW NTM SUM CORRDO> <http://www.opmw.org/export/resource/ data variable/aquaflow ntm sum corrdo> <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW NTM SUM CORRDO> <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_SUM_CORRDO> <http://www.opmw.org/export/resource/datavariable/aquaflow_ntm_sum_corrdo></span>
+- **      a      opmw:WorkflowTemplateArtifact , opmw:DataVariable ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      a      opmw: Workflow Template Artifact , opmw: Data Variable ;       a      opmw: workflow template artifact , opmw: data variable ;       a      opmw:WorkflowTemplateArtifact , opmw:DataVariable ;       a      opmw:workflowtemplateartifact , opmw:datavariable ;</span>
+- **      rdfs:label ""Data variable Sum_CorrDO"" ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      rdfs:label "" Data variable  Sum  CorrDO"" ;       rdfs:label "" data variable  sum  corrdo"" ;       rdfs:label ""Data variable Sum CorrDO"" ;       rdfs:label ""Data variable Sum_CorrDO"" ;       rdfs:label ""data variable sum_corrdo"" ;</span>
+- **      opmw:hasDimensionality ""0""^^xsd:int ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:has Dimensionality ""0""^^xsd:int ;       opmw:has dimensionality ""0""^^xsd:int ;       opmw:hasDimensionality ""0""^^xsd:int ;       opmw:hasdimensionality ""0""^^xsd:int ;</span>
+- **      opmw:isGeneratedBy              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CREATEPLOTS> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:is Generated By              <http://www.opmw.org/export/resource/ Workflow Template Process/AQUAFLOW NTM CREATEPLOTS> ;       opmw:is generated by              <http://www.opmw.org/export/resource/ workflow template process/aquaflow ntm createplots> ;       opmw:isGeneratedBy              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW NTM CREATEPLOTS> ;       opmw:isGeneratedBy              <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CREATEPLOTS> ;       opmw:isgeneratedby              <http://www.opmw.org/export/resource/workflowtemplateprocess/aquaflow_ntm_createplots> ;</span>
+- **      opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM> ."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>      opmw:template              <http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW NTM> ."       opmw:template              <http://www.opmw.org/export/resource/ workflow template/aquaflow ntm> ."       opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW NTM> ."       opmw:template              <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM> ."       opmw:template              <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_ntm> ."</span>
+- **PlainLiteral** (*Entity*) — `PlainLiteral` — <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral>
+  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span>
+- **ontology** (*Entity*) — `ontology` — <http://www.opmw.org/ontology/>
+  <span class='search-tokens' style='display:none'>http://www.opmw.org/ontology/ ontology</span>
+- **Workflow Template** (*Class*) — `WorkflowTemplate` — <http://www.opmw.org/ontology/WorkflowTemplate> — _comment:_ "A workflow template represents the design of the workflow. In such design, the different steps and inputs don't have to be bound to a specific tool or dataset. It is a generic view of the workflow, which is instantiated in each execution.
+  <span class='search-tokens' style='display:none'>Workflow  Template Workflow Template WorkflowTemplate http://www.opmw.org/ontology/ Workflow Template http://www.opmw.org/ontology/ workflow template http://www.opmw.org/ontology/WorkflowTemplate http://www.opmw.org/ontology/workflowtemplate workflow  template workflow template workflowtemplate</span>
+- ** ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'> </span>
+- **Example:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Example: example:</span>
+- **@prefix dc:  <http://purl.org/dc/terms/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix dc:  <http://purl.org/dc/terms/> .</span>
+- **@prefix opmw: <http://www.opmw.org/ontology/> .** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>@prefix opmw: <http://www.opmw.org/ontology/> .</span>
+- **<http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM>** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'><http://www.opmw.org/export/resource/ Workflow Template/AQUAFLOW NTM> <http://www.opmw.org/export/resource/ workflow template/aquaflow ntm> <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW NTM> <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM> <http://www.opmw.org/export/resource/workflowtemplate/aquaflow_ntm></span>
+- **     a opmw:WorkflowTemplate;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     a opmw: Workflow Template;      a opmw: workflow template;      a opmw:WorkflowTemplate;      a opmw:workflowtemplate;</span>
+- **     rdfs:label ""AquaFlow_NTM"" ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     rdfs:label "" Aqua Flow NTM"" ;      rdfs:label "" aqua flow ntm"" ;      rdfs:label ""AquaFlow NTM"" ;      rdfs:label ""AquaFlow_NTM"" ;      rdfs:label ""aquaflow_ntm"" ;</span>
+- **     dc.contributor** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     dc.contributor</span>
+- **              <http://www.opmw.org/export/resource/Agent/WATER> ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>              <http://www.opmw.org/export/resource/ Agent/WATER> ;               <http://www.opmw.org/export/resource/ agent/water> ;               <http://www.opmw.org/export/resource/Agent/WATER> ;               <http://www.opmw.org/export/resource/agent/water> ;</span>
+- **     dc:modified** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     dc:modified</span>
+- **              ""2011-06-08T09:57:12-07:00""^^xsd:dateTime ;** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>              ""2011 06 08T09:57:12 07:00""^^xsd:date Time ;               ""2011 06 08T09:57:12 07:00""^^xsd:dateTime ;               ""2011 06 08t09:57:12 07:00""^^xsd:date time ;               ""2011-06-08T09:57:12-07:00""^^xsd:dateTime ;               ""2011-06-08t09:57:12-07:00""^^xsd:datetime ;</span>
+- **     opmw:hasVersion ""2""^^xsd:int ."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>     opmw:has Version ""2""^^xsd:int ."      opmw:has version ""2""^^xsd:int ."      opmw:hasVersion ""2""^^xsd:int ."      opmw:hasversion ""2""^^xsd:int ."</span>

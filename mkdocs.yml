@@ -44,3 +44,4 @@ nav:
   - Introduction: index.md
   - Process ODPs: ProcessODPs.md
   - Ontologies: ontologies/index.md   # auto-generated 
+  - All Terms: terms/index.md
