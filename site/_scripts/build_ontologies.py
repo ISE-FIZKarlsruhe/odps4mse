@@ -1,43 +1,48 @@
 # docs/_scripts/build_ontologies.py
-import os, subprocess, re, csv
+import os, re, csv, subprocess, sys, json, shutil
 from pathlib import Path
+from typing import Optional, Dict, Any, List
 import mkdocs_gen_files
 
-# =============== Config ===============
+# ================= Config =================
 ROOT = Path(__file__).resolve().parents[2]
 
-# Multiple ontology dirs (comma-separated). Defaults to "Ontologies".
-ONTOLOGY_DIRS = [
-    (ROOT / p.strip())
-    for p in os.environ.get("ONTOLOGY_DIRS", "Ontologies").split(",")
-    if p.strip()
-]
+# Comma-separated ontology roots (relative to repo or absolute)
+ONTOLOGY_DIRS: List[Path] = []
+for p in os.environ.get("ONTOLOGY_DIRS", "Ontologies").split(","):
+    p = p.strip()
+    if not p:
+        continue
+    P = Path(p)
+    if not P.is_absolute():
+        P = ROOT / P
+    ONTOLOGY_DIRS.append(P)
+
 ONTO_EXTS = (".owl", ".ttl", ".rdf", ".obo")
 
-# Process ODP patterns root dir
-PATTERNS_DIR = ROOT / os.environ.get("PATTERNS_DIR", "Patterns")
-PATTERN_EXTS = (".ttl", ".owl", ".rdf")
+PATTERNS_DIR = Path(os.environ.get("PATTERNS_DIR", ROOT / "Patterns"))
+if not PATTERNS_DIR.is_absolute():
+    PATTERNS_DIR = ROOT / PATTERNS_DIR
 
-# Metrics level for ROBOT measure
-MEASURE_LEVEL = os.environ.get("MEASURE_LEVEL", "essential")  # essential|extended|all|*-reasoner
+PATTERN_EXTS = (".ttl", ".owl", ".rdf", ".obo")  # allow .obo too
 
+MEASURE_LEVEL = os.environ.get("MEASURE_LEVEL", "essential")
+ROBOT_CATALOG = os.environ.get("ROBOT_CATALOG", "catalog-v001.xml")
+EXTRACT_WITH_RDFLIB_ONLY = os.environ.get("EXTRACT_WITH_RDFLIB_ONLY", "0") == "1"
 
-# =============== Utilities ===============
-def run(cmd: list[str]):
-    """Run a subprocess and raise if it fails."""
-    subprocess.run(cmd, check=True)
+def log(msg: str):
+    print(f"[gen] {msg}", file=sys.stdout, flush=True)
+
+def run(cmd: list[str], check: bool = True):
+    log("CMD$ " + " ".join(cmd))
+    subprocess.run(cmd, check=check)
 
 def open_virtual(relpath: Path | str, mode: str = "w"):
-    """
-    Always open virtual files with POSIX-style paths so it works on Windows too.
-    """
     if isinstance(relpath, Path):
-        relpath = relpath.as_posix()  # force forward slashes
+        relpath = relpath.as_posix()
     return mkdocs_gen_files.open(relpath, mode)
 
-
 def tsv_to_markdown_table(tsv_path: Path, max_rows: int | None = None) -> str:
-    """Convert a TSV file to a Markdown table string."""
     if not tsv_path.exists():
         return "_No data found._"
     rows = []
@@ -59,88 +64,94 @@ def tsv_to_markdown_table(tsv_path: Path, max_rows: int | None = None) -> str:
         out.append(f"\n_Note: showing first {max_rows} rows._")
     return "\n".join(out)
 
-
-# helper: copy the original file next to the page for download
 def copy_download(src: Path, rel_dest: Path):
-    """
-    Copy src bytes into the virtual docs tree at rel_dest, so users can download.
-    rel_dest is a path relative to site root (e.g., ontologies/BBO/BBO.ttl).
-    """
-    with mkdocs_gen_files.open(rel_dest, "wb") as outf:
+    with open_virtual(rel_dest, "wb") as outf:
         outf.write(src.read_bytes())
-    return rel_dest.name  # return simple name for relative link
+    return rel_dest.name
 
+# ================= ROBOT helpers =================
+def _robot_base_cmd():
+    cmd = ["robot"]
+    cat = ROOT / ROBOT_CATALOG
+    if ROBOT_CATALOG and cat.exists():
+        cmd += ["--catalog", str(cat)]
+        log(f"Using ROBOT catalog: {cat}")
+    return cmd
 
-# =============== ROBOT helpers ===============
-def robot_report(infile: Path, report_rel_md_path: Path, workdir: Path) -> Path:
+def robot_materialize_imports(infile: Path, workdir: Path) -> Path:
     """
-    Run ROBOT report with --fail-on none, convert TSV -> Markdown, and
-    write a dedicated report page with search excluded via front matter.
-    """
-    workdir.mkdir(parents=True, exist_ok=True)
-    tsv = workdir / "report.tsv"
-
-    run([
-        "robot", "report",
-        "-i", str(infile),
-        "--fail-on", "none",           # never fail the build
-        "--output", str(tsv)
-    ])
-
-    md_body = tsv_to_markdown_table(tsv, max_rows=None)
-    report_md_text = f"---\nsearch:\n  exclude: true\n---\n\n{md_body}\n"
-
-    with mkdocs_gen_files.open(report_rel_md_path, "w") as rf:
-        rf.write(report_md_text)
-
-    return report_rel_md_path
-
-
-def robot_measure(infile: Path, metrics_rel_md_path: Path, workdir: Path) -> Path:
-    """
-    Run ROBOT measure, produce HTML, and write a dedicated metrics page
-    with search excluded via front matter. Returns the page path.
+    Try to produce a merged file with imports included.
+    On success returns merged path, else returns the original infile.
     """
     workdir.mkdir(parents=True, exist_ok=True)
-    html_path = workdir / "metrics.html"
-    run([
-        "robot", "measure",
-        "-i", str(infile),
-        "--metrics", MEASURE_LEVEL,
-        "--format", "html",
-        "-o", str(html_path),
-    ])
+    merged = workdir / "merged.owl"
+    try:
+        cmd = _robot_base_cmd() + [
+            "merge", "-i", str(infile),
+            "--include-annotations", "true",
+            "-o", str(merged),
+        ]
+        run(cmd)
+        if merged.exists() and merged.stat().st_size > 0:
+            log(f"Materialized imports for {infile.name} -> {merged.name} ({merged.stat().st_size} bytes)")
+            return merged
+    except Exception as e:
+        log(f"ROBOT merge failed for {infile.name}: {e}")
+    return infile
 
-    html = html_path.read_text(encoding="utf-8")
-    metrics_page_text = f"---\nsearch:\n  exclude: true\n---\n\n{html}\n"
-
-    with mkdocs_gen_files.open(metrics_rel_md_path, "w") as mf:
-        mf.write(metrics_page_text)
-
-    return metrics_rel_md_path
-
-
-# =============== Entities extraction (searchable + aggregatable) ===============
-def sparql_entities_to_tsv(infile: Path, outdir: Path) -> Path:
+def robot_convert_to_ttl(infile: Path, outdir: Path) -> Optional[Path]:
     """
-    Run the SPARQL query and write entities.tsv with columns:
-    LABEL, LOCAL, TYPE, IRI
+    For .obo or other tricky formats, convert to TTL so rdflib can parse reliably.
     """
     outdir.mkdir(parents=True, exist_ok=True)
-    tsv = outdir / "entities.tsv"
+    ttl = outdir / (infile.stem + ".ttl")
+    try:
+        cmd = _robot_base_cmd() + ["convert", "-i", str(infile), "-o", str(ttl)]
+        run(cmd)
+        if ttl.exists() and ttl.stat().st_size > 0:
+            log(f"Converted {infile.name} -> {ttl.name}")
+            return ttl
+    except Exception as e:
+        log(f"ROBOT convert failed for {infile.name}: {e}")
+    return None
 
-    query = r"""
+def robot_report(infile: Path, report_rel_md_path: Path, workdir: Path) -> Path:
+    workdir.mkdir(parents=True, exist_ok=True)
+    tsv = workdir / "report.tsv"
+    cmd = _robot_base_cmd() + ["report", "-i", str(infile), "--fail-on", "none", "--output", str(tsv)]
+    run(cmd)
+    md_body = tsv_to_markdown_table(tsv, max_rows=None)
+    report_md_text = f"---\nsearch:\n  exclude: true\n---\n\n{md_body}\n"
+    with open_virtual(report_rel_md_path, "w") as rf:
+        rf.write(report_md_text)
+    return report_rel_md_path
+
+def robot_measure(infile: Path, metrics_rel_md_path: Path, workdir: Path) -> Path:
+    workdir.mkdir(parents=True, exist_ok=True)
+    html_path = workdir / "metrics.html"
+    cmd = _robot_base_cmd() + ["measure", "-i", str(infile), "--metrics", MEASURE_LEVEL, "--format", "html", "-o", str(html_path)]
+    run(cmd)
+    html = html_path.read_text(encoding="utf-8")
+    metrics_page_text = f"---\nsearch:\n  exclude: true\n---\n\n{html}\n"
+    with open_virtual(metrics_rel_md_path, "w") as mf:
+        mf.write(metrics_page_text)
+    return metrics_rel_md_path
+
+# ================= SPARQL queries =================
+RICH_QUERY = r"""
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX oio:  <http://www.geneontology.org/formats/oboInOwl#>
-
 SELECT
-  (COALESCE(STR(?lab), STR(?alt), ?LOCAL) AS ?LABEL)
+  (COALESCE(STR(?lab), STR(?alt1), ?LOCAL) AS ?LABEL)
   ?LOCAL
   (COALESCE(?typeShort, "Entity") AS ?TYPE)
   (STR(?e) AS ?IRI)
+  (GROUP_CONCAT(DISTINCT STR(?alt2); separator=" | ") AS ?ALT_LABELS)
+  (GROUP_CONCAT(DISTINCT STR(?syn);  separator=" | ") AS ?SYNONYMS)
+  (SAMPLE(STR(?com)) AS ?COMMENT)
 WHERE {
   {
     { ?e rdfs:label ?lab } UNION { ?e skos:prefLabel ?lab }
@@ -148,16 +159,53 @@ WHERE {
     ?e ?p ?o .
     FILTER(isIRI(?e))
   }
-
-  OPTIONAL {
-    { ?e skos:altLabel ?alt } UNION { ?e oio:hasExactSynonym ?alt }
-  }
-
   BIND(STR(?e) AS ?s)
   BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
   BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
   BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
+  OPTIONAL { ?e rdf:type ?t . }
+  BIND(
+    IF(?t = owl:Class, "Class",
+    IF(?t = owl:ObjectProperty, "ObjectProperty",
+    IF(?t = owl:DatatypeProperty, "DatatypeProperty",
+    IF(?t = owl:AnnotationProperty, "AnnotationProperty",
+    IF(?t = owl:NamedIndividual, "Individual", "Entity"))))) AS ?typeShort
+  )
+  OPTIONAL { { ?e skos:altLabel ?alt2 } UNION { ?e oio:hasExactSynonym ?alt2 } }
+  OPTIONAL { { ?e skos:altLabel ?alt1 } UNION { ?e oio:hasExactSynonym ?alt1 } }
+  OPTIONAL {
+    { ?e oio:hasRelatedSynonym ?syn } UNION
+    { ?e oio:hasBroadSynonym   ?syn } UNION
+    { ?e oio:hasNarrowSynonym  ?syn } UNION
+    { ?e oio:hasExactSynonym   ?syn }
+  }
+  OPTIONAL { ?e rdfs:comment ?com }
+}
+GROUP BY ?e ?lab ?LOCAL ?typeShort
+ORDER BY LCASE(COALESCE(STR(?lab), ?LOCAL))
+"""
 
+FALLBACK_QUERY = r"""
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+SELECT
+  (COALESCE(STR(?lab), ?LOCAL) AS ?LABEL)
+  ?LOCAL
+  (COALESCE(?typeShort, "Entity") AS ?TYPE)
+  (STR(?e) AS ?IRI)
+  ("" AS ?ALT_LABELS)
+  ("" AS ?SYNONYMS)
+  (SAMPLE(STR(?com)) AS ?COMMENT)
+WHERE {
+  ?e ?p ?o .
+  FILTER(isIRI(?e))
+  OPTIONAL { ?e rdfs:label ?lab . }
+  OPTIONAL { ?e rdfs:comment ?com . }
+  BIND(STR(?e) AS ?s)
+  BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
+  BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
+  BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
   OPTIONAL { ?e rdf:type ?t . }
   BIND(
     IF(?t = owl:Class, "Class",
@@ -167,100 +215,278 @@ WHERE {
     IF(?t = owl:NamedIndividual, "Individual", "Entity"))))) AS ?typeShort
   )
 }
-GROUP BY ?e ?lab ?alt ?LOCAL ?typeShort
+GROUP BY ?e ?lab ?LOCAL ?typeShort
 ORDER BY LCASE(COALESCE(STR(?lab), ?LOCAL))
 """
+
+def sparql_run_to_tsv(infile: Path, outdir: Path, sparql_text: str, tsv_out: Path) -> int:
     qfile = outdir / "entities.sparql"
-    qfile.write_text(query, encoding="utf-8")
+    qfile.write_text(sparql_text, encoding="utf-8")
+    try:
+        cmd = _robot_base_cmd() + ["query", "-i", str(infile), "--query", f"{qfile}=tsv", str(tsv_out)]
+        run(cmd)
+    except Exception as e:
+        log(f"ROBOT query failed: {e}")
+        return -1
+    try:
+        with tsv_out.open("r", encoding="utf-8") as f:
+            lines = f.readlines()
+        return max(0, len(lines) - 1)
+    except Exception as e:
+        log(f"Failed reading TSV {tsv_out}: {e}")
+        return -1
 
-    run([
-        "robot","query",
-        "-i", str(infile),
-        "--query", f"{qfile}=tsv",
-        str(tsv)
-    ])
-    return tsv
+# ================= rdflib fallback =================
+def rdflib_extract_to_tsv(infile: Path, tsv_out: Path) -> int:
+    """
+    Parse infile with rdflib and write entities.tsv with columns:
+    LABEL, LOCAL, TYPE, IRI, ALT_LABELS, SYNONYMS, COMMENT
+    Returns row count.
+    """
+    from rdflib import Graph, URIRef, RDF, RDFS, Namespace
 
+    SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+    OIO  = Namespace("http://www.geneontology.org/formats/oboInOwl#")
+    OWL  = Namespace("http://www.w3.org/2002/07/owl#")
 
+    g = Graph()
+    # Try to sniff format. If rdfxml fails on .owl, let rdflib guess.
+    try:
+        g.parse(infile.as_posix())
+    except Exception as e:
+        log(f"rdflib parse failed for {infile.name}: {e}")
+        return 0
+
+    def local_name(iri: str) -> str:
+        if "#" in iri:
+            return iri.rsplit("#", 1)[1]
+        return iri.rstrip("/").rsplit("/", 1)[-1] if "/" in iri else iri
+
+    subjects = set(s for s in g.subjects() if isinstance(s, URIRef))
+    labeled  = set(s for s,_ in g.subject_objects(RDFS.label) if isinstance(s, URIRef))
+    entities = subjects | labeled
+
+    rows: List[Dict[str, Any]] = []
+    for e in entities:
+        iri = str(e)
+        labels = {str(o) for o in g.objects(e, RDFS.label)} | {str(o) for o in g.objects(e, SKOS.prefLabel)}
+        label = next(iter(labels), "")
+        alts = {str(o) for o in g.objects(e, SKOS.altLabel)} | {str(o) for o in g.objects(e, OIO.hasExactSynonym)}
+        syns = (
+            {str(o) for o in g.objects(e, OIO.hasRelatedSynonym)} |
+            {str(o) for o in g.objects(e, OIO.hasBroadSynonym)}   |
+            {str(o) for o in g.objects(e, OIO.hasNarrowSynonym)}  |
+            {str(o) for o in g.objects(e, OIO.hasExactSynonym)}
+        )
+        comments = [str(o) for o in g.objects(e, RDFS.comment)]
+        comment = comments[0] if comments else ""
+        types = list(g.objects(e, RDF.type))
+        typ = ""
+        for t in types:
+            ts = str(t)
+            if ts == str(OWL.Class):              typ = "Class"; break
+            if ts == str(OWL.ObjectProperty):     typ = "ObjectProperty"; break
+            if ts == str(OWL.DatatypeProperty):   typ = "DatatypeProperty"; break
+            if ts == str(OWL.AnnotationProperty): typ = "AnnotationProperty"; break
+            if ts == str(OWL.NamedIndividual):    typ = "Individual"; break
+        if not typ:
+            typ = "Entity"
+
+        rows.append({
+            "LABEL": label or local_name(iri),
+            "LOCAL": local_name(iri),
+            "TYPE":  typ,
+            "IRI":   iri,
+            "ALT_LABELS": " | ".join(sorted(alts)) if alts else "",
+            "SYNONYMS":   " | ".join(sorted(syns)) if syns else "",
+            "COMMENT":    comment,
+        })
+
+    with tsv_out.open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, delimiter="\t")
+        w.writerow(["LABEL","LOCAL","TYPE","IRI","ALT_LABELS","SYNONYMS","COMMENT"])
+        for r in rows:
+            w.writerow([r["LABEL"], r["LOCAL"], r["TYPE"], r["IRI"], r["ALT_LABELS"], r["SYNONYMS"], r["COMMENT"]])
+
+    log(f"rdflib extracted {len(rows)} rows from {infile.name}")
+    return len(rows)
+
+# ================= Extraction orchestrator =================
+def entities_to_tsv_with_fallbacks(infile: Path, workdir: Path, allow_robot: bool = True) -> Optional[Path]:
+    """
+    Returns path to entities.tsv or None.
+    Strategy:
+      1) If allow_robot: ROBOT merge (imports) -> SPARQL rich -> SPARQL fallback
+      2) rdflib on materialized file
+      3) If still 0 and suffix .obo, ROBOT convert -> rdflib on TTL
+    """
+    workdir.mkdir(parents=True, exist_ok=True)
+    tsv = workdir / "entities.tsv"
+
+    # Step 0: maybe bypass ROBOT entirely (debug mode)
+    if not allow_robot:
+        log(f"EXTRACT_WITH_RDFLIB_ONLY=1 — skipping ROBOT for {infile.name}")
+        mat = infile
+        n3 = rdflib_extract_to_tsv(mat, tsv)
+        return tsv if n3 > 0 else None
+
+    # Step 1: materialize imports
+    mat = robot_materialize_imports(infile, workdir)
+
+    # Step 2: SPARQL rich
+    n = sparql_run_to_tsv(mat, workdir, RICH_QUERY, tsv)
+    if n > 0:
+        log(f"ROBOT rich query rows for {infile.name}: {n}")
+        return tsv
+
+    # Step 3: SPARQL fallback
+    log(f"No rows from rich query for {infile.name}; trying ROBOT fallback query…")
+    n2 = sparql_run_to_tsv(mat, workdir, FALLBACK_QUERY, tsv)
+    if n2 > 0:
+        log(f"ROBOT fallback query rows for {infile.name}: {n2}")
+        return tsv
+
+    # Step 4: rdflib on materialized/original
+    log(f"ROBOT produced no rows for {infile.name}; using rdflib…")
+    n3 = rdflib_extract_to_tsv(mat, tsv)
+    if n3 > 0:
+        return tsv
+
+    # Step 5: If OBO, convert to TTL then rdflib
+    if infile.suffix.lower() == ".obo":
+        log(f"Trying ROBOT convert for OBO: {infile.name}")
+        ttl = robot_convert_to_ttl(infile, workdir)
+        if ttl:
+            n4 = rdflib_extract_to_tsv(ttl, tsv)
+            if n4 > 0:
+                return tsv
+
+    log(f"FAILED to extract entities for {infile.name}")
+    return None
+
+# ================= Renderers =================
 def entities_markdown_list_from_tsv(tsv: Path) -> Path:
-    """
-    Render the TSV as a bulleted list with hidden tokens to boost search.
-    Returns path to entities.md placed next to TSV.
-    """
     md = tsv.with_name("entities.md")
-
     def tokenize_variants(text: str) -> set[str]:
         if not text:
             return set()
         spaced = re.sub(r'(?<!^)(?=[A-Z][a-z])', ' ', text)
         spaced = spaced.replace('_', ' ').replace('-', ' ')
-        return {
-            text,
-            text.lower(),
-            spaced,
-            spaced.lower(),
-            text.replace('_', ' ').replace('-', ' '),
-        }
-
+        return {text, text.lower(), spaced, spaced.lower(), text.replace('_',' ').replace('-',' ')}
+    rows = []
+    try:
+        with tsv.open("r", encoding="utf-8") as f:
+            rows = [line.rstrip("\n").split("\t") for line in f]
+    except Exception as e:
+        log(f"could not read TSV {tsv}: {e}")
     lines = []
-    with tsv.open("r", encoding="utf-8") as f:
-        rows = [line.rstrip("\n").split("\t") for line in f]
     if rows:
         header = rows[0]
         idx = {h:i for i,h in enumerate(header)}
         for r in rows[1:]:
-            label = r[idx.get("LABEL", 0)] if len(r) > idx.get("LABEL", 0) else ""
-            local = r[idx.get("LOCAL", 1)] if len(r) > idx.get("LOCAL", 1) else ""
-            typ   = r[idx.get("TYPE", 2)]  if len(r) > idx.get("TYPE", 2)  else ""
-            iri   = r[idx.get("IRI", 3)]   if len(r) > idx.get("IRI", 3)   else ""
-            tokens = " ".join(sorted(tokenize_variants(label) | tokenize_variants(local) | tokenize_variants(iri)))
+            def col(name, default=""):
+                i = idx.get(name)
+                return r[i] if i is not None and i < len(r) else default
+            label = col("LABEL"); local = col("LOCAL"); typ = col("TYPE"); iri = col("IRI")
+            alt = col("ALT_LABELS"); syn = col("SYNONYMS"); comment = col("COMMENT")
+            tokens = " ".join(sorted(
+                tokenize_variants(label) | tokenize_variants(local) | tokenize_variants(iri) |
+                tokenize_variants(alt)   | tokenize_variants(syn)
+            ))
+            extras = []
+            if alt: extras.append(f"_alt:_ {alt}")
+            if syn: extras.append(f"_syn:_ {syn}")
+            if comment: extras.append(f"_comment:_ {comment}")
+            meta = (" — " + " · ".join(extras)) if extras else ""
             lines.append(
-                f"- **{label or local}** (*{typ or 'Entity'}*) — `{local}` — <{iri}>"
+                f"- **{label or local or iri}** (*{typ or 'Entity'}*) — `{local}` — <{iri}>{meta}"
                 f"\n  <span class='search-tokens' style='display:none'>{tokens}</span>"
             )
     md.write_text("\n".join(lines) if lines else "_No entities found._", encoding="utf-8")
     return md
 
-
 def read_entities_rows(tsv: Path):
-    """
-    Yield dict rows {'LABEL','LOCAL','TYPE','IRI'} from entities.tsv.
-    """
-    if not tsv.exists():
+    if not tsv or not tsv.exists():
         return []
     rows_out = []
-    with tsv.open("r", encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        for row in reader:
-            rows_out.append({
-                "LABEL": row.get("LABEL",""),
-                "LOCAL": row.get("LOCAL",""),
-                "TYPE":  row.get("TYPE",""),
-                "IRI":   row.get("IRI",""),
-            })
+    try:
+        with tsv.open("r", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            for row in reader:
+                rows_out.append({
+                    "LABEL": row.get("LABEL",""),
+                    "LOCAL": row.get("LOCAL",""),
+                    "TYPE":  row.get("TYPE",""),
+                    "IRI":   row.get("IRI",""),
+                    "ALT_LABELS": row.get("ALT_LABELS",""),
+                    "SYNONYMS":   row.get("SYNONYMS",""),
+                    "COMMENT":    row.get("COMMENT",""),
+                })
+    except Exception as e:
+        log(f"DictReader failed for {tsv}: {e}")
     return rows_out
 
+def _collect_page_tokens_from_tsv(tsv: Optional[Path], max_terms: int = 4000) -> str:
+    if not tsv or not tsv.exists():
+        return ""
+    tokens = []
+    try:
+        with tsv.open("r", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            for row in reader:
+                for text in [row.get("LABEL",""), row.get("LOCAL",""), row.get("IRI",""),
+                             row.get("ALT_LABELS",""), row.get("SYNONYMS","")]:
+                    if not text: continue
+                    t = re.sub(r'(?<!^)(?=[A-Z][a-z])', ' ', text)
+                    t = t.replace('_',' ').replace('-',' ')
+                    tokens.extend(t.split())
+                if len(tokens) > max_terms: break
+    except Exception:
+        pass
+    seen = set(); out = []
+    for t in tokens:
+        tl = t.lower()
+        if tl in seen: continue
+        seen.add(tl); out.append(tl)
+        if len(out) >= max_terms: break
+    return " ".join(out)
 
-# =============== Ontologies ===============
+# ================= Discovery =================
 def discover_ontologies():
     found = []
+    log(f"Configured ontology roots: {', '.join(str(p) for p in ONTOLOGY_DIRS)}")
     for d in ONTOLOGY_DIRS:
         if not d.exists():
+            log(f"[WARN] Ontology dir missing (skipped): {d}")
             continue
-        rel = str(d.relative_to(ROOT))
+        cnt = 0
         for p in sorted(d.rglob("*")):
             if p.is_file() and p.suffix.lower() in ONTO_EXTS:
-                found.append((p, rel))
+                found.append((p, str(d.relative_to(ROOT))))
+                cnt += 1
+        log(f"Scanned {d} -> {cnt} files")
+    log(f"TOTAL ontology files found: {len(found)}")
     return found
 
+def discover_patterns():
+    found = []
+    if not PATTERNS_DIR.exists():
+        log(f"[WARN] Patterns dir missing (skipped): {PATTERNS_DIR}")
+        return found
+    cnt = 0
+    for ont_dir in sorted([p for p in PATTERNS_DIR.iterdir() if p.is_dir()]):
+        ont = ont_dir.name
+        for req_dir in sorted([p for p in ont_dir.iterdir() if p.is_dir()]):
+            req = req_dir.name
+            for f in sorted(req_dir.rglob("*")):
+                if f.is_file() and f.suffix.lower() in PATTERN_EXTS:
+                    found.append((f, ont, req))
+                    cnt += 1
+    log(f"Scanned Patterns -> {cnt} files; total tuples: {len(found)}")
+    return found
 
+# ================= Page builders =================
 def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -> Path:
-    """
-    Build page: ontologies/<name>.md
-    Reports: ontologies/<name>/report.md (search-excluded)
-    Metrics: ontologies/<name>/metrics.md (search-excluded)
-    Accumulate terms into all_terms_accum with links back to this page.
-    """
     name = infile.stem
     workdir = ROOT / "docs" / "ontologies" / name
     workdir.mkdir(parents=True, exist_ok=True)
@@ -271,66 +497,80 @@ def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -
     entities_tsv = None
     entities_md = None
 
-    # Copy original file for download
     download_name = copy_download(infile, Path(f"ontologies/{name}/{infile.name}"))
 
-    try:
-        robot_report(infile, report_rel_md, workdir); report_ok = True
-    except Exception:
-        pass
-    try:
-        entities_tsv = sparql_entities_to_tsv(infile, workdir)
-        entities_md = entities_markdown_list_from_tsv(entities_tsv)
-        entities_ok = True
-    except Exception:
-        pass
-    try:
-        robot_measure(infile, metrics_rel_md, workdir); metrics_ok = True
-    except Exception:
-        pass
+    # Imports closure (only once)
+    material = infile
+    if not EXTRACT_WITH_RDFLIB_ONLY:
+        material = robot_materialize_imports(infile, workdir)
 
-    # Accumulate terms (for the global All Terms page)
-    if entities_tsv and entities_tsv.exists():
+    try:
+        if not EXTRACT_WITH_RDFLIB_ONLY:
+            robot_report(material, report_rel_md, workdir); report_ok = True
+    except Exception as e:
+        log(f"Report failed for {infile.name}: {e}")
+
+    try:
+        entities_tsv = entities_to_tsv_with_fallbacks(material, workdir, allow_robot=(not EXTRACT_WITH_RDFLIB_ONLY))
+        if entities_tsv:
+            entities_md = entities_markdown_list_from_tsv(entities_tsv)
+            entities_ok = True
+    except Exception as e:
+        log(f"Entities failed for {infile.name}: {e}")
+
+    try:
+        if not EXTRACT_WITH_RDFLIB_ONLY:
+            robot_measure(material, metrics_rel_md, workdir); metrics_ok = True
+    except Exception as e:
+        log(f"Measure failed for {infile.name}: {e}")
+
+    rows_added = 0
+    if entities_tsv:
         for row in read_entities_rows(entities_tsv):
             all_terms_accum.append({
-                "LABEL": row["LABEL"] or row["LOCAL"],
+                "LABEL": row["LABEL"] or row["LOCAL"] or row["IRI"],
                 "LOCAL": row["LOCAL"],
                 "TYPE":  row["TYPE"] or "Entity",
                 "IRI":   row["IRI"],
+                "ALT_LABELS": row["ALT_LABELS"],
+                "SYNONYMS":   row["SYNONYMS"],
+                "COMMENT":    row["COMMENT"],
                 "SOURCE_KIND": "Ontology",
                 "SOURCE_NAME": name,
-                "LINK": f"ontologies/{name}/",   # use directory URL
+                "LINK": f"ontologies/{name}/",
             })
+            rows_added += 1
+    log(f"[{name}] entities rows added = {rows_added}")
+
+    page_tokens = _collect_page_tokens_from_tsv(entities_tsv) if entities_tsv else ""
 
     page_rel = Path(f"ontologies/{name}.md")
-    with mkdocs_gen_files.open(page_rel, "w") as f:
+    with open_virtual(page_rel, "w") as f:
         print(f"# {name}\n", file=f)
         print(f"- **Source:** `{rel_root_dir}/{infile.name}`  ·  **[Download]({download_name})**\n", file=f)
-
+        if page_tokens:
+            print(f"<span class='search-tokens' style='display:none'>{page_tokens}</span>\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
-            print(entities_md.read_text(encoding="utf-8"), file=f)
-
+            print("<div data-search-exclude>", file=f)
+            print(entities_md.read_text(encoding='utf-8'), file=f)
+            print("</div>", file=f)
         if metrics_ok:
             print("\n## Metrics\n", file=f)
             print("See metrics (not indexed by search): [metrics](metrics/)", file=f)
-
         if report_ok:
             print("\n## QC Report\n", file=f)
             print("See the full report (not indexed by search): [report](report/)", file=f)
-        else:
+        elif not EXTRACT_WITH_RDFLIB_ONLY:
             print("\n!!! warning \"QC report\"\n    ROBOT report could not be generated.\n", file=f)
-
     return page_rel
-
 
 def build_ontology_index(pages_with_dirs):
     index_md = Path("ontologies/index.md")
-    with mkdocs_gen_files.open(index_md, "w") as f:
+    with open_virtual(index_md, "w") as f:
         print("# Ontologies\n", file=f)
         if not pages_with_dirs:
-            print("_No ontologies found in configured directories._", file=f)
-            return
+            print("_No ontologies found in configured directories._", file=f); return
         from collections import defaultdict
         groups = defaultdict(list)
         for md, relroot in pages_with_dirs:
@@ -341,34 +581,7 @@ def build_ontology_index(pages_with_dirs):
                 print(f"- [{md.stem}]({md.name})", file=f)
             print("", file=f)
 
-
-# =============== Patterns (Process ODPs) ===============
-def discover_patterns():
-    """
-    Expected tree:
-      Patterns/<Ontology>/<Requirement>/<file.ttl|owl|rdf>
-    Returns [(file_path, ontology_name, requirement_name)]
-    """
-    found = []
-    if not PATTERNS_DIR.exists():
-        return found
-    for ont_dir in sorted([p for p in PATTERNS_DIR.iterdir() if p.is_dir()]):
-        ont = ont_dir.name
-        for req_dir in sorted([p for p in ont_dir.iterdir() if p.is_dir()]):
-            req = req_dir.name
-            for f in sorted(req_dir.rglob("*")):
-                if f.is_file() and f.suffix.lower() in PATTERN_EXTS:
-                    found.append((f, ont, req))
-    return found
-
-
 def make_pattern_page(infile: Path, ontology: str, requirement: str, all_terms_accum: list) -> Path:
-    """
-    Page: patterns/<Ontology>/<Requirement>/<Pattern>.md
-    Report: patterns/<Ontology>/<Requirement>/<Pattern>/report.md (search-excluded)
-    Metrics: patterns/<Ontology>/<Requirement>/<Pattern>/metrics.md (search-excluded)
-    Accumulate terms into all_terms_accum with links back to this page.
-    """
     name = infile.stem
     workdir = ROOT / "docs" / "patterns" / ontology / requirement / name
     workdir.mkdir(parents=True, exist_ok=True)
@@ -379,70 +592,81 @@ def make_pattern_page(infile: Path, ontology: str, requirement: str, all_terms_a
     entities_tsv = None
     entities_md = None
 
-    # Copy original file for download
     download_name = copy_download(infile, Path(f"patterns/{ontology}/{requirement}/{name}/{infile.name}"))
 
-    try:
-        robot_report(infile, report_rel_md, workdir); report_ok = True
-    except Exception:
-        pass
-    try:
-        entities_tsv = sparql_entities_to_tsv(infile, workdir)
-        entities_md = entities_markdown_list_from_tsv(entities_tsv)
-        entities_ok = True
-    except Exception:
-        pass
-    try:
-        robot_measure(infile, metrics_rel_md, workdir); metrics_ok = True
-    except Exception:
-        pass
+    material = infile
+    if not EXTRACT_WITH_RDFLIB_ONLY:
+        material = robot_materialize_imports(infile, workdir)
 
-    # Accumulate terms (for the global All Terms page)
-    if entities_tsv and entities_tsv.exists():
+    try:
+        if not EXTRACT_WITH_RDFLIB_ONLY:
+            robot_report(material, report_rel_md, workdir); report_ok = True
+    except Exception as e:
+        log(f"Report failed for {infile.name}: {e}")
+
+    try:
+        entities_tsv = entities_to_tsv_with_fallbacks(material, workdir, allow_robot=(not EXTRACT_WITH_RDFLIB_ONLY))
+        if entities_tsv:
+            entities_md = entities_markdown_list_from_tsv(entities_tsv)
+            entities_ok = True
+    except Exception as e:
+        log(f"Entities failed for {infile.name}: {e}")
+
+    try:
+        if not EXTRACT_WITH_RDFLIB_ONLY:
+            robot_measure(material, metrics_rel_md, workdir); metrics_ok = True
+    except Exception as e:
+        log(f"Measure failed for {infile.name}: {e}")
+
+    rows_added = 0
+    if entities_tsv:
         for row in read_entities_rows(entities_tsv):
             all_terms_accum.append({
-                "LABEL": row["LABEL"] or row["LOCAL"],
+                "LABEL": row["LABEL"] or row["LOCAL"] or row["IRI"],
                 "LOCAL": row["LOCAL"],
                 "TYPE":  row["TYPE"] or "Entity",
                 "IRI":   row["IRI"],
+                "ALT_LABELS": row["ALT_LABELS"],
+                "SYNONYMS":   row["SYNONYMS"],
+                "COMMENT":    row["COMMENT"],
                 "SOURCE_KIND": "Pattern",
                 "SOURCE_NAME": f"{ontology} / {requirement} / {name}",
-                "LINK": f"patterns/{ontology}/{requirement}/{name}/",  # directory URL
+                "LINK": f"patterns/{ontology}/{requirement}/{name}/",
             })
+            rows_added += 1
+    log(f"[{ontology}/{requirement}/{name}] entities rows added = {rows_added}")
+
+    page_tokens = _collect_page_tokens_from_tsv(entities_tsv) if entities_tsv else ""
 
     page_rel = Path(f"patterns/{ontology}/{requirement}/{name}.md")
-    with mkdocs_gen_files.open(page_rel, "w") as f:
+    with open_virtual(page_rel, "w") as f:
         print(f"# {ontology} · {requirement} · {name}\n", file=f)
         rel_src = f"Patterns/{ontology}/{requirement}/{infile.name}"
         print(f"- **Source:** `{rel_src}`  ·  **[Download]({download_name})**\n", file=f)
-
+        if page_tokens:
+            print(f"<span class='search-tokens' style='display:none'>{page_tokens}</span>\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
-            print(entities_md.read_text(encoding="utf-8"), file=f)
-
+            print("<div data-search-exclude>", file=f)
+            print(entities_md.read_text(encoding='utf-8'), file=f)
+            print("</div>", file=f)
         if metrics_ok:
             print("\n## Metrics\n", file=f)
             print("See metrics (not indexed by search): [metrics](metrics/)", file=f)
-
         if report_ok:
             print("\n## QC Report\n", file=f)
             print("See the full report (not indexed by search): [report](report/)", file=f)
-        else:
+        elif not EXTRACT_WITH_RDFLIB_ONLY:
             print("\n!!! warning \"QC report\"\n    ROBOT report could not be generated.\n", file=f)
-
     return page_rel
 
-
 def build_patterns_index(pattern_pages):
-    """
-    Build ProcessODPs.md and patterns/index.md with grouped links.
-    """
     from collections import defaultdict
     tree: dict[str, dict[str, list[Path]]] = defaultdict(lambda: defaultdict(list))
     for md, ont, req in pattern_pages:
         tree[ont][req].append(md)
 
-    with mkdocs_gen_files.open(Path("patterns/index.md"), "w") as f:
+    with open_virtual(Path("patterns/index.md"), "w") as f:
         print("# Process ODPs\n", file=f)
         if not pattern_pages:
             print("_No patterns found under `Patterns/`._", file=f)
@@ -455,7 +679,7 @@ def build_patterns_index(pattern_pages):
                         print(f"- [{md.stem}]({md.as_posix()})", file=f)
                     print("", file=f)
 
-    with mkdocs_gen_files.open(Path("ProcessODPs.md"), "w") as f:
+    with open_virtual(Path("ProcessODPs.md"), "w") as f:
         print("# Process ODPs\n", file=f)
         print("Here is the list of Ontology Design Patterns (ODPs) aligned with process modeling requirements in the Materials Science and Engineering (MSE) domain.\n", file=f)
         if not pattern_pages:
@@ -469,66 +693,159 @@ def build_patterns_index(pattern_pages):
                         print(f"- [{md.stem}]({md.as_posix()})", file=f)
                     print("", file=f)
 
-
-# =============== Global All Terms page ===============
+# ================= All Terms bundle =================
 def build_all_terms_page(all_terms: list):
-    """
-    Write terms/index.md (All Terms) and terms/all-terms.csv
-    Columns: Label | Local | Type | IRI | Source | Link
-    """
-    # Sort by Label (case-insensitive)
+    total = len(all_terms)
+    log(f"All Terms aggregate size before sort: {total}")
     all_terms_sorted = sorted(all_terms, key=lambda r: (r.get("LABEL","") or "").lower())
 
-    # Write CSV for download
+    # CSV
     csv_rel = Path("terms/all-terms.csv")
-    with mkdocs_gen_files.open(csv_rel, "w") as cf:
+    with open_virtual(csv_rel, "w") as cf:
         writer = csv.writer(cf)
-        writer.writerow(["LABEL", "LOCAL", "TYPE", "IRI", "SOURCE", "LINK"])
+        writer.writerow(["IRI", "LABEL", "LOCAL", "TYPE", "SOURCE", "LINK", "ALT_LABELS", "SYNONYMS", "COMMENT"])
         for r in all_terms_sorted:
             writer.writerow([
-                r.get("LABEL",""),
-                r.get("LOCAL",""),
-                r.get("TYPE",""),
-                r.get("IRI",""),
-                f"{r.get('SOURCE_KIND','')} : {r.get('SOURCE_NAME','')}",
-                r.get("LINK",""),
+                r.get("IRI",""), r.get("LABEL",""), r.get("LOCAL",""), r.get("TYPE",""),
+                f"{r.get('SOURCE_KIND','')} : {r.get('SOURCE_NAME','')}", r.get("LINK",""),
+                r.get("ALT_LABELS",""), r.get("SYNONYMS",""), r.get("COMMENT",""),
             ])
+    log(f"All Terms CSV rows written: {len(all_terms_sorted)}")
 
-    # Write Markdown table (large pages are okay; Material search handles it)
+    # JSON for finder
+    json_rel = Path("terms/all-terms.json")
+    with open_virtual(json_rel, "w") as jf:
+        jf.write(json.dumps(all_terms_sorted, ensure_ascii=False))
+
+    # Index (excluded from search)
     md_rel = Path("terms/index.md")
-    with mkdocs_gen_files.open(md_rel, "w") as f:
+    with open_virtual(md_rel, "w") as f:
+        print("---", file=f)
+        print("search:", file=f)
+        print("  exclude: true", file=f)
+        print("---\n", file=f)
         print("# All Terms\n", file=f)
-        print(f"[Download CSV]({csv_rel.name})\n", file=f)
-        print("| Label | Local | Type | IRI | Source | Link |", file=f)
-        print("| --- | --- | --- | --- | --- | --- |", file=f)
+        print(f"[Download CSV]({csv_rel.name}) · [Interactive finder](find/)\n", file=f)
+        if not all_terms_sorted:
+            print("> _No terms were extracted. Check the build log for counts and any errors._\n", file=f)
+        print("| IRI | Label | Local | Type | Source | Link | Alt labels | Synonyms | Comment |", file=f)
+        print("| --- | --- | --- | --- | --- | --- | --- | --- | --- |", file=f)
         for r in all_terms_sorted:
-            label = r.get("LABEL","").replace("|","\\|")
-            local = r.get("LOCAL","").replace("|","\\|")
-            typ   = r.get("TYPE","").replace("|","\\|")
-            iri   = r.get("IRI","").replace("|","\\|")
-            src   = f"{r.get('SOURCE_KIND','')} : {r.get('SOURCE_NAME','')}".replace("|","\\|")
+            iri   = (r.get("IRI","") or "").replace("|","\\|")
+            label = (r.get("LABEL","") or "").replace("|","\\|")
+            local = (r.get("LOCAL","") or "").replace("|","\\|")
+            typ   = (r.get("TYPE","") or "").replace("|","\\|")
+            src   = (f"{r.get('SOURCE_KIND','')} : {r.get('SOURCE_NAME','')}" or "").replace("|","\\|")
             link  = r.get("LINK","")
-            print(f"| {label} | `{local}` | {typ} | <{iri}> | {src} | [open]({link}) |", file=f)
+            alt   = (r.get("ALT_LABELS","") or "").replace("|","\\|")
+            syn   = (r.get("SYNONYMS","") or "").replace("|","\\|")
+            com   = (r.get("COMMENT","") or "").replace("|","\\|")
+            print(f"| <{iri}> | {label} | `{local}` | {typ} | {src} | [open]({link}) | {alt} | {syn} | {com} |", file=f)
 
+    # Finder UI
+    find_rel = Path("terms/find.md")
+    with open_virtual(find_rel, "w") as f:
+        print("# Find Terms\n", file=f)
+        print("> Type a word (e.g., **input**) to see **ontologies** and **patterns** that contain matching terms.\n", file=f)
+        print("<input id='q' placeholder='Search term…' style='width:100%;padding:0.6rem;font-size:1rem'>", file=f)
+        print("<div id='stats' style='margin-top:0.5rem;opacity:0.7'></div>", file=f)
+        print("<div id='results' style='margin-top:1rem'></div>\n", file=f)
+        print("<script>", file=f)
+        print(r"""(function(){
+    const $ = sel => document.querySelector(sel);
+    const results = $('#results');
+    const stats = $('#stats');
+    const input = $('#q');
 
-# =============== Main ===============
+    function groupBySource(rows){
+    const out = { Ontology: {}, Pattern: {} };
+    for(const r of rows){
+        const kind = (r.SOURCE_KIND || '').trim();
+        const name = (r.SOURCE_NAME || '').trim();
+        if(!out[kind]) continue;
+        if(!out[kind][name]) out[kind][name] = r.LINK;
+    }
+    return out;
+    }
+
+    function render(groups){
+    const kinds = ["Ontology","Pattern"];
+    let html = "";
+    for(const k of kinds){
+        const g = groups[k];
+        const names = Object.keys(g||{}).sort((a,b)=>a.localeCompare(b));
+        html += `<h3>${k}s (${names.length})</h3>`;
+        if(!names.length){ html += "<p><em>None</em></p>"; continue; }
+        html += "<ul>";
+        for(const n of names){
+        const link = g[n];
+        html += `<li><a href="${link}">${n}</a></li>`;
+        }
+        html += "</ul>";
+    }
+    results.innerHTML = html;
+    }
+
+    let DATA = [];
+    fetch('../all-terms.json')  // <-- go up one directory
+    .then(r=>{
+        if(!r.ok) throw new Error('Failed to load all-terms.json: ' + r.status);
+        return r.json();
+    })
+    .then(rows=>{
+        DATA = rows;
+        stats.textContent = `Loaded ${rows.length} terms.`;
+    })
+    .catch(err=>{
+        stats.textContent = 'Error: ' + err.message;
+        console.error(err);
+    });
+
+    function norm(s){ return (s||"").toLowerCase(); }
+
+    function matches(r, q){
+    if(!q) return false;
+    const fields = [r.LABEL, r.LOCAL, r.IRI, r.ALT_LABELS, r.SYNONYMS, r.COMMENT];
+    return fields.some(x => (x||"").toLowerCase().includes(q));
+    }
+
+    let lastQ = "";
+    input.addEventListener('input', ()=>{
+    const q = norm(input.value);
+    if(q === lastQ) return;
+    lastQ = q;
+    if(!q){ results.innerHTML = ""; stats.textContent=""; return; }
+    const subset = DATA.filter(r => matches(r,q));
+    const groups = groupBySource(subset);
+    stats.textContent = `Query “${input.value}”: ${subset.length} matching terms; ${Object.keys(groups.Ontology||{}).length} ontologies, ${Object.keys(groups.Pattern||{}).length} patterns.`;
+    render(groups);
+    });
+    })();""", file=f)
+        print("</script>", file=f)
+
+# ================= Main =================
 def main():
-    # Accumulator for all terms across ontologies and patterns
     all_terms = []
 
-    # Ontologies
     onto_files = discover_ontologies()
-    onto_pages = [(make_ontology_page(p, relroot, all_terms), relroot) for p, relroot in onto_files]
+    onto_pages = []
+    for p, relroot in onto_files:
+        try:
+            onto_pages.append((make_ontology_page(p, relroot, all_terms), relroot))
+        except Exception as e:
+            log(f"[ERROR] ontology page failed for {p.name}: {e}")
     build_ontology_index(onto_pages)
 
-    # Patterns
     pat_files = discover_patterns()
-    pat_pages = [(make_pattern_page(p, ont, req, all_terms), ont, req) for p, ont, req in pat_files]
+    pat_pages = []
+    for p, ont, req in pat_files:
+        try:
+            pat_pages.append((make_pattern_page(p, ont, req, all_terms), ont, req))
+        except Exception as e:
+            log(f"[ERROR] pattern page failed for {p.name}: {e}")
     build_patterns_index(pat_pages)
 
-    # All Terms
     build_all_terms_page(all_terms)
-
 
 if __name__ == "__main__":
     main()

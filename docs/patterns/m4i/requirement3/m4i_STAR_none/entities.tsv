@@ -1,26 +1,26 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-example	example	AnnotationProperty	http://www.w3.org/2004/02/skos/core#example			
-prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
-editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
-Person	Person	Class	http://xmlns.com/foaf/0.1/Person			A person.
-has participant	RO_0000057	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000057			
-war Rolle in	wasRoleIn	ObjectProperty	http://www.w3.org/ns/prov#wasRoleIn			
-definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
-comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
-isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
-associated to project	inProject	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#inProject			
-hatte Rolle	hadRole	ObjectProperty	http://www.w3.org/ns/prov#hadRole			
 Role	Role	Class	http://www.w3.org/ns/prov#Role			
-		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
-Akteur	Agent	Class	http://xmlns.com/foaf/0.1/Agent			An agent (eg. person, group, software or physical artifact).
-Verknüpfung	Association	Class	http://www.w3.org/ns/prov#Association			An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
-Organization	Organization	Class	http://xmlns.com/foaf/0.1/Organization			An organization.
-Teil von	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
-string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
-project participant	projectParticipant	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#projectParticipant			
-label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
-ist beteiligt an	RO_0000056	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000056			
-hat Teil	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
-note	note	AnnotationProperty	http://www.w3.org/2004/02/skos/core#note			
-PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
 qualified association	qualifiedAssociation	ObjectProperty	http://www.w3.org/ns/prov#qualifiedAssociation			
+wasRoleIn	wasRoleIn	ObjectProperty	http://www.w3.org/ns/prov#wasRoleIn			
+Organization	Organization	Class	http://xmlns.com/foaf/0.1/Organization			An organization.
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+hatte Rolle	hadRole	ObjectProperty	http://www.w3.org/ns/prov#hadRole			
+example	example	AnnotationProperty	http://www.w3.org/2004/02/skos/core#example			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+participates in	RO_0000056	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000056			
+		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+part of	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
+has part	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+note	note	AnnotationProperty	http://www.w3.org/2004/02/skos/core#note			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+Verknüpfung	Association	Class	http://www.w3.org/ns/prov#Association			An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
+has participant	RO_0000057	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000057			
+gehört zu Projekt	inProject	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#inProject			
+project participant	projectParticipant	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#projectParticipant			
+Person	Person	Class	http://xmlns.com/foaf/0.1/Person			A person.
+Akteur	Agent	Class	http://xmlns.com/foaf/0.1/Agent			An agent (eg. person, group, software or physical artifact).
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			

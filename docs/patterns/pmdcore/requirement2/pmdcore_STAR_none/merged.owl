@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/pmd/co#"
+     xml:base="https://w3id.org/pmd/co"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/pmd/co"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+        <rdfs:isDefinedBy rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/definitionSource -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/definitionSource">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/characteristic -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/characteristic">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/characteristicOf"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <skos:altLabel xml:lang="en">has characteristic</skos:altLabel>
+        <skos:definition xml:lang="de">Die Objekteigenschaft characterisitc, wird in Verbindung mit ProzessKnoten, Prozess und Objekt verwendet und dient zur Herstellung einer Verbindung mit dem WerteObjekt. Diese Eigenschaft ermöglicht die Abbildung von Beziehungen zwischen ProzessKnoten, Prozessen und Objekten und den dazugehörigen Werten oder Attributen (Metadaten), die in WerteObjekt ausgedrückt sind.</skos:definition>
+        <skos:definition xml:lang="en">The object property characteristic, in conjunction with ProcessingNode, Process and Object, is used to establish a connection with ValueObjects. This property enables the representation of relationships between ProcessingNodes, Processes and Objects and the associated values or attributes (metadata) that are stored in ValueObjects.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/characteristicOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/characteristicOf">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+        <skos:altLabel>is characteristic of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/composedOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/composedOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/composes"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">composed of</rdfs:label>
+        <skos:definition xml:lang="en">This property is used to describe the fact that and which objects are composed of other objects, i.e. it is used to describe the specific constituents or ingredients that form a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole.</skos:definition>
+        <skos:definition xml:lang="en">This property is used to describe which voxels and materials an object is composed of.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/composes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/composes">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/co/Object"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/Object"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">composes</rdfs:label>
+        <skos:definition xml:lang="de">Diese Eigenschaft wird verwendet, um die Tatsache zu beschreiben, dass und welche Objekte andere Objekte zusammensetzen, d. h. sie wird verwendet, um die spezifischen Bestandteile oder Zutaten zu beschreiben, aus denen ein bestimmtes Gebilde oder Objekt besteht. 
+Als Präpositionalphrase bezeichnet sie die Elemente, Teile oder Komponenten, aus denen sich ein anderes Objekt zusammensetzt.</skos:definition>
+        <skos:definition xml:lang="en">This property is used to describe the fact that and which objects compose other objects, i.e. it is used to describe the specific constituents or ingredients forming a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole of another object.</skos:definition>
+        <skos:definition xml:lang="en">This property is used to describe which objects a voxel or a material contributes to compose.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/input -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/input">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/inputOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">input</rdfs:label>
+        <skos:altLabel>has input</skos:altLabel>
+        <skos:definition xml:lang="en">This property is used to link the processes to their input objects.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/inputOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/inputOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">input of</rdfs:label>
+        <skos:altLabel>is input of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/output -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/output">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/outputOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">output</rdfs:label>
+        <skos:altLabel>has output</skos:altLabel>
+        <skos:definition xml:lang="en">This property is used to link the processes to their output objects</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/outputOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/outputOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+        <skos:altLabel xml:lang="en">is output of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/participant -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/participant">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/participantOf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">participant</rdfs:label>
+        <skos:altLabel>has participant</skos:altLabel>
+        <skos:definition xml:lang="en">A relation between a process and an object, in which the objects is somehow involved in the process.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/participantOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/participantOf">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">participant of</rdfs:label>
+        <skos:altLabel xml:lang="en">is participant of</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/co/value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/co/value">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="de">hat Wert</rdfs:label>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <skos:definition xml:lang="en">Provides the actual value a value object is referring to.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/co/MaterialProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/MaterialProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/MaterialRelated"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Material Property</rdfs:label>
+        <rdfs:label xml:lang="de">Materialeigenschaft</rdfs:label>
+        <skos:definition xml:lang="en">A materials property is an intensive property of a material, i.e., a physical property that does not depend on the amount of the material. These quantitative properties may be used as a metric by which the benefits of one material versus another can be compared, thereby aiding in materials selection.</skos:definition>
+        <skos:definition xml:lang="de">Eine Materialeigenschaft ist eine intensive Eigenschaft eines Materials, d. h. eine physikalische Eigenschaft, die nicht von der Menge des Materials abhängt. Diese quantitativen Eigenschaften können als Maßstab verwendet werden, um die Vorteile eines Materials mit denen eines anderen zu vergleichen und so die Materialauswahl zu erleichtern.</skos:definition>
+        <co:definitionSource xml:lang="en">“List of materials properties.” Wikipedia The Free Encyclopedia, https://en.wikipedia.org/wiki/List_of_materials_properties. Accessed 13 Jan. 2023.</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/MaterialRelated -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/MaterialRelated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Material Related</rdfs:label>
+        <rdfs:label xml:lang="de">Materialbezug</rdfs:label>
+        <skos:definition xml:lang="de">Diese Klasse dient der qualitativen und quantitativen Beschreibung eines Materials, indem sie Informationen über ein Material angibt, z. B. durch die Einbeziehung von Materialeigenschaften, Materialstruktur usw.</skos:definition>
+        <skos:definition xml:lang="en">This property is used to qualitatively and quantitatively describe a material by providing information on a material, e.g., by including material properties, material structure, etc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Measurement -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Measurement">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+        <rdfs:label xml:lang="de">Messwert</rdfs:label>
+        <skos:definition xml:lang="de">Die Wertekategorie Messung ermöglicht die Kategorisierung von ValueObjects als gemessen.
+Messung ist die Quantifizierung von Eigenschaften eines Objekts oder Ereignisses, die zum Vergleich mit anderen Objekten oder Ereignissen verwendet werden können.</skos:definition>
+        <skos:definition xml:lang="en">The ValueScope category Measurement enables the categorization of ValueObjects as measured.
+Measurement is the quantification of attributes of an object or event, which can be used to compare with other objects or events.</skos:definition>
+        <skos:definition xml:lang="en">This value scope describes that a :ValueObject is the quantification of attributes of an object or event, which can be used to compare with other objects or events.</skos:definition>
+        <co:definitionSource xml:lang="en">https://en.wikipedia.org/wiki/Measurement</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Metadata -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Metadata">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/ValueObject"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PrimaryData"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/SecondaryData"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Metadata</rdfs:label>
+        <rdfs:label xml:lang="de">Metadaten</rdfs:label>
+        <skos:definition xml:lang="de">Die DataScope Metadaten umfassen Attribute und zusätzliche Daten (Provenienz), die z.B. die Fabrik, das Labor, das Prozesssystem und die Objekte betreffen und die eine Bewertung der Qualität / Zuverlässigkeit der Messungen und eine systematische Suche in einer Datenbank ermöglichen.</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a :ValueObject refers to attributes and additional data (provenance) on production, laboratory, process system and objects that enable an evaluation of the quality/reliability of the measurements and a systematic search task in a database.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/Object -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/Object">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Object</rdfs:label>
+        <rdfs:label xml:lang="de">Objekt</rdfs:label>
+        <skos:definition xml:lang="en">A discernable, tangible or simulated entity that is processed in a process by a processing node.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PrimaryData -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PrimaryData">
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/SecondaryData"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Primary Data</rdfs:label>
+        <rdfs:label xml:lang="de">Primärdaten</rdfs:label>
+        <skos:definition xml:lang="de">Die Datenkategorie Primärdaten umfasst Daten, die vor / nach einem Prozess erfasst werden, entweder bezogen auf die Geometrie des Objekts (z.B. ao, bo, do, au, bu, du, Lu) oder als Register des gesamten Aufbaus (z.B. Skizzen, Fotos oder Videos)</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a ValueObject refers to data that is directly acquired during a process by sensors (time, force, length, temperature)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/SecondaryData -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/SecondaryData">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Secondary Data</rdfs:label>
+        <rdfs:label xml:lang="de">Sekundärdaten</rdfs:label>
+        <skos:definition xml:lang="de">Der Datenkategorie Sekundärdaten umfasst Werte (z. B. Testergebnisse), die durch Gleichungen oder Algorithmen unter Verwendung von Primärdaten und Metadaten ermittelt werden.</skos:definition>
+        <skos:definition xml:lang="en">This data scope expresses that a ValueObject refers to characteristic values (e.g. test results) determined by equations or algorithms using primary data and/or metadata.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/SetPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/SetPoint">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Set Point</rdfs:label>
+        <rdfs:label xml:lang="de">Sollwert</rdfs:label>
+        <skos:definition xml:lang="de">Die Wertekategorie Sollwert bezeichnet allgemein den gewünschten Wert eines quantitativen Merkmals eines Systems, von dem der Istwert möglichst wenig abweichen soll.</skos:definition>
+        <skos:definition xml:lang="de">Sollwert bezeichnet allgemein den angestrebten Wert eines quantitativen Merkmales eines Systems, von dem der tatsächliche Istwert so wenig wie möglich abweichen soll. Der Sollwert wird von einem anderen System (z. B. Technik, Mensch) vorgegeben.</skos:definition>
+        <skos:definition xml:lang="en">The ValueScope Setpoint generally refers to the desired value of a quantitative characteristic of a system, from which the actual value should deviate as little as possible.</skos:definition>
+        <skos:definition xml:lang="en">This value scope expresses that a :ValueObject is the desired or target value for an essential variable, or process value (PV) of a control system.</skos:definition>
+        <co:definitionSource xml:lang="de">https://de.wikipedia.org/wiki/Sollwert</co:definitionSource>
+        <co:definitionSource xml:lang="en">https://en.wikipedia.org/wiki/Setpoint_(control_system)</co:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/ValueObject -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/ValueObject">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Metadata"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/Measurement"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/SetPoint"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PrimaryData"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/SecondaryData"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/co"/>
+        <rdfs:label xml:lang="en">Value Object</rdfs:label>
+        <rdfs:label xml:lang="de">Wertobjekt</rdfs:label>
+        <skos:definition xml:lang="en">A :ValueObject is an entity which represents a specific value. This value can be a numerical, textual, or a more complex data structure. If a literal value is to be specified, the :value datatype property has to be used. In cases where the value is represented by a resource (e.g. URI), the :resource object property has to be used.
+
+A value object, respectively its value, is always associated with an entity of type :Process, :ProcessingNode, :Object (e.g. :Specimen), :DigitalEntity, :Project, or other :ValueObject. The value is meant to be a charactaristic of the associated entity. To express this association it is indended to use the :characteristic object property if the value decribes some \&quot;quality\&quot;, or the :participant (:input,:output) if it is participating a process.
+
+A value object might also refer to a unit. The :unit property might be used (e.g. with QUDT ontology).
+
+Instances of a value object might also be a type of :ValueScope, namely a :SetPoint (nominal value), or :Measurement (measured value). With :Setpoint the intend is to express, that the value is meant to be some preset, setting or nominal value. :Measurement expresses, that the value has been measured or determined somehow (see example).
+
+Instances of a value object might also be specified in a specific :DataScope (:Metadata, :PrimaryData, :SecondaryData).</skos:definition>
+        <skos:example xml:lang="en">- the length of a specimen
+- the model number of a machine
+- a person involved in a process
+- a force on an object</skos:example>
+        <skos:example xml:lang="en">:Length rdfs:subClass :ValueObject .
+ex:vo1 a :Length .
+ex:vo1 a :Measurement .
+ex:vo1 a :PrimaryData .
+ex:vo1 :unit qudt:MilliM . 
+ex:vo1 :value &quot;123.45&quot;
+ex:p1 a :LengthMeasuringProcess .
+ex:p1 :characteristic ex:vo1 .</skos:example>
+        <skos:example xml:lang="en">The length of a specimen, which has been measured as primary data. Its actual value is 123.45 millimeters.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <obo:IAO_0000111 xml:lang="en">to be replaced with external ontology term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/xmlschema.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/xmlschema.owl"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

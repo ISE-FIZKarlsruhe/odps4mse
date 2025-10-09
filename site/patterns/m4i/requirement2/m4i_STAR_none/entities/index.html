@@ -1,0 +1,508 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/patterns/m4i/requirement2/m4i_STAR_none/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ontologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>closeMatch</strong> (<em>AnnotationProperty</em>) — <code>closeMatch</code> — <a href="http://www.w3.org/2004/02/skos/core#closeMatch">http://www.w3.org/2004/02/skos/core#closeMatch</a>
+  <span class='search-tokens' style='display:none'>close Match close match closeMatch closematch http://www.w3.org/2004/02/skos/core#close Match http://www.w3.org/2004/02/skos/core#close match http://www.w3.org/2004/02/skos/core#closeMatch http://www.w3.org/2004/02/skos/core#closematch</span></li>
+<li><strong>hat Zahlenwert</strong> (<em>DatatypeProperty</em>) — <code>hasNumericalValue</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue">http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue</a>
+  <span class='search-tokens' style='display:none'>has Numerical Value has numerical value hasNumericalValue hasnumericalvalue hat  Zahlenwert hat  zahlenwert hat Zahlenwert hat zahlenwert http://w3id.org/nfdi4ing/metadata4ing#has Numerical Value http://w3id.org/nfdi4ing/metadata4ing#has numerical value http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue http://w3id.org/nfdi4ing/metadata4ing#hasnumericalvalue</span></li>
+<li><strong>string</strong> (<em>Entity</em>) — <code>string</code> — <a href="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2001/XMLSchema#string</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2001/XML Schema#string http://www.w3.org/2001/XMLSchema#string http://www.w3.org/2001/xml schema#string http://www.w3.org/2001/xmlschema#string string</span></li>
+<li><strong>Literal</strong> (<em>Entity</em>) — <code>Literal</code> — <a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
+  <span class='search-tokens' style='display:none'>Literal http://www.w3.org/2000/01/rdf schema# Literal http://www.w3.org/2000/01/rdf schema# literal http://www.w3.org/2000/01/rdf schema#Literal http://www.w3.org/2000/01/rdf-schema#Literal http://www.w3.org/2000/01/rdf-schema#literal literal</span></li>
+<li><strong>realized in</strong> (<em>ObjectProperty</em>) — <code>BFO_0000054</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000054">http://purl.obolibrary.org/obo/BFO_0000054</a> — <em>comment:</em> Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000054 BFO_0000054 bfo 0000054 bfo_0000054 http://purl.obolibrary.org/obo/BFO 0000054 http://purl.obolibrary.org/obo/BFO_0000054 http://purl.obolibrary.org/obo/bfo 0000054 http://purl.obolibrary.org/obo/bfo_0000054 realized in</span></li>
+<li><strong>broader</strong> (<em>AnnotationProperty</em>) — <code>broader</code> — <a href="http://www.w3.org/2004/02/skos/core#broader">http://www.w3.org/2004/02/skos/core#broader</a>
+  <span class='search-tokens' style='display:none'>broader http://www.w3.org/2004/02/skos/core#broader</span></li>
+<li><strong>ist zulässiger Wert für</strong> (<em>ObjectProperty</em>) — <code>isAdmissibleValueFor</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor">http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor</a>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Admissible Value For http://www.molmod.info/semantics/pims ii.ttl#is admissible value for http://www.molmod.info/semantics/pims ii.ttl#isAdmissibleValueFor http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor http://www.molmod.info/semantics/pims-ii.ttl#isadmissiblevaluefor is Admissible Value For is admissible value for isAdmissibleValueFor isadmissiblevaluefor ist zulässiger  Wert für ist zulässiger  wert für ist zulässiger Wert für ist zulässiger wert für</span></li>
+<li><strong>http://w3id.org/nfdi4ing/metadata4ing#</strong> (<em>Entity</em>) — `` — <a href="http://w3id.org/nfdi4ing/metadata4ing#">http://w3id.org/nfdi4ing/metadata4ing#</a>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#</span></li>
+<li><strong>Werkzeug</strong> (<em>Class</em>) — <code>Tool</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#Tool">http://w3id.org/nfdi4ing/metadata4ing#Tool</a>
+  <span class='search-tokens' style='display:none'>Tool Werkzeug http://w3id.org/nfdi4ing/metadata4ing# Tool http://w3id.org/nfdi4ing/metadata4ing# tool http://w3id.org/nfdi4ing/metadata4ing#Tool http://w3id.org/nfdi4ing/metadata4ing#tool tool werkzeug</span></li>
+<li><strong>ist Variable in Zuweisung</strong> (<em>ObjectProperty</em>) — <code>isVariableInAssignment</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment">http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment</a>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Variable In Assignment http://www.molmod.info/semantics/pims ii.ttl#is variable in assignment http://www.molmod.info/semantics/pims ii.ttl#isVariableInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isvariableinassignment is Variable In Assignment is variable in assignment isVariableInAssignment ist  Variable in  Zuweisung ist  variable in  zuweisung ist Variable in Zuweisung ist variable in zuweisung isvariableinassignment</span></li>
+<li><strong>has variable</strong> (<em>ObjectProperty</em>) — <code>hasVariable</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasVariable">http://w3id.org/nfdi4ing/metadata4ing#hasVariable</a>
+  <span class='search-tokens' style='display:none'>has Variable has variable hasVariable hasvariable http://w3id.org/nfdi4ing/metadata4ing#has Variable http://w3id.org/nfdi4ing/metadata4ing#has variable http://w3id.org/nfdi4ing/metadata4ing#hasVariable http://w3id.org/nfdi4ing/metadata4ing#hasvariable</span></li>
+<li><strong>has kind of quantity</strong> (<em>ObjectProperty</em>) — <code>hasKindOfQuantity</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity">http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity</a>
+  <span class='search-tokens' style='display:none'>has Kind Of Quantity has kind of quantity hasKindOfQuantity haskindofquantity http://w3id.org/nfdi4ing/metadata4ing#has Kind Of Quantity http://w3id.org/nfdi4ing/metadata4ing#has kind of quantity http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity http://w3id.org/nfdi4ing/metadata4ing#haskindofquantity</span></li>
+<li><strong>PlainLiteral</strong> (<em>Entity</em>) — <code>PlainLiteral</code> — <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a>
+  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span></li>
+<li><strong>has unit</strong> (<em>ObjectProperty</em>) — <code>hasUnit</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasUnit">http://w3id.org/nfdi4ing/metadata4ing#hasUnit</a>
+  <span class='search-tokens' style='display:none'>has Unit has unit hasUnit hasunit http://w3id.org/nfdi4ing/metadata4ing#has Unit http://w3id.org/nfdi4ing/metadata4ing#has unit http://w3id.org/nfdi4ing/metadata4ing#hasUnit http://w3id.org/nfdi4ing/metadata4ing#hasunit</span></li>
+<li><strong>narrower</strong> (<em>AnnotationProperty</em>) — <code>narrower</code> — <a href="http://www.w3.org/2004/02/skos/core#narrower">http://www.w3.org/2004/02/skos/core#narrower</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#narrower narrower</span></li>
+<li><strong>realizable entity</strong> (<em>Class</em>) — <code>BFO_0000017</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000017">http://purl.obolibrary.org/obo/BFO_0000017</a>
+  <span class='search-tokens' style='display:none'>BFO 0000017 BFO_0000017 bfo 0000017 bfo_0000017 http://purl.obolibrary.org/obo/BFO 0000017 http://purl.obolibrary.org/obo/BFO_0000017 http://purl.obolibrary.org/obo/bfo 0000017 http://purl.obolibrary.org/obo/bfo_0000017 realizable entity</span></li>
+<li><strong>isDefinedBy</strong> (<em>Entity</em>) — <code>isDefinedBy</code> — <a href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">http://www.w3.org/2000/01/rdf-schema#isDefinedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#is Defined By http://www.w3.org/2000/01/rdf schema#is defined by http://www.w3.org/2000/01/rdf schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isdefinedby is Defined By is defined by isDefinedBy isdefinedby</span></li>
+<li><strong>realisiert Methode</strong> (<em>ObjectProperty</em>) — <code>realizesMethod</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#realizesMethod">http://w3id.org/nfdi4ing/metadata4ing#realizesMethod</a>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#realizes Method http://w3id.org/nfdi4ing/metadata4ing#realizes method http://w3id.org/nfdi4ing/metadata4ing#realizesMethod http://w3id.org/nfdi4ing/metadata4ing#realizesmethod realisiert  Methode realisiert  methode realisiert Methode realisiert methode realizes Method realizes method realizesMethod realizesmethod</span></li>
+<li><strong>hasAdmissibleValue</strong> (<em>ObjectProperty</em>) — <code>hasAdmissibleValue</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue">http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue</a>
+  <span class='search-tokens' style='display:none'>has Admissible Value has admissible value hasAdmissibleValue hasadmissiblevalue http://w3id.org/nfdi4ing/metadata4ing#has Admissible Value http://w3id.org/nfdi4ing/metadata4ing#has admissible value http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue http://w3id.org/nfdi4ing/metadata4ing#hasadmissiblevalue</span></li>
+<li><strong>Methode</strong> (<em>Class</em>) — <code>Method</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#Method">http://w3id.org/nfdi4ing/metadata4ing#Method</a>
+  <span class='search-tokens' style='display:none'>Method Methode http://w3id.org/nfdi4ing/metadata4ing# Method http://w3id.org/nfdi4ing/metadata4ing# method http://w3id.org/nfdi4ing/metadata4ing#Method http://w3id.org/nfdi4ing/metadata4ing#method method methode</span></li>
+<li><strong>realisiert</strong> (<em>ObjectProperty</em>) — <code>BFO_0000055</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000055">http://purl.obolibrary.org/obo/BFO_0000055</a> — <em>comment:</em> Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000055 BFO_0000055 bfo 0000055 bfo_0000055 http://purl.obolibrary.org/obo/BFO 0000055 http://purl.obolibrary.org/obo/BFO_0000055 http://purl.obolibrary.org/obo/bfo 0000055 http://purl.obolibrary.org/obo/bfo_0000055 realisiert</span></li>
+<li><strong>Assignment</strong> (<em>Class</em>) — <code>Assignment</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#Assignment">http://www.molmod.info/semantics/pims-ii.ttl#Assignment</a> — <em>comment:</em> Assignment, i.e., a data item by which a value is assigned to a variable with respect to a particular referent (e.g., T = 200 K for substance o as it was measured in a particular cognitive step); therein, T is the variable, related to the assignment by m4i:hasVariable, 200 K is the value, related to the assignment by m4i:hasValue, and o is the referent, related to the assignment by isAssignmentFor
+  <span class='search-tokens' style='display:none'>Assignment assignment http://www.molmod.info/semantics/pims ii.ttl# Assignment http://www.molmod.info/semantics/pims ii.ttl# assignment http://www.molmod.info/semantics/pims ii.ttl#Assignment http://www.molmod.info/semantics/pims-ii.ttl#Assignment http://www.molmod.info/semantics/pims-ii.ttl#assignment</span></li>
+<li><strong>has employed tool</strong> (<em>ObjectProperty</em>) — <code>hasEmployedTool</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool">http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool</a>
+  <span class='search-tokens' style='display:none'>has Employed Tool has employed tool hasEmployedTool hasemployedtool http://w3id.org/nfdi4ing/metadata4ing#has Employed Tool http://w3id.org/nfdi4ing/metadata4ing#has employed tool http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool http://w3id.org/nfdi4ing/metadata4ing#hasemployedtool</span></li>
+<li><strong>Thing</strong> (<em>Entity</em>) — <code>Thing</code> — <a href="http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+  <span class='search-tokens' style='display:none'>Thing http://www.w3.org/2002/07/owl# Thing http://www.w3.org/2002/07/owl# thing http://www.w3.org/2002/07/owl#Thing http://www.w3.org/2002/07/owl#thing thing</span></li>
+<li><strong>hat Parameter</strong> (<em>ObjectProperty</em>) — <code>hasParameter</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasParameter">http://w3id.org/nfdi4ing/metadata4ing#hasParameter</a>
+  <span class='search-tokens' style='display:none'>has Parameter has parameter hasParameter hasparameter hat  Parameter hat  parameter hat Parameter hat parameter http://w3id.org/nfdi4ing/metadata4ing#has Parameter http://w3id.org/nfdi4ing/metadata4ing#has parameter http://w3id.org/nfdi4ing/metadata4ing#hasParameter http://w3id.org/nfdi4ing/metadata4ing#hasparameter</span></li>
+<li><strong>ist Wert in Zuweisung</strong> (<em>ObjectProperty</em>) — <code>isValueInAssignment</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment">http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment</a>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Value In Assignment http://www.molmod.info/semantics/pims ii.ttl#is value in assignment http://www.molmod.info/semantics/pims ii.ttl#isValueInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isvalueinassignment is Value In Assignment is value in assignment isValueInAssignment ist  Wert in  Zuweisung ist  wert in  zuweisung ist Wert in Zuweisung ist wert in zuweisung isvalueinassignment</span></li>
+<li><strong>Größenart</strong> (<em>Class</em>) — <code>KindOfQuantity</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity">http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity</a>
+  <span class='search-tokens' style='display:none'>Größenart Kind Of Quantity KindOfQuantity größenart http://w3id.org/nfdi4ing/metadata4ing# Kind Of Quantity http://w3id.org/nfdi4ing/metadata4ing# kind of quantity http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity http://w3id.org/nfdi4ing/metadata4ing#kindofquantity kind of quantity kindofquantity</span></li>
+<li><strong>comment</strong> (<em>Entity</em>) — <code>comment</code> — <a href="http://www.w3.org/2000/01/rdf-schema#comment">http://www.w3.org/2000/01/rdf-schema#comment</a>
+  <span class='search-tokens' style='display:none'>comment http://www.w3.org/2000/01/rdf schema#comment http://www.w3.org/2000/01/rdf-schema#comment</span></li>
+<li><strong>definition</strong> (<em>AnnotationProperty</em>) — <code>definition</code> — <a href="http://www.w3.org/2004/02/skos/core#definition">http://www.w3.org/2004/02/skos/core#definition</a>
+  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span></li>
+<li><strong>Value</strong> (<em>Class</em>) — <code>Value</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#Value">http://www.molmod.info/semantics/pims-ii.ttl#Value</a>
+  <span class='search-tokens' style='display:none'>Value http://www.molmod.info/semantics/pims ii.ttl# Value http://www.molmod.info/semantics/pims ii.ttl# value http://www.molmod.info/semantics/pims ii.ttl#Value http://www.molmod.info/semantics/pims-ii.ttl#Value http://www.molmod.info/semantics/pims-ii.ttl#value value</span></li>
+<li><strong>implemented by</strong> (<em>ObjectProperty</em>) — <code>implementedByTool</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#implementedByTool">http://w3id.org/nfdi4ing/metadata4ing#implementedByTool</a>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#implemented By Tool http://w3id.org/nfdi4ing/metadata4ing#implemented by tool http://w3id.org/nfdi4ing/metadata4ing#implementedByTool http://w3id.org/nfdi4ing/metadata4ing#implementedbytool implemented By Tool implemented by implemented by tool implementedByTool implementedbytool</span></li>
+<li><strong>ist eingesetztes Werkzeug</strong> (<em>ObjectProperty</em>) — <code>isEmployedToolIn</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn">http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn</a>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#is Employed Tool In http://w3id.org/nfdi4ing/metadata4ing#is employed tool in http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn http://w3id.org/nfdi4ing/metadata4ing#isemployedtoolin is Employed Tool In is employed tool in isEmployedToolIn isemployedtoolin ist eingesetztes  Werkzeug ist eingesetztes  werkzeug ist eingesetztes Werkzeug ist eingesetztes werkzeug</span></li>
+<li><strong>note</strong> (<em>AnnotationProperty</em>) — <code>note</code> — <a href="http://www.w3.org/2004/02/skos/core#note">http://www.w3.org/2004/02/skos/core#note</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#note note</span></li>
+<li><strong>hat zugewiesenen Wert</strong> (<em>ObjectProperty</em>) — <code>hasAssignedValue</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue">http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue</a>
+  <span class='search-tokens' style='display:none'>has Assigned Value has assigned value hasAssignedValue hasassignedvalue hat zugewiesenen  Wert hat zugewiesenen  wert hat zugewiesenen Wert hat zugewiesenen wert http://w3id.org/nfdi4ing/metadata4ing#has Assigned Value http://w3id.org/nfdi4ing/metadata4ing#has assigned value http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue http://w3id.org/nfdi4ing/metadata4ing#hasassignedvalue</span></li>
+<li><strong>Variable</strong> (<em>Class</em>) — <code>Variable</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#Variable">http://www.molmod.info/semantics/pims-ii.ttl#Variable</a>
+  <span class='search-tokens' style='display:none'>Variable http://www.molmod.info/semantics/pims ii.ttl# Variable http://www.molmod.info/semantics/pims ii.ttl# variable http://www.molmod.info/semantics/pims ii.ttl#Variable http://www.molmod.info/semantics/pims-ii.ttl#Variable http://www.molmod.info/semantics/pims-ii.ttl#variable variable</span></li>
+<li><strong>Größenwert</strong> (<em>Class</em>) — <code>QuantityValue</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue">http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue</a>
+  <span class='search-tokens' style='display:none'>Größenwert Quantity Value QuantityValue größenwert http://www.molmod.info/semantics/pims ii.ttl# Quantity Value http://www.molmod.info/semantics/pims ii.ttl# quantity value http://www.molmod.info/semantics/pims ii.ttl#QuantityValue http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue http://www.molmod.info/semantics/pims-ii.ttl#quantityvalue quantity value quantityvalue</span></li>
+<li><strong>implements</strong> (<em>ObjectProperty</em>) — <code>implementsMethod</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#implementsMethod">http://w3id.org/nfdi4ing/metadata4ing#implementsMethod</a>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#implements Method http://w3id.org/nfdi4ing/metadata4ing#implements method http://w3id.org/nfdi4ing/metadata4ing#implementsMethod http://w3id.org/nfdi4ing/metadata4ing#implementsmethod implements implements Method implements method implementsMethod implementsmethod</span></li>
+<li><strong>Real</strong> (<em>Class</em>) — <code>Real</code> — <a href="https://ptb.de/si/Real">https://ptb.de/si/Real</a>
+  <span class='search-tokens' style='display:none'>Real https://ptb.de/si/ Real https://ptb.de/si/ real https://ptb.de/si/Real https://ptb.de/si/real real</span></li>
+<li><strong>prefLabel</strong> (<em>AnnotationProperty</em>) — <code>prefLabel</code> — <a href="http://www.w3.org/2004/02/skos/core#prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#pref Label http://www.w3.org/2004/02/skos/core#pref label http://www.w3.org/2004/02/skos/core#prefLabel http://www.w3.org/2004/02/skos/core#preflabel pref Label pref label prefLabel preflabel</span></li>
+<li><strong>editorialNote</strong> (<em>AnnotationProperty</em>) — <code>editorialNote</code> — <a href="http://www.w3.org/2004/02/skos/core#editorialNote">http://www.w3.org/2004/02/skos/core#editorialNote</a>
+  <span class='search-tokens' style='display:none'>editorial Note editorial note editorialNote editorialnote http://www.w3.org/2004/02/skos/core#editorial Note http://www.w3.org/2004/02/skos/core#editorial note http://www.w3.org/2004/02/skos/core#editorialNote http://www.w3.org/2004/02/skos/core#editorialnote</span></li>
+<li><strong>decimal</strong> (<em>Entity</em>) — <code>decimal</code> — <a href="http://www.w3.org/2001/XMLSchema#decimal">http://www.w3.org/2001/XMLSchema#decimal</a>
+  <span class='search-tokens' style='display:none'>decimal http://www.w3.org/2001/XML Schema#decimal http://www.w3.org/2001/XMLSchema#decimal http://www.w3.org/2001/xml schema#decimal http://www.w3.org/2001/xmlschema#decimal</span></li>
+<li><strong>has uncertainty declaration</strong> (<em>ObjectProperty</em>) — <code>hasUncertaintyDeclaration</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration">http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration</a>
+  <span class='search-tokens' style='display:none'>has Uncertainty Declaration has uncertainty declaration hasUncertaintyDeclaration hasuncertaintydeclaration http://w3id.org/nfdi4ing/metadata4ing#has Uncertainty Declaration http://w3id.org/nfdi4ing/metadata4ing#has uncertainty declaration http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration http://w3id.org/nfdi4ing/metadata4ing#hasuncertaintydeclaration</span></li>
+<li><strong>is assignment for</strong> (<em>ObjectProperty</em>) — <code>isAssignmentFor</code> — <a href="http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor">http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor</a>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Assignment For http://www.molmod.info/semantics/pims ii.ttl#is assignment for http://www.molmod.info/semantics/pims ii.ttl#isAssignmentFor http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor http://www.molmod.info/semantics/pims-ii.ttl#isassignmentfor is Assignment For is assignment for isAssignmentFor isassignmentfor</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,96 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+concretizes	RO_0000059	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000059			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+RO_0001900	RO_0001900	AnnotationProperty	http://purl.obolibrary.org/obo/RO_0001900			
+realized in	BFO_0000054	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000054			Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+has effect on	STATO_0000344	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000344			
+IAO_0000600	IAO_0000600	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000600			
+material sample	OBI_0000747	Class	http://purl.obolibrary.org/obo/OBI_0000747			
+boolean	boolean	Entity	http://www.w3.org/2001/XMLSchema#boolean			
+objective_achieved_by	OBI_0000833	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000833			
+requires discussion	IAO_0000428	Entity	http://purl.obolibrary.org/obo/IAO_0000428			
+pending final vetting	IAO_0000125	Entity	http://purl.obolibrary.org/obo/IAO_0000125			
+estimate of	STATO_0000403	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000403			
+bearer of	RO_0000053	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000053			
+has_specified_output	OBI_0000299	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000299			
+has quality	RO_0000086	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000086			
+is modeled by	STATO_0000476	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000476			
+has measurement value	IAO_0000004	DatatypeProperty	http://purl.obolibrary.org/obo/IAO_0000004			
+precedes	BFO_0000063	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000063			
+is_specified_output_of	OBI_0000312	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000312			
+role of	RO_0000081	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000081			
+IAO_0000112	IAO_0000112	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000112			
+information content entity	IAO_0000030	Class	http://purl.obolibrary.org/obo/IAO_0000030			
+is model for	STATO_0000341	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000341			
+is member of	STATO_0000114	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000114			
+IAO_0000602	IAO_0000602	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000602			
+scalar measurement datum	IAO_0000032	Class	http://purl.obolibrary.org/obo/IAO_0000032			
+example to be eventually removed	IAO_0000002	Entity	http://purl.obolibrary.org/obo/IAO_0000002			
+IAO_0000601	IAO_0000601	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000601			
+inheres in	RO_0000052	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000052			
+IAO_0000117	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
+value specification	OBI_0001933	Class	http://purl.obolibrary.org/obo/OBI_0001933			
+has participant	RO_0000057	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000057			
+is declared by	STATO_0000004	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000004			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+seeAlso	seeAlso	Entity	http://www.w3.org/2000/01/rdf-schema#seeAlso			
+IAO_0000118	IAO_0000118	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000118			
+part of	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
+stato.owl	stato.owl	Entity	http://purl.obolibrary.org/obo/stato.owl			
+participates in	RO_0000056	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000056			
+has_specified_input	OBI_0000293	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000293			
+achieves_planned_objective	OBI_0000417	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000417			
+STATO_0000032	STATO_0000032	Entity	http://purl.obolibrary.org/obo/STATO_0000032			
+has specified numeric value	OBI_0001937	DatatypeProperty	http://purl.obolibrary.org/obo/OBI_0001937			
+is_specified_input_of	OBI_0000295	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000295			
+BFO_0000179	BFO_0000179	AnnotationProperty	http://purl.obolibrary.org/obo/BFO_0000179			
+material entity	BFO_0000040	Class	http://purl.obolibrary.org/obo/BFO_0000040			
+IAO_0000114	IAO_0000114	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000114			
+ready for release	IAO_0000122	Entity	http://purl.obolibrary.org/obo/IAO_0000122			
+metadata complete	IAO_0000120	Entity	http://purl.obolibrary.org/obo/IAO_0000120			
+IAO_0000232	IAO_0000232	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000232			
+specimen	OBI_0100051	Class	http://purl.obolibrary.org/obo/OBI_0100051			
+material sample role	OBI_0000740	Class	http://purl.obolibrary.org/obo/OBI_0000740			
+real	real	Entity	http://www.w3.org/2002/07/owl#real			
+preceded by	BFO_0000062	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000062			
+has value	STATO_0000129	DatatypeProperty	http://purl.obolibrary.org/obo/STATO_0000129			
+realizes	BFO_0000055	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000055			Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+metadata incomplete	IAO_0000123	Entity	http://purl.obolibrary.org/obo/IAO_0000123			
+is_supported_by_data	OBI_0000124	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0000124			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+BFO_0000180	BFO_0000180	AnnotationProperty	http://purl.obolibrary.org/obo/BFO_0000180			
+to be replaced with external ontology term	IAO_0000423	Entity	http://purl.obolibrary.org/obo/IAO_0000423			
+scalar value specification	OBI_0001931	Class	http://purl.obolibrary.org/obo/OBI_0001931			
+has part	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+uncurated	IAO_0000124	Entity	http://purl.obolibrary.org/obo/IAO_0000124			
+declares	STATO_0000001	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000001			
+has value specification	OBI_0001938	ObjectProperty	http://purl.obolibrary.org/obo/OBI_0001938			
+has numerator	STATO_0000101	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000101			
+IAO_0000116	IAO_0000116	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000116			
+has measurement unit label	IAO_0000039	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000039			
+quality of	RO_0000080	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000080			
+IAO_0000111	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+Literal	Literal	Entity	http://www.w3.org/2000/01/rdf-schema#Literal			
+is denoted by	STATO_0000205	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000205			
+has member	STATO_0000115	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000115			
+measurement datum	IAO_0000109	Class	http://purl.obolibrary.org/obo/IAO_0000109			
+IAO_0000412	IAO_0000412	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000412			
+temporal relation	RO_0002222	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002222			A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
+OBI_0001847	OBI_0001847	AnnotationProperty	http://purl.obolibrary.org/obo/OBI_0001847			
+STATO_0000041	STATO_0000041	Entity	http://purl.obolibrary.org/obo/STATO_0000041			
+IAO_0000233	IAO_0000233	Entity	http://purl.obolibrary.org/obo/IAO_0000233			
+is concretized as	RO_0000058	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000058			
+double	double	Entity	http://www.w3.org/2001/XMLSchema#double			
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+integer	integer	Entity	http://www.w3.org/2001/XMLSchema#integer			
+has role	RO_0000087	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000087			
+has specified value	OBI_0002135	DatatypeProperty	http://purl.obolibrary.org/obo/OBI_0002135			
+is about	IAO_0000136	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000136			
+IAO_0000115	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+source	source	AnnotationProperty	http://purl.org/dc/elements/1.1/source			
+organizational term	IAO_0000121	Entity	http://purl.obolibrary.org/obo/IAO_0000121			
+denotes	IAO_0000219	ObjectProperty	http://purl.obolibrary.org/obo/IAO_0000219			
+has denominator	STATO_0000259	ObjectProperty	http://purl.obolibrary.org/obo/STATO_0000259			
+IAO_0000119	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			

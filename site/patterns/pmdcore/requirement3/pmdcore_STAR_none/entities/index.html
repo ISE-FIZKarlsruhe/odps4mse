@@ -1,0 +1,504 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/patterns/pmdcore/requirement3/pmdcore_STAR_none/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ontologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>IAO_0000114</strong> (<em>Entity</em>) — <code>IAO_0000114</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000114">http://purl.obolibrary.org/obo/IAO_0000114</a>
+  <span class='search-tokens' style='display:none'>IAO 0000114 IAO_0000114 http://purl.obolibrary.org/obo/IAO 0000114 http://purl.obolibrary.org/obo/IAO_0000114 http://purl.obolibrary.org/obo/iao 0000114 http://purl.obolibrary.org/obo/iao_0000114 iao 0000114 iao_0000114</span></li>
+<li><strong>ready for release</strong> (<em>Entity</em>) — <code>IAO_0000122</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+  <span class='search-tokens' style='display:none'>IAO 0000122 IAO_0000122 http://purl.obolibrary.org/obo/IAO 0000122 http://purl.obolibrary.org/obo/IAO_0000122 http://purl.obolibrary.org/obo/iao 0000122 http://purl.obolibrary.org/obo/iao_0000122 iao 0000122 iao_0000122 ready for release</span></li>
+<li><strong>metadata complete</strong> (<em>Entity</em>) — <code>IAO_0000120</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000120">http://purl.obolibrary.org/obo/IAO_0000120</a>
+  <span class='search-tokens' style='display:none'>IAO 0000120 IAO_0000120 http://purl.obolibrary.org/obo/IAO 0000120 http://purl.obolibrary.org/obo/IAO_0000120 http://purl.obolibrary.org/obo/iao 0000120 http://purl.obolibrary.org/obo/iao_0000120 iao 0000120 iao_0000120 metadata complete</span></li>
+<li><strong>input of</strong> (<em>ObjectProperty</em>) — <code>inputOf</code> — <a href="https://w3id.org/pmd/co/inputOf">https://w3id.org/pmd/co/inputOf</a> — <em>alt:</em> is input of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/input Of https://w3id.org/pmd/co/input of https://w3id.org/pmd/co/inputOf https://w3id.org/pmd/co/inputof input Of input of inputOf inputof is input of</span></li>
+<li><strong>string</strong> (<em>Entity</em>) — <code>string</code> — <a href="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2001/XMLSchema#string</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2001/XML Schema#string http://www.w3.org/2001/XMLSchema#string http://www.w3.org/2001/xml schema#string http://www.w3.org/2001/xmlschema#string string</span></li>
+<li><strong>IAO_0000111</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000111</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000111">http://purl.obolibrary.org/obo/IAO_0000111</a>
+  <span class='search-tokens' style='display:none'>IAO 0000111 IAO_0000111 http://purl.obolibrary.org/obo/IAO 0000111 http://purl.obolibrary.org/obo/IAO_0000111 http://purl.obolibrary.org/obo/iao 0000111 http://purl.obolibrary.org/obo/iao_0000111 iao 0000111 iao_0000111</span></li>
+<li><strong>wasDerivedFrom</strong> (<em>ObjectProperty</em>) — <code>wasDerivedFrom</code> — <a href="http://www.w3.org/ns/prov#wasDerivedFrom">http://www.w3.org/ns/prov#wasDerivedFrom</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Derived From http://www.w3.org/ns/prov#was derived from http://www.w3.org/ns/prov#wasDerivedFrom http://www.w3.org/ns/prov#wasderivedfrom was Derived From was derived from wasDerivedFrom wasderivedfrom</span></li>
+<li><strong>IAO_0000117</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000117</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000117">http://purl.obolibrary.org/obo/IAO_0000117</a>
+  <span class='search-tokens' style='display:none'>IAO 0000117 IAO_0000117 http://purl.obolibrary.org/obo/IAO 0000117 http://purl.obolibrary.org/obo/IAO_0000117 http://purl.obolibrary.org/obo/iao 0000117 http://purl.obolibrary.org/obo/iao_0000117 iao 0000117 iao_0000117</span></li>
+<li><strong>characteristic</strong> (<em>ObjectProperty</em>) — <code>characteristic</code> — <a href="https://w3id.org/pmd/co/characteristic">https://w3id.org/pmd/co/characteristic</a> — <em>alt:</em> has characteristic
+  <span class='search-tokens' style='display:none'>characteristic has characteristic https://w3id.org/pmd/co/characteristic</span></li>
+<li><strong>boolean</strong> (<em>Entity</em>) — <code>boolean</code> — <a href="http://www.w3.org/2001/XMLSchema#boolean">http://www.w3.org/2001/XMLSchema#boolean</a>
+  <span class='search-tokens' style='display:none'>boolean http://www.w3.org/2001/XML Schema#boolean http://www.w3.org/2001/XMLSchema#boolean http://www.w3.org/2001/xml schema#boolean http://www.w3.org/2001/xmlschema#boolean</span></li>
+<li><strong>PlainLiteral</strong> (<em>Entity</em>) — <code>PlainLiteral</code> — <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a>
+  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span></li>
+<li><strong>requires discussion</strong> (<em>Entity</em>) — <code>IAO_0000428</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000428">http://purl.obolibrary.org/obo/IAO_0000428</a>
+  <span class='search-tokens' style='display:none'>IAO 0000428 IAO_0000428 http://purl.obolibrary.org/obo/IAO 0000428 http://purl.obolibrary.org/obo/IAO_0000428 http://purl.obolibrary.org/obo/iao 0000428 http://purl.obolibrary.org/obo/iao_0000428 iao 0000428 iao_0000428 requires discussion</span></li>
+<li><strong>altLabel</strong> (<em>AnnotationProperty</em>) — <code>altLabel</code> — <a href="http://www.w3.org/2004/02/skos/core#altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a>
+  <span class='search-tokens' style='display:none'>alt Label alt label altLabel altlabel http://www.w3.org/2004/02/skos/core#alt Label http://www.w3.org/2004/02/skos/core#alt label http://www.w3.org/2004/02/skos/core#altLabel http://www.w3.org/2004/02/skos/core#altlabel</span></li>
+<li><strong>participant</strong> (<em>ObjectProperty</em>) — <code>participant</code> — <a href="https://w3id.org/pmd/co/participant">https://w3id.org/pmd/co/participant</a> — <em>alt:</em> has participant
+  <span class='search-tokens' style='display:none'>has participant https://w3id.org/pmd/co/participant participant</span></li>
+<li><strong>example</strong> (<em>Entity</em>) — <code>example</code> — <a href="http://www.w3.org/2004/02/skos/core#example">http://www.w3.org/2004/02/skos/core#example</a>
+  <span class='search-tokens' style='display:none'>example http://www.w3.org/2004/02/skos/core#example</span></li>
+<li><strong>isDefinedBy</strong> (<em>Entity</em>) — <code>isDefinedBy</code> — <a href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">http://www.w3.org/2000/01/rdf-schema#isDefinedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#is Defined By http://www.w3.org/2000/01/rdf schema#is defined by http://www.w3.org/2000/01/rdf schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isdefinedby is Defined By is defined by isDefinedBy isdefinedby</span></li>
+<li><strong>pending final vetting</strong> (<em>Entity</em>) — <code>IAO_0000125</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+  <span class='search-tokens' style='display:none'>IAO 0000125 IAO_0000125 http://purl.obolibrary.org/obo/IAO 0000125 http://purl.obolibrary.org/obo/IAO_0000125 http://purl.obolibrary.org/obo/iao 0000125 http://purl.obolibrary.org/obo/iao_0000125 iao 0000125 iao_0000125 pending final vetting</span></li>
+<li><strong>Project Identifier</strong> (<em>Class</em>) — <code>ProjectIdentifier</code> — <a href="https://w3id.org/pmd/co/ProjectIdentifier">https://w3id.org/pmd/co/ProjectIdentifier</a>
+  <span class='search-tokens' style='display:none'>Project  Identifier Project Identifier ProjectIdentifier https://w3id.org/pmd/co/ Project Identifier https://w3id.org/pmd/co/ project identifier https://w3id.org/pmd/co/ProjectIdentifier https://w3id.org/pmd/co/projectidentifier project  identifier project identifier projectidentifier</span></li>
+<li><strong>Identifier</strong> (<em>Class</em>) — <code>Identifier</code> — <a href="https://w3id.org/pmd/co/Identifier">https://w3id.org/pmd/co/Identifier</a>
+  <span class='search-tokens' style='display:none'>Identifier https://w3id.org/pmd/co/ Identifier https://w3id.org/pmd/co/ identifier https://w3id.org/pmd/co/Identifier https://w3id.org/pmd/co/identifier identifier</span></li>
+<li><strong>co</strong> (<em>Entity</em>) — <code>co</code> — <a href="https://w3id.org/pmd/co">https://w3id.org/pmd/co</a>
+  <span class='search-tokens' style='display:none'>co https://w3id.org/pmd/co</span></li>
+<li><strong>isRuleEnabled</strong> (<em>AnnotationProperty</em>) — <code>isRuleEnabled</code> — <a href="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</a>
+  <span class='search-tokens' style='display:none'>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#is Rule Enabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#is rule enabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isruleenabled is Rule Enabled is rule enabled isRuleEnabled isruleenabled</span></li>
+<li><strong>metadata incomplete</strong> (<em>Entity</em>) — <code>IAO_0000123</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000123">http://purl.obolibrary.org/obo/IAO_0000123</a>
+  <span class='search-tokens' style='display:none'>IAO 0000123 IAO_0000123 http://purl.obolibrary.org/obo/IAO 0000123 http://purl.obolibrary.org/obo/IAO_0000123 http://purl.obolibrary.org/obo/iao 0000123 http://purl.obolibrary.org/obo/iao_0000123 iao 0000123 iao_0000123 metadata incomplete</span></li>
+<li><strong>output of</strong> (<em>ObjectProperty</em>) — <code>outputOf</code> — <a href="https://w3id.org/pmd/co/outputOf">https://w3id.org/pmd/co/outputOf</a> — <em>alt:</em> is output of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/output Of https://w3id.org/pmd/co/output of https://w3id.org/pmd/co/outputOf https://w3id.org/pmd/co/outputof is output of output Of output of outputOf outputof</span></li>
+<li><strong>label</strong> (<em>Entity</em>) — <code>label</code> — <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#label http://www.w3.org/2000/01/rdf-schema#label label</span></li>
+<li><strong>comment</strong> (<em>Entity</em>) — <code>comment</code> — <a href="http://www.w3.org/2000/01/rdf-schema#comment">http://www.w3.org/2000/01/rdf-schema#comment</a>
+  <span class='search-tokens' style='display:none'>comment http://www.w3.org/2000/01/rdf schema#comment http://www.w3.org/2000/01/rdf-schema#comment</span></li>
+<li><strong>to be replaced with external ontology term</strong> (<em>Entity</em>) — <code>IAO_0000423</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000423">http://purl.obolibrary.org/obo/IAO_0000423</a>
+  <span class='search-tokens' style='display:none'>IAO 0000423 IAO_0000423 http://purl.obolibrary.org/obo/IAO 0000423 http://purl.obolibrary.org/obo/IAO_0000423 http://purl.obolibrary.org/obo/iao 0000423 http://purl.obolibrary.org/obo/iao_0000423 iao 0000423 iao_0000423 to be replaced with external ontology term</span></li>
+<li><strong>output</strong> (<em>ObjectProperty</em>) — <code>output</code> — <a href="https://w3id.org/pmd/co/output">https://w3id.org/pmd/co/output</a> — <em>alt:</em> has output
+  <span class='search-tokens' style='display:none'>has output https://w3id.org/pmd/co/output output</span></li>
+<li><strong>definition</strong> (<em>AnnotationProperty</em>) — <code>definition</code> — <a href="http://www.w3.org/2004/02/skos/core#definition">http://www.w3.org/2004/02/skos/core#definition</a>
+  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span></li>
+<li><strong>process</strong> (<em>ObjectProperty</em>) — <code>process</code> — <a href="https://w3id.org/pmd/co/process">https://w3id.org/pmd/co/process</a> — <em>alt:</em> has process
+  <span class='search-tokens' style='display:none'>has process https://w3id.org/pmd/co/process process</span></li>
+<li><strong>value</strong> (<em>DatatypeProperty</em>) — <code>value</code> — <a href="https://w3id.org/pmd/co/value">https://w3id.org/pmd/co/value</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/value value</span></li>
+<li><strong>characteristic of</strong> (<em>ObjectProperty</em>) — <code>characteristicOf</code> — <a href="https://w3id.org/pmd/co/characteristicOf">https://w3id.org/pmd/co/characteristicOf</a> — <em>alt:</em> is characteristic of
+  <span class='search-tokens' style='display:none'>characteristic Of characteristic of characteristicOf characteristicof https://w3id.org/pmd/co/characteristic Of https://w3id.org/pmd/co/characteristic of https://w3id.org/pmd/co/characteristicOf https://w3id.org/pmd/co/characteristicof is characteristic of</span></li>
+<li><strong>IAO_0000115</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000115</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000115">http://purl.obolibrary.org/obo/IAO_0000115</a>
+  <span class='search-tokens' style='display:none'>IAO 0000115 IAO_0000115 http://purl.obolibrary.org/obo/IAO 0000115 http://purl.obolibrary.org/obo/IAO_0000115 http://purl.obolibrary.org/obo/iao 0000115 http://purl.obolibrary.org/obo/iao_0000115 iao 0000115 iao_0000115</span></li>
+<li><strong>Project</strong> (<em>Class</em>) — <code>Project</code> — <a href="https://w3id.org/pmd/co/Project">https://w3id.org/pmd/co/Project</a>
+  <span class='search-tokens' style='display:none'>Project https://w3id.org/pmd/co/ Project https://w3id.org/pmd/co/ project https://w3id.org/pmd/co/Project https://w3id.org/pmd/co/project project</span></li>
+<li><strong>uncurated</strong> (<em>Entity</em>) — <code>IAO_0000124</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000124">http://purl.obolibrary.org/obo/IAO_0000124</a>
+  <span class='search-tokens' style='display:none'>IAO 0000124 IAO_0000124 http://purl.obolibrary.org/obo/IAO 0000124 http://purl.obolibrary.org/obo/IAO_0000124 http://purl.obolibrary.org/obo/iao 0000124 http://purl.obolibrary.org/obo/iao_0000124 iao 0000124 iao_0000124 uncurated</span></li>
+<li><strong>participant of</strong> (<em>ObjectProperty</em>) — <code>participantOf</code> — <a href="https://w3id.org/pmd/co/participantOf">https://w3id.org/pmd/co/participantOf</a> — <em>alt:</em> is participant of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/participant Of https://w3id.org/pmd/co/participant of https://w3id.org/pmd/co/participantOf https://w3id.org/pmd/co/participantof is participant of participant Of participant of participantOf participantof</span></li>
+<li><strong>definitionSource</strong> (<em>Entity</em>) — <code>definitionSource</code> — <a href="https://w3id.org/pmd/co/definitionSource">https://w3id.org/pmd/co/definitionSource</a>
+  <span class='search-tokens' style='display:none'>definition Source definition source definitionSource definitionsource https://w3id.org/pmd/co/definition Source https://w3id.org/pmd/co/definition source https://w3id.org/pmd/co/definitionSource https://w3id.org/pmd/co/definitionsource</span></li>
+<li><strong>IAO_0000119</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000119</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000119">http://purl.obolibrary.org/obo/IAO_0000119</a>
+  <span class='search-tokens' style='display:none'>IAO 0000119 IAO_0000119 http://purl.obolibrary.org/obo/IAO 0000119 http://purl.obolibrary.org/obo/IAO_0000119 http://purl.obolibrary.org/obo/iao 0000119 http://purl.obolibrary.org/obo/iao_0000119 iao 0000119 iao_0000119</span></li>
+<li><strong>input</strong> (<em>ObjectProperty</em>) — <code>input</code> — <a href="https://w3id.org/pmd/co/input">https://w3id.org/pmd/co/input</a> — <em>alt:</em> has input
+  <span class='search-tokens' style='display:none'>has input https://w3id.org/pmd/co/input input</span></li>
+<li><strong>organizational term</strong> (<em>Entity</em>) — <code>IAO_0000121</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000121">http://purl.obolibrary.org/obo/IAO_0000121</a>
+  <span class='search-tokens' style='display:none'>IAO 0000121 IAO_0000121 http://purl.obolibrary.org/obo/IAO 0000121 http://purl.obolibrary.org/obo/IAO_0000121 http://purl.obolibrary.org/obo/iao 0000121 http://purl.obolibrary.org/obo/iao_0000121 iao 0000121 iao_0000121 organizational term</span></li>
+<li><strong>belongsToProject</strong> (<em>ObjectProperty</em>) — <code>belongsToProject</code> — <a href="https://w3id.org/pmd/co/belongsToProject">https://w3id.org/pmd/co/belongsToProject</a>
+  <span class='search-tokens' style='display:none'>belongs To Project belongs to project belongsToProject belongstoproject https://w3id.org/pmd/co/belongs To Project https://w3id.org/pmd/co/belongs to project https://w3id.org/pmd/co/belongsToProject https://w3id.org/pmd/co/belongstoproject</span></li>
+<li><strong>example to be eventually removed</strong> (<em>Entity</em>) — <code>IAO_0000002</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000002">http://purl.obolibrary.org/obo/IAO_0000002</a>
+  <span class='search-tokens' style='display:none'>IAO 0000002 IAO_0000002 example to be eventually removed http://purl.obolibrary.org/obo/IAO 0000002 http://purl.obolibrary.org/obo/IAO_0000002 http://purl.obolibrary.org/obo/iao 0000002 http://purl.obolibrary.org/obo/iao_0000002 iao 0000002 iao_0000002</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

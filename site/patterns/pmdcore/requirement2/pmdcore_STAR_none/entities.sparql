@@ -2,31 +2,23 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX oio:  <http://www.geneontology.org/formats/oboInOwl#>
-
 SELECT
-  (COALESCE(STR(?lab), STR(?alt), ?LOCAL) AS ?LABEL)
+  (COALESCE(STR(?lab), ?LOCAL) AS ?LABEL)
   ?LOCAL
   (COALESCE(?typeShort, "Entity") AS ?TYPE)
   (STR(?e) AS ?IRI)
+  ("" AS ?ALT_LABELS)
+  ("" AS ?SYNONYMS)
+  (SAMPLE(STR(?com)) AS ?COMMENT)
 WHERE {
-  {
-    { ?e rdfs:label ?lab } UNION { ?e skos:prefLabel ?lab }
-  } UNION {
-    ?e ?p ?o .
-    FILTER(isIRI(?e))
-  }
-
-  OPTIONAL {
-    { ?e skos:altLabel ?alt } UNION { ?e oio:hasExactSynonym ?alt }
-  }
-
+  ?e ?p ?o .
+  FILTER(isIRI(?e))
+  OPTIONAL { ?e rdfs:label ?lab . }
+  OPTIONAL { ?e rdfs:comment ?com . }
   BIND(STR(?e) AS ?s)
   BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
   BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
   BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
-
   OPTIONAL { ?e rdf:type ?t . }
   BIND(
     IF(?t = owl:Class, "Class",
@@ -36,5 +28,5 @@ WHERE {
     IF(?t = owl:NamedIndividual, "Individual", "Entity"))))) AS ?typeShort
   )
 }
-GROUP BY ?e ?lab ?alt ?LOCAL ?typeShort
+GROUP BY ?e ?lab ?LOCAL ?typeShort
 ORDER BY LCASE(COALESCE(STR(?lab), ?LOCAL))

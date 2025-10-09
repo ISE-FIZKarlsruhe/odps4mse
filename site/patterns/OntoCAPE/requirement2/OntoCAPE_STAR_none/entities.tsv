@@ -1,0 +1,38 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+RawMaterial	RawMaterial	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial			A RawMaterial is a Material that enters a ProcessStep.
+QuantitativeValue	QuantitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QuantitativeValue			A QuantitativeValue is the value of a PhysicalQuantity.
+isRelatedTo	isRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isRelatedTo			The relation isRelatedTo subsumes all kinds of inter-system relations.
+enters	enters	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#enters			The relation Enters interconnects an ingoing DirectedConnection  to its target Device.
+Continuous	Continuous	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous			
+QualitativeValue	QualitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QualitativeValue			A QualitativeValue is a value that is not (numerically) quantifiable.
+Literal	Literal	Entity	http://www.w3.org/2000/01/rdf-schema#Literal			
+hasInput	hasInput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasInput			The relation hasInput connects a Device to an incoming DirectedConnection.
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+hasProperty	hasProperty	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasProperty			The relation hasProperty indicates the Properties of a System.
+hasValue	hasValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasValue			The hasValue relation designates the Values of a Property.
+isValueOf	isValueOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isValueOf			The relation isValueOf assigns a Value to a Property.
+isSuccessorOf	isSuccessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf			The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.
+ProcessStep	ProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep			A ProcessStep is a certain material processing procedure.
+value	value	DatatypeProperty	http://OntoCAPE/upper_level/system.owl#value			The Value attribute holds the actual value of a QualitativeValue.
+Value	Value	Class	http://OntoCAPE/upper_level/system.owl#Value			The Value class denotes the different values of a Property.
+ExtensibleValueSet	ExtensibleValueSet	Class	http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet			An ExtensibleValueSet is a ValueEnumeration which, unlike a FixedValueSet, is not defined by an (exhaustive) enumeration of its instances. Thus, the number of possible values may change at run time.
+isPropertyOf	isPropertyOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isPropertyOf			The relation isPropertyOf links a Property instance to a System instance.
+hasUnitOfMeasure	hasUnitOfMeasure	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure			The relation hasUnitOfMeasure establishes the UnitOfMeasure of a ScalarValue.
+hasOutput	hasOutput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasOutput			The relation hasOutput connects a Device to an outgoing DirectedConnection.
+Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
+IntermediateProduct	IntermediateProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct			An IntermediateProduct is a ChemicalProduct that is produced in a ProcessStep and is used in another ProcessStep in the whole processing system.
+ValueEnumeration	ValueEnumeration	Class	http://OntoCAPE/upper_level/system.owl#ValueEnumeration			A ValueEnumeration specifies a (finite) set of possible values of a QualitativeValue.
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+qualitativeValue	qualitativeValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#qualitativeValue			The relation qualitativeValue specifies the actual value of a QualitativeValue.
+process.owl	process.owl	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl			
+PhysicalDimension	PhysicalDimension	Class	http://OntoCAPE/upper_level/system.owl#PhysicalDimension			A PhysicalDimension is a characteristic associated with PhysicalQuantities and UnitsOfMeasure for purposes of organization or differentiation. Mass, length, and force are exemplary instances of PhysicalDimension.
+UnitOfMeasure	UnitOfMeasure	Class	http://OntoCAPE/upper_level/system.owl#UnitOfMeasure			A UnitOfMeasure is a standard measure for the ScalarValue of a of PhysicalQuantity.
+ProcessState	ProcessState	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState			A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
+Property	Property	Class	http://OntoCAPE/upper_level/system.owl#Property			The Property class represents the individual properties (traits, qualities) of a System, which distinguish the System from others. Typical examples are Size, Color, or Weight, which are modeled as subclasses of Property.
+isConnectedTo	isConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConnectedTo			The relation isConnectedTo represents topological connectivity between System.
+Batch	Batch	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch			
+FixedValueSet	FixedValueSet	Class	http://OntoCAPE/upper_level/system.owl#FixedValueSet			A FixedValueSet is a ValueEnumeration that is defined by an exhaustive enumeration of its instances. Thus, the number of possible values is fixed.
+isPredecessorOf	isPredecessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf			The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
+leaves	leaves	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#leaves			The relation Leaves connects an outgoing DirectedConnection to its source Device.
+hasDimension	hasDimension	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDimension			The relation hasDimension specifies the PhysicalDimension of a PhysicalQuantity or a UnitOfMeasure.
+System	System	Class	http://OntoCAPE/upper_level/system.owl#System			The System class denotes all kind of systems, which may be physical or abstract

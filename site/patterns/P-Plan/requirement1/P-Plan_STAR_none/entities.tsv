@@ -1,0 +1,17 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+Activity	Activity	Class	http://purl.org/net/p-plan#Activity			A p-plan:Activity represents the execution process planned in a p-plan:Step
+hasOutputVar	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+isStepOfPlan	isStepOfPlan	ObjectProperty	http://purl.org/net/p-plan#isStepOfPlan			
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+		Entity	http://purl.org/net/p-plan#			
+isInputVarOf	isInputVarOf	ObjectProperty	http://purl.org/net/p-plan#isInputVarOf			
+Plan	Plan	Class	http://purl.org/net/p-plan#Plan			
+isPreceededBy	isPreceededBy	ObjectProperty	http://purl.org/net/p-plan#isPreceededBy			http://purl.org/net/p-plan#
+definition	definition	AnnotationProperty	http://www.w3.org/ns/prov#definition			
+isOutputVarOf	isOutputVarOf	ObjectProperty	http://purl.org/net/p-plan#isOutputVarOf			
+hasInputVar	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+Step	Step	Class	http://purl.org/net/p-plan#Step			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+correspondsToStep	correspondsToStep	ObjectProperty	http://purl.org/net/p-plan#correspondsToStep			

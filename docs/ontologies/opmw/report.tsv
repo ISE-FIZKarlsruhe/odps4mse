@@ -1,4 +1,88 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	prov:aq	rdfs:label	
+ERROR	missing_label	prov:category	rdfs:label	
+ERROR	missing_label	prov:component	rdfs:label	
+ERROR	missing_label	prov:constraints	rdfs:label	
+ERROR	missing_label	prov:definition	rdfs:label	
+ERROR	missing_label	prov:dm	rdfs:label	
+ERROR	missing_label	prov:editorialNote	rdfs:label	
+ERROR	missing_label	prov:editorsDefinition	rdfs:label	
+ERROR	missing_label	prov:inverse	rdfs:label	
+ERROR	missing_label	prov:n	rdfs:label	
+ERROR	missing_label	prov:order	rdfs:label	
+ERROR	missing_label	prov:qualifiedForm	rdfs:label	
+ERROR	missing_label	prov:sharesDefinitionWith	rdfs:label	
+ERROR	missing_label	prov:unqualifiedForm	rdfs:label	
+ERROR	missing_label	http://www.w3.org/ns/prov-o#	rdfs:label	
+WARN	annotation_whitespace	http://purl.org/net/p-plan#isPrecededBy	rdfs:isDefinedBy	Property that asserts which Step preceeds the current one. @en
+WARN	annotation_whitespace	http://www.opmw.org/ontology/WorkflowTemplateProcess	rdfs:comment	"A workflow process template is an abstraction of the workflow execution process step that aims to describe the method followed by the scientist instead of its specific instantiation.
+
+Example:
+@prefix opmw: <http://www.opmw.org/ontology/> .
+@prefix water: <http://www.isi.edu/ac/Water/library.owl#> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CALCULATEHOURLYAVERAGES>
+      a opmw:ProcessTemplate, water:CalculateHourlyAverages;
+      opmw:template <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM>;
+      opmw:uses <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_FILTEREDDATA>.
+      @en"
+WARN	annotation_whitespace	http://www.opmw.org/ontology/correspondsToTemplateProcess	rdfs:comment	"Property that binds a workflow execution process  to its correspondant process template.
+
+Example:
+@prefix opmw: <http://www.opmw.org/ontology/> .
+@prefix opmv: <http://purl.org/net/opmv/ns#> .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDM133549210450086>
+     a opmv:Process, opmw:WorkflowExecutionProcess;
+     opmw:correspondsToTemplateProcess <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_REAERATIONEDM>. @en"
+WARN	annotation_whitespace	http://www.opmw.org/ontology/hasDimensionality	rdfs:comment	"Property that represents the dimensionality of the artifact: 0 is a single file, 1 for a collection, etc.
+
+Example:
+@prefix opmw: <http://www.opmw.org/ontology/> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_DAILYDATA>
+     a opmw:DataVariable, opmw:WorkflowTemplateArtifact;
+     opmw:hasDimensionality \""1\""^^xsd:int.
+@en"
+WARN	annotation_whitespace	http://www.opmw.org/ontology/isGeneratedBy	rdfs:comment	"Property that binds a workflow template artifact to the workflow template process that generates it.
+
+Example:
+@prefix opmw: <http://www.opmw.org/ontology/> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_EDM_REAERATIONPARAMS>
+     a opmw:DataVariable, opmw:WorkflowTemplateArtifact;
+     opmw:isGeneratedBy <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_REAERATIONEDM>.
+
+@en"
+WARN	annotation_whitespace	prov:Agent	prov:definition	An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. @en
+WARN	annotation_whitespace	prov:Entity	prov:definition	An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. @en
+WARN	annotation_whitespace	prov:EntityInfluence	prov:editorsDefinition	EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other. @en
+WARN	annotation_whitespace	prov:actedOnBehalfOf	rdfs:comment	An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. @en
+WARN	annotation_whitespace	prov:category	rdfs:comment	Classify prov-o terms into three categories, including 'starting-point', 'qualifed', and 'extended'. This classification is used by the prov-o html document to gently introduce prov-o terms to its users. @en
+WARN	annotation_whitespace	prov:wasInfluencedBy	prov:editorialNote	"The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .
+
+Subproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.
+
+prov:wasInfluencedBy should not be used without also using one of its subproperties. 
+@en"
+WARN	missing_definition	http://purl.org/net/p-plan#Activity	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#Bundle	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#Entity	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#MultiStep	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#Plan	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#Step	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#Variable	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#correspondsToStep	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#correspondsToVariable	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#hasInputVar	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#hasOutputVar	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isDecomposedAsPlan	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isInputVarOf	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isOutputVarOf	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isPrecededBy	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isStepOfPlan	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isSubPlanOfPlan	IAO:0000115	
+WARN	missing_definition	http://purl.org/net/p-plan#isVariableOfPlan	IAO:0000115	
 WARN	missing_definition	http://www.opmw.org/ontology/DataVariable	IAO:0000115	
 WARN	missing_definition	http://www.opmw.org/ontology/ParameterVariable	IAO:0000115	
 WARN	missing_definition	http://www.opmw.org/ontology/WorkflowExecutionAccount	IAO:0000115	
@@ -33,3 +117,105 @@ WARN	missing_definition	http://www.opmw.org/ontology/overallEndTime	IAO:0000115
 WARN	missing_definition	http://www.opmw.org/ontology/overallStartTime	IAO:0000115	
 WARN	missing_definition	http://www.opmw.org/ontology/uses	IAO:0000115	
 WARN	missing_definition	http://www.opmw.org/ontology/versionNumber	IAO:0000115	
+WARN	missing_definition	prov:Activity	IAO:0000115	
+WARN	missing_definition	prov:ActivityInfluence	IAO:0000115	
+WARN	missing_definition	prov:Agent	IAO:0000115	
+WARN	missing_definition	prov:AgentInfluence	IAO:0000115	
+WARN	missing_definition	prov:Association	IAO:0000115	
+WARN	missing_definition	prov:Attribution	IAO:0000115	
+WARN	missing_definition	prov:Bundle	IAO:0000115	
+WARN	missing_definition	prov:Collection	IAO:0000115	
+WARN	missing_definition	prov:Communication	IAO:0000115	
+WARN	missing_definition	prov:Delegation	IAO:0000115	
+WARN	missing_definition	prov:Derivation	IAO:0000115	
+WARN	missing_definition	prov:End	IAO:0000115	
+WARN	missing_definition	prov:Entity	IAO:0000115	
+WARN	missing_definition	prov:EntityInfluence	IAO:0000115	
+WARN	missing_definition	prov:Generation	IAO:0000115	
+WARN	missing_definition	prov:Influence	IAO:0000115	
+WARN	missing_definition	prov:InstantaneousEvent	IAO:0000115	
+WARN	missing_definition	prov:Invalidation	IAO:0000115	
+WARN	missing_definition	prov:Location	IAO:0000115	
+WARN	missing_definition	prov:Organization	IAO:0000115	
+WARN	missing_definition	prov:Person	IAO:0000115	
+WARN	missing_definition	prov:Plan	IAO:0000115	
+WARN	missing_definition	prov:PrimarySource	IAO:0000115	
+WARN	missing_definition	prov:Quotation	IAO:0000115	
+WARN	missing_definition	prov:Revision	IAO:0000115	
+WARN	missing_definition	prov:Role	IAO:0000115	
+WARN	missing_definition	prov:SoftwareAgent	IAO:0000115	
+WARN	missing_definition	prov:Start	IAO:0000115	
+WARN	missing_definition	prov:Usage	IAO:0000115	
+WARN	missing_definition	prov:actedOnBehalfOf	IAO:0000115	
+WARN	missing_definition	prov:activity	IAO:0000115	
+WARN	missing_definition	prov:agent	IAO:0000115	
+WARN	missing_definition	prov:alternateOf	IAO:0000115	
+WARN	missing_definition	prov:aq	IAO:0000115	
+WARN	missing_definition	prov:atLocation	IAO:0000115	
+WARN	missing_definition	prov:atTime	IAO:0000115	
+WARN	missing_definition	prov:category	IAO:0000115	
+WARN	missing_definition	prov:component	IAO:0000115	
+WARN	missing_definition	prov:constraints	IAO:0000115	
+WARN	missing_definition	prov:definition	IAO:0000115	
+WARN	missing_definition	prov:dm	IAO:0000115	
+WARN	missing_definition	prov:editorialNote	IAO:0000115	
+WARN	missing_definition	prov:editorsDefinition	IAO:0000115	
+WARN	missing_definition	prov:endedAtTime	IAO:0000115	
+WARN	missing_definition	prov:entity	IAO:0000115	
+WARN	missing_definition	prov:generated	IAO:0000115	
+WARN	missing_definition	prov:generatedAtTime	IAO:0000115	
+WARN	missing_definition	prov:hadActivity	IAO:0000115	
+WARN	missing_definition	prov:hadGeneration	IAO:0000115	
+WARN	missing_definition	prov:hadMember	IAO:0000115	
+WARN	missing_definition	prov:hadPlan	IAO:0000115	
+WARN	missing_definition	prov:hadPrimarySource	IAO:0000115	
+WARN	missing_definition	prov:hadRole	IAO:0000115	
+WARN	missing_definition	prov:hadUsage	IAO:0000115	
+WARN	missing_definition	prov:influenced	IAO:0000115	
+WARN	missing_definition	prov:influencer	IAO:0000115	
+WARN	missing_definition	prov:invalidated	IAO:0000115	
+WARN	missing_definition	prov:invalidatedAtTime	IAO:0000115	
+WARN	missing_definition	prov:inverse	IAO:0000115	
+WARN	missing_definition	prov:n	IAO:0000115	
+WARN	missing_definition	prov:order	IAO:0000115	
+WARN	missing_definition	prov:qualifiedAssociation	IAO:0000115	
+WARN	missing_definition	prov:qualifiedAttribution	IAO:0000115	
+WARN	missing_definition	prov:qualifiedCommunication	IAO:0000115	
+WARN	missing_definition	prov:qualifiedDelegation	IAO:0000115	
+WARN	missing_definition	prov:qualifiedDerivation	IAO:0000115	
+WARN	missing_definition	prov:qualifiedEnd	IAO:0000115	
+WARN	missing_definition	prov:qualifiedForm	IAO:0000115	
+WARN	missing_definition	prov:qualifiedGeneration	IAO:0000115	
+WARN	missing_definition	prov:qualifiedInfluence	IAO:0000115	
+WARN	missing_definition	prov:qualifiedInvalidation	IAO:0000115	
+WARN	missing_definition	prov:qualifiedPrimarySource	IAO:0000115	
+WARN	missing_definition	prov:qualifiedQuotation	IAO:0000115	
+WARN	missing_definition	prov:qualifiedRevision	IAO:0000115	
+WARN	missing_definition	prov:qualifiedStart	IAO:0000115	
+WARN	missing_definition	prov:qualifiedUsage	IAO:0000115	
+WARN	missing_definition	prov:sharesDefinitionWith	IAO:0000115	
+WARN	missing_definition	prov:specializationOf	IAO:0000115	
+WARN	missing_definition	prov:startedAtTime	IAO:0000115	
+WARN	missing_definition	prov:unqualifiedForm	IAO:0000115	
+WARN	missing_definition	prov:used	IAO:0000115	
+WARN	missing_definition	prov:value	IAO:0000115	
+WARN	missing_definition	prov:wasAssociatedWith	IAO:0000115	
+WARN	missing_definition	prov:wasAttributedTo	IAO:0000115	
+WARN	missing_definition	prov:wasDerivedFrom	IAO:0000115	
+WARN	missing_definition	prov:wasEndedBy	IAO:0000115	
+WARN	missing_definition	prov:wasGeneratedBy	IAO:0000115	
+WARN	missing_definition	prov:wasInfluencedBy	IAO:0000115	
+WARN	missing_definition	prov:wasInformedBy	IAO:0000115	
+WARN	missing_definition	prov:wasInvalidatedBy	IAO:0000115	
+WARN	missing_definition	prov:wasQuotedFrom	IAO:0000115	
+WARN	missing_definition	prov:wasRevisionOf	IAO:0000115	
+WARN	missing_definition	prov:wasStartedBy	IAO:0000115	
+INFO	missing_superclass	http://purl.org/net/p-plan#Step	rdfs:subClassOf	
+INFO	missing_superclass	http://purl.org/net/p-plan#Variable	rdfs:subClassOf	
+INFO	missing_superclass	prov:Activity	rdfs:subClassOf	
+INFO	missing_superclass	prov:Agent	rdfs:subClassOf	
+INFO	missing_superclass	prov:Entity	rdfs:subClassOf	
+INFO	missing_superclass	prov:Influence	rdfs:subClassOf	
+INFO	missing_superclass	prov:InstantaneousEvent	rdfs:subClassOf	
+INFO	missing_superclass	prov:Location	rdfs:subClassOf	
+INFO	missing_superclass	prov:Role	rdfs:subClassOf	

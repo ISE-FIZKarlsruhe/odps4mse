@@ -2,7 +2,6 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-
 SELECT
   (COALESCE(STR(?lab), ?LOCAL) AS ?LABEL)
   ?LOCAL
@@ -14,15 +13,12 @@ SELECT
 WHERE {
   ?e ?p ?o .
   FILTER(isIRI(?e))
-
   OPTIONAL { ?e rdfs:label ?lab . }
   OPTIONAL { ?e rdfs:comment ?com . }
-
   BIND(STR(?e) AS ?s)
   BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
   BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
   BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
-
   OPTIONAL { ?e rdf:type ?t . }
   BIND(
     IF(?t = owl:Class, "Class",

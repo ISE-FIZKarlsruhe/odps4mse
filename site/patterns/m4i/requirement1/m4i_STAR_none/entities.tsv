@@ -1,0 +1,19 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+closeMatch	closeMatch	AnnotationProperty	http://www.w3.org/2004/02/skos/core#closeMatch			
+Arbeitsschritt	ProcessingStep	Class	http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep			
+part of	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+ist Voraussetzung für Schritt	BFO_0000063	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000063			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
+hat Teil	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+process	BFO_0000015	Class	http://purl.obolibrary.org/obo/BFO_0000015			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+realizable entity	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+beginnt mit	RO_0002224	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002224	started by		
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
+endet mit	RO_0002230	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002230	finished by		
+seeAlso	seeAlso	Entity	http://www.w3.org/2000/01/rdf-schema#seeAlso			

@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/patterns/stato/requirement1/stato_STAR_none/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ontologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>IAO_0000114</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000114</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000114">http://purl.obolibrary.org/obo/IAO_0000114</a>
+  <span class='search-tokens' style='display:none'>IAO 0000114 IAO_0000114 http://purl.obolibrary.org/obo/IAO 0000114 http://purl.obolibrary.org/obo/IAO_0000114 http://purl.obolibrary.org/obo/iao 0000114 http://purl.obolibrary.org/obo/iao_0000114 iao 0000114 iao_0000114</span></li>
+<li><strong>ready for release</strong> (<em>Entity</em>) — <code>IAO_0000122</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+  <span class='search-tokens' style='display:none'>IAO 0000122 IAO_0000122 http://purl.obolibrary.org/obo/IAO 0000122 http://purl.obolibrary.org/obo/IAO_0000122 http://purl.obolibrary.org/obo/iao 0000122 http://purl.obolibrary.org/obo/iao_0000122 iao 0000122 iao_0000122 ready for release</span></li>
+<li><strong>concretizes</strong> (<em>ObjectProperty</em>) — <code>RO_0000059</code> — <a href="http://purl.obolibrary.org/obo/RO_0000059">http://purl.obolibrary.org/obo/RO_0000059</a>
+  <span class='search-tokens' style='display:none'>RO 0000059 RO_0000059 concretizes http://purl.obolibrary.org/obo/RO 0000059 http://purl.obolibrary.org/obo/RO_0000059 http://purl.obolibrary.org/obo/ro 0000059 http://purl.obolibrary.org/obo/ro_0000059 ro 0000059 ro_0000059</span></li>
+<li><strong>metadata complete</strong> (<em>Entity</em>) — <code>IAO_0000120</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000120">http://purl.obolibrary.org/obo/IAO_0000120</a>
+  <span class='search-tokens' style='display:none'>IAO 0000120 IAO_0000120 http://purl.obolibrary.org/obo/IAO 0000120 http://purl.obolibrary.org/obo/IAO_0000120 http://purl.obolibrary.org/obo/iao 0000120 http://purl.obolibrary.org/obo/iao_0000120 iao 0000120 iao_0000120 metadata complete</span></li>
+<li><strong>IAO_0000232</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000232</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000232">http://purl.obolibrary.org/obo/IAO_0000232</a>
+  <span class='search-tokens' style='display:none'>IAO 0000232 IAO_0000232 http://purl.obolibrary.org/obo/IAO 0000232 http://purl.obolibrary.org/obo/IAO_0000232 http://purl.obolibrary.org/obo/iao 0000232 http://purl.obolibrary.org/obo/iao_0000232 iao 0000232 iao_0000232</span></li>
+<li><strong>directive information entity</strong> (<em>Class</em>) — <code>IAO_0000033</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000033">http://purl.obolibrary.org/obo/IAO_0000033</a>
+  <span class='search-tokens' style='display:none'>IAO 0000033 IAO_0000033 directive information entity http://purl.obolibrary.org/obo/IAO 0000033 http://purl.obolibrary.org/obo/IAO_0000033 http://purl.obolibrary.org/obo/iao 0000033 http://purl.obolibrary.org/obo/iao_0000033 iao 0000033 iao_0000033</span></li>
+<li><strong>string</strong> (<em>Entity</em>) — <code>string</code> — <a href="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2001/XMLSchema#string</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2001/XML Schema#string http://www.w3.org/2001/XMLSchema#string http://www.w3.org/2001/xml schema#string http://www.w3.org/2001/xmlschema#string string</span></li>
+<li><strong>RO_0001900</strong> (<em>AnnotationProperty</em>) — <code>RO_0001900</code> — <a href="http://purl.obolibrary.org/obo/RO_0001900">http://purl.obolibrary.org/obo/RO_0001900</a>
+  <span class='search-tokens' style='display:none'>RO 0001900 RO_0001900 http://purl.obolibrary.org/obo/RO 0001900 http://purl.obolibrary.org/obo/RO_0001900 http://purl.obolibrary.org/obo/ro 0001900 http://purl.obolibrary.org/obo/ro_0001900 ro 0001900 ro_0001900</span></li>
+<li><strong>realized in</strong> (<em>ObjectProperty</em>) — <code>BFO_0000054</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000054">http://purl.obolibrary.org/obo/BFO_0000054</a> — <em>comment:</em> Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000054 BFO_0000054 bfo 0000054 bfo_0000054 http://purl.obolibrary.org/obo/BFO 0000054 http://purl.obolibrary.org/obo/BFO_0000054 http://purl.obolibrary.org/obo/bfo 0000054 http://purl.obolibrary.org/obo/bfo_0000054 realized in</span></li>
+<li><strong>IAO_0000600</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000600</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000600">http://purl.obolibrary.org/obo/IAO_0000600</a>
+  <span class='search-tokens' style='display:none'>IAO 0000600 IAO_0000600 http://purl.obolibrary.org/obo/IAO 0000600 http://purl.obolibrary.org/obo/IAO_0000600 http://purl.obolibrary.org/obo/iao 0000600 http://purl.obolibrary.org/obo/iao_0000600 iao 0000600 iao_0000600</span></li>
+<li><strong>real</strong> (<em>Entity</em>) — <code>real</code> — <a href="http://www.w3.org/2002/07/owl#real">http://www.w3.org/2002/07/owl#real</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2002/07/owl#real real</span></li>
+<li><strong>requires discussion</strong> (<em>Entity</em>) — <code>IAO_0000428</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000428">http://purl.obolibrary.org/obo/IAO_0000428</a>
+  <span class='search-tokens' style='display:none'>IAO 0000428 IAO_0000428 http://purl.obolibrary.org/obo/IAO 0000428 http://purl.obolibrary.org/obo/IAO_0000428 http://purl.obolibrary.org/obo/iao 0000428 http://purl.obolibrary.org/obo/iao_0000428 iao 0000428 iao_0000428 requires discussion</span></li>
+<li><strong>pending final vetting</strong> (<em>Entity</em>) — <code>IAO_0000125</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+  <span class='search-tokens' style='display:none'>IAO 0000125 IAO_0000125 http://purl.obolibrary.org/obo/IAO 0000125 http://purl.obolibrary.org/obo/IAO_0000125 http://purl.obolibrary.org/obo/iao 0000125 http://purl.obolibrary.org/obo/iao_0000125 iao 0000125 iao_0000125 pending final vetting</span></li>
+<li><strong>realizes</strong> (<em>ObjectProperty</em>) — <code>BFO_0000055</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000055">http://purl.obolibrary.org/obo/BFO_0000055</a> — <em>comment:</em> Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000055 BFO_0000055 bfo 0000055 bfo_0000055 http://purl.obolibrary.org/obo/BFO 0000055 http://purl.obolibrary.org/obo/BFO_0000055 http://purl.obolibrary.org/obo/bfo 0000055 http://purl.obolibrary.org/obo/bfo_0000055 realizes</span></li>
+<li><strong>metadata incomplete</strong> (<em>Entity</em>) — <code>IAO_0000123</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000123">http://purl.obolibrary.org/obo/IAO_0000123</a>
+  <span class='search-tokens' style='display:none'>IAO 0000123 IAO_0000123 http://purl.obolibrary.org/obo/IAO 0000123 http://purl.obolibrary.org/obo/IAO_0000123 http://purl.obolibrary.org/obo/iao 0000123 http://purl.obolibrary.org/obo/iao_0000123 iao 0000123 iao_0000123 metadata incomplete</span></li>
+<li><strong>is_supported_by_data</strong> (<em>ObjectProperty</em>) — <code>OBI_0000124</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000124">http://purl.obolibrary.org/obo/OBI_0000124</a>
+  <span class='search-tokens' style='display:none'>OBI 0000124 OBI_0000124 http://purl.obolibrary.org/obo/OBI 0000124 http://purl.obolibrary.org/obo/OBI_0000124 http://purl.obolibrary.org/obo/obi 0000124 http://purl.obolibrary.org/obo/obi_0000124 is supported by data is_supported_by_data obi 0000124 obi_0000124</span></li>
+<li><strong>label</strong> (<em>Entity</em>) — <code>label</code> — <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#label http://www.w3.org/2000/01/rdf-schema#label label</span></li>
+<li><strong>has_specified_output</strong> (<em>ObjectProperty</em>) — <code>OBI_0000299</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000299">http://purl.obolibrary.org/obo/OBI_0000299</a>
+  <span class='search-tokens' style='display:none'>OBI 0000299 OBI_0000299 has specified output has_specified_output http://purl.obolibrary.org/obo/OBI 0000299 http://purl.obolibrary.org/obo/OBI_0000299 http://purl.obolibrary.org/obo/obi 0000299 http://purl.obolibrary.org/obo/obi_0000299 obi 0000299 obi_0000299</span></li>
+<li><strong>IAO_0000112</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000112</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000112">http://purl.obolibrary.org/obo/IAO_0000112</a>
+  <span class='search-tokens' style='display:none'>IAO 0000112 IAO_0000112 http://purl.obolibrary.org/obo/IAO 0000112 http://purl.obolibrary.org/obo/IAO_0000112 http://purl.obolibrary.org/obo/iao 0000112 http://purl.obolibrary.org/obo/iao_0000112 iao 0000112 iao_0000112</span></li>
+<li><strong>BFO_0000180</strong> (<em>AnnotationProperty</em>) — <code>BFO_0000180</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000180">http://purl.obolibrary.org/obo/BFO_0000180</a>
+  <span class='search-tokens' style='display:none'>BFO 0000180 BFO_0000180 bfo 0000180 bfo_0000180 http://purl.obolibrary.org/obo/BFO 0000180 http://purl.obolibrary.org/obo/BFO_0000180 http://purl.obolibrary.org/obo/bfo 0000180 http://purl.obolibrary.org/obo/bfo_0000180</span></li>
+<li><strong>has measurement value</strong> (<em>DatatypeProperty</em>) — <code>IAO_0000004</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000004">http://purl.obolibrary.org/obo/IAO_0000004</a>
+  <span class='search-tokens' style='display:none'>IAO 0000004 IAO_0000004 has measurement value http://purl.obolibrary.org/obo/IAO 0000004 http://purl.obolibrary.org/obo/IAO_0000004 http://purl.obolibrary.org/obo/iao 0000004 http://purl.obolibrary.org/obo/iao_0000004 iao 0000004 iao_0000004</span></li>
+<li><strong>to be replaced with external ontology term</strong> (<em>Entity</em>) — <code>IAO_0000423</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000423">http://purl.obolibrary.org/obo/IAO_0000423</a>
+  <span class='search-tokens' style='display:none'>IAO 0000423 IAO_0000423 http://purl.obolibrary.org/obo/IAO 0000423 http://purl.obolibrary.org/obo/IAO_0000423 http://purl.obolibrary.org/obo/iao 0000423 http://purl.obolibrary.org/obo/iao_0000423 iao 0000423 iao_0000423 to be replaced with external ontology term</span></li>
+<li><strong>is_specified_output_of</strong> (<em>ObjectProperty</em>) — <code>OBI_0000312</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000312">http://purl.obolibrary.org/obo/OBI_0000312</a>
+  <span class='search-tokens' style='display:none'>OBI 0000312 OBI_0000312 http://purl.obolibrary.org/obo/OBI 0000312 http://purl.obolibrary.org/obo/OBI_0000312 http://purl.obolibrary.org/obo/obi 0000312 http://purl.obolibrary.org/obo/obi_0000312 is specified output of is_specified_output_of obi 0000312 obi_0000312</span></li>
+<li><strong>has part</strong> (<em>ObjectProperty</em>) — <code>BFO_0000051</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000051">http://purl.obolibrary.org/obo/BFO_0000051</a>
+  <span class='search-tokens' style='display:none'>BFO 0000051 BFO_0000051 bfo 0000051 bfo_0000051 has part http://purl.obolibrary.org/obo/BFO 0000051 http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/bfo 0000051 http://purl.obolibrary.org/obo/bfo_0000051</span></li>
+<li><strong>is member of</strong> (<em>ObjectProperty</em>) — <code>STATO_0000114</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000114">http://purl.obolibrary.org/obo/STATO_0000114</a>
+  <span class='search-tokens' style='display:none'>STATO 0000114 STATO_0000114 http://purl.obolibrary.org/obo/STATO 0000114 http://purl.obolibrary.org/obo/STATO_0000114 http://purl.obolibrary.org/obo/stato 0000114 http://purl.obolibrary.org/obo/stato_0000114 is member of stato 0000114 stato_0000114</span></li>
+<li><strong>uncurated</strong> (<em>Entity</em>) — <code>IAO_0000124</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000124">http://purl.obolibrary.org/obo/IAO_0000124</a>
+  <span class='search-tokens' style='display:none'>IAO 0000124 IAO_0000124 http://purl.obolibrary.org/obo/IAO 0000124 http://purl.obolibrary.org/obo/IAO_0000124 http://purl.obolibrary.org/obo/iao 0000124 http://purl.obolibrary.org/obo/iao_0000124 iao 0000124 iao_0000124 uncurated</span></li>
+<li><strong>IAO_0000602</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000602</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000602">http://purl.obolibrary.org/obo/IAO_0000602</a>
+  <span class='search-tokens' style='display:none'>IAO 0000602 IAO_0000602 http://purl.obolibrary.org/obo/IAO 0000602 http://purl.obolibrary.org/obo/IAO_0000602 http://purl.obolibrary.org/obo/iao 0000602 http://purl.obolibrary.org/obo/iao_0000602 iao 0000602 iao_0000602</span></li>
+<li><strong>declares</strong> (<em>ObjectProperty</em>) — <code>STATO_0000001</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000001">http://purl.obolibrary.org/obo/STATO_0000001</a>
+  <span class='search-tokens' style='display:none'>STATO 0000001 STATO_0000001 declares http://purl.obolibrary.org/obo/STATO 0000001 http://purl.obolibrary.org/obo/STATO_0000001 http://purl.obolibrary.org/obo/stato 0000001 http://purl.obolibrary.org/obo/stato_0000001 stato 0000001 stato_0000001</span></li>
+<li><strong>has value specification</strong> (<em>ObjectProperty</em>) — <code>OBI_0001938</code> — <a href="http://purl.obolibrary.org/obo/OBI_0001938">http://purl.obolibrary.org/obo/OBI_0001938</a>
+  <span class='search-tokens' style='display:none'>OBI 0001938 OBI_0001938 has value specification http://purl.obolibrary.org/obo/OBI 0001938 http://purl.obolibrary.org/obo/OBI_0001938 http://purl.obolibrary.org/obo/obi 0001938 http://purl.obolibrary.org/obo/obi_0001938 obi 0001938 obi_0001938</span></li>
+<li><strong>process</strong> (<em>Class</em>) — <code>BFO_0000015</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000015">http://purl.obolibrary.org/obo/BFO_0000015</a>
+  <span class='search-tokens' style='display:none'>BFO 0000015 BFO_0000015 bfo 0000015 bfo_0000015 http://purl.obolibrary.org/obo/BFO 0000015 http://purl.obolibrary.org/obo/BFO_0000015 http://purl.obolibrary.org/obo/bfo 0000015 http://purl.obolibrary.org/obo/bfo_0000015 process</span></li>
+<li><strong>IAO_0000116</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000116</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000116">http://purl.obolibrary.org/obo/IAO_0000116</a>
+  <span class='search-tokens' style='display:none'>IAO 0000116 IAO_0000116 http://purl.obolibrary.org/obo/IAO 0000116 http://purl.obolibrary.org/obo/IAO_0000116 http://purl.obolibrary.org/obo/iao 0000116 http://purl.obolibrary.org/obo/iao_0000116 iao 0000116 iao_0000116</span></li>
+<li><strong>example to be eventually removed</strong> (<em>Entity</em>) — <code>IAO_0000002</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000002">http://purl.obolibrary.org/obo/IAO_0000002</a>
+  <span class='search-tokens' style='display:none'>IAO 0000002 IAO_0000002 example to be eventually removed http://purl.obolibrary.org/obo/IAO 0000002 http://purl.obolibrary.org/obo/IAO_0000002 http://purl.obolibrary.org/obo/iao 0000002 http://purl.obolibrary.org/obo/iao_0000002 iao 0000002 iao_0000002</span></li>
+<li><strong>has measurement unit label</strong> (<em>ObjectProperty</em>) — <code>IAO_0000039</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000039">http://purl.obolibrary.org/obo/IAO_0000039</a>
+  <span class='search-tokens' style='display:none'>IAO 0000039 IAO_0000039 has measurement unit label http://purl.obolibrary.org/obo/IAO 0000039 http://purl.obolibrary.org/obo/IAO_0000039 http://purl.obolibrary.org/obo/iao 0000039 http://purl.obolibrary.org/obo/iao_0000039 iao 0000039 iao_0000039</span></li>
+<li><strong>IAO_0000601</strong> (<em>Entity</em>) — <code>IAO_0000601</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000601">http://purl.obolibrary.org/obo/IAO_0000601</a>
+  <span class='search-tokens' style='display:none'>IAO 0000601 IAO_0000601 http://purl.obolibrary.org/obo/IAO 0000601 http://purl.obolibrary.org/obo/IAO_0000601 http://purl.obolibrary.org/obo/iao 0000601 http://purl.obolibrary.org/obo/iao_0000601 iao 0000601 iao_0000601</span></li>
+<li><strong>IAO_0000111</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000111</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000111">http://purl.obolibrary.org/obo/IAO_0000111</a>
+  <span class='search-tokens' style='display:none'>IAO 0000111 IAO_0000111 http://purl.obolibrary.org/obo/IAO 0000111 http://purl.obolibrary.org/obo/IAO_0000111 http://purl.obolibrary.org/obo/iao 0000111 http://purl.obolibrary.org/obo/iao_0000111 iao 0000111 iao_0000111</span></li>
+<li><strong>Literal</strong> (<em>Entity</em>) — <code>Literal</code> — <a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a>
+  <span class='search-tokens' style='display:none'>Literal http://www.w3.org/2000/01/rdf schema# Literal http://www.w3.org/2000/01/rdf schema# literal http://www.w3.org/2000/01/rdf schema#Literal http://www.w3.org/2000/01/rdf-schema#Literal http://www.w3.org/2000/01/rdf-schema#literal literal</span></li>
+<li><strong>IAO_0000117</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000117</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000117">http://purl.obolibrary.org/obo/IAO_0000117</a>
+  <span class='search-tokens' style='display:none'>IAO 0000117 IAO_0000117 http://purl.obolibrary.org/obo/IAO 0000117 http://purl.obolibrary.org/obo/IAO_0000117 http://purl.obolibrary.org/obo/iao 0000117 http://purl.obolibrary.org/obo/iao_0000117 iao 0000117 iao_0000117</span></li>
+<li><strong>objective specification</strong> (<em>Class</em>) — <code>IAO_0000005</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000005">http://purl.obolibrary.org/obo/IAO_0000005</a>
+  <span class='search-tokens' style='display:none'>IAO 0000005 IAO_0000005 http://purl.obolibrary.org/obo/IAO 0000005 http://purl.obolibrary.org/obo/IAO_0000005 http://purl.obolibrary.org/obo/iao 0000005 http://purl.obolibrary.org/obo/iao_0000005 iao 0000005 iao_0000005 objective specification</span></li>
+<li><strong>planned process</strong> (<em>Class</em>) — <code>OBI_0000011</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000011">http://purl.obolibrary.org/obo/OBI_0000011</a>
+  <span class='search-tokens' style='display:none'>OBI 0000011 OBI_0000011 http://purl.obolibrary.org/obo/OBI 0000011 http://purl.obolibrary.org/obo/OBI_0000011 http://purl.obolibrary.org/obo/obi 0000011 http://purl.obolibrary.org/obo/obi_0000011 obi 0000011 obi_0000011 planned process</span></li>
+<li><strong>is denoted by</strong> (<em>ObjectProperty</em>) — <code>STATO_0000205</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000205">http://purl.obolibrary.org/obo/STATO_0000205</a>
+  <span class='search-tokens' style='display:none'>STATO 0000205 STATO_0000205 http://purl.obolibrary.org/obo/STATO 0000205 http://purl.obolibrary.org/obo/STATO_0000205 http://purl.obolibrary.org/obo/stato 0000205 http://purl.obolibrary.org/obo/stato_0000205 is denoted by stato 0000205 stato_0000205</span></li>
+<li><strong>has participant</strong> (<em>ObjectProperty</em>) — <code>RO_0000057</code> — <a href="http://purl.obolibrary.org/obo/RO_0000057">http://purl.obolibrary.org/obo/RO_0000057</a>
+  <span class='search-tokens' style='display:none'>RO 0000057 RO_0000057 has participant http://purl.obolibrary.org/obo/RO 0000057 http://purl.obolibrary.org/obo/RO_0000057 http://purl.obolibrary.org/obo/ro 0000057 http://purl.obolibrary.org/obo/ro_0000057 ro 0000057 ro_0000057</span></li>
+<li><strong>has member</strong> (<em>ObjectProperty</em>) — <code>STATO_0000115</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000115">http://purl.obolibrary.org/obo/STATO_0000115</a>
+  <span class='search-tokens' style='display:none'>STATO 0000115 STATO_0000115 has member http://purl.obolibrary.org/obo/STATO 0000115 http://purl.obolibrary.org/obo/STATO_0000115 http://purl.obolibrary.org/obo/stato 0000115 http://purl.obolibrary.org/obo/stato_0000115 stato 0000115 stato_0000115</span></li>
+<li><strong>action specification</strong> (<em>Class</em>) — <code>IAO_0000007</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000007">http://purl.obolibrary.org/obo/IAO_0000007</a>
+  <span class='search-tokens' style='display:none'>IAO 0000007 IAO_0000007 action specification http://purl.obolibrary.org/obo/IAO 0000007 http://purl.obolibrary.org/obo/IAO_0000007 http://purl.obolibrary.org/obo/iao 0000007 http://purl.obolibrary.org/obo/iao_0000007 iao 0000007 iao_0000007</span></li>
+<li><strong>is declared by</strong> (<em>ObjectProperty</em>) — <code>STATO_0000004</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000004">http://purl.obolibrary.org/obo/STATO_0000004</a>
+  <span class='search-tokens' style='display:none'>STATO 0000004 STATO_0000004 http://purl.obolibrary.org/obo/STATO 0000004 http://purl.obolibrary.org/obo/STATO_0000004 http://purl.obolibrary.org/obo/stato 0000004 http://purl.obolibrary.org/obo/stato_0000004 is declared by stato 0000004 stato_0000004</span></li>
+<li><strong>IAO_0000412</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000412</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000412">http://purl.obolibrary.org/obo/IAO_0000412</a>
+  <span class='search-tokens' style='display:none'>IAO 0000412 IAO_0000412 http://purl.obolibrary.org/obo/IAO 0000412 http://purl.obolibrary.org/obo/IAO_0000412 http://purl.obolibrary.org/obo/iao 0000412 http://purl.obolibrary.org/obo/iao_0000412 iao 0000412 iao_0000412</span></li>
+<li><strong>PlainLiteral</strong> (<em>Entity</em>) — <code>PlainLiteral</code> — <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a>
+  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span></li>
+<li><strong>OBI_0001847</strong> (<em>Entity</em>) — <code>OBI_0001847</code> — <a href="http://purl.obolibrary.org/obo/OBI_0001847">http://purl.obolibrary.org/obo/OBI_0001847</a>
+  <span class='search-tokens' style='display:none'>OBI 0001847 OBI_0001847 http://purl.obolibrary.org/obo/OBI 0001847 http://purl.obolibrary.org/obo/OBI_0001847 http://purl.obolibrary.org/obo/obi 0001847 http://purl.obolibrary.org/obo/obi_0001847 obi 0001847 obi_0001847</span></li>
+<li><strong>isDefinedBy</strong> (<em>Entity</em>) — <code>isDefinedBy</code> — <a href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">http://www.w3.org/2000/01/rdf-schema#isDefinedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#is Defined By http://www.w3.org/2000/01/rdf schema#is defined by http://www.w3.org/2000/01/rdf schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isdefinedby is Defined By is defined by isDefinedBy isdefinedby</span></li>
+<li><strong>seeAlso</strong> (<em>Entity</em>) — <code>seeAlso</code> — <a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">http://www.w3.org/2000/01/rdf-schema#seeAlso</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#see Also http://www.w3.org/2000/01/rdf schema#see also http://www.w3.org/2000/01/rdf schema#seeAlso http://www.w3.org/2000/01/rdf-schema#seeAlso http://www.w3.org/2000/01/rdf-schema#seealso see Also see also seeAlso seealso</span></li>
+<li><strong>IAO_0000118</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000118</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000118">http://purl.obolibrary.org/obo/IAO_0000118</a>
+  <span class='search-tokens' style='display:none'>IAO 0000118 IAO_0000118 http://purl.obolibrary.org/obo/IAO 0000118 http://purl.obolibrary.org/obo/IAO_0000118 http://purl.obolibrary.org/obo/iao 0000118 http://purl.obolibrary.org/obo/iao_0000118 iao 0000118 iao_0000118</span></li>
+<li><strong>part of</strong> (<em>ObjectProperty</em>) — <code>BFO_0000050</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000050">http://purl.obolibrary.org/obo/BFO_0000050</a>
+  <span class='search-tokens' style='display:none'>BFO 0000050 BFO_0000050 bfo 0000050 bfo_0000050 http://purl.obolibrary.org/obo/BFO 0000050 http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/bfo 0000050 http://purl.obolibrary.org/obo/bfo_0000050 part of</span></li>
+<li><strong>is concretized as</strong> (<em>ObjectProperty</em>) — <code>RO_0000058</code> — <a href="http://purl.obolibrary.org/obo/RO_0000058">http://purl.obolibrary.org/obo/RO_0000058</a>
+  <span class='search-tokens' style='display:none'>RO 0000058 RO_0000058 http://purl.obolibrary.org/obo/RO 0000058 http://purl.obolibrary.org/obo/RO_0000058 http://purl.obolibrary.org/obo/ro 0000058 http://purl.obolibrary.org/obo/ro_0000058 is concretized as ro 0000058 ro_0000058</span></li>
+<li><strong>double</strong> (<em>Entity</em>) — <code>double</code> — <a href="http://www.w3.org/2001/XMLSchema#double">http://www.w3.org/2001/XMLSchema#double</a>
+  <span class='search-tokens' style='display:none'>double http://www.w3.org/2001/XML Schema#double http://www.w3.org/2001/XMLSchema#double http://www.w3.org/2001/xml schema#double http://www.w3.org/2001/xmlschema#double</span></li>
+<li><strong>stato.owl</strong> (<em>Entity</em>) — <code>stato.owl</code> — <a href="http://purl.obolibrary.org/obo/stato.owl">http://purl.obolibrary.org/obo/stato.owl</a>
+  <span class='search-tokens' style='display:none'>http://purl.obolibrary.org/obo/stato.owl stato.owl</span></li>
+<li><strong>comment</strong> (<em>Entity</em>) — <code>comment</code> — <a href="http://www.w3.org/2000/01/rdf-schema#comment">http://www.w3.org/2000/01/rdf-schema#comment</a>
+  <span class='search-tokens' style='display:none'>comment http://www.w3.org/2000/01/rdf schema#comment http://www.w3.org/2000/01/rdf-schema#comment</span></li>
+<li><strong>participates in</strong> (<em>ObjectProperty</em>) — <code>RO_0000056</code> — <a href="http://purl.obolibrary.org/obo/RO_0000056">http://purl.obolibrary.org/obo/RO_0000056</a>
+  <span class='search-tokens' style='display:none'>RO 0000056 RO_0000056 http://purl.obolibrary.org/obo/RO 0000056 http://purl.obolibrary.org/obo/RO_0000056 http://purl.obolibrary.org/obo/ro 0000056 http://purl.obolibrary.org/obo/ro_0000056 participates in ro 0000056 ro_0000056</span></li>
+<li><strong>plan specification</strong> (<em>Class</em>) — <code>IAO_0000104</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000104">http://purl.obolibrary.org/obo/IAO_0000104</a> — <em>comment:</em> "2/3/2009 Comment from OBI review.
+  <span class='search-tokens' style='display:none'>IAO 0000104 IAO_0000104 http://purl.obolibrary.org/obo/IAO 0000104 http://purl.obolibrary.org/obo/IAO_0000104 http://purl.obolibrary.org/obo/iao 0000104 http://purl.obolibrary.org/obo/iao_0000104 iao 0000104 iao_0000104 plan specification</span></li>
+<li>**<em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'></span></li>
+<li><strong>Action specification not well enough specified.</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>Action specification not well enough specified. action specification not well enough specified.</span></li>
+<li><strong>Conditional specification not well enough specified.</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>Conditional specification not well enough specified. conditional specification not well enough specified.</span></li>
+<li><strong>Question whether all plan specifications have objective specifications.</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>Question whether all plan specifications have objective specifications. question whether all plan specifications have objective specifications.</span></li>
+<li>**<em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'></span></li>
+<li><strong>Request that IAO either clarify these or change definitions not to use them"</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>Request that IAO either clarify these or change definitions not to use them" request that iao either clarify these or change definitions not to use them"</span></li>
+<li><strong>has_specified_input</strong> (<em>ObjectProperty</em>) — <code>OBI_0000293</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000293">http://purl.obolibrary.org/obo/OBI_0000293</a>
+  <span class='search-tokens' style='display:none'>OBI 0000293 OBI_0000293 has specified input has_specified_input http://purl.obolibrary.org/obo/OBI 0000293 http://purl.obolibrary.org/obo/OBI_0000293 http://purl.obolibrary.org/obo/obi 0000293 http://purl.obolibrary.org/obo/obi_0000293 obi 0000293 obi_0000293</span></li>
+<li><strong>has specified value</strong> (<em>DatatypeProperty</em>) — <code>OBI_0002135</code> — <a href="http://purl.obolibrary.org/obo/OBI_0002135">http://purl.obolibrary.org/obo/OBI_0002135</a>
+  <span class='search-tokens' style='display:none'>OBI 0002135 OBI_0002135 has specified value http://purl.obolibrary.org/obo/OBI 0002135 http://purl.obolibrary.org/obo/OBI_0002135 http://purl.obolibrary.org/obo/obi 0002135 http://purl.obolibrary.org/obo/obi_0002135 obi 0002135 obi_0002135</span></li>
+<li><strong>STATO_0000032</strong> (<em>Entity</em>) — <code>STATO_0000032</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000032">http://purl.obolibrary.org/obo/STATO_0000032</a>
+  <span class='search-tokens' style='display:none'>STATO 0000032 STATO_0000032 http://purl.obolibrary.org/obo/STATO 0000032 http://purl.obolibrary.org/obo/STATO_0000032 http://purl.obolibrary.org/obo/stato 0000032 http://purl.obolibrary.org/obo/stato_0000032 stato 0000032 stato_0000032</span></li>
+<li><strong>is about</strong> (<em>ObjectProperty</em>) — <code>IAO_0000136</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000136">http://purl.obolibrary.org/obo/IAO_0000136</a>
+  <span class='search-tokens' style='display:none'>IAO 0000136 IAO_0000136 http://purl.obolibrary.org/obo/IAO 0000136 http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/iao 0000136 http://purl.obolibrary.org/obo/iao_0000136 iao 0000136 iao_0000136 is about</span></li>
+<li><strong>IAO_0000115</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000115</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000115">http://purl.obolibrary.org/obo/IAO_0000115</a>
+  <span class='search-tokens' style='display:none'>IAO 0000115 IAO_0000115 http://purl.obolibrary.org/obo/IAO 0000115 http://purl.obolibrary.org/obo/IAO_0000115 http://purl.obolibrary.org/obo/iao 0000115 http://purl.obolibrary.org/obo/iao_0000115 iao 0000115 iao_0000115</span></li>
+<li><strong>has specified numeric value</strong> (<em>DatatypeProperty</em>) — <code>OBI_0001937</code> — <a href="http://purl.obolibrary.org/obo/OBI_0001937">http://purl.obolibrary.org/obo/OBI_0001937</a>
+  <span class='search-tokens' style='display:none'>OBI 0001937 OBI_0001937 has specified numeric value http://purl.obolibrary.org/obo/OBI 0001937 http://purl.obolibrary.org/obo/OBI_0001937 http://purl.obolibrary.org/obo/obi 0001937 http://purl.obolibrary.org/obo/obi_0001937 obi 0001937 obi_0001937</span></li>
+<li><strong>source</strong> (<em>AnnotationProperty</em>) — <code>source</code> — <a href="http://purl.org/dc/elements/1.1/source">http://purl.org/dc/elements/1.1/source</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/elements/1.1/source source</span></li>
+<li><strong>is_specified_input_of</strong> (<em>ObjectProperty</em>) — <code>OBI_0000295</code> — <a href="http://purl.obolibrary.org/obo/OBI_0000295">http://purl.obolibrary.org/obo/OBI_0000295</a>
+  <span class='search-tokens' style='display:none'>OBI 0000295 OBI_0000295 http://purl.obolibrary.org/obo/OBI 0000295 http://purl.obolibrary.org/obo/OBI_0000295 http://purl.obolibrary.org/obo/obi 0000295 http://purl.obolibrary.org/obo/obi_0000295 is specified input of is_specified_input_of obi 0000295 obi_0000295</span></li>
+<li><strong>BFO_0000179</strong> (<em>AnnotationProperty</em>) — <code>BFO_0000179</code> — <a href="http://purl.obolibrary.org/obo/BFO_0000179">http://purl.obolibrary.org/obo/BFO_0000179</a>
+  <span class='search-tokens' style='display:none'>BFO 0000179 BFO_0000179 bfo 0000179 bfo_0000179 http://purl.obolibrary.org/obo/BFO 0000179 http://purl.obolibrary.org/obo/BFO_0000179 http://purl.obolibrary.org/obo/bfo 0000179 http://purl.obolibrary.org/obo/bfo_0000179</span></li>
+<li><strong>organizational term</strong> (<em>Entity</em>) — <code>IAO_0000121</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000121">http://purl.obolibrary.org/obo/IAO_0000121</a>
+  <span class='search-tokens' style='display:none'>IAO 0000121 IAO_0000121 http://purl.obolibrary.org/obo/IAO 0000121 http://purl.obolibrary.org/obo/IAO_0000121 http://purl.obolibrary.org/obo/iao 0000121 http://purl.obolibrary.org/obo/iao_0000121 iao 0000121 iao_0000121 organizational term</span></li>
+<li><strong>denotes</strong> (<em>ObjectProperty</em>) — <code>IAO_0000219</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000219">http://purl.obolibrary.org/obo/IAO_0000219</a>
+  <span class='search-tokens' style='display:none'>IAO 0000219 IAO_0000219 denotes http://purl.obolibrary.org/obo/IAO 0000219 http://purl.obolibrary.org/obo/IAO_0000219 http://purl.obolibrary.org/obo/iao 0000219 http://purl.obolibrary.org/obo/iao_0000219 iao 0000219 iao_0000219</span></li>
+<li><strong>IAO_0000119</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000119</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000119">http://purl.obolibrary.org/obo/IAO_0000119</a>
+  <span class='search-tokens' style='display:none'>IAO 0000119 IAO_0000119 http://purl.obolibrary.org/obo/IAO 0000119 http://purl.obolibrary.org/obo/IAO_0000119 http://purl.obolibrary.org/obo/iao 0000119 http://purl.obolibrary.org/obo/iao_0000119 iao 0000119 iao_0000119</span></li>
+<li><strong>executes</strong> (<em>ObjectProperty</em>) — <code>STATO_0000102</code> — <a href="http://purl.obolibrary.org/obo/STATO_0000102">http://purl.obolibrary.org/obo/STATO_0000102</a>
+  <span class='search-tokens' style='display:none'>STATO 0000102 STATO_0000102 executes http://purl.obolibrary.org/obo/STATO 0000102 http://purl.obolibrary.org/obo/STATO_0000102 http://purl.obolibrary.org/obo/stato 0000102 http://purl.obolibrary.org/obo/stato_0000102 stato 0000102 stato_0000102</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

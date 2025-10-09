@@ -1,0 +1,209 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+Arbeitsschritt	ProcessingStep	Class	http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep			
+had role	hadRole	ObjectProperty	http://www.w3.org/ns/prov#hadRole			
+realized in	BFO_0000054	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000054			Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+broader	broader	AnnotationProperty	http://www.w3.org/2004/02/skos/core#broader			
+has standard uncertainty	hasStandardUnc	DatatypeProperty	https://ptb.de/si/hasStandardUnc			
+contact person	ContactPerson	Individual	http://w3id.org/nfdi4ing/metadata4ing#ContactPerson			
+erweiterte Unsicherheit	ExpandedUnc	Class	https://ptb.de/si/ExpandedUnc			
+bibliografischer Eintrag	BibliographicRecord	Class	http://purl.org/spar/biro/BibliographicRecord			A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs.
+has distribution	hasDistribution	DatatypeProperty	https://ptb.de/si/hasDistribution			
+hasAdmissibleUnit	hasAdmissibleUnit	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleUnit			
+has ORCID ID	orcidId	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#orcidId			
+Project	Project	Class	https://schema.org/Project			An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim
+agent	agent	ObjectProperty	http://www.w3.org/ns/prov#agent			
+has variable description	hasVariableDescription	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription			
+hat Datumszuweisung gültig bis	hasDateAssignmentValidUntil	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidUntil			
+Vorname	firstName	DatatypeProperty	http://xmlns.com/foaf/0.1/firstName			The first name of a person.
+DateTime	DateTime	Entity	https://schema.org/DateTime			
+has expanded uncertainty	hasExpandedUnc	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasExpandedUnc			
+realizable entity	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
+Role	Role	Class	http://www.w3.org/ns/prov#Role			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+gehört zu Projekt	inProject	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#inProject			
+has coverage probability	hasCoverageProbability	DatatypeProperty	https://ptb.de/si/hasCoverageProbability			
+last name	lastName	DatatypeProperty	http://xmlns.com/foaf/0.1/lastName			The last name of a person.
+issued	issued	AnnotationProperty	http://purl.org/dc/terms/issued			
+status	status	AnnotationProperty	http://purl.org/ontology/bibo/status			
+ist Wert in Zuweisung	isValueInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment			
+Packformat	packageFormat	ObjectProperty	http://www.w3.org/ns/dcat#packageFormat			
+ist Voraussetzung für Schritt	BFO_0000063	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000063			
+project start date	startOfProject	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#startOfProject			
+Verteilung	Distribution	Class	http://www.w3.org/ns/dcat#Distribution			
+untersucht	investigates	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#investigates			
+creator	creator	AnnotationProperty	http://purl.org/dc/terms/creator			
+Gruppe	Group	Class	http://xmlns.com/foaf/0.1/Group			A class of Agents.
+Person	Person	Class	http://xmlns.com/foaf/0.1/Person			A person.
+coverage interval	CoverageInterval	Class	https://ptb.de/si/CoverageInterval			
+preferredNamespacePrefix	preferredNamespacePrefix	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespacePrefix			
+process	BFO_0000015	Class	http://purl.obolibrary.org/obo/BFO_0000015			
+Größenwert	QuantityValue	Class	http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue			
+is assignment for	isAssignmentFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor			
+producer	Producer	Individual	http://w3id.org/nfdi4ing/metadata4ing#Producer			
+closeMatch	closeMatch	AnnotationProperty	http://www.w3.org/2004/02/skos/core#closeMatch			
+abstract	abstract	AnnotationProperty	http://purl.org/dc/terms/abstract			
+wasRoleIn	wasRoleIn	ObjectProperty	http://www.w3.org/ns/prov#wasRoleIn			
+implemented by	implementedBy	ObjectProperty	http://www.w3.org/ns/ssn/implementedBy			
+measurement unit	EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4	Class	http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4			
+has distribution	distribution	ObjectProperty	http://www.w3.org/ns/dcat#distribution			
+spatial resolution (in metres)	spatialResolutionInMeters	DatatypeProperty	http://www.w3.org/ns/dcat#spatialResolutionInMeters			
+Input von	RO_0002352	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002352			
+Medientyp	mediaType	ObjectProperty	http://www.w3.org/ns/dcat#mediaType			
+has ROR ID	hasRorId	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasRorId	has research organization registry id | hat Forschungsorganisationsid		
+is admissible unit for	isAdmissibleUnitFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor			
+hat Teilnehmer	RO_0000057	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000057			
+has variable	hasVariable	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasVariable			
+scopeNote	scopeNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#scopeNote			
+hat Datumszuweisung gültig ab	hasDateAssignmentValidFrom	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidFrom			
+ist Eigenschaft von	isPropertyOf	ObjectProperty	http://www.w3.org/ns/ssn/isPropertyOf			
+publisher	publisher	AnnotationProperty	http://purl.org/dc/terms/publisher			
+has date assignment deleted	hasDateAssignmentDeleted	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentDeleted			
+Ungreifbares	Intangible	Class	https://schema.org/Intangible			
+Anbieter*in	Distributor	Individual	http://w3id.org/nfdi4ing/metadata4ing#Distributor			
+hat Zeitstempel	temporal	DatatypeProperty	https://schema.org/temporal			
+project participant	projectParticipant	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#projectParticipant			
+affiliation	affiliation	AnnotationProperty	https://schema.org/affiliation			An organization that this person is affiliated with. For example, a school/university, a club, or a team.
+narrower	narrower	AnnotationProperty	http://www.w3.org/2004/02/skos/core#narrower			
+in series	inSeries	ObjectProperty	http://www.w3.org/ns/dcat#inSeries			Normally, child datasets in dataset series are represented as dcat:Dataset. The use of dcat:Distribution for typing child datasets is however recognized as a possible alternative, whenever it addresses more effectively the requirements of a given application scenario.
+Projektmitglied	ProjectMember	Individual	http://w3id.org/nfdi4ing/metadata4ing#ProjectMember			
+funder	funder	AnnotationProperty	https://schema.org/funder			A person or organization that supports (sponsors) something through some kind of financial contribution.
+Methode	Method	Class	http://w3id.org/nfdi4ing/metadata4ing#Method			
+supervisor	Supervisor	Individual	http://w3id.org/nfdi4ing/metadata4ing#Supervisor			
+contributor	contributor	AnnotationProperty	http://purl.org/dc/terms/contributor			
+has input	RO_0002233	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002233			
+part of	BFO_0000050	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000050			
+sponsor	Sponsor	Individual	http://w3id.org/nfdi4ing/metadata4ing#Sponsor			
+start time	startTime	DatatypeProperty	https://schema.org/startTime			"The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>
+
+Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."
+references	references	AnnotationProperty	http://purl.org/dc/terms/references			A related resource that is referenced, cited, or otherwise pointed to by the described resource.
+file size (in bytes)	byteSize	DatatypeProperty	http://www.w3.org/ns/dcat#byteSize			
+numerische Zuweisung	NumericalAssignment	Class	http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment			
+has runtime assignment	hasRuntimeAssignment	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasRuntimeAssignment			
+ist beteiligt an	RO_0000056	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000056			
+research group	ResearchGroup	Individual	http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+implemented by	implementedByTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementedByTool			
+Value	Value	Class	http://www.molmod.info/semantics/pims-ii.ttl#Value			
+registration authority	RegistrationAuthority	Individual	http://w3id.org/nfdi4ing/metadata4ing#RegistrationAuthority			
+Forschungsprojekt	ResearchProject	Class	https://schema.org/ResearchProject			A research project
+hat zugewiesenen Wert	hasAssignedValue	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue			
+Downloadlink	downloadURL	ObjectProperty	http://www.w3.org/ns/dcat#downloadURL			
+Property	Property	Class	http://www.molmod.info/semantics/pims-ii.ttl#Property			
+date	date	Entity	http://www.w3.org/2001/XMLSchema#date			
+Projektmanager*in	ProjectManager	Individual	http://w3id.org/nfdi4ing/metadata4ing#ProjectManager			
+ist unmittelbare Voraussetzung für Schritt	RO_0002090	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002090			
+Registrierungsstelle	RegistrationAgency	Individual	http://w3id.org/nfdi4ing/metadata4ing#RegistrationAgency			
+duration	duration	Entity	http://www.w3.org/2001/XMLSchema#duration			
+implements	implements	ObjectProperty	http://www.w3.org/ns/ssn/implements			
+hat Zahlenwert	hasNumericalValue	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue			
+citation	citation	AnnotationProperty	https://schema.org/citation			
+Titel	title	DatatypeProperty	http://xmlns.com/foaf/0.1/title			Title (Mr, Mrs, Ms, Dr. etc)
+ist zulässiger Wert für	isAdmissibleValueFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor			
+Metadata4Ing		Entity	http://w3id.org/nfdi4ing/metadata4ing#			"
+Metadata4Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4Ing. 
+New concepts and properties are located in the namespace of Metadata4Ing.
+Metadata4Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers.
+Instead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology.
+These statements have been extracted in different ways, e.g. by using Protégé tools importing an ontology and copying axioms of relevant items to Metadata4Ing or by download from data services or raw files of ontologies and manual copypasting.
+In some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:AnnotationProperty than the rest of Metadata4Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing.
+Any editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item-level.
+To get the original set of statements we encourage to visit the original namespace of the respective item.
+Metadata4Ing reuses elements from the following ontologies:
+- BIBO = Bibliographic Ontology  
+- BIRO = Bibliographic Reference Ontology  
+- DCAT = Data Catalog  
+- DCTERMS = Dublin Core Terms  
+- FOAF = Friend of a Friend  
+- OWL = Web Ontology Language  
+- PROV = Provenance Namespace  
+- QUDT = Quantities, Units, Dimensions and Types  
+- RDF = Resource Description Framework  
+- RDFS = RDF Schema  
+- SCHEMA = schema.org  
+- SKOS = Simple Knowledge Organization System  
+- SSN = Semantic Sensor Network Ontology  
+- VANN = Vocabulary for Annotating vocabulary descriptions  
+- XSD = XML Schema Definition  
+- EMMO = European Materials and Modelling Ontology  
+- BFO = Basic Formal Ontology  
+- RO = Relation Ontology  
+- PIMS-II = PIMS Interoperability Infrastructure  
+- D-SI = Digital System of Units  
+"
+Titel	title	AnnotationProperty	http://purl.org/dc/terms/title			
+Werkzeug	Tool	Class	http://w3id.org/nfdi4ing/metadata4ing#Tool			
+ist Variable in Zuweisung	isVariableInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment			
+has identifier	identifier	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#identifier	besitzt eindeutigen Identifikator | has unique identifier | is represented through identifier | wird durch Identifikator repräsentiert		
+has interval maximum	hasIntervalMax	DatatypeProperty	https://ptb.de/si/hasIntervalMax			
+has kind of quantity	hasKindOfQuantity	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity			
+data manager	DataManager	Individual	http://w3id.org/nfdi4ing/metadata4ing#DataManager			
+is referenced by	isReferencedBy	AnnotationProperty	http://purl.org/dc/terms/isReferencedBy			A related resource that references, cites, or otherwise points to the described resource.
+hosting institution	HostingInstitution	Individual	http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution			
+related person	RelatedPerson	Individual	http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson			
+example	example	AnnotationProperty	http://www.w3.org/2004/02/skos/core#example			
+beginnt mit	RO_0002224	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002224	started by		
+hat Zuweisungszeitstempel	hasAssignmentTimestamp	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAssignmentTimestamp			
+personal mailbox	mbox	ObjectProperty	http://xmlns.com/foaf/0.1/mbox			A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that   there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.
+hasAdmissibleValue	hasAdmissibleValue	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue			
+realisiert	BFO_0000055	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000055			Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+hat Intervallminimum	hasIntervalMin	DatatypeProperty	https://ptb.de/si/hasIntervalMin			
+description	description	AnnotationProperty	http://purl.org/dc/terms/description			
+uncertainty declaration	UncertaintyDeclaration	Class	http://w3id.org/nfdi4ing/metadata4ing#UncertaintyDeclaration			
+hat Parameter	hasParameter	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasParameter			
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+doi	doi	AnnotationProperty	http://purl.org/ontology/bibo/doi			
+has project ID	projectReferenceID	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID			
+untersucht Eigenschaft	investigatesProperty	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#investigatesProperty			
+näher beschriebene Verbindung	qualifiedAssociation	ObjectProperty	http://www.w3.org/ns/prov#qualifiedAssociation			
+has date assignment modified	hasDateAssignmentModified	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentModified			
+hat Symbol	hasSymbol	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasSymbol			
+dataset series	DatasetSeries	Class	http://www.w3.org/ns/dcat#DatasetSeries			
+hat Teil	BFO_0000051	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000051			
+has date assignment created	hasDateAssignmentCreated	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentCreated			
+hat Eigenschaft	hasProperty	ObjectProperty	http://www.w3.org/ns/ssn/hasProperty			
+modified	modified	AnnotationProperty	http://purl.org/dc/terms/modified			
+Real	Real	Class	https://ptb.de/si/Real			
+has coverage factor	hasCoverageFactor	DatatypeProperty	https://ptb.de/si/hasCoverageFactor			
+Rechercheur*in	Researcher	Individual	http://w3id.org/nfdi4ing/metadata4ing#Researcher			
+endet mit	RO_0002230	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002230	finished by		
+hat Überdeckungsintervall	hasCoverageInterval	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasCoverageInterval			
+Herausgeber*in	Editor	Individual	http://w3id.org/nfdi4ing/metadata4ing#Editor			
+has output	RO_0002234	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002234			
+rights holder	RightsHolder	Individual	http://w3id.org/nfdi4ing/metadata4ing#RightsHolder			
+Mitglied	member	ObjectProperty	http://xmlns.com/foaf/0.1/member			Indicates a member of a Group
+Akteur	Agent	Class	http://xmlns.com/foaf/0.1/Agent			An agent (eg. person, group, software or physical artifact).
+end time	endTime	DatatypeProperty	https://schema.org/endTime			"The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>
+
+Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."
+Association	Association	Class	http://www.w3.org/ns/prov#Association			An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
+project end date	endOfProject	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#endOfProject			
+Organisation	Organization	Class	http://xmlns.com/foaf/0.1/Organization			An organization.
+project leader	ProjectLeader	Individual	http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader			
+other person	Other	Individual	http://w3id.org/nfdi4ing/metadata4ing#Other			
+has unit	hasUnit	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUnit			
+preferredNamespaceUri	preferredNamespaceUri	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespaceUri			
+realisiert Methode	realizesMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#realizesMethod			
+Arbeitspaketleiter*in	WorkPackageLeader	Individual	http://w3id.org/nfdi4ing/metadata4ing#WorkPackageLeader			
+Assignment	Assignment	Class	http://www.molmod.info/semantics/pims-ii.ttl#Assignment			Assignment, i.e., a data item by which a value is assigned to a variable with respect to a particular referent (e.g., T = 200 K for substance o as it was measured in a particular cognitive step); therein, T is the variable, related to the assignment by m4i:hasVariable, 200 K is the value, related to the assignment by m4i:hasValue, and o is the referent, related to the assignment by isAssignmentFor
+data collector	DataCollector	Individual	http://w3id.org/nfdi4ing/metadata4ing#DataCollector			
+has employed tool	hasEmployedTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool			
+data curator	DataCurator	Individual	http://w3id.org/nfdi4ing/metadata4ing#DataCurator			
+created	created	AnnotationProperty	http://purl.org/dc/terms/created			
+Größenart	KindOfQuantity	Class	http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity			
+dataset	Dataset	Class	http://www.w3.org/ns/dcat#Dataset			A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+has uncertainty	hasUncertainty	DatatypeProperty	https://ptb.de/si/hasUncertainty			
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+Verwendungshinweis	UsageInstruction	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction			
+rights	rights	AnnotationProperty	http://purl.org/dc/terms/rights			
+ist eingesetztes Werkzeug	isEmployedToolIn	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn			
+Kompressionsformat	compressFormat	ObjectProperty	http://www.w3.org/ns/dcat#compressFormat			
+output of	RO_0002353	ObjectProperty	http://purl.obolibrary.org/obo/RO_0002353			
+uses instrument	instrument	ObjectProperty	https://schema.org/instrument			
+temporal resolution	temporalResolution	DatatypeProperty	http://www.w3.org/ns/dcat#temporalResolution			
+Variable	Variable	Class	http://www.molmod.info/semantics/pims-ii.ttl#Variable			
+implements	implementsMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementsMethod			
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
+has uncertainty declaration	hasUncertaintyDeclaration	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration			
+note	note	AnnotationProperty	http://www.w3.org/2004/02/skos/core#note			

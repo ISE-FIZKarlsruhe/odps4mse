@@ -1,0 +1,49 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+IAO_0000114	IAO_0000114	Entity	http://purl.obolibrary.org/obo/IAO_0000114			
+ready for release	IAO_0000122	Entity	http://purl.obolibrary.org/obo/IAO_0000122			
+metadata complete	IAO_0000120	Entity	http://purl.obolibrary.org/obo/IAO_0000120			
+o1	o1	Entity	https://w3id.org/pmd/co/o1			
+input of	inputOf	ObjectProperty	https://w3id.org/pmd/co/inputOf	is input of		
+superordinate process	superordinateProcess	ObjectProperty	https://w3id.org/pmd/co/superordinateProcess	has superordinate process		
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+IAO_0000111	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+wasDerivedFrom	wasDerivedFrom	ObjectProperty	http://www.w3.org/ns/prov#wasDerivedFrom			
+IAO_0000117	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
+characteristic	characteristic	ObjectProperty	https://w3id.org/pmd/co/characteristic	has characteristic		
+component	component	ObjectProperty	https://w3id.org/pmd/co/component	has component		
+boolean	boolean	Entity	http://www.w3.org/2001/XMLSchema#boolean			
+next process	nextProcess	ObjectProperty	https://w3id.org/pmd/co/nextProcess	has next process		
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+subordinate process	subordinateProcess	ObjectProperty	https://w3id.org/pmd/co/subordinateProcess	has subordinate process		
+requires discussion	IAO_0000428	Entity	http://purl.obolibrary.org/obo/IAO_0000428			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+participant	participant	ObjectProperty	https://w3id.org/pmd/co/participant	has participant		
+example	example	Entity	http://www.w3.org/2004/02/skos/core#example			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+p1	p1	Entity	https://w3id.org/pmd/co/p1			
+executes	executes	ObjectProperty	https://w3id.org/pmd/co/executes			
+pending final vetting	IAO_0000125	Entity	http://purl.obolibrary.org/obo/IAO_0000125			
+co	co	Entity	https://w3id.org/pmd/co			
+isRuleEnabled	isRuleEnabled	AnnotationProperty	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled			
+metadata incomplete	IAO_0000123	Entity	http://purl.obolibrary.org/obo/IAO_0000123			
+output of	outputOf	ObjectProperty	https://w3id.org/pmd/co/outputOf	is output of		
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+to be replaced with external ontology term	IAO_0000423	Entity	http://purl.obolibrary.org/obo/IAO_0000423			
+output	output	ObjectProperty	https://w3id.org/pmd/co/output	has output		
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+value	value	DatatypeProperty	https://w3id.org/pmd/co/value			
+previous process	previousProcess	ObjectProperty	https://w3id.org/pmd/co/previousProcess	has previous process		
+characteristic of	characteristicOf	ObjectProperty	https://w3id.org/pmd/co/characteristicOf	is characteristic of		
+executed by	executedBy	ObjectProperty	https://w3id.org/pmd/co/executedBy			
+IAO_0000115	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+Process	Process	Class	https://w3id.org/pmd/co/Process			
+uncurated	IAO_0000124	Entity	http://purl.obolibrary.org/obo/IAO_0000124			
+o2	o2	Entity	https://w3id.org/pmd/co/o2			
+participant of	participantOf	ObjectProperty	https://w3id.org/pmd/co/participantOf	is participant of		
+definitionSource	definitionSource	Entity	https://w3id.org/pmd/co/definitionSource			
+IAO_0000119	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
+input	input	ObjectProperty	https://w3id.org/pmd/co/input	has input		
+organizational term	IAO_0000121	Entity	http://purl.obolibrary.org/obo/IAO_0000121			
+Prozessknoten	ProcessingNode	Class	https://w3id.org/pmd/co/ProcessingNode			
+example to be eventually removed	IAO_0000002	Entity	http://purl.obolibrary.org/obo/IAO_0000002			
