@@ -1,9 +1,45 @@
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT (STR(?e) AS ?ID) (STR(?lab) AS ?LABEL) (COALESCE(STR(?t), "") AS ?TYPE)
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oio:  <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT
+  (COALESCE(STR(?lab), STR(?alt), ?LOCAL) AS ?LABEL)
+  ?LOCAL
+  (COALESCE(?typeShort, "Entity") AS ?TYPE)
+  (STR(?e) AS ?IRI)
 WHERE {
-  ?e rdfs:label ?lab .
+  {
+    # Try to find labels
+    { ?e rdfs:label ?lab }
+    UNION { ?e skos:prefLabel ?lab }
+  } UNION {
+    # If no label, still include the entity (anything that appears in triples)
+    ?e ?p ?o .
+    FILTER(isIRI(?e))
+  }
+
+  # Alternative labels (synonyms) to help search, if present
+  OPTIONAL {
+    { ?e skos:altLabel ?alt } UNION { ?e oio:hasExactSynonym ?alt }
+  }
+
+  # LOCAL name: prefer #fragment, else last path segment
+  BIND(STR(?e) AS ?s)
+  BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
+  BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
+  BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
+
   OPTIONAL { ?e rdf:type ?t . }
+  BIND(
+    IF(?t = owl:Class, "Class",
+    IF(?t = owl:ObjectProperty, "ObjectProperty",
+    IF(?t = owl:DatatypeProperty, "DatatypeProperty",
+    IF(?t = owl:AnnotationProperty, "AnnotationProperty",
+    IF(?t = owl:NamedIndividual, "Individual", "Entity"))))) AS ?typeShort
+  )
 }
-ORDER BY LCASE(?LABEL)
+GROUP BY ?e ?lab ?alt ?LOCAL ?typeShort
+ORDER BY LCASE(COALESCE(STR(?lab), ?LOCAL))

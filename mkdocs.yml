@@ -28,11 +28,16 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-  - search
+  - search:
+      separator: '[\\s\\-_/]+|(?=[A-Z][a-z])'
+      lang: en
+      exclude: true
+      boost: 2.0
   - gen-files:
       scripts:
         - docs/gen.py
   - macros
+
          
 
 nav:
