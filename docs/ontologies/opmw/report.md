@@ -1,0 +1,36 @@
+| Level | Rule Name | Subject | Property | Value |
+| --- | --- | --- | --- | --- |
+| WARN | missing_definition | http://www.opmw.org/ontology/DataVariable | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/ParameterVariable | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowExecutionAccount | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowExecutionArtifact | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowExecutionProcess | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowTemplateArtifact | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/WorkflowTemplateProcess | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/correspondsToTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/correspondsToTemplateArtifact | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/correspondsToTemplateProcess | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/createdInWorkflowSystem | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/executedInWorkflowSystem | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasDimensionality | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasDocumentation | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasExecutableComponent | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasExecutionDiagram | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasFileName | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasLocation | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasNativeSystemTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasOriginalLogFile | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasSize | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasStatus | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasTemplateDiagram | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/hasValue | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/isConcrete | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/isGeneratedBy | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/isParameterOfTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/isStepOfTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/isVariableOfTemplate | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/overallEndTime | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/overallStartTime | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/uses | IAO:0000115 |  |
+| WARN | missing_definition | http://www.opmw.org/ontology/versionNumber | IAO:0000115 |  |

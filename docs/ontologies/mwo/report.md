@@ -1,0 +1,570 @@
+| Level | Rule Name | Subject | Property | Value |
+| --- | --- | --- | --- | --- |
+| ERROR | deprecated_boolean_datatype | BFO:0000050 | owl:deprecated | please use BFO2020 property 'is continuant part of' or 'is occurent part of' |
+| ERROR | deprecated_boolean_datatype | BFO:0000051 | owl:deprecated | please use the BFO2020 property 'has occurent part' or 'has continuant part' |
+| ERROR | duplicate_label | IAO:0000025 | rdfs:label | programming language@en |
+| ERROR | duplicate_label | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000186 | rdfs:label | programming language@en |
+| ERROR | duplicate_label | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000011 | rdfs:label | plan@en |
+| ERROR | duplicate_label | https://w3id.org/pmd/co/PMD_0000014 | rdfs:label | plan@en |
+| ERROR | duplicate_label | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226 | rdfs:label | is subject of@en |
+| ERROR | duplicate_label | https://w3id.org/pmd/co/PMD_0000004 | rdfs:label | is subject of@en |
+| ERROR | duplicate_label | http://purls.helmholtz-metadaten.de/mwo/MWO_0001119 | rdfs:label | has measurement unit label@en |
+| ERROR | duplicate_label | https://w3id.org/pmd/co/PMD_0000020 | rdfs:label | has measurement unit label@en |
+| ERROR | duplicate_label | http://purls.helmholtz-metadaten.de/mwo/MWO_0001143 | rdfs:label | has acronym@en |
+| ERROR | duplicate_label | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010015 | rdfs:label | has acronym@en |
+| ERROR | duplicate_label | https://nfdi4culture.de/id/E1925 | rdfs:label | Harald Sack |
+| ERROR | duplicate_label | https://orcid.org/0000-0001-7069-9804 | rdfs:label | Harald Sack |
+| ERROR | multiple_definitions | BFO:0000020 | IAO:0000115 | b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en |
+| ERROR | multiple_definitions | BFO:0000020 | IAO:0000115 | b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en |
+| ERROR | multiple_definitions | IAO:0000030 | IAO:0000115 | A generically dependent continuant that is about some thing.@en |
+| ERROR | multiple_definitions | IAO:0000030 | IAO:0000115 | An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity. |
+| ERROR | multiple_definitions | IAO:0000112 | IAO:0000115 | A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not. |
+| ERROR | multiple_definitions | IAO:0000112 | IAO:0000115 | A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.@en |
+| ERROR | multiple_definitions | IAO:0000115 | IAO:0000115 | The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en |
+| ERROR | multiple_definitions | IAO:0000115 | IAO:0000115 | The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en |
+| ERROR | multiple_labels | IAO:0000030 | rdfs:label | information content entity |
+| ERROR | multiple_labels | IAO:0000030 | rdfs:label | information content entity@en |
+| ERROR | multiple_labels | IAO:0000111 | rdfs:label | editor preferred label |
+| ERROR | multiple_labels | IAO:0000111 | rdfs:label | editor preferred label@en |
+| ERROR | multiple_labels | IAO:0000111 | rdfs:label | editor preferred term |
+| ERROR | multiple_labels | IAO:0000111 | rdfs:label | editor preferred term@en |
+| ERROR | multiple_labels | IAO:0000111 | rdfs:label | editor preferred term~editor preferred label |
+| ERROR | multiple_labels | IAO:0000112 | rdfs:label | example of usage |
+| ERROR | multiple_labels | IAO:0000112 | rdfs:label | example of usage@en |
+| ERROR | multiple_labels | IAO:0000115 | rdfs:label | definition |
+| ERROR | multiple_labels | IAO:0000115 | rdfs:label | definition@en |
+| ERROR | multiple_labels | IAO:0000115 | rdfs:label | textual definition |
+| ERROR | multiple_labels | IAO:0000119 | rdfs:label | definition source |
+| ERROR | multiple_labels | IAO:0000119 | rdfs:label | definition source@en |
+| ERROR | multiple_labels | http://www.ebi.ac.uk/swo/SWO_0000002 | rdfs:label | licence@en |
+| ERROR | multiple_labels | http://www.ebi.ac.uk/swo/SWO_0000002 | rdfs:label | software license |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | URL de descarga@es |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | URL de téléchargement@fr |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | URL di scarico@it |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | URL souboru ke stažení@cs |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | URL μεταφόρτωσης@el |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | download URL@en |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | downloadURL@da |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | رابط تحميل@ar |
+| ERROR | multiple_labels | http://www.w3.org/ns/dcat#downloadURL | rdfs:label | ダウンロードURL@ja |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000000 | rdfs:label | Material@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000000 | rdfs:label | Material@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000583 | rdfs:label | Datenverarbeitung@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000583 | rdfs:label | Rechenprozess@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000583 | rdfs:label | computing process@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000602 | rdfs:label | Device@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000602 | rdfs:label | Gerät@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000603 | rdfs:label | Device Role@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000603 | rdfs:label | Rolle eines Gerätes@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000833 | rdfs:label | Herstellungsprozess@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000833 | rdfs:label | Manufacturing Process@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000849 | rdfs:label | Mechanical Property Analyzing Process@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000849 | rdfs:label | Mechanische Eigenschaften Analyseverfahren@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000919 | rdfs:label | Probe-Rolle@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000919 | rdfs:label | Sample Role@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000943 | rdfs:label | Prüfling-Rolle@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000943 | rdfs:label | Specimen Role@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000957 | rdfs:label | Structural Property Analyzing Process@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000957 | rdfs:label | Struktur Eigenschaften Analyseverfahren@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000975 | rdfs:label | Proben-Rolle@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0000975 | rdfs:label | Test Piece Role@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0001025 | rdfs:label | Analyse@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/PMD_0001025 | rdfs:label | assay@en |
+| WARN | annotation_whitespace | BFO:0000002 | IAO:0000602 | (forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002]  |
+| WARN | annotation_whitespace | BFO:0000002 | IAO:0000602 | (forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001]  |
+| WARN | annotation_whitespace | BFO:0000002 | IAO:0000602 | (forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002]  |
+| WARN | annotation_whitespace | BFO:0000002 | IAO:0000602 | (forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002]  |
+| WARN | annotation_whitespace | BFO:0000004 | IAO:0000602 | (forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001]  |
+| WARN | annotation_whitespace | BFO:0000004 | IAO:0000602 | (forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002]  |
+| WARN | annotation_whitespace | BFO:0000004 | IAO:0000602 | (iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002]  |
+| WARN | annotation_whitespace | BFO:0000016 | IAO:0000602 | (forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002]  |
+| WARN | annotation_whitespace | BFO:0000016 | IAO:0000602 | (forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002]  |
+| WARN | annotation_whitespace | BFO:0000017 | IAO:0000602 | (forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002]  |
+| WARN | annotation_whitespace | BFO:0000017 | IAO:0000602 | (forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002]  |
+| WARN | annotation_whitespace | BFO:0000019 | IAO:0000602 | (forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001]  |
+| WARN | annotation_whitespace | BFO:0000019 | IAO:0000602 | (forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001]  |
+| WARN | annotation_whitespace | BFO:0000020 | IAO:0000602 | (iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004]  |
+| WARN | annotation_whitespace | BFO:0000020 | IAO:0000602 | (iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003]  |
+| WARN | annotation_whitespace | BFO:0000023 | IAO:0000602 | (forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001]  |
+| WARN | annotation_whitespace | BFO:0000031 | IAO:0000602 | (iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001]  |
+| WARN | annotation_whitespace | BFO:0000034 | IAO:0000602 | (forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001]  |
+| WARN | annotation_whitespace | IAO:0000009 | IAO:0000232 | "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum.  |
+| " |  |  |  |  |
+| WARN | annotation_whitespace | IAO:0000115 | IAO:0000116 | "2012-04-05:  |
+| Barry Smith |  |  |  |  |
+|  |  |  |  |  |
+| The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible. |  |  |  |  |
+|  |  |  |  |  |
+| Can you fix to something like: |  |  |  |  |
+|  |  |  |  |  |
+| A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property. |  |  |  |  |
+|  |  |  |  |  |
+| Alan Ruttenberg |  |  |  |  |
+|  |  |  |  |  |
+| Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria.  |  |  |  |  |
+|  |  |  |  |  |
+| On the specifics of the proposed definition: |  |  |  |  |
+|  |  |  |  |  |
+| We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition.  |  |  |  |  |
+|  |  |  |  |  |
+| Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable.  |  |  |  |  |
+|  |  |  |  |  |
+| We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en" |  |  |  |  |
+| WARN | annotation_whitespace | IAO:0000579 | IAO:0000112 | PubMed is a CRID registry. It has a code set of PubMed identifiers associated with journal articles. @en |
+| WARN | annotation_whitespace | IAO:0000640 | IAO:0000112 | "Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/): |
+|  |  |  |  |  |
+| Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015). |  |  |  |  |
+|  |  |  |  |  |
+| @en" |  |  |  |  |
+| WARN | annotation_whitespace | http://www.w3.org/ns/dcat#downloadURL | skos:definition | رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dcterms:format dcat:mediaType @ar |
+| WARN | duplicate_exact_synonym | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001009 | IAO:0000118 | Integrated Authority File@en |
+| WARN | duplicate_exact_synonym | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001010 | IAO:0000118 | Integrated Authority File@en |
+| WARN | equivalent_class_axiom_no_genus | http://purls.helmholtz-metadaten.de/mwo/MWO_0001060 | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000202 | BFO:0000001 |
+| WARN | equivalent_pair | IAO:0000025 | owl:equivalentClass | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000186 |
+| WARN | equivalent_pair | http://www.ebi.ac.uk/swo/SWO_0000002 | owl:equivalentClass | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000141 |
+| WARN | equivalent_pair | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000011 | owl:equivalentClass | https://w3id.org/pmd/co/PMD_0000014 |
+| WARN | missing_definition | http://edamontology.org/created_in | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/documentation | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/file_extension | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_2197 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_2376 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3252 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3253 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3255 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3256 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3257 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3261 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3262 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3749 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/format_3956 | IAO:0000115 |  |
+| WARN | missing_definition | http://edamontology.org/media_type | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000003 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000006 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000008 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000009 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000011 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000015 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000018 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000024 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000026 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000027 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000028 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000029 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000030 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000035 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000038 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000040 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000054 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000055 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000056 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000057 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000058 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000059 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000062 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000063 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000066 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000084 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000101 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000108 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000115 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000117 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000121 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000124 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000127 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000129 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000132 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000139 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000140 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000141 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000142 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000145 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000146 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000147 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000148 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000153 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000171 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000176 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000178 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000182 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000183 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000184 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000185 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000194 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000195 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000196 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000197 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000199 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000200 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000202 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000203 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000210 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000216 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000218 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000221 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000222 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000223 | IAO:0000115 |  |
+| WARN | missing_definition | BFO:0000224 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000114 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000429 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:8000000 | IAO:0000115 |  |
+| WARN | missing_definition | dc:description | IAO:0000115 |  |
+| WARN | missing_definition | dc:license | IAO:0000115 |  |
+| WARN | missing_definition | dc:title | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001000 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001001 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001002 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001003 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001004 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001005 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001006 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001007 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001008 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001009 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001010 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001022 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001025 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001026 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001027 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001028 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001029 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001030 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001031 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001032 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001033 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001034 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001035 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001041 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001042 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001043 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001044 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001045 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001046 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001047 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001048 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001049 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001050 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001051 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001056 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001057 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001058 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001059 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001060 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001088 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001089 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001090 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001092 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001093 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001099 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001100 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001101 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001104 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001105 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001107 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001108 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001109 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001110 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001111 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001112 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001113 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001114 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001115 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001116 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001117 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001118 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001119 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001134 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001135 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001136 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001137 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001138 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001139 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001142 | IAO:0000115 |  |
+| WARN | missing_definition | http://purls.helmholtz-metadaten.de/mwo/MWO_0001143 | IAO:0000115 |  |
+| WARN | missing_definition | http://www.w3.org/ns/dcat#downloadURL | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000002 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000006 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000007 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000008 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000009 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000011 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000012 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000014 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000015 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000016 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000017 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000018 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000019 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000020 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000021 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000023 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000024 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000025 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000026 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000027 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000029 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000030 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000101 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000103 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000104 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000105 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000107 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000110 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000111 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000112 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000113 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000114 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000115 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000116 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000117 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000118 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000121 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000122 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000123 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000125 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000126 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000127 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000128 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000132 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000133 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000135 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000136 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000137 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000138 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000140 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000141 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000142 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000143 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000144 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000145 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000146 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000147 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000148 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000152 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000153 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000182 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000186 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000187 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000188 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000190 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000191 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000192 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000194 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000195 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000196 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000199 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000200 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000201 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000202 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000204 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000205 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000206 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000207 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000208 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000210 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000211 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000212 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000213 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000214 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000215 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000216 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000217 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000218 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000219 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000222 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000223 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000227 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000228 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000230 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000231 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000232 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000240 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000241 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000244 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001000 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001001 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001002 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001003 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001004 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001005 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001006 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001009 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001010 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001011 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001012 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001013 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001014 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001015 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001016 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001017 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001018 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001019 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001020 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001021 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001022 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001023 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001024 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001026 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001027 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001028 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001030 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001031 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001032 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001033 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001035 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001036 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001037 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001038 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001039 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001042 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001043 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001044 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001045 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001046 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001047 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001048 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001049 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001054 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001057 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001059 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001060 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001061 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010013 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010015 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010019 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010020 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010021 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010022 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010023 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010024 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010025 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010026 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010027 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010028 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010029 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010031 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010033 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010034 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010035 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010036 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010037 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010038 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010039 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010040 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010041 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi4culture.de/id/E1925 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi4culture.de/id/E2415 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi4culture.de/id/E2416 | IAO:0000115 |  |
+| WARN | missing_definition | https://nfdi4culture.de/id/E3095 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0001-7069-9804 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0001-7192-7143 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0001-7564-7990 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0001-9106-8825 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0001-9560-4728 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-1008-4530 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-1141-7704 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-2691-6995 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-2818-5890 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-3092-0532 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0002-5149-603X | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0003-2612-8515 | IAO:0000115 |  |
+| WARN | missing_definition | https://orcid.org/0000-0003-4926-0068 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000000 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000001 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000002 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000004 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000005 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000014 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000015 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000016 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000020 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000583 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000602 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000603 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000833 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000849 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000857 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000915 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000919 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000943 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000950 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000957 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0000975 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0001025 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0001028 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0001029 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0001030 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0020004 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0020023 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0020098 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0020099 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0020116 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0060000 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0060001 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0060006 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0060007 | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/PMD_0060009 | IAO:0000115 |  |
+| WARN | missing_subset_declaration | blank node | rdfs:subPropertyOf |  |
+| INFO | lowercase_definition | BFO:0000004 | IAO:0000115 | b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en |
+| INFO | lowercase_definition | BFO:0000016 | IAO:0000600 | b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en |
+| INFO | lowercase_definition | BFO:0000019 | IAO:0000600 | a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en |
+| INFO | lowercase_definition | BFO:0000020 | IAO:0000115 | b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en |
+| INFO | lowercase_definition | BFO:0000020 | IAO:0000115 | b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en |
+| INFO | lowercase_definition | BFO:0000023 | IAO:0000600 | b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en |
+| INFO | lowercase_definition | BFO:0000031 | IAO:0000115 | b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en |
+| INFO | lowercase_definition | BFO:0000050 | IAO:0000115 | a core relation that holds between a part and its whole@en |
+| INFO | lowercase_definition | BFO:0000051 | IAO:0000115 | a core relation that holds between a whole and its part@en |
+| INFO | lowercase_definition | IAO:0000221 | IAO:0000115 | m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en |
+| INFO | lowercase_definition | IAO:0000235 | IAO:0000115 | inverse of the relation 'denotes'@en |
+| INFO | lowercase_definition | IAO:0000417 | IAO:0000115 | inverse of the relation of is quality measurement of@en |
+| INFO | missing_superclass | BFO:0000001 | rdfs:subClassOf |  |

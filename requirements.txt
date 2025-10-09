@@ -1,0 +1,4 @@
+mkdocs-material
+mkdocs-gen-files
+mkdocs-macros-plugin
+pandas

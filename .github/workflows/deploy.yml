@@ -1,9 +1,8 @@
-name: Deploy MkDocs to GitHub Pages
+name: Build & Deploy MkDocs with ROBOT
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 permissions:
   contents: write
@@ -19,17 +18,46 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.11"
 
-      - name: Install MkDocs and theme
+      - name: Install Python dependencies
         run: |
-          pip install mkdocs-material
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            # Fallback if no requirements.txt present
+            pip install mkdocs-material mkdocs-gen-files mkdocs-macros-plugin pandas
+          fi
 
-      - name: Configure git
+      - name: Set up Java (for ROBOT)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install ROBOT
+        run: |
+          curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+          echo '#!/usr/bin/env bash' > robot
+          echo 'set -euo pipefail' >> robot
+          echo 'java -Xmx4G -jar "$(dirname "$0")/robot.jar" "$@"' >> robot
+          chmod +x robot
+          sudo mv robot robot.jar /usr/local/bin/
+          robot --version
+
+      - name: Build site (runs ROBOT through your MkDocs gen-files script)
+        env:
+          ONTOLOGY_DIRS: Ontologies
+          MEASURE_LEVEL: extended   # or all / all-reasoner
+        run: mkdocs build --clean
+
+
+      - name: Configure git author (for gh-deploy commit)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force

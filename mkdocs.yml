@@ -4,34 +4,38 @@ repo_url: https://github.com/ISE-FIZKarlsruhe/odps4mse
 theme:
   name: material
   custom_dir: docs/overrides
-  palette:
-    primary: teal
-    accent: pink
   features:
     - content.code.copy
     - toc.follow
     - navigation.top
     - header.autohide
   palette:
-    # Palette toggle for light mode
     - scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       linenums: true
   - pymdownx.superfences
-  - admonition
-  - pymdownx.details
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - docs/gen.py
+  - macros
+         
 
 nav:
   - Introduction: index.md
   - Process ODPs: ProcessODPs.md
+  - Ontologies: ontologies/index.md   # auto-generated 
