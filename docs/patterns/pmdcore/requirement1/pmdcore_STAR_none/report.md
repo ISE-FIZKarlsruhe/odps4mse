@@ -1,0 +1,60 @@
+| Level | Rule Name | Subject | Property | Value |
+| --- | --- | --- | --- | --- |
+| ERROR | missing_label | IAO:0000111 | rdfs:label |  |
+| ERROR | missing_label | IAO:0000114 | rdfs:label |  |
+| ERROR | missing_label | IAO:0000115 | rdfs:label |  |
+| ERROR | missing_label | IAO:0000117 | rdfs:label |  |
+| ERROR | missing_label | IAO:0000119 | rdfs:label |  |
+| ERROR | missing_label | http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled | rdfs:label |  |
+| ERROR | missing_label | rdf:PlainLiteral | rdfs:label |  |
+| ERROR | missing_label | xsd:boolean | rdfs:label |  |
+| ERROR | missing_label | xsd:string | rdfs:label |  |
+| ERROR | missing_label | skos:altLabel | rdfs:label |  |
+| ERROR | missing_label | skos:definition | rdfs:label |  |
+| ERROR | missing_label | skos:example | rdfs:label |  |
+| ERROR | missing_label | prov:wasDerivedFrom | rdfs:label |  |
+| ERROR | missing_label | https://w3id.org/pmd/co/definitionSource | rdfs:label |  |
+| ERROR | missing_ontology_description | https://w3id.org/pmd/co | dc:description |  |
+| ERROR | missing_ontology_license | https://w3id.org/pmd/co | dc:license |  |
+| ERROR | missing_ontology_title | https://w3id.org/pmd/co | dc:title |  |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/Process | rdfs:label | Process@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/Process | rdfs:label | Prozess@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/ProcessingNode | rdfs:label | Processing Node@en |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/ProcessingNode | rdfs:label | Prozessknoten@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/value | rdfs:label | hat Wert@de |
+| ERROR | multiple_labels | https://w3id.org/pmd/co/value | rdfs:label | value@en |
+| WARN | missing_definition | IAO:0000002 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000111 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000114 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000115 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000117 | IAO:0000115 |  |
+| WARN | missing_definition | IAO:0000119 | IAO:0000115 |  |
+| WARN | missing_definition | http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled | IAO:0000115 |  |
+| WARN | missing_definition | rdf:PlainLiteral | IAO:0000115 |  |
+| WARN | missing_definition | xsd:boolean | IAO:0000115 |  |
+| WARN | missing_definition | xsd:string | IAO:0000115 |  |
+| WARN | missing_definition | skos:altLabel | IAO:0000115 |  |
+| WARN | missing_definition | skos:definition | IAO:0000115 |  |
+| WARN | missing_definition | skos:example | IAO:0000115 |  |
+| WARN | missing_definition | prov:wasDerivedFrom | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/Process | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/ProcessingNode | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/characteristic | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/characteristicOf | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/component | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/definitionSource | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/executedBy | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/executes | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/input | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/inputOf | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/nextProcess | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/output | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/outputOf | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/participant | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/participantOf | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/previousProcess | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/subordinateProcess | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/superordinateProcess | IAO:0000115 |  |
+| WARN | missing_definition | https://w3id.org/pmd/co/value | IAO:0000115 |  |
+| INFO | missing_superclass | https://w3id.org/pmd/co/Process | rdfs:subClassOf |  |
+| INFO | missing_superclass | https://w3id.org/pmd/co/ProcessingNode | rdfs:subClassOf |  |

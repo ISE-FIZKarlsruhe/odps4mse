@@ -48,6 +48,7 @@ jobs:
       - name: Build site (runs ROBOT through your MkDocs gen-files script)
         env:
           ONTOLOGY_DIRS: Ontologies
+          PATTERNS_DIR: "Patterns"
           MEASURE_LEVEL: extended   # or all / all-reasoner
         run: mkdocs build --clean
 
