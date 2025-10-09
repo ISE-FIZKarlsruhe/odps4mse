@@ -1,111 +1,92 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-ProcessStepProperty	ProcessStepProperty	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStepProperty			
-isComposedOfSubsystem	isComposedOfSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem			The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem.
-Leaching	Leaching	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Leaching			Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction
-IntermediateProduct	IntermediateProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct			An IntermediateProduct is a ChemicalProduct that is produced in a ProcessStep and is used in another ProcessStep in the whole processing system.
-PhysicalConstant	PhysicalConstant	Class	http://OntoCAPE/upper_level/system.owl#PhysicalConstant			A PhysicalConstant is a ScalarQuantity, the Value of which is believed to be both universal in nature and invariant over time. Examples are the elementary charge, the gravitational constant, Planck's constant, and the speed of light in the vacuum.
-By-product	By-product	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#By-product			A Byproduct is an EndProduct whose production is unavoidable while a CoreProduct is produced.
-SystemInterface	SystemInterface	Class	http://OntoCAPE/upper_level/system.owl#SystemInterface			The class SystemInterface represents the interface through which a System can be connected to another System.
-numericalValue	numericalValue	DatatypeProperty	http://OntoCAPE/upper_level/system.owl#numericalValue			The attribute numericalValue specifies the number part of a QuantitativeValue.
-contains	contains	ObjectProperty	http://OntoCAPE/upper_level/system.owl#contains			"The Contains relation constitutes an alternative to the hasSubsystem relation. It should be used instead of hasSubsystem 
--   if the hasSubsystem relation causes performance problems, or
--   if only one side of the aggregation relation is of interest, namely the indication of the constituting elements of a supersystem"
-isObservedAgainstBackdrop	isObservedAgainstBackdrop	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isObservedAgainstBackdrop			The isObservedAgainstBackdrop relation maps a Value against a backdrop Value.
-WasteProduct	WasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#WasteProduct			A WasteProduct is an OutputProduct that has no value.
-Splitting	Splitting	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Splitting			
-ValueSet	ValueSet	Class	http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet			
-PhaseChange	PhaseChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PhaseChange			PhaseChange is a specialization of EnthalpyChange an usually it is applied for the purpose of heat exchange between spatially separated phases
-isValueOf	isValueOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isValueOf			The relation isValueOf assigns a Value to a Property.
-enters	enters	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#enters			The relation Enters interconnects an ingoing DirectedConnection  to its target Device.
-isDirectlyRelatedTo	isDirectlyRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo			The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations.
-ProcessStep	ProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep			A ProcessStep is a certain material processing procedure.
-hasVapourRatio	hasVapourRatio	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasVapourRatio			The relation hasVaporRatio indicates the liquid-vapor ratio of a particular mixture at a certain state within a vessel.
-NonExhaustiveValueSet	NonExhaustiveValueSet	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#NonExhaustiveValueSet			
-isDirectSubsystemOf	isDirectSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf			The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem.
-NonReusableWasteProduct	NonReusableWasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#NonReusableWasteProduct			A NonReusableWasteProduct is a waste product that can not be reused.
-Model	Model	Class	http://OntoCAPE/upper_level/system.owl#Model			A Model is a system that is used to enable the understanding of or the command over the original system, or to replace the original system. Model system and original system share certain characteristics that are of relevance to the task at hand (Wüsteneck, 1963).
-ExtensibleValueSet	ExtensibleValueSet	Class	http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet			An ExtensibleValueSet is a ValueEnumeration which, unlike a FixedValueSet, is not defined by an (exhaustive) enumeration of its instances. Thus, the number of possible values may change at run time.
-UnitOfMeasure	UnitOfMeasure	Class	http://OntoCAPE/upper_level/system.owl#UnitOfMeasure			A UnitOfMeasure is a standard measure for the ScalarValue of a of PhysicalQuantity.
-ExclusiveSubsystem	ExclusiveSubsystem	Class	http://OntoCAPE/upper_level/system.owl#ExclusiveSubsystem			An ExclusiveSubsystem is a direct subsystem of a CompositeSystem; it cannot be a direct subsystem of any other System.
-FeatureSpace	FeatureSpace	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#FeatureSpace			
-Value	Value	Class	http://OntoCAPE/upper_level/system.owl#Value			The Value class denotes the different values of a Property.
-Combination	Combination	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Combination			A combination in terms of unit operation means to get together different process steps to achieve a particular one.
-ConstantProperty	ConstantProperty	Class	http://OntoCAPE/upper_level/system.owl#ConstantProperty			A ConstantProperty is a Property that has exactly one Value.
-Subsystem	Subsystem	Class	http://OntoCAPE/upper_level/system.owl#Subsystem			A Subsystem is a System that is a constituent of another System.
-Supersystem	Supersystem	Class	http://OntoCAPE/upper_level/system.owl#Supersystem			A Supersystem is a System that has some constituent Subsystems.
-sameAs	sameAs	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#sameAs			The relation denotes a correspondence between a Connection and its placeholder in a composition hierarchy
-TopLevelSystem	TopLevelSystem	Class	http://OntoCAPE/upper_level/system.owl#TopLevelSystem			A TopLevelSystem is a Supersystem that is not a constituent of some other System.
-models	models	ObjectProperty	http://OntoCAPE/upper_level/system.owl#models			The relation 'models' links a Model to the modeled System.
-hasInput	hasInput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasInput			The relation hasInput connects a Device to an incoming DirectedConnection.
-PressureDifference	PressureDifference	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureDifference			
-hasOperationMode	hasOperationMode	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasOperationMode			The relation hasOperationMode indicates by which operation modes a particular process state is achieved.
-isSuccessorOf	isSuccessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf			The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.
-isSubsystemOf	isSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isSubsystemOf			The relation isSubsystemOf refers from a Subsystem to its Supersystem.
-EnthalpyChange	EnthalpyChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange			EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
-isRelatedTo	isRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isRelatedTo			The relation isRelatedTo subsumes all kinds of inter-system relations.
-S	S	Individual	http://OntoCAPE/upper_level/system.owl#S			Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties.
-hasAspectSystem	hasAspectSystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasAspectSystem			The relation hasAspectSystem designates the AspectSystems of a System.
-hasDirectSubsystem	hasDirectSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem			The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem.
-Batch	Batch	Individual	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch			
-ScalarQuantity	ScalarQuantity	Class	http://OntoCAPE/upper_level/system.owl#ScalarQuantity			A ScalarQuantity is a scalar-valued PhysicalQuantity.
-hasOutput	hasOutput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasOutput			The relation hasOutput connects a Device to an outgoing DirectedConnection.
-comprises	comprises	ObjectProperty	http://OntoCAPE/upper_level/system.owl#comprises			The relation Comprises indicates the members of a PropertySet.
-RawMaterial	RawMaterial	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial			A RawMaterial is a Material that enters a ProcessStep.
-ProcessState	ProcessState	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState			A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
-hasCharacteristic	hasCharacteristic	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasCharacteristic			The hasCharacteristic relation constitutes a shorthand notation for the specification of a ConstantProperty and its Value.
-EndProduct	EndProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EndProduct			An EndProduct is an OutputProduct that is valuable.
-hasSubsystem	hasSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasSubsystem			The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem.
-EnvironmentConnection	EnvironmentConnection	Class	http://OntoCAPE/upper_level/network_system.owl#EnvironmentConnection			
-hasDimension	hasDimension	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDimension			The relation hasDimension specifies the PhysicalDimension of a PhysicalQuantity or a UnitOfMeasure.
-leaves	leaves	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#leaves			The relation Leaves connects an outgoing DirectedConnection to its source Device.
 ElementarySystem	ElementarySystem	Class	http://OntoCAPE/upper_level/system.owl#ElementarySystem			An ElementarySystem is a Subsystem that cannot further partitioned into Subsystems.
-Aspect	Aspect	Class	http://OntoCAPE/upper_level/system.owl#Aspect			An aspect represents a particular viewpoint of a system. An instance of the aspect class explicitly denominates that viewpoint.
-Port	Port	Class	http://OntoCAPE/upper_level/network_system.owl#Port			Ports represents the interfaces through which Devices are connected to Connections. A Port may have certain attributes that characterize the type of the connection.
-ValueEnumeration	ValueEnumeration	Class	http://OntoCAPE/upper_level/system.owl#ValueEnumeration			A ValueEnumeration specifies a (finite) set of possible values of a QualitativeValue.
+IntermediateProduct	IntermediateProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct			An IntermediateProduct is a ChemicalProduct that is produced in a ProcessStep and is used in another ProcessStep in the whole processing system.
+value	value	DatatypeProperty	http://OntoCAPE/upper_level/system.owl#value			The Value attribute holds the actual value of a QualitativeValue.
+Process	Process	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process			An AggregatedProcessStep representing the entire function of the Process considered
+ConstantProperty	ConstantProperty	Class	http://OntoCAPE/upper_level/system.owl#ConstantProperty			A ConstantProperty is a Property that has exactly one Value.
+PressureChange	PressureChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChange			By means of a PressureChange a heat content of a particular fluid may be exchanged which may be used for heating or cooling purposes in terms of unit operations.
+ExclusiveSubsystem	ExclusiveSubsystem	Class	http://OntoCAPE/upper_level/system.owl#ExclusiveSubsystem			An ExclusiveSubsystem is a direct subsystem of a CompositeSystem; it cannot be a direct subsystem of any other System.
+hasProperty	hasProperty	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasProperty			The relation hasProperty indicates the Properties of a System.
+Separation	Separation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Separation			Separation in terms of unit operation means to achieve single components of a mixture by means of physical of chemical phenomenon.
+hasInput	hasInput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasInput			The relation hasInput connects a Device to an incoming DirectedConnection.
+isDirectlyRelatedTo	isDirectlyRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo			The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations.
+FeatureSpace	FeatureSpace	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#FeatureSpace			
+hasVapourRatio	hasVapourRatio	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasVapourRatio			The relation hasVaporRatio indicates the liquid-vapor ratio of a particular mixture at a certain state within a vessel.
+ProcessState	ProcessState	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState			A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
+Device	Device	Class	http://OntoCAPE/upper_level/network_system.owl#Device			Devices are the crucial elements of a NetworkSystem, holding the major functionality.
+AspectSystem	AspectSystem	Class	http://OntoCAPE/upper_level/system.owl#AspectSystem			An AspectSystem is an ExclusiveSubsystem that contains those system components, relationships, and constraints that are of relevance to a particular Aspect.
+PressureChangeOfLiquid	PressureChangeOfLiquid	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfLiquid			
+identity_dimension	identity_dimension	Individual	http://OntoCAPE/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension			
 isPropertyOf	isPropertyOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isPropertyOf			The relation isPropertyOf links a Property instance to a System instance.
-isExclusivelySubsystemOf	isExclusivelySubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf			The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem.
-DirectedConnection	DirectedConnection	Class	http://OntoCAPE/upper_level/network_system.owl#DirectedConnection			DirectedConnection is a specialization of Connection and represents likewise the connecting element between Devices. However, the usage of DirectedConnection implies the indication of a directed interconnection.
-representsAspectOf	representsAspectOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#representsAspectOf			The relation representsAspectOf links a AspectSystem to its respective System.
-isPredecessorOf	isPredecessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf			The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
-TemperatureChange	TemperatureChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#TemperatureChange			TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
-pressure	pressure	Individual	http://OntoCAPE/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure			
-PhysicalDimension	PhysicalDimension	Class	http://OntoCAPE/upper_level/system.owl#PhysicalDimension			A PhysicalDimension is a characteristic associated with PhysicalQuantities and UnitsOfMeasure for purposes of organization or differentiation. Mass, length, and force are exemplary instances of PhysicalDimension.
+Combination	Combination	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Combination			A combination in terms of unit operation means to get together different process steps to achieve a particular one.
+isOfType	isOfType	ObjectProperty	http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType			
+isBackdropOf	isBackdropOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isBackdropOf			The isBackdropOf relation states that the Value serves as a backdrop for the observation of some other Value.
+isRelatedTo	isRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isRelatedTo			The relation isRelatedTo subsumes all kinds of inter-system relations.
+QuantitativeValue	QuantitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QuantitativeValue			A QuantitativeValue is the value of a PhysicalQuantity.
+SystemInterface	SystemInterface	Class	http://OntoCAPE/upper_level/system.owl#SystemInterface			The class SystemInterface represents the interface through which a System can be connected to another System.
+leaves	leaves	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#leaves			The relation Leaves connects an outgoing DirectedConnection to its source Device.
+isSubsystemOf	isSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isSubsystemOf			The relation isSubsystemOf refers from a Subsystem to its Supersystem.
+ValueEnumeration	ValueEnumeration	Class	http://OntoCAPE/upper_level/system.owl#ValueEnumeration			A ValueEnumeration specifies a (finite) set of possible values of a QualitativeValue.
+TopLevelSystem	TopLevelSystem	Class	http://OntoCAPE/upper_level/system.owl#TopLevelSystem			A TopLevelSystem is a Supersystem that is not a constituent of some other System.
+Batch	Batch	Individual	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch			
+isConsideredUnderAspectOf	isConsideredUnderAspectOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConsideredUnderAspectOf			The relation isConsideredUnderAspectOf indicates the type of an AspectSystem by referring to an instance of the Aspect class.
+Model	Model	Class	http://OntoCAPE/upper_level/system.owl#Model			A Model is a system that is used to enable the understanding of or the command over the original system, or to replace the original system. Model system and original system share certain characteristics that are of relevance to the task at hand (Wüsteneck, 1963).
+sameAs	sameAs	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#sameAs			The relation denotes a correspondence between a Connection and its placeholder in a composition hierarchy
+hasOutput	hasOutput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasOutput			The relation hasOutput connects a Device to an outgoing DirectedConnection.
 containsDirectly	containsDirectly	ObjectProperty	http://OntoCAPE/upper_level/system.owl#containsDirectly			"The relation containsDirectly is an alternative to the hasDirectSubsystem relation. It should be used instead of hasDirectSubsystem 
 -   if the hasDirectSubsystem relation causes performance problems, or
 -   if only one side of the aggregation relation is of interest, namely the indication of the direct constituents Supersystem."
-QuantitativeValue	QuantitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QuantitativeValue			A QuantitativeValue is the value of a PhysicalQuantity.
-UnitOperation	UnitOperation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#UnitOperation			A UnitOperation is a basic step in a process. This basic step might comprise mixing, separation, enthalpy change and many more to achieve the desired product.
-inter-objectRelation	inter-objectRelation	ObjectProperty	http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectRelation			
-System	System	Class	http://OntoCAPE/upper_level/system.owl#System			The System class denotes all kind of systems, which may be physical or abstract
+isModeledBy	isModeledBy	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isModeledBy			The relation isModeldBy points from a modeled System to its Model.
+is_at_numbered_tray	is_at_numbered_tray	DatatypeProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#is_at_numbered_tray			
+ReactionNetwork	ReactionNetwork	Class	http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork			
+hasCharacteristic	hasCharacteristic	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasCharacteristic			The hasCharacteristic relation constitutes a shorthand notation for the specification of a ConstantProperty and its Value.
+ProcessStep	ProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep			A ProcessStep is a certain material processing procedure.
+comprisesDirectly	comprisesDirectly	ObjectProperty	http://OntoCAPE/upper_level/system.owl#comprisesDirectly			The relation ComprisesDirectly indicates the direct members of a PropertySet.
+isDirectSubsystemOf	isDirectSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf			The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem.
 Fragmentation	Fragmentation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Fragmentation			Fragmentation in terms of unit operation is the breakup of solid material for further processing.
-ConnectionPoint	ConnectionPoint	Class	http://OntoCAPE/upper_level/network_system.owl#ConnectionPoint			A ConnectionPoint represents the interface through which a Connection can be connected to the Port of a device. ConnectionPoints may have certain attributes that further specify the type of connection. ConnectionPoints are subsystems of the corresponding Connection or DirectedConnection, respectively.
-ModeOfOperation	ModeOfOperation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ModeOfOperation			
-Separation	Separation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Separation			Separation in terms of unit operation means to achieve single components of a mixture by means of physical of chemical phenomenon.
-object-featureRelation	object-featureRelation	ObjectProperty	http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featureRelation			
+Co-product	Co-product	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Co-product			A Co- product is an EndProduct whose production is unintended.
+Supersystem	Supersystem	Class	http://OntoCAPE/upper_level/system.owl#Supersystem			A Supersystem is a System that has some constituent Subsystems.
+ScalarQuantity	ScalarQuantity	Class	http://OntoCAPE/upper_level/system.owl#ScalarQuantity			A ScalarQuantity is a scalar-valued PhysicalQuantity.
+Leaching	Leaching	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Leaching			Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction
+comprises	comprises	ObjectProperty	http://OntoCAPE/upper_level/system.owl#comprises			The relation Comprises indicates the members of a PropertySet.
+numericalValue	numericalValue	DatatypeProperty	http://OntoCAPE/upper_level/system.owl#numericalValue			The attribute numericalValue specifies the number part of a QuantitativeValue.
 hasPressureDifference	hasPressureDifference	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasPressureDifference			The relation hasPressureDifference indicates the intended difference between two pressure state.
-isConsideredUnderAspectOf	isConsideredUnderAspectOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConsideredUnderAspectOf			The relation isConsideredUnderAspectOf indicates the type of an AspectSystem by referring to an instance of the Aspect class.
-qualitativeValue	qualitativeValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#qualitativeValue			The relation qualitativeValue specifies the actual value of a QualitativeValue.
-Reaction	Reaction	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Reaction			A Reaction is a ProcessStep in which some material is converted to some other material through chemical or biochemical reactions
-AggregatedProcessStep	AggregatedProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep			An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence.
-FirstLevelSubsystem	FirstLevelSubsystem	Class	http://OntoCAPE/upper_level/system.owl#FirstLevelSubsystem			A Subsystem at the first level of decomposition.
+isExclusivelySubsystemOf	isExclusivelySubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf			The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem.
+hasChemicalReactionNetwork	hasChemicalReactionNetwork	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasChemicalReactionNetwork			The relation hasChemicalRectionNetwork indicates that a reaction as considered on a rather macroscopic perspective of an early design stage may be the result of an sequence of reactions occurring on the bases of several phases.
+Object	Object	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#Object			
+models	models	ObjectProperty	http://OntoCAPE/upper_level/system.owl#models			The relation 'models' links a Model to the modeled System.
+isComposedOfSubsystem	isComposedOfSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem			The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem.
+TemperatureChange	TemperatureChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#TemperatureChange			TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
+PressureDifference	PressureDifference	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureDifference			
+Mixing	Mixing	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Mixing			Mixing in terms of unit operations is a special type of combination which results in a mixture which is required for further processing. It is usually accomplished by means of stirrer.
+ValueSet	ValueSet	Class	http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet			
 hasUnitOfMeasure	hasUnitOfMeasure	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure			The relation hasUnitOfMeasure establishes the UnitOfMeasure of a ScalarValue.
 NetworkSystem	NetworkSystem	Class	http://OntoCAPE/upper_level/network_system.owl#NetworkSystem			A NetworkSystem is a system that is composed of some Connections and some Devices.
-isModeledBy	isModeledBy	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isModeledBy			The relation isModeldBy points from a modeled System to its Model.
-PropertySet	PropertySet	Class	http://OntoCAPE/upper_level/system.owl#PropertySet			A Property set constitutes an (unordered) collection of Properties, which may be of different types.
-Process	Process	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process			An AggregatedProcessStep representing the entire function of the Process considered
-AspectSystem	AspectSystem	Class	http://OntoCAPE/upper_level/system.owl#AspectSystem			An AspectSystem is an ExclusiveSubsystem that contains those system components, relationships, and constraints that are of relevance to a particular Aspect.
-SystemEnvironment	SystemEnvironment	Class	http://OntoCAPE/upper_level/system.owl#SystemEnvironment			The ImmediateEnvironment of a given System S consists of all Systems that are directly related to S. It can be specified by means of a query class. As the environment concept is relative, such a query class must be defined individually for each System instance. The query class SystemEnvironment exemplarily demonstrates the approach for sample System S.
-BatchProcess	BatchProcess	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#BatchProcess			A BatchProcess indicates the batch mode of operation applied to the Process.
-CompositeSystem	CompositeSystem	Class	http://OntoCAPE/upper_level/system.owl#CompositeSystem			A CompositeSystem is a System that is composed of other Systems.
-FlashVaporRatio	FlashVaporRatio	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#FlashVaporRatio			
-QualitativeValue	QualitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QualitativeValue			A QualitativeValue is a value that is not (numerically) quantifiable.
-Co-product	Co-product	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Co-product			A Co- product is an EndProduct whose production is unintended.
-isOfType	isOfType	ObjectProperty	http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType			
-is_at_numbered_tray	is_at_numbered_tray	DatatypeProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#is_at_numbered_tray			
-Continuous	Continuous	Individual	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous			
-PressureChangeOfLiquid	PressureChangeOfLiquid	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfLiquid			
-Device	Device	Class	http://OntoCAPE/upper_level/network_system.owl#Device			Devices are the crucial elements of a NetworkSystem, holding the major functionality.
+PhaseChange	PhaseChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PhaseChange			PhaseChange is a specialization of EnthalpyChange an usually it is applied for the purpose of heat exchange between spatially separated phases
+System	System	Class	http://OntoCAPE/upper_level/system.owl#System			The System class denotes all kind of systems, which may be physical or abstract
+FixedValueSet	FixedValueSet	Class	http://OntoCAPE/upper_level/system.owl#FixedValueSet			A FixedValueSet is a ValueEnumeration that is defined by an exhaustive enumeration of its instances. Thus, the number of possible values is fixed.
+CoreProduct	CoreProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#CoreProduct			A CoreProduct is a main (or an intended) EndProduct.
+isPredecessorOf	isPredecessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf			The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
+NonReusableWasteProduct	NonReusableWasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#NonReusableWasteProduct			A NonReusableWasteProduct is a waste product that can not be reused.
+RawMaterial	RawMaterial	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial			A RawMaterial is a Material that enters a ProcessStep.
+ScalarValue	ScalarValue	Class	http://OntoCAPE/upper_level/system.owl#ScalarValue			A ScalarValue is the value of a ScalarQuantity.
+ExtensibleValueSet	ExtensibleValueSet	Class	http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet			An ExtensibleValueSet is a ValueEnumeration which, unlike a FixedValueSet, is not defined by an (exhaustive) enumeration of its instances. Thus, the number of possible values may change at run time.
+qualitativeValue	qualitativeValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#qualitativeValue			The relation qualitativeValue specifies the actual value of a QualitativeValue.
+pressure	pressure	Individual	http://OntoCAPE/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure			
 Connection	Connection	Class	http://OntoCAPE/upper_level/network_system.owl#Connection			Connections are those elements of a NetworkSystem that represent the linkages between the Devices.
+enters	enters	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#enters			The relation Enters interconnects an ingoing DirectedConnection  to its target Device.
+inter-objectRelation	inter-objectRelation	ObjectProperty	http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectRelation			
+isObservedAgainstBackdrop	isObservedAgainstBackdrop	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isObservedAgainstBackdrop			The isObservedAgainstBackdrop relation maps a Value against a backdrop Value.
+contains	contains	ObjectProperty	http://OntoCAPE/upper_level/system.owl#contains			"The Contains relation constitutes an alternative to the hasSubsystem relation. It should be used instead of hasSubsystem 
+-   if the hasSubsystem relation causes performance problems, or
+-   if only one side of the aggregation relation is of interest, namely the indication of the constituting elements of a supersystem"
+BatchProcess	BatchProcess	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#BatchProcess			A BatchProcess indicates the batch mode of operation applied to the Process.
+EndProduct	EndProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EndProduct			An EndProduct is an OutputProduct that is valuable.
+Splitting	Splitting	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Splitting			
+QualitativeValue	QualitativeValue	Class	http://OntoCAPE/upper_level/system.owl#QualitativeValue			A QualitativeValue is a value that is not (numerically) quantifiable.
+Property	Property	Class	http://OntoCAPE/upper_level/system.owl#Property			The Property class represents the individual properties (traits, qualities) of a System, which distinguish the System from others. Typical examples are Size, Color, or Weight, which are modeled as subclasses of Property.
+FirstLevelSubsystem	FirstLevelSubsystem	Class	http://OntoCAPE/upper_level/system.owl#FirstLevelSubsystem			A Subsystem at the first level of decomposition.
+PressureChangeOfGas	PressureChangeOfGas	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfGas			
 process.owl	process.owl	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl			"The ontology module 'process' provides concepts a functional description of an chemical process system at an early stage of design.
 The following classes and relations from other ontology modules are used within 'process':
     
@@ -147,30 +128,49 @@ The following classes and relations from other ontology modules are used within 
  <owl:ObjectProperty rdf:about=""http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType"">
     
     "
-ReusableWasteProduct	ReusableWasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ReusableWasteProduct			A ReusableWasteProduct is a WasteProduct that can be reused for production.
-OutputProduct	OutputProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct			An OutputProduct is a Material that is output by a ProcessStep.
-PressureChangeOfGas	PressureChangeOfGas	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfGas			
-Mixing	Mixing	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Mixing			Mixing in terms of unit operations is a special type of combination which results in a mixture which is required for further processing. It is usually accomplished by means of stirrer.
-ReactionNetwork	ReactionNetwork	Class	http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork			
-hasValue	hasValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasValue			The hasValue relation designates the Values of a Property.
-comprisesDirectly	comprisesDirectly	ObjectProperty	http://OntoCAPE/upper_level/system.owl#comprisesDirectly			The relation ComprisesDirectly indicates the direct members of a PropertySet.
-hasChemicalReactionNetwork	hasChemicalReactionNetwork	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasChemicalReactionNetwork			The relation hasChemicalRectionNetwork indicates that a reaction as considered on a rather macroscopic perspective of an early design stage may be the result of an sequence of reactions occurring on the bases of several phases.
-isBackdropOf	isBackdropOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isBackdropOf			The isBackdropOf relation states that the Value serves as a backdrop for the observation of some other Value.
-InternalProperties	InternalProperties	Class	http://OntoCAPE/upper_level/system.owl#InternalProperties			The 'internal Properties' of a System are the Properties of its constituent Subsystems. They can be specified by means of a query class and thus inferred by reasoner. Such a query class must be defined individually for each System instance. The query class InternalProperties exemplarily demonstrates this approach for a sample System S.
-identity_dimension	identity_dimension	Individual	http://OntoCAPE/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension			
-isConnectedTo	isConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConnectedTo			The relation isConnectedTo represents topological connectivity between System.
-PressureChange	PressureChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChange			By means of a PressureChange a heat content of a particular fluid may be exchanged which may be used for heating or cooling purposes in terms of unit operations.
-hasProperty	hasProperty	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasProperty			The relation hasProperty indicates the Properties of a System.
-PhysicalQuantity	PhysicalQuantity	Class	http://OntoCAPE/upper_level/system.owl#PhysicalQuantity			A PhysicalQuantity is a Property that has quantifiable Values. The concept includes scalars as well as vectors and higher-order tensors. Moreover, it comprises both physical quantities, such as mass or velocity, and nonphysical quantities, such as amount of money or rate of inflation
-Object	Object	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#Object			
-Flashing	Flashing	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Flashing			Flashing utilized the state of phase equilibrium between a vapor and a liquid phase and the resulting material transport if a mixture with different fugacity is existent. In terms of unit operation this is usually accomplished in a vessel.
-isDirectlyConnectedTo	isDirectlyConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyConnectedTo			The relation isDirectlyConnectedTo denotes the direct topological connectedness of two System.
-ProcessStream	ProcessStream	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStream			A ProcessStream indicated the continuous mode of operation applied to the Process.
-ScalarValue	ScalarValue	Class	http://OntoCAPE/upper_level/system.owl#ScalarValue			A ScalarValue is the value of a ScalarQuantity.
-Property	Property	Class	http://OntoCAPE/upper_level/system.owl#Property			The Property class represents the individual properties (traits, qualities) of a System, which distinguish the System from others. Typical examples are Size, Color, or Weight, which are modeled as subclasses of Property.
-FixedValueSet	FixedValueSet	Class	http://OntoCAPE/upper_level/system.owl#FixedValueSet			A FixedValueSet is a ValueEnumeration that is defined by an exhaustive enumeration of its instances. Thus, the number of possible values is fixed.
-value	value	DatatypeProperty	http://OntoCAPE/upper_level/system.owl#value			The Value attribute holds the actual value of a QualitativeValue.
-CoreProduct	CoreProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#CoreProduct			A CoreProduct is a main (or an intended) EndProduct.
-KeyChemicalComponentConversionRatio	KeyChemicalComponentConversionRatio	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#KeyChemicalComponentConversionRatio			
-license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+ConnectionPoint	ConnectionPoint	Class	http://OntoCAPE/upper_level/network_system.owl#ConnectionPoint			A ConnectionPoint represents the interface through which a Connection can be connected to the Port of a device. ConnectionPoints may have certain attributes that further specify the type of connection. ConnectionPoints are subsystems of the corresponding Connection or DirectedConnection, respectively.
+EnthalpyChange	EnthalpyChange	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange			EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
+Value	Value	Class	http://OntoCAPE/upper_level/system.owl#Value			The Value class denotes the different values of a Property.
+Port	Port	Class	http://OntoCAPE/upper_level/network_system.owl#Port			Ports represents the interfaces through which Devices are connected to Connections. A Port may have certain attributes that characterize the type of the connection.
+PhysicalConstant	PhysicalConstant	Class	http://OntoCAPE/upper_level/system.owl#PhysicalConstant			A PhysicalConstant is a ScalarQuantity, the Value of which is believed to be both universal in nature and invariant over time. Examples are the elementary charge, the gravitational constant, Planck's constant, and the speed of light in the vacuum.
+S	S	Individual	http://OntoCAPE/upper_level/system.owl#S			Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties.
+hasOperationMode	hasOperationMode	ObjectProperty	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasOperationMode			The relation hasOperationMode indicates by which operation modes a particular process state is achieved.
+Subsystem	Subsystem	Class	http://OntoCAPE/upper_level/system.owl#Subsystem			A Subsystem is a System that is a constituent of another System.
+hasDimension	hasDimension	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDimension			The relation hasDimension specifies the PhysicalDimension of a PhysicalQuantity or a UnitOfMeasure.
+Reaction	Reaction	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Reaction			A Reaction is a ProcessStep in which some material is converted to some other material through chemical or biochemical reactions
+ProcessStepProperty	ProcessStepProperty	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStepProperty			
+isValueOf	isValueOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isValueOf			The relation isValueOf assigns a Value to a Property.
+AggregatedProcessStep	AggregatedProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep			An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence.
+DirectedConnection	DirectedConnection	Class	http://OntoCAPE/upper_level/network_system.owl#DirectedConnection			DirectedConnection is a specialization of Connection and represents likewise the connecting element between Devices. However, the usage of DirectedConnection implies the indication of a directed interconnection.
+CompositeSystem	CompositeSystem	Class	http://OntoCAPE/upper_level/system.owl#CompositeSystem			A CompositeSystem is a System that is composed of other Systems.
 SecondLevelSubsystem	SecondLevelSubsystem	Class	http://OntoCAPE/upper_level/system.owl#SecondLevelSubsystem			A Subsystem at the second level of decomposition.
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+PropertySet	PropertySet	Class	http://OntoCAPE/upper_level/system.owl#PropertySet			A Property set constitutes an (unordered) collection of Properties, which may be of different types.
+WasteProduct	WasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#WasteProduct			A WasteProduct is an OutputProduct that has no value.
+hasAspectSystem	hasAspectSystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasAspectSystem			The relation hasAspectSystem designates the AspectSystems of a System.
+ProcessStream	ProcessStream	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStream			A ProcessStream indicated the continuous mode of operation applied to the Process.
+Continuous	Continuous	Individual	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous			
+hasDirectSubsystem	hasDirectSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem			The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem.
+FlashVaporRatio	FlashVaporRatio	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#FlashVaporRatio			
+KeyChemicalComponentConversionRatio	KeyChemicalComponentConversionRatio	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#KeyChemicalComponentConversionRatio			
+object-featureRelation	object-featureRelation	ObjectProperty	http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featureRelation			
+InternalProperties	InternalProperties	Class	http://OntoCAPE/upper_level/system.owl#InternalProperties			The 'internal Properties' of a System are the Properties of its constituent Subsystems. They can be specified by means of a query class and thus inferred by reasoner. Such a query class must be defined individually for each System instance. The query class InternalProperties exemplarily demonstrates this approach for a sample System S.
+Flashing	Flashing	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Flashing			Flashing utilized the state of phase equilibrium between a vapor and a liquid phase and the resulting material transport if a mixture with different fugacity is existent. In terms of unit operation this is usually accomplished in a vessel.
+SystemEnvironment	SystemEnvironment	Class	http://OntoCAPE/upper_level/system.owl#SystemEnvironment			The ImmediateEnvironment of a given System S consists of all Systems that are directly related to S. It can be specified by means of a query class. As the environment concept is relative, such a query class must be defined individually for each System instance. The query class SystemEnvironment exemplarily demonstrates the approach for sample System S.
+UnitOfMeasure	UnitOfMeasure	Class	http://OntoCAPE/upper_level/system.owl#UnitOfMeasure			A UnitOfMeasure is a standard measure for the ScalarValue of a of PhysicalQuantity.
+hasSubsystem	hasSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasSubsystem			The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem.
+isDirectlyConnectedTo	isDirectlyConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyConnectedTo			The relation isDirectlyConnectedTo denotes the direct topological connectedness of two System.
+OutputProduct	OutputProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct			An OutputProduct is a Material that is output by a ProcessStep.
+EnvironmentConnection	EnvironmentConnection	Class	http://OntoCAPE/upper_level/network_system.owl#EnvironmentConnection			
+ModeOfOperation	ModeOfOperation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ModeOfOperation			
+NonExhaustiveValueSet	NonExhaustiveValueSet	Class	http://meta_model/fundamental_concepts/fundamental_concepts.owl#NonExhaustiveValueSet			
+Aspect	Aspect	Class	http://OntoCAPE/upper_level/system.owl#Aspect			An aspect represents a particular viewpoint of a system. An instance of the aspect class explicitly denominates that viewpoint.
+PhysicalQuantity	PhysicalQuantity	Class	http://OntoCAPE/upper_level/system.owl#PhysicalQuantity			A PhysicalQuantity is a Property that has quantifiable Values. The concept includes scalars as well as vectors and higher-order tensors. Moreover, it comprises both physical quantities, such as mass or velocity, and nonphysical quantities, such as amount of money or rate of inflation
+PhysicalDimension	PhysicalDimension	Class	http://OntoCAPE/upper_level/system.owl#PhysicalDimension			A PhysicalDimension is a characteristic associated with PhysicalQuantities and UnitsOfMeasure for purposes of organization or differentiation. Mass, length, and force are exemplary instances of PhysicalDimension.
+representsAspectOf	representsAspectOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#representsAspectOf			The relation representsAspectOf links a AspectSystem to its respective System.
+UnitOperation	UnitOperation	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#UnitOperation			A UnitOperation is a basic step in a process. This basic step might comprise mixing, separation, enthalpy change and many more to achieve the desired product.
+ReusableWasteProduct	ReusableWasteProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ReusableWasteProduct			A ReusableWasteProduct is a WasteProduct that can be reused for production.
+By-product	By-product	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#By-product			A Byproduct is an EndProduct whose production is unavoidable while a CoreProduct is produced.
+hasValue	hasValue	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasValue			The hasValue relation designates the Values of a Property.
+isConnectedTo	isConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConnectedTo			The relation isConnectedTo represents topological connectivity between System.
+isSuccessorOf	isSuccessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf			The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.

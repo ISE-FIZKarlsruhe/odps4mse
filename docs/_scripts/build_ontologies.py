@@ -740,8 +740,22 @@ def build_all_terms_page(all_terms: list):
             alt   = (r.get("ALT_LABELS","") or "").replace("|","\\|")
             syn   = (r.get("SYNONYMS","") or "").replace("|","\\|")
             com   = (r.get("COMMENT","") or "").replace("|","\\|")
-            print(f"| <{iri}> | {label} | `{local}` | {typ} | {src} | [open]({link}) | {alt} | {syn} | {com} |", file=f)
+            # Render a data attribute; we'll rewrite it via JS to prefix the site base.
+            print(f'| <{iri}> | {label} | `{local}` | {typ} | {src} | <a data-site-link="{link}">open</a> | {alt} | {syn} | {com} |', file=f)
 
+        print("\n<script>", file=f)
+        print(r"""(function(){
+    function siteBase(){
+        const parts = window.location.pathname.split('/').filter(Boolean);
+        return parts.length ? ('/' + parts[0] + '/') : '/';
+    }
+    const base = siteBase();
+    document.querySelectorAll('a[data-site-link]').forEach(a=>{
+        const rel = a.getAttribute('data-site-link') || '';
+        a.setAttribute('href', base + rel.replace(/^\/+/, ''));
+    });
+    })();""", file=f)
+        print("</script>", file=f)
     # Finder UI
     find_rel = Path("terms/find.md")
     with open_virtual(find_rel, "w") as f:
@@ -752,76 +766,81 @@ def build_all_terms_page(all_terms: list):
         print("<div id='results' style='margin-top:1rem'></div>\n", file=f)
         print("<script>", file=f)
         print(r"""(function(){
-    const $ = sel => document.querySelector(sel);
-    const results = $('#results');
-    const stats = $('#stats');
-    const input = $('#q');
+        const $ = sel => document.querySelector(sel);
+        const results = $('#results');
+        const stats = $('#stats');
+        const input = $('#q');
 
-    function groupBySource(rows){
-    const out = { Ontology: {}, Pattern: {} };
-    for(const r of rows){
-        const kind = (r.SOURCE_KIND || '').trim();
-        const name = (r.SOURCE_NAME || '').trim();
-        if(!out[kind]) continue;
-        if(!out[kind][name]) out[kind][name] = r.LINK;
-    }
-    return out;
-    }
-
-    function render(groups){
-    const kinds = ["Ontology","Pattern"];
-    let html = "";
-    for(const k of kinds){
-        const g = groups[k];
-        const names = Object.keys(g||{}).sort((a,b)=>a.localeCompare(b));
-        html += `<h3>${k}s (${names.length})</h3>`;
-        if(!names.length){ html += "<p><em>None</em></p>"; continue; }
-        html += "<ul>";
-        for(const n of names){
-        const link = g[n];
-        html += `<li><a href="${link}">${n}</a></li>`;
+        /* Compute site base from current URL, e.g. "/odps4mse/" or "/" */
+        function siteBase(){
+        const parts = window.location.pathname.split('/').filter(Boolean);
+        // e.g., /odps4mse/terms/find/ -> ["odps4mse","terms","find"]
+        return parts.length ? ('/' + parts[0] + '/') : '/';
         }
-        html += "</ul>";
-    }
-    results.innerHTML = html;
-    }
 
-    let DATA = [];
-    fetch('../all-terms.json')  // <-- go up one directory
-    .then(r=>{
-        if(!r.ok) throw new Error('Failed to load all-terms.json: ' + r.status);
-        return r.json();
-    })
-    .then(rows=>{
-        DATA = rows;
-        stats.textContent = `Loaded ${rows.length} terms.`;
-    })
-    .catch(err=>{
-        stats.textContent = 'Error: ' + err.message;
-        console.error(err);
-    });
+        function groupBySource(rows){
+        const out = { Ontology: {}, Pattern: {} };
+        for(const r of rows){
+            const kind = (r.SOURCE_KIND || '').trim();
+            const name = (r.SOURCE_NAME || '').trim();
+            if(!out[kind]) continue;
+            if(!out[kind][name]) out[kind][name] = r.LINK; // stored as "patterns/.../"
+        }
+        return out;
+        }
 
-    function norm(s){ return (s||"").toLowerCase(); }
+        function render(groups){
+        const base = siteBase();
+        const kinds = ["Ontology","Pattern"];
+        let html = "";
+        for(const k of kinds){
+            const g = groups[k];
+            const names = Object.keys(g||{}).sort((a,b)=>a.localeCompare(b));
+            html += `<h3>${k}s (${names.length})</h3>`;
+            if(!names.length){ html += "<p><em>None</em></p>"; continue; }
+            html += "<ul>";
+            for(const n of names){
+            const link = base + g[n].replace(/^\/+/, ''); // normalize
+            html += `<li><a href="${link}">${n}</a></li>`;
+            }
+            html += "</ul>";
+        }
+        results.innerHTML = html;
+        }
 
-    function matches(r, q){
-    if(!q) return false;
-    const fields = [r.LABEL, r.LOCAL, r.IRI, r.ALT_LABELS, r.SYNONYMS, r.COMMENT];
-    return fields.some(x => (x||"").toLowerCase().includes(q));
-    }
+        let DATA = [];
+        fetch('../all-terms.json')
+        .then(r=>{ if(!r.ok) throw new Error('Failed to load all-terms.json: ' + r.status); return r.json(); })
+        .then(rows=>{
+            DATA = rows;
+            stats.textContent = `Loaded ${rows.length} terms.`;
+        })
+        .catch(err=>{
+            stats.textContent = 'Error: ' + err.message;
+            console.error(err);
+        });
 
-    let lastQ = "";
-    input.addEventListener('input', ()=>{
-    const q = norm(input.value);
-    if(q === lastQ) return;
-    lastQ = q;
-    if(!q){ results.innerHTML = ""; stats.textContent=""; return; }
-    const subset = DATA.filter(r => matches(r,q));
-    const groups = groupBySource(subset);
-    stats.textContent = `Query “${input.value}”: ${subset.length} matching terms; ${Object.keys(groups.Ontology||{}).length} ontologies, ${Object.keys(groups.Pattern||{}).length} patterns.`;
-    render(groups);
-    });
-    })();""", file=f)
+        function norm(s){ return (s||"").toLowerCase(); }
+        function matches(r, q){
+        if(!q) return false;
+        const fields = [r.LABEL, r.LOCAL, r.IRI, r.ALT_LABELS, r.SYNONYMS, r.COMMENT];
+        return fields.some(x => (x||"").toLowerCase().includes(q));
+        }
+
+        let lastQ = "";
+        input.addEventListener('input', ()=>{
+        const q = norm(input.value);
+        if(q === lastQ) return;
+        lastQ = q;
+        if(!q){ results.innerHTML = ""; stats.textContent=""; return; }
+        const subset = DATA.filter(r => matches(r,q));
+        const groups = groupBySource(subset);
+        stats.textContent = `Query “${input.value}”: ${subset.length} matching terms; ${Object.keys(groups.Ontology||{}).length} ontologies, ${Object.keys(groups.Pattern||{}).length} patterns.`;
+        render(groups);
+        });
+        })();""", file=f)
         print("</script>", file=f)
+
 
 # ================= Main =================
 def main():

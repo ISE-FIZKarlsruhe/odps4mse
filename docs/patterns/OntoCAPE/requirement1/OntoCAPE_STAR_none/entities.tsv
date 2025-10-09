@@ -1,30 +1,30 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-isSubsystemOf	isSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isSubsystemOf			The relation isSubsystemOf refers from a Subsystem to its Supersystem.
-isRelatedTo	isRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isRelatedTo			The relation isRelatedTo subsumes all kinds of inter-system relations.
-S	S	Entity	http://OntoCAPE/upper_level/system.owl#S			Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties.
-isDirectlyRelatedTo	isDirectlyRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo			The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations.
-isComposedOfSubsystem	isComposedOfSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem			The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem.
-ProcessStep	ProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep			A ProcessStep is a certain material processing procedure.
-isExclusivelySubsystemOf	isExclusivelySubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf			The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem.
-Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
-isConnectedTo	isConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConnectedTo			The relation isConnectedTo represents topological connectivity between System.
 DirectedConnection	DirectedConnection	Class	http://OntoCAPE/upper_level/network_system.owl#DirectedConnection			DirectedConnection is a specialization of Connection and represents likewise the connecting element between Devices. However, the usage of DirectedConnection implies the indication of a directed interconnection.
-hasDirectSubsystem	hasDirectSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem			The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem.
-AggregatedProcessStep	AggregatedProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep			An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence.
-Batch	Batch	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch			
-Continuous	Continuous	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous			
-string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
-hasOutput	hasOutput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasOutput			The relation hasOutput connects a Device to an outgoing DirectedConnection.
-isPredecessorOf	isPredecessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf			The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
-isDirectSubsystemOf	isDirectSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf			The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem.
-ProcessState	ProcessState	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState			A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
-Device	Device	Class	http://OntoCAPE/upper_level/network_system.owl#Device			Devices are the crucial elements of a NetworkSystem, holding the major functionality.
-Process	Process	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process			An AggregatedProcessStep representing the entire function of the Process considered
-hasInput	hasInput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasInput			The relation hasInput connects a Device to an incoming DirectedConnection.
-hasSubsystem	hasSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasSubsystem			The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem.
-process.owl	process.owl	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl			
-OutputProduct	OutputProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct			An OutputProduct is a Material that is output by a ProcessStep.
 enters	enters	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#enters			The relation Enters interconnects an ingoing DirectedConnection  to its target Device.
+isExclusivelySubsystemOf	isExclusivelySubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf			The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem.
+process.owl	process.owl	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl			
+isRelatedTo	isRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isRelatedTo			The relation isRelatedTo subsumes all kinds of inter-system relations.
+hasSubsystem	hasSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasSubsystem			The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem.
+OutputProduct	OutputProduct	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct			An OutputProduct is a Material that is output by a ProcessStep.
+isComposedOfSubsystem	isComposedOfSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem			The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem.
+Process	Process	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process			An AggregatedProcessStep representing the entire function of the Process considered
 leaves	leaves	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#leaves			The relation Leaves connects an outgoing DirectedConnection to its source Device.
-isSuccessorOf	isSuccessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf			The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.
+hasInput	hasInput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasInput			The relation hasInput connects a Device to an incoming DirectedConnection.
+isDirectlyRelatedTo	isDirectlyRelatedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo			The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations.
+isSubsystemOf	isSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isSubsystemOf			The relation isSubsystemOf refers from a Subsystem to its Supersystem.
+S	S	Entity	http://OntoCAPE/upper_level/system.owl#S			Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties.
+ProcessStep	ProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep			A ProcessStep is a certain material processing procedure.
 comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
+ProcessState	ProcessState	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState			A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
+Batch	Batch	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch			
+isDirectSubsystemOf	isDirectSubsystemOf	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf			The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem.
+Device	Device	Class	http://OntoCAPE/upper_level/network_system.owl#Device			Devices are the crucial elements of a NetworkSystem, holding the major functionality.
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+Continuous	Continuous	Entity	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous			
+hasDirectSubsystem	hasDirectSubsystem	ObjectProperty	http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem			The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem.
+isPredecessorOf	isPredecessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf			The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
+isConnectedTo	isConnectedTo	ObjectProperty	http://OntoCAPE/upper_level/system.owl#isConnectedTo			The relation isConnectedTo represents topological connectivity between System.
+isSuccessorOf	isSuccessorOf	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf			The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.
+hasOutput	hasOutput	ObjectProperty	http://OntoCAPE/upper_level/network_system.owl#hasOutput			The relation hasOutput connects a Device to an outgoing DirectedConnection.
+AggregatedProcessStep	AggregatedProcessStep	Class	http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep			An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence.

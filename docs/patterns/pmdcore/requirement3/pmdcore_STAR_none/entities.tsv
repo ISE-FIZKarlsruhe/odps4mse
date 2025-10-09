@@ -1,42 +1,42 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-metadata incomplete	IAO_0000123	Entity	http://purl.obolibrary.org/obo/IAO_0000123			
-IAO_0000119	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
-characteristic	characteristic	ObjectProperty	https://w3id.org/pmd/co/characteristic	has characteristic		
-isRuleEnabled	isRuleEnabled	AnnotationProperty	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled			
-PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
-participant of	participantOf	ObjectProperty	https://w3id.org/pmd/co/participantOf	is participant of		
-organizational term	IAO_0000121	Entity	http://purl.obolibrary.org/obo/IAO_0000121			
-process	process	ObjectProperty	https://w3id.org/pmd/co/process	has process		
-requires discussion	IAO_0000428	Entity	http://purl.obolibrary.org/obo/IAO_0000428			
-isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
-input	input	ObjectProperty	https://w3id.org/pmd/co/input	has input		
-output	output	ObjectProperty	https://w3id.org/pmd/co/output	has output		
-definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
-uncurated	IAO_0000124	Entity	http://purl.obolibrary.org/obo/IAO_0000124			
-IAO_0000111	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
-example to be eventually removed	IAO_0000002	Entity	http://purl.obolibrary.org/obo/IAO_0000002			
-metadata complete	IAO_0000120	Entity	http://purl.obolibrary.org/obo/IAO_0000120			
-Projekt	Project	Class	https://w3id.org/pmd/co/Project			
-belongsToProject	belongsToProject	ObjectProperty	https://w3id.org/pmd/co/belongsToProject			
-pending final vetting	IAO_0000125	Entity	http://purl.obolibrary.org/obo/IAO_0000125			
-label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
-IAO_0000115	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
-participant	participant	ObjectProperty	https://w3id.org/pmd/co/participant	has participant		
-example	example	Entity	http://www.w3.org/2004/02/skos/core#example			
-output of	outputOf	ObjectProperty	https://w3id.org/pmd/co/outputOf	is output of		
-string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
-wasDerivedFrom	wasDerivedFrom	ObjectProperty	http://www.w3.org/ns/prov#wasDerivedFrom			
-co	co	Entity	https://w3id.org/pmd/co			
-boolean	boolean	Entity	http://www.w3.org/2001/XMLSchema#boolean			
-definitionSource	definitionSource	Entity	https://w3id.org/pmd/co/definitionSource			
-IAO_0000114	IAO_0000114	Entity	http://purl.obolibrary.org/obo/IAO_0000114			
-to be replaced with external ontology term	IAO_0000423	Entity	http://purl.obolibrary.org/obo/IAO_0000423			
-hat Wert	value	DatatypeProperty	https://w3id.org/pmd/co/value			
-characteristic of	characteristicOf	ObjectProperty	https://w3id.org/pmd/co/characteristicOf	is characteristic of		
 Identifier	Identifier	Class	https://w3id.org/pmd/co/Identifier			
+boolean	boolean	Entity	http://www.w3.org/2001/XMLSchema#boolean			
+organizational term	IAO_0000121	Entity	http://purl.obolibrary.org/obo/IAO_0000121			
+co	co	Entity	https://w3id.org/pmd/co			
+value	value	DatatypeProperty	https://w3id.org/pmd/co/value			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+Project	Project	Class	https://w3id.org/pmd/co/Project			
+requires discussion	IAO_0000428	Entity	http://purl.obolibrary.org/obo/IAO_0000428			
+definitionSource	definitionSource	Entity	https://w3id.org/pmd/co/definitionSource			
+IAO_0000117	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
 ready for release	IAO_0000122	Entity	http://purl.obolibrary.org/obo/IAO_0000122			
 input of	inputOf	ObjectProperty	https://w3id.org/pmd/co/inputOf	is input of		
-IAO_0000117	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
-comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
-Project Identifier	ProjectIdentifier	Class	https://w3id.org/pmd/co/ProjectIdentifier			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+wasDerivedFrom	wasDerivedFrom	ObjectProperty	http://www.w3.org/ns/prov#wasDerivedFrom			
+isRuleEnabled	isRuleEnabled	AnnotationProperty	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled			
+participant	participant	ObjectProperty	https://w3id.org/pmd/co/participant	has participant		
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			
+input	input	ObjectProperty	https://w3id.org/pmd/co/input	has input		
+IAO_0000111	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+metadata complete	IAO_0000120	Entity	http://purl.obolibrary.org/obo/IAO_0000120			
+belongsToProject	belongsToProject	ObjectProperty	https://w3id.org/pmd/co/belongsToProject			
+to be replaced with external ontology term	IAO_0000423	Entity	http://purl.obolibrary.org/obo/IAO_0000423			
+characteristic of	characteristicOf	ObjectProperty	https://w3id.org/pmd/co/characteristicOf	is characteristic of		
+IAO_0000119	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
+Projektidentifikator	ProjectIdentifier	Class	https://w3id.org/pmd/co/ProjectIdentifier			
+participant of	participantOf	ObjectProperty	https://w3id.org/pmd/co/participantOf	is participant of		
+IAO_0000115	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+process	process	ObjectProperty	https://w3id.org/pmd/co/process	has process		
+IAO_0000114	IAO_0000114	Entity	http://purl.obolibrary.org/obo/IAO_0000114			
+example	example	Entity	http://www.w3.org/2004/02/skos/core#example			
 altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+pending final vetting	IAO_0000125	Entity	http://purl.obolibrary.org/obo/IAO_0000125			
+output of	outputOf	ObjectProperty	https://w3id.org/pmd/co/outputOf	is output of		
+output	output	ObjectProperty	https://w3id.org/pmd/co/output	has output		
+characteristic	characteristic	ObjectProperty	https://w3id.org/pmd/co/characteristic	has characteristic		
+metadata incomplete	IAO_0000123	Entity	http://purl.obolibrary.org/obo/IAO_0000123			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+uncurated	IAO_0000124	Entity	http://purl.obolibrary.org/obo/IAO_0000124			
+example to be eventually removed	IAO_0000002	Entity	http://purl.obolibrary.org/obo/IAO_0000002			

@@ -1,31 +1,31 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-Plan	Plan	Class	http://www.w3.org/ns/prov#Plan			
-Entity	Entity	Class	http://www.w3.org/ns/prov#Entity			
-description	description	AnnotationProperty	http://purl.org/dc/terms/description			
-created	created	AnnotationProperty	http://purl.org/dc/terms/created			
-date	date	Entity	http://www.w3.org/2001/XMLSchema#date			
-isPreceededBy	isPreceededBy	ObjectProperty	http://purl.org/net/p-plan#isPreceededBy			http://purl.org/net/p-plan#
 definition	definition	AnnotationProperty	http://www.w3.org/ns/prov#definition			
-isOutputVarOf	isOutputVarOf	ObjectProperty	http://purl.org/net/p-plan#isOutputVarOf			
-Plan	Plan	Class	http://purl.org/net/p-plan#Plan			
-preferredNamespaceUri	preferredNamespaceUri	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespaceUri			
-preferredNamespacePrefix	preferredNamespacePrefix	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespacePrefix			
-hasOutputVar	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
-title	title	AnnotationProperty	http://purl.org/dc/terms/title			
-		Individual	http://purl.org/net/p-plan#			PROV extension for linking Plans and parts of plans to their respective executions. Created by Daniel Garijo and Yolanda Gil
-correspondsToStep	correspondsToStep	ObjectProperty	http://purl.org/net/p-plan#correspondsToStep			
-Step	Step	Class	http://purl.org/net/p-plan#Step			
-Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
-Bundle	Bundle	Class	http://www.w3.org/ns/prov#Bundle			
-hasInputVar	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
-creator	creator	AnnotationProperty	http://purl.org/dc/terms/creator			
-Variable	Variable	Class	http://purl.org/net/p-plan#Variable			
-correspondsToVariable	correspondsToVariable	ObjectProperty	http://purl.org/net/p-plan#correspondsToVariable			
-isVariableofPlan	isVariableOfPlan	ObjectProperty	http://purl.org/net/p-plan#isVariableOfPlan			
-license	license	AnnotationProperty	http://purl.org/dc/terms/license			
-Entity	Entity	Class	http://purl.org/net/p-plan#Entity			
-Activity	Activity	Class	http://purl.org/net/p-plan#Activity			A p-plan:Activity represents the execution process planned in a p-plan:Step
+isPreceededBy	isPreceededBy	ObjectProperty	http://purl.org/net/p-plan#isPreceededBy			http://purl.org/net/p-plan#
+description	description	AnnotationProperty	http://purl.org/dc/terms/description			
 isInputVarOf	isInputVarOf	ObjectProperty	http://purl.org/net/p-plan#isInputVarOf			
-Bundle	Bundle	Class	http://purl.org/net/p-plan#Bundle			
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+isVariableofPlan	isVariableOfPlan	ObjectProperty	http://purl.org/net/p-plan#isVariableOfPlan			
+title	title	AnnotationProperty	http://purl.org/dc/terms/title			
+Bundle	Bundle	Class	http://www.w3.org/ns/prov#Bundle			
+preferredNamespacePrefix	preferredNamespacePrefix	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespacePrefix			
+creator	creator	AnnotationProperty	http://purl.org/dc/terms/creator			
 isStepOfPlan	isStepOfPlan	ObjectProperty	http://purl.org/net/p-plan#isStepOfPlan			
+Plan	Plan	Class	http://www.w3.org/ns/prov#Plan			
+created	created	AnnotationProperty	http://purl.org/dc/terms/created			
+correspondsToStep	correspondsToStep	ObjectProperty	http://purl.org/net/p-plan#correspondsToStep			
+Variable	Variable	Class	http://purl.org/net/p-plan#Variable			
 modified	modified	AnnotationProperty	http://purl.org/dc/terms/modified			
+Entity	Entity	Class	http://purl.org/net/p-plan#Entity			
+		Individual	http://purl.org/net/p-plan#			PROV extension for linking Plans and parts of plans to their respective executions. Created by Daniel Garijo and Yolanda Gil
+hasOutputVar	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
+date	date	Entity	http://www.w3.org/2001/XMLSchema#date			
+correspondsToVariable	correspondsToVariable	ObjectProperty	http://purl.org/net/p-plan#correspondsToVariable			
+Step	Step	Class	http://purl.org/net/p-plan#Step			
+Entity	Entity	Class	http://www.w3.org/ns/prov#Entity			
+preferredNamespaceUri	preferredNamespaceUri	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespaceUri			
+isOutputVarOf	isOutputVarOf	ObjectProperty	http://purl.org/net/p-plan#isOutputVarOf			
+Activity	Activity	Class	http://purl.org/net/p-plan#Activity			A p-plan:Activity represents the execution process planned in a p-plan:Step
+hasInputVar	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
+Plan	Plan	Class	http://purl.org/net/p-plan#Plan			
+Bundle	Bundle	Class	http://purl.org/net/p-plan#Bundle			

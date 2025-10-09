@@ -1,44 +1,44 @@
 LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
-Zuweisung	Assignment	Class	http://www.molmod.info/semantics/pims-ii.ttl#Assignment			Assignment, i.e., a data item by which a value is assigned to a variable with respect to a particular referent (e.g., T = 200 K for substance o as it was measured in a particular cognitive step); therein, T is the variable, related to the assignment by m4i:hasVariable, 200 K is the value, related to the assignment by m4i:hasValue, and o is the referent, related to the assignment by isAssignmentFor
-has unit	hasUnit	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUnit			
-PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
-Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
-hat Zahlenwert	hasNumericalValue	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue			
-hat zugewiesenen Wert	hasAssignedValue	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue			
-realized in	BFO_0000054	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000054			Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-has uncertainty declaration	hasUncertaintyDeclaration	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration			
-implemented by	implementedByTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementedByTool			
-isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
-realisiert	BFO_0000055	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000055			Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-implementiert	implementsMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementsMethod			
-is admissible value for	isAdmissibleValueFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor			
-definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
-hat Größenart	hasKindOfQuantity	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity			
-realizes method	realizesMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#realizesMethod			
-narrower	narrower	AnnotationProperty	http://www.w3.org/2004/02/skos/core#narrower			
-Methode	Method	Class	http://w3id.org/nfdi4ing/metadata4ing#Method			
-Wert	Value	Class	http://www.molmod.info/semantics/pims-ii.ttl#Value			
-Reell	Real	Class	https://ptb.de/si/Real			
-ist Wert in Zuweisung	isValueInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment			
-closeMatch	closeMatch	AnnotationProperty	http://www.w3.org/2004/02/skos/core#closeMatch			
+Größenwert	QuantityValue	Class	http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue			
 Variable	Variable	Class	http://www.molmod.info/semantics/pims-ii.ttl#Variable			
-Größenart	KindOfQuantity	Class	http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity			
-has parameter	hasParameter	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasParameter			
-ist eingesetztes Werkzeug	isEmployedToolIn	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn			
-is variable in assignment	isVariableInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment			
-prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
-has employed tool	hasEmployedTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool			
-realizable entity	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
-string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
-		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
-broader	broader	AnnotationProperty	http://www.w3.org/2004/02/skos/core#broader			
-editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
-note	note	AnnotationProperty	http://www.w3.org/2004/02/skos/core#note			
-Quantity value	QuantityValue	Class	http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue			
+has kind of quantity	hasKindOfQuantity	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity			
+has unit	hasUnit	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUnit			
 decimal	decimal	Entity	http://www.w3.org/2001/XMLSchema#decimal			
+is admissible value for	isAdmissibleValueFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor			
 is assignment for	isAssignmentFor	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor			
-Werkzeug	Tool	Class	http://w3id.org/nfdi4ing/metadata4ing#Tool			
 hat als zulässigen Wert	hasAdmissibleValue	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue			
+realizable entity	BFO_0000017	Class	http://purl.obolibrary.org/obo/BFO_0000017			
+implementiert	implementsMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementsMethod			
+note	note	AnnotationProperty	http://www.w3.org/2004/02/skos/core#note			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+Thing	Thing	Entity	http://www.w3.org/2002/07/owl#Thing			
+is employed tool	isEmployedToolIn	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+realisiert in	BFO_0000054	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000054			Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+Assignment	Assignment	Class	http://www.molmod.info/semantics/pims-ii.ttl#Assignment			Assignment, i.e., a data item by which a value is assigned to a variable with respect to a particular referent (e.g., T = 200 K for substance o as it was measured in a particular cognitive step); therein, T is the variable, related to the assignment by m4i:hasVariable, 200 K is the value, related to the assignment by m4i:hasValue, and o is the referent, related to the assignment by isAssignmentFor
+Value	Value	Class	http://www.molmod.info/semantics/pims-ii.ttl#Value			
+broader	broader	AnnotationProperty	http://www.w3.org/2004/02/skos/core#broader			
+has employed tool	hasEmployedTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool			
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+realizes method	realizesMethod	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#realizesMethod			
+wird implementiert durch	implementedByTool	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#implementedByTool			
+kind of quantity	KindOfQuantity	Class	http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity			
+has parameter	hasParameter	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasParameter			
 Literal	Literal	Entity	http://www.w3.org/2000/01/rdf-schema#Literal			
+is variable in assignment	isVariableInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment			
+Reell	Real	Class	https://ptb.de/si/Real			
+narrower	narrower	AnnotationProperty	http://www.w3.org/2004/02/skos/core#narrower			
+hat Zahlenwert	hasNumericalValue	DatatypeProperty	http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue			
+has assigned value	hasAssignedValue	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue			
+closeMatch	closeMatch	AnnotationProperty	http://www.w3.org/2004/02/skos/core#closeMatch			
 comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
-hat Variable	hasVariable	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasVariable			
+method	Method	Class	http://w3id.org/nfdi4ing/metadata4ing#Method			
+hat Unsicherheitsdeklaration	hasUncertaintyDeclaration	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration			
+Tool	Tool	Class	http://w3id.org/nfdi4ing/metadata4ing#Tool			
+has variable	hasVariable	ObjectProperty	http://w3id.org/nfdi4ing/metadata4ing#hasVariable			
+		Entity	http://w3id.org/nfdi4ing/metadata4ing#			
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#editorialNote			
+is value in assignment	isValueInAssignment	ObjectProperty	http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment			
+realisiert	BFO_0000055	ObjectProperty	http://purl.obolibrary.org/obo/BFO_0000055			Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process

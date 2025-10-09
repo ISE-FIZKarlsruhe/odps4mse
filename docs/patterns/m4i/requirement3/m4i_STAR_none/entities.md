@@ -1,50 +1,50 @@
-- **Role** (*Class*) — `Role` — <http://www.w3.org/ns/prov#Role>
-  <span class='search-tokens' style='display:none'>Role http://www.w3.org/ns/prov# Role http://www.w3.org/ns/prov# role http://www.w3.org/ns/prov#Role http://www.w3.org/ns/prov#role role</span>
-- **qualified association** (*ObjectProperty*) — `qualifiedAssociation` — <http://www.w3.org/ns/prov#qualifiedAssociation>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#qualified Association http://www.w3.org/ns/prov#qualified association http://www.w3.org/ns/prov#qualifiedAssociation http://www.w3.org/ns/prov#qualifiedassociation qualified Association qualified association qualifiedAssociation qualifiedassociation</span>
-- **wasRoleIn** (*ObjectProperty*) — `wasRoleIn` — <http://www.w3.org/ns/prov#wasRoleIn>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Role In http://www.w3.org/ns/prov#was role in http://www.w3.org/ns/prov#wasRoleIn http://www.w3.org/ns/prov#wasrolein was Role In was role in wasRoleIn wasrolein</span>
-- **Organization** (*Class*) — `Organization` — <http://xmlns.com/foaf/0.1/Organization> — _comment:_ An organization.
-  <span class='search-tokens' style='display:none'>Organization http://xmlns.com/foaf/0.1/ Organization http://xmlns.com/foaf/0.1/ organization http://xmlns.com/foaf/0.1/Organization http://xmlns.com/foaf/0.1/organization organization</span>
-- **prefLabel** (*AnnotationProperty*) — `prefLabel` — <http://www.w3.org/2004/02/skos/core#prefLabel>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#pref Label http://www.w3.org/2004/02/skos/core#pref label http://www.w3.org/2004/02/skos/core#prefLabel http://www.w3.org/2004/02/skos/core#preflabel pref Label pref label prefLabel preflabel</span>
-- **hatte Rolle** (*ObjectProperty*) — `hadRole` — <http://www.w3.org/ns/prov#hadRole>
-  <span class='search-tokens' style='display:none'>had Role had role hadRole hadrole hatte  Rolle hatte  rolle hatte Rolle hatte rolle http://www.w3.org/ns/prov#had Role http://www.w3.org/ns/prov#had role http://www.w3.org/ns/prov#hadRole http://www.w3.org/ns/prov#hadrole</span>
-- **example** (*AnnotationProperty*) — `example` — <http://www.w3.org/2004/02/skos/core#example>
-  <span class='search-tokens' style='display:none'>example http://www.w3.org/2004/02/skos/core#example</span>
-- **PlainLiteral** (*Entity*) — `PlainLiteral` — <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral>
-  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span>
-- **participates in** (*ObjectProperty*) — `RO_0000056` — <http://purl.obolibrary.org/obo/RO_0000056>
-  <span class='search-tokens' style='display:none'>RO 0000056 RO_0000056 http://purl.obolibrary.org/obo/RO 0000056 http://purl.obolibrary.org/obo/RO_0000056 http://purl.obolibrary.org/obo/ro 0000056 http://purl.obolibrary.org/obo/ro_0000056 participates in ro 0000056 ro_0000056</span>
-- **http://w3id.org/nfdi4ing/metadata4ing#** (*Entity*) — `` — <http://w3id.org/nfdi4ing/metadata4ing#>
-  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#</span>
-- **string** (*Entity*) — `string` — <http://www.w3.org/2001/XMLSchema#string>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/2001/XML Schema#string http://www.w3.org/2001/XMLSchema#string http://www.w3.org/2001/xml schema#string http://www.w3.org/2001/xmlschema#string string</span>
-- **isDefinedBy** (*Entity*) — `isDefinedBy` — <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#is Defined By http://www.w3.org/2000/01/rdf schema#is defined by http://www.w3.org/2000/01/rdf schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isdefinedby is Defined By is defined by isDefinedBy isdefinedby</span>
-- **part of** (*ObjectProperty*) — `BFO_0000050` — <http://purl.obolibrary.org/obo/BFO_0000050>
-  <span class='search-tokens' style='display:none'>BFO 0000050 BFO_0000050 bfo 0000050 bfo_0000050 http://purl.obolibrary.org/obo/BFO 0000050 http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/bfo 0000050 http://purl.obolibrary.org/obo/bfo_0000050 part of</span>
-- **editorialNote** (*AnnotationProperty*) — `editorialNote` — <http://www.w3.org/2004/02/skos/core#editorialNote>
-  <span class='search-tokens' style='display:none'>editorial Note editorial note editorialNote editorialnote http://www.w3.org/2004/02/skos/core#editorial Note http://www.w3.org/2004/02/skos/core#editorial note http://www.w3.org/2004/02/skos/core#editorialNote http://www.w3.org/2004/02/skos/core#editorialnote</span>
-- **has part** (*ObjectProperty*) — `BFO_0000051` — <http://purl.obolibrary.org/obo/BFO_0000051>
-  <span class='search-tokens' style='display:none'>BFO 0000051 BFO_0000051 bfo 0000051 bfo_0000051 has part http://purl.obolibrary.org/obo/BFO 0000051 http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/bfo 0000051 http://purl.obolibrary.org/obo/bfo_0000051</span>
-- **note** (*AnnotationProperty*) — `note` — <http://www.w3.org/2004/02/skos/core#note>
-  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#note note</span>
-- **definition** (*AnnotationProperty*) — `definition` — <http://www.w3.org/2004/02/skos/core#definition>
-  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span>
-- **Verknüpfung** (*Class*) — `Association` — <http://www.w3.org/ns/prov#Association> — _comment:_ An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
-  <span class='search-tokens' style='display:none'>Association Verknüpfung association http://www.w3.org/ns/prov# Association http://www.w3.org/ns/prov# association http://www.w3.org/ns/prov#Association http://www.w3.org/ns/prov#association verknüpfung</span>
 - **has participant** (*ObjectProperty*) — `RO_0000057` — <http://purl.obolibrary.org/obo/RO_0000057>
   <span class='search-tokens' style='display:none'>RO 0000057 RO_0000057 has participant http://purl.obolibrary.org/obo/RO 0000057 http://purl.obolibrary.org/obo/RO_0000057 http://purl.obolibrary.org/obo/ro 0000057 http://purl.obolibrary.org/obo/ro_0000057 ro 0000057 ro_0000057</span>
-- **gehört zu Projekt** (*ObjectProperty*) — `inProject` — <http://w3id.org/nfdi4ing/metadata4ing#inProject>
-  <span class='search-tokens' style='display:none'>gehört zu  Projekt gehört zu  projekt gehört zu Projekt gehört zu projekt http://w3id.org/nfdi4ing/metadata4ing#in Project http://w3id.org/nfdi4ing/metadata4ing#in project http://w3id.org/nfdi4ing/metadata4ing#inProject http://w3id.org/nfdi4ing/metadata4ing#inproject in Project in project inProject inproject</span>
-- **project participant** (*ObjectProperty*) — `projectParticipant` — <http://w3id.org/nfdi4ing/metadata4ing#projectParticipant>
-  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#project Participant http://w3id.org/nfdi4ing/metadata4ing#project participant http://w3id.org/nfdi4ing/metadata4ing#projectParticipant http://w3id.org/nfdi4ing/metadata4ing#projectparticipant project Participant project participant projectParticipant projectparticipant</span>
+- **näher beschriebene Verbindung** (*ObjectProperty*) — `qualifiedAssociation` — <http://www.w3.org/ns/prov#qualifiedAssociation>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#qualified Association http://www.w3.org/ns/prov#qualified association http://www.w3.org/ns/prov#qualifiedAssociation http://www.w3.org/ns/prov#qualifiedassociation näher beschriebene  Verbindung näher beschriebene  verbindung näher beschriebene Verbindung näher beschriebene verbindung qualified Association qualified association qualifiedAssociation qualifiedassociation</span>
+- **ist beteiligt an** (*ObjectProperty*) — `RO_0000056` — <http://purl.obolibrary.org/obo/RO_0000056>
+  <span class='search-tokens' style='display:none'>RO 0000056 RO_0000056 http://purl.obolibrary.org/obo/RO 0000056 http://purl.obolibrary.org/obo/RO_0000056 http://purl.obolibrary.org/obo/ro 0000056 http://purl.obolibrary.org/obo/ro_0000056 ist beteiligt an ro 0000056 ro_0000056</span>
 - **Person** (*Class*) — `Person` — <http://xmlns.com/foaf/0.1/Person> — _comment:_ A person.
   <span class='search-tokens' style='display:none'>Person http://xmlns.com/foaf/0.1/ Person http://xmlns.com/foaf/0.1/ person http://xmlns.com/foaf/0.1/Person http://xmlns.com/foaf/0.1/person person</span>
-- **Akteur** (*Class*) — `Agent` — <http://xmlns.com/foaf/0.1/Agent> — _comment:_ An agent (eg. person, group, software or physical artifact).
-  <span class='search-tokens' style='display:none'>Agent Akteur agent akteur http://xmlns.com/foaf/0.1/ Agent http://xmlns.com/foaf/0.1/ agent http://xmlns.com/foaf/0.1/Agent http://xmlns.com/foaf/0.1/agent</span>
+- **has part** (*ObjectProperty*) — `BFO_0000051` — <http://purl.obolibrary.org/obo/BFO_0000051>
+  <span class='search-tokens' style='display:none'>BFO 0000051 BFO_0000051 bfo 0000051 bfo_0000051 has part http://purl.obolibrary.org/obo/BFO 0000051 http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/bfo 0000051 http://purl.obolibrary.org/obo/bfo_0000051</span>
+- **Agent** (*Class*) — `Agent` — <http://xmlns.com/foaf/0.1/Agent> — _comment:_ An agent (eg. person, group, software or physical artifact).
+  <span class='search-tokens' style='display:none'>Agent agent http://xmlns.com/foaf/0.1/ Agent http://xmlns.com/foaf/0.1/ agent http://xmlns.com/foaf/0.1/Agent http://xmlns.com/foaf/0.1/agent</span>
+- **editorialNote** (*AnnotationProperty*) — `editorialNote` — <http://www.w3.org/2004/02/skos/core#editorialNote>
+  <span class='search-tokens' style='display:none'>editorial Note editorial note editorialNote editorialnote http://www.w3.org/2004/02/skos/core#editorial Note http://www.w3.org/2004/02/skos/core#editorial note http://www.w3.org/2004/02/skos/core#editorialNote http://www.w3.org/2004/02/skos/core#editorialnote</span>
+- **hatte Rolle** (*ObjectProperty*) — `hadRole` — <http://www.w3.org/ns/prov#hadRole>
+  <span class='search-tokens' style='display:none'>had Role had role hadRole hadrole hatte  Rolle hatte  rolle hatte Rolle hatte rolle http://www.w3.org/ns/prov#had Role http://www.w3.org/ns/prov#had role http://www.w3.org/ns/prov#hadRole http://www.w3.org/ns/prov#hadrole</span>
+- **wasRoleIn** (*ObjectProperty*) — `wasRoleIn` — <http://www.w3.org/ns/prov#wasRoleIn>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Role In http://www.w3.org/ns/prov#was role in http://www.w3.org/ns/prov#wasRoleIn http://www.w3.org/ns/prov#wasrolein was Role In was role in wasRoleIn wasrolein</span>
+- **note** (*AnnotationProperty*) — `note` — <http://www.w3.org/2004/02/skos/core#note>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#note note</span>
+- **Organisation** (*Class*) — `Organization` — <http://xmlns.com/foaf/0.1/Organization> — _comment:_ An organization.
+  <span class='search-tokens' style='display:none'>Organisation Organization http://xmlns.com/foaf/0.1/ Organization http://xmlns.com/foaf/0.1/ organization http://xmlns.com/foaf/0.1/Organization http://xmlns.com/foaf/0.1/organization organisation organization</span>
+- **definition** (*AnnotationProperty*) — `definition` — <http://www.w3.org/2004/02/skos/core#definition>
+  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span>
+- **example** (*AnnotationProperty*) — `example` — <http://www.w3.org/2004/02/skos/core#example>
+  <span class='search-tokens' style='display:none'>example http://www.w3.org/2004/02/skos/core#example</span>
 - **comment** (*Entity*) — `comment` — <http://www.w3.org/2000/01/rdf-schema#comment>
   <span class='search-tokens' style='display:none'>comment http://www.w3.org/2000/01/rdf schema#comment http://www.w3.org/2000/01/rdf-schema#comment</span>
+- **Teil von** (*ObjectProperty*) — `BFO_0000050` — <http://purl.obolibrary.org/obo/BFO_0000050>
+  <span class='search-tokens' style='display:none'>BFO 0000050 BFO_0000050 Teil von bfo 0000050 bfo_0000050 http://purl.obolibrary.org/obo/BFO 0000050 http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/bfo 0000050 http://purl.obolibrary.org/obo/bfo_0000050 teil von</span>
+- **string** (*Entity*) — `string` — <http://www.w3.org/2001/XMLSchema#string>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2001/XML Schema#string http://www.w3.org/2001/XMLSchema#string http://www.w3.org/2001/xml schema#string http://www.w3.org/2001/xmlschema#string string</span>
+- **hat Projektmitglied** (*ObjectProperty*) — `projectParticipant` — <http://w3id.org/nfdi4ing/metadata4ing#projectParticipant>
+  <span class='search-tokens' style='display:none'>hat  Projektmitglied hat  projektmitglied hat Projektmitglied hat projektmitglied http://w3id.org/nfdi4ing/metadata4ing#project Participant http://w3id.org/nfdi4ing/metadata4ing#project participant http://w3id.org/nfdi4ing/metadata4ing#projectParticipant http://w3id.org/nfdi4ing/metadata4ing#projectparticipant project Participant project participant projectParticipant projectparticipant</span>
+- **Association** (*Class*) — `Association` — <http://www.w3.org/ns/prov#Association> — _comment:_ An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
+  <span class='search-tokens' style='display:none'>Association association http://www.w3.org/ns/prov# Association http://www.w3.org/ns/prov# association http://www.w3.org/ns/prov#Association http://www.w3.org/ns/prov#association</span>
+- **associated to project** (*ObjectProperty*) — `inProject` — <http://w3id.org/nfdi4ing/metadata4ing#inProject>
+  <span class='search-tokens' style='display:none'>associated to project http://w3id.org/nfdi4ing/metadata4ing#in Project http://w3id.org/nfdi4ing/metadata4ing#in project http://w3id.org/nfdi4ing/metadata4ing#inProject http://w3id.org/nfdi4ing/metadata4ing#inproject in Project in project inProject inproject</span>
 - **label** (*Entity*) — `label` — <http://www.w3.org/2000/01/rdf-schema#label>
   <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#label http://www.w3.org/2000/01/rdf-schema#label label</span>
+- **http://w3id.org/nfdi4ing/metadata4ing#** (*Entity*) — `` — <http://w3id.org/nfdi4ing/metadata4ing#>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#</span>
+- **prefLabel** (*AnnotationProperty*) — `prefLabel` — <http://www.w3.org/2004/02/skos/core#prefLabel>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#pref Label http://www.w3.org/2004/02/skos/core#pref label http://www.w3.org/2004/02/skos/core#prefLabel http://www.w3.org/2004/02/skos/core#preflabel pref Label pref label prefLabel preflabel</span>
+- **Rolle des Akteurs** (*Class*) — `Role` — <http://www.w3.org/ns/prov#Role>
+  <span class='search-tokens' style='display:none'>Role Rolle des  Akteurs Rolle des Akteurs http://www.w3.org/ns/prov# Role http://www.w3.org/ns/prov# role http://www.w3.org/ns/prov#Role http://www.w3.org/ns/prov#role role rolle des  akteurs rolle des akteurs</span>
+- **isDefinedBy** (*Entity*) — `isDefinedBy` — <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#is Defined By http://www.w3.org/2000/01/rdf schema#is defined by http://www.w3.org/2000/01/rdf schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isDefinedBy http://www.w3.org/2000/01/rdf-schema#isdefinedby is Defined By is defined by isDefinedBy isdefinedby</span>
+- **PlainLiteral** (*Entity*) — `PlainLiteral` — <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral>
+  <span class='search-tokens' style='display:none'>Plain Literal PlainLiteral http://www.w3.org/1999/02/22 rdf syntax ns# Plain Literal http://www.w3.org/1999/02/22 rdf syntax ns# plain literal http://www.w3.org/1999/02/22 rdf syntax ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral http://www.w3.org/1999/02/22-rdf-syntax-ns#plainliteral plain literal plainliteral</span>

@@ -1,20 +1,20 @@
+- **workflowInstanceOf** (*ObjectProperty*) — `workflowInstanceOf` — <http://purl.org/wild/vocab#workflowInstanceOf>
+  <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab#workflow Instance Of http://purl.org/wild/vocab#workflow instance of http://purl.org/wild/vocab#workflowInstanceOf http://purl.org/wild/vocab#workflowinstanceof workflow Instance Of workflow instance of workflowInstanceOf workflowinstanceof</span>
+- **hasState** (*ObjectProperty*) — `hasState` — <http://purl.org/wild/vocab#hasState>
+  <span class='search-tokens' style='display:none'>has State has state hasState hasstate http://purl.org/wild/vocab#has State http://purl.org/wild/vocab#has state http://purl.org/wild/vocab#hasState http://purl.org/wild/vocab#hasstate</span>
+- **State** (*Class*) — `State` — <http://purl.org/wild/vocab#State>
+  <span class='search-tokens' style='display:none'>State http://purl.org/wild/vocab# State http://purl.org/wild/vocab# state http://purl.org/wild/vocab#State http://purl.org/wild/vocab#state state</span>
+- **ActiveOrInitialisedInstanceState** (*Class*) — `ActiveOrInitialisedInstanceState` — <http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState>
+  <span class='search-tokens' style='display:none'>Active Or Initialised Instance State ActiveOrInitialisedInstanceState active or initialised instance state activeorinitialisedinstancestate http://purl.org/wild/vocab# Active Or Initialised Instance State http://purl.org/wild/vocab# active or initialised instance state http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState http://purl.org/wild/vocab#activeorinitialisedinstancestate</span>
+- **ActivityInstance** (*Class*) — `ActivityInstance` — <http://purl.org/wild/vocab#ActivityInstance>
+  <span class='search-tokens' style='display:none'>Activity Instance ActivityInstance activity instance activityinstance http://purl.org/wild/vocab# Activity Instance http://purl.org/wild/vocab# activity instance http://purl.org/wild/vocab#ActivityInstance http://purl.org/wild/vocab#activityinstance</span>
+- **VirtualInstanceState** (*Class*) — `VirtualInstanceState` — <http://purl.org/wild/vocab#VirtualInstanceState>
+  <span class='search-tokens' style='display:none'>Virtual Instance State VirtualInstanceState http://purl.org/wild/vocab# Virtual Instance State http://purl.org/wild/vocab# virtual instance state http://purl.org/wild/vocab#VirtualInstanceState http://purl.org/wild/vocab#virtualinstancestate virtual instance state virtualinstancestate</span>
+- **inWorkflowInstance** (*ObjectProperty*) — `inWorkflowInstance` — <http://purl.org/wild/vocab#inWorkflowInstance>
+  <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab#in Workflow Instance http://purl.org/wild/vocab#in workflow instance http://purl.org/wild/vocab#inWorkflowInstance http://purl.org/wild/vocab#inworkflowinstance in Workflow Instance in workflow instance inWorkflowInstance inworkflowinstance</span>
 - **activityInstanceOf** (*ObjectProperty*) — `activityInstanceOf` — <http://purl.org/wild/vocab#activityInstanceOf>
   <span class='search-tokens' style='display:none'>activity Instance Of activity instance of activityInstanceOf activityinstanceof http://purl.org/wild/vocab#activity Instance Of http://purl.org/wild/vocab#activity instance of http://purl.org/wild/vocab#activityInstanceOf http://purl.org/wild/vocab#activityinstanceof</span>
 - **vocab** (*Entity*) — `vocab` — <http://purl.org/wild/vocab>
   <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab vocab</span>
-- **State** (*Class*) — `State` — <http://purl.org/wild/vocab#State>
-  <span class='search-tokens' style='display:none'>State http://purl.org/wild/vocab# State http://purl.org/wild/vocab# state http://purl.org/wild/vocab#State http://purl.org/wild/vocab#state state</span>
-- **workflowInstanceOf** (*ObjectProperty*) — `workflowInstanceOf` — <http://purl.org/wild/vocab#workflowInstanceOf>
-  <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab#workflow Instance Of http://purl.org/wild/vocab#workflow instance of http://purl.org/wild/vocab#workflowInstanceOf http://purl.org/wild/vocab#workflowinstanceof workflow Instance Of workflow instance of workflowInstanceOf workflowinstanceof</span>
-- **inWorkflowInstance** (*ObjectProperty*) — `inWorkflowInstance` — <http://purl.org/wild/vocab#inWorkflowInstance>
-  <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab#in Workflow Instance http://purl.org/wild/vocab#in workflow instance http://purl.org/wild/vocab#inWorkflowInstance http://purl.org/wild/vocab#inworkflowinstance in Workflow Instance in workflow instance inWorkflowInstance inworkflowinstance</span>
-- **VirtualInstanceState** (*Class*) — `VirtualInstanceState` — <http://purl.org/wild/vocab#VirtualInstanceState>
-  <span class='search-tokens' style='display:none'>Virtual Instance State VirtualInstanceState http://purl.org/wild/vocab# Virtual Instance State http://purl.org/wild/vocab# virtual instance state http://purl.org/wild/vocab#VirtualInstanceState http://purl.org/wild/vocab#virtualinstancestate virtual instance state virtualinstancestate</span>
-- **ActivityInstance** (*Class*) — `ActivityInstance` — <http://purl.org/wild/vocab#ActivityInstance>
-  <span class='search-tokens' style='display:none'>Activity Instance ActivityInstance activity instance activityinstance http://purl.org/wild/vocab# Activity Instance http://purl.org/wild/vocab# activity instance http://purl.org/wild/vocab#ActivityInstance http://purl.org/wild/vocab#activityinstance</span>
-- **hasState** (*ObjectProperty*) — `hasState` — <http://purl.org/wild/vocab#hasState>
-  <span class='search-tokens' style='display:none'>has State has state hasState hasstate http://purl.org/wild/vocab#has State http://purl.org/wild/vocab#has state http://purl.org/wild/vocab#hasState http://purl.org/wild/vocab#hasstate</span>
-- **ActiveOrInitialisedInstanceState** (*Class*) — `ActiveOrInitialisedInstanceState` — <http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState>
-  <span class='search-tokens' style='display:none'>Active Or Initialised Instance State ActiveOrInitialisedInstanceState active or initialised instance state activeorinitialisedinstancestate http://purl.org/wild/vocab# Active Or Initialised Instance State http://purl.org/wild/vocab# active or initialised instance state http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState http://purl.org/wild/vocab#activeorinitialisedinstancestate</span>
 - **WorkflowInstance** (*Class*) — `WorkflowInstance` — <http://purl.org/wild/vocab#WorkflowInstance>
   <span class='search-tokens' style='display:none'>Workflow Instance WorkflowInstance http://purl.org/wild/vocab# Workflow Instance http://purl.org/wild/vocab# workflow instance http://purl.org/wild/vocab#WorkflowInstance http://purl.org/wild/vocab#workflowinstance workflow instance workflowinstance</span>
