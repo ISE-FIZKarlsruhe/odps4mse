@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.opmw.org/ontology/"
+     xml:base="http://www.opmw.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.opmw.org/ontology/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opmw.org/ontology/correspondsToTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/correspondsToTemplate">
+        <rdfs:domain rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionAccount"/>
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+        <rdfs:comment xml:lang="en">Property that binds an execution account to the template of the whole workflow. The template contains the plan for the workflow.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix opmo: &lt;http://openprovenance.org/model/opmo#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowExecutionProcess/acc1&gt;
+     a opmo:Account, opmw:workflowExecutionAccount;
+     opmw:correspondsToTemplate &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">corresponds to Template</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opmw.org/ontology/correspondsToTemplateArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/correspondsToTemplateArtifact">
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplateArtifact"/>
+        <rdfs:comment xml:lang="en">Property that binds a workflow execution artifact to its correspondant workflow template artifact.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix opmv: &lt;http://purl.org/net/opmv/ns#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DEPTH1.2150836&gt; 
+       a opmv:Artifact, opmw:WorkflowExecutionArtifact;
+       opmw:correspondsToTemplateArtifact &lt;http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DEPTH&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">corresponds to Template Artifact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opmw.org/ontology/correspondsToTemplateProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/correspondsToTemplateProcess">
+        <rdfs:domain rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplateProcess"/>
+        <rdfs:comment xml:lang="en">Property that binds a workflow execution process  to its correspondant process template.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix opmv: &lt;http://purl.org/net/opmv/ns#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDM133549210450086&gt;
+     a opmv:Process, opmw:WorkflowExecutionProcess;
+     opmw:correspondsToTemplateProcess &lt;http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_REAERATIONEDM&gt;. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">corresponds to Template Process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opmw.org/ontology/isParameterOfTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/isParameterOfTemplate">
+        <rdfs:domain rdf:resource="http://www.opmw.org/ontology/ParameterVariable"/>
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+        <rdfs:comment>Property used to dessignate which workflow Parameter Variables belong to a workflow template.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+
+&lt;http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_EDM_DATE&gt;
+     a opmw:ParameterVariable;
+     opmw:isParameterOfTemplate &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label>is Parameter of Template</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opmw.org/ontology/isStepOfTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/isStepOfTemplate">
+        <rdfs:domain rdf:resource="http://www.opmw.org/ontology/WorkflowTemplateProcess"/>
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+        <rdfs:comment>Property used to dessignate which workflow Steps (or Workflow Template Processes) belong to a workflow template.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CALCULATEHOURLYAVERAGES&gt;
+     a opmw:WorkflowTemplateProcess;
+     opmw:isStepOfTemplate &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label>is Step of Template</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opmw.org/ontology/isVariableOfTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://www.opmw.org/ontology/isVariableOfTemplate">
+        <rdfs:domain rdf:resource="http://www.opmw.org/ontology/DataVariable"/>
+        <rdfs:range rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+        <rdfs:comment>Property used to dessignate which workflow Data Variables belong to a workflow template.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+
+&lt;http://www.opmw.org/export/page/resource/DataVariable/AQUAFLOW_EDM_HOURLYDATA&gt;
+     a opmw:DataVariable;
+     opmw:isVariableOfTemplate &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_EDM&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label>is Variable of Template</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opmw.org/ontology/DataVariable -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/DataVariable">
+        <rdfs:subClassOf rdf:resource="http://www.opmw.org/ontology/WorkflowTemplateArtifact"/>
+        <rdfs:comment>A Data variable is a workflow template artifact that represents a variable in the workflow specification.
+
+Example:
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+
+&lt;http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_SUM_CORRDO&gt;
+      a      opmw:WorkflowTemplateArtifact , opmw:DataVariable ;
+      rdfs:label &quot;Data variable Sum_CorrDO&quot; ;
+      opmw:hasDimensionality &quot;0&quot;^^xsd:int ;
+      opmw:isGeneratedBy              &lt;http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CREATEPLOTS&gt; ;
+      opmw:template              &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM&gt; .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Data Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/ParameterVariable -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/ParameterVariable">
+        <rdfs:subClassOf rdf:resource="http://www.opmw.org/ontology/WorkflowTemplateArtifact"/>
+        <rdfs:comment xml:lang="en">An parameter variable represents a description of an input parameter of a process. Parameter variables can only be used by process.
+
+Example:
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+
+&lt;http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_LATITUDE&gt;
+      a      opmw:/WorkflowTemplateArtifact , opmw:ParameterVariable ;
+      rdfs:label &quot;Parameter variable Latitude&quot; ;
+      opmw:template              &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM&gt; .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Parameter Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowExecutionAccount -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowExecutionAccount">
+        <rdfs:comment xml:lang="en">A workflow execution account represents the execution from the perspective of the system.
+
+Example:
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix opmo: &lt;http://openprovenance.org/model/opmo#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598&gt;
+      a       opmo:Account , opmw:WorkflowExecutionAccount&gt; ;
+      rdfs:label &quot;Execution account created on 1335533097598&quot; ;
+      opmw:executedInWorkflowSystem
+              &lt;http://www.opmw.org/export/resource/Agent/SHELL&gt; ;
+     opmw:hasEndTime
+              &quot;2012-04-25T07:17:48-07:00&quot;^^xsd:dateTime ;
+      opmw:hasExecutionDiagram &quot;http://wind.isi.edu/marbles/assets/components/workflow_portal/users/1/Water/runs/run_144.png&quot;^^xsd:anyURI ;
+      opmw:hasStartTime               &quot;2012-04-25T07:17:05-07:00&quot;^^xsd:dateTime ;
+      opmw:hasStatus &quot;SUCCESS&quot; ;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Workflow Execution Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowExecutionProcess -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowExecutionProcess">
+        <rdfs:comment xml:lang="en">A workflow execution process represents the execution of a step in workflow template. The execution process also describes the specific method used to acomplish the task described in the proces template.
+
+Example:
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix opmv: &lt;http://purl.org/net/opmv/ns#&gt; .
+@prefix opmo: &lt;http://openprovenance.org/model/opmo#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMAT133553&gt;
+      a      opmw:/WorkflowExecutionProcess , opmv:Process ;
+      rdfs:label &quot;Execution process ConvertToStandardFormat&quot; ;
+      opmo:account              &lt;http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1335533097598&gt; ;
+      opmv:used              &lt;http://www.opmw.org/export/resource/WorkflowExecutionArtifact/6C7CF277338D9590EE18534D4D78924F&gt; ;
+      opmv:wasControlledBy               &lt;http://www.opmw.org/export/resource/Agent/ADMIN&gt; ;
+      opmw:hasWorkflowTemplateProcess              &lt;http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_EDM_CONVERTTOSTANDARDFORMAT&gt; .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Workflow Execution Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowTemplate -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowTemplate">
+        <rdfs:comment xml:lang="en">A workflow template represents the design of the workflow. In such design, the different steps and inputs don&apos;t have to be bound to a specific tool or dataset. It is a generic view of the workflow, which is instantiated in each execution.
+ 
+Example:
+@prefix dc:  &lt;http://purl.org/dc/terms/&gt; .
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+&lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM&gt;
+     a opmw:WorkflowTemplate;
+     rdfs:label &quot;AquaFlow_NTM&quot; ;
+     dc.contributor
+              &lt;http://www.opmw.org/export/resource/Agent/WATER&gt; ;
+     dc:modified
+              &quot;2011-06-08T09:57:12-07:00&quot;^^xsd:dateTime ;
+     opmw:hasVersion &quot;2&quot;^^xsd:int .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Workflow Template</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowTemplateArtifact -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowTemplateArtifact">
+        <rdfs:comment xml:lang="en">A workflow template artifact is part of a workflow template. It explains what kind of artifact is used or generated by the process template, along with possible restrictions that it may have.
+
+There are two different types of workflow template artifacts: data variables and parameter variables.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Workflow Template Artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowTemplateProcess -->
+
+    <owl:Class rdf:about="http://www.opmw.org/ontology/WorkflowTemplateProcess">
+        <rdfs:comment xml:lang="en">A workflow process template is an abstraction of the workflow execution process step that aims to describe the method followed by the scientist instead of its specific instantiation.
+
+Example:
+@prefix opmw: &lt;http://www.opmw.org/ontology/&gt; .
+@prefix water: &lt;http://www.isi.edu/ac/Water/library.owl#&gt; .
+
+&lt;http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_CALCULATEHOURLYAVERAGES&gt;
+      a opmw:ProcessTemplate, water:CalculateHourlyAverages;
+      opmw:template &lt;http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM&gt;;
+      opmw:uses &lt;http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_FILTEREDDATA&gt;.
+      </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opmw.org/ontology.owl"/>
+        <rdfs:label xml:lang="en">Workflow Template Process</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1044 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/ontologies/pmdcore/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>Steifigkeit</strong> (<em>Class</em>) — <code>Stiffness</code> — <a href="https://w3id.org/pmd/co/Stiffness">https://w3id.org/pmd/co/Stiffness</a>
+  <span class='search-tokens' style='display:none'>Steifigkeit Stiffness https://w3id.org/pmd/co/ Stiffness https://w3id.org/pmd/co/ stiffness https://w3id.org/pmd/co/Stiffness https://w3id.org/pmd/co/stiffness steifigkeit stiffness</span></li>
+<li><strong>Akustisch</strong> (<em>Class</em>) — <code>Acoustical</code> — <a href="https://w3id.org/pmd/co/Acoustical">https://w3id.org/pmd/co/Acoustical</a>
+  <span class='search-tokens' style='display:none'>Acoustical Akustisch acoustical akustisch https://w3id.org/pmd/co/ Acoustical https://w3id.org/pmd/co/ acoustical https://w3id.org/pmd/co/Acoustical https://w3id.org/pmd/co/acoustical</span></li>
+<li><strong>Base Material</strong> (<em>Class</em>) — <code>BaseMaterial</code> — <a href="https://w3id.org/pmd/co/BaseMaterial">https://w3id.org/pmd/co/BaseMaterial</a>
+  <span class='search-tokens' style='display:none'>Base  Material Base Material BaseMaterial base  material base material basematerial https://w3id.org/pmd/co/ Base Material https://w3id.org/pmd/co/ base material https://w3id.org/pmd/co/BaseMaterial https://w3id.org/pmd/co/basematerial</span></li>
+<li><strong>Analysing Process</strong> (<em>Class</em>) — <code>AnalysingProcess</code> — <a href="https://w3id.org/pmd/co/AnalysingProcess">https://w3id.org/pmd/co/AnalysingProcess</a>
+  <span class='search-tokens' style='display:none'>Analysing  Process Analysing Process AnalysingProcess analysing  process analysing process analysingprocess https://w3id.org/pmd/co/ Analysing Process https://w3id.org/pmd/co/ analysing process https://w3id.org/pmd/co/AnalysingProcess https://w3id.org/pmd/co/analysingprocess</span></li>
+<li><strong>term editor</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000117</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000117">http://purl.obolibrary.org/obo/IAO_0000117</a>
+  <span class='search-tokens' style='display:none'>IAO 0000117 IAO_0000117 http://purl.obolibrary.org/obo/IAO 0000117 http://purl.obolibrary.org/obo/IAO_0000117 http://purl.obolibrary.org/obo/iao 0000117 http://purl.obolibrary.org/obo/iao_0000117 iao 0000117 iao_0000117 term editor</span></li>
+<li><strong>example</strong> (<em>AnnotationProperty</em>) — <code>example</code> — <a href="http://www.w3.org/2004/02/skos/core#example">http://www.w3.org/2004/02/skos/core#example</a>
+  <span class='search-tokens' style='display:none'>example http://www.w3.org/2004/02/skos/core#example</span></li>
+<li><strong>Node Name</strong> (<em>Class</em>) — <code>NodeName</code> — <a href="https://w3id.org/pmd/co/NodeName">https://w3id.org/pmd/co/NodeName</a>
+  <span class='search-tokens' style='display:none'>Node  Name Node Name NodeName https://w3id.org/pmd/co/ Node Name https://w3id.org/pmd/co/ node name https://w3id.org/pmd/co/NodeName https://w3id.org/pmd/co/nodename node  name node name nodename</span></li>
+<li><strong>participant</strong> (<em>ObjectProperty</em>) — <code>participant</code> — <a href="https://w3id.org/pmd/co/participant">https://w3id.org/pmd/co/participant</a> — <em>alt:</em> has participant
+  <span class='search-tokens' style='display:none'>has participant https://w3id.org/pmd/co/participant participant</span></li>
+<li><strong>Identifier</strong> (<em>Class</em>) — <code>Identifier</code> — <a href="https://w3id.org/pmd/co/Identifier">https://w3id.org/pmd/co/Identifier</a>
+  <span class='search-tokens' style='display:none'>Identifier https://w3id.org/pmd/co/ Identifier https://w3id.org/pmd/co/ identifier https://w3id.org/pmd/co/Identifier https://w3id.org/pmd/co/identifier identifier</span></li>
+<li><strong>Bereitgestellter Identifikator</strong> (<em>Class</em>) — <code>ProvidedIdentifier</code> — <a href="https://w3id.org/pmd/co/ProvidedIdentifier">https://w3id.org/pmd/co/ProvidedIdentifier</a>
+  <span class='search-tokens' style='display:none'>Bereitgestellter  Identifikator Bereitgestellter Identifikator Provided Identifier ProvidedIdentifier bereitgestellter  identifikator bereitgestellter identifikator https://w3id.org/pmd/co/ Provided Identifier https://w3id.org/pmd/co/ provided identifier https://w3id.org/pmd/co/ProvidedIdentifier https://w3id.org/pmd/co/providedidentifier provided identifier providedidentifier</span></li>
+<li><strong>Jörg Waitelonis</strong> (<em>Entity</em>) — <code>0000-0001-7192-7143</code> — <a href="https://orcid.org/0000-0001-7192-7143">https://orcid.org/0000-0001-7192-7143</a>
+  <span class='search-tokens' style='display:none'>0000 0001 7192 7143 0000-0001-7192-7143 Jörg  Waitelonis Jörg Waitelonis https://orcid.org/0000 0001 7192 7143 https://orcid.org/0000-0001-7192-7143 jörg  waitelonis jörg waitelonis</span></li>
+<li><strong>Test Piece Classification</strong> (<em>Class</em>) — <code>TestPieceClassification</code> — <a href="https://w3id.org/pmd/co/TestPieceClassification">https://w3id.org/pmd/co/TestPieceClassification</a>
+  <span class='search-tokens' style='display:none'>Test  Piece  Classification Test Piece Classification TestPieceClassification https://w3id.org/pmd/co/ Test Piece Classification https://w3id.org/pmd/co/ test piece classification https://w3id.org/pmd/co/TestPieceClassification https://w3id.org/pmd/co/testpiececlassification test  piece  classification test piece classification testpiececlassification</span></li>
+<li><strong>Kovalente Bindung</strong> (<em>Class</em>) — <code>CovalentBond</code> — <a href="https://w3id.org/pmd/co/CovalentBond">https://w3id.org/pmd/co/CovalentBond</a>
+  <span class='search-tokens' style='display:none'>Covalent Bond CovalentBond Kovalente  Bindung Kovalente Bindung covalent bond covalentbond https://w3id.org/pmd/co/ Covalent Bond https://w3id.org/pmd/co/ covalent bond https://w3id.org/pmd/co/CovalentBond https://w3id.org/pmd/co/covalentbond kovalente  bindung kovalente bindung</span></li>
+<li><strong>Dimension Measuring Device</strong> (<em>Class</em>) — <code>DimensionMeasuringDevice</code> — <a href="https://w3id.org/pmd/co/DimensionMeasuringDevice">https://w3id.org/pmd/co/DimensionMeasuringDevice</a>
+  <span class='search-tokens' style='display:none'>Dimension  Measuring  Device Dimension Measuring Device DimensionMeasuringDevice dimension  measuring  device dimension measuring device dimensionmeasuringdevice https://w3id.org/pmd/co/ Dimension Measuring Device https://w3id.org/pmd/co/ dimension measuring device https://w3id.org/pmd/co/DimensionMeasuringDevice https://w3id.org/pmd/co/dimensionmeasuringdevice</span></li>
+<li><strong>Method</strong> (<em>Class</em>) — <code>Method</code> — <a href="https://w3id.org/pmd/co/Method">https://w3id.org/pmd/co/Method</a>
+  <span class='search-tokens' style='display:none'>Method https://w3id.org/pmd/co/ Method https://w3id.org/pmd/co/ method https://w3id.org/pmd/co/Method https://w3id.org/pmd/co/method method</span></li>
+<li><strong>definition</strong> (<em>AnnotationProperty</em>) — <code>definition</code> — <a href="http://www.w3.org/2004/02/skos/core#definition">http://www.w3.org/2004/02/skos/core#definition</a>
+  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span></li>
+<li><strong>Mass Fraction</strong> (<em>Class</em>) — <code>MassFraction</code> — <a href="https://w3id.org/pmd/co/MassFraction">https://w3id.org/pmd/co/MassFraction</a>
+  <span class='search-tokens' style='display:none'>Mass  Fraction Mass Fraction MassFraction https://w3id.org/pmd/co/ Mass Fraction https://w3id.org/pmd/co/ mass fraction https://w3id.org/pmd/co/MassFraction https://w3id.org/pmd/co/massfraction mass  fraction mass fraction massfraction</span></li>
+<li><strong>Halterungsklemmen</strong> (<em>Class</em>) — <code>Grips</code> — <a href="https://w3id.org/pmd/co/Grips">https://w3id.org/pmd/co/Grips</a>
+  <span class='search-tokens' style='display:none'>Grips Halterungsklemmen grips halterungsklemmen https://w3id.org/pmd/co/ Grips https://w3id.org/pmd/co/ grips https://w3id.org/pmd/co/Grips https://w3id.org/pmd/co/grips</span></li>
+<li><strong>input</strong> (<em>ObjectProperty</em>) — <code>input</code> — <a href="https://w3id.org/pmd/co/input">https://w3id.org/pmd/co/input</a> — <em>alt:</em> has input
+  <span class='search-tokens' style='display:none'>has input https://w3id.org/pmd/co/input input</span></li>
+<li><strong>Messschieber</strong> (<em>Class</em>) — <code>Caliper</code> — <a href="https://w3id.org/pmd/co/Caliper">https://w3id.org/pmd/co/Caliper</a>
+  <span class='search-tokens' style='display:none'>Caliper Messschieber caliper https://w3id.org/pmd/co/ Caliper https://w3id.org/pmd/co/ caliper https://w3id.org/pmd/co/Caliper https://w3id.org/pmd/co/caliper messschieber</span></li>
+<li><strong>symbol</strong> (<em>AnnotationProperty</em>) — <code>symbol</code> — <a href="https://w3id.org/pmd/co/symbol">https://w3id.org/pmd/co/symbol</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/symbol symbol</span></li>
+<li><strong>Koordinaten</strong> (<em>Class</em>) — <code>Coordinates</code> — <a href="https://w3id.org/pmd/co/Coordinates">https://w3id.org/pmd/co/Coordinates</a>
+  <span class='search-tokens' style='display:none'>Coordinates Koordinaten coordinates https://w3id.org/pmd/co/ Coordinates https://w3id.org/pmd/co/ coordinates https://w3id.org/pmd/co/Coordinates https://w3id.org/pmd/co/coordinates koordinaten</span></li>
+<li><strong>Prüfkörper</strong> (<em>Class</em>) — <code>TestPiece</code> — <a href="https://w3id.org/pmd/co/TestPiece">https://w3id.org/pmd/co/TestPiece</a>
+  <span class='search-tokens' style='display:none'>Prüfkörper Test Piece TestPiece https://w3id.org/pmd/co/ Test Piece https://w3id.org/pmd/co/ test piece https://w3id.org/pmd/co/TestPiece https://w3id.org/pmd/co/testpiece prüfkörper test piece testpiece</span></li>
+<li><strong>Semi Crystalline Structure</strong> (<em>Class</em>) — <code>SemiCrystallineStructure</code> — <a href="https://w3id.org/pmd/co/SemiCrystallineStructure">https://w3id.org/pmd/co/SemiCrystallineStructure</a>
+  <span class='search-tokens' style='display:none'>Semi  Crystalline  Structure Semi Crystalline Structure SemiCrystallineStructure https://w3id.org/pmd/co/ Semi Crystalline Structure https://w3id.org/pmd/co/ semi crystalline structure https://w3id.org/pmd/co/SemiCrystallineStructure https://w3id.org/pmd/co/semicrystallinestructure semi  crystalline  structure semi crystalline structure semicrystallinestructure</span></li>
+<li><strong>Henk Birkholz</strong> (<em>Entity</em>) — <code>0000-0002-9014-2920</code> — <a href="https://orcid.org/0000-0002-9014-2920">https://orcid.org/0000-0002-9014-2920</a>
+  <span class='search-tokens' style='display:none'>0000 0002 9014 2920 0000-0002-9014-2920 Henk  Birkholz Henk Birkholz henk  birkholz henk birkholz https://orcid.org/0000 0002 9014 2920 https://orcid.org/0000-0002-9014-2920</span></li>
+<li><strong>Aging Process</strong> (<em>Class</em>) — <code>AgingProcess</code> — <a href="https://w3id.org/pmd/co/AgingProcess">https://w3id.org/pmd/co/AgingProcess</a>
+  <span class='search-tokens' style='display:none'>Aging  Process Aging Process AgingProcess aging  process aging process agingprocess https://w3id.org/pmd/co/ Aging Process https://w3id.org/pmd/co/ aging process https://w3id.org/pmd/co/AgingProcess https://w3id.org/pmd/co/agingprocess</span></li>
+<li><strong>Manufacture Process</strong> (<em>Class</em>) — <code>ManufacturingProcess</code> — <a href="https://w3id.org/pmd/co/ManufacturingProcess">https://w3id.org/pmd/co/ManufacturingProcess</a>
+  <span class='search-tokens' style='display:none'>Manufacture  Process Manufacture Process Manufacturing Process ManufacturingProcess https://w3id.org/pmd/co/ Manufacturing Process https://w3id.org/pmd/co/ manufacturing process https://w3id.org/pmd/co/ManufacturingProcess https://w3id.org/pmd/co/manufacturingprocess manufacture  process manufacture process manufacturing process manufacturingprocess</span></li>
+<li><strong>Base fraction</strong> (<em>Class</em>) — <code>BaseFraction</code> — <a href="https://w3id.org/pmd/co/BaseFraction">https://w3id.org/pmd/co/BaseFraction</a>
+  <span class='search-tokens' style='display:none'>Base Fraction Base fraction BaseFraction base fraction basefraction https://w3id.org/pmd/co/ Base Fraction https://w3id.org/pmd/co/ base fraction https://w3id.org/pmd/co/BaseFraction https://w3id.org/pmd/co/basefraction</span></li>
+<li><strong>belongsToProject</strong> (<em>ObjectProperty</em>) — <code>belongsToProject</code> — <a href="https://w3id.org/pmd/co/belongsToProject">https://w3id.org/pmd/co/belongsToProject</a>
+  <span class='search-tokens' style='display:none'>belongs To Project belongs to project belongsToProject belongstoproject https://w3id.org/pmd/co/belongs To Project https://w3id.org/pmd/co/belongs to project https://w3id.org/pmd/co/belongsToProject https://w3id.org/pmd/co/belongstoproject</span></li>
+<li><strong>Material Designation</strong> (<em>Class</em>) — <code>MaterialDesignation</code> — <a href="https://w3id.org/pmd/co/MaterialDesignation">https://w3id.org/pmd/co/MaterialDesignation</a>
+  <span class='search-tokens' style='display:none'>Material  Designation Material Designation MaterialDesignation https://w3id.org/pmd/co/ Material Designation https://w3id.org/pmd/co/ material designation https://w3id.org/pmd/co/MaterialDesignation https://w3id.org/pmd/co/materialdesignation material  designation material designation materialdesignation</span></li>
+<li><strong>Hersteller</strong> (<em>Class</em>) — <code>Manufacturer</code> — <a href="https://w3id.org/pmd/co/Manufacturer">https://w3id.org/pmd/co/Manufacturer</a>
+  <span class='search-tokens' style='display:none'>Hersteller Manufacturer hersteller https://w3id.org/pmd/co/ Manufacturer https://w3id.org/pmd/co/ manufacturer https://w3id.org/pmd/co/Manufacturer https://w3id.org/pmd/co/manufacturer manufacturer</span></li>
+<li><strong>Processing Node</strong> (<em>Class</em>) — <code>ProcessingNode</code> — <a href="https://w3id.org/pmd/co/ProcessingNode">https://w3id.org/pmd/co/ProcessingNode</a>
+  <span class='search-tokens' style='display:none'>Processing  Node Processing Node ProcessingNode https://w3id.org/pmd/co/ Processing Node https://w3id.org/pmd/co/ processing node https://w3id.org/pmd/co/ProcessingNode https://w3id.org/pmd/co/processingnode processing  node processing node processingnode</span></li>
+<li><strong>Simulationsknoten</strong> (<em>Class</em>) — <code>SimulationNode</code> — <a href="https://w3id.org/pmd/co/SimulationNode">https://w3id.org/pmd/co/SimulationNode</a>
+  <span class='search-tokens' style='display:none'>Simulation Node SimulationNode Simulationsknoten https://w3id.org/pmd/co/ Simulation Node https://w3id.org/pmd/co/ simulation node https://w3id.org/pmd/co/SimulationNode https://w3id.org/pmd/co/simulationnode simulation node simulationnode simulationsknoten</span></li>
+<li><strong>Schlitten</strong> (<em>Class</em>) — <code>Slide</code> — <a href="https://w3id.org/pmd/co/Slide">https://w3id.org/pmd/co/Slide</a>
+  <span class='search-tokens' style='display:none'>Schlitten Slide https://w3id.org/pmd/co/ Slide https://w3id.org/pmd/co/ slide https://w3id.org/pmd/co/Slide https://w3id.org/pmd/co/slide schlitten slide</span></li>
+<li><strong>Cross Section Area</strong> (<em>Class</em>) — <code>CrossSectionArea</code> — <a href="https://w3id.org/pmd/co/CrossSectionArea">https://w3id.org/pmd/co/CrossSectionArea</a>
+  <span class='search-tokens' style='display:none'>Cross  Section  Area Cross Section Area CrossSectionArea cross  section  area cross section area crosssectionarea https://w3id.org/pmd/co/ Cross Section Area https://w3id.org/pmd/co/ cross section area https://w3id.org/pmd/co/CrossSectionArea https://w3id.org/pmd/co/crosssectionarea</span></li>
+<li><strong>o3</strong> (<em>Entity</em>) — <code>o3</code> — <a href="https://w3id.org/pmd/co/o3">https://w3id.org/pmd/co/o3</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/o3 o3</span></li>
+<li><strong>min value</strong> (<em>DatatypeProperty</em>) — <code>minValue</code> — <a href="https://w3id.org/pmd/co/minValue">https://w3id.org/pmd/co/minValue</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/min Value https://w3id.org/pmd/co/min value https://w3id.org/pmd/co/minValue https://w3id.org/pmd/co/minvalue min Value min value minValue minvalue</span></li>
+<li><strong>Qualifying Node Annotation</strong> (<em>Class</em>) — <code>QualifyingNodeAnnotation</code> — <a href="https://w3id.org/pmd/co/QualifyingNodeAnnotation">https://w3id.org/pmd/co/QualifyingNodeAnnotation</a>
+  <span class='search-tokens' style='display:none'>Qualifying  Node  Annotation Qualifying Node Annotation QualifyingNodeAnnotation https://w3id.org/pmd/co/ Qualifying Node Annotation https://w3id.org/pmd/co/ qualifying node annotation https://w3id.org/pmd/co/QualifyingNodeAnnotation https://w3id.org/pmd/co/qualifyingnodeannotation qualifying  node  annotation qualifying node annotation qualifyingnodeannotation</span></li>
+<li><strong>Datenerfassungsrate</strong> (<em>Class</em>) — <code>DataAcquisitionRate</code> — <a href="https://w3id.org/pmd/co/DataAcquisitionRate">https://w3id.org/pmd/co/DataAcquisitionRate</a>
+  <span class='search-tokens' style='display:none'>Data Acquisition Rate DataAcquisitionRate Datenerfassungsrate data acquisition rate dataacquisitionrate datenerfassungsrate https://w3id.org/pmd/co/ Data Acquisition Rate https://w3id.org/pmd/co/ data acquisition rate https://w3id.org/pmd/co/DataAcquisitionRate https://w3id.org/pmd/co/dataacquisitionrate</span></li>
+<li><strong>Rohling</strong> (<em>Class</em>) — <code>Blank</code> — <a href="https://w3id.org/pmd/co/Blank">https://w3id.org/pmd/co/Blank</a>
+  <span class='search-tokens' style='display:none'>Blank Rohling blank https://w3id.org/pmd/co/ Blank https://w3id.org/pmd/co/ blank https://w3id.org/pmd/co/Blank https://w3id.org/pmd/co/blank rohling</span></li>
+<li><strong>co</strong> (<em>Entity</em>) — <code>co</code> — <a href="https://w3id.org/pmd/co">https://w3id.org/pmd/co</a> — <em>comment:</em> The PMD Core Ontology (PMDco) is a comprehensive framework for representing knowledge that encompasses fundamental concepts from the domains of materials science and engineering (MSE). The PMDco has been designed as a mid-level ontology to establish a connection between specific MSE application ontologies and the domain neutral concepts found in established top-level ontologies. The primary goal of the PMDco is to promote interoperability between diverse domains. PMDco's class structure is both understandable and extensible, making it an efficient tool for organizing MSE knowledge. It serves as a semantic intermediate layer that unifies MSE knowledge representations, enabling data and metadata to be systematically integrated on key terms within the MSE domain. With PMDco, it is possible to seamlessly trace data generation. The design of PMDco is based on the W3C Provenance Ontology (PROV-O), which provides a standard framework for capturing the generation, derivation, and attribution of resources. By building on this foundation, PMDco facilitates the integration of data from various sources and the creation of complex workflows. In summary, PMDco is a valuable tool for researchers and practitioners in the MSE domains. It provides a common language for representing and sharing knowledge, allowing for efficient collaboration and promoting interoperability between diverse domains. Its design allows for the systematic integration of data and metadata, enabling seamless traceability of data generation. Overall, PMDco is a crucial step towards a unified and comprehensive understanding of the MSE domain. PMDco at GitHub: https://github.com/materialdigital/core-ontology
+  <span class='search-tokens' style='display:none'>co https://w3id.org/pmd/co</span></li>
+<li><strong>Demounting Process</strong> (<em>Class</em>) — <code>DemountingProcess</code> — <a href="https://w3id.org/pmd/co/DemountingProcess">https://w3id.org/pmd/co/DemountingProcess</a>
+  <span class='search-tokens' style='display:none'>Demounting  Process Demounting Process DemountingProcess demounting  process demounting process demountingprocess https://w3id.org/pmd/co/ Demounting Process https://w3id.org/pmd/co/ demounting process https://w3id.org/pmd/co/DemountingProcess https://w3id.org/pmd/co/demountingprocess</span></li>
+<li><strong>Norm</strong> (<em>Class</em>) — <code>Norm</code> — <a href="https://w3id.org/pmd/co/Norm">https://w3id.org/pmd/co/Norm</a>
+  <span class='search-tokens' style='display:none'>Norm https://w3id.org/pmd/co/ Norm https://w3id.org/pmd/co/ norm https://w3id.org/pmd/co/Norm https://w3id.org/pmd/co/norm norm</span></li>
+<li><strong>Extension</strong> (<em>Class</em>) — <code>Extension</code> — <a href="https://w3id.org/pmd/co/Extension">https://w3id.org/pmd/co/Extension</a>
+  <span class='search-tokens' style='display:none'>Extension extension https://w3id.org/pmd/co/ Extension https://w3id.org/pmd/co/ extension https://w3id.org/pmd/co/Extension https://w3id.org/pmd/co/extension</span></li>
+<li><strong>pending final vetting</strong> (<em>Individual</em>) — <code>IAO_0000125</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+  <span class='search-tokens' style='display:none'>IAO 0000125 IAO_0000125 http://purl.obolibrary.org/obo/IAO 0000125 http://purl.obolibrary.org/obo/IAO_0000125 http://purl.obolibrary.org/obo/iao 0000125 http://purl.obolibrary.org/obo/iao_0000125 iao 0000125 iao_0000125 pending final vetting</span></li>
+<li><strong>Crystalline Structure</strong> (<em>Class</em>) — <code>CrystallineStructure</code> — <a href="https://w3id.org/pmd/co/CrystallineStructure">https://w3id.org/pmd/co/CrystallineStructure</a>
+  <span class='search-tokens' style='display:none'>Crystalline  Structure Crystalline Structure CrystallineStructure crystalline  structure crystalline structure crystallinestructure https://w3id.org/pmd/co/ Crystalline Structure https://w3id.org/pmd/co/ crystalline structure https://w3id.org/pmd/co/CrystallineStructure https://w3id.org/pmd/co/crystallinestructure</span></li>
+<li><strong>Geometry Changing Process</strong> (<em>Class</em>) — <code>GeometryChangingProcess</code> — <a href="https://w3id.org/pmd/co/GeometryChangingProcess">https://w3id.org/pmd/co/GeometryChangingProcess</a>
+  <span class='search-tokens' style='display:none'>Geometry  Changing  Process Geometry Changing Process GeometryChangingProcess geometry  changing  process geometry changing process geometrychangingprocess https://w3id.org/pmd/co/ Geometry Changing Process https://w3id.org/pmd/co/ geometry changing process https://w3id.org/pmd/co/GeometryChangingProcess https://w3id.org/pmd/co/geometrychangingprocess</span></li>
+<li><strong>Pixel</strong> (<em>Class</em>) — <code>Pixel</code> — <a href="https://w3id.org/pmd/co/Pixel">https://w3id.org/pmd/co/Pixel</a>
+  <span class='search-tokens' style='display:none'>Pixel https://w3id.org/pmd/co/ Pixel https://w3id.org/pmd/co/ pixel https://w3id.org/pmd/co/Pixel https://w3id.org/pmd/co/pixel pixel</span></li>
+<li><strong>Komponente</strong> (<em>Class</em>) — <code>Component</code> — <a href="https://w3id.org/pmd/co/Component">https://w3id.org/pmd/co/Component</a>
+  <span class='search-tokens' style='display:none'>Component Komponente component https://w3id.org/pmd/co/ Component https://w3id.org/pmd/co/ component https://w3id.org/pmd/co/Component https://w3id.org/pmd/co/component komponente</span></li>
+<li><strong>unit</strong> (<em>ObjectProperty</em>) — <code>unit</code> — <a href="https://w3id.org/pmd/co/unit">https://w3id.org/pmd/co/unit</a> — <em>alt:</em> has unit · <em>comment:</em> Examples for rdsf:range are units from qudt or wikidata or own defindes units.
+  <span class='search-tokens' style='display:none'>has unit https://w3id.org/pmd/co/unit unit</span></li>
+<li><strong>Role</strong> (<em>Class</em>) — <code>Role</code> — <a href="http://www.w3.org/ns/prov#Role">http://www.w3.org/ns/prov#Role</a>
+  <span class='search-tokens' style='display:none'>Role http://www.w3.org/ns/prov# Role http://www.w3.org/ns/prov# role http://www.w3.org/ns/prov#Role http://www.w3.org/ns/prov#role role</span></li>
+<li><strong>definition</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000115</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000115">http://purl.obolibrary.org/obo/IAO_0000115</a>
+  <span class='search-tokens' style='display:none'>IAO 0000115 IAO_0000115 definition http://purl.obolibrary.org/obo/IAO 0000115 http://purl.obolibrary.org/obo/IAO_0000115 http://purl.obolibrary.org/obo/iao 0000115 http://purl.obolibrary.org/obo/iao_0000115 iao 0000115 iao_0000115</span></li>
+<li><strong>Furnace</strong> (<em>Class</em>) — <code>Furnace</code> — <a href="https://w3id.org/pmd/co/Furnace">https://w3id.org/pmd/co/Furnace</a>
+  <span class='search-tokens' style='display:none'>Furnace furnace https://w3id.org/pmd/co/ Furnace https://w3id.org/pmd/co/ furnace https://w3id.org/pmd/co/Furnace https://w3id.org/pmd/co/furnace</span></li>
+<li><strong>Medium</strong> (<em>Class</em>) — <code>Medium</code> — <a href="https://w3id.org/pmd/co/Medium">https://w3id.org/pmd/co/Medium</a>
+  <span class='search-tokens' style='display:none'>Medium https://w3id.org/pmd/co/ Medium https://w3id.org/pmd/co/ medium https://w3id.org/pmd/co/Medium https://w3id.org/pmd/co/medium medium</span></li>
+<li><strong>metadata complete</strong> (<em>Individual</em>) — <code>IAO_0000120</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000120">http://purl.obolibrary.org/obo/IAO_0000120</a>
+  <span class='search-tokens' style='display:none'>IAO 0000120 IAO_0000120 http://purl.obolibrary.org/obo/IAO 0000120 http://purl.obolibrary.org/obo/IAO_0000120 http://purl.obolibrary.org/obo/iao 0000120 http://purl.obolibrary.org/obo/iao_0000120 iao 0000120 iao_0000120 metadata complete</span></li>
+<li><strong>Fragment Selector</strong> (<em>Class</em>) — <code>FragmentSelector</code> — <a href="http://www.w3.org/ns/oa#FragmentSelector">http://www.w3.org/ns/oa#FragmentSelector</a>
+  <span class='search-tokens' style='display:none'>Fragment  Selector Fragment Selector FragmentSelector fragment  selector fragment selector fragmentselector http://www.w3.org/ns/oa# Fragment Selector http://www.w3.org/ns/oa# fragment selector http://www.w3.org/ns/oa#FragmentSelector http://www.w3.org/ns/oa#fragmentselector</span></li>
+<li><strong>Modulus Of Elasticity</strong> (<em>Class</em>) — <code>ModulusOfElasticity</code> — <a href="https://w3id.org/pmd/co/ModulusOfElasticity">https://w3id.org/pmd/co/ModulusOfElasticity</a> — <em>alt:</em> E-Modul
+  <span class='search-tokens' style='display:none'>E  Modul E Modul E-Modul Modulus  Of  Elasticity Modulus Of Elasticity ModulusOfElasticity e  modul e-modul https://w3id.org/pmd/co/ Modulus Of Elasticity https://w3id.org/pmd/co/ modulus of elasticity https://w3id.org/pmd/co/ModulusOfElasticity https://w3id.org/pmd/co/modulusofelasticity modulus  of  elasticity modulus of elasticity modulusofelasticity</span></li>
+<li><strong>Area</strong> (<em>Class</em>) — <code>Area</code> — <a href="https://w3id.org/pmd/co/Area">https://w3id.org/pmd/co/Area</a>
+  <span class='search-tokens' style='display:none'>Area area https://w3id.org/pmd/co/ Area https://w3id.org/pmd/co/ area https://w3id.org/pmd/co/Area https://w3id.org/pmd/co/area</span></li>
+<li><strong>editorialNote</strong> (<em>AnnotationProperty</em>) — <code>editorialNote</code> — <a href="http://www.w3.org/ns/prov#editorialNote">http://www.w3.org/ns/prov#editorialNote</a>
+  <span class='search-tokens' style='display:none'>editorial Note editorial note editorialNote editorialnote http://www.w3.org/ns/prov#editorial Note http://www.w3.org/ns/prov#editorial note http://www.w3.org/ns/prov#editorialNote http://www.w3.org/ns/prov#editorialnote</span></li>
+<li><strong>definitionSource</strong> (<em>AnnotationProperty</em>) — <code>definitionSource</code> — <a href="https://w3id.org/pmd/co/definitionSource">https://w3id.org/pmd/co/definitionSource</a>
+  <span class='search-tokens' style='display:none'>definition Source definition source definitionSource definitionsource https://w3id.org/pmd/co/definition Source https://w3id.org/pmd/co/definition source https://w3id.org/pmd/co/definitionSource https://w3id.org/pmd/co/definitionsource</span></li>
+<li><strong>Temperature</strong> (<em>Class</em>) — <code>Temperature</code> — <a href="https://w3id.org/pmd/co/Temperature">https://w3id.org/pmd/co/Temperature</a>
+  <span class='search-tokens' style='display:none'>Temperature https://w3id.org/pmd/co/ Temperature https://w3id.org/pmd/co/ temperature https://w3id.org/pmd/co/Temperature https://w3id.org/pmd/co/temperature temperature</span></li>
+<li><strong>Not Detected</strong> (<em>Class</em>) — <code>NotDetected</code> — <a href="https://w3id.org/pmd/co/NotDetected">https://w3id.org/pmd/co/NotDetected</a>
+  <span class='search-tokens' style='display:none'>Not  Detected Not Detected NotDetected https://w3id.org/pmd/co/ Not Detected https://w3id.org/pmd/co/ not detected https://w3id.org/pmd/co/NotDetected https://w3id.org/pmd/co/notdetected not  detected not detected notdetected</span></li>
+<li><strong>Sascha Fliegener</strong> (<em>Entity</em>) — <code>0009-0000-6469-744X</code> — <a href="https://orcid.org/0009-0000-6469-744X">https://orcid.org/0009-0000-6469-744X</a>
+  <span class='search-tokens' style='display:none'>0009 0000 6469 744X 0009 0000 6469 744x 0009-0000-6469-744X 0009-0000-6469-744x Sascha  Fliegener Sascha Fliegener https://orcid.org/0009 0000 6469 744X https://orcid.org/0009 0000 6469 744x https://orcid.org/0009-0000-6469-744X https://orcid.org/0009-0000-6469-744x sascha  fliegener sascha fliegener</span></li>
+<li><strong>Arbeitsbereich</strong> (<em>Class</em>) — <code>WorkingRange</code> — <a href="https://w3id.org/pmd/co/WorkingRange">https://w3id.org/pmd/co/WorkingRange</a>
+  <span class='search-tokens' style='display:none'>Arbeitsbereich Working Range WorkingRange arbeitsbereich https://w3id.org/pmd/co/ Working Range https://w3id.org/pmd/co/ working range https://w3id.org/pmd/co/WorkingRange https://w3id.org/pmd/co/workingrange working range workingrange</span></li>
+<li><strong>Index</strong> (<em>Class</em>) — <code>Index</code> — <a href="https://w3id.org/pmd/co/Index">https://w3id.org/pmd/co/Index</a>
+  <span class='search-tokens' style='display:none'>Index https://w3id.org/pmd/co/ Index https://w3id.org/pmd/co/ index https://w3id.org/pmd/co/Index https://w3id.org/pmd/co/index index</span></li>
+<li><strong>x path</strong> (<em>DatatypeProperty</em>) — <code>xPath</code> — <a href="https://w3id.org/pmd/co/xPath">https://w3id.org/pmd/co/xPath</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/x Path https://w3id.org/pmd/co/x path https://w3id.org/pmd/co/xPath https://w3id.org/pmd/co/xpath x Path x path xPath xpath</span></li>
+<li><strong>Length Changing Process</strong> (<em>Class</em>) — <code>LengthChangingProcess</code> — <a href="https://w3id.org/pmd/co/LengthChangingProcess">https://w3id.org/pmd/co/LengthChangingProcess</a> — <em>comment:</em> This class is used as an example of SWRL based reasoning. An instance belongs to the class if there are two embracing processes (previous and next) that determine different values after a length measurement (see SWRL rule).
+  <span class='search-tokens' style='display:none'>Length  Changing  Process Length Changing Process LengthChangingProcess https://w3id.org/pmd/co/ Length Changing Process https://w3id.org/pmd/co/ length changing process https://w3id.org/pmd/co/LengthChangingProcess https://w3id.org/pmd/co/lengthchangingprocess length  changing  process length changing process lengthchangingprocess</span></li>
+<li><strong>to value</strong> (<em>DatatypeProperty</em>) — <code>toValue</code> — <a href="https://w3id.org/pmd/co/toValue">https://w3id.org/pmd/co/toValue</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/to Value https://w3id.org/pmd/co/to value https://w3id.org/pmd/co/toValue https://w3id.org/pmd/co/tovalue to Value to value toValue tovalue</span></li>
+<li><strong>constraints</strong> (<em>AnnotationProperty</em>) — <code>constraints</code> — <a href="http://www.w3.org/ns/prov#constraints">http://www.w3.org/ns/prov#constraints</a>
+  <span class='search-tokens' style='display:none'>constraints http://www.w3.org/ns/prov#constraints</span></li>
+<li><strong>license</strong> (<em>AnnotationProperty</em>) — <code>license</code> — <a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/license license</span></li>
+<li><strong>Initiator</strong> (<em>Class</em>) — <code>Initiator</code> — <a href="https://w3id.org/pmd/co/Initiator">https://w3id.org/pmd/co/Initiator</a>
+  <span class='search-tokens' style='display:none'>Initiator https://w3id.org/pmd/co/ Initiator https://w3id.org/pmd/co/ initiator https://w3id.org/pmd/co/Initiator https://w3id.org/pmd/co/initiator initiator</span></li>
+<li><strong>characteristic</strong> (<em>ObjectProperty</em>) — <code>characteristic</code> — <a href="https://w3id.org/pmd/co/characteristic">https://w3id.org/pmd/co/characteristic</a> — <em>alt:</em> has characteristic
+  <span class='search-tokens' style='display:none'>characteristic has characteristic https://w3id.org/pmd/co/characteristic</span></li>
+<li><strong>Projekt</strong> (<em>Class</em>) — <code>Project</code> — <a href="https://w3id.org/pmd/co/Project">https://w3id.org/pmd/co/Project</a>
+  <span class='search-tokens' style='display:none'>Project Projekt https://w3id.org/pmd/co/ Project https://w3id.org/pmd/co/ project https://w3id.org/pmd/co/Project https://w3id.org/pmd/co/project project projekt</span></li>
+<li><strong>isRuleEnabled</strong> (<em>AnnotationProperty</em>) — <code>isRuleEnabled</code> — <a href="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</a>
+  <span class='search-tokens' style='display:none'>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#is Rule Enabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#is rule enabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isruleenabled is Rule Enabled is rule enabled isRuleEnabled isruleenabled</span></li>
+<li><strong>Spannung</strong> (<em>Class</em>) — <code>Stress</code> — <a href="https://w3id.org/pmd/co/Stress">https://w3id.org/pmd/co/Stress</a>
+  <span class='search-tokens' style='display:none'>Spannung Stress https://w3id.org/pmd/co/ Stress https://w3id.org/pmd/co/ stress https://w3id.org/pmd/co/Stress https://w3id.org/pmd/co/stress spannung stress</span></li>
+<li><strong>Radius</strong> (<em>Class</em>) — <code>Radius</code> — <a href="https://w3id.org/pmd/co/Radius">https://w3id.org/pmd/co/Radius</a>
+  <span class='search-tokens' style='display:none'>Radius https://w3id.org/pmd/co/ Radius https://w3id.org/pmd/co/ radius https://w3id.org/pmd/co/Radius https://w3id.org/pmd/co/radius radius</span></li>
+<li><strong>Radiological</strong> (<em>Class</em>) — <code>Radiological</code> — <a href="https://w3id.org/pmd/co/Radiological">https://w3id.org/pmd/co/Radiological</a>
+  <span class='search-tokens' style='display:none'>Radiological https://w3id.org/pmd/co/ Radiological https://w3id.org/pmd/co/ radiological https://w3id.org/pmd/co/Radiological https://w3id.org/pmd/co/radiological radiological</span></li>
+<li><strong>from value</strong> (<em>DatatypeProperty</em>) — <code>fromValue</code> — <a href="https://w3id.org/pmd/co/fromValue">https://w3id.org/pmd/co/fromValue</a>
+  <span class='search-tokens' style='display:none'>from Value from value fromValue fromvalue https://w3id.org/pmd/co/from Value https://w3id.org/pmd/co/from value https://w3id.org/pmd/co/fromValue https://w3id.org/pmd/co/fromvalue</span></li>
+<li><strong>Digital Material Identifier</strong> (<em>Class</em>) — <code>DigitalMaterialIdentifier</code> — <a href="https://w3id.org/pmd/co/DigitalMaterialIdentifier">https://w3id.org/pmd/co/DigitalMaterialIdentifier</a>
+  <span class='search-tokens' style='display:none'>Digital  Material  Identifier Digital Material Identifier DigitalMaterialIdentifier digital  material  identifier digital material identifier digitalmaterialidentifier https://w3id.org/pmd/co/ Digital Material Identifier https://w3id.org/pmd/co/ digital material identifier https://w3id.org/pmd/co/DigitalMaterialIdentifier https://w3id.org/pmd/co/digitalmaterialidentifier</span></li>
+<li><strong>wasUsedBy</strong> (<em>ObjectProperty</em>) — <code>wasUsedBy</code> — <a href="http://www.w3.org/ns/prov#wasUsedBy">http://www.w3.org/ns/prov#wasUsedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Used By http://www.w3.org/ns/prov#was used by http://www.w3.org/ns/prov#wasUsedBy http://www.w3.org/ns/prov#wasusedby was Used By was used by wasUsedBy wasusedby</span></li>
+<li><strong>Document</strong> (<em>Class</em>) — <code>Document</code> — <a href="https://w3id.org/pmd/co/Document">https://w3id.org/pmd/co/Document</a>
+  <span class='search-tokens' style='display:none'>Document document https://w3id.org/pmd/co/ Document https://w3id.org/pmd/co/ document https://w3id.org/pmd/co/Document https://w3id.org/pmd/co/document</span></li>
+<li><strong>Operator</strong> (<em>Class</em>) — <code>Operator</code> — <a href="https://w3id.org/pmd/co/Operator">https://w3id.org/pmd/co/Operator</a>
+  <span class='search-tokens' style='display:none'>Operator https://w3id.org/pmd/co/ Operator https://w3id.org/pmd/co/ operator https://w3id.org/pmd/co/Operator https://w3id.org/pmd/co/operator operator</span></li>
+<li><strong>Thermisch</strong> (<em>Class</em>) — <code>Thermal</code> — <a href="https://w3id.org/pmd/co/Thermal">https://w3id.org/pmd/co/Thermal</a>
+  <span class='search-tokens' style='display:none'>Thermal Thermisch https://w3id.org/pmd/co/ Thermal https://w3id.org/pmd/co/ thermal https://w3id.org/pmd/co/Thermal https://w3id.org/pmd/co/thermal thermal thermisch</span></li>
+<li><strong>Partikelnummer</strong> (<em>Class</em>) — <code>ParticleNumber</code> — <a href="https://w3id.org/pmd/co/ParticleNumber">https://w3id.org/pmd/co/ParticleNumber</a>
+  <span class='search-tokens' style='display:none'>Particle Number ParticleNumber Partikelnummer https://w3id.org/pmd/co/ Particle Number https://w3id.org/pmd/co/ particle number https://w3id.org/pmd/co/ParticleNumber https://w3id.org/pmd/co/particlenumber particle number particlenumber partikelnummer</span></li>
+<li><strong>Extensometer</strong> (<em>Class</em>) — <code>Extensometer</code> — <a href="https://w3id.org/pmd/co/Extensometer">https://w3id.org/pmd/co/Extensometer</a>
+  <span class='search-tokens' style='display:none'>Extensometer extensometer https://w3id.org/pmd/co/ Extensometer https://w3id.org/pmd/co/ extensometer https://w3id.org/pmd/co/Extensometer https://w3id.org/pmd/co/extensometer</span></li>
+<li><strong>Heat Treatment Process</strong> (<em>Class</em>) — <code>HeatTreatmentProcess</code> — <a href="https://w3id.org/pmd/co/HeatTreatmentProcess">https://w3id.org/pmd/co/HeatTreatmentProcess</a>
+  <span class='search-tokens' style='display:none'>Heat  Treatment  Process Heat Treatment Process HeatTreatmentProcess heat  treatment  process heat treatment process heattreatmentprocess https://w3id.org/pmd/co/ Heat Treatment Process https://w3id.org/pmd/co/ heat treatment process https://w3id.org/pmd/co/HeatTreatmentProcess https://w3id.org/pmd/co/heattreatmentprocess</span></li>
+<li><strong>Knoten-Seriennummer</strong> (<em>Class</em>) — <code>NodeSerialNumber</code> — <a href="https://w3id.org/pmd/co/NodeSerialNumber">https://w3id.org/pmd/co/NodeSerialNumber</a>
+  <span class='search-tokens' style='display:none'>Knoten  Seriennummer Knoten Seriennummer Knoten-Seriennummer Node Serial Number NodeSerialNumber https://w3id.org/pmd/co/ Node Serial Number https://w3id.org/pmd/co/ node serial number https://w3id.org/pmd/co/NodeSerialNumber https://w3id.org/pmd/co/nodeserialnumber knoten  seriennummer knoten-seriennummer node serial number nodeserialnumber</span></li>
+<li><strong>Node Info</strong> (<em>Class</em>) — <code>NodeInfo</code> — <a href="https://w3id.org/pmd/co/NodeInfo">https://w3id.org/pmd/co/NodeInfo</a>
+  <span class='search-tokens' style='display:none'>Node  Info Node Info NodeInfo https://w3id.org/pmd/co/ Node Info https://w3id.org/pmd/co/ node info https://w3id.org/pmd/co/NodeInfo https://w3id.org/pmd/co/nodeinfo node  info node info nodeinfo</span></li>
+<li><strong>Length</strong> (<em>Class</em>) — <code>Length</code> — <a href="https://w3id.org/pmd/co/Length">https://w3id.org/pmd/co/Length</a>
+  <span class='search-tokens' style='display:none'>Length https://w3id.org/pmd/co/ Length https://w3id.org/pmd/co/ length https://w3id.org/pmd/co/Length https://w3id.org/pmd/co/length length</span></li>
+<li><strong>resource</strong> (<em>ObjectProperty</em>) — <code>resource</code> — <a href="https://w3id.org/pmd/co/resource">https://w3id.org/pmd/co/resource</a> — <em>alt:</em> has resource
+  <span class='search-tokens' style='display:none'>has resource https://w3id.org/pmd/co/resource resource</span></li>
+<li><strong>created</strong> (<em>AnnotationProperty</em>) — <code>created</code> — <a href="http://purl.org/dc/terms/created">http://purl.org/dc/terms/created</a>
+  <span class='search-tokens' style='display:none'>created http://purl.org/dc/terms/created</span></li>
+<li><strong>Activity</strong> (<em>Class</em>) — <code>Activity</code> — <a href="http://www.w3.org/ns/prov#Activity">http://www.w3.org/ns/prov#Activity</a>
+  <span class='search-tokens' style='display:none'>Activity activity http://www.w3.org/ns/prov# Activity http://www.w3.org/ns/prov# activity http://www.w3.org/ns/prov#Activity http://www.w3.org/ns/prov#activity</span></li>
+<li><strong>Kraft</strong> (<em>Class</em>) — <code>Force</code> — <a href="https://w3id.org/pmd/co/Force">https://w3id.org/pmd/co/Force</a>
+  <span class='search-tokens' style='display:none'>Force Kraft force https://w3id.org/pmd/co/ Force https://w3id.org/pmd/co/ force https://w3id.org/pmd/co/Force https://w3id.org/pmd/co/force kraft</span></li>
+<li><strong>Kraftmessdose</strong> (<em>Class</em>) — <code>LoadCell</code> — <a href="https://w3id.org/pmd/co/LoadCell">https://w3id.org/pmd/co/LoadCell</a>
+  <span class='search-tokens' style='display:none'>Kraftmessdose Load Cell LoadCell https://w3id.org/pmd/co/ Load Cell https://w3id.org/pmd/co/ load cell https://w3id.org/pmd/co/LoadCell https://w3id.org/pmd/co/loadcell kraftmessdose load cell loadcell</span></li>
+<li><strong>Magnetic</strong> (<em>Class</em>) — <code>Magnetic</code> — <a href="https://w3id.org/pmd/co/Magnetic">https://w3id.org/pmd/co/Magnetic</a>
+  <span class='search-tokens' style='display:none'>Magnetic https://w3id.org/pmd/co/ Magnetic https://w3id.org/pmd/co/ magnetic https://w3id.org/pmd/co/Magnetic https://w3id.org/pmd/co/magnetic magnetic</span></li>
+<li><strong>Department Role</strong> (<em>Class</em>) — <code>DepartmentRole</code> — <a href="https://w3id.org/pmd/co/DepartmentRole">https://w3id.org/pmd/co/DepartmentRole</a>
+  <span class='search-tokens' style='display:none'>Department  Role Department Role DepartmentRole department  role department role departmentrole https://w3id.org/pmd/co/ Department Role https://w3id.org/pmd/co/ department role https://w3id.org/pmd/co/DepartmentRole https://w3id.org/pmd/co/departmentrole</span></li>
+<li><strong>Thermoelement</strong> (<em>Class</em>) — <code>Thermocouple</code> — <a href="https://w3id.org/pmd/co/Thermocouple">https://w3id.org/pmd/co/Thermocouple</a>
+  <span class='search-tokens' style='display:none'>Thermocouple Thermoelement https://w3id.org/pmd/co/ Thermocouple https://w3id.org/pmd/co/ thermocouple https://w3id.org/pmd/co/Thermocouple https://w3id.org/pmd/co/thermocouple thermocouple thermoelement</span></li>
+<li><strong>Genauigkeit</strong> (<em>Class</em>) — <code>Precision</code> — <a href="https://w3id.org/pmd/co/Precision">https://w3id.org/pmd/co/Precision</a>
+  <span class='search-tokens' style='display:none'>Genauigkeit Precision genauigkeit https://w3id.org/pmd/co/ Precision https://w3id.org/pmd/co/ precision https://w3id.org/pmd/co/Precision https://w3id.org/pmd/co/precision precision</span></li>
+<li><strong>v1</strong> (<em>Entity</em>) — <code>v1</code> — <a href="https://w3id.org/pmd/co/v1">https://w3id.org/pmd/co/v1</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/v1 v1</span></li>
+<li><strong>Kalibrierbereich</strong> (<em>Class</em>) — <code>CalibrationRange</code> — <a href="https://w3id.org/pmd/co/CalibrationRange">https://w3id.org/pmd/co/CalibrationRange</a>
+  <span class='search-tokens' style='display:none'>Calibration Range CalibrationRange Kalibrierbereich calibration range calibrationrange https://w3id.org/pmd/co/ Calibration Range https://w3id.org/pmd/co/ calibration range https://w3id.org/pmd/co/CalibrationRange https://w3id.org/pmd/co/calibrationrange kalibrierbereich</span></li>
+<li><strong>Organization</strong> (<em>Class</em>) — <code>Organization</code> — <a href="http://www.w3.org/ns/prov#Organization">http://www.w3.org/ns/prov#Organization</a>
+  <span class='search-tokens' style='display:none'>Organization http://www.w3.org/ns/prov# Organization http://www.w3.org/ns/prov# organization http://www.w3.org/ns/prov#Organization http://www.w3.org/ns/prov#organization organization</span></li>
+<li><strong>Coating Designation</strong> (<em>Class</em>) — <code>CoatingDesignation</code> — <a href="https://w3id.org/pmd/co/CoatingDesignation">https://w3id.org/pmd/co/CoatingDesignation</a>
+  <span class='search-tokens' style='display:none'>Coating  Designation Coating Designation CoatingDesignation coating  designation coating designation coatingdesignation https://w3id.org/pmd/co/ Coating Designation https://w3id.org/pmd/co/ coating designation https://w3id.org/pmd/co/CoatingDesignation https://w3id.org/pmd/co/coatingdesignation</span></li>
+<li><strong>Hydrogen Bond</strong> (<em>Class</em>) — <code>HydrogenBond</code> — <a href="https://w3id.org/pmd/co/HydrogenBond">https://w3id.org/pmd/co/HydrogenBond</a>
+  <span class='search-tokens' style='display:none'>Hydrogen  Bond Hydrogen Bond HydrogenBond https://w3id.org/pmd/co/ Hydrogen Bond https://w3id.org/pmd/co/ hydrogen bond https://w3id.org/pmd/co/HydrogenBond https://w3id.org/pmd/co/hydrogenbond hydrogen  bond hydrogen bond hydrogenbond</span></li>
+<li><strong>Minor axis diameter</strong> (<em>Class</em>) — <code>MajorAxisDiameter</code> — <a href="https://w3id.org/pmd/co/MajorAxisDiameter">https://w3id.org/pmd/co/MajorAxisDiameter</a>
+  <span class='search-tokens' style='display:none'>Major Axis Diameter MajorAxisDiameter Minor axis diameter https://w3id.org/pmd/co/ Major Axis Diameter https://w3id.org/pmd/co/ major axis diameter https://w3id.org/pmd/co/MajorAxisDiameter https://w3id.org/pmd/co/majoraxisdiameter major axis diameter majoraxisdiameter minor axis diameter</span></li>
+<li><strong>ready for release</strong> (<em>Individual</em>) — <code>IAO_0000122</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+  <span class='search-tokens' style='display:none'>IAO 0000122 IAO_0000122 http://purl.obolibrary.org/obo/IAO 0000122 http://purl.obolibrary.org/obo/IAO_0000122 http://purl.obolibrary.org/obo/iao 0000122 http://purl.obolibrary.org/obo/iao_0000122 iao 0000122 iao_0000122 ready for release</span></li>
+<li><strong>Datum</strong> (<em>Class</em>) — <code>Date</code> — <a href="https://w3id.org/pmd/co/Date">https://w3id.org/pmd/co/Date</a>
+  <span class='search-tokens' style='display:none'>Date Datum date datum https://w3id.org/pmd/co/ Date https://w3id.org/pmd/co/ date https://w3id.org/pmd/co/Date https://w3id.org/pmd/co/date</span></li>
+<li><strong>input of</strong> (<em>ObjectProperty</em>) — <code>inputOf</code> — <a href="https://w3id.org/pmd/co/inputOf">https://w3id.org/pmd/co/inputOf</a> — <em>alt:</em> is input of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/input Of https://w3id.org/pmd/co/input of https://w3id.org/pmd/co/inputOf https://w3id.org/pmd/co/inputof input Of input of inputOf inputof is input of</span></li>
+<li><strong>hasFunction</strong> (<em>ObjectProperty</em>) — <code>hasFunction</code> — <a href="https://w3id.org/pmd/co/hasFunction">https://w3id.org/pmd/co/hasFunction</a>
+  <span class='search-tokens' style='display:none'>has Function has function hasFunction hasfunction https://w3id.org/pmd/co/has Function https://w3id.org/pmd/co/has function https://w3id.org/pmd/co/hasFunction https://w3id.org/pmd/co/hasfunction</span></li>
+<li><strong>editor preferred term</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000111</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000111">http://purl.obolibrary.org/obo/IAO_0000111</a>
+  <span class='search-tokens' style='display:none'>IAO 0000111 IAO_0000111 editor preferred term http://purl.obolibrary.org/obo/IAO 0000111 http://purl.obolibrary.org/obo/IAO_0000111 http://purl.obolibrary.org/obo/iao 0000111 http://purl.obolibrary.org/obo/iao_0000111 iao 0000111 iao_0000111</span></li>
+<li><strong>abbreviation</strong> (<em>AnnotationProperty</em>) — <code>abbreviation</code> — <a href="https://w3id.org/pmd/co/abbreviation">https://w3id.org/pmd/co/abbreviation</a>
+  <span class='search-tokens' style='display:none'>abbreviation https://w3id.org/pmd/co/abbreviation</span></li>
+<li><strong>Optical Microscopy</strong> (<em>Class</em>) — <code>OpticalMicroscopy</code> — <a href="https://w3id.org/pmd/co/OpticalMicroscopy">https://w3id.org/pmd/co/OpticalMicroscopy</a>
+  <span class='search-tokens' style='display:none'>Optical  Microscopy Optical Microscopy OpticalMicroscopy https://w3id.org/pmd/co/ Optical Microscopy https://w3id.org/pmd/co/ optical microscopy https://w3id.org/pmd/co/OpticalMicroscopy https://w3id.org/pmd/co/opticalmicroscopy optical  microscopy optical microscopy opticalmicroscopy</span></li>
+<li><strong>Measuring Process</strong> (<em>Class</em>) — <code>MeasuringProcess</code> — <a href="https://w3id.org/pmd/co/MeasuringProcess">https://w3id.org/pmd/co/MeasuringProcess</a>
+  <span class='search-tokens' style='display:none'>Measuring  Process Measuring Process MeasuringProcess https://w3id.org/pmd/co/ Measuring Process https://w3id.org/pmd/co/ measuring process https://w3id.org/pmd/co/MeasuringProcess https://w3id.org/pmd/co/measuringprocess measuring  process measuring process measuringprocess</span></li>
+<li><strong>p3</strong> (<em>Entity</em>) — <code>p3</code> — <a href="https://w3id.org/pmd/co/p3">https://w3id.org/pmd/co/p3</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/p3 p3</span></li>
+<li><strong>participant of</strong> (<em>ObjectProperty</em>) — <code>participantOf</code> — <a href="https://w3id.org/pmd/co/participantOf">https://w3id.org/pmd/co/participantOf</a> — <em>alt:</em> is participant of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/participant Of https://w3id.org/pmd/co/participant of https://w3id.org/pmd/co/participantOf https://w3id.org/pmd/co/participantof is participant of participant Of participant of participantOf participantof</span></li>
+<li><strong>Abteilung</strong> (<em>Class</em>) — <code>Department</code> — <a href="https://w3id.org/pmd/co/Department">https://w3id.org/pmd/co/Department</a>
+  <span class='search-tokens' style='display:none'>Abteilung Department abteilung department https://w3id.org/pmd/co/ Department https://w3id.org/pmd/co/ department https://w3id.org/pmd/co/Department https://w3id.org/pmd/co/department</span></li>
+<li><strong>Roughness</strong> (<em>Class</em>) — <code>Roughness</code> — <a href="https://w3id.org/pmd/co/Roughness">https://w3id.org/pmd/co/Roughness</a>
+  <span class='search-tokens' style='display:none'>Roughness https://w3id.org/pmd/co/ Roughness https://w3id.org/pmd/co/ roughness https://w3id.org/pmd/co/Roughness https://w3id.org/pmd/co/roughness roughness</span></li>
+<li><strong>Startzeit</strong> (<em>Class</em>) — <code>StartTime</code> — <a href="https://w3id.org/pmd/co/StartTime">https://w3id.org/pmd/co/StartTime</a>
+  <span class='search-tokens' style='display:none'>Start Time StartTime Startzeit https://w3id.org/pmd/co/ Start Time https://w3id.org/pmd/co/ start time https://w3id.org/pmd/co/StartTime https://w3id.org/pmd/co/starttime start time starttime startzeit</span></li>
+<li><strong>executed by</strong> (<em>ObjectProperty</em>) — <code>executedBy</code> — <a href="https://w3id.org/pmd/co/executedBy">https://w3id.org/pmd/co/executedBy</a>
+  <span class='search-tokens' style='display:none'>executed By executed by executedBy executedby https://w3id.org/pmd/co/executed By https://w3id.org/pmd/co/executed by https://w3id.org/pmd/co/executedBy https://w3id.org/pmd/co/executedby</span></li>
+<li><strong>is resource of</strong> (<em>ObjectProperty</em>) — <code>isResourceOf</code> — <a href="https://w3id.org/pmd/co/isResourceOf">https://w3id.org/pmd/co/isResourceOf</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/is Resource Of https://w3id.org/pmd/co/is resource of https://w3id.org/pmd/co/isResourceOf https://w3id.org/pmd/co/isresourceof is Resource Of is resource of isResourceOf isresourceof</span></li>
+<li><strong>Chemical</strong> (<em>Class</em>) — <code>Chemical</code> — <a href="https://w3id.org/pmd/co/Chemical">https://w3id.org/pmd/co/Chemical</a>
+  <span class='search-tokens' style='display:none'>Chemical chemical https://w3id.org/pmd/co/ Chemical https://w3id.org/pmd/co/ chemical https://w3id.org/pmd/co/Chemical https://w3id.org/pmd/co/chemical</span></li>
+<li><strong>Address</strong> (<em>Class</em>) — <code>Address</code> — <a href="https://w3id.org/pmd/co/Address">https://w3id.org/pmd/co/Address</a>
+  <span class='search-tokens' style='display:none'>Address address https://w3id.org/pmd/co/ Address https://w3id.org/pmd/co/ address https://w3id.org/pmd/co/Address https://w3id.org/pmd/co/address</span></li>
+<li><strong>Feret diameter</strong> (<em>Class</em>) — <code>FeretDiameter</code> — <a href="https://w3id.org/pmd/co/FeretDiameter">https://w3id.org/pmd/co/FeretDiameter</a>
+  <span class='search-tokens' style='display:none'>Feret Diameter Feret diameter FeretDiameter feret diameter feretdiameter https://w3id.org/pmd/co/ Feret Diameter https://w3id.org/pmd/co/ feret diameter https://w3id.org/pmd/co/FeretDiameter https://w3id.org/pmd/co/feretdiameter</span></li>
+<li><strong>bibliographicCitation</strong> (<em>AnnotationProperty</em>) — <code>bibliographicCitation</code> — <a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a>
+  <span class='search-tokens' style='display:none'>bibliographic Citation bibliographic citation bibliographicCitation bibliographiccitation http://purl.org/dc/terms/bibliographic Citation http://purl.org/dc/terms/bibliographic citation http://purl.org/dc/terms/bibliographicCitation http://purl.org/dc/terms/bibliographiccitation</span></li>
+<li><strong>Ofencharakteristik</strong> (<em>Class</em>) — <code>FurnaceCharacteristic</code> — <a href="https://w3id.org/pmd/co/FurnaceCharacteristic">https://w3id.org/pmd/co/FurnaceCharacteristic</a>
+  <span class='search-tokens' style='display:none'>Furnace Characteristic FurnaceCharacteristic Ofencharakteristik furnace characteristic furnacecharacteristic https://w3id.org/pmd/co/ Furnace Characteristic https://w3id.org/pmd/co/ furnace characteristic https://w3id.org/pmd/co/FurnaceCharacteristic https://w3id.org/pmd/co/furnacecharacteristic ofencharakteristik</span></li>
+<li><strong>Temperaturänderungswerkzeug</strong> (<em>Class</em>) — <code>TemperatureChangeDevice</code> — <a href="https://w3id.org/pmd/co/TemperatureChangeDevice">https://w3id.org/pmd/co/TemperatureChangeDevice</a>
+  <span class='search-tokens' style='display:none'>Temperature Change Device TemperatureChangeDevice Temperaturänderungswerkzeug https://w3id.org/pmd/co/ Temperature Change Device https://w3id.org/pmd/co/ temperature change device https://w3id.org/pmd/co/TemperatureChangeDevice https://w3id.org/pmd/co/temperaturechangedevice temperature change device temperaturechangedevice temperaturänderungswerkzeug</span></li>
+<li><strong>KiloN</strong> (<em>Individual</em>) — <code>KiloN</code> — <a href="http://qudt.org/vocab/unit/KiloN">http://qudt.org/vocab/unit/KiloN</a>
+  <span class='search-tokens' style='display:none'>KiloN http://qudt.org/vocab/unit/ KiloN http://qudt.org/vocab/unit/ kilon http://qudt.org/vocab/unit/KiloN http://qudt.org/vocab/unit/kilon kilon</span></li>
+<li><strong>Amorphous Structure</strong> (<em>Class</em>) — <code>AmorphousStructure</code> — <a href="https://w3id.org/pmd/co/AmorphousStructure">https://w3id.org/pmd/co/AmorphousStructure</a>
+  <span class='search-tokens' style='display:none'>Amorphous  Structure Amorphous Structure AmorphousStructure amorphous  structure amorphous structure amorphousstructure https://w3id.org/pmd/co/ Amorphous Structure https://w3id.org/pmd/co/ amorphous structure https://w3id.org/pmd/co/AmorphousStructure https://w3id.org/pmd/co/amorphousstructure</span></li>
+<li><strong>Regression</strong> (<em>Class</em>) — <code>Regression</code> — <a href="https://w3id.org/pmd/co/Regression">https://w3id.org/pmd/co/Regression</a>
+  <span class='search-tokens' style='display:none'>Regression https://w3id.org/pmd/co/ Regression https://w3id.org/pmd/co/ regression https://w3id.org/pmd/co/Regression https://w3id.org/pmd/co/regression regression</span></li>
+<li><strong>Wertekategorie</strong> (<em>Class</em>) — <code>ValueScope</code> — <a href="https://w3id.org/pmd/co/ValueScope">https://w3id.org/pmd/co/ValueScope</a>
+  <span class='search-tokens' style='display:none'>Value Scope ValueScope Wertekategorie https://w3id.org/pmd/co/ Value Scope https://w3id.org/pmd/co/ value scope https://w3id.org/pmd/co/ValueScope https://w3id.org/pmd/co/valuescope value scope valuescope wertekategorie</span></li>
+<li><strong>to be replaced with external ontology term</strong> (<em>Individual</em>) — <code>IAO_0000423</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000423">http://purl.obolibrary.org/obo/IAO_0000423</a>
+  <span class='search-tokens' style='display:none'>IAO 0000423 IAO_0000423 http://purl.obolibrary.org/obo/IAO 0000423 http://purl.obolibrary.org/obo/IAO_0000423 http://purl.obolibrary.org/obo/iao 0000423 http://purl.obolibrary.org/obo/iao_0000423 iao 0000423 iao_0000423 to be replaced with external ontology term</span></li>
+<li><strong>Shape</strong> (<em>Class</em>) — <code>Shape</code> — <a href="https://w3id.org/pmd/co/Shape">https://w3id.org/pmd/co/Shape</a>
+  <span class='search-tokens' style='display:none'>Shape https://w3id.org/pmd/co/ Shape https://w3id.org/pmd/co/ shape https://w3id.org/pmd/co/Shape https://w3id.org/pmd/co/shape shape</span></li>
+<li><strong>has role</strong> (<em>ObjectProperty</em>) — <code>RO_0000087</code> — <a href="http://purl.obolibrary.org/obo/RO_0000087">http://purl.obolibrary.org/obo/RO_0000087</a>
+  <span class='search-tokens' style='display:none'>RO 0000087 RO_0000087 has role http://purl.obolibrary.org/obo/RO 0000087 http://purl.obolibrary.org/obo/RO_0000087 http://purl.obolibrary.org/obo/ro 0000087 http://purl.obolibrary.org/obo/ro_0000087 ro 0000087 ro_0000087</span></li>
+<li><strong>Transformative Analysis Process</strong> (<em>Class</em>) — <code>TransformativeAnalysisProcess</code> — <a href="https://w3id.org/pmd/co/TransformativeAnalysisProcess">https://w3id.org/pmd/co/TransformativeAnalysisProcess</a>
+  <span class='search-tokens' style='display:none'>Transformative  Analysis  Process Transformative Analysis Process TransformativeAnalysisProcess https://w3id.org/pmd/co/ Transformative Analysis Process https://w3id.org/pmd/co/ transformative analysis process https://w3id.org/pmd/co/TransformativeAnalysisProcess https://w3id.org/pmd/co/transformativeanalysisprocess transformative  analysis  process transformative analysis process transformativeanalysisprocess</span></li>
+<li><strong>curation status specification</strong> (<em>Class</em>) — <code>IAO_0000078</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000078">http://purl.obolibrary.org/obo/IAO_0000078</a>
+  <span class='search-tokens' style='display:none'>IAO 0000078 IAO_0000078 curation status specification http://purl.obolibrary.org/obo/IAO 0000078 http://purl.obolibrary.org/obo/IAO_0000078 http://purl.obolibrary.org/obo/iao 0000078 http://purl.obolibrary.org/obo/iao_0000078 iao 0000078 iao_0000078</span></li>
+<li><strong>composes</strong> (<em>ObjectProperty</em>) — <code>composes</code> — <a href="https://w3id.org/pmd/co/composes">https://w3id.org/pmd/co/composes</a>
+  <span class='search-tokens' style='display:none'>composes https://w3id.org/pmd/co/composes</span></li>
+<li><strong>relates to element</strong> (<em>ObjectProperty</em>) — <code>relatesToElement</code> — <a href="https://w3id.org/pmd/co/relatesToElement">https://w3id.org/pmd/co/relatesToElement</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/relates To Element https://w3id.org/pmd/co/relates to element https://w3id.org/pmd/co/relatesToElement https://w3id.org/pmd/co/relatestoelement relates To Element relates to element relatesToElement relatestoelement</span></li>
+<li><strong>Operator Role</strong> (<em>Class</em>) — <code>OperatorRole</code> — <a href="https://w3id.org/pmd/co/OperatorRole">https://w3id.org/pmd/co/OperatorRole</a>
+  <span class='search-tokens' style='display:none'>Operator  Role Operator Role OperatorRole https://w3id.org/pmd/co/ Operator Role https://w3id.org/pmd/co/ operator role https://w3id.org/pmd/co/OperatorRole https://w3id.org/pmd/co/operatorrole operator  role operator role operatorrole</span></li>
+<li><strong>Aging Interval</strong> (<em>Class</em>) — <code>AgingInterval</code> — <a href="https://w3id.org/pmd/co/AgingInterval">https://w3id.org/pmd/co/AgingInterval</a>
+  <span class='search-tokens' style='display:none'>Aging  Interval Aging Interval AgingInterval aging  interval aging interval aginginterval https://w3id.org/pmd/co/ Aging Interval https://w3id.org/pmd/co/ aging interval https://w3id.org/pmd/co/AgingInterval https://w3id.org/pmd/co/aginginterval</span></li>
+<li><strong>Prüfmaschine</strong> (<em>Class</em>) — <code>TestingMachine</code> — <a href="https://w3id.org/pmd/co/TestingMachine">https://w3id.org/pmd/co/TestingMachine</a>
+  <span class='search-tokens' style='display:none'>Prüfmaschine Testing Machine TestingMachine https://w3id.org/pmd/co/ Testing Machine https://w3id.org/pmd/co/ testing machine https://w3id.org/pmd/co/TestingMachine https://w3id.org/pmd/co/testingmachine prüfmaschine testing machine testingmachine</span></li>
+<li><strong>Process Description</strong> (<em>Class</em>) — <code>ProcessDescription</code> — <a href="https://w3id.org/pmd/co/ProcessDescription">https://w3id.org/pmd/co/ProcessDescription</a>
+  <span class='search-tokens' style='display:none'>Process  Description Process Description ProcessDescription https://w3id.org/pmd/co/ Process Description https://w3id.org/pmd/co/ process description https://w3id.org/pmd/co/ProcessDescription https://w3id.org/pmd/co/processdescription process  description process description processdescription</span></li>
+<li><strong>X Coordinate</strong> (<em>Class</em>) — <code>XCoordinate</code> — <a href="https://w3id.org/pmd/co/XCoordinate">https://w3id.org/pmd/co/XCoordinate</a>
+  <span class='search-tokens' style='display:none'>X  Coordinate X Coordinate XCoordinate https://w3id.org/pmd/co/X Coordinate https://w3id.org/pmd/co/XCoordinate https://w3id.org/pmd/co/x coordinate https://w3id.org/pmd/co/xcoordinate x  coordinate x coordinate xcoordinate</span></li>
+<li><strong>Durchmesser</strong> (<em>Class</em>) — <code>Diameter</code> — <a href="https://w3id.org/pmd/co/Diameter">https://w3id.org/pmd/co/Diameter</a>
+  <span class='search-tokens' style='display:none'>Diameter Durchmesser diameter durchmesser https://w3id.org/pmd/co/ Diameter https://w3id.org/pmd/co/ diameter https://w3id.org/pmd/co/Diameter https://w3id.org/pmd/co/diameter</span></li>
+<li><strong>Fehlerberichtdokument</strong> (<em>Class</em>) — <code>ErrorReportDocument</code> — <a href="https://w3id.org/pmd/co/ErrorReportDocument">https://w3id.org/pmd/co/ErrorReportDocument</a>
+  <span class='search-tokens' style='display:none'>Error Report Document ErrorReportDocument Fehlerberichtdokument error report document errorreportdocument fehlerberichtdokument https://w3id.org/pmd/co/ Error Report Document https://w3id.org/pmd/co/ error report document https://w3id.org/pmd/co/ErrorReportDocument https://w3id.org/pmd/co/errorreportdocument</span></li>
+<li><strong>uncurated</strong> (<em>Individual</em>) — <code>IAO_0000124</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000124">http://purl.obolibrary.org/obo/IAO_0000124</a>
+  <span class='search-tokens' style='display:none'>IAO 0000124 IAO_0000124 http://purl.obolibrary.org/obo/IAO 0000124 http://purl.obolibrary.org/obo/IAO_0000124 http://purl.obolibrary.org/obo/iao 0000124 http://purl.obolibrary.org/obo/iao_0000124 iao 0000124 iao_0000124 uncurated</span></li>
+<li><strong>Dicke</strong> (<em>Class</em>) — <code>Thickness</code> — <a href="https://w3id.org/pmd/co/Thickness">https://w3id.org/pmd/co/Thickness</a>
+  <span class='search-tokens' style='display:none'>Dicke Thickness dicke https://w3id.org/pmd/co/ Thickness https://w3id.org/pmd/co/ thickness https://w3id.org/pmd/co/Thickness https://w3id.org/pmd/co/thickness thickness</span></li>
+<li><strong>Gewichtete Y Koordinate</strong> (<em>Class</em>) — <code>WeightedYCoordinate</code> — <a href="https://w3id.org/pmd/co/WeightedYCoordinate">https://w3id.org/pmd/co/WeightedYCoordinate</a>
+  <span class='search-tokens' style='display:none'>Gewichtete Y  Koordinate Gewichtete Y Koordinate WeightedY Coordinate WeightedYCoordinate gewichtete y  koordinate gewichtete y koordinate https://w3id.org/pmd/co/ WeightedY Coordinate https://w3id.org/pmd/co/ weightedy coordinate https://w3id.org/pmd/co/WeightedYCoordinate https://w3id.org/pmd/co/weightedycoordinate weightedy coordinate weightedycoordinate</span></li>
+<li><strong>Messwert</strong> (<em>Class</em>) — <code>Measurement</code> — <a href="https://w3id.org/pmd/co/Measurement">https://w3id.org/pmd/co/Measurement</a>
+  <span class='search-tokens' style='display:none'>Measurement Messwert https://w3id.org/pmd/co/ Measurement https://w3id.org/pmd/co/ measurement https://w3id.org/pmd/co/Measurement https://w3id.org/pmd/co/measurement measurement messwert</span></li>
+<li><strong>Dataset</strong> (<em>Class</em>) — <code>Dataset</code> — <a href="https://w3id.org/pmd/co/Dataset">https://w3id.org/pmd/co/Dataset</a>
+  <span class='search-tokens' style='display:none'>Dataset dataset https://w3id.org/pmd/co/ Dataset https://w3id.org/pmd/co/ dataset https://w3id.org/pmd/co/Dataset https://w3id.org/pmd/co/dataset</span></li>
+<li><strong>Load cell capacity</strong> (<em>Class</em>) — <code>LoadCellCapacity</code> — <a href="https://w3id.org/pmd/co/LoadCellCapacity">https://w3id.org/pmd/co/LoadCellCapacity</a>
+  <span class='search-tokens' style='display:none'>Load Cell Capacity Load cell capacity LoadCellCapacity https://w3id.org/pmd/co/ Load Cell Capacity https://w3id.org/pmd/co/ load cell capacity https://w3id.org/pmd/co/LoadCellCapacity https://w3id.org/pmd/co/loadcellcapacity load cell capacity loadcellcapacity</span></li>
+<li><strong>Non Transformative Analysis Process</strong> (<em>Class</em>) — <code>NonTransformativeAnalysisProcess</code> — <a href="https://w3id.org/pmd/co/NonTransformativeAnalysisProcess">https://w3id.org/pmd/co/NonTransformativeAnalysisProcess</a>
+  <span class='search-tokens' style='display:none'>Non  Transformative  Analysis  Process Non Transformative Analysis Process NonTransformativeAnalysisProcess https://w3id.org/pmd/co/ Non Transformative Analysis Process https://w3id.org/pmd/co/ non transformative analysis process https://w3id.org/pmd/co/NonTransformativeAnalysisProcess https://w3id.org/pmd/co/nontransformativeanalysisprocess non  transformative  analysis  process non transformative analysis process nontransformativeanalysisprocess</span></li>
+<li><strong>prefLabel</strong> (<em>AnnotationProperty</em>) — <code>prefLabel</code> — <a href="http://www.w3.org/2004/02/skos/core#prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#pref Label http://www.w3.org/2004/02/skos/core#pref label http://www.w3.org/2004/02/skos/core#prefLabel http://www.w3.org/2004/02/skos/core#preflabel pref Label pref label prefLabel preflabel</span></li>
+<li><strong>json path</strong> (<em>DatatypeProperty</em>) — <code>jsonPath</code> — <a href="https://w3id.org/pmd/co/jsonPath">https://w3id.org/pmd/co/jsonPath</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/json Path https://w3id.org/pmd/co/json path https://w3id.org/pmd/co/jsonPath https://w3id.org/pmd/co/jsonpath json Path json path jsonPath jsonpath</span></li>
+<li><strong>Retortentyp</strong> (<em>Class</em>) — <code>RetortType</code> — <a href="https://w3id.org/pmd/co/RetortType">https://w3id.org/pmd/co/RetortType</a>
+  <span class='search-tokens' style='display:none'>Retort Type RetortType Retortentyp https://w3id.org/pmd/co/ Retort Type https://w3id.org/pmd/co/ retort type https://w3id.org/pmd/co/RetortType https://w3id.org/pmd/co/retorttype retort type retortentyp retorttype</span></li>
+<li><strong>definition source</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000119</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000119">http://purl.obolibrary.org/obo/IAO_0000119</a>
+  <span class='search-tokens' style='display:none'>IAO 0000119 IAO_0000119 definition source http://purl.obolibrary.org/obo/IAO 0000119 http://purl.obolibrary.org/obo/IAO_0000119 http://purl.obolibrary.org/obo/iao 0000119 http://purl.obolibrary.org/obo/iao_0000119 iao 0000119 iao_0000119</span></li>
+<li><strong>Sekundärdaten</strong> (<em>Class</em>) — <code>SecondaryData</code> — <a href="https://w3id.org/pmd/co/SecondaryData">https://w3id.org/pmd/co/SecondaryData</a>
+  <span class='search-tokens' style='display:none'>Secondary Data SecondaryData Sekundärdaten https://w3id.org/pmd/co/ Secondary Data https://w3id.org/pmd/co/ secondary data https://w3id.org/pmd/co/SecondaryData https://w3id.org/pmd/co/secondarydata secondary data secondarydata sekundärdaten</span></li>
+<li><strong>Distance</strong> (<em>Class</em>) — <code>Distance</code> — <a href="https://w3id.org/pmd/co/Distance">https://w3id.org/pmd/co/Distance</a>
+  <span class='search-tokens' style='display:none'>Distance distance https://w3id.org/pmd/co/ Distance https://w3id.org/pmd/co/ distance https://w3id.org/pmd/co/Distance https://w3id.org/pmd/co/distance</span></li>
+<li><strong>Biological</strong> (<em>Class</em>) — <code>Biological</code> — <a href="https://w3id.org/pmd/co/Biological">https://w3id.org/pmd/co/Biological</a>
+  <span class='search-tokens' style='display:none'>Biological biological https://w3id.org/pmd/co/ Biological https://w3id.org/pmd/co/ biological https://w3id.org/pmd/co/Biological https://w3id.org/pmd/co/biological</span></li>
+<li><strong>Electron Microscope</strong> (<em>Class</em>) — <code>ElectronMicroscope</code> — <a href="https://w3id.org/pmd/co/ElectronMicroscope">https://w3id.org/pmd/co/ElectronMicroscope</a>
+  <span class='search-tokens' style='display:none'>Electron  Microscope Electron Microscope ElectronMicroscope electron  microscope electron microscope electronmicroscope https://w3id.org/pmd/co/ Electron Microscope https://w3id.org/pmd/co/ electron microscope https://w3id.org/pmd/co/ElectronMicroscope https://w3id.org/pmd/co/electronmicroscope</span></li>
+<li><strong>Node Version</strong> (<em>Class</em>) — <code>NodeVersion</code> — <a href="https://w3id.org/pmd/co/NodeVersion">https://w3id.org/pmd/co/NodeVersion</a>
+  <span class='search-tokens' style='display:none'>Node  Version Node Version NodeVersion https://w3id.org/pmd/co/ Node Version https://w3id.org/pmd/co/ node version https://w3id.org/pmd/co/NodeVersion https://w3id.org/pmd/co/nodeversion node  version node version nodeversion</span></li>
+<li><strong>Chemical Composition</strong> (<em>Class</em>) — <code>ChemicalComposition</code> — <a href="https://w3id.org/pmd/co/ChemicalComposition">https://w3id.org/pmd/co/ChemicalComposition</a>
+  <span class='search-tokens' style='display:none'>Chemical  Composition Chemical Composition ChemicalComposition chemical  composition chemical composition chemicalcomposition https://w3id.org/pmd/co/ Chemical Composition https://w3id.org/pmd/co/ chemical composition https://w3id.org/pmd/co/ChemicalComposition https://w3id.org/pmd/co/chemicalcomposition</span></li>
+<li><strong>Temperaturmesswerkzeug</strong> (<em>Class</em>) — <code>TemperatureMeasuringDevice</code> — <a href="https://w3id.org/pmd/co/TemperatureMeasuringDevice">https://w3id.org/pmd/co/TemperatureMeasuringDevice</a>
+  <span class='search-tokens' style='display:none'>Temperature Measuring Device TemperatureMeasuringDevice Temperaturmesswerkzeug https://w3id.org/pmd/co/ Temperature Measuring Device https://w3id.org/pmd/co/ temperature measuring device https://w3id.org/pmd/co/TemperatureMeasuringDevice https://w3id.org/pmd/co/temperaturemeasuringdevice temperature measuring device temperaturemeasuringdevice temperaturmesswerkzeug</span></li>
+<li><strong>2D Pixel Koordinaten</strong> (<em>Class</em>) — <code>2DPixelCoordinates</code> — <a href="https://w3id.org/pmd/co/2DPixelCoordinates">https://w3id.org/pmd/co/2DPixelCoordinates</a>
+  <span class='search-tokens' style='display:none'>2D  Pixel  Koordinaten 2D Pixel Coordinates 2D Pixel Koordinaten 2DPixelCoordinates 2d  pixel  koordinaten 2d pixel coordinates 2d pixel koordinaten 2dpixelcoordinates https://w3id.org/pmd/co/2D Pixel Coordinates https://w3id.org/pmd/co/2DPixelCoordinates https://w3id.org/pmd/co/2d pixel coordinates https://w3id.org/pmd/co/2dpixelcoordinates</span></li>
+<li><strong>Clamping Pressure</strong> (<em>Class</em>) — <code>ClampingPressure</code> — <a href="https://w3id.org/pmd/co/ClampingPressure">https://w3id.org/pmd/co/ClampingPressure</a>
+  <span class='search-tokens' style='display:none'>Clamping  Pressure Clamping Pressure ClampingPressure clamping  pressure clamping pressure clampingpressure https://w3id.org/pmd/co/ Clamping Pressure https://w3id.org/pmd/co/ clamping pressure https://w3id.org/pmd/co/ClampingPressure https://w3id.org/pmd/co/clampingpressure</span></li>
+<li><strong>Electrical</strong> (<em>Class</em>) — <code>Electrical</code> — <a href="https://w3id.org/pmd/co/Electrical">https://w3id.org/pmd/co/Electrical</a>
+  <span class='search-tokens' style='display:none'>Electrical electrical https://w3id.org/pmd/co/ Electrical https://w3id.org/pmd/co/ electrical https://w3id.org/pmd/co/Electrical https://w3id.org/pmd/co/electrical</span></li>
+<li><strong>wasDerivedFrom</strong> (<em>ObjectProperty</em>) — <code>wasDerivedFrom</code> — <a href="http://www.w3.org/ns/prov#wasDerivedFrom">http://www.w3.org/ns/prov#wasDerivedFrom</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Derived From http://www.w3.org/ns/prov#was derived from http://www.w3.org/ns/prov#wasDerivedFrom http://www.w3.org/ns/prov#wasderivedfrom was Derived From was derived from wasDerivedFrom wasderivedfrom</span></li>
+<li><strong>Duration</strong> (<em>Class</em>) — <code>Duration</code> — <a href="https://w3id.org/pmd/co/Duration">https://w3id.org/pmd/co/Duration</a>
+  <span class='search-tokens' style='display:none'>Duration duration https://w3id.org/pmd/co/ Duration https://w3id.org/pmd/co/ duration https://w3id.org/pmd/co/Duration https://w3id.org/pmd/co/duration</span></li>
+<li><strong>Voxel</strong> (<em>Class</em>) — <code>Voxel</code> — <a href="https://w3id.org/pmd/co/Voxel">https://w3id.org/pmd/co/Voxel</a>
+  <span class='search-tokens' style='display:none'>Voxel https://w3id.org/pmd/co/ Voxel https://w3id.org/pmd/co/ voxel https://w3id.org/pmd/co/Voxel https://w3id.org/pmd/co/voxel voxel</span></li>
+<li><strong>Perimeter</strong> (<em>Class</em>) — <code>Perimeter</code> — <a href="https://w3id.org/pmd/co/Perimeter">https://w3id.org/pmd/co/Perimeter</a>
+  <span class='search-tokens' style='display:none'>Perimeter https://w3id.org/pmd/co/ Perimeter https://w3id.org/pmd/co/ perimeter https://w3id.org/pmd/co/Perimeter https://w3id.org/pmd/co/perimeter perimeter</span></li>
+<li><strong>Prüfling</strong> (<em>Class</em>) — <code>Specimen</code> — <a href="https://w3id.org/pmd/co/Specimen">https://w3id.org/pmd/co/Specimen</a>
+  <span class='search-tokens' style='display:none'>Prüfling Specimen https://w3id.org/pmd/co/ Specimen https://w3id.org/pmd/co/ specimen https://w3id.org/pmd/co/Specimen https://w3id.org/pmd/co/specimen prüfling specimen</span></li>
+<li><strong>Extensometer-Dehnung</strong> (<em>Class</em>) — <code>PercentageExtension</code> — <a href="https://w3id.org/pmd/co/PercentageExtension">https://w3id.org/pmd/co/PercentageExtension</a> — <em>alt:</em> (engineering) strain | technische Dehnung
+  <span class='search-tokens' style='display:none'>(engineering) strain | technische  Dehnung (engineering) strain | technische  dehnung (engineering) strain | technische Dehnung (engineering) strain | technische dehnung Extensometer  Dehnung Extensometer Dehnung Extensometer-Dehnung Percentage Extension PercentageExtension extensometer  dehnung extensometer-dehnung https://w3id.org/pmd/co/ Percentage Extension https://w3id.org/pmd/co/ percentage extension https://w3id.org/pmd/co/PercentageExtension https://w3id.org/pmd/co/percentageextension percentage extension percentageextension</span></li>
+<li><strong>Collection Interface Hint</strong> (<em>Class</em>) — <code>CollectionInterfaceHint</code> — <a href="https://w3id.org/pmd/co/CollectionInterfaceHint">https://w3id.org/pmd/co/CollectionInterfaceHint</a>
+  <span class='search-tokens' style='display:none'>Collection  Interface  Hint Collection Interface Hint CollectionInterfaceHint collection  interface  hint collection interface hint collectioninterfacehint https://w3id.org/pmd/co/ Collection Interface Hint https://w3id.org/pmd/co/ collection interface hint https://w3id.org/pmd/co/CollectionInterfaceHint https://w3id.org/pmd/co/collectioninterfacehint</span></li>
+<li><strong>Markus Schilling</strong> (<em>Entity</em>) — <code>0000-0002-7094-5371</code> — <a href="https://orcid.org/0000-0002-7094-5371">https://orcid.org/0000-0002-7094-5371</a>
+  <span class='search-tokens' style='display:none'>0000 0002 7094 5371 0000-0002-7094-5371 Markus  Schilling Markus Schilling https://orcid.org/0000 0002 7094 5371 https://orcid.org/0000-0002-7094-5371 markus  schilling markus schilling</span></li>
+<li><strong>Digital Entity</strong> (<em>Class</em>) — <code>DigitalEntity</code> — <a href="https://w3id.org/pmd/co/DigitalEntity">https://w3id.org/pmd/co/DigitalEntity</a>
+  <span class='search-tokens' style='display:none'>Digital  Entity Digital Entity DigitalEntity digital  entity digital entity digitalentity https://w3id.org/pmd/co/ Digital Entity https://w3id.org/pmd/co/ digital entity https://w3id.org/pmd/co/DigitalEntity https://w3id.org/pmd/co/digitalentity</span></li>
+<li><strong>Identifikation Eines Verbundenen Projektes</strong> (<em>Class</em>) — <code>RelatedProjectIdentifier</code> — <a href="https://w3id.org/pmd/co/RelatedProjectIdentifier">https://w3id.org/pmd/co/RelatedProjectIdentifier</a>
+  <span class='search-tokens' style='display:none'>Identifikation  Eines  Verbundenen  Projektes Identifikation Eines Verbundenen Projektes Related Project Identifier RelatedProjectIdentifier https://w3id.org/pmd/co/ Related Project Identifier https://w3id.org/pmd/co/ related project identifier https://w3id.org/pmd/co/RelatedProjectIdentifier https://w3id.org/pmd/co/relatedprojectidentifier identifikation  eines  verbundenen  projektes identifikation eines verbundenen projektes related project identifier relatedprojectidentifier</span></li>
+<li><strong>Temperaturänderungsprozess</strong> (<em>Class</em>) — <code>TemperatureChangingProcess</code> — <a href="https://w3id.org/pmd/co/TemperatureChangingProcess">https://w3id.org/pmd/co/TemperatureChangingProcess</a>
+  <span class='search-tokens' style='display:none'>Temperature Changing Process TemperatureChangingProcess Temperaturänderungsprozess https://w3id.org/pmd/co/ Temperature Changing Process https://w3id.org/pmd/co/ temperature changing process https://w3id.org/pmd/co/TemperatureChangingProcess https://w3id.org/pmd/co/temperaturechangingprocess temperature changing process temperaturechangingprocess temperaturänderungsprozess</span></li>
+<li><strong>Algorithmus</strong> (<em>Class</em>) — <code>Algorithm</code> — <a href="https://w3id.org/pmd/co/Algorithm">https://w3id.org/pmd/co/Algorithm</a>
+  <span class='search-tokens' style='display:none'>Algorithm Algorithmus algorithm algorithmus https://w3id.org/pmd/co/ Algorithm https://w3id.org/pmd/co/ algorithm https://w3id.org/pmd/co/Algorithm https://w3id.org/pmd/co/algorithm</span></li>
+<li><strong>Circular</strong> (<em>Class</em>) — <code>Circular</code> — <a href="https://w3id.org/pmd/co/Circular">https://w3id.org/pmd/co/Circular</a>
+  <span class='search-tokens' style='display:none'>Circular circular https://w3id.org/pmd/co/ Circular https://w3id.org/pmd/co/ circular https://w3id.org/pmd/co/Circular https://w3id.org/pmd/co/circular</span></li>
+<li><strong>InitiatorRole</strong> (<em>Class</em>) — <code>InitiatorRole</code> — <a href="https://w3id.org/pmd/co/InitiatorRole">https://w3id.org/pmd/co/InitiatorRole</a>
+  <span class='search-tokens' style='display:none'>Initiator Role InitiatorRole https://w3id.org/pmd/co/ Initiator Role https://w3id.org/pmd/co/ initiator role https://w3id.org/pmd/co/InitiatorRole https://w3id.org/pmd/co/initiatorrole initiator role initiatorrole</span></li>
+<li><strong>Width</strong> (<em>Class</em>) — <code>Width</code> — <a href="https://w3id.org/pmd/co/Width">https://w3id.org/pmd/co/Width</a>
+  <span class='search-tokens' style='display:none'>Width https://w3id.org/pmd/co/ Width https://w3id.org/pmd/co/ width https://w3id.org/pmd/co/Width https://w3id.org/pmd/co/width width</span></li>
+<li><strong>Klassifzierungsdokument</strong> (<em>Class</em>) — <code>ClassificationDocument</code> — <a href="https://w3id.org/pmd/co/ClassificationDocument">https://w3id.org/pmd/co/ClassificationDocument</a>
+  <span class='search-tokens' style='display:none'>Classification Document ClassificationDocument Klassifzierungsdokument classification document classificationdocument https://w3id.org/pmd/co/ Classification Document https://w3id.org/pmd/co/ classification document https://w3id.org/pmd/co/ClassificationDocument https://w3id.org/pmd/co/classificationdocument klassifzierungsdokument</span></li>
+<li><strong>component</strong> (<em>ObjectProperty</em>) — <code>component</code> — <a href="https://w3id.org/pmd/co/component">https://w3id.org/pmd/co/component</a> — <em>alt:</em> has component
+  <span class='search-tokens' style='display:none'>component has component https://w3id.org/pmd/co/component</span></li>
+<li><strong>isPartOf</strong> (<em>ObjectProperty</em>) — <code>isPartOf</code> — <a href="http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/is Part Of http://purl.org/dc/terms/is part of http://purl.org/dc/terms/isPartOf http://purl.org/dc/terms/ispartof is Part Of is part of isPartOf ispartof</span></li>
+<li><strong>title</strong> (<em>AnnotationProperty</em>) — <code>title</code> — <a href="http://purl.org/dc/terms/title">http://purl.org/dc/terms/title</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/title title</span></li>
+<li><strong>Datenkategorie</strong> (<em>Class</em>) — <code>DataScope</code> — <a href="https://w3id.org/pmd/co/DataScope">https://w3id.org/pmd/co/DataScope</a>
+  <span class='search-tokens' style='display:none'>Data Scope DataScope Datenkategorie data scope datascope datenkategorie https://w3id.org/pmd/co/ Data Scope https://w3id.org/pmd/co/ data scope https://w3id.org/pmd/co/DataScope https://w3id.org/pmd/co/datascope</span></li>
+<li><strong>Environmental Temperature</strong> (<em>Class</em>) — <code>EnvironmentalTemperature</code> — <a href="https://w3id.org/pmd/co/EnvironmentalTemperature">https://w3id.org/pmd/co/EnvironmentalTemperature</a>
+  <span class='search-tokens' style='display:none'>Environmental  Temperature Environmental Temperature EnvironmentalTemperature environmental  temperature environmental temperature environmentaltemperature https://w3id.org/pmd/co/ Environmental Temperature https://w3id.org/pmd/co/ environmental temperature https://w3id.org/pmd/co/EnvironmentalTemperature https://w3id.org/pmd/co/environmentaltemperature</span></li>
+<li><strong>Kommissionszeit</strong> (<em>Class</em>) — <code>CommissionTime</code> — <a href="https://w3id.org/pmd/co/CommissionTime">https://w3id.org/pmd/co/CommissionTime</a>
+  <span class='search-tokens' style='display:none'>Commission Time CommissionTime Kommissionszeit commission time commissiontime https://w3id.org/pmd/co/ Commission Time https://w3id.org/pmd/co/ commission time https://w3id.org/pmd/co/CommissionTime https://w3id.org/pmd/co/commissiontime kommissionszeit</span></li>
+<li><strong>End Time</strong> (<em>Class</em>) — <code>EndTime</code> — <a href="https://w3id.org/pmd/co/EndTime">https://w3id.org/pmd/co/EndTime</a>
+  <span class='search-tokens' style='display:none'>End  Time End Time EndTime end  time end time endtime https://w3id.org/pmd/co/ End Time https://w3id.org/pmd/co/ end time https://w3id.org/pmd/co/EndTime https://w3id.org/pmd/co/endtime</span></li>
+<li><strong>Measuring Device</strong> (<em>Class</em>) — <code>MeasuringDevice</code> — <a href="https://w3id.org/pmd/co/MeasuringDevice">https://w3id.org/pmd/co/MeasuringDevice</a>
+  <span class='search-tokens' style='display:none'>Measuring  Device Measuring Device MeasuringDevice https://w3id.org/pmd/co/ Measuring Device https://w3id.org/pmd/co/ measuring device https://w3id.org/pmd/co/MeasuringDevice https://w3id.org/pmd/co/measuringdevice measuring  device measuring device measuringdevice</span></li>
+<li><strong>Pixeldichte</strong> (<em>Class</em>) — <code>PixelDensity</code> — <a href="https://w3id.org/pmd/co/PixelDensity">https://w3id.org/pmd/co/PixelDensity</a>
+  <span class='search-tokens' style='display:none'>Pixel Density PixelDensity Pixeldichte https://w3id.org/pmd/co/ Pixel Density https://w3id.org/pmd/co/ pixel density https://w3id.org/pmd/co/PixelDensity https://w3id.org/pmd/co/pixeldensity pixel density pixeldensity pixeldichte</span></li>
+<li><strong>Pixel Unit</strong> (<em>Individual</em>) — <code>PixelUnit</code> — <a href="https://w3id.org/pmd/co/PixelUnit">https://w3id.org/pmd/co/PixelUnit</a>
+  <span class='search-tokens' style='display:none'>Pixel  Unit Pixel Unit PixelUnit https://w3id.org/pmd/co/ Pixel Unit https://w3id.org/pmd/co/ pixel unit https://w3id.org/pmd/co/PixelUnit https://w3id.org/pmd/co/pixelunit pixel  unit pixel unit pixelunit</span></li>
+<li><strong>output</strong> (<em>ObjectProperty</em>) — <code>output</code> — <a href="https://w3id.org/pmd/co/output">https://w3id.org/pmd/co/output</a> — <em>alt:</em> has output
+  <span class='search-tokens' style='display:none'>has output https://w3id.org/pmd/co/output output</span></li>
+<li><strong>Materialbezug</strong> (<em>Class</em>) — <code>MaterialRelated</code> — <a href="https://w3id.org/pmd/co/MaterialRelated">https://w3id.org/pmd/co/MaterialRelated</a>
+  <span class='search-tokens' style='display:none'>Material Related MaterialRelated Materialbezug https://w3id.org/pmd/co/ Material Related https://w3id.org/pmd/co/ material related https://w3id.org/pmd/co/MaterialRelated https://w3id.org/pmd/co/materialrelated material related materialbezug materialrelated</span></li>
+<li><strong>BondingType</strong> (<em>Class</em>) — <code>BondingType</code> — <a href="https://w3id.org/pmd/co/BondingType">https://w3id.org/pmd/co/BondingType</a>
+  <span class='search-tokens' style='display:none'>Bonding Type BondingType bonding type bondingtype https://w3id.org/pmd/co/ Bonding Type https://w3id.org/pmd/co/ bonding type https://w3id.org/pmd/co/BondingType https://w3id.org/pmd/co/bondingtype</span></li>
+<li><strong>DataCite Identifier</strong> (<em>Class</em>) — <code>Identifier</code> — <a href="http://purl.org/spar/datacite/Identifier">http://purl.org/spar/datacite/Identifier</a>
+  <span class='search-tokens' style='display:none'>Data Cite  Identifier DataCite Identifier Identifier data cite  identifier datacite identifier http://purl.org/spar/datacite/ Identifier http://purl.org/spar/datacite/ identifier http://purl.org/spar/datacite/Identifier http://purl.org/spar/datacite/identifier identifier</span></li>
+<li><strong>v2</strong> (<em>Entity</em>) — <code>v2</code> — <a href="https://w3id.org/pmd/co/v2">https://w3id.org/pmd/co/v2</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/v2 v2</span></li>
+<li><strong>Medienbewegung</strong> (<em>Class</em>) — <code>MediaMovement</code> — <a href="https://w3id.org/pmd/co/MediaMovement">https://w3id.org/pmd/co/MediaMovement</a>
+  <span class='search-tokens' style='display:none'>Media Movement MediaMovement Medienbewegung https://w3id.org/pmd/co/ Media Movement https://w3id.org/pmd/co/ media movement https://w3id.org/pmd/co/MediaMovement https://w3id.org/pmd/co/mediamovement media movement mediamovement medienbewegung</span></li>
+<li><strong>Thomas Hanke</strong> (<em>Entity</em>) — <code>0000-0003-1649-6832</code> — <a href="https://orcid.org/0000-0003-1649-6832">https://orcid.org/0000-0003-1649-6832</a>
+  <span class='search-tokens' style='display:none'>0000 0003 1649 6832 0000-0003-1649-6832 Thomas  Hanke Thomas Hanke https://orcid.org/0000 0003 1649 6832 https://orcid.org/0000-0003-1649-6832 thomas  hanke thomas hanke</span></li>
+<li><strong>wasInformedBy</strong> (<em>ObjectProperty</em>) — <code>wasInformedBy</code> — <a href="http://www.w3.org/ns/prov#wasInformedBy">http://www.w3.org/ns/prov#wasInformedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Informed By http://www.w3.org/ns/prov#was informed by http://www.w3.org/ns/prov#wasInformedBy http://www.w3.org/ns/prov#wasinformedby was Informed By was informed by wasInformedBy wasinformedby</span></li>
+<li><strong>l2</strong> (<em>Entity</em>) — <code>l2</code> — <a href="https://w3id.org/pmd/co/l2">https://w3id.org/pmd/co/l2</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/l2 l2</span></li>
+<li><strong>example to be eventually removed</strong> (<em>Individual</em>) — <code>IAO_0000002</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000002">http://purl.obolibrary.org/obo/IAO_0000002</a>
+  <span class='search-tokens' style='display:none'>IAO 0000002 IAO_0000002 example to be eventually removed http://purl.obolibrary.org/obo/IAO 0000002 http://purl.obolibrary.org/obo/IAO_0000002 http://purl.obolibrary.org/obo/iao 0000002 http://purl.obolibrary.org/obo/iao_0000002 iao 0000002 iao_0000002</span></li>
+<li><strong>organizational term</strong> (<em>Individual</em>) — <code>IAO_0000121</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000121">http://purl.obolibrary.org/obo/IAO_0000121</a>
+  <span class='search-tokens' style='display:none'>IAO 0000121 IAO_0000121 http://purl.obolibrary.org/obo/IAO 0000121 http://purl.obolibrary.org/obo/IAO_0000121 http://purl.obolibrary.org/obo/iao 0000121 http://purl.obolibrary.org/obo/iao_0000121 iao 0000121 iao_0000121 organizational term</span></li>
+<li><strong>editor note</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000116</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000116">http://purl.obolibrary.org/obo/IAO_0000116</a>
+  <span class='search-tokens' style='display:none'>IAO 0000116 IAO_0000116 editor note http://purl.obolibrary.org/obo/IAO 0000116 http://purl.obolibrary.org/obo/IAO_0000116 http://purl.obolibrary.org/obo/iao 0000116 http://purl.obolibrary.org/obo/iao_0000116 iao 0000116 iao_0000116</span></li>
+<li><strong>Ionic Bond</strong> (<em>Class</em>) — <code>IonicBond</code> — <a href="https://w3id.org/pmd/co/IonicBond">https://w3id.org/pmd/co/IonicBond</a>
+  <span class='search-tokens' style='display:none'>Ionic  Bond Ionic Bond IonicBond https://w3id.org/pmd/co/ Ionic Bond https://w3id.org/pmd/co/ ionic bond https://w3id.org/pmd/co/IonicBond https://w3id.org/pmd/co/ionicbond ionic  bond ionic bond ionicbond</span></li>
+<li><strong>Agent</strong> (<em>Class</em>) — <code>Agent</code> — <a href="http://www.w3.org/ns/prov#Agent">http://www.w3.org/ns/prov#Agent</a>
+  <span class='search-tokens' style='display:none'>Agent agent http://www.w3.org/ns/prov# Agent http://www.w3.org/ns/prov# agent http://www.w3.org/ns/prov#Agent http://www.w3.org/ns/prov#agent</span></li>
+<li><strong>Person</strong> (<em>Class</em>) — <code>Person</code> — <a href="http://www.w3.org/ns/prov#Person">http://www.w3.org/ns/prov#Person</a>
+  <span class='search-tokens' style='display:none'>Person http://www.w3.org/ns/prov# Person http://www.w3.org/ns/prov# person http://www.w3.org/ns/prov#Person http://www.w3.org/ns/prov#person person</span></li>
+<li><strong>Data Cite Metadaten</strong> (<em>Class</em>) — <code>DataCiteMetadata</code> — <a href="https://w3id.org/pmd/co/DataCiteMetadata">https://w3id.org/pmd/co/DataCiteMetadata</a>
+  <span class='search-tokens' style='display:none'>Data  Cite  Metadaten Data Cite Metadata Data Cite Metadaten DataCiteMetadata data  cite  metadaten data cite metadata data cite metadaten datacitemetadata https://w3id.org/pmd/co/ Data Cite Metadata https://w3id.org/pmd/co/ data cite metadata https://w3id.org/pmd/co/DataCiteMetadata https://w3id.org/pmd/co/datacitemetadata</span></li>
+<li><strong>hasSource</strong> (<em>ObjectProperty</em>) — <code>hasSource</code> — <a href="http://www.w3.org/ns/oa#hasSource">http://www.w3.org/ns/oa#hasSource</a>
+  <span class='search-tokens' style='display:none'>has Source has source hasSource hassource http://www.w3.org/ns/oa#has Source http://www.w3.org/ns/oa#has source http://www.w3.org/ns/oa#hasSource http://www.w3.org/ns/oa#hassource</span></li>
+<li><strong>Unit</strong> (<em>Class</em>) — <code>Unit</code> — <a href="http://qudt.org/schema/qudt/Unit">http://qudt.org/schema/qudt/Unit</a>
+  <span class='search-tokens' style='display:none'>Unit http://qudt.org/schema/qudt/ Unit http://qudt.org/schema/qudt/ unit http://qudt.org/schema/qudt/Unit http://qudt.org/schema/qudt/unit unit</span></li>
+<li><strong>Y Coordinate</strong> (<em>Class</em>) — <code>YCoordinate</code> — <a href="https://w3id.org/pmd/co/YCoordinate">https://w3id.org/pmd/co/YCoordinate</a>
+  <span class='search-tokens' style='display:none'>Y  Coordinate Y Coordinate YCoordinate https://w3id.org/pmd/co/Y Coordinate https://w3id.org/pmd/co/YCoordinate https://w3id.org/pmd/co/y coordinate https://w3id.org/pmd/co/ycoordinate y  coordinate y coordinate ycoordinate</span></li>
+<li><strong>generated</strong> (<em>ObjectProperty</em>) — <code>generated</code> — <a href="http://www.w3.org/ns/prov#generated">http://www.w3.org/ns/prov#generated</a>
+  <span class='search-tokens' style='display:none'>generated http://www.w3.org/ns/prov#generated</span></li>
+<li><strong>Assembling Process</strong> (<em>Class</em>) — <code>AssemblingProcess</code> — <a href="https://w3id.org/pmd/co/AssemblingProcess">https://w3id.org/pmd/co/AssemblingProcess</a>
+  <span class='search-tokens' style='display:none'>Assembling  Process Assembling Process AssemblingProcess assembling  process assembling process assemblingprocess https://w3id.org/pmd/co/ Assembling Process https://w3id.org/pmd/co/ assembling process https://w3id.org/pmd/co/AssemblingProcess https://w3id.org/pmd/co/assemblingprocess</span></li>
+<li><strong>Probe</strong> (<em>Class</em>) — <code>Sample</code> — <a href="https://w3id.org/pmd/co/Sample">https://w3id.org/pmd/co/Sample</a>
+  <span class='search-tokens' style='display:none'>Probe Sample https://w3id.org/pmd/co/ Sample https://w3id.org/pmd/co/ sample https://w3id.org/pmd/co/Sample https://w3id.org/pmd/co/sample probe sample</span></li>
+<li><strong>Primärdaten</strong> (<em>Class</em>) — <code>PrimaryData</code> — <a href="https://w3id.org/pmd/co/PrimaryData">https://w3id.org/pmd/co/PrimaryData</a>
+  <span class='search-tokens' style='display:none'>Primary Data PrimaryData Primärdaten https://w3id.org/pmd/co/ Primary Data https://w3id.org/pmd/co/ primary data https://w3id.org/pmd/co/PrimaryData https://w3id.org/pmd/co/primarydata primary data primarydata primärdaten</span></li>
+<li><strong>Material Property</strong> (<em>Class</em>) — <code>MaterialProperty</code> — <a href="https://w3id.org/pmd/co/MaterialProperty">https://w3id.org/pmd/co/MaterialProperty</a>
+  <span class='search-tokens' style='display:none'>Material  Property Material Property MaterialProperty https://w3id.org/pmd/co/ Material Property https://w3id.org/pmd/co/ material property https://w3id.org/pmd/co/MaterialProperty https://w3id.org/pmd/co/materialproperty material  property material property materialproperty</span></li>
+<li><strong>Filter</strong> (<em>Class</em>) — <code>Filter</code> — <a href="https://w3id.org/pmd/co/Filter">https://w3id.org/pmd/co/Filter</a>
+  <span class='search-tokens' style='display:none'>Filter filter https://w3id.org/pmd/co/ Filter https://w3id.org/pmd/co/ filter https://w3id.org/pmd/co/Filter https://w3id.org/pmd/co/filter</span></li>
+<li><strong>superordinate process</strong> (<em>ObjectProperty</em>) — <code>superordinateProcess</code> — <a href="https://w3id.org/pmd/co/superordinateProcess">https://w3id.org/pmd/co/superordinateProcess</a> — <em>alt:</em> has superordinate process
+  <span class='search-tokens' style='display:none'>has superordinate process https://w3id.org/pmd/co/superordinate Process https://w3id.org/pmd/co/superordinate process https://w3id.org/pmd/co/superordinateProcess https://w3id.org/pmd/co/superordinateprocess superordinate Process superordinate process superordinateProcess superordinateprocess</span></li>
+<li><strong>p1</strong> (<em>Entity</em>) — <code>p1</code> — <a href="https://w3id.org/pmd/co/p1">https://w3id.org/pmd/co/p1</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/p1 p1</span></li>
+<li><strong>creator</strong> (<em>AnnotationProperty</em>) — <code>creator</code> — <a href="http://purl.org/dc/elements/1.1/creator">http://purl.org/dc/elements/1.1/creator</a>
+  <span class='search-tokens' style='display:none'>creator http://purl.org/dc/elements/1.1/creator</span></li>
+<li><strong>Pixel pro Nanometer</strong> (<em>Individual</em>) — <code>PixelPerNanometerUnit</code> — <a href="https://w3id.org/pmd/co/PixelPerNanometerUnit">https://w3id.org/pmd/co/PixelPerNanometerUnit</a>
+  <span class='search-tokens' style='display:none'>Pixel Per Nanometer Unit Pixel pro  Nanometer Pixel pro Nanometer PixelPerNanometerUnit https://w3id.org/pmd/co/ Pixel Per Nanometer Unit https://w3id.org/pmd/co/ pixel per nanometer unit https://w3id.org/pmd/co/PixelPerNanometerUnit https://w3id.org/pmd/co/pixelpernanometerunit pixel per nanometer unit pixel pro  nanometer pixel pro nanometer pixelpernanometerunit</span></li>
+<li><strong>Region of Interest</strong> (<em>Class</em>) — <code>RegionOfInterest</code> — <a href="https://w3id.org/pmd/co/RegionOfInterest">https://w3id.org/pmd/co/RegionOfInterest</a>
+  <span class='search-tokens' style='display:none'>Region Of Interest Region of  Interest Region of Interest RegionOfInterest https://w3id.org/pmd/co/ Region Of Interest https://w3id.org/pmd/co/ region of interest https://w3id.org/pmd/co/RegionOfInterest https://w3id.org/pmd/co/regionofinterest region of  interest region of interest regionofinterest</span></li>
+<li><strong>relates to</strong> (<em>ObjectProperty</em>) — <code>relatesTo</code> — <a href="https://w3id.org/pmd/co/relatesTo">https://w3id.org/pmd/co/relatesTo</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/relates To https://w3id.org/pmd/co/relates to https://w3id.org/pmd/co/relatesTo https://w3id.org/pmd/co/relatesto relates To relates to relatesTo relatesto</span></li>
+<li><strong>Laboratory</strong> (<em>Class</em>) — <code>Laboratory</code> — <a href="https://w3id.org/pmd/co/Laboratory">https://w3id.org/pmd/co/Laboratory</a>
+  <span class='search-tokens' style='display:none'>Laboratory https://w3id.org/pmd/co/ Laboratory https://w3id.org/pmd/co/ laboratory https://w3id.org/pmd/co/Laboratory https://w3id.org/pmd/co/laboratory laboratory</span></li>
+<li><strong>Projektidentifikator</strong> (<em>Class</em>) — <code>ProjectIdentifier</code> — <a href="https://w3id.org/pmd/co/ProjectIdentifier">https://w3id.org/pmd/co/ProjectIdentifier</a>
+  <span class='search-tokens' style='display:none'>Project Identifier ProjectIdentifier Projektidentifikator https://w3id.org/pmd/co/ Project Identifier https://w3id.org/pmd/co/ project identifier https://w3id.org/pmd/co/ProjectIdentifier https://w3id.org/pmd/co/projectidentifier project identifier projectidentifier projektidentifikator</span></li>
+<li><strong>Gewicht</strong> (<em>Class</em>) — <code>Weight</code> — <a href="https://w3id.org/pmd/co/Weight">https://w3id.org/pmd/co/Weight</a>
+  <span class='search-tokens' style='display:none'>Gewicht Weight gewicht https://w3id.org/pmd/co/ Weight https://w3id.org/pmd/co/ weight https://w3id.org/pmd/co/Weight https://w3id.org/pmd/co/weight weight</span></li>
+<li><strong>hasSelector</strong> (<em>ObjectProperty</em>) — <code>hasSelector</code> — <a href="http://www.w3.org/ns/oa#hasSelector">http://www.w3.org/ns/oa#hasSelector</a>
+  <span class='search-tokens' style='display:none'>has Selector has selector hasSelector hasselector http://www.w3.org/ns/oa#has Selector http://www.w3.org/ns/oa#has selector http://www.w3.org/ns/oa#hasSelector http://www.w3.org/ns/oa#hasselector</span></li>
+<li><strong>license</strong> (<em>AnnotationProperty</em>) — <code>license</code> — <a href="http://purl.org/dc/elements/1.1/license">http://purl.org/dc/elements/1.1/license</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/elements/1.1/license license</span></li>
+<li><strong>Engineered Material</strong> (<em>Class</em>) — <code>EngineeredMaterial</code> — <a href="https://w3id.org/pmd/co/EngineeredMaterial">https://w3id.org/pmd/co/EngineeredMaterial</a>
+  <span class='search-tokens' style='display:none'>Engineered  Material Engineered Material EngineeredMaterial engineered  material engineered material engineeredmaterial https://w3id.org/pmd/co/ Engineered Material https://w3id.org/pmd/co/ engineered material https://w3id.org/pmd/co/EngineeredMaterial https://w3id.org/pmd/co/engineeredmaterial</span></li>
+<li><strong>has curation status</strong> (<em>AnnotationProperty</em>) — <code>IAO_0000114</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000114">http://purl.obolibrary.org/obo/IAO_0000114</a>
+  <span class='search-tokens' style='display:none'>IAO 0000114 IAO_0000114 has curation status http://purl.obolibrary.org/obo/IAO 0000114 http://purl.obolibrary.org/obo/IAO_0000114 http://purl.obolibrary.org/obo/iao 0000114 http://purl.obolibrary.org/obo/iao_0000114 iao 0000114 iao_0000114</span></li>
+<li><strong>o2</strong> (<em>Entity</em>) — <code>o2</code> — <a href="https://w3id.org/pmd/co/o2">https://w3id.org/pmd/co/o2</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/o2 o2</span></li>
+<li><strong>Materialqualität</strong> (<em>Class</em>) — <code>MaterialQuality</code> — <a href="https://w3id.org/pmd/co/MaterialQuality">https://w3id.org/pmd/co/MaterialQuality</a>
+  <span class='search-tokens' style='display:none'>Material Quality MaterialQuality Materialqualität https://w3id.org/pmd/co/ Material Quality https://w3id.org/pmd/co/ material quality https://w3id.org/pmd/co/MaterialQuality https://w3id.org/pmd/co/materialquality material quality materialquality materialqualität</span></li>
+<li><strong>executes</strong> (<em>ObjectProperty</em>) — <code>executes</code> — <a href="https://w3id.org/pmd/co/executes">https://w3id.org/pmd/co/executes</a>
+  <span class='search-tokens' style='display:none'>executes https://w3id.org/pmd/co/executes</span></li>
+<li><strong>l1</strong> (<em>Entity</em>) — <code>l1</code> — <a href="https://w3id.org/pmd/co/l1">https://w3id.org/pmd/co/l1</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/l1 l1</span></li>
+<li><strong>Creep Stress</strong> (<em>Class</em>) — <code>CreepStress</code> — <a href="https://w3id.org/pmd/co/CreepStress">https://w3id.org/pmd/co/CreepStress</a>
+  <span class='search-tokens' style='display:none'>Creep  Stress Creep Stress CreepStress creep  stress creep stress creepstress https://w3id.org/pmd/co/ Creep Stress https://w3id.org/pmd/co/ creep stress https://w3id.org/pmd/co/CreepStress https://w3id.org/pmd/co/creepstress</span></li>
+<li><strong>Electron Microscopy</strong> (<em>Class</em>) — <code>ElectronMicroscopy</code> — <a href="https://w3id.org/pmd/co/ElectronMicroscopy">https://w3id.org/pmd/co/ElectronMicroscopy</a>
+  <span class='search-tokens' style='display:none'>Electron  Microscopy Electron Microscopy ElectronMicroscopy electron  microscopy electron microscopy electronmicroscopy https://w3id.org/pmd/co/ Electron Microscopy https://w3id.org/pmd/co/ electron microscopy https://w3id.org/pmd/co/ElectronMicroscopy https://w3id.org/pmd/co/electronmicroscopy</span></li>
+<li><strong>Zeit</strong> (<em>Class</em>) — <code>Time</code> — <a href="https://w3id.org/pmd/co/Time">https://w3id.org/pmd/co/Time</a>
+  <span class='search-tokens' style='display:none'>Time Zeit https://w3id.org/pmd/co/ Time https://w3id.org/pmd/co/ time https://w3id.org/pmd/co/Time https://w3id.org/pmd/co/time time zeit</span></li>
+<li><strong>Quadratisch</strong> (<em>Class</em>) — <code>Squared</code> — <a href="https://w3id.org/pmd/co/Squared">https://w3id.org/pmd/co/Squared</a>
+  <span class='search-tokens' style='display:none'>Quadratisch Squared https://w3id.org/pmd/co/ Squared https://w3id.org/pmd/co/ squared https://w3id.org/pmd/co/Squared https://w3id.org/pmd/co/squared quadratisch squared</span></li>
+<li><strong>Oberfläche Eines Einsatzstücks</strong> (<em>Class</em>) — <code>InsertSurface</code> — <a href="https://w3id.org/pmd/co/InsertSurface">https://w3id.org/pmd/co/InsertSurface</a>
+  <span class='search-tokens' style='display:none'>Insert Surface InsertSurface Oberfläche  Eines  Einsatzstücks Oberfläche Eines Einsatzstücks https://w3id.org/pmd/co/ Insert Surface https://w3id.org/pmd/co/ insert surface https://w3id.org/pmd/co/InsertSurface https://w3id.org/pmd/co/insertsurface insert surface insertsurface oberfläche  eines  einsatzstücks oberfläche eines einsatzstücks</span></li>
+<li><strong>requires discussion</strong> (<em>Individual</em>) — <code>IAO_0000428</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000428">http://purl.obolibrary.org/obo/IAO_0000428</a>
+  <span class='search-tokens' style='display:none'>IAO 0000428 IAO_0000428 http://purl.obolibrary.org/obo/IAO 0000428 http://purl.obolibrary.org/obo/IAO_0000428 http://purl.obolibrary.org/obo/iao 0000428 http://purl.obolibrary.org/obo/iao_0000428 iao 0000428 iao_0000428 requires discussion</span></li>
+<li><strong>Mikroskopie</strong> (<em>Class</em>) — <code>MicroscopyProcess</code> — <a href="https://w3id.org/pmd/co/MicroscopyProcess">https://w3id.org/pmd/co/MicroscopyProcess</a>
+  <span class='search-tokens' style='display:none'>Microscopy Process MicroscopyProcess Mikroskopie https://w3id.org/pmd/co/ Microscopy Process https://w3id.org/pmd/co/ microscopy process https://w3id.org/pmd/co/MicroscopyProcess https://w3id.org/pmd/co/microscopyprocess microscopy process microscopyprocess mikroskopie</span></li>
+<li><strong>output of</strong> (<em>ObjectProperty</em>) — <code>outputOf</code> — <a href="https://w3id.org/pmd/co/outputOf">https://w3id.org/pmd/co/outputOf</a> — <em>alt:</em> is output of
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/output Of https://w3id.org/pmd/co/output of https://w3id.org/pmd/co/outputOf https://w3id.org/pmd/co/outputof is output of output Of output of outputOf outputof</span></li>
+<li><strong>process</strong> (<em>ObjectProperty</em>) — <code>process</code> — <a href="https://w3id.org/pmd/co/process">https://w3id.org/pmd/co/process</a> — <em>alt:</em> has process
+  <span class='search-tokens' style='display:none'>has process https://w3id.org/pmd/co/process process</span></li>
+<li><strong>Volume Fraction</strong> (<em>Class</em>) — <code>VolumeFraction</code> — <a href="https://w3id.org/pmd/co/VolumeFraction">https://w3id.org/pmd/co/VolumeFraction</a>
+  <span class='search-tokens' style='display:none'>Volume  Fraction Volume Fraction VolumeFraction https://w3id.org/pmd/co/ Volume Fraction https://w3id.org/pmd/co/ volume fraction https://w3id.org/pmd/co/VolumeFraction https://w3id.org/pmd/co/volumefraction volume  fraction volume fraction volumefraction</span></li>
+<li><strong>Ort</strong> (<em>Class</em>) — <code>Location</code> — <a href="https://w3id.org/pmd/co/Location">https://w3id.org/pmd/co/Location</a>
+  <span class='search-tokens' style='display:none'>Location Ort https://w3id.org/pmd/co/ Location https://w3id.org/pmd/co/ location https://w3id.org/pmd/co/Location https://w3id.org/pmd/co/location location ort</span></li>
+<li><strong>Simulation Process</strong> (<em>Class</em>) — <code>SimulationProcess</code> — <a href="https://w3id.org/pmd/co/SimulationProcess">https://w3id.org/pmd/co/SimulationProcess</a>
+  <span class='search-tokens' style='display:none'>Simulation  Process Simulation Process SimulationProcess https://w3id.org/pmd/co/ Simulation Process https://w3id.org/pmd/co/ simulation process https://w3id.org/pmd/co/SimulationProcess https://w3id.org/pmd/co/simulationprocess simulation  process simulation process simulationprocess</span></li>
+<li><strong>metadata incomplete</strong> (<em>Individual</em>) — <code>IAO_0000123</code> — <a href="http://purl.obolibrary.org/obo/IAO_0000123">http://purl.obolibrary.org/obo/IAO_0000123</a>
+  <span class='search-tokens' style='display:none'>IAO 0000123 IAO_0000123 http://purl.obolibrary.org/obo/IAO 0000123 http://purl.obolibrary.org/obo/IAO_0000123 http://purl.obolibrary.org/obo/iao 0000123 http://purl.obolibrary.org/obo/iao_0000123 iao 0000123 iao_0000123 metadata incomplete</span></li>
+<li><strong>next process</strong> (<em>ObjectProperty</em>) — <code>nextProcess</code> — <a href="https://w3id.org/pmd/co/nextProcess">https://w3id.org/pmd/co/nextProcess</a> — <em>alt:</em> has next process
+  <span class='search-tokens' style='display:none'>has next process https://w3id.org/pmd/co/next Process https://w3id.org/pmd/co/next process https://w3id.org/pmd/co/nextProcess https://w3id.org/pmd/co/nextprocess next Process next process nextProcess nextprocess</span></li>
+<li><strong>Prüfkörpername</strong> (<em>Class</em>) — <code>TestPieceName</code> — <a href="https://w3id.org/pmd/co/TestPieceName">https://w3id.org/pmd/co/TestPieceName</a>
+  <span class='search-tokens' style='display:none'>Prüfkörpername Test Piece Name TestPieceName https://w3id.org/pmd/co/ Test Piece Name https://w3id.org/pmd/co/ test piece name https://w3id.org/pmd/co/TestPieceName https://w3id.org/pmd/co/testpiecename prüfkörpername test piece name testpiecename</span></li>
+<li><strong>Bernd Bayerlein</strong> (<em>Entity</em>) — <code>0000-0002-3717-7104</code> — <a href="https://orcid.org/0000-0002-3717-7104">https://orcid.org/0000-0002-3717-7104</a>
+  <span class='search-tokens' style='display:none'>0000 0002 3717 7104 0000-0002-3717-7104 Bernd  Bayerlein Bernd Bayerlein bernd  bayerlein bernd bayerlein https://orcid.org/0000 0002 3717 7104 https://orcid.org/0000-0002-3717-7104</span></li>
+<li><strong>Metallic Bond</strong> (<em>Class</em>) — <code>MetallicBond</code> — <a href="https://w3id.org/pmd/co/MetallicBond">https://w3id.org/pmd/co/MetallicBond</a>
+  <span class='search-tokens' style='display:none'>Metallic  Bond Metallic Bond MetallicBond https://w3id.org/pmd/co/ Metallic Bond https://w3id.org/pmd/co/ metallic bond https://w3id.org/pmd/co/MetallicBond https://w3id.org/pmd/co/metallicbond metallic  bond metallic bond metallicbond</span></li>
+<li><strong>Digital Material Identifier</strong> (<em>Class</em>) — <code>DigitalMaterialIdentifier</code> — <a href="http://w3id.org/DMI/DigitalMaterialIdentifier">http://w3id.org/DMI/DigitalMaterialIdentifier</a>
+  <span class='search-tokens' style='display:none'>Digital  Material  Identifier Digital Material Identifier DigitalMaterialIdentifier digital  material  identifier digital material identifier digitalmaterialidentifier http://w3id.org/DMI/ Digital Material Identifier http://w3id.org/DMI/DigitalMaterialIdentifier http://w3id.org/dmi/ digital material identifier http://w3id.org/dmi/digitalmaterialidentifier</span></li>
+<li><strong>Optical</strong> (<em>Class</em>) — <code>Optical</code> — <a href="https://w3id.org/pmd/co/Optical">https://w3id.org/pmd/co/Optical</a>
+  <span class='search-tokens' style='display:none'>Optical https://w3id.org/pmd/co/ Optical https://w3id.org/pmd/co/ optical https://w3id.org/pmd/co/Optical https://w3id.org/pmd/co/optical optical</span></li>
+<li><strong>Van der Waals Bindung</strong> (<em>Class</em>) — <code>VanderwaalsBond</code> — <a href="https://w3id.org/pmd/co/VanderwaalsBond">https://w3id.org/pmd/co/VanderwaalsBond</a>
+  <span class='search-tokens' style='display:none'>Van der  Waals  Bindung Van der Waals Bindung Vanderwaals Bond VanderwaalsBond https://w3id.org/pmd/co/ Vanderwaals Bond https://w3id.org/pmd/co/ vanderwaals bond https://w3id.org/pmd/co/VanderwaalsBond https://w3id.org/pmd/co/vanderwaalsbond van der  waals  bindung van der waals bindung vanderwaals bond vanderwaalsbond</span></li>
+<li><strong>Hauptachsendurchmesser</strong> (<em>Class</em>) — <code>MinorAxisDiameter</code> — <a href="https://w3id.org/pmd/co/MinorAxisDiameter">https://w3id.org/pmd/co/MinorAxisDiameter</a>
+  <span class='search-tokens' style='display:none'>Hauptachsendurchmesser Minor Axis Diameter MinorAxisDiameter hauptachsendurchmesser https://w3id.org/pmd/co/ Minor Axis Diameter https://w3id.org/pmd/co/ minor axis diameter https://w3id.org/pmd/co/MinorAxisDiameter https://w3id.org/pmd/co/minoraxisdiameter minor axis diameter minoraxisdiameter</span></li>
+<li><strong>Test Piece Info</strong> (<em>Class</em>) — <code>TestPieceInfo</code> — <a href="https://w3id.org/pmd/co/TestPieceInfo">https://w3id.org/pmd/co/TestPieceInfo</a>
+  <span class='search-tokens' style='display:none'>Test  Piece  Info Test Piece Info TestPieceInfo https://w3id.org/pmd/co/ Test Piece Info https://w3id.org/pmd/co/ test piece info https://w3id.org/pmd/co/TestPieceInfo https://w3id.org/pmd/co/testpieceinfo test  piece  info test piece info testpieceinfo</span></li>
+<li><strong>Thermal Insulation</strong> (<em>Class</em>) — <code>ThermalInsulation</code> — <a href="https://w3id.org/pmd/co/ThermalInsulation">https://w3id.org/pmd/co/ThermalInsulation</a>
+  <span class='search-tokens' style='display:none'>Thermal  Insulation Thermal Insulation ThermalInsulation https://w3id.org/pmd/co/ Thermal Insulation https://w3id.org/pmd/co/ thermal insulation https://w3id.org/pmd/co/ThermalInsulation https://w3id.org/pmd/co/thermalinsulation thermal  insulation thermal insulation thermalinsulation</span></li>
+<li><strong>Elliptical</strong> (<em>Class</em>) — <code>Elliptical</code> — <a href="https://w3id.org/pmd/co/Elliptical">https://w3id.org/pmd/co/Elliptical</a>
+  <span class='search-tokens' style='display:none'>Elliptical elliptical https://w3id.org/pmd/co/ Elliptical https://w3id.org/pmd/co/ elliptical https://w3id.org/pmd/co/Elliptical https://w3id.org/pmd/co/elliptical</span></li>
+<li><strong>Notiz</strong> (<em>Class</em>) — <code>Note</code> — <a href="https://w3id.org/pmd/co/Note">https://w3id.org/pmd/co/Note</a>
+  <span class='search-tokens' style='display:none'>Note Notiz https://w3id.org/pmd/co/ Note https://w3id.org/pmd/co/ note https://w3id.org/pmd/co/Note https://w3id.org/pmd/co/note note notiz</span></li>
+<li><strong>Heat Capacity</strong> (<em>Class</em>) — <code>HeatCapacity</code> — <a href="https://w3id.org/pmd/co/HeatCapacity">https://w3id.org/pmd/co/HeatCapacity</a>
+  <span class='search-tokens' style='display:none'>Heat  Capacity Heat Capacity HeatCapacity heat  capacity heat capacity heatcapacity https://w3id.org/pmd/co/ Heat Capacity https://w3id.org/pmd/co/ heat capacity https://w3id.org/pmd/co/HeatCapacity https://w3id.org/pmd/co/heatcapacity</span></li>
+<li><strong>Materialstruktur</strong> (<em>Class</em>) — <code>MaterialStructure</code> — <a href="https://w3id.org/pmd/co/MaterialStructure">https://w3id.org/pmd/co/MaterialStructure</a>
+  <span class='search-tokens' style='display:none'>Material Structure MaterialStructure Materialstruktur https://w3id.org/pmd/co/ Material Structure https://w3id.org/pmd/co/ material structure https://w3id.org/pmd/co/MaterialStructure https://w3id.org/pmd/co/materialstructure material structure materialstructure materialstruktur</span></li>
+<li><strong>Akkreditierungsdokument</strong> (<em>Class</em>) — <code>AccreditationDocument</code> — <a href="https://w3id.org/pmd/co/AccreditationDocument">https://w3id.org/pmd/co/AccreditationDocument</a>
+  <span class='search-tokens' style='display:none'>Accreditation Document AccreditationDocument Akkreditierungsdokument accreditation document accreditationdocument akkreditierungsdokument https://w3id.org/pmd/co/ Accreditation Document https://w3id.org/pmd/co/ accreditation document https://w3id.org/pmd/co/AccreditationDocument https://w3id.org/pmd/co/accreditationdocument</span></li>
+<li><strong>Chemical Object</strong> (<em>Class</em>) — <code>ChemicalObject</code> — <a href="https://w3id.org/pmd/co/ChemicalObject">https://w3id.org/pmd/co/ChemicalObject</a>
+  <span class='search-tokens' style='display:none'>Chemical  Object Chemical Object ChemicalObject chemical  object chemical object chemicalobject https://w3id.org/pmd/co/ Chemical Object https://w3id.org/pmd/co/ chemical object https://w3id.org/pmd/co/ChemicalObject https://w3id.org/pmd/co/chemicalobject</span></li>
+<li><strong>Prozessidentifikator</strong> (<em>Class</em>) — <code>ProcessIdentifier</code> — <a href="https://w3id.org/pmd/co/ProcessIdentifier">https://w3id.org/pmd/co/ProcessIdentifier</a>
+  <span class='search-tokens' style='display:none'>Process Identifier ProcessIdentifier Prozessidentifikator https://w3id.org/pmd/co/ Process Identifier https://w3id.org/pmd/co/ process identifier https://w3id.org/pmd/co/ProcessIdentifier https://w3id.org/pmd/co/processidentifier process identifier processidentifier prozessidentifikator</span></li>
+<li><strong>Serie</strong> (<em>Class</em>) — <code>NodeSeries</code> — <a href="https://w3id.org/pmd/co/NodeSeries">https://w3id.org/pmd/co/NodeSeries</a> — <em>alt:</em> Knotentyp | Node Type
+  <span class='search-tokens' style='display:none'>Knotentyp |  Node  Type Knotentyp | Node Type Node Series NodeSeries Serie https://w3id.org/pmd/co/ Node Series https://w3id.org/pmd/co/ node series https://w3id.org/pmd/co/NodeSeries https://w3id.org/pmd/co/nodeseries knotentyp |  node  type knotentyp | node type node series nodeseries serie</span></li>
+<li><strong>Prozessdauer</strong> (<em>Class</em>) — <code>ProcessDuration</code> — <a href="https://w3id.org/pmd/co/ProcessDuration">https://w3id.org/pmd/co/ProcessDuration</a>
+  <span class='search-tokens' style='display:none'>Process Duration ProcessDuration Prozessdauer https://w3id.org/pmd/co/ Process Duration https://w3id.org/pmd/co/ process duration https://w3id.org/pmd/co/ProcessDuration https://w3id.org/pmd/co/processduration process duration processduration prozessdauer</span></li>
+<li><strong>Aging Temperature</strong> (<em>Class</em>) — <code>AgingTemperature</code> — <a href="https://w3id.org/pmd/co/AgingTemperature">https://w3id.org/pmd/co/AgingTemperature</a>
+  <span class='search-tokens' style='display:none'>Aging  Temperature Aging Temperature AgingTemperature aging  temperature aging temperature agingtemperature https://w3id.org/pmd/co/ Aging Temperature https://w3id.org/pmd/co/ aging temperature https://w3id.org/pmd/co/AgingTemperature https://w3id.org/pmd/co/agingtemperature</span></li>
+<li><strong>hat Wert</strong> (<em>DatatypeProperty</em>) — <code>value</code> — <a href="https://w3id.org/pmd/co/value">https://w3id.org/pmd/co/value</a>
+  <span class='search-tokens' style='display:none'>hat  Wert hat  wert hat Wert hat wert https://w3id.org/pmd/co/value value</span></li>
+<li><strong>Rechteckig</strong> (<em>Class</em>) — <code>Rectangular</code> — <a href="https://w3id.org/pmd/co/Rectangular">https://w3id.org/pmd/co/Rectangular</a>
+  <span class='search-tokens' style='display:none'>Rechteckig Rectangular https://w3id.org/pmd/co/ Rectangular https://w3id.org/pmd/co/ rectangular https://w3id.org/pmd/co/Rectangular https://w3id.org/pmd/co/rectangular rechteckig rectangular</span></li>
+<li><strong>Computerknoten</strong> (<em>Class</em>) — <code>ComputingNode</code> — <a href="https://w3id.org/pmd/co/ComputingNode">https://w3id.org/pmd/co/ComputingNode</a>
+  <span class='search-tokens' style='display:none'>Computerknoten Computing Node ComputingNode computerknoten computing node computingnode https://w3id.org/pmd/co/ Computing Node https://w3id.org/pmd/co/ computing node https://w3id.org/pmd/co/ComputingNode https://w3id.org/pmd/co/computingnode</span></li>
+<li><strong>Node Model</strong> (<em>Class</em>) — <code>NodeModel</code> — <a href="https://w3id.org/pmd/co/NodeModel">https://w3id.org/pmd/co/NodeModel</a>
+  <span class='search-tokens' style='display:none'>Node  Model Node Model NodeModel https://w3id.org/pmd/co/ Node Model https://w3id.org/pmd/co/ node model https://w3id.org/pmd/co/NodeModel https://w3id.org/pmd/co/nodemodel node  model node model nodemodel</span></li>
+<li><strong>Conditioning Process</strong> (<em>Class</em>) — <code>ConditioningProcess</code> — <a href="https://w3id.org/pmd/co/ConditioningProcess">https://w3id.org/pmd/co/ConditioningProcess</a>
+  <span class='search-tokens' style='display:none'>Conditioning  Process Conditioning Process ConditioningProcess conditioning  process conditioning process conditioningprocess https://w3id.org/pmd/co/ Conditioning Process https://w3id.org/pmd/co/ conditioning process https://w3id.org/pmd/co/ConditioningProcess https://w3id.org/pmd/co/conditioningprocess</span></li>
+<li><strong>Metadata</strong> (<em>Class</em>) — <code>Metadata</code> — <a href="https://w3id.org/pmd/co/Metadata">https://w3id.org/pmd/co/Metadata</a>
+  <span class='search-tokens' style='display:none'>Metadata https://w3id.org/pmd/co/ Metadata https://w3id.org/pmd/co/ metadata https://w3id.org/pmd/co/Metadata https://w3id.org/pmd/co/metadata metadata</span></li>
+<li><strong>max value</strong> (<em>DatatypeProperty</em>) — <code>maxValue</code> — <a href="https://w3id.org/pmd/co/maxValue">https://w3id.org/pmd/co/maxValue</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/max Value https://w3id.org/pmd/co/max value https://w3id.org/pmd/co/maxValue https://w3id.org/pmd/co/maxvalue max Value max value maxValue maxvalue</span></li>
+<li><strong>Fraction</strong> (<em>Class</em>) — <code>Fraction</code> — <a href="https://w3id.org/pmd/co/Fraction">https://w3id.org/pmd/co/Fraction</a>
+  <span class='search-tokens' style='display:none'>Fraction fraction https://w3id.org/pmd/co/ Fraction https://w3id.org/pmd/co/ fraction https://w3id.org/pmd/co/Fraction https://w3id.org/pmd/co/fraction</span></li>
+<li><strong>characteristic of</strong> (<em>ObjectProperty</em>) — <code>characteristicOf</code> — <a href="https://w3id.org/pmd/co/characteristicOf">https://w3id.org/pmd/co/characteristicOf</a> — <em>alt:</em> is characteristic of
+  <span class='search-tokens' style='display:none'>characteristic Of characteristic of characteristicOf characteristicof https://w3id.org/pmd/co/characteristic Of https://w3id.org/pmd/co/characteristic of https://w3id.org/pmd/co/characteristicOf https://w3id.org/pmd/co/characteristicof is characteristic of</span></li>
+<li><strong>fragment path</strong> (<em>DatatypeProperty</em>) — <code>fragmentPath</code> — <a href="https://w3id.org/pmd/co/fragmentPath">https://w3id.org/pmd/co/fragmentPath</a>
+  <span class='search-tokens' style='display:none'>fragment Path fragment path fragmentPath fragmentpath https://w3id.org/pmd/co/fragment Path https://w3id.org/pmd/co/fragment path https://w3id.org/pmd/co/fragmentPath https://w3id.org/pmd/co/fragmentpath</span></li>
+<li><strong>Description</strong> (<em>Class</em>) — <code>Description</code> — <a href="https://w3id.org/pmd/co/Description">https://w3id.org/pmd/co/Description</a>
+  <span class='search-tokens' style='display:none'>Description description https://w3id.org/pmd/co/ Description https://w3id.org/pmd/co/ description https://w3id.org/pmd/co/Description https://w3id.org/pmd/co/description</span></li>
+<li><strong>p2</strong> (<em>Entity</em>) — <code>p2</code> — <a href="https://w3id.org/pmd/co/p2">https://w3id.org/pmd/co/p2</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/p2 p2</span></li>
+<li><strong>previous process</strong> (<em>ObjectProperty</em>) — <code>previousProcess</code> — <a href="https://w3id.org/pmd/co/previousProcess">https://w3id.org/pmd/co/previousProcess</a> — <em>alt:</em> has previous process
+  <span class='search-tokens' style='display:none'>has previous process https://w3id.org/pmd/co/previous Process https://w3id.org/pmd/co/previous process https://w3id.org/pmd/co/previousProcess https://w3id.org/pmd/co/previousprocess previous Process previous process previousProcess previousprocess</span></li>
+<li><strong>Mechanical Testing Process</strong> (<em>Class</em>) — <code>MechanicalTestingProcess</code> — <a href="https://w3id.org/pmd/co/MechanicalTestingProcess">https://w3id.org/pmd/co/MechanicalTestingProcess</a>
+  <span class='search-tokens' style='display:none'>Mechanical  Testing  Process Mechanical Testing Process MechanicalTestingProcess https://w3id.org/pmd/co/ Mechanical Testing Process https://w3id.org/pmd/co/ mechanical testing process https://w3id.org/pmd/co/MechanicalTestingProcess https://w3id.org/pmd/co/mechanicaltestingprocess mechanical  testing  process mechanical testing process mechanicaltestingprocess</span></li>
+<li><strong>Process</strong> (<em>Class</em>) — <code>Process</code> — <a href="https://w3id.org/pmd/co/Process">https://w3id.org/pmd/co/Process</a>
+  <span class='search-tokens' style='display:none'>Process https://w3id.org/pmd/co/ Process https://w3id.org/pmd/co/ process https://w3id.org/pmd/co/Process https://w3id.org/pmd/co/process process</span></li>
+<li><strong>Set Point</strong> (<em>Class</em>) — <code>SetPoint</code> — <a href="https://w3id.org/pmd/co/SetPoint">https://w3id.org/pmd/co/SetPoint</a>
+  <span class='search-tokens' style='display:none'>Set  Point Set Point SetPoint https://w3id.org/pmd/co/ Set Point https://w3id.org/pmd/co/ set point https://w3id.org/pmd/co/SetPoint https://w3id.org/pmd/co/setpoint set  point set point setpoint</span></li>
+<li><strong>state</strong> (<em>ObjectProperty</em>) — <code>state</code> — <a href="https://w3id.org/pmd/co/state">https://w3id.org/pmd/co/state</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/state state</span></li>
+<li><strong>Calibration Document</strong> (<em>Class</em>) — <code>CalibrationDocument</code> — <a href="https://w3id.org/pmd/co/CalibrationDocument">https://w3id.org/pmd/co/CalibrationDocument</a>
+  <span class='search-tokens' style='display:none'>Calibration  Document Calibration Document CalibrationDocument calibration  document calibration document calibrationdocument https://w3id.org/pmd/co/ Calibration Document https://w3id.org/pmd/co/ calibration document https://w3id.org/pmd/co/CalibrationDocument https://w3id.org/pmd/co/calibrationdocument</span></li>
+<li><strong>Sequenznummer</strong> (<em>Class</em>) — <code>SequenceNumber</code> — <a href="https://w3id.org/pmd/co/SequenceNumber">https://w3id.org/pmd/co/SequenceNumber</a>
+  <span class='search-tokens' style='display:none'>Sequence Number SequenceNumber Sequenznummer https://w3id.org/pmd/co/ Sequence Number https://w3id.org/pmd/co/ sequence number https://w3id.org/pmd/co/SequenceNumber https://w3id.org/pmd/co/sequencenumber sequence number sequencenumber sequenznummer</span></li>
+<li><strong>Manufacturer Role</strong> (<em>Class</em>) — <code>ManufacturerRole</code> — <a href="https://w3id.org/pmd/co/ManufacturerRole">https://w3id.org/pmd/co/ManufacturerRole</a>
+  <span class='search-tokens' style='display:none'>Manufacturer  Role Manufacturer Role ManufacturerRole https://w3id.org/pmd/co/ Manufacturer Role https://w3id.org/pmd/co/ manufacturer role https://w3id.org/pmd/co/ManufacturerRole https://w3id.org/pmd/co/manufacturerrole manufacturer  role manufacturer role manufacturerrole</span></li>
+<li><strong>composed of</strong> (<em>ObjectProperty</em>) — <code>composedOf</code> — <a href="https://w3id.org/pmd/co/composedOf">https://w3id.org/pmd/co/composedOf</a>
+  <span class='search-tokens' style='display:none'>composed Of composed of composedOf composedof https://w3id.org/pmd/co/composed Of https://w3id.org/pmd/co/composed of https://w3id.org/pmd/co/composedOf https://w3id.org/pmd/co/composedof</span></li>
+<li><strong>Inspection Document</strong> (<em>Class</em>) — <code>InspectionDocument</code> — <a href="https://w3id.org/pmd/co/InspectionDocument">https://w3id.org/pmd/co/InspectionDocument</a>
+  <span class='search-tokens' style='display:none'>Inspection  Document Inspection Document InspectionDocument https://w3id.org/pmd/co/ Inspection Document https://w3id.org/pmd/co/ inspection document https://w3id.org/pmd/co/InspectionDocument https://w3id.org/pmd/co/inspectiondocument inspection  document inspection document inspectiondocument</span></li>
+<li><strong>used</strong> (<em>ObjectProperty</em>) — <code>used</code> — <a href="http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#used used</span></li>
+<li><strong>Prüfgeschwindigkeit</strong> (<em>Class</em>) — <code>TestingRate</code> — <a href="https://w3id.org/pmd/co/TestingRate">https://w3id.org/pmd/co/TestingRate</a>
+  <span class='search-tokens' style='display:none'>Prüfgeschwindigkeit Testing Rate TestingRate https://w3id.org/pmd/co/ Testing Rate https://w3id.org/pmd/co/ testing rate https://w3id.org/pmd/co/TestingRate https://w3id.org/pmd/co/testingrate prüfgeschwindigkeit testing rate testingrate</span></li>
+<li><strong>Microscope</strong> (<em>Class</em>) — <code>Micropscope</code> — <a href="https://w3id.org/pmd/co/Micropscope">https://w3id.org/pmd/co/Micropscope</a>
+  <span class='search-tokens' style='display:none'>Micropscope Microscope https://w3id.org/pmd/co/ Micropscope https://w3id.org/pmd/co/ micropscope https://w3id.org/pmd/co/Micropscope https://w3id.org/pmd/co/micropscope micropscope microscope</span></li>
+<li><strong>Object</strong> (<em>Class</em>) — <code>Object</code> — <a href="https://w3id.org/pmd/co/Object">https://w3id.org/pmd/co/Object</a>
+  <span class='search-tokens' style='display:none'>Object https://w3id.org/pmd/co/ Object https://w3id.org/pmd/co/ object https://w3id.org/pmd/co/Object https://w3id.org/pmd/co/object object</span></li>
+<li><strong>wasAssociatedWith</strong> (<em>ObjectProperty</em>) — <code>wasAssociatedWith</code> — <a href="http://www.w3.org/ns/prov#wasAssociatedWith">http://www.w3.org/ns/prov#wasAssociatedWith</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Associated With http://www.w3.org/ns/prov#was associated with http://www.w3.org/ns/prov#wasAssociatedWith http://www.w3.org/ns/prov#wasassociatedwith was Associated With was associated with wasAssociatedWith wasassociatedwith</span></li>
+<li><strong>Aging Time</strong> (<em>Class</em>) — <code>AgingTime</code> — <a href="https://w3id.org/pmd/co/AgingTime">https://w3id.org/pmd/co/AgingTime</a>
+  <span class='search-tokens' style='display:none'>Aging  Time Aging Time AgingTime aging  time aging time agingtime https://w3id.org/pmd/co/ Aging Time https://w3id.org/pmd/co/ aging time https://w3id.org/pmd/co/AgingTime https://w3id.org/pmd/co/agingtime</span></li>
+<li><strong>Ausrichtung Der Halterungen</strong> (<em>Class</em>) — <code>GripsAlignment</code> — <a href="https://w3id.org/pmd/co/GripsAlignment">https://w3id.org/pmd/co/GripsAlignment</a>
+  <span class='search-tokens' style='display:none'>Ausrichtung  Der  Halterungen Ausrichtung Der Halterungen Grips Alignment GripsAlignment ausrichtung  der  halterungen ausrichtung der halterungen grips alignment gripsalignment https://w3id.org/pmd/co/ Grips Alignment https://w3id.org/pmd/co/ grips alignment https://w3id.org/pmd/co/GripsAlignment https://w3id.org/pmd/co/gripsalignment</span></li>
+<li><strong>Entity</strong> (<em>Class</em>) — <code>Entity</code> — <a href="http://www.w3.org/ns/prov#Entity">http://www.w3.org/ns/prov#Entity</a>
+  <span class='search-tokens' style='display:none'>Entity entity http://www.w3.org/ns/prov# Entity http://www.w3.org/ns/prov# entity http://www.w3.org/ns/prov#Entity http://www.w3.org/ns/prov#entity</span></li>
+<li><strong>subordinate process</strong> (<em>ObjectProperty</em>) — <code>subordinateProcess</code> — <a href="https://w3id.org/pmd/co/subordinateProcess">https://w3id.org/pmd/co/subordinateProcess</a> — <em>alt:</em> has subordinate process
+  <span class='search-tokens' style='display:none'>has subordinate process https://w3id.org/pmd/co/subordinate Process https://w3id.org/pmd/co/subordinate process https://w3id.org/pmd/co/subordinateProcess https://w3id.org/pmd/co/subordinateprocess subordinate Process subordinate process subordinateProcess subordinateprocess</span></li>
+<li><strong>Gewichtete X Koordinate</strong> (<em>Class</em>) — <code>WeightedXCoordinate</code> — <a href="https://w3id.org/pmd/co/WeightedXCoordinate">https://w3id.org/pmd/co/WeightedXCoordinate</a>
+  <span class='search-tokens' style='display:none'>Gewichtete X  Koordinate Gewichtete X Koordinate WeightedX Coordinate WeightedXCoordinate gewichtete x  koordinate gewichtete x koordinate https://w3id.org/pmd/co/ WeightedX Coordinate https://w3id.org/pmd/co/ weightedx coordinate https://w3id.org/pmd/co/WeightedXCoordinate https://w3id.org/pmd/co/weightedxcoordinate weightedx coordinate weightedxcoordinate</span></li>
+<li><strong>Mounting Process</strong> (<em>Class</em>) — <code>MountingProcess</code> — <a href="https://w3id.org/pmd/co/MountingProcess">https://w3id.org/pmd/co/MountingProcess</a>
+  <span class='search-tokens' style='display:none'>Mounting  Process Mounting Process MountingProcess https://w3id.org/pmd/co/ Mounting Process https://w3id.org/pmd/co/ mounting process https://w3id.org/pmd/co/MountingProcess https://w3id.org/pmd/co/mountingprocess mounting  process mounting process mountingprocess</span></li>
+<li><strong>Value Object</strong> (<em>Class</em>) — <code>ValueObject</code> — <a href="https://w3id.org/pmd/co/ValueObject">https://w3id.org/pmd/co/ValueObject</a>
+  <span class='search-tokens' style='display:none'>Value  Object Value Object ValueObject https://w3id.org/pmd/co/ Value Object https://w3id.org/pmd/co/ value object https://w3id.org/pmd/co/ValueObject https://w3id.org/pmd/co/valueobject value  object value object valueobject</span></li>
+<li><strong>Laboratory Role</strong> (<em>Class</em>) — <code>LaboratoryRole</code> — <a href="https://w3id.org/pmd/co/LaboratoryRole">https://w3id.org/pmd/co/LaboratoryRole</a>
+  <span class='search-tokens' style='display:none'>Laboratory  Role Laboratory Role LaboratoryRole https://w3id.org/pmd/co/ Laboratory Role https://w3id.org/pmd/co/ laboratory role https://w3id.org/pmd/co/LaboratoryRole https://w3id.org/pmd/co/laboratoryrole laboratory  role laboratory role laboratoryrole</span></li>
+<li><strong>o1</strong> (<em>Entity</em>) — <code>o1</code> — <a href="https://w3id.org/pmd/co/o1">https://w3id.org/pmd/co/o1</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pmd/co/o1 o1</span></li>
+<li><strong>Bild</strong> (<em>Class</em>) — <code>Image</code> — <a href="https://w3id.org/pmd/co/Image">https://w3id.org/pmd/co/Image</a>
+  <span class='search-tokens' style='display:none'>Bild Image bild https://w3id.org/pmd/co/ Image https://w3id.org/pmd/co/ image https://w3id.org/pmd/co/Image https://w3id.org/pmd/co/image image</span></li>
+<li><strong>Querschnittsermittlung</strong> (<em>Class</em>) — <code>CrossSectionDetermination</code> — <a href="https://w3id.org/pmd/co/CrossSectionDetermination">https://w3id.org/pmd/co/CrossSectionDetermination</a>
+  <span class='search-tokens' style='display:none'>Cross Section Determination CrossSectionDetermination Querschnittsermittlung cross section determination crosssectiondetermination https://w3id.org/pmd/co/ Cross Section Determination https://w3id.org/pmd/co/ cross section determination https://w3id.org/pmd/co/CrossSectionDetermination https://w3id.org/pmd/co/crosssectiondetermination querschnittsermittlung</span></li>
+<li><strong>Chemical Entity</strong> (<em>Class</em>) — <code>CHEBI_24431</code> — <a href="http://purl.obolibrary.org/obo/CHEBI_24431">http://purl.obolibrary.org/obo/CHEBI_24431</a>
+  <span class='search-tokens' style='display:none'>CHEBI 24431 CHEBI_24431 Chemical  Entity Chemical Entity chebi 24431 chebi_24431 chemical  entity chemical entity http://purl.obolibrary.org/obo/CHEBI 24431 http://purl.obolibrary.org/obo/CHEBI_24431 http://purl.obolibrary.org/obo/chebi 24431 http://purl.obolibrary.org/obo/chebi_24431</span></li>
+<li><strong>Prüfstück Name</strong> (<em>Class</em>) — <code>SpecimenName</code> — <a href="https://w3id.org/pmd/co/SpecimenName">https://w3id.org/pmd/co/SpecimenName</a>
+  <span class='search-tokens' style='display:none'>Prüfstück  Name Prüfstück Name Specimen Name SpecimenName https://w3id.org/pmd/co/ Specimen Name https://w3id.org/pmd/co/ specimen name https://w3id.org/pmd/co/SpecimenName https://w3id.org/pmd/co/specimenname prüfstück  name prüfstück name specimen name specimenname</span></li>
+<li><strong>altLabel</strong> (<em>AnnotationProperty</em>) — <code>altLabel</code> — <a href="http://www.w3.org/2004/02/skos/core#altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a>
+  <span class='search-tokens' style='display:none'>alt Label alt label altLabel altlabel http://www.w3.org/2004/02/skos/core#alt Label http://www.w3.org/2004/02/skos/core#alt label http://www.w3.org/2004/02/skos/core#altLabel http://www.w3.org/2004/02/skos/core#altlabel</span></li>
+<li><strong>Manufacturing Node</strong> (<em>Class</em>) — <code>ManufacturingNode</code> — <a href="https://w3id.org/pmd/co/ManufacturingNode">https://w3id.org/pmd/co/ManufacturingNode</a>
+  <span class='search-tokens' style='display:none'>Manufacturing  Node Manufacturing Node ManufacturingNode https://w3id.org/pmd/co/ Manufacturing Node https://w3id.org/pmd/co/ manufacturing node https://w3id.org/pmd/co/ManufacturingNode https://w3id.org/pmd/co/manufacturingnode manufacturing  node manufacturing node manufacturingnode</span></li>
+<li><strong>title</strong> (<em>AnnotationProperty</em>) — <code>title</code> — <a href="http://purl.org/dc/elements/1.1/title">http://purl.org/dc/elements/1.1/title</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/elements/1.1/title title</span></li>
+<li><strong>Mechanisch</strong> (<em>Class</em>) — <code>Mechanical</code> — <a href="https://w3id.org/pmd/co/Mechanical">https://w3id.org/pmd/co/Mechanical</a>
+  <span class='search-tokens' style='display:none'>Mechanical Mechanisch https://w3id.org/pmd/co/ Mechanical https://w3id.org/pmd/co/ mechanical https://w3id.org/pmd/co/Mechanical https://w3id.org/pmd/co/mechanical mechanical mechanisch</span></li>
+<li><strong>Bügelmessschraube</strong> (<em>Class</em>) — <code>MicrometerGauge</code> — <a href="https://w3id.org/pmd/co/MicrometerGauge">https://w3id.org/pmd/co/MicrometerGauge</a>
+  <span class='search-tokens' style='display:none'>Bügelmessschraube Micrometer Gauge MicrometerGauge bügelmessschraube https://w3id.org/pmd/co/ Micrometer Gauge https://w3id.org/pmd/co/ micrometer gauge https://w3id.org/pmd/co/MicrometerGauge https://w3id.org/pmd/co/micrometergauge micrometer gauge micrometergauge</span></li>
+<li><strong>hasIdentifier</strong> (<em>ObjectProperty</em>) — <code>hasIdentifier</code> — <a href="http://purl.org/spar/datacite/hasIdentifier">http://purl.org/spar/datacite/hasIdentifier</a>
+  <span class='search-tokens' style='display:none'>has Identifier has identifier hasIdentifier hasidentifier http://purl.org/spar/datacite/has Identifier http://purl.org/spar/datacite/has identifier http://purl.org/spar/datacite/hasIdentifier http://purl.org/spar/datacite/hasidentifier</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

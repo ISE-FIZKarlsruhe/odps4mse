@@ -1,0 +1,312 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+Steifigkeit	Stiffness	Class	https://w3id.org/pmd/co/Stiffness			
+Akustisch	Acoustical	Class	https://w3id.org/pmd/co/Acoustical			
+Base Material	BaseMaterial	Class	https://w3id.org/pmd/co/BaseMaterial			
+Analysing Process	AnalysingProcess	Class	https://w3id.org/pmd/co/AnalysingProcess			
+term editor	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
+example	example	AnnotationProperty	http://www.w3.org/2004/02/skos/core#example			
+Node Name	NodeName	Class	https://w3id.org/pmd/co/NodeName			
+participant	participant	ObjectProperty	https://w3id.org/pmd/co/participant	has participant		
+Identifier	Identifier	Class	https://w3id.org/pmd/co/Identifier			
+Bereitgestellter Identifikator	ProvidedIdentifier	Class	https://w3id.org/pmd/co/ProvidedIdentifier			
+Jörg Waitelonis	0000-0001-7192-7143	Entity	https://orcid.org/0000-0001-7192-7143			
+Test Piece Classification	TestPieceClassification	Class	https://w3id.org/pmd/co/TestPieceClassification			
+Kovalente Bindung	CovalentBond	Class	https://w3id.org/pmd/co/CovalentBond			
+Dimension Measuring Device	DimensionMeasuringDevice	Class	https://w3id.org/pmd/co/DimensionMeasuringDevice			
+Method	Method	Class	https://w3id.org/pmd/co/Method			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+Mass Fraction	MassFraction	Class	https://w3id.org/pmd/co/MassFraction			
+Halterungsklemmen	Grips	Class	https://w3id.org/pmd/co/Grips			
+input	input	ObjectProperty	https://w3id.org/pmd/co/input	has input		
+Messschieber	Caliper	Class	https://w3id.org/pmd/co/Caliper			
+symbol	symbol	AnnotationProperty	https://w3id.org/pmd/co/symbol			
+Koordinaten	Coordinates	Class	https://w3id.org/pmd/co/Coordinates			
+Prüfkörper	TestPiece	Class	https://w3id.org/pmd/co/TestPiece			
+Semi Crystalline Structure	SemiCrystallineStructure	Class	https://w3id.org/pmd/co/SemiCrystallineStructure			
+Henk Birkholz	0000-0002-9014-2920	Entity	https://orcid.org/0000-0002-9014-2920			
+Aging Process	AgingProcess	Class	https://w3id.org/pmd/co/AgingProcess			
+Manufacture Process	ManufacturingProcess	Class	https://w3id.org/pmd/co/ManufacturingProcess			
+Base fraction	BaseFraction	Class	https://w3id.org/pmd/co/BaseFraction			
+belongsToProject	belongsToProject	ObjectProperty	https://w3id.org/pmd/co/belongsToProject			
+Material Designation	MaterialDesignation	Class	https://w3id.org/pmd/co/MaterialDesignation			
+Hersteller	Manufacturer	Class	https://w3id.org/pmd/co/Manufacturer			
+Processing Node	ProcessingNode	Class	https://w3id.org/pmd/co/ProcessingNode			
+Simulationsknoten	SimulationNode	Class	https://w3id.org/pmd/co/SimulationNode			
+Schlitten	Slide	Class	https://w3id.org/pmd/co/Slide			
+Cross Section Area	CrossSectionArea	Class	https://w3id.org/pmd/co/CrossSectionArea			
+o3	o3	Entity	https://w3id.org/pmd/co/o3			
+min value	minValue	DatatypeProperty	https://w3id.org/pmd/co/minValue			
+Qualifying Node Annotation	QualifyingNodeAnnotation	Class	https://w3id.org/pmd/co/QualifyingNodeAnnotation			
+Datenerfassungsrate	DataAcquisitionRate	Class	https://w3id.org/pmd/co/DataAcquisitionRate			
+Rohling	Blank	Class	https://w3id.org/pmd/co/Blank			
+co	co	Entity	https://w3id.org/pmd/co			The PMD Core Ontology (PMDco) is a comprehensive framework for representing knowledge that encompasses fundamental concepts from the domains of materials science and engineering (MSE). The PMDco has been designed as a mid-level ontology to establish a connection between specific MSE application ontologies and the domain neutral concepts found in established top-level ontologies. The primary goal of the PMDco is to promote interoperability between diverse domains. PMDco's class structure is both understandable and extensible, making it an efficient tool for organizing MSE knowledge. It serves as a semantic intermediate layer that unifies MSE knowledge representations, enabling data and metadata to be systematically integrated on key terms within the MSE domain. With PMDco, it is possible to seamlessly trace data generation. The design of PMDco is based on the W3C Provenance Ontology (PROV-O), which provides a standard framework for capturing the generation, derivation, and attribution of resources. By building on this foundation, PMDco facilitates the integration of data from various sources and the creation of complex workflows. In summary, PMDco is a valuable tool for researchers and practitioners in the MSE domains. It provides a common language for representing and sharing knowledge, allowing for efficient collaboration and promoting interoperability between diverse domains. Its design allows for the systematic integration of data and metadata, enabling seamless traceability of data generation. Overall, PMDco is a crucial step towards a unified and comprehensive understanding of the MSE domain. PMDco at GitHub: https://github.com/materialdigital/core-ontology
+Demounting Process	DemountingProcess	Class	https://w3id.org/pmd/co/DemountingProcess			
+Norm	Norm	Class	https://w3id.org/pmd/co/Norm			
+Extension	Extension	Class	https://w3id.org/pmd/co/Extension			
+pending final vetting	IAO_0000125	Individual	http://purl.obolibrary.org/obo/IAO_0000125			
+Crystalline Structure	CrystallineStructure	Class	https://w3id.org/pmd/co/CrystallineStructure			
+Geometry Changing Process	GeometryChangingProcess	Class	https://w3id.org/pmd/co/GeometryChangingProcess			
+Pixel	Pixel	Class	https://w3id.org/pmd/co/Pixel			
+Komponente	Component	Class	https://w3id.org/pmd/co/Component			
+unit	unit	ObjectProperty	https://w3id.org/pmd/co/unit	has unit		Examples for rdsf:range are units from qudt or wikidata or own defindes units.
+Role	Role	Class	http://www.w3.org/ns/prov#Role			
+definition	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+Furnace	Furnace	Class	https://w3id.org/pmd/co/Furnace			
+Medium	Medium	Class	https://w3id.org/pmd/co/Medium			
+metadata complete	IAO_0000120	Individual	http://purl.obolibrary.org/obo/IAO_0000120			
+Fragment Selector	FragmentSelector	Class	http://www.w3.org/ns/oa#FragmentSelector			
+Modulus Of Elasticity	ModulusOfElasticity	Class	https://w3id.org/pmd/co/ModulusOfElasticity	E-Modul		
+Area	Area	Class	https://w3id.org/pmd/co/Area			
+editorialNote	editorialNote	AnnotationProperty	http://www.w3.org/ns/prov#editorialNote			
+definitionSource	definitionSource	AnnotationProperty	https://w3id.org/pmd/co/definitionSource			
+Temperature	Temperature	Class	https://w3id.org/pmd/co/Temperature			
+Not Detected	NotDetected	Class	https://w3id.org/pmd/co/NotDetected			
+Sascha Fliegener	0009-0000-6469-744X	Entity	https://orcid.org/0009-0000-6469-744X			
+Arbeitsbereich	WorkingRange	Class	https://w3id.org/pmd/co/WorkingRange			
+Index	Index	Class	https://w3id.org/pmd/co/Index			
+x path	xPath	DatatypeProperty	https://w3id.org/pmd/co/xPath			
+Length Changing Process	LengthChangingProcess	Class	https://w3id.org/pmd/co/LengthChangingProcess			This class is used as an example of SWRL based reasoning. An instance belongs to the class if there are two embracing processes (previous and next) that determine different values after a length measurement (see SWRL rule).
+to value	toValue	DatatypeProperty	https://w3id.org/pmd/co/toValue			
+constraints	constraints	AnnotationProperty	http://www.w3.org/ns/prov#constraints			
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+Initiator	Initiator	Class	https://w3id.org/pmd/co/Initiator			
+characteristic	characteristic	ObjectProperty	https://w3id.org/pmd/co/characteristic	has characteristic		
+Projekt	Project	Class	https://w3id.org/pmd/co/Project			
+isRuleEnabled	isRuleEnabled	AnnotationProperty	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled			
+Spannung	Stress	Class	https://w3id.org/pmd/co/Stress			
+Radius	Radius	Class	https://w3id.org/pmd/co/Radius			
+Radiological	Radiological	Class	https://w3id.org/pmd/co/Radiological			
+from value	fromValue	DatatypeProperty	https://w3id.org/pmd/co/fromValue			
+Digital Material Identifier	DigitalMaterialIdentifier	Class	https://w3id.org/pmd/co/DigitalMaterialIdentifier			
+wasUsedBy	wasUsedBy	ObjectProperty	http://www.w3.org/ns/prov#wasUsedBy			
+Document	Document	Class	https://w3id.org/pmd/co/Document			
+Operator	Operator	Class	https://w3id.org/pmd/co/Operator			
+Thermisch	Thermal	Class	https://w3id.org/pmd/co/Thermal			
+Partikelnummer	ParticleNumber	Class	https://w3id.org/pmd/co/ParticleNumber			
+Extensometer	Extensometer	Class	https://w3id.org/pmd/co/Extensometer			
+Heat Treatment Process	HeatTreatmentProcess	Class	https://w3id.org/pmd/co/HeatTreatmentProcess			
+Knoten-Seriennummer	NodeSerialNumber	Class	https://w3id.org/pmd/co/NodeSerialNumber			
+Node Info	NodeInfo	Class	https://w3id.org/pmd/co/NodeInfo			
+Length	Length	Class	https://w3id.org/pmd/co/Length			
+resource	resource	ObjectProperty	https://w3id.org/pmd/co/resource	has resource		
+created	created	AnnotationProperty	http://purl.org/dc/terms/created			
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+Kraft	Force	Class	https://w3id.org/pmd/co/Force			
+Kraftmessdose	LoadCell	Class	https://w3id.org/pmd/co/LoadCell			
+Magnetic	Magnetic	Class	https://w3id.org/pmd/co/Magnetic			
+Department Role	DepartmentRole	Class	https://w3id.org/pmd/co/DepartmentRole			
+Thermoelement	Thermocouple	Class	https://w3id.org/pmd/co/Thermocouple			
+Genauigkeit	Precision	Class	https://w3id.org/pmd/co/Precision			
+v1	v1	Entity	https://w3id.org/pmd/co/v1			
+Kalibrierbereich	CalibrationRange	Class	https://w3id.org/pmd/co/CalibrationRange			
+Organization	Organization	Class	http://www.w3.org/ns/prov#Organization			
+Coating Designation	CoatingDesignation	Class	https://w3id.org/pmd/co/CoatingDesignation			
+Hydrogen Bond	HydrogenBond	Class	https://w3id.org/pmd/co/HydrogenBond			
+Minor axis diameter	MajorAxisDiameter	Class	https://w3id.org/pmd/co/MajorAxisDiameter			
+ready for release	IAO_0000122	Individual	http://purl.obolibrary.org/obo/IAO_0000122			
+Datum	Date	Class	https://w3id.org/pmd/co/Date			
+input of	inputOf	ObjectProperty	https://w3id.org/pmd/co/inputOf	is input of		
+hasFunction	hasFunction	ObjectProperty	https://w3id.org/pmd/co/hasFunction			
+editor preferred term	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+abbreviation	abbreviation	AnnotationProperty	https://w3id.org/pmd/co/abbreviation			
+Optical Microscopy	OpticalMicroscopy	Class	https://w3id.org/pmd/co/OpticalMicroscopy			
+Measuring Process	MeasuringProcess	Class	https://w3id.org/pmd/co/MeasuringProcess			
+p3	p3	Entity	https://w3id.org/pmd/co/p3			
+participant of	participantOf	ObjectProperty	https://w3id.org/pmd/co/participantOf	is participant of		
+Abteilung	Department	Class	https://w3id.org/pmd/co/Department			
+Roughness	Roughness	Class	https://w3id.org/pmd/co/Roughness			
+Startzeit	StartTime	Class	https://w3id.org/pmd/co/StartTime			
+executed by	executedBy	ObjectProperty	https://w3id.org/pmd/co/executedBy			
+is resource of	isResourceOf	ObjectProperty	https://w3id.org/pmd/co/isResourceOf			
+Chemical	Chemical	Class	https://w3id.org/pmd/co/Chemical			
+Address	Address	Class	https://w3id.org/pmd/co/Address			
+Feret diameter	FeretDiameter	Class	https://w3id.org/pmd/co/FeretDiameter			
+bibliographicCitation	bibliographicCitation	AnnotationProperty	http://purl.org/dc/terms/bibliographicCitation			
+Ofencharakteristik	FurnaceCharacteristic	Class	https://w3id.org/pmd/co/FurnaceCharacteristic			
+Temperaturänderungswerkzeug	TemperatureChangeDevice	Class	https://w3id.org/pmd/co/TemperatureChangeDevice			
+KiloN	KiloN	Individual	http://qudt.org/vocab/unit/KiloN			
+Amorphous Structure	AmorphousStructure	Class	https://w3id.org/pmd/co/AmorphousStructure			
+Regression	Regression	Class	https://w3id.org/pmd/co/Regression			
+Wertekategorie	ValueScope	Class	https://w3id.org/pmd/co/ValueScope			
+to be replaced with external ontology term	IAO_0000423	Individual	http://purl.obolibrary.org/obo/IAO_0000423			
+Shape	Shape	Class	https://w3id.org/pmd/co/Shape			
+has role	RO_0000087	ObjectProperty	http://purl.obolibrary.org/obo/RO_0000087			
+Transformative Analysis Process	TransformativeAnalysisProcess	Class	https://w3id.org/pmd/co/TransformativeAnalysisProcess			
+curation status specification	IAO_0000078	Class	http://purl.obolibrary.org/obo/IAO_0000078			
+composes	composes	ObjectProperty	https://w3id.org/pmd/co/composes			
+relates to element	relatesToElement	ObjectProperty	https://w3id.org/pmd/co/relatesToElement			
+Operator Role	OperatorRole	Class	https://w3id.org/pmd/co/OperatorRole			
+Aging Interval	AgingInterval	Class	https://w3id.org/pmd/co/AgingInterval			
+Prüfmaschine	TestingMachine	Class	https://w3id.org/pmd/co/TestingMachine			
+Process Description	ProcessDescription	Class	https://w3id.org/pmd/co/ProcessDescription			
+X Coordinate	XCoordinate	Class	https://w3id.org/pmd/co/XCoordinate			
+Durchmesser	Diameter	Class	https://w3id.org/pmd/co/Diameter			
+Fehlerberichtdokument	ErrorReportDocument	Class	https://w3id.org/pmd/co/ErrorReportDocument			
+uncurated	IAO_0000124	Individual	http://purl.obolibrary.org/obo/IAO_0000124			
+Dicke	Thickness	Class	https://w3id.org/pmd/co/Thickness			
+Gewichtete Y Koordinate	WeightedYCoordinate	Class	https://w3id.org/pmd/co/WeightedYCoordinate			
+Messwert	Measurement	Class	https://w3id.org/pmd/co/Measurement			
+Dataset	Dataset	Class	https://w3id.org/pmd/co/Dataset			
+Load cell capacity	LoadCellCapacity	Class	https://w3id.org/pmd/co/LoadCellCapacity			
+Non Transformative Analysis Process	NonTransformativeAnalysisProcess	Class	https://w3id.org/pmd/co/NonTransformativeAnalysisProcess			
+prefLabel	prefLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#prefLabel			
+json path	jsonPath	DatatypeProperty	https://w3id.org/pmd/co/jsonPath			
+Retortentyp	RetortType	Class	https://w3id.org/pmd/co/RetortType			
+definition source	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
+Sekundärdaten	SecondaryData	Class	https://w3id.org/pmd/co/SecondaryData			
+Distance	Distance	Class	https://w3id.org/pmd/co/Distance			
+Biological	Biological	Class	https://w3id.org/pmd/co/Biological			
+Electron Microscope	ElectronMicroscope	Class	https://w3id.org/pmd/co/ElectronMicroscope			
+Node Version	NodeVersion	Class	https://w3id.org/pmd/co/NodeVersion			
+Chemical Composition	ChemicalComposition	Class	https://w3id.org/pmd/co/ChemicalComposition			
+Temperaturmesswerkzeug	TemperatureMeasuringDevice	Class	https://w3id.org/pmd/co/TemperatureMeasuringDevice			
+2D Pixel Koordinaten	2DPixelCoordinates	Class	https://w3id.org/pmd/co/2DPixelCoordinates			
+Clamping Pressure	ClampingPressure	Class	https://w3id.org/pmd/co/ClampingPressure			
+Electrical	Electrical	Class	https://w3id.org/pmd/co/Electrical			
+wasDerivedFrom	wasDerivedFrom	ObjectProperty	http://www.w3.org/ns/prov#wasDerivedFrom			
+Duration	Duration	Class	https://w3id.org/pmd/co/Duration			
+Voxel	Voxel	Class	https://w3id.org/pmd/co/Voxel			
+Perimeter	Perimeter	Class	https://w3id.org/pmd/co/Perimeter			
+Prüfling	Specimen	Class	https://w3id.org/pmd/co/Specimen			
+Extensometer-Dehnung	PercentageExtension	Class	https://w3id.org/pmd/co/PercentageExtension	(engineering) strain | technische Dehnung		
+Collection Interface Hint	CollectionInterfaceHint	Class	https://w3id.org/pmd/co/CollectionInterfaceHint			
+Markus Schilling	0000-0002-7094-5371	Entity	https://orcid.org/0000-0002-7094-5371			
+Digital Entity	DigitalEntity	Class	https://w3id.org/pmd/co/DigitalEntity			
+Identifikation Eines Verbundenen Projektes	RelatedProjectIdentifier	Class	https://w3id.org/pmd/co/RelatedProjectIdentifier			
+Temperaturänderungsprozess	TemperatureChangingProcess	Class	https://w3id.org/pmd/co/TemperatureChangingProcess			
+Algorithmus	Algorithm	Class	https://w3id.org/pmd/co/Algorithm			
+Circular	Circular	Class	https://w3id.org/pmd/co/Circular			
+InitiatorRole	InitiatorRole	Class	https://w3id.org/pmd/co/InitiatorRole			
+Width	Width	Class	https://w3id.org/pmd/co/Width			
+Klassifzierungsdokument	ClassificationDocument	Class	https://w3id.org/pmd/co/ClassificationDocument			
+component	component	ObjectProperty	https://w3id.org/pmd/co/component	has component		
+isPartOf	isPartOf	ObjectProperty	http://purl.org/dc/terms/isPartOf			
+title	title	AnnotationProperty	http://purl.org/dc/terms/title			
+Datenkategorie	DataScope	Class	https://w3id.org/pmd/co/DataScope			
+Environmental Temperature	EnvironmentalTemperature	Class	https://w3id.org/pmd/co/EnvironmentalTemperature			
+Kommissionszeit	CommissionTime	Class	https://w3id.org/pmd/co/CommissionTime			
+End Time	EndTime	Class	https://w3id.org/pmd/co/EndTime			
+Measuring Device	MeasuringDevice	Class	https://w3id.org/pmd/co/MeasuringDevice			
+Pixeldichte	PixelDensity	Class	https://w3id.org/pmd/co/PixelDensity			
+Pixel Unit	PixelUnit	Individual	https://w3id.org/pmd/co/PixelUnit			
+output	output	ObjectProperty	https://w3id.org/pmd/co/output	has output		
+Materialbezug	MaterialRelated	Class	https://w3id.org/pmd/co/MaterialRelated			
+BondingType	BondingType	Class	https://w3id.org/pmd/co/BondingType			
+DataCite Identifier	Identifier	Class	http://purl.org/spar/datacite/Identifier			
+v2	v2	Entity	https://w3id.org/pmd/co/v2			
+Medienbewegung	MediaMovement	Class	https://w3id.org/pmd/co/MediaMovement			
+Thomas Hanke	0000-0003-1649-6832	Entity	https://orcid.org/0000-0003-1649-6832			
+wasInformedBy	wasInformedBy	ObjectProperty	http://www.w3.org/ns/prov#wasInformedBy			
+l2	l2	Entity	https://w3id.org/pmd/co/l2			
+example to be eventually removed	IAO_0000002	Individual	http://purl.obolibrary.org/obo/IAO_0000002			
+organizational term	IAO_0000121	Individual	http://purl.obolibrary.org/obo/IAO_0000121			
+editor note	IAO_0000116	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000116			
+Ionic Bond	IonicBond	Class	https://w3id.org/pmd/co/IonicBond			
+Agent	Agent	Class	http://www.w3.org/ns/prov#Agent			
+Person	Person	Class	http://www.w3.org/ns/prov#Person			
+Data Cite Metadaten	DataCiteMetadata	Class	https://w3id.org/pmd/co/DataCiteMetadata			
+hasSource	hasSource	ObjectProperty	http://www.w3.org/ns/oa#hasSource			
+Unit	Unit	Class	http://qudt.org/schema/qudt/Unit			
+Y Coordinate	YCoordinate	Class	https://w3id.org/pmd/co/YCoordinate			
+generated	generated	ObjectProperty	http://www.w3.org/ns/prov#generated			
+Assembling Process	AssemblingProcess	Class	https://w3id.org/pmd/co/AssemblingProcess			
+Probe	Sample	Class	https://w3id.org/pmd/co/Sample			
+Primärdaten	PrimaryData	Class	https://w3id.org/pmd/co/PrimaryData			
+Material Property	MaterialProperty	Class	https://w3id.org/pmd/co/MaterialProperty			
+Filter	Filter	Class	https://w3id.org/pmd/co/Filter			
+superordinate process	superordinateProcess	ObjectProperty	https://w3id.org/pmd/co/superordinateProcess	has superordinate process		
+p1	p1	Entity	https://w3id.org/pmd/co/p1			
+creator	creator	AnnotationProperty	http://purl.org/dc/elements/1.1/creator			
+Pixel pro Nanometer	PixelPerNanometerUnit	Individual	https://w3id.org/pmd/co/PixelPerNanometerUnit			
+Region of Interest	RegionOfInterest	Class	https://w3id.org/pmd/co/RegionOfInterest			
+relates to	relatesTo	ObjectProperty	https://w3id.org/pmd/co/relatesTo			
+Laboratory	Laboratory	Class	https://w3id.org/pmd/co/Laboratory			
+Projektidentifikator	ProjectIdentifier	Class	https://w3id.org/pmd/co/ProjectIdentifier			
+Gewicht	Weight	Class	https://w3id.org/pmd/co/Weight			
+hasSelector	hasSelector	ObjectProperty	http://www.w3.org/ns/oa#hasSelector			
+license	license	AnnotationProperty	http://purl.org/dc/elements/1.1/license			
+Engineered Material	EngineeredMaterial	Class	https://w3id.org/pmd/co/EngineeredMaterial			
+has curation status	IAO_0000114	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000114			
+o2	o2	Entity	https://w3id.org/pmd/co/o2			
+Materialqualität	MaterialQuality	Class	https://w3id.org/pmd/co/MaterialQuality			
+executes	executes	ObjectProperty	https://w3id.org/pmd/co/executes			
+l1	l1	Entity	https://w3id.org/pmd/co/l1			
+Creep Stress	CreepStress	Class	https://w3id.org/pmd/co/CreepStress			
+Electron Microscopy	ElectronMicroscopy	Class	https://w3id.org/pmd/co/ElectronMicroscopy			
+Zeit	Time	Class	https://w3id.org/pmd/co/Time			
+Quadratisch	Squared	Class	https://w3id.org/pmd/co/Squared			
+Oberfläche Eines Einsatzstücks	InsertSurface	Class	https://w3id.org/pmd/co/InsertSurface			
+requires discussion	IAO_0000428	Individual	http://purl.obolibrary.org/obo/IAO_0000428			
+Mikroskopie	MicroscopyProcess	Class	https://w3id.org/pmd/co/MicroscopyProcess			
+output of	outputOf	ObjectProperty	https://w3id.org/pmd/co/outputOf	is output of		
+process	process	ObjectProperty	https://w3id.org/pmd/co/process	has process		
+Volume Fraction	VolumeFraction	Class	https://w3id.org/pmd/co/VolumeFraction			
+Ort	Location	Class	https://w3id.org/pmd/co/Location			
+Simulation Process	SimulationProcess	Class	https://w3id.org/pmd/co/SimulationProcess			
+metadata incomplete	IAO_0000123	Individual	http://purl.obolibrary.org/obo/IAO_0000123			
+next process	nextProcess	ObjectProperty	https://w3id.org/pmd/co/nextProcess	has next process		
+Prüfkörpername	TestPieceName	Class	https://w3id.org/pmd/co/TestPieceName			
+Bernd Bayerlein	0000-0002-3717-7104	Entity	https://orcid.org/0000-0002-3717-7104			
+Metallic Bond	MetallicBond	Class	https://w3id.org/pmd/co/MetallicBond			
+Digital Material Identifier	DigitalMaterialIdentifier	Class	http://w3id.org/DMI/DigitalMaterialIdentifier			
+Optical	Optical	Class	https://w3id.org/pmd/co/Optical			
+Van der Waals Bindung	VanderwaalsBond	Class	https://w3id.org/pmd/co/VanderwaalsBond			
+Hauptachsendurchmesser	MinorAxisDiameter	Class	https://w3id.org/pmd/co/MinorAxisDiameter			
+Test Piece Info	TestPieceInfo	Class	https://w3id.org/pmd/co/TestPieceInfo			
+Thermal Insulation	ThermalInsulation	Class	https://w3id.org/pmd/co/ThermalInsulation			
+Elliptical	Elliptical	Class	https://w3id.org/pmd/co/Elliptical			
+Notiz	Note	Class	https://w3id.org/pmd/co/Note			
+Heat Capacity	HeatCapacity	Class	https://w3id.org/pmd/co/HeatCapacity			
+Materialstruktur	MaterialStructure	Class	https://w3id.org/pmd/co/MaterialStructure			
+Akkreditierungsdokument	AccreditationDocument	Class	https://w3id.org/pmd/co/AccreditationDocument			
+Chemical Object	ChemicalObject	Class	https://w3id.org/pmd/co/ChemicalObject			
+Prozessidentifikator	ProcessIdentifier	Class	https://w3id.org/pmd/co/ProcessIdentifier			
+Serie	NodeSeries	Class	https://w3id.org/pmd/co/NodeSeries	Knotentyp | Node Type		
+Prozessdauer	ProcessDuration	Class	https://w3id.org/pmd/co/ProcessDuration			
+Aging Temperature	AgingTemperature	Class	https://w3id.org/pmd/co/AgingTemperature			
+hat Wert	value	DatatypeProperty	https://w3id.org/pmd/co/value			
+Rechteckig	Rectangular	Class	https://w3id.org/pmd/co/Rectangular			
+Computerknoten	ComputingNode	Class	https://w3id.org/pmd/co/ComputingNode			
+Node Model	NodeModel	Class	https://w3id.org/pmd/co/NodeModel			
+Conditioning Process	ConditioningProcess	Class	https://w3id.org/pmd/co/ConditioningProcess			
+Metadata	Metadata	Class	https://w3id.org/pmd/co/Metadata			
+max value	maxValue	DatatypeProperty	https://w3id.org/pmd/co/maxValue			
+Fraction	Fraction	Class	https://w3id.org/pmd/co/Fraction			
+characteristic of	characteristicOf	ObjectProperty	https://w3id.org/pmd/co/characteristicOf	is characteristic of		
+fragment path	fragmentPath	DatatypeProperty	https://w3id.org/pmd/co/fragmentPath			
+Description	Description	Class	https://w3id.org/pmd/co/Description			
+p2	p2	Entity	https://w3id.org/pmd/co/p2			
+previous process	previousProcess	ObjectProperty	https://w3id.org/pmd/co/previousProcess	has previous process		
+Mechanical Testing Process	MechanicalTestingProcess	Class	https://w3id.org/pmd/co/MechanicalTestingProcess			
+Process	Process	Class	https://w3id.org/pmd/co/Process			
+Set Point	SetPoint	Class	https://w3id.org/pmd/co/SetPoint			
+state	state	ObjectProperty	https://w3id.org/pmd/co/state			
+Calibration Document	CalibrationDocument	Class	https://w3id.org/pmd/co/CalibrationDocument			
+Sequenznummer	SequenceNumber	Class	https://w3id.org/pmd/co/SequenceNumber			
+Manufacturer Role	ManufacturerRole	Class	https://w3id.org/pmd/co/ManufacturerRole			
+composed of	composedOf	ObjectProperty	https://w3id.org/pmd/co/composedOf			
+Inspection Document	InspectionDocument	Class	https://w3id.org/pmd/co/InspectionDocument			
+used	used	ObjectProperty	http://www.w3.org/ns/prov#used			
+Prüfgeschwindigkeit	TestingRate	Class	https://w3id.org/pmd/co/TestingRate			
+Microscope	Micropscope	Class	https://w3id.org/pmd/co/Micropscope			
+Object	Object	Class	https://w3id.org/pmd/co/Object			
+wasAssociatedWith	wasAssociatedWith	ObjectProperty	http://www.w3.org/ns/prov#wasAssociatedWith			
+Aging Time	AgingTime	Class	https://w3id.org/pmd/co/AgingTime			
+Ausrichtung Der Halterungen	GripsAlignment	Class	https://w3id.org/pmd/co/GripsAlignment			
+Entity	Entity	Class	http://www.w3.org/ns/prov#Entity			
+subordinate process	subordinateProcess	ObjectProperty	https://w3id.org/pmd/co/subordinateProcess	has subordinate process		
+Gewichtete X Koordinate	WeightedXCoordinate	Class	https://w3id.org/pmd/co/WeightedXCoordinate			
+Mounting Process	MountingProcess	Class	https://w3id.org/pmd/co/MountingProcess			
+Value Object	ValueObject	Class	https://w3id.org/pmd/co/ValueObject			
+Laboratory Role	LaboratoryRole	Class	https://w3id.org/pmd/co/LaboratoryRole			
+o1	o1	Entity	https://w3id.org/pmd/co/o1			
+Bild	Image	Class	https://w3id.org/pmd/co/Image			
+Querschnittsermittlung	CrossSectionDetermination	Class	https://w3id.org/pmd/co/CrossSectionDetermination			
+Chemical Entity	CHEBI_24431	Class	http://purl.obolibrary.org/obo/CHEBI_24431			
+Prüfstück Name	SpecimenName	Class	https://w3id.org/pmd/co/SpecimenName			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+Manufacturing Node	ManufacturingNode	Class	https://w3id.org/pmd/co/ManufacturingNode			
+title	title	AnnotationProperty	http://purl.org/dc/elements/1.1/title			
+Mechanisch	Mechanical	Class	https://w3id.org/pmd/co/Mechanical			
+Bügelmessschraube	MicrometerGauge	Class	https://w3id.org/pmd/co/MicrometerGauge			
+hasIdentifier	hasIdentifier	ObjectProperty	http://purl.org/spar/datacite/hasIdentifier			

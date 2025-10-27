@@ -1,0 +1,170 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+Temporal Unit	TemporalUnit	Class	http://www.w3.org/2006/time#TemporalUnit			
+issue solution by software agent	issueSolutionBySoftwareAgent	DatatypeProperty	https://w3id.org/pko#issueSolutionBySoftwareAgent			
+is current version of	isCurrentVersionOf	ObjectProperty	https://w3id.org/pko#isCurrentVersionOf			
+creator	creator	ObjectProperty	http://purl.org/dc/terms/creator			
+Step	Step	Class	http://purl.org/net/p-plan#Step			
+issue cause by software agent	issueCauseBySoftwareAgent	DatatypeProperty	https://w3id.org/pko#issueCauseBySoftwareAgent			
+Cancelled	Cancelled	Individual	https://w3id.org/pko#Cancelled			
+is version of	isVersionOf	ObjectProperty	http://www.w3.org/ns/dcat#isVersionOf			
+hasProcedureTargetType	hasProcedureTargetType	Entity	https://w3id.org/pko#hasProcedureTargetType			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a ProcedureTarget to its Procedure Target Type.
+relates to	relatesTo	ObjectProperty	http://purl.org/spar/pro/relatesTo			
+Role	Role	Class	http://purl.org/spar/pro/Role			
+executes step	executesStep	ObjectProperty	https://w3id.org/pko#executesStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to the Step that is being executed.
+F A Q Category	FAQCategory	Class	https://w3id.org/pko#FAQCategory			This class represents the Category of a Frequently Asked Question (FAQ).
+feedback on procedure execution	feedbackOnProcedureExecution	DatatypeProperty	https://w3id.org/pko#feedbackOnProcedureExecution			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the feedback on the procedure execution that was provided by an Agent during the Procedure or Step Execution.
+User Question Occurrence	UserQuestionOccurrence	Class	https://w3id.org/pko#UserQuestionOccurrence			This class represents the occurrence of a question that an Agent came up with during the Procedure or Step Execution.
+references	references	ObjectProperty	http://purl.org/dc/terms/references			
+Media Type Or Extent	MediaTypeOrExtent	Class	http://purl.org/dc/terms/MediaTypeOrExtent			
+requires function	requiresFunction	ObjectProperty	https://w3id.org/pko#requiresFunction			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to a Function that needs to be performed by a Software Agent for executing the Step.
+Frequently Asked Question	FrequentlyAskedQuestion	Class	https://w3id.org/pko#FrequentlyAskedQuestion			A Frequently Asked Question (FAQ) is a Resource representing a question that people often ask about a particular resource, and the answer to the question.
+question	question	DatatypeProperty	https://w3id.org/pko#question			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the question of a Frequently Asked Question.
+scopeNote	scopeNote	AnnotationProperty	http://www.w3.org/2004/02/skos/core#scopeNote			
+name	name	AnnotationProperty	http://xmlns.com/foaf/0.1/name			
+question by user	questionByUser	DatatypeProperty	https://w3id.org/pko#questionByUser			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the question that a user came up with during the Procedure/Step Execution (User Question Occurrence).
+Thing	Thing	Class	http://www.w3.org/2002/07/owl#Thing			
+Instantaneous Event	InstantaneousEvent	Class	http://www.w3.org/ns/prov#InstantaneousEvent			
+contributor	contributor	AnnotationProperty	http://purl.org/dc/elements/1.1/contributor			
+executes procedure	executesProcedure	ObjectProperty	https://w3id.org/pko#executesProcedure			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution to the Procedure that is being executed.
+is adopted by	isAdoptedBy	ObjectProperty	https://w3id.org/pko#isAdoptedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to an Organization which the Procedure is adopted by.
+preferredNamespacePrefix	preferredNamespacePrefix	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespacePrefix			
+Procedure Type	ProcedureType	Class	https://w3id.org/pko#ProcedureType			This class represents the Type of a Procedure.
+addresses error	addressesError	ObjectProperty	https://w3id.org/pko#addressesError			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a (Multi)Step of a Procedure to the Error it addresses. Such (Multi)Step represents a Fallback procedure.
+is template	isTemplate	DatatypeProperty	https://w3id.org/pko#isTemplate			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent whether a Procedure is a Template or not. A Procedure is a Template if it is associated with a preset of Steps that can be used to define an Executable Procedure. Such steps are not directly executable in the form they are specified.
+step number	stepNumber	DatatypeProperty	https://w3id.org/pko#stepNumber			
+has procedure target	hasProcedureTarget	ObjectProperty	https://w3id.org/pko#hasProcedureTarget			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to its Procedure Target(s), that is the object at which the actions of the Procedure are directed. A Procedure Target can be, for instance: a Machine, an Equipment, a Workstation.
+Draft	Draft	Individual	https://w3id.org/pko#Draft			
+0000-0001-5791-8427	0000-0001-5791-8427	Individual	https://orcid.org/0000-0001-5791-8427			
+format	format	ObjectProperty	http://purl.org/dc/terms/format			
+Completed	Completed	Individual	https://w3id.org/pko#Completed			
+is step for expertise level	isStepForExpertiseLevel	ObjectProperty	https://w3id.org/pko#isStepForExpertiseLevel			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to the Expertise Level, meaning that the Step, or MultiStep, is targeted at persons with a certain level of expertise (e.g., junior, senior).
+ended at time	endedAtTime	DatatypeProperty	http://www.w3.org/ns/prov#endedAtTime			
+0000-0002-8235-7331	0000-0002-8235-7331	Individual	https://orcid.org/0000-0002-8235-7331			
+notes by software agent	notesBySoftwareAgent	DatatypeProperty	https://w3id.org/pko#notesBySoftwareAgent			
+has f a q category	hasFAQCategory	ObjectProperty	https://w3id.org/pko#hasFAQCategory			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Frequently Asked Question to a Category it belongs to.
+Procedure Execution Status	ProcedureExecutionStatus	Class	https://w3id.org/pko#ProcedureExecutionStatus			This class represents the Status of the Procedure Execution (e.g., in progress, completed, paused, cancelled).
+unit type	unitType	ObjectProperty	http://www.w3.org/2006/time#unitType			
+title	title	AnnotationProperty	http://purl.org/dc/terms/title			
+Period Of Time	PeriodOfTime	Class	http://purl.org/dc/terms/PeriodOfTime			
+has fallback step	hasFallbackStep	ObjectProperty	https://w3id.org/pko#hasFallbackStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to a (Multi)Step that represents a Fallback procedure for a specific Error that can be encountered during execution.
+has f a q target	hasFAQTarget	ObjectProperty	https://w3id.org/pko#hasFAQTarget			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Frequently Asked Question to the Target of such FAQ.
+notes by user	notesByUser	DatatypeProperty	https://w3id.org/pko#notesByUser			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the notes taken by the user about either a question that occurred during the Procedure/Step Execution (User Question Occurrence) or an issue that occurred during the Procedure/Step Execution (Issue Occurrence).
+at time	atTime	DatatypeProperty	http://www.w3.org/ns/prov#atTime			
+is question addressed by	isQuestionAddressedBy	ObjectProperty	https://w3id.org/pko#isQuestionAddressedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Question Occurrence to a Resource that addresses/answers to the question that the user came up with during the Procedure/Step Execution.
+error cause	errorCause	DatatypeProperty	https://w3id.org/pko#errorCause			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the cause of an Error that can be encountered during the Procedure or Step Execution.
+Function	Function	Class	https://w3id.org/pko#Function			This class represents a Function performed by a Software Agent.
+was extracted from	wasExtractedFrom	ObjectProperty	https://w3id.org/pko#wasExtractedFrom			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Resource (e.g., a Procedure) to the Resource it was extracted from.
+Action	Action	Class	https://w3id.org/pko#Action			This class represents an Action performed by a human Agent.
+corresponds to variable	correspondsToVariable	ObjectProperty	http://purl.org/net/p-plan#correspondsToVariable			
+has first step	hasFirstStep	ObjectProperty	https://w3id.org/pko#hasFirstStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure or a MultiStep to its first Step.
+Resource	Resource	Class	http://www.w3.org/ns/dcat#Resource			
+has expected duration	hasExpectedDuration	ObjectProperty	https://w3id.org/pko#hasExpectedDuration			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link the Occurrence of an Issue to the Error that is being encountered by the Agent executing a Procedure or Step.
+versionIRI	versionIRI	AnnotationProperty	http://www.w3.org/2002/07/owl#versionIRI			
+atLocation	atLocation	Entity	http://www.w3.org/ns/prov#atLocation			
+046bfkz44	046bfkz44	Individual	https://ror.org/046bfkz44			
+Step Verification	StepVerification	Class	https://w3id.org/pko#StepVerification			A Step Verification is a description of the way in which the execution of a Step can be verified.
+Agent	Agent	Class	http://www.w3.org/ns/prov#Agent			
+status	status	ObjectProperty	http://www.w3.org/ns/adms#status			
+has encountered error	hasEncounteredError	ObjectProperty	https://w3id.org/pko#hasEncounteredError			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link the Occurrence of an Issue to the Error that is being encountered by the Agent executing a Procedure or Step.
+was modified by	wasModifiedBy	ObjectProperty	https://w3id.org/pko#wasModifiedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Resource (e.g., a Procedure) to the Agent that modified the Resource.
+Validation	Validation	Individual	https://w3id.org/pko#Validation			
+has procedure type	hasProcedureType	ObjectProperty	https://w3id.org/pko#hasProcedureType			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to its Procedure Type (e.g., a LOTO Procedure).
+Duration	Duration	Class	http://www.w3.org/2006/time#Duration			
+status	status	AnnotationProperty	http://purl.org/ontology/bibo/status			
+answer	answer	DatatypeProperty	https://w3id.org/pko#answer			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the answer of a Frequently Asked Question.
+Procedural Knowledge Ontology (PKO)	pko	Individual	https://w3id.org/pko			
+Variable	Variable	Class	http://purl.org/net/p-plan#Variable			
+issue cause by user	issueCauseByUser	DatatypeProperty	https://w3id.org/pko#issueCauseByUser			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the cause of an issue, encountered during a Procedure/Step Execution, as identified and defined by the user.
+has step	hasStep	ObjectProperty	https://w3id.org/pko#hasStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure or a MultiStep to its Steps.
+0000-0003-1427-3723	0000-0003-1427-3723	Individual	https://orcid.org/0000-0003-1427-3723			
+Expertise Level	ExpertiseLevel	Class	https://w3id.org/pko#ExpertiseLevel			This class represents the Expertise Level of an Agent with respect to certain activities/responsibilities.
+new version motivation	newVersionMotivation	DatatypeProperty	https://w3id.org/pko#newVersionMotivation			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the motivation for creating a new version of a Procedure, for which we want to manage access control.
+Issue Occurrence	IssueOccurrence	Class	https://w3id.org/pko#IssueOccurrence			This class represents the occurrence of an issue during an Activity.
+creator	creator	AnnotationProperty	http://purl.org/dc/elements/1.1/creator			
+end date	endDate	DatatypeProperty	http://www.w3.org/ns/dcat#endDate			
+publisher	publisher	AnnotationProperty	http://purl.org/dc/terms/publisher			
+has version	hasVersion	ObjectProperty	http://www.w3.org/ns/dcat#hasVersion			
+numeric duration	numericDuration	DatatypeProperty	http://www.w3.org/2006/time#numericDuration			
+has current version	hasCurrentVersion	ObjectProperty	http://www.w3.org/ns/dcat#hasCurrentVersion			
+Paused	Paused	Individual	https://w3id.org/pko#Paused			
+funding	funding	AnnotationProperty	https://schema.org/funding			
+is included in procedure execution	isIncludedInProcedureExecution	ObjectProperty	https://w3id.org/pko#isIncludedInProcedureExecution			
+Procedure	Procedure	Class	https://w3id.org/pko#Procedure			A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome.
+Step Execution	StepExecution	Class	https://w3id.org/pko#StepExecution			A Procedure Execution is an Activity representing the execution of a certain Step of a Procedure, performed by one or more Agents, during a time interval.
+Organization	Organization	Class	http://xmlns.com/foaf/0.1/Organization			
+0000-0001-9962-7193	0000-0001-9962-7193	Individual	https://orcid.org/0000-0001-9962-7193			
+next version	nextVersion	ObjectProperty	https://w3id.org/pko#nextVersion			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a version of a Procedure to its direct next version of the same Procedure.
+identifier	identifier	DatatypeProperty	http://purl.org/dc/terms/identifier			
+version number	versionNumber	DatatypeProperty	https://w3id.org/pko#versionNumber			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the number of the version of a Procedure, for which we want to manage access control.
+User Feedback Occurrence	UserFeedbackOccurrence	Class	https://w3id.org/pko#UserFeedbackOccurrence			This class represents the occurrence of a feedback that was provided by a user during an activity.
+label	label	AnnotationProperty	http://www.w3.org/2000/01/rdf-schema#label			
+feedback on procedure	feedbackOnProcedure	DatatypeProperty	https://w3id.org/pko#feedbackOnProcedure			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the feedback on the procedure that was provided by an Agent during the Procedure or Step Execution.
+license	license	AnnotationProperty	http://purl.org/dc/terms/license			
+language	language	DatatypeProperty	http://purl.org/dc/terms/language			
+previous version	previousVersion	ObjectProperty	http://www.w3.org/ns/dcat#previousVersion			
+has user feedback occurrence	hasUserFeedbackOccurrence	ObjectProperty	https://w3id.org/pko#hasUserFeedbackOccurrence			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution to a User Feedback Occurrence, that is the occurrence of a feedback that the user provides during execution about wither the Procedure or the Procedure Execution.
+keyword	keyword	DatatypeProperty	http://www.w3.org/ns/dcat#keyword			
+versionInfo	versionInfo	AnnotationProperty	http://www.w3.org/2002/07/owl#versionInfo			
+next alternative step	nextAlternativeStep	ObjectProperty	https://w3id.org/pko#nextAlternativeStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to at least two alternative Steps, if only one of such steps should be executed.
+next step	nextStep	ObjectProperty	https://w3id.org/pko#nextStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to its direct next Step.
+is step verification of	isStepVerificationOf	ObjectProperty	https://w3id.org/pko#isStepVerificationOf			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Verification, that is the way in which the execution of the step can be verified, to the Step it verifies.
+F A Q Target	FAQTarget	Class	https://w3id.org/pko#FAQTarget			This class represents the Target of a Frequently Asked Question (FAQ).
+has issue occurrence	hasIssueOccurrence	ObjectProperty	https://w3id.org/pko#hasIssueOccurrence			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution or Step Execution to an Issue Occurrence, that is the occurrence of an issue during the execution.
+Activity	Activity	Class	http://www.w3.org/ns/prov#Activity			
+created	created	DatatypeProperty	http://purl.org/dc/terms/created			
+Multi Step	MultiStep	Class	http://purl.org/net/p-plan#MultiStep			
+rangeIncludes	rangeIncludes	AnnotationProperty	http://purl.org/dc/dcam/rangeIncludes			
+contributor	contributor	AnnotationProperty	http://purl.org/dc/terms/contributor			
+priorVersion	priorVersion	AnnotationProperty	http://www.w3.org/2002/07/owl#priorVersion			
+is step of plan	isStepOfPlan	ObjectProperty	http://purl.org/net/p-plan#isStepOfPlan			
+max repetitions	maxRepetitions	DatatypeProperty	https://w3id.org/pko#maxRepetitions			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the maximum number of repetitions for a Step. If the maxRepetitions is equal to 1, it means that the Step is not repeatable.
+0000-0002-9066-1229	0000-0002-9066-1229	Individual	https://orcid.org/0000-0002-9066-1229			
+access u r l	accessURL	DatatypeProperty	http://www.w3.org/ns/dcat#accessURL			
+Procedure Status	ProcedureStatus	Class	https://w3id.org/pko#ProcedureStatus			This class represents the Status of the Procedure (e.g.,draft, validated).
+Organization	Organization	Class	http://www.w3.org/ns/prov#Organization			
+was encountered by	wasEncounteredBy	ObjectProperty	https://w3id.org/pko#wasEncounteredBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Issue Occurrence to the Agent that encountered the issue during the Procedure/Step Execution.
+was confirmed by	wasConfirmedBy	ObjectProperty	https://w3id.org/pko#wasConfirmedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Activity (e.g., a Step Execution) to the Agent that confirmed the Activity.
+next step execution	nextStepExecution	ObjectProperty	https://w3id.org/pko#nextStepExecution			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to its direct next Step Execution.
+has user question occurrence	hasUserQuestionOccurrence	ObjectProperty	https://w3id.org/pko#hasUserQuestionOccurrence			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution or Step Execution to a User Question Occurrence, that is the occurrence of a question that the user came up with during execution.
+Tool	Tool	Class	http://w3id.org/nfdi4ing/metadata4ing#Tool			
+previous step	previousStep	ObjectProperty	https://w3id.org/pko#previousStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to its direct previous Step.
+Person	Person	Class	http://xmlns.com/foaf/0.1/Person			
+Error	Error	Class	https://w3id.org/pko#Error			This class represents an Error that can be encountered while executing an activity.
+Plan	Plan	Class	http://purl.org/net/p-plan#Plan			
+description	description	DatatypeProperty	http://purl.org/dc/terms/description			
+has step verification	hasStepVerification	ObjectProperty	https://w3id.org/pko#hasStepVerification			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step of a Procedure to a Step Verification, that is the way in which the execution of the step can be verified.
+changelog description	changelogDescription	DatatypeProperty	https://w3id.org/pko#changelogDescription			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the changelog description of a Procedure, that details all updates with respect to the previous version of the same Procedure.
+Approval	Approval	Individual	https://w3id.org/pko#Approval			
+was provided by	wasProvidedBy	ObjectProperty	https://w3id.org/pko#wasProvidedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Feedback Occurrence to the Agent that provided the feedback about either the procedure or the procedure execution during the Procedure Execution.
+has output var	hasOutputVar	ObjectProperty	http://purl.org/net/p-plan#hasOutputVar			
+issued	issued	AnnotationProperty	http://purl.org/dc/terms/issued			
+error code	errorCode	DatatypeProperty	https://w3id.org/pko#errorCode			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the code of an Error that can be encountered during the Procedure or Step Execution.
+has input var	hasInputVar	ObjectProperty	http://purl.org/net/p-plan#hasInputVar			
+modified	modified	DatatypeProperty	http://purl.org/dc/terms/modified			
+temporal	temporal	ObjectProperty	http://purl.org/dc/terms/temporal			
+used	used	ObjectProperty	http://www.w3.org/ns/prov#used			
+was generated by	wasGeneratedBy	ObjectProperty	http://www.w3.org/ns/prov#wasGeneratedBy			
+Approved	Approved	Individual	https://w3id.org/pko#Approved			
+domainIncludes	domainIncludes	AnnotationProperty	http://purl.org/dc/dcam/domainIncludes			
+start date	startDate	DatatypeProperty	http://www.w3.org/ns/dcat#startDate			
+was associated with	wasAssociatedWith	ObjectProperty	http://www.w3.org/ns/prov#wasAssociatedWith			
+Procedure Execution	ProcedureExecution	Class	https://w3id.org/pko#ProcedureExecution			A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval.
+preferredNamespaceUri	preferredNamespaceUri	AnnotationProperty	http://purl.org/vocab/vann/preferredNamespaceUri			
+Entity	Entity	Class	http://www.w3.org/ns/prov#Entity			
+holds role in time	holdsRoleInTime	ObjectProperty	http://purl.org/spar/pro/holdsRoleInTime			
+issue solution by user	issueSolutionByUser	DatatypeProperty	https://w3id.org/pko#issueSolutionByUser			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the solution of an issue, encountered during a Procedure/Step Execution, as identified and applied by the user.
+createdWith	createdWith	AnnotationProperty	https://w3id.org/mod#createdWith			
+requires action	requiresAction	ObjectProperty	https://w3id.org/pko#requiresAction			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to an Action that needs to be performed by a human Agent (a Person) for executing the Step.
+is step of multi step	isStepOfMultiStep	ObjectProperty	https://w3id.org/pko#isStepOfMultiStep			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to the MultiStep it is a step of.
+InProgress	InProgress	Individual	https://w3id.org/pko#InProgress			
+min repetitions	minRepetitions	DatatypeProperty	https://w3id.org/pko#minRepetitions			In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the maximum number of repetitions for a Step. If the minRepetitions is equal to 1, it means that the Step is mandatory. If the minRepetitions is equal to 0, it means that the Step is optional.
+with role	withRole	ObjectProperty	http://purl.org/spar/pro/withRole			
+ProcedureTarget	ProcedureTarget	Entity	https://w3id.org/pko#ProcedureTarget			This class represents the Target of a Procedure, that is the object at which the actions of the Procedure are directed.
+was asked by	wasAskedBy	ObjectProperty	https://w3id.org/pko#wasAskedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Question Occurrence to the Agent that asked the question during the Procedure/Step Execution.
+Role In Time	RoleInTime	Class	http://purl.org/spar/pro/RoleInTime			
+ProcedureTargetType	ProcedureTargetType	Entity	https://w3id.org/pko#ProcedureTargetType			This class represents the Type of a Procedure Target.
+requires tool	requiresTool	ObjectProperty	https://w3id.org/pko#requiresTool			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step of a Procedure to a Tool required by the Step, that is an object needed to execute the Step.
+started at time	startedAtTime	DatatypeProperty	http://www.w3.org/ns/prov#startedAtTime			
+was executed by	wasExecutedBy	ObjectProperty	https://w3id.org/pko#wasExecutedBy			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Activity (e.g., a Step Execution) to the Agent that executed the Activity.
+previous step execution	previousStepExecution	ObjectProperty	https://w3id.org/pko#previousStepExecution			In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to its direct previous Step Execution.
+citation	citation	AnnotationProperty	https://schema.org/citation			

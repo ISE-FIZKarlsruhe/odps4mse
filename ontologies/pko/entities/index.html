@@ -1,0 +1,760 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/ontologies/pko/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>Temporal Unit</strong> (<em>Class</em>) — <code>TemporalUnit</code> — <a href="http://www.w3.org/2006/time#TemporalUnit">http://www.w3.org/2006/time#TemporalUnit</a>
+  <span class='search-tokens' style='display:none'>Temporal  Unit Temporal Unit TemporalUnit http://www.w3.org/2006/time# Temporal Unit http://www.w3.org/2006/time# temporal unit http://www.w3.org/2006/time#TemporalUnit http://www.w3.org/2006/time#temporalunit temporal  unit temporal unit temporalunit</span></li>
+<li><strong>issue solution by software agent</strong> (<em>DatatypeProperty</em>) — <code>issueSolutionBySoftwareAgent</code> — <a href="https://w3id.org/pko#issueSolutionBySoftwareAgent">https://w3id.org/pko#issueSolutionBySoftwareAgent</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#issue Solution By Software Agent https://w3id.org/pko#issue solution by software agent https://w3id.org/pko#issueSolutionBySoftwareAgent https://w3id.org/pko#issuesolutionbysoftwareagent issue Solution By Software Agent issue solution by software agent issueSolutionBySoftwareAgent issuesolutionbysoftwareagent</span></li>
+<li><strong>is current version of</strong> (<em>ObjectProperty</em>) — <code>isCurrentVersionOf</code> — <a href="https://w3id.org/pko#isCurrentVersionOf">https://w3id.org/pko#isCurrentVersionOf</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Current Version Of https://w3id.org/pko#is current version of https://w3id.org/pko#isCurrentVersionOf https://w3id.org/pko#iscurrentversionof is Current Version Of is current version of isCurrentVersionOf iscurrentversionof</span></li>
+<li><strong>creator</strong> (<em>ObjectProperty</em>) — <code>creator</code> — <a href="http://purl.org/dc/terms/creator">http://purl.org/dc/terms/creator</a>
+  <span class='search-tokens' style='display:none'>creator http://purl.org/dc/terms/creator</span></li>
+<li><strong>Step</strong> (<em>Class</em>) — <code>Step</code> — <a href="http://purl.org/net/p-plan#Step">http://purl.org/net/p-plan#Step</a>
+  <span class='search-tokens' style='display:none'>Step http://purl.org/net/p plan# Step http://purl.org/net/p plan# step http://purl.org/net/p plan#Step http://purl.org/net/p-plan#Step http://purl.org/net/p-plan#step step</span></li>
+<li><strong>issue cause by software agent</strong> (<em>DatatypeProperty</em>) — <code>issueCauseBySoftwareAgent</code> — <a href="https://w3id.org/pko#issueCauseBySoftwareAgent">https://w3id.org/pko#issueCauseBySoftwareAgent</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#issue Cause By Software Agent https://w3id.org/pko#issue cause by software agent https://w3id.org/pko#issueCauseBySoftwareAgent https://w3id.org/pko#issuecausebysoftwareagent issue Cause By Software Agent issue cause by software agent issueCauseBySoftwareAgent issuecausebysoftwareagent</span></li>
+<li><strong>Cancelled</strong> (<em>Individual</em>) — <code>Cancelled</code> — <a href="https://w3id.org/pko#Cancelled">https://w3id.org/pko#Cancelled</a>
+  <span class='search-tokens' style='display:none'>Cancelled cancelled https://w3id.org/pko# Cancelled https://w3id.org/pko# cancelled https://w3id.org/pko#Cancelled https://w3id.org/pko#cancelled</span></li>
+<li><strong>is version of</strong> (<em>ObjectProperty</em>) — <code>isVersionOf</code> — <a href="http://www.w3.org/ns/dcat#isVersionOf">http://www.w3.org/ns/dcat#isVersionOf</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#is Version Of http://www.w3.org/ns/dcat#is version of http://www.w3.org/ns/dcat#isVersionOf http://www.w3.org/ns/dcat#isversionof is Version Of is version of isVersionOf isversionof</span></li>
+<li><strong>hasProcedureTargetType</strong> (<em>Entity</em>) — <code>hasProcedureTargetType</code> — <a href="https://w3id.org/pko#hasProcedureTargetType">https://w3id.org/pko#hasProcedureTargetType</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a ProcedureTarget to its Procedure Target Type.
+  <span class='search-tokens' style='display:none'>has Procedure Target Type has procedure target type hasProcedureTargetType hasproceduretargettype https://w3id.org/pko#has Procedure Target Type https://w3id.org/pko#has procedure target type https://w3id.org/pko#hasProcedureTargetType https://w3id.org/pko#hasproceduretargettype</span></li>
+<li><strong>relates to</strong> (<em>ObjectProperty</em>) — <code>relatesTo</code> — <a href="http://purl.org/spar/pro/relatesTo">http://purl.org/spar/pro/relatesTo</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/spar/pro/relates To http://purl.org/spar/pro/relates to http://purl.org/spar/pro/relatesTo http://purl.org/spar/pro/relatesto relates To relates to relatesTo relatesto</span></li>
+<li><strong>Role</strong> (<em>Class</em>) — <code>Role</code> — <a href="http://purl.org/spar/pro/Role">http://purl.org/spar/pro/Role</a>
+  <span class='search-tokens' style='display:none'>Role http://purl.org/spar/pro/ Role http://purl.org/spar/pro/ role http://purl.org/spar/pro/Role http://purl.org/spar/pro/role role</span></li>
+<li><strong>executes step</strong> (<em>ObjectProperty</em>) — <code>executesStep</code> — <a href="https://w3id.org/pko#executesStep">https://w3id.org/pko#executesStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to the Step that is being executed.
+  <span class='search-tokens' style='display:none'>executes Step executes step executesStep executesstep https://w3id.org/pko#executes Step https://w3id.org/pko#executes step https://w3id.org/pko#executesStep https://w3id.org/pko#executesstep</span></li>
+<li><strong>F A Q Category</strong> (<em>Class</em>) — <code>FAQCategory</code> — <a href="https://w3id.org/pko#FAQCategory">https://w3id.org/pko#FAQCategory</a> — <em>comment:</em> This class represents the Category of a Frequently Asked Question (FAQ).
+  <span class='search-tokens' style='display:none'>F A Q  Category F A Q Category FAQ Category FAQCategory f a q  category f a q category faq category faqcategory https://w3id.org/pko#FAQ Category https://w3id.org/pko#FAQCategory https://w3id.org/pko#faq category https://w3id.org/pko#faqcategory</span></li>
+<li><strong>feedback on procedure execution</strong> (<em>DatatypeProperty</em>) — <code>feedbackOnProcedureExecution</code> — <a href="https://w3id.org/pko#feedbackOnProcedureExecution">https://w3id.org/pko#feedbackOnProcedureExecution</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the feedback on the procedure execution that was provided by an Agent during the Procedure or Step Execution.
+  <span class='search-tokens' style='display:none'>feedback On Procedure Execution feedback on procedure execution feedbackOnProcedureExecution feedbackonprocedureexecution https://w3id.org/pko#feedback On Procedure Execution https://w3id.org/pko#feedback on procedure execution https://w3id.org/pko#feedbackOnProcedureExecution https://w3id.org/pko#feedbackonprocedureexecution</span></li>
+<li><strong>User Question Occurrence</strong> (<em>Class</em>) — <code>UserQuestionOccurrence</code> — <a href="https://w3id.org/pko#UserQuestionOccurrence">https://w3id.org/pko#UserQuestionOccurrence</a> — <em>comment:</em> This class represents the occurrence of a question that an Agent came up with during the Procedure or Step Execution.
+  <span class='search-tokens' style='display:none'>User  Question  Occurrence User Question Occurrence UserQuestionOccurrence https://w3id.org/pko# User Question Occurrence https://w3id.org/pko# user question occurrence https://w3id.org/pko#UserQuestionOccurrence https://w3id.org/pko#userquestionoccurrence user  question  occurrence user question occurrence userquestionoccurrence</span></li>
+<li><strong>references</strong> (<em>ObjectProperty</em>) — <code>references</code> — <a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/references references</span></li>
+<li><strong>Media Type Or Extent</strong> (<em>Class</em>) — <code>MediaTypeOrExtent</code> — <a href="http://purl.org/dc/terms/MediaTypeOrExtent">http://purl.org/dc/terms/MediaTypeOrExtent</a>
+  <span class='search-tokens' style='display:none'>Media  Type  Or  Extent Media Type Or Extent MediaTypeOrExtent http://purl.org/dc/terms/ Media Type Or Extent http://purl.org/dc/terms/ media type or extent http://purl.org/dc/terms/MediaTypeOrExtent http://purl.org/dc/terms/mediatypeorextent media  type  or  extent media type or extent mediatypeorextent</span></li>
+<li><strong>requires function</strong> (<em>ObjectProperty</em>) — <code>requiresFunction</code> — <a href="https://w3id.org/pko#requiresFunction">https://w3id.org/pko#requiresFunction</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to a Function that needs to be performed by a Software Agent for executing the Step.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#requires Function https://w3id.org/pko#requires function https://w3id.org/pko#requiresFunction https://w3id.org/pko#requiresfunction requires Function requires function requiresFunction requiresfunction</span></li>
+<li><strong>Frequently Asked Question</strong> (<em>Class</em>) — <code>FrequentlyAskedQuestion</code> — <a href="https://w3id.org/pko#FrequentlyAskedQuestion">https://w3id.org/pko#FrequentlyAskedQuestion</a> — <em>comment:</em> A Frequently Asked Question (FAQ) is a Resource representing a question that people often ask about a particular resource, and the answer to the question.
+  <span class='search-tokens' style='display:none'>Frequently  Asked  Question Frequently Asked Question FrequentlyAskedQuestion frequently  asked  question frequently asked question frequentlyaskedquestion https://w3id.org/pko# Frequently Asked Question https://w3id.org/pko# frequently asked question https://w3id.org/pko#FrequentlyAskedQuestion https://w3id.org/pko#frequentlyaskedquestion</span></li>
+<li><strong>question</strong> (<em>DatatypeProperty</em>) — <code>question</code> — <a href="https://w3id.org/pko#question">https://w3id.org/pko#question</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the question of a Frequently Asked Question.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#question question</span></li>
+<li><strong>scopeNote</strong> (<em>AnnotationProperty</em>) — <code>scopeNote</code> — <a href="http://www.w3.org/2004/02/skos/core#scopeNote">http://www.w3.org/2004/02/skos/core#scopeNote</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#scope Note http://www.w3.org/2004/02/skos/core#scope note http://www.w3.org/2004/02/skos/core#scopeNote http://www.w3.org/2004/02/skos/core#scopenote scope Note scope note scopeNote scopenote</span></li>
+<li><strong>name</strong> (<em>AnnotationProperty</em>) — <code>name</code> — <a href="http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
+  <span class='search-tokens' style='display:none'>http://xmlns.com/foaf/0.1/name name</span></li>
+<li><strong>question by user</strong> (<em>DatatypeProperty</em>) — <code>questionByUser</code> — <a href="https://w3id.org/pko#questionByUser">https://w3id.org/pko#questionByUser</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the question that a user came up with during the Procedure/Step Execution (User Question Occurrence).
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#question By User https://w3id.org/pko#question by user https://w3id.org/pko#questionByUser https://w3id.org/pko#questionbyuser question By User question by user questionByUser questionbyuser</span></li>
+<li><strong>Thing</strong> (<em>Class</em>) — <code>Thing</code> — <a href="http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+  <span class='search-tokens' style='display:none'>Thing http://www.w3.org/2002/07/owl# Thing http://www.w3.org/2002/07/owl# thing http://www.w3.org/2002/07/owl#Thing http://www.w3.org/2002/07/owl#thing thing</span></li>
+<li><strong>Instantaneous Event</strong> (<em>Class</em>) — <code>InstantaneousEvent</code> — <a href="http://www.w3.org/ns/prov#InstantaneousEvent">http://www.w3.org/ns/prov#InstantaneousEvent</a>
+  <span class='search-tokens' style='display:none'>Instantaneous  Event Instantaneous Event InstantaneousEvent http://www.w3.org/ns/prov# Instantaneous Event http://www.w3.org/ns/prov# instantaneous event http://www.w3.org/ns/prov#InstantaneousEvent http://www.w3.org/ns/prov#instantaneousevent instantaneous  event instantaneous event instantaneousevent</span></li>
+<li><strong>contributor</strong> (<em>AnnotationProperty</em>) — <code>contributor</code> — <a href="http://purl.org/dc/elements/1.1/contributor">http://purl.org/dc/elements/1.1/contributor</a>
+  <span class='search-tokens' style='display:none'>contributor http://purl.org/dc/elements/1.1/contributor</span></li>
+<li><strong>executes procedure</strong> (<em>ObjectProperty</em>) — <code>executesProcedure</code> — <a href="https://w3id.org/pko#executesProcedure">https://w3id.org/pko#executesProcedure</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution to the Procedure that is being executed.
+  <span class='search-tokens' style='display:none'>executes Procedure executes procedure executesProcedure executesprocedure https://w3id.org/pko#executes Procedure https://w3id.org/pko#executes procedure https://w3id.org/pko#executesProcedure https://w3id.org/pko#executesprocedure</span></li>
+<li><strong>is adopted by</strong> (<em>ObjectProperty</em>) — <code>isAdoptedBy</code> — <a href="https://w3id.org/pko#isAdoptedBy">https://w3id.org/pko#isAdoptedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to an Organization which the Procedure is adopted by.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Adopted By https://w3id.org/pko#is adopted by https://w3id.org/pko#isAdoptedBy https://w3id.org/pko#isadoptedby is Adopted By is adopted by isAdoptedBy isadoptedby</span></li>
+<li><strong>preferredNamespacePrefix</strong> (<em>AnnotationProperty</em>) — <code>preferredNamespacePrefix</code> — <a href="http://purl.org/vocab/vann/preferredNamespacePrefix">http://purl.org/vocab/vann/preferredNamespacePrefix</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/vocab/vann/preferred Namespace Prefix http://purl.org/vocab/vann/preferred namespace prefix http://purl.org/vocab/vann/preferredNamespacePrefix http://purl.org/vocab/vann/preferrednamespaceprefix preferred Namespace Prefix preferred namespace prefix preferredNamespacePrefix preferrednamespaceprefix</span></li>
+<li><strong>Procedure Type</strong> (<em>Class</em>) — <code>ProcedureType</code> — <a href="https://w3id.org/pko#ProcedureType">https://w3id.org/pko#ProcedureType</a> — <em>comment:</em> This class represents the Type of a Procedure.
+  <span class='search-tokens' style='display:none'>Procedure  Type Procedure Type ProcedureType https://w3id.org/pko# Procedure Type https://w3id.org/pko# procedure type https://w3id.org/pko#ProcedureType https://w3id.org/pko#proceduretype procedure  type procedure type proceduretype</span></li>
+<li><strong>addresses error</strong> (<em>ObjectProperty</em>) — <code>addressesError</code> — <a href="https://w3id.org/pko#addressesError">https://w3id.org/pko#addressesError</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a (Multi)Step of a Procedure to the Error it addresses. Such (Multi)Step represents a Fallback procedure.
+  <span class='search-tokens' style='display:none'>addresses Error addresses error addressesError addresseserror https://w3id.org/pko#addresses Error https://w3id.org/pko#addresses error https://w3id.org/pko#addressesError https://w3id.org/pko#addresseserror</span></li>
+<li><strong>is template</strong> (<em>DatatypeProperty</em>) — <code>isTemplate</code> — <a href="https://w3id.org/pko#isTemplate">https://w3id.org/pko#isTemplate</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent whether a Procedure is a Template or not. A Procedure is a Template if it is associated with a preset of Steps that can be used to define an Executable Procedure. Such steps are not directly executable in the form they are specified.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Template https://w3id.org/pko#is template https://w3id.org/pko#isTemplate https://w3id.org/pko#istemplate is Template is template isTemplate istemplate</span></li>
+<li><strong>step number</strong> (<em>DatatypeProperty</em>) — <code>stepNumber</code> — <a href="https://w3id.org/pko#stepNumber">https://w3id.org/pko#stepNumber</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#step Number https://w3id.org/pko#step number https://w3id.org/pko#stepNumber https://w3id.org/pko#stepnumber step Number step number stepNumber stepnumber</span></li>
+<li><strong>has procedure target</strong> (<em>ObjectProperty</em>) — <code>hasProcedureTarget</code> — <a href="https://w3id.org/pko#hasProcedureTarget">https://w3id.org/pko#hasProcedureTarget</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to its Procedure Target(s), that is the object at which the actions of the Procedure are directed. A Procedure Target can be, for instance: a Machine, an Equipment, a Workstation.
+  <span class='search-tokens' style='display:none'>has Procedure Target has procedure target hasProcedureTarget hasproceduretarget https://w3id.org/pko#has Procedure Target https://w3id.org/pko#has procedure target https://w3id.org/pko#hasProcedureTarget https://w3id.org/pko#hasproceduretarget</span></li>
+<li><strong>Draft</strong> (<em>Individual</em>) — <code>Draft</code> — <a href="https://w3id.org/pko#Draft">https://w3id.org/pko#Draft</a>
+  <span class='search-tokens' style='display:none'>Draft draft https://w3id.org/pko# Draft https://w3id.org/pko# draft https://w3id.org/pko#Draft https://w3id.org/pko#draft</span></li>
+<li><strong>0000-0001-5791-8427</strong> (<em>Individual</em>) — <code>0000-0001-5791-8427</code> — <a href="https://orcid.org/0000-0001-5791-8427">https://orcid.org/0000-0001-5791-8427</a>
+  <span class='search-tokens' style='display:none'>0000 0001 5791 8427 0000-0001-5791-8427 https://orcid.org/0000 0001 5791 8427 https://orcid.org/0000-0001-5791-8427</span></li>
+<li><strong>format</strong> (<em>ObjectProperty</em>) — <code>format</code> — <a href="http://purl.org/dc/terms/format">http://purl.org/dc/terms/format</a>
+  <span class='search-tokens' style='display:none'>format http://purl.org/dc/terms/format</span></li>
+<li><strong>Completed</strong> (<em>Individual</em>) — <code>Completed</code> — <a href="https://w3id.org/pko#Completed">https://w3id.org/pko#Completed</a>
+  <span class='search-tokens' style='display:none'>Completed completed https://w3id.org/pko# Completed https://w3id.org/pko# completed https://w3id.org/pko#Completed https://w3id.org/pko#completed</span></li>
+<li><strong>is step for expertise level</strong> (<em>ObjectProperty</em>) — <code>isStepForExpertiseLevel</code> — <a href="https://w3id.org/pko#isStepForExpertiseLevel">https://w3id.org/pko#isStepForExpertiseLevel</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to the Expertise Level, meaning that the Step, or MultiStep, is targeted at persons with a certain level of expertise (e.g., junior, senior).
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Step For Expertise Level https://w3id.org/pko#is step for expertise level https://w3id.org/pko#isStepForExpertiseLevel https://w3id.org/pko#isstepforexpertiselevel is Step For Expertise Level is step for expertise level isStepForExpertiseLevel isstepforexpertiselevel</span></li>
+<li><strong>ended at time</strong> (<em>DatatypeProperty</em>) — <code>endedAtTime</code> — <a href="http://www.w3.org/ns/prov#endedAtTime">http://www.w3.org/ns/prov#endedAtTime</a>
+  <span class='search-tokens' style='display:none'>ended At Time ended at time endedAtTime endedattime http://www.w3.org/ns/prov#ended At Time http://www.w3.org/ns/prov#ended at time http://www.w3.org/ns/prov#endedAtTime http://www.w3.org/ns/prov#endedattime</span></li>
+<li><strong>0000-0002-8235-7331</strong> (<em>Individual</em>) — <code>0000-0002-8235-7331</code> — <a href="https://orcid.org/0000-0002-8235-7331">https://orcid.org/0000-0002-8235-7331</a>
+  <span class='search-tokens' style='display:none'>0000 0002 8235 7331 0000-0002-8235-7331 https://orcid.org/0000 0002 8235 7331 https://orcid.org/0000-0002-8235-7331</span></li>
+<li><strong>notes by software agent</strong> (<em>DatatypeProperty</em>) — <code>notesBySoftwareAgent</code> — <a href="https://w3id.org/pko#notesBySoftwareAgent">https://w3id.org/pko#notesBySoftwareAgent</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#notes By Software Agent https://w3id.org/pko#notes by software agent https://w3id.org/pko#notesBySoftwareAgent https://w3id.org/pko#notesbysoftwareagent notes By Software Agent notes by software agent notesBySoftwareAgent notesbysoftwareagent</span></li>
+<li><strong>has f a q category</strong> (<em>ObjectProperty</em>) — <code>hasFAQCategory</code> — <a href="https://w3id.org/pko#hasFAQCategory">https://w3id.org/pko#hasFAQCategory</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Frequently Asked Question to a Category it belongs to.
+  <span class='search-tokens' style='display:none'>has f a q category hasFAQ Category hasFAQCategory hasfaq category hasfaqcategory https://w3id.org/pko#hasFAQ Category https://w3id.org/pko#hasFAQCategory https://w3id.org/pko#hasfaq category https://w3id.org/pko#hasfaqcategory</span></li>
+<li><strong>Procedure Execution Status</strong> (<em>Class</em>) — <code>ProcedureExecutionStatus</code> — <a href="https://w3id.org/pko#ProcedureExecutionStatus">https://w3id.org/pko#ProcedureExecutionStatus</a> — <em>comment:</em> This class represents the Status of the Procedure Execution (e.g., in progress, completed, paused, cancelled).
+  <span class='search-tokens' style='display:none'>Procedure  Execution  Status Procedure Execution Status ProcedureExecutionStatus https://w3id.org/pko# Procedure Execution Status https://w3id.org/pko# procedure execution status https://w3id.org/pko#ProcedureExecutionStatus https://w3id.org/pko#procedureexecutionstatus procedure  execution  status procedure execution status procedureexecutionstatus</span></li>
+<li><strong>unit type</strong> (<em>ObjectProperty</em>) — <code>unitType</code> — <a href="http://www.w3.org/2006/time#unitType">http://www.w3.org/2006/time#unitType</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2006/time#unit Type http://www.w3.org/2006/time#unit type http://www.w3.org/2006/time#unitType http://www.w3.org/2006/time#unittype unit Type unit type unitType unittype</span></li>
+<li><strong>title</strong> (<em>AnnotationProperty</em>) — <code>title</code> — <a href="http://purl.org/dc/terms/title">http://purl.org/dc/terms/title</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/title title</span></li>
+<li><strong>Period Of Time</strong> (<em>Class</em>) — <code>PeriodOfTime</code> — <a href="http://purl.org/dc/terms/PeriodOfTime">http://purl.org/dc/terms/PeriodOfTime</a>
+  <span class='search-tokens' style='display:none'>Period  Of  Time Period Of Time PeriodOfTime http://purl.org/dc/terms/ Period Of Time http://purl.org/dc/terms/ period of time http://purl.org/dc/terms/PeriodOfTime http://purl.org/dc/terms/periodoftime period  of  time period of time periodoftime</span></li>
+<li><strong>has fallback step</strong> (<em>ObjectProperty</em>) — <code>hasFallbackStep</code> — <a href="https://w3id.org/pko#hasFallbackStep">https://w3id.org/pko#hasFallbackStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to a (Multi)Step that represents a Fallback procedure for a specific Error that can be encountered during execution.
+  <span class='search-tokens' style='display:none'>has Fallback Step has fallback step hasFallbackStep hasfallbackstep https://w3id.org/pko#has Fallback Step https://w3id.org/pko#has fallback step https://w3id.org/pko#hasFallbackStep https://w3id.org/pko#hasfallbackstep</span></li>
+<li><strong>has f a q target</strong> (<em>ObjectProperty</em>) — <code>hasFAQTarget</code> — <a href="https://w3id.org/pko#hasFAQTarget">https://w3id.org/pko#hasFAQTarget</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Frequently Asked Question to the Target of such FAQ.
+  <span class='search-tokens' style='display:none'>has f a q target hasFAQ Target hasFAQTarget hasfaq target hasfaqtarget https://w3id.org/pko#hasFAQ Target https://w3id.org/pko#hasFAQTarget https://w3id.org/pko#hasfaq target https://w3id.org/pko#hasfaqtarget</span></li>
+<li><strong>notes by user</strong> (<em>DatatypeProperty</em>) — <code>notesByUser</code> — <a href="https://w3id.org/pko#notesByUser">https://w3id.org/pko#notesByUser</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the notes taken by the user about either a question that occurred during the Procedure/Step Execution (User Question Occurrence) or an issue that occurred during the Procedure/Step Execution (Issue Occurrence).
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#notes By User https://w3id.org/pko#notes by user https://w3id.org/pko#notesByUser https://w3id.org/pko#notesbyuser notes By User notes by user notesByUser notesbyuser</span></li>
+<li><strong>at time</strong> (<em>DatatypeProperty</em>) — <code>atTime</code> — <a href="http://www.w3.org/ns/prov#atTime">http://www.w3.org/ns/prov#atTime</a>
+  <span class='search-tokens' style='display:none'>at Time at time atTime attime http://www.w3.org/ns/prov#at Time http://www.w3.org/ns/prov#at time http://www.w3.org/ns/prov#atTime http://www.w3.org/ns/prov#attime</span></li>
+<li><strong>is question addressed by</strong> (<em>ObjectProperty</em>) — <code>isQuestionAddressedBy</code> — <a href="https://w3id.org/pko#isQuestionAddressedBy">https://w3id.org/pko#isQuestionAddressedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Question Occurrence to a Resource that addresses/answers to the question that the user came up with during the Procedure/Step Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Question Addressed By https://w3id.org/pko#is question addressed by https://w3id.org/pko#isQuestionAddressedBy https://w3id.org/pko#isquestionaddressedby is Question Addressed By is question addressed by isQuestionAddressedBy isquestionaddressedby</span></li>
+<li><strong>error cause</strong> (<em>DatatypeProperty</em>) — <code>errorCause</code> — <a href="https://w3id.org/pko#errorCause">https://w3id.org/pko#errorCause</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the cause of an Error that can be encountered during the Procedure or Step Execution.
+  <span class='search-tokens' style='display:none'>error Cause error cause errorCause errorcause https://w3id.org/pko#error Cause https://w3id.org/pko#error cause https://w3id.org/pko#errorCause https://w3id.org/pko#errorcause</span></li>
+<li><strong>Function</strong> (<em>Class</em>) — <code>Function</code> — <a href="https://w3id.org/pko#Function">https://w3id.org/pko#Function</a> — <em>comment:</em> This class represents a Function performed by a Software Agent.
+  <span class='search-tokens' style='display:none'>Function function https://w3id.org/pko# Function https://w3id.org/pko# function https://w3id.org/pko#Function https://w3id.org/pko#function</span></li>
+<li><strong>was extracted from</strong> (<em>ObjectProperty</em>) — <code>wasExtractedFrom</code> — <a href="https://w3id.org/pko#wasExtractedFrom">https://w3id.org/pko#wasExtractedFrom</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Resource (e.g., a Procedure) to the Resource it was extracted from.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Extracted From https://w3id.org/pko#was extracted from https://w3id.org/pko#wasExtractedFrom https://w3id.org/pko#wasextractedfrom was Extracted From was extracted from wasExtractedFrom wasextractedfrom</span></li>
+<li><strong>Action</strong> (<em>Class</em>) — <code>Action</code> — <a href="https://w3id.org/pko#Action">https://w3id.org/pko#Action</a> — <em>comment:</em> This class represents an Action performed by a human Agent.
+  <span class='search-tokens' style='display:none'>Action action https://w3id.org/pko# Action https://w3id.org/pko# action https://w3id.org/pko#Action https://w3id.org/pko#action</span></li>
+<li><strong>corresponds to variable</strong> (<em>ObjectProperty</em>) — <code>correspondsToVariable</code> — <a href="http://purl.org/net/p-plan#correspondsToVariable">http://purl.org/net/p-plan#correspondsToVariable</a>
+  <span class='search-tokens' style='display:none'>corresponds To Variable corresponds to variable correspondsToVariable correspondstovariable http://purl.org/net/p plan#corresponds To Variable http://purl.org/net/p plan#corresponds to variable http://purl.org/net/p plan#correspondsToVariable http://purl.org/net/p-plan#correspondsToVariable http://purl.org/net/p-plan#correspondstovariable</span></li>
+<li><strong>has first step</strong> (<em>ObjectProperty</em>) — <code>hasFirstStep</code> — <a href="https://w3id.org/pko#hasFirstStep">https://w3id.org/pko#hasFirstStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure or a MultiStep to its first Step.
+  <span class='search-tokens' style='display:none'>has First Step has first step hasFirstStep hasfirststep https://w3id.org/pko#has First Step https://w3id.org/pko#has first step https://w3id.org/pko#hasFirstStep https://w3id.org/pko#hasfirststep</span></li>
+<li><strong>Resource</strong> (<em>Class</em>) — <code>Resource</code> — <a href="http://www.w3.org/ns/dcat#Resource">http://www.w3.org/ns/dcat#Resource</a>
+  <span class='search-tokens' style='display:none'>Resource http://www.w3.org/ns/dcat# Resource http://www.w3.org/ns/dcat# resource http://www.w3.org/ns/dcat#Resource http://www.w3.org/ns/dcat#resource resource</span></li>
+<li><strong>has expected duration</strong> (<em>ObjectProperty</em>) — <code>hasExpectedDuration</code> — <a href="https://w3id.org/pko#hasExpectedDuration">https://w3id.org/pko#hasExpectedDuration</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link the Occurrence of an Issue to the Error that is being encountered by the Agent executing a Procedure or Step.
+  <span class='search-tokens' style='display:none'>has Expected Duration has expected duration hasExpectedDuration hasexpectedduration https://w3id.org/pko#has Expected Duration https://w3id.org/pko#has expected duration https://w3id.org/pko#hasExpectedDuration https://w3id.org/pko#hasexpectedduration</span></li>
+<li><strong>versionIRI</strong> (<em>AnnotationProperty</em>) — <code>versionIRI</code> — <a href="http://www.w3.org/2002/07/owl#versionIRI">http://www.w3.org/2002/07/owl#versionIRI</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2002/07/owl#versionIRI http://www.w3.org/2002/07/owl#versioniri versionIRI versioniri</span></li>
+<li><strong>atLocation</strong> (<em>Entity</em>) — <code>atLocation</code> — <a href="http://www.w3.org/ns/prov#atLocation">http://www.w3.org/ns/prov#atLocation</a>
+  <span class='search-tokens' style='display:none'>at Location at location atLocation atlocation http://www.w3.org/ns/prov#at Location http://www.w3.org/ns/prov#at location http://www.w3.org/ns/prov#atLocation http://www.w3.org/ns/prov#atlocation</span></li>
+<li><strong>046bfkz44</strong> (<em>Individual</em>) — <code>046bfkz44</code> — <a href="https://ror.org/046bfkz44">https://ror.org/046bfkz44</a>
+  <span class='search-tokens' style='display:none'>046bfkz44 https://ror.org/046bfkz44</span></li>
+<li><strong>Step Verification</strong> (<em>Class</em>) — <code>StepVerification</code> — <a href="https://w3id.org/pko#StepVerification">https://w3id.org/pko#StepVerification</a> — <em>comment:</em> A Step Verification is a description of the way in which the execution of a Step can be verified.
+  <span class='search-tokens' style='display:none'>Step  Verification Step Verification StepVerification https://w3id.org/pko# Step Verification https://w3id.org/pko# step verification https://w3id.org/pko#StepVerification https://w3id.org/pko#stepverification step  verification step verification stepverification</span></li>
+<li><strong>Agent</strong> (<em>Class</em>) — <code>Agent</code> — <a href="http://www.w3.org/ns/prov#Agent">http://www.w3.org/ns/prov#Agent</a>
+  <span class='search-tokens' style='display:none'>Agent agent http://www.w3.org/ns/prov# Agent http://www.w3.org/ns/prov# agent http://www.w3.org/ns/prov#Agent http://www.w3.org/ns/prov#agent</span></li>
+<li><strong>status</strong> (<em>ObjectProperty</em>) — <code>status</code> — <a href="http://www.w3.org/ns/adms#status">http://www.w3.org/ns/adms#status</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/adms#status status</span></li>
+<li><strong>has encountered error</strong> (<em>ObjectProperty</em>) — <code>hasEncounteredError</code> — <a href="https://w3id.org/pko#hasEncounteredError">https://w3id.org/pko#hasEncounteredError</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link the Occurrence of an Issue to the Error that is being encountered by the Agent executing a Procedure or Step.
+  <span class='search-tokens' style='display:none'>has Encountered Error has encountered error hasEncounteredError hasencounterederror https://w3id.org/pko#has Encountered Error https://w3id.org/pko#has encountered error https://w3id.org/pko#hasEncounteredError https://w3id.org/pko#hasencounterederror</span></li>
+<li><strong>was modified by</strong> (<em>ObjectProperty</em>) — <code>wasModifiedBy</code> — <a href="https://w3id.org/pko#wasModifiedBy">https://w3id.org/pko#wasModifiedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Resource (e.g., a Procedure) to the Agent that modified the Resource.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Modified By https://w3id.org/pko#was modified by https://w3id.org/pko#wasModifiedBy https://w3id.org/pko#wasmodifiedby was Modified By was modified by wasModifiedBy wasmodifiedby</span></li>
+<li><strong>Validation</strong> (<em>Individual</em>) — <code>Validation</code> — <a href="https://w3id.org/pko#Validation">https://w3id.org/pko#Validation</a>
+  <span class='search-tokens' style='display:none'>Validation https://w3id.org/pko# Validation https://w3id.org/pko# validation https://w3id.org/pko#Validation https://w3id.org/pko#validation validation</span></li>
+<li><strong>has procedure type</strong> (<em>ObjectProperty</em>) — <code>hasProcedureType</code> — <a href="https://w3id.org/pko#hasProcedureType">https://w3id.org/pko#hasProcedureType</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure to its Procedure Type (e.g., a LOTO Procedure).
+  <span class='search-tokens' style='display:none'>has Procedure Type has procedure type hasProcedureType hasproceduretype https://w3id.org/pko#has Procedure Type https://w3id.org/pko#has procedure type https://w3id.org/pko#hasProcedureType https://w3id.org/pko#hasproceduretype</span></li>
+<li><strong>Duration</strong> (<em>Class</em>) — <code>Duration</code> — <a href="http://www.w3.org/2006/time#Duration">http://www.w3.org/2006/time#Duration</a>
+  <span class='search-tokens' style='display:none'>Duration duration http://www.w3.org/2006/time# Duration http://www.w3.org/2006/time# duration http://www.w3.org/2006/time#Duration http://www.w3.org/2006/time#duration</span></li>
+<li><strong>status</strong> (<em>AnnotationProperty</em>) — <code>status</code> — <a href="http://purl.org/ontology/bibo/status">http://purl.org/ontology/bibo/status</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/ontology/bibo/status status</span></li>
+<li><strong>answer</strong> (<em>DatatypeProperty</em>) — <code>answer</code> — <a href="https://w3id.org/pko#answer">https://w3id.org/pko#answer</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the answer of a Frequently Asked Question.
+  <span class='search-tokens' style='display:none'>answer https://w3id.org/pko#answer</span></li>
+<li><strong>Procedural Knowledge Ontology (PKO)</strong> (<em>Individual</em>) — <code>pko</code> — <a href="https://w3id.org/pko">https://w3id.org/pko</a>
+  <span class='search-tokens' style='display:none'>Procedural  Knowledge  Ontology (PKO) Procedural Knowledge Ontology (PKO) https://w3id.org/pko pko procedural  knowledge  ontology (pko) procedural knowledge ontology (pko)</span></li>
+<li><strong>Variable</strong> (<em>Class</em>) — <code>Variable</code> — <a href="http://purl.org/net/p-plan#Variable">http://purl.org/net/p-plan#Variable</a>
+  <span class='search-tokens' style='display:none'>Variable http://purl.org/net/p plan# Variable http://purl.org/net/p plan# variable http://purl.org/net/p plan#Variable http://purl.org/net/p-plan#Variable http://purl.org/net/p-plan#variable variable</span></li>
+<li><strong>issue cause by user</strong> (<em>DatatypeProperty</em>) — <code>issueCauseByUser</code> — <a href="https://w3id.org/pko#issueCauseByUser">https://w3id.org/pko#issueCauseByUser</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the cause of an issue, encountered during a Procedure/Step Execution, as identified and defined by the user.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#issue Cause By User https://w3id.org/pko#issue cause by user https://w3id.org/pko#issueCauseByUser https://w3id.org/pko#issuecausebyuser issue Cause By User issue cause by user issueCauseByUser issuecausebyuser</span></li>
+<li><strong>has step</strong> (<em>ObjectProperty</em>) — <code>hasStep</code> — <a href="https://w3id.org/pko#hasStep">https://w3id.org/pko#hasStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure or a MultiStep to its Steps.
+  <span class='search-tokens' style='display:none'>has Step has step hasStep hasstep https://w3id.org/pko#has Step https://w3id.org/pko#has step https://w3id.org/pko#hasStep https://w3id.org/pko#hasstep</span></li>
+<li><strong>0000-0003-1427-3723</strong> (<em>Individual</em>) — <code>0000-0003-1427-3723</code> — <a href="https://orcid.org/0000-0003-1427-3723">https://orcid.org/0000-0003-1427-3723</a>
+  <span class='search-tokens' style='display:none'>0000 0003 1427 3723 0000-0003-1427-3723 https://orcid.org/0000 0003 1427 3723 https://orcid.org/0000-0003-1427-3723</span></li>
+<li><strong>Expertise Level</strong> (<em>Class</em>) — <code>ExpertiseLevel</code> — <a href="https://w3id.org/pko#ExpertiseLevel">https://w3id.org/pko#ExpertiseLevel</a> — <em>comment:</em> This class represents the Expertise Level of an Agent with respect to certain activities/responsibilities.
+  <span class='search-tokens' style='display:none'>Expertise  Level Expertise Level ExpertiseLevel expertise  level expertise level expertiselevel https://w3id.org/pko# Expertise Level https://w3id.org/pko# expertise level https://w3id.org/pko#ExpertiseLevel https://w3id.org/pko#expertiselevel</span></li>
+<li><strong>new version motivation</strong> (<em>DatatypeProperty</em>) — <code>newVersionMotivation</code> — <a href="https://w3id.org/pko#newVersionMotivation">https://w3id.org/pko#newVersionMotivation</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the motivation for creating a new version of a Procedure, for which we want to manage access control.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#new Version Motivation https://w3id.org/pko#new version motivation https://w3id.org/pko#newVersionMotivation https://w3id.org/pko#newversionmotivation new Version Motivation new version motivation newVersionMotivation newversionmotivation</span></li>
+<li><strong>Issue Occurrence</strong> (<em>Class</em>) — <code>IssueOccurrence</code> — <a href="https://w3id.org/pko#IssueOccurrence">https://w3id.org/pko#IssueOccurrence</a> — <em>comment:</em> This class represents the occurrence of an issue during an Activity.
+  <span class='search-tokens' style='display:none'>Issue  Occurrence Issue Occurrence IssueOccurrence https://w3id.org/pko# Issue Occurrence https://w3id.org/pko# issue occurrence https://w3id.org/pko#IssueOccurrence https://w3id.org/pko#issueoccurrence issue  occurrence issue occurrence issueoccurrence</span></li>
+<li><strong>creator</strong> (<em>AnnotationProperty</em>) — <code>creator</code> — <a href="http://purl.org/dc/elements/1.1/creator">http://purl.org/dc/elements/1.1/creator</a>
+  <span class='search-tokens' style='display:none'>creator http://purl.org/dc/elements/1.1/creator</span></li>
+<li><strong>end date</strong> (<em>DatatypeProperty</em>) — <code>endDate</code> — <a href="http://www.w3.org/ns/dcat#endDate">http://www.w3.org/ns/dcat#endDate</a>
+  <span class='search-tokens' style='display:none'>end Date end date endDate enddate http://www.w3.org/ns/dcat#end Date http://www.w3.org/ns/dcat#end date http://www.w3.org/ns/dcat#endDate http://www.w3.org/ns/dcat#enddate</span></li>
+<li><strong>publisher</strong> (<em>AnnotationProperty</em>) — <code>publisher</code> — <a href="http://purl.org/dc/terms/publisher">http://purl.org/dc/terms/publisher</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/publisher publisher</span></li>
+<li><strong>has version</strong> (<em>ObjectProperty</em>) — <code>hasVersion</code> — <a href="http://www.w3.org/ns/dcat#hasVersion">http://www.w3.org/ns/dcat#hasVersion</a>
+  <span class='search-tokens' style='display:none'>has Version has version hasVersion hasversion http://www.w3.org/ns/dcat#has Version http://www.w3.org/ns/dcat#has version http://www.w3.org/ns/dcat#hasVersion http://www.w3.org/ns/dcat#hasversion</span></li>
+<li><strong>numeric duration</strong> (<em>DatatypeProperty</em>) — <code>numericDuration</code> — <a href="http://www.w3.org/2006/time#numericDuration">http://www.w3.org/2006/time#numericDuration</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2006/time#numeric Duration http://www.w3.org/2006/time#numeric duration http://www.w3.org/2006/time#numericDuration http://www.w3.org/2006/time#numericduration numeric Duration numeric duration numericDuration numericduration</span></li>
+<li><strong>has current version</strong> (<em>ObjectProperty</em>) — <code>hasCurrentVersion</code> — <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">http://www.w3.org/ns/dcat#hasCurrentVersion</a>
+  <span class='search-tokens' style='display:none'>has Current Version has current version hasCurrentVersion hascurrentversion http://www.w3.org/ns/dcat#has Current Version http://www.w3.org/ns/dcat#has current version http://www.w3.org/ns/dcat#hasCurrentVersion http://www.w3.org/ns/dcat#hascurrentversion</span></li>
+<li><strong>Paused</strong> (<em>Individual</em>) — <code>Paused</code> — <a href="https://w3id.org/pko#Paused">https://w3id.org/pko#Paused</a>
+  <span class='search-tokens' style='display:none'>Paused https://w3id.org/pko# Paused https://w3id.org/pko# paused https://w3id.org/pko#Paused https://w3id.org/pko#paused paused</span></li>
+<li><strong>funding</strong> (<em>AnnotationProperty</em>) — <code>funding</code> — <a href="https://schema.org/funding">https://schema.org/funding</a>
+  <span class='search-tokens' style='display:none'>funding https://schema.org/funding</span></li>
+<li><strong>is included in procedure execution</strong> (<em>ObjectProperty</em>) — <code>isIncludedInProcedureExecution</code> — <a href="https://w3id.org/pko#isIncludedInProcedureExecution">https://w3id.org/pko#isIncludedInProcedureExecution</a>
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Included In Procedure Execution https://w3id.org/pko#is included in procedure execution https://w3id.org/pko#isIncludedInProcedureExecution https://w3id.org/pko#isincludedinprocedureexecution is Included In Procedure Execution is included in procedure execution isIncludedInProcedureExecution isincludedinprocedureexecution</span></li>
+<li><strong>Procedure</strong> (<em>Class</em>) — <code>Procedure</code> — <a href="https://w3id.org/pko#Procedure">https://w3id.org/pko#Procedure</a> — <em>comment:</em> A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome.
+  <span class='search-tokens' style='display:none'>Procedure https://w3id.org/pko# Procedure https://w3id.org/pko# procedure https://w3id.org/pko#Procedure https://w3id.org/pko#procedure procedure</span></li>
+<li><strong>Step Execution</strong> (<em>Class</em>) — <code>StepExecution</code> — <a href="https://w3id.org/pko#StepExecution">https://w3id.org/pko#StepExecution</a> — <em>comment:</em> A Procedure Execution is an Activity representing the execution of a certain Step of a Procedure, performed by one or more Agents, during a time interval.
+  <span class='search-tokens' style='display:none'>Step  Execution Step Execution StepExecution https://w3id.org/pko# Step Execution https://w3id.org/pko# step execution https://w3id.org/pko#StepExecution https://w3id.org/pko#stepexecution step  execution step execution stepexecution</span></li>
+<li><strong>Organization</strong> (<em>Class</em>) — <code>Organization</code> — <a href="http://xmlns.com/foaf/0.1/Organization">http://xmlns.com/foaf/0.1/Organization</a>
+  <span class='search-tokens' style='display:none'>Organization http://xmlns.com/foaf/0.1/ Organization http://xmlns.com/foaf/0.1/ organization http://xmlns.com/foaf/0.1/Organization http://xmlns.com/foaf/0.1/organization organization</span></li>
+<li><strong>0000-0001-9962-7193</strong> (<em>Individual</em>) — <code>0000-0001-9962-7193</code> — <a href="https://orcid.org/0000-0001-9962-7193">https://orcid.org/0000-0001-9962-7193</a>
+  <span class='search-tokens' style='display:none'>0000 0001 9962 7193 0000-0001-9962-7193 https://orcid.org/0000 0001 9962 7193 https://orcid.org/0000-0001-9962-7193</span></li>
+<li><strong>next version</strong> (<em>ObjectProperty</em>) — <code>nextVersion</code> — <a href="https://w3id.org/pko#nextVersion">https://w3id.org/pko#nextVersion</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a version of a Procedure to its direct next version of the same Procedure.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#next Version https://w3id.org/pko#next version https://w3id.org/pko#nextVersion https://w3id.org/pko#nextversion next Version next version nextVersion nextversion</span></li>
+<li><strong>identifier</strong> (<em>DatatypeProperty</em>) — <code>identifier</code> — <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/identifier identifier</span></li>
+<li><strong>version number</strong> (<em>DatatypeProperty</em>) — <code>versionNumber</code> — <a href="https://w3id.org/pko#versionNumber">https://w3id.org/pko#versionNumber</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the number of the version of a Procedure, for which we want to manage access control.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#version Number https://w3id.org/pko#version number https://w3id.org/pko#versionNumber https://w3id.org/pko#versionnumber version Number version number versionNumber versionnumber</span></li>
+<li><strong>User Feedback Occurrence</strong> (<em>Class</em>) — <code>UserFeedbackOccurrence</code> — <a href="https://w3id.org/pko#UserFeedbackOccurrence">https://w3id.org/pko#UserFeedbackOccurrence</a> — <em>comment:</em> This class represents the occurrence of a feedback that was provided by a user during an activity.
+  <span class='search-tokens' style='display:none'>User  Feedback  Occurrence User Feedback Occurrence UserFeedbackOccurrence https://w3id.org/pko# User Feedback Occurrence https://w3id.org/pko# user feedback occurrence https://w3id.org/pko#UserFeedbackOccurrence https://w3id.org/pko#userfeedbackoccurrence user  feedback  occurrence user feedback occurrence userfeedbackoccurrence</span></li>
+<li><strong>label</strong> (<em>AnnotationProperty</em>) — <code>label</code> — <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2000/01/rdf schema#label http://www.w3.org/2000/01/rdf-schema#label label</span></li>
+<li><strong>feedback on procedure</strong> (<em>DatatypeProperty</em>) — <code>feedbackOnProcedure</code> — <a href="https://w3id.org/pko#feedbackOnProcedure">https://w3id.org/pko#feedbackOnProcedure</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the feedback on the procedure that was provided by an Agent during the Procedure or Step Execution.
+  <span class='search-tokens' style='display:none'>feedback On Procedure feedback on procedure feedbackOnProcedure feedbackonprocedure https://w3id.org/pko#feedback On Procedure https://w3id.org/pko#feedback on procedure https://w3id.org/pko#feedbackOnProcedure https://w3id.org/pko#feedbackonprocedure</span></li>
+<li><strong>license</strong> (<em>AnnotationProperty</em>) — <code>license</code> — <a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/license license</span></li>
+<li><strong>language</strong> (<em>DatatypeProperty</em>) — <code>language</code> — <a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/language language</span></li>
+<li><strong>previous version</strong> (<em>ObjectProperty</em>) — <code>previousVersion</code> — <a href="http://www.w3.org/ns/dcat#previousVersion">http://www.w3.org/ns/dcat#previousVersion</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#previous Version http://www.w3.org/ns/dcat#previous version http://www.w3.org/ns/dcat#previousVersion http://www.w3.org/ns/dcat#previousversion previous Version previous version previousVersion previousversion</span></li>
+<li><strong>has user feedback occurrence</strong> (<em>ObjectProperty</em>) — <code>hasUserFeedbackOccurrence</code> — <a href="https://w3id.org/pko#hasUserFeedbackOccurrence">https://w3id.org/pko#hasUserFeedbackOccurrence</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution to a User Feedback Occurrence, that is the occurrence of a feedback that the user provides during execution about wither the Procedure or the Procedure Execution.
+  <span class='search-tokens' style='display:none'>has User Feedback Occurrence has user feedback occurrence hasUserFeedbackOccurrence hasuserfeedbackoccurrence https://w3id.org/pko#has User Feedback Occurrence https://w3id.org/pko#has user feedback occurrence https://w3id.org/pko#hasUserFeedbackOccurrence https://w3id.org/pko#hasuserfeedbackoccurrence</span></li>
+<li><strong>keyword</strong> (<em>DatatypeProperty</em>) — <code>keyword</code> — <a href="http://www.w3.org/ns/dcat#keyword">http://www.w3.org/ns/dcat#keyword</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#keyword keyword</span></li>
+<li><strong>versionInfo</strong> (<em>AnnotationProperty</em>) — <code>versionInfo</code> — <a href="http://www.w3.org/2002/07/owl#versionInfo">http://www.w3.org/2002/07/owl#versionInfo</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2002/07/owl#version Info http://www.w3.org/2002/07/owl#version info http://www.w3.org/2002/07/owl#versionInfo http://www.w3.org/2002/07/owl#versioninfo version Info version info versionInfo versioninfo</span></li>
+<li><strong>next alternative step</strong> (<em>ObjectProperty</em>) — <code>nextAlternativeStep</code> — <a href="https://w3id.org/pko#nextAlternativeStep">https://w3id.org/pko#nextAlternativeStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to at least two alternative Steps, if only one of such steps should be executed.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#next Alternative Step https://w3id.org/pko#next alternative step https://w3id.org/pko#nextAlternativeStep https://w3id.org/pko#nextalternativestep next Alternative Step next alternative step nextAlternativeStep nextalternativestep</span></li>
+<li><strong>next step</strong> (<em>ObjectProperty</em>) — <code>nextStep</code> — <a href="https://w3id.org/pko#nextStep">https://w3id.org/pko#nextStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to its direct next Step.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#next Step https://w3id.org/pko#next step https://w3id.org/pko#nextStep https://w3id.org/pko#nextstep next Step next step nextStep nextstep</span></li>
+<li><strong>is step verification of</strong> (<em>ObjectProperty</em>) — <code>isStepVerificationOf</code> — <a href="https://w3id.org/pko#isStepVerificationOf">https://w3id.org/pko#isStepVerificationOf</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Verification, that is the way in which the execution of the step can be verified, to the Step it verifies.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Step Verification Of https://w3id.org/pko#is step verification of https://w3id.org/pko#isStepVerificationOf https://w3id.org/pko#isstepverificationof is Step Verification Of is step verification of isStepVerificationOf isstepverificationof</span></li>
+<li><strong>F A Q Target</strong> (<em>Class</em>) — <code>FAQTarget</code> — <a href="https://w3id.org/pko#FAQTarget">https://w3id.org/pko#FAQTarget</a> — <em>comment:</em> This class represents the Target of a Frequently Asked Question (FAQ).
+  <span class='search-tokens' style='display:none'>F A Q  Target F A Q Target FAQ Target FAQTarget f a q  target f a q target faq target faqtarget https://w3id.org/pko#FAQ Target https://w3id.org/pko#FAQTarget https://w3id.org/pko#faq target https://w3id.org/pko#faqtarget</span></li>
+<li><strong>has issue occurrence</strong> (<em>ObjectProperty</em>) — <code>hasIssueOccurrence</code> — <a href="https://w3id.org/pko#hasIssueOccurrence">https://w3id.org/pko#hasIssueOccurrence</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution or Step Execution to an Issue Occurrence, that is the occurrence of an issue during the execution.
+  <span class='search-tokens' style='display:none'>has Issue Occurrence has issue occurrence hasIssueOccurrence hasissueoccurrence https://w3id.org/pko#has Issue Occurrence https://w3id.org/pko#has issue occurrence https://w3id.org/pko#hasIssueOccurrence https://w3id.org/pko#hasissueoccurrence</span></li>
+<li><strong>Activity</strong> (<em>Class</em>) — <code>Activity</code> — <a href="http://www.w3.org/ns/prov#Activity">http://www.w3.org/ns/prov#Activity</a>
+  <span class='search-tokens' style='display:none'>Activity activity http://www.w3.org/ns/prov# Activity http://www.w3.org/ns/prov# activity http://www.w3.org/ns/prov#Activity http://www.w3.org/ns/prov#activity</span></li>
+<li><strong>created</strong> (<em>DatatypeProperty</em>) — <code>created</code> — <a href="http://purl.org/dc/terms/created">http://purl.org/dc/terms/created</a>
+  <span class='search-tokens' style='display:none'>created http://purl.org/dc/terms/created</span></li>
+<li><strong>Multi Step</strong> (<em>Class</em>) — <code>MultiStep</code> — <a href="http://purl.org/net/p-plan#MultiStep">http://purl.org/net/p-plan#MultiStep</a>
+  <span class='search-tokens' style='display:none'>Multi  Step Multi Step MultiStep http://purl.org/net/p plan# Multi Step http://purl.org/net/p plan# multi step http://purl.org/net/p plan#MultiStep http://purl.org/net/p-plan#MultiStep http://purl.org/net/p-plan#multistep multi  step multi step multistep</span></li>
+<li><strong>rangeIncludes</strong> (<em>AnnotationProperty</em>) — <code>rangeIncludes</code> — <a href="http://purl.org/dc/dcam/rangeIncludes">http://purl.org/dc/dcam/rangeIncludes</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/dcam/range Includes http://purl.org/dc/dcam/range includes http://purl.org/dc/dcam/rangeIncludes http://purl.org/dc/dcam/rangeincludes range Includes range includes rangeIncludes rangeincludes</span></li>
+<li><strong>contributor</strong> (<em>AnnotationProperty</em>) — <code>contributor</code> — <a href="http://purl.org/dc/terms/contributor">http://purl.org/dc/terms/contributor</a>
+  <span class='search-tokens' style='display:none'>contributor http://purl.org/dc/terms/contributor</span></li>
+<li><strong>priorVersion</strong> (<em>AnnotationProperty</em>) — <code>priorVersion</code> — <a href="http://www.w3.org/2002/07/owl#priorVersion">http://www.w3.org/2002/07/owl#priorVersion</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2002/07/owl#prior Version http://www.w3.org/2002/07/owl#prior version http://www.w3.org/2002/07/owl#priorVersion http://www.w3.org/2002/07/owl#priorversion prior Version prior version priorVersion priorversion</span></li>
+<li><strong>is step of plan</strong> (<em>ObjectProperty</em>) — <code>isStepOfPlan</code> — <a href="http://purl.org/net/p-plan#isStepOfPlan">http://purl.org/net/p-plan#isStepOfPlan</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/net/p plan#is Step Of Plan http://purl.org/net/p plan#is step of plan http://purl.org/net/p plan#isStepOfPlan http://purl.org/net/p-plan#isStepOfPlan http://purl.org/net/p-plan#isstepofplan is Step Of Plan is step of plan isStepOfPlan isstepofplan</span></li>
+<li><strong>max repetitions</strong> (<em>DatatypeProperty</em>) — <code>maxRepetitions</code> — <a href="https://w3id.org/pko#maxRepetitions">https://w3id.org/pko#maxRepetitions</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the maximum number of repetitions for a Step. If the maxRepetitions is equal to 1, it means that the Step is not repeatable.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#max Repetitions https://w3id.org/pko#max repetitions https://w3id.org/pko#maxRepetitions https://w3id.org/pko#maxrepetitions max Repetitions max repetitions maxRepetitions maxrepetitions</span></li>
+<li><strong>0000-0002-9066-1229</strong> (<em>Individual</em>) — <code>0000-0002-9066-1229</code> — <a href="https://orcid.org/0000-0002-9066-1229">https://orcid.org/0000-0002-9066-1229</a>
+  <span class='search-tokens' style='display:none'>0000 0002 9066 1229 0000-0002-9066-1229 https://orcid.org/0000 0002 9066 1229 https://orcid.org/0000-0002-9066-1229</span></li>
+<li><strong>access u r l</strong> (<em>DatatypeProperty</em>) — <code>accessURL</code> — <a href="http://www.w3.org/ns/dcat#accessURL">http://www.w3.org/ns/dcat#accessURL</a>
+  <span class='search-tokens' style='display:none'>access u r l accessURL accessurl http://www.w3.org/ns/dcat#accessURL http://www.w3.org/ns/dcat#accessurl</span></li>
+<li><strong>Procedure Status</strong> (<em>Class</em>) — <code>ProcedureStatus</code> — <a href="https://w3id.org/pko#ProcedureStatus">https://w3id.org/pko#ProcedureStatus</a> — <em>comment:</em> This class represents the Status of the Procedure (e.g.,draft, validated).
+  <span class='search-tokens' style='display:none'>Procedure  Status Procedure Status ProcedureStatus https://w3id.org/pko# Procedure Status https://w3id.org/pko# procedure status https://w3id.org/pko#ProcedureStatus https://w3id.org/pko#procedurestatus procedure  status procedure status procedurestatus</span></li>
+<li><strong>Organization</strong> (<em>Class</em>) — <code>Organization</code> — <a href="http://www.w3.org/ns/prov#Organization">http://www.w3.org/ns/prov#Organization</a>
+  <span class='search-tokens' style='display:none'>Organization http://www.w3.org/ns/prov# Organization http://www.w3.org/ns/prov# organization http://www.w3.org/ns/prov#Organization http://www.w3.org/ns/prov#organization organization</span></li>
+<li><strong>was encountered by</strong> (<em>ObjectProperty</em>) — <code>wasEncounteredBy</code> — <a href="https://w3id.org/pko#wasEncounteredBy">https://w3id.org/pko#wasEncounteredBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Issue Occurrence to the Agent that encountered the issue during the Procedure/Step Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Encountered By https://w3id.org/pko#was encountered by https://w3id.org/pko#wasEncounteredBy https://w3id.org/pko#wasencounteredby was Encountered By was encountered by wasEncounteredBy wasencounteredby</span></li>
+<li><strong>was confirmed by</strong> (<em>ObjectProperty</em>) — <code>wasConfirmedBy</code> — <a href="https://w3id.org/pko#wasConfirmedBy">https://w3id.org/pko#wasConfirmedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Activity (e.g., a Step Execution) to the Agent that confirmed the Activity.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Confirmed By https://w3id.org/pko#was confirmed by https://w3id.org/pko#wasConfirmedBy https://w3id.org/pko#wasconfirmedby was Confirmed By was confirmed by wasConfirmedBy wasconfirmedby</span></li>
+<li><strong>next step execution</strong> (<em>ObjectProperty</em>) — <code>nextStepExecution</code> — <a href="https://w3id.org/pko#nextStepExecution">https://w3id.org/pko#nextStepExecution</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to its direct next Step Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#next Step Execution https://w3id.org/pko#next step execution https://w3id.org/pko#nextStepExecution https://w3id.org/pko#nextstepexecution next Step Execution next step execution nextStepExecution nextstepexecution</span></li>
+<li><strong>has user question occurrence</strong> (<em>ObjectProperty</em>) — <code>hasUserQuestionOccurrence</code> — <a href="https://w3id.org/pko#hasUserQuestionOccurrence">https://w3id.org/pko#hasUserQuestionOccurrence</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Procedure Execution or Step Execution to a User Question Occurrence, that is the occurrence of a question that the user came up with during execution.
+  <span class='search-tokens' style='display:none'>has User Question Occurrence has user question occurrence hasUserQuestionOccurrence hasuserquestionoccurrence https://w3id.org/pko#has User Question Occurrence https://w3id.org/pko#has user question occurrence https://w3id.org/pko#hasUserQuestionOccurrence https://w3id.org/pko#hasuserquestionoccurrence</span></li>
+<li><strong>Tool</strong> (<em>Class</em>) — <code>Tool</code> — <a href="http://w3id.org/nfdi4ing/metadata4ing#Tool">http://w3id.org/nfdi4ing/metadata4ing#Tool</a>
+  <span class='search-tokens' style='display:none'>Tool http://w3id.org/nfdi4ing/metadata4ing# Tool http://w3id.org/nfdi4ing/metadata4ing# tool http://w3id.org/nfdi4ing/metadata4ing#Tool http://w3id.org/nfdi4ing/metadata4ing#tool tool</span></li>
+<li><strong>previous step</strong> (<em>ObjectProperty</em>) — <code>previousStep</code> — <a href="https://w3id.org/pko#previousStep">https://w3id.org/pko#previousStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to its direct previous Step.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#previous Step https://w3id.org/pko#previous step https://w3id.org/pko#previousStep https://w3id.org/pko#previousstep previous Step previous step previousStep previousstep</span></li>
+<li><strong>Person</strong> (<em>Class</em>) — <code>Person</code> — <a href="http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a>
+  <span class='search-tokens' style='display:none'>Person http://xmlns.com/foaf/0.1/ Person http://xmlns.com/foaf/0.1/ person http://xmlns.com/foaf/0.1/Person http://xmlns.com/foaf/0.1/person person</span></li>
+<li><strong>Error</strong> (<em>Class</em>) — <code>Error</code> — <a href="https://w3id.org/pko#Error">https://w3id.org/pko#Error</a> — <em>comment:</em> This class represents an Error that can be encountered while executing an activity.
+  <span class='search-tokens' style='display:none'>Error error https://w3id.org/pko# Error https://w3id.org/pko# error https://w3id.org/pko#Error https://w3id.org/pko#error</span></li>
+<li><strong>Plan</strong> (<em>Class</em>) — <code>Plan</code> — <a href="http://purl.org/net/p-plan#Plan">http://purl.org/net/p-plan#Plan</a>
+  <span class='search-tokens' style='display:none'>Plan http://purl.org/net/p plan# Plan http://purl.org/net/p plan# plan http://purl.org/net/p plan#Plan http://purl.org/net/p-plan#Plan http://purl.org/net/p-plan#plan plan</span></li>
+<li><strong>description</strong> (<em>DatatypeProperty</em>) — <code>description</code> — <a href="http://purl.org/dc/terms/description">http://purl.org/dc/terms/description</a>
+  <span class='search-tokens' style='display:none'>description http://purl.org/dc/terms/description</span></li>
+<li><strong>has step verification</strong> (<em>ObjectProperty</em>) — <code>hasStepVerification</code> — <a href="https://w3id.org/pko#hasStepVerification">https://w3id.org/pko#hasStepVerification</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step of a Procedure to a Step Verification, that is the way in which the execution of the step can be verified.
+  <span class='search-tokens' style='display:none'>has Step Verification has step verification hasStepVerification hasstepverification https://w3id.org/pko#has Step Verification https://w3id.org/pko#has step verification https://w3id.org/pko#hasStepVerification https://w3id.org/pko#hasstepverification</span></li>
+<li><strong>changelog description</strong> (<em>DatatypeProperty</em>) — <code>changelogDescription</code> — <a href="https://w3id.org/pko#changelogDescription">https://w3id.org/pko#changelogDescription</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the changelog description of a Procedure, that details all updates with respect to the previous version of the same Procedure.
+  <span class='search-tokens' style='display:none'>changelog Description changelog description changelogDescription changelogdescription https://w3id.org/pko#changelog Description https://w3id.org/pko#changelog description https://w3id.org/pko#changelogDescription https://w3id.org/pko#changelogdescription</span></li>
+<li><strong>Approval</strong> (<em>Individual</em>) — <code>Approval</code> — <a href="https://w3id.org/pko#Approval">https://w3id.org/pko#Approval</a>
+  <span class='search-tokens' style='display:none'>Approval approval https://w3id.org/pko# Approval https://w3id.org/pko# approval https://w3id.org/pko#Approval https://w3id.org/pko#approval</span></li>
+<li><strong>was provided by</strong> (<em>ObjectProperty</em>) — <code>wasProvidedBy</code> — <a href="https://w3id.org/pko#wasProvidedBy">https://w3id.org/pko#wasProvidedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Feedback Occurrence to the Agent that provided the feedback about either the procedure or the procedure execution during the Procedure Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Provided By https://w3id.org/pko#was provided by https://w3id.org/pko#wasProvidedBy https://w3id.org/pko#wasprovidedby was Provided By was provided by wasProvidedBy wasprovidedby</span></li>
+<li><strong>has output var</strong> (<em>ObjectProperty</em>) — <code>hasOutputVar</code> — <a href="http://purl.org/net/p-plan#hasOutputVar">http://purl.org/net/p-plan#hasOutputVar</a>
+  <span class='search-tokens' style='display:none'>has Output Var has output var hasOutputVar hasoutputvar http://purl.org/net/p plan#has Output Var http://purl.org/net/p plan#has output var http://purl.org/net/p plan#hasOutputVar http://purl.org/net/p-plan#hasOutputVar http://purl.org/net/p-plan#hasoutputvar</span></li>
+<li><strong>issued</strong> (<em>AnnotationProperty</em>) — <code>issued</code> — <a href="http://purl.org/dc/terms/issued">http://purl.org/dc/terms/issued</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/issued issued</span></li>
+<li><strong>error code</strong> (<em>DatatypeProperty</em>) — <code>errorCode</code> — <a href="https://w3id.org/pko#errorCode">https://w3id.org/pko#errorCode</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the code of an Error that can be encountered during the Procedure or Step Execution.
+  <span class='search-tokens' style='display:none'>error Code error code errorCode errorcode https://w3id.org/pko#error Code https://w3id.org/pko#error code https://w3id.org/pko#errorCode https://w3id.org/pko#errorcode</span></li>
+<li><strong>has input var</strong> (<em>ObjectProperty</em>) — <code>hasInputVar</code> — <a href="http://purl.org/net/p-plan#hasInputVar">http://purl.org/net/p-plan#hasInputVar</a>
+  <span class='search-tokens' style='display:none'>has Input Var has input var hasInputVar hasinputvar http://purl.org/net/p plan#has Input Var http://purl.org/net/p plan#has input var http://purl.org/net/p plan#hasInputVar http://purl.org/net/p-plan#hasInputVar http://purl.org/net/p-plan#hasinputvar</span></li>
+<li><strong>modified</strong> (<em>DatatypeProperty</em>) — <code>modified</code> — <a href="http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/modified modified</span></li>
+<li><strong>temporal</strong> (<em>ObjectProperty</em>) — <code>temporal</code> — <a href="http://purl.org/dc/terms/temporal">http://purl.org/dc/terms/temporal</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/temporal temporal</span></li>
+<li><strong>used</strong> (<em>ObjectProperty</em>) — <code>used</code> — <a href="http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#used used</span></li>
+<li><strong>was generated by</strong> (<em>ObjectProperty</em>) — <code>wasGeneratedBy</code> — <a href="http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Generated By http://www.w3.org/ns/prov#was generated by http://www.w3.org/ns/prov#wasGeneratedBy http://www.w3.org/ns/prov#wasgeneratedby was Generated By was generated by wasGeneratedBy wasgeneratedby</span></li>
+<li><strong>Approved</strong> (<em>Individual</em>) — <code>Approved</code> — <a href="https://w3id.org/pko#Approved">https://w3id.org/pko#Approved</a>
+  <span class='search-tokens' style='display:none'>Approved approved https://w3id.org/pko# Approved https://w3id.org/pko# approved https://w3id.org/pko#Approved https://w3id.org/pko#approved</span></li>
+<li><strong>domainIncludes</strong> (<em>AnnotationProperty</em>) — <code>domainIncludes</code> — <a href="http://purl.org/dc/dcam/domainIncludes">http://purl.org/dc/dcam/domainIncludes</a>
+  <span class='search-tokens' style='display:none'>domain Includes domain includes domainIncludes domainincludes http://purl.org/dc/dcam/domain Includes http://purl.org/dc/dcam/domain includes http://purl.org/dc/dcam/domainIncludes http://purl.org/dc/dcam/domainincludes</span></li>
+<li><strong>start date</strong> (<em>DatatypeProperty</em>) — <code>startDate</code> — <a href="http://www.w3.org/ns/dcat#startDate">http://www.w3.org/ns/dcat#startDate</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#start Date http://www.w3.org/ns/dcat#start date http://www.w3.org/ns/dcat#startDate http://www.w3.org/ns/dcat#startdate start Date start date startDate startdate</span></li>
+<li><strong>was associated with</strong> (<em>ObjectProperty</em>) — <code>wasAssociatedWith</code> — <a href="http://www.w3.org/ns/prov#wasAssociatedWith">http://www.w3.org/ns/prov#wasAssociatedWith</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Associated With http://www.w3.org/ns/prov#was associated with http://www.w3.org/ns/prov#wasAssociatedWith http://www.w3.org/ns/prov#wasassociatedwith was Associated With was associated with wasAssociatedWith wasassociatedwith</span></li>
+<li><strong>Procedure Execution</strong> (<em>Class</em>) — <code>ProcedureExecution</code> — <a href="https://w3id.org/pko#ProcedureExecution">https://w3id.org/pko#ProcedureExecution</a> — <em>comment:</em> A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval.
+  <span class='search-tokens' style='display:none'>Procedure  Execution Procedure Execution ProcedureExecution https://w3id.org/pko# Procedure Execution https://w3id.org/pko# procedure execution https://w3id.org/pko#ProcedureExecution https://w3id.org/pko#procedureexecution procedure  execution procedure execution procedureexecution</span></li>
+<li><strong>preferredNamespaceUri</strong> (<em>AnnotationProperty</em>) — <code>preferredNamespaceUri</code> — <a href="http://purl.org/vocab/vann/preferredNamespaceUri">http://purl.org/vocab/vann/preferredNamespaceUri</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/vocab/vann/preferred Namespace Uri http://purl.org/vocab/vann/preferred namespace uri http://purl.org/vocab/vann/preferredNamespaceUri http://purl.org/vocab/vann/preferrednamespaceuri preferred Namespace Uri preferred namespace uri preferredNamespaceUri preferrednamespaceuri</span></li>
+<li><strong>Entity</strong> (<em>Class</em>) — <code>Entity</code> — <a href="http://www.w3.org/ns/prov#Entity">http://www.w3.org/ns/prov#Entity</a>
+  <span class='search-tokens' style='display:none'>Entity entity http://www.w3.org/ns/prov# Entity http://www.w3.org/ns/prov# entity http://www.w3.org/ns/prov#Entity http://www.w3.org/ns/prov#entity</span></li>
+<li><strong>holds role in time</strong> (<em>ObjectProperty</em>) — <code>holdsRoleInTime</code> — <a href="http://purl.org/spar/pro/holdsRoleInTime">http://purl.org/spar/pro/holdsRoleInTime</a>
+  <span class='search-tokens' style='display:none'>holds Role In Time holds role in time holdsRoleInTime holdsroleintime http://purl.org/spar/pro/holds Role In Time http://purl.org/spar/pro/holds role in time http://purl.org/spar/pro/holdsRoleInTime http://purl.org/spar/pro/holdsroleintime</span></li>
+<li><strong>issue solution by user</strong> (<em>DatatypeProperty</em>) — <code>issueSolutionByUser</code> — <a href="https://w3id.org/pko#issueSolutionByUser">https://w3id.org/pko#issueSolutionByUser</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the solution of an issue, encountered during a Procedure/Step Execution, as identified and applied by the user.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#issue Solution By User https://w3id.org/pko#issue solution by user https://w3id.org/pko#issueSolutionByUser https://w3id.org/pko#issuesolutionbyuser issue Solution By User issue solution by user issueSolutionByUser issuesolutionbyuser</span></li>
+<li><strong>createdWith</strong> (<em>AnnotationProperty</em>) — <code>createdWith</code> — <a href="https://w3id.org/mod#createdWith">https://w3id.org/mod#createdWith</a>
+  <span class='search-tokens' style='display:none'>created With created with createdWith createdwith https://w3id.org/mod#created With https://w3id.org/mod#created with https://w3id.org/mod#createdWith https://w3id.org/mod#createdwith</span></li>
+<li><strong>requires action</strong> (<em>ObjectProperty</em>) — <code>requiresAction</code> — <a href="https://w3id.org/pko#requiresAction">https://w3id.org/pko#requiresAction</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to an Action that needs to be performed by a human Agent (a Person) for executing the Step.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#requires Action https://w3id.org/pko#requires action https://w3id.org/pko#requiresAction https://w3id.org/pko#requiresaction requires Action requires action requiresAction requiresaction</span></li>
+<li><strong>is step of multi step</strong> (<em>ObjectProperty</em>) — <code>isStepOfMultiStep</code> — <a href="https://w3id.org/pko#isStepOfMultiStep">https://w3id.org/pko#isStepOfMultiStep</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step to the MultiStep it is a step of.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#is Step Of Multi Step https://w3id.org/pko#is step of multi step https://w3id.org/pko#isStepOfMultiStep https://w3id.org/pko#isstepofmultistep is Step Of Multi Step is step of multi step isStepOfMultiStep isstepofmultistep</span></li>
+<li><strong>InProgress</strong> (<em>Individual</em>) — <code>InProgress</code> — <a href="https://w3id.org/pko#InProgress">https://w3id.org/pko#InProgress</a>
+  <span class='search-tokens' style='display:none'>In Progress InProgress https://w3id.org/pko# In Progress https://w3id.org/pko# in progress https://w3id.org/pko#InProgress https://w3id.org/pko#inprogress in progress inprogress</span></li>
+<li><strong>min repetitions</strong> (<em>DatatypeProperty</em>) — <code>minRepetitions</code> — <a href="https://w3id.org/pko#minRepetitions">https://w3id.org/pko#minRepetitions</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to represent the maximum number of repetitions for a Step. If the minRepetitions is equal to 1, it means that the Step is mandatory. If the minRepetitions is equal to 0, it means that the Step is optional.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#min Repetitions https://w3id.org/pko#min repetitions https://w3id.org/pko#minRepetitions https://w3id.org/pko#minrepetitions min Repetitions min repetitions minRepetitions minrepetitions</span></li>
+<li><strong>with role</strong> (<em>ObjectProperty</em>) — <code>withRole</code> — <a href="http://purl.org/spar/pro/withRole">http://purl.org/spar/pro/withRole</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/spar/pro/with Role http://purl.org/spar/pro/with role http://purl.org/spar/pro/withRole http://purl.org/spar/pro/withrole with Role with role withRole withrole</span></li>
+<li><strong>ProcedureTarget</strong> (<em>Entity</em>) — <code>ProcedureTarget</code> — <a href="https://w3id.org/pko#ProcedureTarget">https://w3id.org/pko#ProcedureTarget</a> — <em>comment:</em> This class represents the Target of a Procedure, that is the object at which the actions of the Procedure are directed.
+  <span class='search-tokens' style='display:none'>Procedure Target ProcedureTarget https://w3id.org/pko# Procedure Target https://w3id.org/pko# procedure target https://w3id.org/pko#ProcedureTarget https://w3id.org/pko#proceduretarget procedure target proceduretarget</span></li>
+<li><strong>was asked by</strong> (<em>ObjectProperty</em>) — <code>wasAskedBy</code> — <a href="https://w3id.org/pko#wasAskedBy">https://w3id.org/pko#wasAskedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a User Question Occurrence to the Agent that asked the question during the Procedure/Step Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Asked By https://w3id.org/pko#was asked by https://w3id.org/pko#wasAskedBy https://w3id.org/pko#wasaskedby was Asked By was asked by wasAskedBy wasaskedby</span></li>
+<li><strong>Role In Time</strong> (<em>Class</em>) — <code>RoleInTime</code> — <a href="http://purl.org/spar/pro/RoleInTime">http://purl.org/spar/pro/RoleInTime</a>
+  <span class='search-tokens' style='display:none'>Role  In  Time Role In Time RoleInTime http://purl.org/spar/pro/ Role In Time http://purl.org/spar/pro/ role in time http://purl.org/spar/pro/RoleInTime http://purl.org/spar/pro/roleintime role  in  time role in time roleintime</span></li>
+<li><strong>ProcedureTargetType</strong> (<em>Entity</em>) — <code>ProcedureTargetType</code> — <a href="https://w3id.org/pko#ProcedureTargetType">https://w3id.org/pko#ProcedureTargetType</a> — <em>comment:</em> This class represents the Type of a Procedure Target.
+  <span class='search-tokens' style='display:none'>Procedure Target Type ProcedureTargetType https://w3id.org/pko# Procedure Target Type https://w3id.org/pko# procedure target type https://w3id.org/pko#ProcedureTargetType https://w3id.org/pko#proceduretargettype procedure target type proceduretargettype</span></li>
+<li><strong>requires tool</strong> (<em>ObjectProperty</em>) — <code>requiresTool</code> — <a href="https://w3id.org/pko#requiresTool">https://w3id.org/pko#requiresTool</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step of a Procedure to a Tool required by the Step, that is an object needed to execute the Step.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#requires Tool https://w3id.org/pko#requires tool https://w3id.org/pko#requiresTool https://w3id.org/pko#requirestool requires Tool requires tool requiresTool requirestool</span></li>
+<li><strong>started at time</strong> (<em>DatatypeProperty</em>) — <code>startedAtTime</code> — <a href="http://www.w3.org/ns/prov#startedAtTime">http://www.w3.org/ns/prov#startedAtTime</a>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#started At Time http://www.w3.org/ns/prov#started at time http://www.w3.org/ns/prov#startedAtTime http://www.w3.org/ns/prov#startedattime started At Time started at time startedAtTime startedattime</span></li>
+<li><strong>was executed by</strong> (<em>ObjectProperty</em>) — <code>wasExecutedBy</code> — <a href="https://w3id.org/pko#wasExecutedBy">https://w3id.org/pko#wasExecutedBy</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link an Activity (e.g., a Step Execution) to the Agent that executed the Activity.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#was Executed By https://w3id.org/pko#was executed by https://w3id.org/pko#wasExecutedBy https://w3id.org/pko#wasexecutedby was Executed By was executed by wasExecutedBy wasexecutedby</span></li>
+<li><strong>previous step execution</strong> (<em>ObjectProperty</em>) — <code>previousStepExecution</code> — <a href="https://w3id.org/pko#previousStepExecution">https://w3id.org/pko#previousStepExecution</a> — <em>comment:</em> In the context of the Procedural Knowledge Ontology (PKO), this property is used to link a Step Execution to its direct previous Step Execution.
+  <span class='search-tokens' style='display:none'>https://w3id.org/pko#previous Step Execution https://w3id.org/pko#previous step execution https://w3id.org/pko#previousStepExecution https://w3id.org/pko#previousstepexecution previous Step Execution previous step execution previousStepExecution previousstepexecution</span></li>
+<li><strong>citation</strong> (<em>AnnotationProperty</em>) — <code>citation</code> — <a href="https://schema.org/citation">https://schema.org/citation</a>
+  <span class='search-tokens' style='display:none'>citation https://schema.org/citation</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

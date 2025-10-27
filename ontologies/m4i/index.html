@@ -1,0 +1,879 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/ontologies/m4i/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>m4i - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#m4i" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              m4i
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes &amp; Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metrics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="m4i">m4i</h1>
+<ul>
+<li><strong>Source:</strong> <code>Ontologies/m4i.ttl</code>  ·  <strong><a href="m4i.ttl">Download</a></strong></li>
+</ul>
+<p><span class='search-tokens' style='display:none'>note http://www.w3.org/2004/02/skos/core#note pref label http://www.w3.org/2004/02/skos/core#pref had role http://www.w3.org/ns/prov#had creator http://purl.org/dc/terms/creator zugehörige person related http://w3id.org/nfdi4ing/metadata4ing# hat orcid id http://w3id.org/nfdi4ing/metadata4ing#orcid is referenced by http://purl.org/dc/terms/is kind of quantity has ror http://w3id.org/nfdi4ing/metadata4ing#has research organization registry | forschungsorganisationsid admissible unit broader http://www.w3.org/2004/02/skos/core#broader example http://www.w3.org/2004/02/skos/core#example references http://purl.org/dc/terms/references usage instruction uncertainty https://ptb.de/si/has variable deckungswahrscheinlichkeit coverage probability scope http://www.w3.org/2004/02/skos/core#scope betreuer<em>in supervisor forschungsprojekt project https://schema.org/ rights holder definition http://www.w3.org/2004/02/skos/core#definition end time https://schema.org/end unsicherheitsdeklaration declaration anbieter</em>in distributor bibliographic record http://purl.org/spar/biro/ date http://www.w3.org/2001/xml schema#date http://www.molmod.info/semantics/pims ii.ttl# reell real https://ptb.de/si/ preferred namespace prefix http://purl.org/vocab/vann/preferred war rolle in was http://www.w3.org/ns/prov#was downloadlink downloadurl http://www.w3.org/ns/dcat#downloadurl ist beteiligt an ro 0000056 http://purl.obolibrary.org/obo/ro input 0002233 sponsor<em>in sponsor compression format compress http://www.w3.org/ns/dcat#compress ends with 0002230 finished zulässige einheit für for ii.ttl#is packformat package http://www.w3.org/ns/dcat#package investigates http://w3id.org/nfdi4ing/metadata4ing#investigates datumszuweisung bearbeitet assignment modified runtime contact intangible realisiert bfo 0000055 http://purl.obolibrary.org/obo/bfo titel title http://purl.org/dc/terms/title work leader associated to http://w3id.org/nfdi4ing/metadata4ing#in wert value standard unc erweiterte unsicherheit expanded dateigröße (in byte) byte size http://www.w3.org/ns/dcat#byte registrierungsstelle registration agency agent http://www.w3.org/ns/prov#agent symbol other manager member property dataset series http://www.w3.org/ns/dcat# editor http://www.w3.org/ns/ssn/is parameter close match http://www.w3.org/2004/02/skos/core#close deleted media type http://www.w3.org/ns/dcat#media wird implementiert durch implemented http://www.w3.org/ns/ssn/implemented zuweisung bezug auf unmittelbare voraussetzung schritt 0002090 interval des akteurs http://www.w3.org/ns/prov# data messeinheit emmo b081b346 7279 46ef 9a3d 2c088fcd79f4 http://emmo.info/emmo#emmo gruppe group http://xmlns.com/foaf/0.1/ teilnehmer 0000057 qualified association http://www.w3.org/ns/prov#qualified beginnt mit 0002224 started status http://purl.org/ontology/bibo/status projekt referenceid http://w3id.org/nfdi4ing/metadata4ing#project output 0002234 publisher http://purl.org/dc/terms/publisher process 0000015 arbeitsschritt processing step maximum max curator überdeckungsfaktor factor nachname last name http://xmlns.com/foaf/0.1/last gültig ab valid from räumliche auflösung metern) spatial resolution meters http://www.w3.org/ns/dcat#spatial distribution http://www.w3.org/ns/dcat#distribution organisation verknüpfung projektleiter</em>in organisationszugehörigkeit affiliation https://schema.org/affiliation part 0000050 0000054 producer license http://purl.org/dc/terms/license method erzeugt created funder https://schema.org/funder intervallminimum min 0002352 0002353 0000051 verteilung aktivität activity http://purl.org/dc/terms/created metadata4 ing projektstartdatum start http://w3id.org/nfdi4ing/metadata4ing#start contributor http://purl.org/dc/terms/contributor startzeit https://schema.org/start precedes 0000063 timestamp temporal https://schema.org/temporal first http://xmlns.com/foaf/0.1/first rechercheur*in researcher implements http://w3id.org/nfdi4ing/metadata4ing#implements http://www.w3.org/ns/ssn/implements collector nutzt instrument https://schema.org/instrument variablenbeschreibung description doi http://purl.org/ontology/bibo/doi http://www.w3.org/ns/dcat#in eingesetztes werkzeug employed tool http://xmlns.com/foaf/0.1/member http://w3id.org/nfdi4ing/metadata4ing#is http://purl.org/dc/terms/description bereitstellende institution hosting projektenddatum http://w3id.org/nfdi4ing/metadata4ing#end narrower http://www.w3.org/2004/02/skos/core#narrower größenwert http://www.w3.org/ns/dcat#temporal numerical abstract http://purl.org/dc/terms/abstract bis until editorial http://www.w3.org/2004/02/skos/core#editorial issued http://purl.org/dc/terms/issued http://xmlns.com/foaf/0.1/title http://purl.org/dc/terms/modified registrierungsbehörde authority e mail adresse mbox http://xmlns.com/foaf/0.1/mbox assigned duration schema#duration uri http://purl.org/dc/terms/rights identifier http://w3id.org/nfdi4ing/metadata4ing#identifier besitzt eindeutigen identifikator unique represented through repräsentiert realizes http://w3id.org/nfdi4ing/metadata4ing#realizes eigenschaft http://www.w3.org/ns/ssn/has participant http://w3id.org/nfdi4ing/metadata4ing#implemented alt http://www.w3.org/2004/02/skos/core#alt realisierbare entität 0000017 citation https://schema.org/citation zuweisungszeitstempel zahlenwert</span></p>
+<h2 id="classes-properties">Classes &amp; Properties</h2>
+<div data-search-exclude>
+- **note** (*AnnotationProperty*) — `note` — <http://www.w3.org/2004/02/skos/core#note>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#note note</span>
+- **prefLabel** (*AnnotationProperty*) — `prefLabel` — <http://www.w3.org/2004/02/skos/core#prefLabel>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#pref Label http://www.w3.org/2004/02/skos/core#pref label http://www.w3.org/2004/02/skos/core#prefLabel http://www.w3.org/2004/02/skos/core#preflabel pref Label pref label prefLabel preflabel</span>
+- **had role** (*ObjectProperty*) — `hadRole` — <http://www.w3.org/ns/prov#hadRole>
+  <span class='search-tokens' style='display:none'>had Role had role hadRole hadrole http://www.w3.org/ns/prov#had Role http://www.w3.org/ns/prov#had role http://www.w3.org/ns/prov#hadRole http://www.w3.org/ns/prov#hadrole</span>
+- **creator** (*AnnotationProperty*) — `creator` — <http://purl.org/dc/terms/creator>
+  <span class='search-tokens' style='display:none'>creator http://purl.org/dc/terms/creator</span>
+- **zugehörige Person** (*Individual*) — `RelatedPerson` — <http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson>
+  <span class='search-tokens' style='display:none'>Related Person RelatedPerson http://w3id.org/nfdi4ing/metadata4ing# Related Person http://w3id.org/nfdi4ing/metadata4ing# related person http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson http://w3id.org/nfdi4ing/metadata4ing#relatedperson related person relatedperson zugehörige  Person zugehörige  person zugehörige Person zugehörige person</span>
+- **hat ORCID ID** (*DatatypeProperty*) — `orcidId` — <http://w3id.org/nfdi4ing/metadata4ing#orcidId>
+  <span class='search-tokens' style='display:none'>hat ORCID ID hat orcid id http://w3id.org/nfdi4ing/metadata4ing#orcid Id http://w3id.org/nfdi4ing/metadata4ing#orcid id http://w3id.org/nfdi4ing/metadata4ing#orcidId http://w3id.org/nfdi4ing/metadata4ing#orcidid orcid Id orcid id orcidId orcidid</span>
+- **is referenced by** (*AnnotationProperty*) — `isReferencedBy` — <http://purl.org/dc/terms/isReferencedBy> — _comment:_ A related resource that references, cites, or otherwise points to the described resource.
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/is Referenced By http://purl.org/dc/terms/is referenced by http://purl.org/dc/terms/isReferencedBy http://purl.org/dc/terms/isreferencedby is Referenced By is referenced by isReferencedBy isreferencedby</span>
+- **kind of quantity** (*Class*) — `KindOfQuantity` — <http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity>
+  <span class='search-tokens' style='display:none'>Kind Of Quantity KindOfQuantity http://w3id.org/nfdi4ing/metadata4ing# Kind Of Quantity http://w3id.org/nfdi4ing/metadata4ing# kind of quantity http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity http://w3id.org/nfdi4ing/metadata4ing#kindofquantity kind of quantity kindofquantity</span>
+- **has ROR ID** (*DatatypeProperty*) — `hasRorId` — <http://w3id.org/nfdi4ing/metadata4ing#hasRorId> — _alt:_ has research organization registry id | hat Forschungsorganisationsid
+  <span class='search-tokens' style='display:none'>has ROR ID has Ror Id has research organization registry id | hat  Forschungsorganisationsid has research organization registry id | hat  forschungsorganisationsid has research organization registry id | hat Forschungsorganisationsid has research organization registry id | hat forschungsorganisationsid has ror id hasRorId hasrorid http://w3id.org/nfdi4ing/metadata4ing#has Ror Id http://w3id.org/nfdi4ing/metadata4ing#has ror id http://w3id.org/nfdi4ing/metadata4ing#hasRorId http://w3id.org/nfdi4ing/metadata4ing#hasrorid</span>
+- **hasAdmissibleUnit** (*ObjectProperty*) — `hasAdmissibleUnit` — <http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleUnit>
+  <span class='search-tokens' style='display:none'>has Admissible Unit has admissible unit hasAdmissibleUnit hasadmissibleunit http://w3id.org/nfdi4ing/metadata4ing#has Admissible Unit http://w3id.org/nfdi4ing/metadata4ing#has admissible unit http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleUnit http://w3id.org/nfdi4ing/metadata4ing#hasadmissibleunit</span>
+- **broader** (*AnnotationProperty*) — `broader` — <http://www.w3.org/2004/02/skos/core#broader>
+  <span class='search-tokens' style='display:none'>broader http://www.w3.org/2004/02/skos/core#broader</span>
+- **example** (*AnnotationProperty*) — `example` — <http://www.w3.org/2004/02/skos/core#example>
+  <span class='search-tokens' style='display:none'>example http://www.w3.org/2004/02/skos/core#example</span>
+- **has unit** (*ObjectProperty*) — `hasUnit` — <http://w3id.org/nfdi4ing/metadata4ing#hasUnit>
+  <span class='search-tokens' style='display:none'>has Unit has unit hasUnit hasunit http://w3id.org/nfdi4ing/metadata4ing#has Unit http://w3id.org/nfdi4ing/metadata4ing#has unit http://w3id.org/nfdi4ing/metadata4ing#hasUnit http://w3id.org/nfdi4ing/metadata4ing#hasunit</span>
+- **references** (*AnnotationProperty*) — `references` — <http://purl.org/dc/terms/references> — _comment:_ A related resource that is referenced, cited, or otherwise pointed to by the described resource.
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/references references</span>
+- **usage instruction** (*DatatypeProperty*) — `UsageInstruction` — <http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction>
+  <span class='search-tokens' style='display:none'>Usage Instruction UsageInstruction http://w3id.org/nfdi4ing/metadata4ing# Usage Instruction http://w3id.org/nfdi4ing/metadata4ing# usage instruction http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction http://w3id.org/nfdi4ing/metadata4ing#usageinstruction usage instruction usageinstruction</span>
+- **has uncertainty** (*DatatypeProperty*) — `hasUncertainty` — <https://ptb.de/si/hasUncertainty>
+  <span class='search-tokens' style='display:none'>has Uncertainty has uncertainty hasUncertainty hasuncertainty https://ptb.de/si/has Uncertainty https://ptb.de/si/has uncertainty https://ptb.de/si/hasUncertainty https://ptb.de/si/hasuncertainty</span>
+- **has variable** (*ObjectProperty*) — `hasVariable` — <http://w3id.org/nfdi4ing/metadata4ing#hasVariable>
+  <span class='search-tokens' style='display:none'>has Variable has variable hasVariable hasvariable http://w3id.org/nfdi4ing/metadata4ing#has Variable http://w3id.org/nfdi4ing/metadata4ing#has variable http://w3id.org/nfdi4ing/metadata4ing#hasVariable http://w3id.org/nfdi4ing/metadata4ing#hasvariable</span>
+- **hat Deckungswahrscheinlichkeit** (*DatatypeProperty*) — `hasCoverageProbability` — <https://ptb.de/si/hasCoverageProbability>
+  <span class='search-tokens' style='display:none'>has Coverage Probability has coverage probability hasCoverageProbability hascoverageprobability hat  Deckungswahrscheinlichkeit hat  deckungswahrscheinlichkeit hat Deckungswahrscheinlichkeit hat deckungswahrscheinlichkeit https://ptb.de/si/has Coverage Probability https://ptb.de/si/has coverage probability https://ptb.de/si/hasCoverageProbability https://ptb.de/si/hascoverageprobability</span>
+- **scopeNote** (*AnnotationProperty*) — `scopeNote` — <http://www.w3.org/2004/02/skos/core#scopeNote>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#scope Note http://www.w3.org/2004/02/skos/core#scope note http://www.w3.org/2004/02/skos/core#scopeNote http://www.w3.org/2004/02/skos/core#scopenote scope Note scope note scopeNote scopenote</span>
+- **Betreuer*in** (*Individual*) — `Supervisor` — <http://w3id.org/nfdi4ing/metadata4ing#Supervisor>
+  <span class='search-tokens' style='display:none'>Betreuer*in Supervisor betreuer*in http://w3id.org/nfdi4ing/metadata4ing# Supervisor http://w3id.org/nfdi4ing/metadata4ing# supervisor http://w3id.org/nfdi4ing/metadata4ing#Supervisor http://w3id.org/nfdi4ing/metadata4ing#supervisor supervisor</span>
+- **Forschungsprojekt** (*Class*) — `ResearchProject` — <https://schema.org/ResearchProject> — _comment:_ A research project
+  <span class='search-tokens' style='display:none'>Forschungsprojekt Research Project ResearchProject forschungsprojekt https://schema.org/ Research Project https://schema.org/ research project https://schema.org/ResearchProject https://schema.org/researchproject research project researchproject</span>
+- **rights holder** (*Individual*) — `RightsHolder` — <http://w3id.org/nfdi4ing/metadata4ing#RightsHolder>
+  <span class='search-tokens' style='display:none'>Rights Holder RightsHolder http://w3id.org/nfdi4ing/metadata4ing# Rights Holder http://w3id.org/nfdi4ing/metadata4ing# rights holder http://w3id.org/nfdi4ing/metadata4ing#RightsHolder http://w3id.org/nfdi4ing/metadata4ing#rightsholder rights holder rightsholder</span>
+- **definition** (*AnnotationProperty*) — `definition` — <http://www.w3.org/2004/02/skos/core#definition>
+  <span class='search-tokens' style='display:none'>definition http://www.w3.org/2004/02/skos/core#definition</span>
+- **end time** (*DatatypeProperty*) — `endTime` — <https://schema.org/endTime> — _comment:_ "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>
+  <span class='search-tokens' style='display:none'>end Time end time endTime endtime https://schema.org/end Time https://schema.org/end time https://schema.org/endTime https://schema.org/endtime</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Note that  Event uses start Date/end Date instead of start Time/end Time, even when describing dates with times.  This situation may be clarified in future revisions." Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions." note that  event uses start date/end date instead of start time/end time, even when describing dates with times.  this situation may be clarified in future revisions." note that event uses startdate/enddate instead of starttime/endtime, even when describing dates with times. this situation may be clarified in future revisions."</span>
+- **Unsicherheitsdeklaration** (*Class*) — `UncertaintyDeclaration` — <http://w3id.org/nfdi4ing/metadata4ing#UncertaintyDeclaration>
+  <span class='search-tokens' style='display:none'>Uncertainty Declaration UncertaintyDeclaration Unsicherheitsdeklaration http://w3id.org/nfdi4ing/metadata4ing# Uncertainty Declaration http://w3id.org/nfdi4ing/metadata4ing# uncertainty declaration http://w3id.org/nfdi4ing/metadata4ing#UncertaintyDeclaration http://w3id.org/nfdi4ing/metadata4ing#uncertaintydeclaration uncertainty declaration uncertaintydeclaration unsicherheitsdeklaration</span>
+- **Anbieter*in** (*Individual*) — `Distributor` — <http://w3id.org/nfdi4ing/metadata4ing#Distributor>
+  <span class='search-tokens' style='display:none'>Anbieter*in Distributor anbieter*in distributor http://w3id.org/nfdi4ing/metadata4ing# Distributor http://w3id.org/nfdi4ing/metadata4ing# distributor http://w3id.org/nfdi4ing/metadata4ing#Distributor http://w3id.org/nfdi4ing/metadata4ing#distributor</span>
+- **bibliographic record** (*Class*) — `BibliographicRecord` — <http://purl.org/spar/biro/BibliographicRecord> — _comment:_ A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs.
+  <span class='search-tokens' style='display:none'>Bibliographic Record BibliographicRecord bibliographic record bibliographicrecord http://purl.org/spar/biro/ Bibliographic Record http://purl.org/spar/biro/ bibliographic record http://purl.org/spar/biro/BibliographicRecord http://purl.org/spar/biro/bibliographicrecord</span>
+- **date** (*Entity*) — `date` — <http://www.w3.org/2001/XMLSchema#date>
+  <span class='search-tokens' style='display:none'>date http://www.w3.org/2001/XML Schema#date http://www.w3.org/2001/XMLSchema#date http://www.w3.org/2001/xml schema#date http://www.w3.org/2001/xmlschema#date</span>
+- **Variable** (*Class*) — `Variable` — <http://www.molmod.info/semantics/pims-ii.ttl#Variable>
+  <span class='search-tokens' style='display:none'>Variable http://www.molmod.info/semantics/pims ii.ttl# Variable http://www.molmod.info/semantics/pims ii.ttl# variable http://www.molmod.info/semantics/pims ii.ttl#Variable http://www.molmod.info/semantics/pims-ii.ttl#Variable http://www.molmod.info/semantics/pims-ii.ttl#variable variable</span>
+- **Reell** (*Class*) — `Real` — <https://ptb.de/si/Real>
+  <span class='search-tokens' style='display:none'>Real Reell https://ptb.de/si/ Real https://ptb.de/si/ real https://ptb.de/si/Real https://ptb.de/si/real real reell</span>
+- **preferredNamespacePrefix** (*AnnotationProperty*) — `preferredNamespacePrefix` — <http://purl.org/vocab/vann/preferredNamespacePrefix>
+  <span class='search-tokens' style='display:none'>http://purl.org/vocab/vann/preferred Namespace Prefix http://purl.org/vocab/vann/preferred namespace prefix http://purl.org/vocab/vann/preferredNamespacePrefix http://purl.org/vocab/vann/preferrednamespaceprefix preferred Namespace Prefix preferred namespace prefix preferredNamespacePrefix preferrednamespaceprefix</span>
+- **war Rolle in** (*ObjectProperty*) — `wasRoleIn` — <http://www.w3.org/ns/prov#wasRoleIn>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#was Role In http://www.w3.org/ns/prov#was role in http://www.w3.org/ns/prov#wasRoleIn http://www.w3.org/ns/prov#wasrolein war  Rolle in war  rolle in war Rolle in war rolle in was Role In was role in wasRoleIn wasrolein</span>
+- **Downloadlink** (*ObjectProperty*) — `downloadURL` — <http://www.w3.org/ns/dcat#downloadURL>
+  <span class='search-tokens' style='display:none'>Downloadlink downloadURL downloadlink downloadurl http://www.w3.org/ns/dcat#downloadURL http://www.w3.org/ns/dcat#downloadurl</span>
+- **ist beteiligt an** (*ObjectProperty*) — `RO_0000056` — <http://purl.obolibrary.org/obo/RO_0000056>
+  <span class='search-tokens' style='display:none'>RO 0000056 RO_0000056 http://purl.obolibrary.org/obo/RO 0000056 http://purl.obolibrary.org/obo/RO_0000056 http://purl.obolibrary.org/obo/ro 0000056 http://purl.obolibrary.org/obo/ro_0000056 ist beteiligt an ro 0000056 ro_0000056</span>
+- **hat Input** (*ObjectProperty*) — `RO_0002233` — <http://purl.obolibrary.org/obo/RO_0002233>
+  <span class='search-tokens' style='display:none'>RO 0002233 RO_0002233 hat  Input hat  input hat Input hat input http://purl.obolibrary.org/obo/RO 0002233 http://purl.obolibrary.org/obo/RO_0002233 http://purl.obolibrary.org/obo/ro 0002233 http://purl.obolibrary.org/obo/ro_0002233 ro 0002233 ro_0002233</span>
+- **Sponsor*in** (*Individual*) — `Sponsor` — <http://w3id.org/nfdi4ing/metadata4ing#Sponsor>
+  <span class='search-tokens' style='display:none'>Sponsor Sponsor*in http://w3id.org/nfdi4ing/metadata4ing# Sponsor http://w3id.org/nfdi4ing/metadata4ing# sponsor http://w3id.org/nfdi4ing/metadata4ing#Sponsor http://w3id.org/nfdi4ing/metadata4ing#sponsor sponsor sponsor*in</span>
+- **compression format** (*ObjectProperty*) — `compressFormat` — <http://www.w3.org/ns/dcat#compressFormat>
+  <span class='search-tokens' style='display:none'>compress Format compress format compressFormat compressformat compression format http://www.w3.org/ns/dcat#compress Format http://www.w3.org/ns/dcat#compress format http://www.w3.org/ns/dcat#compressFormat http://www.w3.org/ns/dcat#compressformat</span>
+- **ends with** (*ObjectProperty*) — `RO_0002230` — <http://purl.obolibrary.org/obo/RO_0002230> — _alt:_ finished by
+  <span class='search-tokens' style='display:none'>RO 0002230 RO_0002230 ends with finished by http://purl.obolibrary.org/obo/RO 0002230 http://purl.obolibrary.org/obo/RO_0002230 http://purl.obolibrary.org/obo/ro 0002230 http://purl.obolibrary.org/obo/ro_0002230 ro 0002230 ro_0002230</span>
+- **ist zulässige Einheit für** (*ObjectProperty*) — `isAdmissibleUnitFor` — <http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Admissible Unit For http://www.molmod.info/semantics/pims ii.ttl#is admissible unit for http://www.molmod.info/semantics/pims ii.ttl#isAdmissibleUnitFor http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleUnitFor http://www.molmod.info/semantics/pims-ii.ttl#isadmissibleunitfor is Admissible Unit For is admissible unit for isAdmissibleUnitFor isadmissibleunitfor ist zulässige  Einheit für ist zulässige  einheit für ist zulässige Einheit für ist zulässige einheit für</span>
+- **Packformat** (*ObjectProperty*) — `packageFormat` — <http://www.w3.org/ns/dcat#packageFormat>
+  <span class='search-tokens' style='display:none'>Packformat http://www.w3.org/ns/dcat#package Format http://www.w3.org/ns/dcat#package format http://www.w3.org/ns/dcat#packageFormat http://www.w3.org/ns/dcat#packageformat package Format package format packageFormat packageformat packformat</span>
+- **investigates** (*ObjectProperty*) — `investigates` — <http://w3id.org/nfdi4ing/metadata4ing#investigates>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#investigates investigates</span>
+- **hat Datumszuweisung bearbeitet** (*DatatypeProperty*) — `hasDateAssignmentModified` — <http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentModified>
+  <span class='search-tokens' style='display:none'>has Date Assignment Modified has date assignment modified hasDateAssignmentModified hasdateassignmentmodified hat  Datumszuweisung bearbeitet hat  datumszuweisung bearbeitet hat Datumszuweisung bearbeitet hat datumszuweisung bearbeitet http://w3id.org/nfdi4ing/metadata4ing#has Date Assignment Modified http://w3id.org/nfdi4ing/metadata4ing#has date assignment modified http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentModified http://w3id.org/nfdi4ing/metadata4ing#hasdateassignmentmodified</span>
+- **has runtime assignment** (*ObjectProperty*) — `hasRuntimeAssignment` — <http://w3id.org/nfdi4ing/metadata4ing#hasRuntimeAssignment>
+  <span class='search-tokens' style='display:none'>has Runtime Assignment has runtime assignment hasRuntimeAssignment hasruntimeassignment http://w3id.org/nfdi4ing/metadata4ing#has Runtime Assignment http://w3id.org/nfdi4ing/metadata4ing#has runtime assignment http://w3id.org/nfdi4ing/metadata4ing#hasRuntimeAssignment http://w3id.org/nfdi4ing/metadata4ing#hasruntimeassignment</span>
+- **contact person** (*Individual*) — `ContactPerson` — <http://w3id.org/nfdi4ing/metadata4ing#ContactPerson>
+  <span class='search-tokens' style='display:none'>Contact Person ContactPerson contact person contactperson http://w3id.org/nfdi4ing/metadata4ing# Contact Person http://w3id.org/nfdi4ing/metadata4ing# contact person http://w3id.org/nfdi4ing/metadata4ing#ContactPerson http://w3id.org/nfdi4ing/metadata4ing#contactperson</span>
+- **Intangible** (*Class*) — `Intangible` — <https://schema.org/Intangible>
+  <span class='search-tokens' style='display:none'>Intangible https://schema.org/ Intangible https://schema.org/ intangible https://schema.org/Intangible https://schema.org/intangible intangible</span>
+- **realisiert** (*ObjectProperty*) — `BFO_0000055` — <http://purl.obolibrary.org/obo/BFO_0000055> — _comment:_ Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000055 BFO_0000055 bfo 0000055 bfo_0000055 http://purl.obolibrary.org/obo/BFO 0000055 http://purl.obolibrary.org/obo/BFO_0000055 http://purl.obolibrary.org/obo/bfo 0000055 http://purl.obolibrary.org/obo/bfo_0000055 realisiert</span>
+- **Titel** (*AnnotationProperty*) — `title` — <http://purl.org/dc/terms/title>
+  <span class='search-tokens' style='display:none'>Titel http://purl.org/dc/terms/title titel title</span>
+- **work package leader** (*Individual*) — `WorkPackageLeader` — <http://w3id.org/nfdi4ing/metadata4ing#WorkPackageLeader>
+  <span class='search-tokens' style='display:none'>Work Package Leader WorkPackageLeader http://w3id.org/nfdi4ing/metadata4ing# Work Package Leader http://w3id.org/nfdi4ing/metadata4ing# work package leader http://w3id.org/nfdi4ing/metadata4ing#WorkPackageLeader http://w3id.org/nfdi4ing/metadata4ing#workpackageleader work package leader workpackageleader</span>
+- **associated to project** (*ObjectProperty*) — `inProject` — <http://w3id.org/nfdi4ing/metadata4ing#inProject>
+  <span class='search-tokens' style='display:none'>associated to project http://w3id.org/nfdi4ing/metadata4ing#in Project http://w3id.org/nfdi4ing/metadata4ing#in project http://w3id.org/nfdi4ing/metadata4ing#inProject http://w3id.org/nfdi4ing/metadata4ing#inproject in Project in project inProject inproject</span>
+- **Wert** (*Class*) — `Value` — <http://www.molmod.info/semantics/pims-ii.ttl#Value>
+  <span class='search-tokens' style='display:none'>Value Wert http://www.molmod.info/semantics/pims ii.ttl# Value http://www.molmod.info/semantics/pims ii.ttl# value http://www.molmod.info/semantics/pims ii.ttl#Value http://www.molmod.info/semantics/pims-ii.ttl#Value http://www.molmod.info/semantics/pims-ii.ttl#value value wert</span>
+- **has standard uncertainty** (*DatatypeProperty*) — `hasStandardUnc` — <https://ptb.de/si/hasStandardUnc>
+  <span class='search-tokens' style='display:none'>has Standard Unc has standard unc has standard uncertainty hasStandardUnc hasstandardunc https://ptb.de/si/has Standard Unc https://ptb.de/si/has standard unc https://ptb.de/si/hasStandardUnc https://ptb.de/si/hasstandardunc</span>
+- **erweiterte Unsicherheit** (*Class*) — `ExpandedUnc` — <https://ptb.de/si/ExpandedUnc>
+  <span class='search-tokens' style='display:none'>Expanded Unc ExpandedUnc erweiterte  Unsicherheit erweiterte  unsicherheit erweiterte Unsicherheit erweiterte unsicherheit expanded unc expandedunc https://ptb.de/si/ Expanded Unc https://ptb.de/si/ expanded unc https://ptb.de/si/ExpandedUnc https://ptb.de/si/expandedunc</span>
+- **Dateigröße (in Byte)** (*DatatypeProperty*) — `byteSize` — <http://www.w3.org/ns/dcat#byteSize>
+  <span class='search-tokens' style='display:none'>Dateigröße (in  Byte) Dateigröße (in Byte) byte Size byte size byteSize bytesize dateigröße (in  byte) dateigröße (in byte) http://www.w3.org/ns/dcat#byte Size http://www.w3.org/ns/dcat#byte size http://www.w3.org/ns/dcat#byteSize http://www.w3.org/ns/dcat#bytesize</span>
+- **Registrierungsstelle** (*Individual*) — `RegistrationAgency` — <http://w3id.org/nfdi4ing/metadata4ing#RegistrationAgency>
+  <span class='search-tokens' style='display:none'>Registration Agency RegistrationAgency Registrierungsstelle http://w3id.org/nfdi4ing/metadata4ing# Registration Agency http://w3id.org/nfdi4ing/metadata4ing# registration agency http://w3id.org/nfdi4ing/metadata4ing#RegistrationAgency http://w3id.org/nfdi4ing/metadata4ing#registrationagency registration agency registrationagency registrierungsstelle</span>
+- **Agent** (*ObjectProperty*) — `agent` — <http://www.w3.org/ns/prov#agent>
+  <span class='search-tokens' style='display:none'>Agent agent http://www.w3.org/ns/prov#agent</span>
+- **hat Symbol** (*DatatypeProperty*) — `hasSymbol` — <http://w3id.org/nfdi4ing/metadata4ing#hasSymbol>
+  <span class='search-tokens' style='display:none'>has Symbol has symbol hasSymbol hassymbol hat  Symbol hat  symbol hat Symbol hat symbol http://w3id.org/nfdi4ing/metadata4ing#has Symbol http://w3id.org/nfdi4ing/metadata4ing#has symbol http://w3id.org/nfdi4ing/metadata4ing#hasSymbol http://w3id.org/nfdi4ing/metadata4ing#hassymbol</span>
+- **other person** (*Individual*) — `Other` — <http://w3id.org/nfdi4ing/metadata4ing#Other>
+  <span class='search-tokens' style='display:none'>Other http://w3id.org/nfdi4ing/metadata4ing# Other http://w3id.org/nfdi4ing/metadata4ing# other http://w3id.org/nfdi4ing/metadata4ing#Other http://w3id.org/nfdi4ing/metadata4ing#other other other person</span>
+- **project manager** (*Individual*) — `ProjectManager` — <http://w3id.org/nfdi4ing/metadata4ing#ProjectManager>
+  <span class='search-tokens' style='display:none'>Project Manager ProjectManager http://w3id.org/nfdi4ing/metadata4ing# Project Manager http://w3id.org/nfdi4ing/metadata4ing# project manager http://w3id.org/nfdi4ing/metadata4ing#ProjectManager http://w3id.org/nfdi4ing/metadata4ing#projectmanager project manager projectmanager</span>
+- **project member** (*Individual*) — `ProjectMember` — <http://w3id.org/nfdi4ing/metadata4ing#ProjectMember>
+  <span class='search-tokens' style='display:none'>Project Member ProjectMember http://w3id.org/nfdi4ing/metadata4ing# Project Member http://w3id.org/nfdi4ing/metadata4ing# project member http://w3id.org/nfdi4ing/metadata4ing#ProjectMember http://w3id.org/nfdi4ing/metadata4ing#projectmember project member projectmember</span>
+- **Property** (*Class*) — `Property` — <http://www.molmod.info/semantics/pims-ii.ttl#Property>
+  <span class='search-tokens' style='display:none'>Property http://www.molmod.info/semantics/pims ii.ttl# Property http://www.molmod.info/semantics/pims ii.ttl# property http://www.molmod.info/semantics/pims ii.ttl#Property http://www.molmod.info/semantics/pims-ii.ttl#Property http://www.molmod.info/semantics/pims-ii.ttl#property property</span>
+- **dataset series** (*Class*) — `DatasetSeries` — <http://www.w3.org/ns/dcat#DatasetSeries>
+  <span class='search-tokens' style='display:none'>Dataset Series DatasetSeries dataset series datasetseries http://www.w3.org/ns/dcat# Dataset Series http://www.w3.org/ns/dcat# dataset series http://www.w3.org/ns/dcat#DatasetSeries http://www.w3.org/ns/dcat#datasetseries</span>
+- **editor** (*Individual*) — `Editor` — <http://w3id.org/nfdi4ing/metadata4ing#Editor>
+  <span class='search-tokens' style='display:none'>Editor editor http://w3id.org/nfdi4ing/metadata4ing# Editor http://w3id.org/nfdi4ing/metadata4ing# editor http://w3id.org/nfdi4ing/metadata4ing#Editor http://w3id.org/nfdi4ing/metadata4ing#editor</span>
+- **is property of** (*ObjectProperty*) — `isPropertyOf` — <http://www.w3.org/ns/ssn/isPropertyOf>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/ssn/is Property Of http://www.w3.org/ns/ssn/is property of http://www.w3.org/ns/ssn/isPropertyOf http://www.w3.org/ns/ssn/ispropertyof is Property Of is property of isPropertyOf ispropertyof</span>
+- **has parameter** (*ObjectProperty*) — `hasParameter` — <http://w3id.org/nfdi4ing/metadata4ing#hasParameter>
+  <span class='search-tokens' style='display:none'>has Parameter has parameter hasParameter hasparameter http://w3id.org/nfdi4ing/metadata4ing#has Parameter http://w3id.org/nfdi4ing/metadata4ing#has parameter http://w3id.org/nfdi4ing/metadata4ing#hasParameter http://w3id.org/nfdi4ing/metadata4ing#hasparameter</span>
+- **closeMatch** (*AnnotationProperty*) — `closeMatch` — <http://www.w3.org/2004/02/skos/core#closeMatch>
+  <span class='search-tokens' style='display:none'>close Match close match closeMatch closematch http://www.w3.org/2004/02/skos/core#close Match http://www.w3.org/2004/02/skos/core#close match http://www.w3.org/2004/02/skos/core#closeMatch http://www.w3.org/2004/02/skos/core#closematch</span>
+- **has date assignment deleted** (*DatatypeProperty*) — `hasDateAssignmentDeleted` — <http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentDeleted>
+  <span class='search-tokens' style='display:none'>has Date Assignment Deleted has date assignment deleted hasDateAssignmentDeleted hasdateassignmentdeleted http://w3id.org/nfdi4ing/metadata4ing#has Date Assignment Deleted http://w3id.org/nfdi4ing/metadata4ing#has date assignment deleted http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentDeleted http://w3id.org/nfdi4ing/metadata4ing#hasdateassignmentdeleted</span>
+- **media type** (*ObjectProperty*) — `mediaType` — <http://www.w3.org/ns/dcat#mediaType>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#media Type http://www.w3.org/ns/dcat#media type http://www.w3.org/ns/dcat#mediaType http://www.w3.org/ns/dcat#mediatype media Type media type mediaType mediatype</span>
+- **wird implementiert durch** (*ObjectProperty*) — `implementedBy` — <http://www.w3.org/ns/ssn/implementedBy>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/ssn/implemented By http://www.w3.org/ns/ssn/implemented by http://www.w3.org/ns/ssn/implementedBy http://www.w3.org/ns/ssn/implementedby implemented By implemented by implementedBy implementedby wird implementiert durch</span>
+- **ist Zuweisung in Bezug auf** (*ObjectProperty*) — `isAssignmentFor` — <http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Assignment For http://www.molmod.info/semantics/pims ii.ttl#is assignment for http://www.molmod.info/semantics/pims ii.ttl#isAssignmentFor http://www.molmod.info/semantics/pims-ii.ttl#isAssignmentFor http://www.molmod.info/semantics/pims-ii.ttl#isassignmentfor is Assignment For is assignment for isAssignmentFor isassignmentfor ist  Zuweisung in  Bezug auf ist  zuweisung in  bezug auf ist Zuweisung in Bezug auf ist zuweisung in bezug auf</span>
+- **ist unmittelbare Voraussetzung für Schritt** (*ObjectProperty*) — `RO_0002090` — <http://purl.obolibrary.org/obo/RO_0002090>
+  <span class='search-tokens' style='display:none'>RO 0002090 RO_0002090 http://purl.obolibrary.org/obo/RO 0002090 http://purl.obolibrary.org/obo/RO_0002090 http://purl.obolibrary.org/obo/ro 0002090 http://purl.obolibrary.org/obo/ro_0002090 ist unmittelbare  Voraussetzung für  Schritt ist unmittelbare  voraussetzung für  schritt ist unmittelbare Voraussetzung für Schritt ist unmittelbare voraussetzung für schritt ro 0002090 ro_0002090</span>
+- **has coverage interval** (*ObjectProperty*) — `hasCoverageInterval` — <http://w3id.org/nfdi4ing/metadata4ing#hasCoverageInterval>
+  <span class='search-tokens' style='display:none'>has Coverage Interval has coverage interval hasCoverageInterval hascoverageinterval http://w3id.org/nfdi4ing/metadata4ing#has Coverage Interval http://w3id.org/nfdi4ing/metadata4ing#has coverage interval http://w3id.org/nfdi4ing/metadata4ing#hasCoverageInterval http://w3id.org/nfdi4ing/metadata4ing#hascoverageinterval</span>
+- **Rolle des Akteurs** (*Class*) — `Role` — <http://www.w3.org/ns/prov#Role>
+  <span class='search-tokens' style='display:none'>Role Rolle des  Akteurs Rolle des Akteurs http://www.w3.org/ns/prov# Role http://www.w3.org/ns/prov# role http://www.w3.org/ns/prov#Role http://www.w3.org/ns/prov#role role rolle des  akteurs rolle des akteurs</span>
+- **data manager** (*Individual*) — `DataManager` — <http://w3id.org/nfdi4ing/metadata4ing#DataManager>
+  <span class='search-tokens' style='display:none'>Data Manager DataManager data manager datamanager http://w3id.org/nfdi4ing/metadata4ing# Data Manager http://w3id.org/nfdi4ing/metadata4ing# data manager http://w3id.org/nfdi4ing/metadata4ing#DataManager http://w3id.org/nfdi4ing/metadata4ing#datamanager</span>
+- **Messeinheit** (*Class*) — `EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4` — <http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4>
+  <span class='search-tokens' style='display:none'>EMMO b081b346 7279 46ef 9a3d 2c088fcd79f4 EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 Messeinheit emmo b081b346 7279 46ef 9a3d 2c088fcd79f4 emmo_b081b346_7279_46ef_9a3d_2c088fcd79f4 http://emmo.info/emmo#EMMO b081b346 7279 46ef 9a3d 2c088fcd79f4 http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 http://emmo.info/emmo#emmo b081b346 7279 46ef 9a3d 2c088fcd79f4 http://emmo.info/emmo#emmo_b081b346_7279_46ef_9a3d_2c088fcd79f4 messeinheit</span>
+- **Gruppe** (*Class*) — `Group` — <http://xmlns.com/foaf/0.1/Group> — _comment:_ A class of Agents.
+  <span class='search-tokens' style='display:none'>Group Gruppe group gruppe http://xmlns.com/foaf/0.1/ Group http://xmlns.com/foaf/0.1/ group http://xmlns.com/foaf/0.1/Group http://xmlns.com/foaf/0.1/group</span>
+- **hat Teilnehmer** (*ObjectProperty*) — `RO_0000057` — <http://purl.obolibrary.org/obo/RO_0000057>
+  <span class='search-tokens' style='display:none'>RO 0000057 RO_0000057 hat  Teilnehmer hat  teilnehmer hat Teilnehmer hat teilnehmer http://purl.obolibrary.org/obo/RO 0000057 http://purl.obolibrary.org/obo/RO_0000057 http://purl.obolibrary.org/obo/ro 0000057 http://purl.obolibrary.org/obo/ro_0000057 ro 0000057 ro_0000057</span>
+- **qualified association** (*ObjectProperty*) — `qualifiedAssociation` — <http://www.w3.org/ns/prov#qualifiedAssociation>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/prov#qualified Association http://www.w3.org/ns/prov#qualified association http://www.w3.org/ns/prov#qualifiedAssociation http://www.w3.org/ns/prov#qualifiedassociation qualified Association qualified association qualifiedAssociation qualifiedassociation</span>
+- **beginnt mit** (*ObjectProperty*) — `RO_0002224` — <http://purl.obolibrary.org/obo/RO_0002224> — _alt:_ started by
+  <span class='search-tokens' style='display:none'>RO 0002224 RO_0002224 beginnt mit http://purl.obolibrary.org/obo/RO 0002224 http://purl.obolibrary.org/obo/RO_0002224 http://purl.obolibrary.org/obo/ro 0002224 http://purl.obolibrary.org/obo/ro_0002224 ro 0002224 ro_0002224 started by</span>
+- **status** (*AnnotationProperty*) — `status` — <http://purl.org/ontology/bibo/status>
+  <span class='search-tokens' style='display:none'>http://purl.org/ontology/bibo/status status</span>
+- **Projekt** (*Class*) — `Project` — <https://schema.org/Project> — _comment:_ An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim
+  <span class='search-tokens' style='display:none'>Project Projekt https://schema.org/ Project https://schema.org/ project https://schema.org/Project https://schema.org/project project projekt</span>
+- **dataset** (*Class*) — `Dataset` — <http://www.w3.org/ns/dcat#Dataset> — _comment:_ A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+  <span class='search-tokens' style='display:none'>Dataset dataset http://www.w3.org/ns/dcat# Dataset http://www.w3.org/ns/dcat# dataset http://www.w3.org/ns/dcat#Dataset http://www.w3.org/ns/dcat#dataset</span>
+- **has project ID** (*DatatypeProperty*) — `projectReferenceID` — <http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID>
+  <span class='search-tokens' style='display:none'>has project ID has project id http://w3id.org/nfdi4ing/metadata4ing#project ReferenceID http://w3id.org/nfdi4ing/metadata4ing#project referenceid http://w3id.org/nfdi4ing/metadata4ing#projectReferenceID http://w3id.org/nfdi4ing/metadata4ing#projectreferenceid project ReferenceID project referenceid projectReferenceID projectreferenceid</span>
+- **has output** (*ObjectProperty*) — `RO_0002234` — <http://purl.obolibrary.org/obo/RO_0002234>
+  <span class='search-tokens' style='display:none'>RO 0002234 RO_0002234 has output http://purl.obolibrary.org/obo/RO 0002234 http://purl.obolibrary.org/obo/RO_0002234 http://purl.obolibrary.org/obo/ro 0002234 http://purl.obolibrary.org/obo/ro_0002234 ro 0002234 ro_0002234</span>
+- **publisher** (*AnnotationProperty*) — `publisher` — <http://purl.org/dc/terms/publisher>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/publisher publisher</span>
+- **process** (*Class*) — `BFO_0000015` — <http://purl.obolibrary.org/obo/BFO_0000015>
+  <span class='search-tokens' style='display:none'>BFO 0000015 BFO_0000015 bfo 0000015 bfo_0000015 http://purl.obolibrary.org/obo/BFO 0000015 http://purl.obolibrary.org/obo/BFO_0000015 http://purl.obolibrary.org/obo/bfo 0000015 http://purl.obolibrary.org/obo/bfo_0000015 process</span>
+- **is admissible value for** (*ObjectProperty*) — `isAdmissibleValueFor` — <http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Admissible Value For http://www.molmod.info/semantics/pims ii.ttl#is admissible value for http://www.molmod.info/semantics/pims ii.ttl#isAdmissibleValueFor http://www.molmod.info/semantics/pims-ii.ttl#isAdmissibleValueFor http://www.molmod.info/semantics/pims-ii.ttl#isadmissiblevaluefor is Admissible Value For is admissible value for isAdmissibleValueFor isadmissiblevaluefor</span>
+- **Arbeitsschritt** (*Class*) — `ProcessingStep` — <http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep>
+  <span class='search-tokens' style='display:none'>Arbeitsschritt Processing Step ProcessingStep arbeitsschritt http://w3id.org/nfdi4ing/metadata4ing# Processing Step http://w3id.org/nfdi4ing/metadata4ing# processing step http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep http://w3id.org/nfdi4ing/metadata4ing#processingstep processing step processingstep</span>
+- **has interval maximum** (*DatatypeProperty*) — `hasIntervalMax` — <https://ptb.de/si/hasIntervalMax>
+  <span class='search-tokens' style='display:none'>has Interval Max has interval max has interval maximum hasIntervalMax hasintervalmax https://ptb.de/si/has Interval Max https://ptb.de/si/has interval max https://ptb.de/si/hasIntervalMax https://ptb.de/si/hasintervalmax</span>
+- **data curator** (*Individual*) — `DataCurator` — <http://w3id.org/nfdi4ing/metadata4ing#DataCurator>
+  <span class='search-tokens' style='display:none'>Data Curator DataCurator data curator datacurator http://w3id.org/nfdi4ing/metadata4ing# Data Curator http://w3id.org/nfdi4ing/metadata4ing# data curator http://w3id.org/nfdi4ing/metadata4ing#DataCurator http://w3id.org/nfdi4ing/metadata4ing#datacurator</span>
+- **hat Überdeckungsfaktor** (*DatatypeProperty*) — `hasCoverageFactor` — <https://ptb.de/si/hasCoverageFactor>
+  <span class='search-tokens' style='display:none'>has Coverage Factor has coverage factor hasCoverageFactor hascoveragefactor hat Überdeckungsfaktor hat überdeckungsfaktor https://ptb.de/si/has Coverage Factor https://ptb.de/si/has coverage factor https://ptb.de/si/hasCoverageFactor https://ptb.de/si/hascoveragefactor</span>
+- **Nachname** (*DatatypeProperty*) — `lastName` — <http://xmlns.com/foaf/0.1/lastName> — _comment:_ The last name of a person.
+  <span class='search-tokens' style='display:none'>Nachname http://xmlns.com/foaf/0.1/last Name http://xmlns.com/foaf/0.1/last name http://xmlns.com/foaf/0.1/lastName http://xmlns.com/foaf/0.1/lastname last Name last name lastName lastname nachname</span>
+- **hat Datumszuweisung gültig ab** (*DatatypeProperty*) — `hasDateAssignmentValidFrom` — <http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidFrom>
+  <span class='search-tokens' style='display:none'>has Date Assignment Valid From has date assignment valid from hasDateAssignmentValidFrom hasdateassignmentvalidfrom hat  Datumszuweisung gültig ab hat  datumszuweisung gültig ab hat Datumszuweisung gültig ab hat datumszuweisung gültig ab http://w3id.org/nfdi4ing/metadata4ing#has Date Assignment Valid From http://w3id.org/nfdi4ing/metadata4ing#has date assignment valid from http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidFrom http://w3id.org/nfdi4ing/metadata4ing#hasdateassignmentvalidfrom</span>
+- **räumliche Auflösung (in Metern)** (*DatatypeProperty*) — `spatialResolutionInMeters` — <http://www.w3.org/ns/dcat#spatialResolutionInMeters>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#spatial Resolution In Meters http://www.w3.org/ns/dcat#spatial resolution in meters http://www.w3.org/ns/dcat#spatialResolutionInMeters http://www.w3.org/ns/dcat#spatialresolutioninmeters räumliche  Auflösung (in  Metern) räumliche  auflösung (in  metern) räumliche Auflösung (in Metern) räumliche auflösung (in metern) spatial Resolution In Meters spatial resolution in meters spatialResolutionInMeters spatialresolutioninmeters</span>
+- **has distribution** (*ObjectProperty*) — `distribution` — <http://www.w3.org/ns/dcat#distribution>
+  <span class='search-tokens' style='display:none'>distribution has distribution http://www.w3.org/ns/dcat#distribution</span>
+- **Organisation** (*Class*) — `Organization` — <http://xmlns.com/foaf/0.1/Organization> — _comment:_ An organization.
+  <span class='search-tokens' style='display:none'>Organisation Organization http://xmlns.com/foaf/0.1/ Organization http://xmlns.com/foaf/0.1/ organization http://xmlns.com/foaf/0.1/Organization http://xmlns.com/foaf/0.1/organization organisation organization</span>
+- **Verknüpfung** (*Class*) — `Association` — <http://www.w3.org/ns/prov#Association> — _comment:_ An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
+  <span class='search-tokens' style='display:none'>Association Verknüpfung association http://www.w3.org/ns/prov# Association http://www.w3.org/ns/prov# association http://www.w3.org/ns/prov#Association http://www.w3.org/ns/prov#association verknüpfung</span>
+- **Projektleiter*in** (*Individual*) — `ProjectLeader` — <http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader>
+  <span class='search-tokens' style='display:none'>Project Leader ProjectLeader Projektleiter*in http://w3id.org/nfdi4ing/metadata4ing# Project Leader http://w3id.org/nfdi4ing/metadata4ing# project leader http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader http://w3id.org/nfdi4ing/metadata4ing#projectleader project leader projectleader projektleiter*in</span>
+- **Organisationszugehörigkeit** (*AnnotationProperty*) — `affiliation` — <https://schema.org/affiliation> — _comment:_ An organization that this person is affiliated with. For example, a school/university, a club, or a team.
+  <span class='search-tokens' style='display:none'>Organisationszugehörigkeit affiliation https://schema.org/affiliation organisationszugehörigkeit</span>
+- **part of** (*ObjectProperty*) — `BFO_0000050` — <http://purl.obolibrary.org/obo/BFO_0000050>
+  <span class='search-tokens' style='display:none'>BFO 0000050 BFO_0000050 bfo 0000050 bfo_0000050 http://purl.obolibrary.org/obo/BFO 0000050 http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/bfo 0000050 http://purl.obolibrary.org/obo/bfo_0000050 part of</span>
+- **is value in assignment** (*ObjectProperty*) — `isValueInAssignment` — <http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Value In Assignment http://www.molmod.info/semantics/pims ii.ttl#is value in assignment http://www.molmod.info/semantics/pims ii.ttl#isValueInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isValueInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isvalueinassignment is Value In Assignment is value in assignment isValueInAssignment isvalueinassignment</span>
+- **realisiert in** (*ObjectProperty*) — `BFO_0000054` — <http://purl.obolibrary.org/obo/BFO_0000054> — _comment:_ Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+  <span class='search-tokens' style='display:none'>BFO 0000054 BFO_0000054 bfo 0000054 bfo_0000054 http://purl.obolibrary.org/obo/BFO 0000054 http://purl.obolibrary.org/obo/BFO_0000054 http://purl.obolibrary.org/obo/bfo 0000054 http://purl.obolibrary.org/obo/bfo_0000054 realisiert in</span>
+- **producer** (*Individual*) — `Producer` — <http://w3id.org/nfdi4ing/metadata4ing#Producer>
+  <span class='search-tokens' style='display:none'>Producer http://w3id.org/nfdi4ing/metadata4ing# Producer http://w3id.org/nfdi4ing/metadata4ing# producer http://w3id.org/nfdi4ing/metadata4ing#Producer http://w3id.org/nfdi4ing/metadata4ing#producer producer</span>
+- **license** (*AnnotationProperty*) — `license` — <http://purl.org/dc/terms/license>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/license license</span>
+- **hat Unsicherheitsdeklaration** (*ObjectProperty*) — `hasUncertaintyDeclaration` — <http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration>
+  <span class='search-tokens' style='display:none'>has Uncertainty Declaration has uncertainty declaration hasUncertaintyDeclaration hasuncertaintydeclaration hat  Unsicherheitsdeklaration hat  unsicherheitsdeklaration hat Unsicherheitsdeklaration hat unsicherheitsdeklaration http://w3id.org/nfdi4ing/metadata4ing#has Uncertainty Declaration http://w3id.org/nfdi4ing/metadata4ing#has uncertainty declaration http://w3id.org/nfdi4ing/metadata4ing#hasUncertaintyDeclaration http://w3id.org/nfdi4ing/metadata4ing#hasuncertaintydeclaration</span>
+- **investigates property** (*ObjectProperty*) — `investigatesProperty` — <http://w3id.org/nfdi4ing/metadata4ing#investigatesProperty>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#investigates Property http://w3id.org/nfdi4ing/metadata4ing#investigates property http://w3id.org/nfdi4ing/metadata4ing#investigatesProperty http://w3id.org/nfdi4ing/metadata4ing#investigatesproperty investigates Property investigates property investigatesProperty investigatesproperty</span>
+- **method** (*Class*) — `Method` — <http://w3id.org/nfdi4ing/metadata4ing#Method>
+  <span class='search-tokens' style='display:none'>Method http://w3id.org/nfdi4ing/metadata4ing# Method http://w3id.org/nfdi4ing/metadata4ing# method http://w3id.org/nfdi4ing/metadata4ing#Method http://w3id.org/nfdi4ing/metadata4ing#method method</span>
+- **hat Datumszuweisung erzeugt** (*DatatypeProperty*) — `hasDateAssignmentCreated` — <http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentCreated>
+  <span class='search-tokens' style='display:none'>has Date Assignment Created has date assignment created hasDateAssignmentCreated hasdateassignmentcreated hat  Datumszuweisung erzeugt hat  datumszuweisung erzeugt hat Datumszuweisung erzeugt hat datumszuweisung erzeugt http://w3id.org/nfdi4ing/metadata4ing#has Date Assignment Created http://w3id.org/nfdi4ing/metadata4ing#has date assignment created http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentCreated http://w3id.org/nfdi4ing/metadata4ing#hasdateassignmentcreated</span>
+- **funder** (*AnnotationProperty*) — `funder` — <https://schema.org/funder> — _comment:_ A person or organization that supports (sponsors) something through some kind of financial contribution.
+  <span class='search-tokens' style='display:none'>funder https://schema.org/funder</span>
+- **hat Intervallminimum** (*DatatypeProperty*) — `hasIntervalMin` — <https://ptb.de/si/hasIntervalMin>
+  <span class='search-tokens' style='display:none'>has Interval Min has interval min hasIntervalMin hasintervalmin hat  Intervallminimum hat  intervallminimum hat Intervallminimum hat intervallminimum https://ptb.de/si/has Interval Min https://ptb.de/si/has interval min https://ptb.de/si/hasIntervalMin https://ptb.de/si/hasintervalmin</span>
+- **input of** (*ObjectProperty*) — `RO_0002352` — <http://purl.obolibrary.org/obo/RO_0002352>
+  <span class='search-tokens' style='display:none'>RO 0002352 RO_0002352 http://purl.obolibrary.org/obo/RO 0002352 http://purl.obolibrary.org/obo/RO_0002352 http://purl.obolibrary.org/obo/ro 0002352 http://purl.obolibrary.org/obo/ro_0002352 input of ro 0002352 ro_0002352</span>
+- **has distribution** (*DatatypeProperty*) — `hasDistribution` — <https://ptb.de/si/hasDistribution>
+  <span class='search-tokens' style='display:none'>has Distribution has distribution hasDistribution hasdistribution https://ptb.de/si/has Distribution https://ptb.de/si/has distribution https://ptb.de/si/hasDistribution https://ptb.de/si/hasdistribution</span>
+- **output of** (*ObjectProperty*) — `RO_0002353` — <http://purl.obolibrary.org/obo/RO_0002353>
+  <span class='search-tokens' style='display:none'>RO 0002353 RO_0002353 http://purl.obolibrary.org/obo/RO 0002353 http://purl.obolibrary.org/obo/RO_0002353 http://purl.obolibrary.org/obo/ro 0002353 http://purl.obolibrary.org/obo/ro_0002353 output of ro 0002353 ro_0002353</span>
+- **has part** (*ObjectProperty*) — `BFO_0000051` — <http://purl.obolibrary.org/obo/BFO_0000051>
+  <span class='search-tokens' style='display:none'>BFO 0000051 BFO_0000051 bfo 0000051 bfo_0000051 has part http://purl.obolibrary.org/obo/BFO 0000051 http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/bfo 0000051 http://purl.obolibrary.org/obo/bfo_0000051</span>
+- **Verteilung** (*Class*) — `Distribution` — <http://www.w3.org/ns/dcat#Distribution>
+  <span class='search-tokens' style='display:none'>Distribution Verteilung distribution http://www.w3.org/ns/dcat# Distribution http://www.w3.org/ns/dcat# distribution http://www.w3.org/ns/dcat#Distribution http://www.w3.org/ns/dcat#distribution verteilung</span>
+- **Aktivität** (*Class*) — `Activity` — <http://www.w3.org/ns/prov#Activity>
+  <span class='search-tokens' style='display:none'>Activity Aktivität activity aktivität http://www.w3.org/ns/prov# Activity http://www.w3.org/ns/prov# activity http://www.w3.org/ns/prov#Activity http://www.w3.org/ns/prov#activity</span>
+- **created** (*AnnotationProperty*) — `created` — <http://purl.org/dc/terms/created>
+  <span class='search-tokens' style='display:none'>created http://purl.org/dc/terms/created</span>
+- **Metadata4Ing** (*Entity*) — `` — <http://w3id.org/nfdi4ing/metadata4ing#> — _comment:_ "
+  <span class='search-tokens' style='display:none'>Metadata4 Ing Metadata4Ing http://w3id.org/nfdi4ing/metadata4ing# metadata4 ing metadata4ing</span>
+- **Metadata4Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4Ing. ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Metadata4 Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4 Ing.  Metadata4Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4Ing.  metadata4 ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in nfdi4 ing.  metadata4ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in nfdi4ing. </span>
+- **New concepts and properties are located in the namespace of Metadata4Ing.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>New concepts and properties are located in the namespace of  Metadata4 Ing. New concepts and properties are located in the namespace of Metadata4Ing. new concepts and properties are located in the namespace of  metadata4 ing. new concepts and properties are located in the namespace of metadata4ing.</span>
+- **Metadata4Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Metadata4 Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers. Metadata4Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers. metadata4 ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers. metadata4ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers.</span>
+- **Instead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Instead, it tries to make re use of existing identifiers for classes and properties by re using all or a relevant subset of the axioms from the original ontology. Instead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology. instead, it tries to make re use of existing identifiers for classes and properties by re using all or a relevant subset of the axioms from the original ontology. instead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology.</span>
+- **These statements have been extracted in different ways, e.g. by using Protégé tools importing an ontology and copying axioms of relevant items to Metadata4Ing or by download from data services or raw files of ontologies and manual copypasting.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>These statements have been extracted in different ways, e.g. by using  Protégé tools importing an ontology and copying axioms of relevant items to  Metadata4 Ing or by download from data services or raw files of ontologies and manual copypasting. These statements have been extracted in different ways, e.g. by using Protégé tools importing an ontology and copying axioms of relevant items to Metadata4Ing or by download from data services or raw files of ontologies and manual copypasting. these statements have been extracted in different ways, e.g. by using  protégé tools importing an ontology and copying axioms of relevant items to  metadata4 ing or by download from data services or raw files of ontologies and manual copypasting. these statements have been extracted in different ways, e.g. by using protégé tools importing an ontology and copying axioms of relevant items to metadata4ing or by download from data services or raw files of ontologies and manual copypasting.</span>
+- **In some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:AnnotationProperty than the rest of Metadata4Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>In some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl: Annotation Property than the rest of  Metadata4 Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing. In some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:AnnotationProperty than the rest of Metadata4Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing. in some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl: annotation property than the rest of  metadata4 ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing. in some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:annotationproperty than the rest of metadata4ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing.</span>
+- **Any editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item-level.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Any editorial changes on elements from external ontologies are declared in  Metadata4 Ing by an annotation with skos:editorial Note at item level. Any editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item level. Any editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item-level. any editorial changes on elements from external ontologies are declared in  metadata4 ing by an annotation with skos:editorial note at item level. any editorial changes on elements from external ontologies are declared in metadata4ing by an annotation with skos:editorialnote at item-level.</span>
+- **To get the original set of statements we encourage to visit the original namespace of the respective item.** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>To get the original set of statements we encourage to visit the original namespace of the respective item. to get the original set of statements we encourage to visit the original namespace of the respective item.</span>
+- **Metadata4Ing reuses elements from the following ontologies:** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Metadata4 Ing reuses elements from the following ontologies: Metadata4Ing reuses elements from the following ontologies: metadata4 ing reuses elements from the following ontologies: metadata4ing reuses elements from the following ontologies:</span>
+- **- BIBO = Bibliographic Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  BIBO =  Bibliographic  Ontology     BIBO = Bibliographic Ontology     bibo =  bibliographic  ontology   - BIBO = Bibliographic Ontology   - bibo = bibliographic ontology  </span>
+- **- BIRO = Bibliographic Reference Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  BIRO =  Bibliographic  Reference  Ontology     BIRO = Bibliographic Reference Ontology     biro =  bibliographic  reference  ontology   - BIRO = Bibliographic Reference Ontology   - biro = bibliographic reference ontology  </span>
+- **- DCAT = Data Catalog  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  DCAT =  Data  Catalog     DCAT = Data Catalog     dcat =  data  catalog   - DCAT = Data Catalog   - dcat = data catalog  </span>
+- **- DCTERMS = Dublin Core Terms  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  DCTERMS =  Dublin  Core  Terms     DCTERMS = Dublin Core Terms     dcterms =  dublin  core  terms   - DCTERMS = Dublin Core Terms   - dcterms = dublin core terms  </span>
+- **- FOAF = Friend of a Friend  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  FOAF =  Friend of a  Friend     FOAF = Friend of a Friend     foaf =  friend of a  friend   - FOAF = Friend of a Friend   - foaf = friend of a friend  </span>
+- **- OWL = Web Ontology Language  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  OWL =  Web  Ontology  Language     OWL = Web Ontology Language     owl =  web  ontology  language   - OWL = Web Ontology Language   - owl = web ontology language  </span>
+- **- PROV = Provenance Namespace  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  PROV =  Provenance  Namespace     PROV = Provenance Namespace     prov =  provenance  namespace   - PROV = Provenance Namespace   - prov = provenance namespace  </span>
+- **- QUDT = Quantities, Units, Dimensions and Types  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  QUDT =  Quantities,  Units,  Dimensions and  Types     QUDT = Quantities, Units, Dimensions and Types     qudt =  quantities,  units,  dimensions and  types   - QUDT = Quantities, Units, Dimensions and Types   - qudt = quantities, units, dimensions and types  </span>
+- **- RDF = Resource Description Framework  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  RDF =  Resource  Description  Framework     RDF = Resource Description Framework     rdf =  resource  description  framework   - RDF = Resource Description Framework   - rdf = resource description framework  </span>
+- **- RDFS = RDF Schema  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  RDFS = RDF  Schema     RDFS = RDF Schema     rdfs = rdf  schema   - RDFS = RDF Schema   - rdfs = rdf schema  </span>
+- **- SCHEMA = schema.org  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  SCHEMA = schema.org     schema = schema.org   - SCHEMA = schema.org   - schema = schema.org  </span>
+- **- SKOS = Simple Knowledge Organization System  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  SKOS =  Simple  Knowledge  Organization  System     SKOS = Simple Knowledge Organization System     skos =  simple  knowledge  organization  system   - SKOS = Simple Knowledge Organization System   - skos = simple knowledge organization system  </span>
+- **- SSN = Semantic Sensor Network Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  SSN =  Semantic  Sensor  Network  Ontology     SSN = Semantic Sensor Network Ontology     ssn =  semantic  sensor  network  ontology   - SSN = Semantic Sensor Network Ontology   - ssn = semantic sensor network ontology  </span>
+- **- VANN = Vocabulary for Annotating vocabulary descriptions  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  VANN =  Vocabulary for  Annotating vocabulary descriptions     VANN = Vocabulary for Annotating vocabulary descriptions     vann =  vocabulary for  annotating vocabulary descriptions   - VANN = Vocabulary for Annotating vocabulary descriptions   - vann = vocabulary for annotating vocabulary descriptions  </span>
+- **- XSD = XML Schema Definition  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  XSD = XML  Schema  Definition     XSD = XML Schema Definition     xsd = xml  schema  definition   - XSD = XML Schema Definition   - xsd = xml schema definition  </span>
+- **- EMMO = European Materials and Modelling Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  EMMO =  European  Materials and  Modelling  Ontology     EMMO = European Materials and Modelling Ontology     emmo =  european  materials and  modelling  ontology   - EMMO = European Materials and Modelling Ontology   - emmo = european materials and modelling ontology  </span>
+- **- BFO = Basic Formal Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  BFO =  Basic  Formal  Ontology     BFO = Basic Formal Ontology     bfo =  basic  formal  ontology   - BFO = Basic Formal Ontology   - bfo = basic formal ontology  </span>
+- **- RO = Relation Ontology  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  RO =  Relation  Ontology     RO = Relation Ontology     ro =  relation  ontology   - RO = Relation Ontology   - ro = relation ontology  </span>
+- **- PIMS-II = PIMS Interoperability Infrastructure  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  PIMS II = PIMS  Interoperability  Infrastructure     PIMS II = PIMS Interoperability Infrastructure     pims ii = pims  interoperability  infrastructure   - PIMS-II = PIMS Interoperability Infrastructure   - pims-ii = pims interoperability infrastructure  </span>
+- **- D-SI = Digital System of Units  ** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>  D SI =  Digital  System of  Units     D SI = Digital System of Units     d si =  digital  system of  units   - D-SI = Digital System of Units   - d-si = digital system of units  </span>
+- **"** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>"</span>
+- **research group** (*Individual*) — `ResearchGroup` — <http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup>
+  <span class='search-tokens' style='display:none'>Research Group ResearchGroup http://w3id.org/nfdi4ing/metadata4ing# Research Group http://w3id.org/nfdi4ing/metadata4ing# research group http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup http://w3id.org/nfdi4ing/metadata4ing#researchgroup research group researchgroup</span>
+- **Projektstartdatum** (*DatatypeProperty*) — `startOfProject` — <http://w3id.org/nfdi4ing/metadata4ing#startOfProject>
+  <span class='search-tokens' style='display:none'>Projektstartdatum http://w3id.org/nfdi4ing/metadata4ing#start Of Project http://w3id.org/nfdi4ing/metadata4ing#start of project http://w3id.org/nfdi4ing/metadata4ing#startOfProject http://w3id.org/nfdi4ing/metadata4ing#startofproject projektstartdatum start Of Project start of project startOfProject startofproject</span>
+- **contributor** (*AnnotationProperty*) — `contributor` — <http://purl.org/dc/terms/contributor>
+  <span class='search-tokens' style='display:none'>contributor http://purl.org/dc/terms/contributor</span>
+- **Startzeit** (*DatatypeProperty*) — `startTime` — <https://schema.org/startTime> — _comment:_ "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>
+  <span class='search-tokens' style='display:none'>Startzeit https://schema.org/start Time https://schema.org/start time https://schema.org/startTime https://schema.org/starttime start Time start time startTime starttime startzeit</span>
+- **** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'></span>
+- **Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions."** (*Entity*) — `` — <>
+  <span class='search-tokens' style='display:none'>Note that  Event uses start Date/end Date instead of start Time/end Time, even when describing dates with times.  This situation may be clarified in future revisions." Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions." note that  event uses start date/end date instead of start time/end time, even when describing dates with times.  this situation may be clarified in future revisions." note that event uses startdate/enddate instead of starttime/endtime, even when describing dates with times. this situation may be clarified in future revisions."</span>
+- **precedes** (*ObjectProperty*) — `BFO_0000063` — <http://purl.obolibrary.org/obo/BFO_0000063>
+  <span class='search-tokens' style='display:none'>BFO 0000063 BFO_0000063 bfo 0000063 bfo_0000063 http://purl.obolibrary.org/obo/BFO 0000063 http://purl.obolibrary.org/obo/BFO_0000063 http://purl.obolibrary.org/obo/bfo 0000063 http://purl.obolibrary.org/obo/bfo_0000063 precedes</span>
+- **has timestamp** (*DatatypeProperty*) — `temporal` — <https://schema.org/temporal>
+  <span class='search-tokens' style='display:none'>has timestamp https://schema.org/temporal temporal</span>
+- **first name** (*DatatypeProperty*) — `firstName` — <http://xmlns.com/foaf/0.1/firstName> — _comment:_ The first name of a person.
+  <span class='search-tokens' style='display:none'>first Name first name firstName firstname http://xmlns.com/foaf/0.1/first Name http://xmlns.com/foaf/0.1/first name http://xmlns.com/foaf/0.1/firstName http://xmlns.com/foaf/0.1/firstname</span>
+- **Rechercheur*in** (*Individual*) — `Researcher` — <http://w3id.org/nfdi4ing/metadata4ing#Researcher>
+  <span class='search-tokens' style='display:none'>Rechercheur*in Researcher http://w3id.org/nfdi4ing/metadata4ing# Researcher http://w3id.org/nfdi4ing/metadata4ing# researcher http://w3id.org/nfdi4ing/metadata4ing#Researcher http://w3id.org/nfdi4ing/metadata4ing#researcher rechercheur*in researcher</span>
+- **hasAdmissibleValue** (*ObjectProperty*) — `hasAdmissibleValue` — <http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue>
+  <span class='search-tokens' style='display:none'>has Admissible Value has admissible value hasAdmissibleValue hasadmissiblevalue http://w3id.org/nfdi4ing/metadata4ing#has Admissible Value http://w3id.org/nfdi4ing/metadata4ing#has admissible value http://w3id.org/nfdi4ing/metadata4ing#hasAdmissibleValue http://w3id.org/nfdi4ing/metadata4ing#hasadmissiblevalue</span>
+- **implements** (*ObjectProperty*) — `implementsMethod` — <http://w3id.org/nfdi4ing/metadata4ing#implementsMethod>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#implements Method http://w3id.org/nfdi4ing/metadata4ing#implements method http://w3id.org/nfdi4ing/metadata4ing#implementsMethod http://w3id.org/nfdi4ing/metadata4ing#implementsmethod implements implements Method implements method implementsMethod implementsmethod</span>
+- **implements** (*ObjectProperty*) — `implements` — <http://www.w3.org/ns/ssn/implements>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/ssn/implements implements</span>
+- **data collector** (*Individual*) — `DataCollector` — <http://w3id.org/nfdi4ing/metadata4ing#DataCollector>
+  <span class='search-tokens' style='display:none'>Data Collector DataCollector data collector datacollector http://w3id.org/nfdi4ing/metadata4ing# Data Collector http://w3id.org/nfdi4ing/metadata4ing# data collector http://w3id.org/nfdi4ing/metadata4ing#DataCollector http://w3id.org/nfdi4ing/metadata4ing#datacollector</span>
+- **nutzt Instrument** (*ObjectProperty*) — `instrument` — <https://schema.org/instrument>
+  <span class='search-tokens' style='display:none'>https://schema.org/instrument instrument nutzt  Instrument nutzt  instrument nutzt Instrument nutzt instrument</span>
+- **hat Variablenbeschreibung** (*DatatypeProperty*) — `hasVariableDescription` — <http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription>
+  <span class='search-tokens' style='display:none'>has Variable Description has variable description hasVariableDescription hasvariabledescription hat  Variablenbeschreibung hat  variablenbeschreibung hat Variablenbeschreibung hat variablenbeschreibung http://w3id.org/nfdi4ing/metadata4ing#has Variable Description http://w3id.org/nfdi4ing/metadata4ing#has variable description http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription http://w3id.org/nfdi4ing/metadata4ing#hasvariabledescription</span>
+- **coverage interval** (*Class*) — `CoverageInterval` — <https://ptb.de/si/CoverageInterval>
+  <span class='search-tokens' style='display:none'>Coverage Interval CoverageInterval coverage interval coverageinterval https://ptb.de/si/ Coverage Interval https://ptb.de/si/ coverage interval https://ptb.de/si/CoverageInterval https://ptb.de/si/coverageinterval</span>
+- **doi** (*AnnotationProperty*) — `doi` — <http://purl.org/ontology/bibo/doi>
+  <span class='search-tokens' style='display:none'>doi http://purl.org/ontology/bibo/doi</span>
+- **in series** (*ObjectProperty*) — `inSeries` — <http://www.w3.org/ns/dcat#inSeries> — _comment:_ Normally, child datasets in dataset series are represented as dcat:Dataset. The use of dcat:Distribution for typing child datasets is however recognized as a possible alternative, whenever it addresses more effectively the requirements of a given application scenario.
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#in Series http://www.w3.org/ns/dcat#in series http://www.w3.org/ns/dcat#inSeries http://www.w3.org/ns/dcat#inseries in Series in series inSeries inseries</span>
+- **hat eingesetztes Werkzeug** (*ObjectProperty*) — `hasEmployedTool` — <http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool>
+  <span class='search-tokens' style='display:none'>has Employed Tool has employed tool hasEmployedTool hasemployedtool hat eingesetztes  Werkzeug hat eingesetztes  werkzeug hat eingesetztes Werkzeug hat eingesetztes werkzeug http://w3id.org/nfdi4ing/metadata4ing#has Employed Tool http://w3id.org/nfdi4ing/metadata4ing#has employed tool http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool http://w3id.org/nfdi4ing/metadata4ing#hasemployedtool</span>
+- **member** (*ObjectProperty*) — `member` — <http://xmlns.com/foaf/0.1/member> — _comment:_ Indicates a member of a Group
+  <span class='search-tokens' style='display:none'>http://xmlns.com/foaf/0.1/member member</span>
+- **Werkzeug** (*Class*) — `Tool` — <http://w3id.org/nfdi4ing/metadata4ing#Tool>
+  <span class='search-tokens' style='display:none'>Tool Werkzeug http://w3id.org/nfdi4ing/metadata4ing# Tool http://w3id.org/nfdi4ing/metadata4ing# tool http://w3id.org/nfdi4ing/metadata4ing#Tool http://w3id.org/nfdi4ing/metadata4ing#tool tool werkzeug</span>
+- **Assignment** (*Class*) — `Assignment` — <http://www.molmod.info/semantics/pims-ii.ttl#Assignment> — _comment:_ Assignment, i.e., a data item by which a value is assigned to a variable with respect to a particular referent (e.g., T = 200 K for substance o as it was measured in a particular cognitive step); therein, T is the variable, related to the assignment by m4i:hasVariable, 200 K is the value, related to the assignment by m4i:hasValue, and o is the referent, related to the assignment by isAssignmentFor
+  <span class='search-tokens' style='display:none'>Assignment assignment http://www.molmod.info/semantics/pims ii.ttl# Assignment http://www.molmod.info/semantics/pims ii.ttl# assignment http://www.molmod.info/semantics/pims ii.ttl#Assignment http://www.molmod.info/semantics/pims-ii.ttl#Assignment http://www.molmod.info/semantics/pims-ii.ttl#assignment</span>
+- **Person** (*Class*) — `Person` — <http://xmlns.com/foaf/0.1/Person> — _comment:_ A person.
+  <span class='search-tokens' style='display:none'>Person http://xmlns.com/foaf/0.1/ Person http://xmlns.com/foaf/0.1/ person http://xmlns.com/foaf/0.1/Person http://xmlns.com/foaf/0.1/person person</span>
+- **Agent** (*Class*) — `Agent` — <http://xmlns.com/foaf/0.1/Agent> — _comment:_ An agent (eg. person, group, software or physical artifact).
+  <span class='search-tokens' style='display:none'>Agent agent http://xmlns.com/foaf/0.1/ Agent http://xmlns.com/foaf/0.1/ agent http://xmlns.com/foaf/0.1/Agent http://xmlns.com/foaf/0.1/agent</span>
+- **hat erweiterte Unsicherheit** (*ObjectProperty*) — `hasExpandedUnc` — <http://w3id.org/nfdi4ing/metadata4ing#hasExpandedUnc>
+  <span class='search-tokens' style='display:none'>has Expanded Unc has expanded unc hasExpandedUnc hasexpandedunc hat erweiterte  Unsicherheit hat erweiterte  unsicherheit hat erweiterte Unsicherheit hat erweiterte unsicherheit http://w3id.org/nfdi4ing/metadata4ing#has Expanded Unc http://w3id.org/nfdi4ing/metadata4ing#has expanded unc http://w3id.org/nfdi4ing/metadata4ing#hasExpandedUnc http://w3id.org/nfdi4ing/metadata4ing#hasexpandedunc</span>
+- **ist eingesetztes Werkzeug** (*ObjectProperty*) — `isEmployedToolIn` — <http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#is Employed Tool In http://w3id.org/nfdi4ing/metadata4ing#is employed tool in http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn http://w3id.org/nfdi4ing/metadata4ing#isemployedtoolin is Employed Tool In is employed tool in isEmployedToolIn isemployedtoolin ist eingesetztes  Werkzeug ist eingesetztes  werkzeug ist eingesetztes Werkzeug ist eingesetztes werkzeug</span>
+- **description** (*AnnotationProperty*) — `description` — <http://purl.org/dc/terms/description>
+  <span class='search-tokens' style='display:none'>description http://purl.org/dc/terms/description</span>
+- **bereitstellende Institution** (*Individual*) — `HostingInstitution` — <http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution>
+  <span class='search-tokens' style='display:none'>Hosting Institution HostingInstitution bereitstellende  Institution bereitstellende  institution bereitstellende Institution bereitstellende institution hosting institution hostinginstitution http://w3id.org/nfdi4ing/metadata4ing# Hosting Institution http://w3id.org/nfdi4ing/metadata4ing# hosting institution http://w3id.org/nfdi4ing/metadata4ing#HostingInstitution http://w3id.org/nfdi4ing/metadata4ing#hostinginstitution</span>
+- **Projektenddatum** (*DatatypeProperty*) — `endOfProject` — <http://w3id.org/nfdi4ing/metadata4ing#endOfProject>
+  <span class='search-tokens' style='display:none'>Projektenddatum end Of Project end of project endOfProject endofproject http://w3id.org/nfdi4ing/metadata4ing#end Of Project http://w3id.org/nfdi4ing/metadata4ing#end of project http://w3id.org/nfdi4ing/metadata4ing#endOfProject http://w3id.org/nfdi4ing/metadata4ing#endofproject projektenddatum</span>
+- **narrower** (*AnnotationProperty*) — `narrower` — <http://www.w3.org/2004/02/skos/core#narrower>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/2004/02/skos/core#narrower narrower</span>
+- **Größenwert** (*Class*) — `QuantityValue` — <http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue>
+  <span class='search-tokens' style='display:none'>Größenwert Quantity Value QuantityValue größenwert http://www.molmod.info/semantics/pims ii.ttl# Quantity Value http://www.molmod.info/semantics/pims ii.ttl# quantity value http://www.molmod.info/semantics/pims ii.ttl#QuantityValue http://www.molmod.info/semantics/pims-ii.ttl#QuantityValue http://www.molmod.info/semantics/pims-ii.ttl#quantityvalue quantity value quantityvalue</span>
+- **temporal resolution** (*DatatypeProperty*) — `temporalResolution` — <http://www.w3.org/ns/dcat#temporalResolution>
+  <span class='search-tokens' style='display:none'>http://www.w3.org/ns/dcat#temporal Resolution http://www.w3.org/ns/dcat#temporal resolution http://www.w3.org/ns/dcat#temporalResolution http://www.w3.org/ns/dcat#temporalresolution temporal Resolution temporal resolution temporalResolution temporalresolution</span>
+- **numerical assignment** (*Class*) — `NumericalAssignment` — <http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment>
+  <span class='search-tokens' style='display:none'>Numerical Assignment NumericalAssignment http://w3id.org/nfdi4ing/metadata4ing# Numerical Assignment http://w3id.org/nfdi4ing/metadata4ing# numerical assignment http://w3id.org/nfdi4ing/metadata4ing#NumericalAssignment http://w3id.org/nfdi4ing/metadata4ing#numericalassignment numerical assignment numericalassignment</span>
+- **abstract** (*AnnotationProperty*) — `abstract` — <http://purl.org/dc/terms/abstract>
+  <span class='search-tokens' style='display:none'>abstract http://purl.org/dc/terms/abstract</span>
+- **hat Datumszuweisung gültig bis** (*DatatypeProperty*) — `hasDateAssignmentValidUntil` — <http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidUntil>
+  <span class='search-tokens' style='display:none'>has Date Assignment Valid Until has date assignment valid until hasDateAssignmentValidUntil hasdateassignmentvaliduntil hat  Datumszuweisung gültig bis hat  datumszuweisung gültig bis hat Datumszuweisung gültig bis hat datumszuweisung gültig bis http://w3id.org/nfdi4ing/metadata4ing#has Date Assignment Valid Until http://w3id.org/nfdi4ing/metadata4ing#has date assignment valid until http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentValidUntil http://w3id.org/nfdi4ing/metadata4ing#hasdateassignmentvaliduntil</span>
+- **editorialNote** (*AnnotationProperty*) — `editorialNote` — <http://www.w3.org/2004/02/skos/core#editorialNote>
+  <span class='search-tokens' style='display:none'>editorial Note editorial note editorialNote editorialnote http://www.w3.org/2004/02/skos/core#editorial Note http://www.w3.org/2004/02/skos/core#editorial note http://www.w3.org/2004/02/skos/core#editorialNote http://www.w3.org/2004/02/skos/core#editorialnote</span>
+- **issued** (*AnnotationProperty*) — `issued` — <http://purl.org/dc/terms/issued>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/issued issued</span>
+- **Titel** (*DatatypeProperty*) — `title` — <http://xmlns.com/foaf/0.1/title> — _comment:_ Title (Mr, Mrs, Ms, Dr. etc)
+  <span class='search-tokens' style='display:none'>Titel http://xmlns.com/foaf/0.1/title titel title</span>
+- **modified** (*AnnotationProperty*) — `modified` — <http://purl.org/dc/terms/modified>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/modified modified</span>
+- **Registrierungsbehörde** (*Individual*) — `RegistrationAuthority` — <http://w3id.org/nfdi4ing/metadata4ing#RegistrationAuthority>
+  <span class='search-tokens' style='display:none'>Registration Authority RegistrationAuthority Registrierungsbehörde http://w3id.org/nfdi4ing/metadata4ing# Registration Authority http://w3id.org/nfdi4ing/metadata4ing# registration authority http://w3id.org/nfdi4ing/metadata4ing#RegistrationAuthority http://w3id.org/nfdi4ing/metadata4ing#registrationauthority registration authority registrationauthority registrierungsbehörde</span>
+- **E-Mail-Adresse** (*ObjectProperty*) — `mbox` — <http://xmlns.com/foaf/0.1/mbox> — _comment:_ A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that   there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.
+  <span class='search-tokens' style='display:none'>E  Mail  Adresse E Mail Adresse E-Mail-Adresse e  mail  adresse e-mail-adresse http://xmlns.com/foaf/0.1/mbox mbox</span>
+- **is variable in assignment** (*ObjectProperty*) — `isVariableInAssignment` — <http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment>
+  <span class='search-tokens' style='display:none'>http://www.molmod.info/semantics/pims ii.ttl#is Variable In Assignment http://www.molmod.info/semantics/pims ii.ttl#is variable in assignment http://www.molmod.info/semantics/pims ii.ttl#isVariableInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isVariableInAssignment http://www.molmod.info/semantics/pims-ii.ttl#isvariableinassignment is Variable In Assignment is variable in assignment isVariableInAssignment isvariableinassignment</span>
+- **has assigned value** (*ObjectProperty*) — `hasAssignedValue` — <http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue>
+  <span class='search-tokens' style='display:none'>has Assigned Value has assigned value hasAssignedValue hasassignedvalue http://w3id.org/nfdi4ing/metadata4ing#has Assigned Value http://w3id.org/nfdi4ing/metadata4ing#has assigned value http://w3id.org/nfdi4ing/metadata4ing#hasAssignedValue http://w3id.org/nfdi4ing/metadata4ing#hasassignedvalue</span>
+- **duration** (*Entity*) — `duration` — <http://www.w3.org/2001/XMLSchema#duration>
+  <span class='search-tokens' style='display:none'>duration http://www.w3.org/2001/XML Schema#duration http://www.w3.org/2001/XMLSchema#duration http://www.w3.org/2001/xml schema#duration http://www.w3.org/2001/xmlschema#duration</span>
+- **has kind of quantity** (*ObjectProperty*) — `hasKindOfQuantity` — <http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity>
+  <span class='search-tokens' style='display:none'>has Kind Of Quantity has kind of quantity hasKindOfQuantity haskindofquantity http://w3id.org/nfdi4ing/metadata4ing#has Kind Of Quantity http://w3id.org/nfdi4ing/metadata4ing#has kind of quantity http://w3id.org/nfdi4ing/metadata4ing#hasKindOfQuantity http://w3id.org/nfdi4ing/metadata4ing#haskindofquantity</span>
+- **DateTime** (*Entity*) — `DateTime` — <https://schema.org/DateTime>
+  <span class='search-tokens' style='display:none'>Date Time DateTime date time datetime https://schema.org/ Date Time https://schema.org/ date time https://schema.org/DateTime https://schema.org/datetime</span>
+- **preferredNamespaceUri** (*AnnotationProperty*) — `preferredNamespaceUri` — <http://purl.org/vocab/vann/preferredNamespaceUri>
+  <span class='search-tokens' style='display:none'>http://purl.org/vocab/vann/preferred Namespace Uri http://purl.org/vocab/vann/preferred namespace uri http://purl.org/vocab/vann/preferredNamespaceUri http://purl.org/vocab/vann/preferrednamespaceuri preferred Namespace Uri preferred namespace uri preferredNamespaceUri preferrednamespaceuri</span>
+- **rights** (*AnnotationProperty*) — `rights` — <http://purl.org/dc/terms/rights>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/rights rights</span>
+- **has identifier** (*DatatypeProperty*) — `identifier` — <http://w3id.org/nfdi4ing/metadata4ing#identifier> — _alt:_ besitzt eindeutigen Identifikator | has unique identifier | is represented through identifier | wird durch Identifikator repräsentiert
+  <span class='search-tokens' style='display:none'>besitzt eindeutigen  Identifikator | has unique identifier | is represented through identifier | wird durch  Identifikator repräsentiert besitzt eindeutigen  identifikator | has unique identifier | is represented through identifier | wird durch  identifikator repräsentiert besitzt eindeutigen Identifikator | has unique identifier | is represented through identifier | wird durch Identifikator repräsentiert besitzt eindeutigen identifikator | has unique identifier | is represented through identifier | wird durch identifikator repräsentiert has identifier http://w3id.org/nfdi4ing/metadata4ing#identifier identifier</span>
+- **realizes method** (*ObjectProperty*) — `realizesMethod` — <http://w3id.org/nfdi4ing/metadata4ing#realizesMethod>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#realizes Method http://w3id.org/nfdi4ing/metadata4ing#realizes method http://w3id.org/nfdi4ing/metadata4ing#realizesMethod http://w3id.org/nfdi4ing/metadata4ing#realizesmethod realizes Method realizes method realizesMethod realizesmethod</span>
+- **hat Eigenschaft** (*ObjectProperty*) — `hasProperty` — <http://www.w3.org/ns/ssn/hasProperty>
+  <span class='search-tokens' style='display:none'>has Property has property hasProperty hasproperty hat  Eigenschaft hat  eigenschaft hat Eigenschaft hat eigenschaft http://www.w3.org/ns/ssn/has Property http://www.w3.org/ns/ssn/has property http://www.w3.org/ns/ssn/hasProperty http://www.w3.org/ns/ssn/hasproperty</span>
+- **project participant** (*ObjectProperty*) — `projectParticipant` — <http://w3id.org/nfdi4ing/metadata4ing#projectParticipant>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#project Participant http://w3id.org/nfdi4ing/metadata4ing#project participant http://w3id.org/nfdi4ing/metadata4ing#projectParticipant http://w3id.org/nfdi4ing/metadata4ing#projectparticipant project Participant project participant projectParticipant projectparticipant</span>
+- **wird implementiert durch** (*ObjectProperty*) — `implementedByTool` — <http://w3id.org/nfdi4ing/metadata4ing#implementedByTool>
+  <span class='search-tokens' style='display:none'>http://w3id.org/nfdi4ing/metadata4ing#implemented By Tool http://w3id.org/nfdi4ing/metadata4ing#implemented by tool http://w3id.org/nfdi4ing/metadata4ing#implementedByTool http://w3id.org/nfdi4ing/metadata4ing#implementedbytool implemented By Tool implemented by tool implementedByTool implementedbytool wird implementiert durch</span>
+- **altLabel** (*AnnotationProperty*) — `altLabel` — <http://www.w3.org/2004/02/skos/core#altLabel>
+  <span class='search-tokens' style='display:none'>alt Label alt label altLabel altlabel http://www.w3.org/2004/02/skos/core#alt Label http://www.w3.org/2004/02/skos/core#alt label http://www.w3.org/2004/02/skos/core#altLabel http://www.w3.org/2004/02/skos/core#altlabel</span>
+- **realisierbare Entität** (*Class*) — `BFO_0000017` — <http://purl.obolibrary.org/obo/BFO_0000017>
+  <span class='search-tokens' style='display:none'>BFO 0000017 BFO_0000017 bfo 0000017 bfo_0000017 http://purl.obolibrary.org/obo/BFO 0000017 http://purl.obolibrary.org/obo/BFO_0000017 http://purl.obolibrary.org/obo/bfo 0000017 http://purl.obolibrary.org/obo/bfo_0000017 realisierbare  Entität realisierbare  entität realisierbare Entität realisierbare entität</span>
+- **citation** (*AnnotationProperty*) — `citation` — <https://schema.org/citation>
+  <span class='search-tokens' style='display:none'>citation https://schema.org/citation</span>
+- **hat Zuweisungszeitstempel** (*DatatypeProperty*) — `hasAssignmentTimestamp` — <http://w3id.org/nfdi4ing/metadata4ing#hasAssignmentTimestamp>
+  <span class='search-tokens' style='display:none'>has Assignment Timestamp has assignment timestamp hasAssignmentTimestamp hasassignmenttimestamp hat  Zuweisungszeitstempel hat  zuweisungszeitstempel hat Zuweisungszeitstempel hat zuweisungszeitstempel http://w3id.org/nfdi4ing/metadata4ing#has Assignment Timestamp http://w3id.org/nfdi4ing/metadata4ing#has assignment timestamp http://w3id.org/nfdi4ing/metadata4ing#hasAssignmentTimestamp http://w3id.org/nfdi4ing/metadata4ing#hasassignmenttimestamp</span>
+- **hat Zahlenwert** (*DatatypeProperty*) — `hasNumericalValue` — <http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue>
+  <span class='search-tokens' style='display:none'>has Numerical Value has numerical value hasNumericalValue hasnumericalvalue hat  Zahlenwert hat  zahlenwert hat Zahlenwert hat zahlenwert http://w3id.org/nfdi4ing/metadata4ing#has Numerical Value http://w3id.org/nfdi4ing/metadata4ing#has numerical value http://w3id.org/nfdi4ing/metadata4ing#hasNumericalValue http://w3id.org/nfdi4ing/metadata4ing#hasnumericalvalue</span>
+</div>
+
+<h2 id="metrics">Metrics</h2>
+<p>See metrics (not indexed by search): <a href="metrics/">metrics</a></p>
+<div class="admonition warning">
+<p class="admonition-title">QC report</p>
+<p>ROBOT report could not be generated.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

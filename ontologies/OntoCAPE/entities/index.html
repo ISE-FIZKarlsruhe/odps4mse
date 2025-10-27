@@ -1,0 +1,772 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/ontologies/OntoCAPE/entities/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Entities - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process ODPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ontologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find Terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Entities</h1>
+
+<ul>
+<li><strong>UnitOfMeasure</strong> (<em>Class</em>) — <code>UnitOfMeasure</code> — <a href="http://OntoCAPE/upper_level/system.owl#UnitOfMeasure">http://OntoCAPE/upper_level/system.owl#UnitOfMeasure</a> — <em>comment:</em> A UnitOfMeasure is a standard measure for the ScalarValue of a of PhysicalQuantity.
+  <span class='search-tokens' style='display:none'>Unit Of Measure UnitOfMeasure http:// OntoCAPE/upper level/system.owl# Unit Of Measure http:// ontocape/upper level/system.owl# unit of measure http://OntoCAPE/upper level/system.owl#UnitOfMeasure http://OntoCAPE/upper_level/system.owl#UnitOfMeasure http://ontocape/upper_level/system.owl#unitofmeasure unit of measure unitofmeasure</span></li>
+<li><strong>object-featureRelation</strong> (<em>ObjectProperty</em>) — <code>object-featureRelation</code> — <a href="http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featureRelation">http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featureRelation</a>
+  <span class='search-tokens' style='display:none'>http://meta model/fundamental concepts/fundamental concepts.owl#object feature Relation http://meta model/fundamental concepts/fundamental concepts.owl#object feature relation http://meta model/fundamental concepts/fundamental concepts.owl#object featureRelation http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featureRelation http://meta_model/fundamental_concepts/fundamental_concepts.owl#object-featurerelation object feature Relation object feature relation object featureRelation object-featureRelation object-featurerelation</span></li>
+<li><strong>PhysicalDimension</strong> (<em>Class</em>) — <code>PhysicalDimension</code> — <a href="http://OntoCAPE/upper_level/system.owl#PhysicalDimension">http://OntoCAPE/upper_level/system.owl#PhysicalDimension</a> — <em>comment:</em> A PhysicalDimension is a characteristic associated with PhysicalQuantities and UnitsOfMeasure for purposes of organization or differentiation. Mass, length, and force are exemplary instances of PhysicalDimension.
+  <span class='search-tokens' style='display:none'>Physical Dimension PhysicalDimension http:// OntoCAPE/upper level/system.owl# Physical Dimension http:// ontocape/upper level/system.owl# physical dimension http://OntoCAPE/upper level/system.owl#PhysicalDimension http://OntoCAPE/upper_level/system.owl#PhysicalDimension http://ontocape/upper_level/system.owl#physicaldimension physical dimension physicaldimension</span></li>
+<li><strong>hasChemicalReactionNetwork</strong> (<em>ObjectProperty</em>) — <code>hasChemicalReactionNetwork</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasChemicalReactionNetwork">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasChemicalReactionNetwork</a> — <em>comment:</em> The relation hasChemicalRectionNetwork indicates that a reaction as considered on a rather macroscopic perspective of an early design stage may be the result of an sequence of reactions occurring on the bases of several phases.
+  <span class='search-tokens' style='display:none'>has Chemical Reaction Network has chemical reaction network hasChemicalReactionNetwork haschemicalreactionnetwork http:// OntoCAPE/chemical process system/CPS function/process.owl#has Chemical Reaction Network http:// ontocape/chemical process system/cps function/process.owl#has chemical reaction network http://OntoCAPE/chemical process system/CPS function/process.owl#hasChemicalReactionNetwork http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasChemicalReactionNetwork http://ontocape/chemical_process_system/cps_function/process.owl#haschemicalreactionnetwork</span></li>
+<li><strong>isPredecessorOf</strong> (<em>ObjectProperty</em>) — <code>isPredecessorOf</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf">http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf</a> — <em>comment:</em> The relation isPredecessorOf identifies all Devices and DirectedConnections that are predecessors of the considered one.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/network system.owl#is Predecessor Of http:// ontocape/upper level/network system.owl#is predecessor of http://OntoCAPE/upper level/network system.owl#isPredecessorOf http://OntoCAPE/upper_level/network_system.owl#isPredecessorOf http://ontocape/upper_level/network_system.owl#ispredecessorof is Predecessor Of is predecessor of isPredecessorOf ispredecessorof</span></li>
+<li><strong>Connection</strong> (<em>Class</em>) — <code>Connection</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#Connection">http://OntoCAPE/upper_level/network_system.owl#Connection</a> — <em>comment:</em> Connections are those elements of a NetworkSystem that represent the linkages between the Devices.
+  <span class='search-tokens' style='display:none'>Connection connection http:// OntoCAPE/upper level/network system.owl# Connection http:// ontocape/upper level/network system.owl# connection http://OntoCAPE/upper level/network system.owl#Connection http://OntoCAPE/upper_level/network_system.owl#Connection http://ontocape/upper_level/network_system.owl#connection</span></li>
+<li><strong>QuantitativeValue</strong> (<em>Class</em>) — <code>QuantitativeValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#QuantitativeValue">http://OntoCAPE/upper_level/system.owl#QuantitativeValue</a> — <em>comment:</em> A QuantitativeValue is the value of a PhysicalQuantity.
+  <span class='search-tokens' style='display:none'>Quantitative Value QuantitativeValue http:// OntoCAPE/upper level/system.owl# Quantitative Value http:// ontocape/upper level/system.owl# quantitative value http://OntoCAPE/upper level/system.owl#QuantitativeValue http://OntoCAPE/upper_level/system.owl#QuantitativeValue http://ontocape/upper_level/system.owl#quantitativevalue quantitative value quantitativevalue</span></li>
+<li><strong>isConsideredUnderAspectOf</strong> (<em>ObjectProperty</em>) — <code>isConsideredUnderAspectOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isConsideredUnderAspectOf">http://OntoCAPE/upper_level/system.owl#isConsideredUnderAspectOf</a> — <em>comment:</em> The relation isConsideredUnderAspectOf indicates the type of an AspectSystem by referring to an instance of the Aspect class.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Considered Under Aspect Of http:// ontocape/upper level/system.owl#is considered under aspect of http://OntoCAPE/upper level/system.owl#isConsideredUnderAspectOf http://OntoCAPE/upper_level/system.owl#isConsideredUnderAspectOf http://ontocape/upper_level/system.owl#isconsideredunderaspectof is Considered Under Aspect Of is considered under aspect of isConsideredUnderAspectOf isconsideredunderaspectof</span></li>
+<li><strong>EnvironmentConnection</strong> (<em>Class</em>) — <code>EnvironmentConnection</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#EnvironmentConnection">http://OntoCAPE/upper_level/network_system.owl#EnvironmentConnection</a>
+  <span class='search-tokens' style='display:none'>Environment Connection EnvironmentConnection environment connection environmentconnection http:// OntoCAPE/upper level/network system.owl# Environment Connection http:// ontocape/upper level/network system.owl# environment connection http://OntoCAPE/upper level/network system.owl#EnvironmentConnection http://OntoCAPE/upper_level/network_system.owl#EnvironmentConnection http://ontocape/upper_level/network_system.owl#environmentconnection</span></li>
+<li><strong>Fragmentation</strong> (<em>Class</em>) — <code>Fragmentation</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Fragmentation">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Fragmentation</a> — <em>comment:</em> Fragmentation in terms of unit operation is the breakup of solid material for further processing.
+  <span class='search-tokens' style='display:none'>Fragmentation fragmentation http:// OntoCAPE/chemical process system/CPS function/process.owl# Fragmentation http:// ontocape/chemical process system/cps function/process.owl# fragmentation http://OntoCAPE/chemical process system/CPS function/process.owl#Fragmentation http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Fragmentation http://ontocape/chemical_process_system/cps_function/process.owl#fragmentation</span></li>
+<li><strong>ProcessStream</strong> (<em>Class</em>) — <code>ProcessStream</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStream">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStream</a> — <em>comment:</em> A ProcessStream indicated the continuous mode of operation applied to the Process.
+  <span class='search-tokens' style='display:none'>Process Stream ProcessStream http:// OntoCAPE/chemical process system/CPS function/process.owl# Process Stream http:// ontocape/chemical process system/cps function/process.owl# process stream http://OntoCAPE/chemical process system/CPS function/process.owl#ProcessStream http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStream http://ontocape/chemical_process_system/cps_function/process.owl#processstream process stream processstream</span></li>
+<li><strong>hasProperty</strong> (<em>ObjectProperty</em>) — <code>hasProperty</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasProperty">http://OntoCAPE/upper_level/system.owl#hasProperty</a> — <em>comment:</em> The relation hasProperty indicates the Properties of a System.
+  <span class='search-tokens' style='display:none'>has Property has property hasProperty hasproperty http:// OntoCAPE/upper level/system.owl#has Property http:// ontocape/upper level/system.owl#has property http://OntoCAPE/upper level/system.owl#hasProperty http://OntoCAPE/upper_level/system.owl#hasProperty http://ontocape/upper_level/system.owl#hasproperty</span></li>
+<li><strong>PressureDifference</strong> (<em>Class</em>) — <code>PressureDifference</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureDifference">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureDifference</a>
+  <span class='search-tokens' style='display:none'>Pressure Difference PressureDifference http:// OntoCAPE/chemical process system/CPS function/process.owl# Pressure Difference http:// ontocape/chemical process system/cps function/process.owl# pressure difference http://OntoCAPE/chemical process system/CPS function/process.owl#PressureDifference http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureDifference http://ontocape/chemical_process_system/cps_function/process.owl#pressuredifference pressure difference pressuredifference</span></li>
+<li><strong>ConnectionPoint</strong> (<em>Class</em>) — <code>ConnectionPoint</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#ConnectionPoint">http://OntoCAPE/upper_level/network_system.owl#ConnectionPoint</a> — <em>comment:</em> A ConnectionPoint represents the interface through which a Connection can be connected to the Port of a device. ConnectionPoints may have certain attributes that further specify the type of connection. ConnectionPoints are subsystems of the corresponding Connection or DirectedConnection, respectively.
+  <span class='search-tokens' style='display:none'>Connection Point ConnectionPoint connection point connectionpoint http:// OntoCAPE/upper level/network system.owl# Connection Point http:// ontocape/upper level/network system.owl# connection point http://OntoCAPE/upper level/network system.owl#ConnectionPoint http://OntoCAPE/upper_level/network_system.owl#ConnectionPoint http://ontocape/upper_level/network_system.owl#connectionpoint</span></li>
+<li><strong>Model</strong> (<em>Class</em>) — <code>Model</code> — <a href="http://OntoCAPE/upper_level/system.owl#Model">http://OntoCAPE/upper_level/system.owl#Model</a> — <em>comment:</em> A Model is a system that is used to enable the understanding of or the command over the original system, or to replace the original system. Model system and original system share certain characteristics that are of relevance to the task at hand (Wüsteneck, 1963).
+  <span class='search-tokens' style='display:none'>Model http:// OntoCAPE/upper level/system.owl# Model http:// ontocape/upper level/system.owl# model http://OntoCAPE/upper level/system.owl#Model http://OntoCAPE/upper_level/system.owl#Model http://ontocape/upper_level/system.owl#model model</span></li>
+<li><strong>ReactionNetwork</strong> (<em>Class</em>) — <code>ReactionNetwork</code> — <a href="http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork">http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork</a>
+  <span class='search-tokens' style='display:none'>Reaction Network ReactionNetwork http:// OntoCAPE/material/phase system/phase system.owl# Reaction Network http:// ontocape/material/phase system/phase system.owl# reaction network http://OntoCAPE/material/phase system/phase system.owl#ReactionNetwork http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork http://ontocape/material/phase_system/phase_system.owl#reactionnetwork reaction network reactionnetwork</span></li>
+<li><strong>Batch</strong> (<em>Individual</em>) — <code>Batch</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch</a>
+  <span class='search-tokens' style='display:none'>Batch batch http:// OntoCAPE/chemical process system/CPS function/process.owl# Batch http:// ontocape/chemical process system/cps function/process.owl# batch http://OntoCAPE/chemical process system/CPS function/process.owl#Batch http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Batch http://ontocape/chemical_process_system/cps_function/process.owl#batch</span></li>
+<li><strong>inter-objectRelation</strong> (<em>ObjectProperty</em>) — <code>inter-objectRelation</code> — <a href="http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectRelation">http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectRelation</a>
+  <span class='search-tokens' style='display:none'>http://meta model/fundamental concepts/fundamental concepts.owl#inter object Relation http://meta model/fundamental concepts/fundamental concepts.owl#inter object relation http://meta model/fundamental concepts/fundamental concepts.owl#inter objectRelation http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectRelation http://meta_model/fundamental_concepts/fundamental_concepts.owl#inter-objectrelation inter object Relation inter object relation inter objectRelation inter-objectRelation inter-objectrelation</span></li>
+<li><strong>hasOperationMode</strong> (<em>ObjectProperty</em>) — <code>hasOperationMode</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasOperationMode">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasOperationMode</a> — <em>comment:</em> The relation hasOperationMode indicates by which operation modes a particular process state is achieved.
+  <span class='search-tokens' style='display:none'>has Operation Mode has operation mode hasOperationMode hasoperationmode http:// OntoCAPE/chemical process system/CPS function/process.owl#has Operation Mode http:// ontocape/chemical process system/cps function/process.owl#has operation mode http://OntoCAPE/chemical process system/CPS function/process.owl#hasOperationMode http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasOperationMode http://ontocape/chemical_process_system/cps_function/process.owl#hasoperationmode</span></li>
+<li><strong>ProcessStepProperty</strong> (<em>Class</em>) — <code>ProcessStepProperty</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStepProperty">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStepProperty</a>
+  <span class='search-tokens' style='display:none'>Process Step Property ProcessStepProperty http:// OntoCAPE/chemical process system/CPS function/process.owl# Process Step Property http:// ontocape/chemical process system/cps function/process.owl# process step property http://OntoCAPE/chemical process system/CPS function/process.owl#ProcessStepProperty http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStepProperty http://ontocape/chemical_process_system/cps_function/process.owl#processstepproperty process step property processstepproperty</span></li>
+<li><strong>ProcessStep</strong> (<em>Class</em>) — <code>ProcessStep</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep</a> — <em>comment:</em> A ProcessStep is a certain material processing procedure.
+  <span class='search-tokens' style='display:none'>Process Step ProcessStep http:// OntoCAPE/chemical process system/CPS function/process.owl# Process Step http:// ontocape/chemical process system/cps function/process.owl# process step http://OntoCAPE/chemical process system/CPS function/process.owl#ProcessStep http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessStep http://ontocape/chemical_process_system/cps_function/process.owl#processstep process step processstep</span></li>
+<li><strong>pressure</strong> (<em>Individual</em>) — <code>pressure</code> — <a href="http://OntoCAPE/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure">http://OntoCAPE/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure</a>
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/supporting concepts/physical dimension/derived dimensions.owl#pressure http:// ontocape/supporting concepts/physical dimension/derived dimensions.owl#pressure http://OntoCAPE/supporting concepts/physical dimension/derived dimensions.owl#pressure http://OntoCAPE/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure http://ontocape/supporting_concepts/physical_dimension/derived_dimensions.owl#pressure pressure</span></li>
+<li><strong>ConstantProperty</strong> (<em>Class</em>) — <code>ConstantProperty</code> — <a href="http://OntoCAPE/upper_level/system.owl#ConstantProperty">http://OntoCAPE/upper_level/system.owl#ConstantProperty</a> — <em>comment:</em> A ConstantProperty is a Property that has exactly one Value.
+  <span class='search-tokens' style='display:none'>Constant Property ConstantProperty constant property constantproperty http:// OntoCAPE/upper level/system.owl# Constant Property http:// ontocape/upper level/system.owl# constant property http://OntoCAPE/upper level/system.owl#ConstantProperty http://OntoCAPE/upper_level/system.owl#ConstantProperty http://ontocape/upper_level/system.owl#constantproperty</span></li>
+<li><strong>isDirectlyConnectedTo</strong> (<em>ObjectProperty</em>) — <code>isDirectlyConnectedTo</code> — <a href="http://OntoCAPE/upper_level/system.owl#isDirectlyConnectedTo">http://OntoCAPE/upper_level/system.owl#isDirectlyConnectedTo</a> — <em>comment:</em> The relation isDirectlyConnectedTo denotes the direct topological connectedness of two System.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Directly Connected To http:// ontocape/upper level/system.owl#is directly connected to http://OntoCAPE/upper level/system.owl#isDirectlyConnectedTo http://OntoCAPE/upper_level/system.owl#isDirectlyConnectedTo http://ontocape/upper_level/system.owl#isdirectlyconnectedto is Directly Connected To is directly connected to isDirectlyConnectedTo isdirectlyconnectedto</span></li>
+<li><strong>CoreProduct</strong> (<em>Class</em>) — <code>CoreProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#CoreProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#CoreProduct</a> — <em>comment:</em> A CoreProduct is a main (or an intended) EndProduct.
+  <span class='search-tokens' style='display:none'>Core Product CoreProduct core product coreproduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Core Product http:// ontocape/chemical process system/cps function/process.owl# core product http://OntoCAPE/chemical process system/CPS function/process.owl#CoreProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#CoreProduct http://ontocape/chemical_process_system/cps_function/process.owl#coreproduct</span></li>
+<li><strong>Flashing</strong> (<em>Class</em>) — <code>Flashing</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Flashing">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Flashing</a> — <em>comment:</em> Flashing utilized the state of phase equilibrium between a vapor and a liquid phase and the resulting material transport if a mixture with different fugacity is existent. In terms of unit operation this is usually accomplished in a vessel.
+  <span class='search-tokens' style='display:none'>Flashing flashing http:// OntoCAPE/chemical process system/CPS function/process.owl# Flashing http:// ontocape/chemical process system/cps function/process.owl# flashing http://OntoCAPE/chemical process system/CPS function/process.owl#Flashing http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Flashing http://ontocape/chemical_process_system/cps_function/process.owl#flashing</span></li>
+<li><strong>Reaction</strong> (<em>Class</em>) — <code>Reaction</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Reaction">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Reaction</a> — <em>comment:</em> A Reaction is a ProcessStep in which some material is converted to some other material through chemical or biochemical reactions
+  <span class='search-tokens' style='display:none'>Reaction http:// OntoCAPE/chemical process system/CPS function/process.owl# Reaction http:// ontocape/chemical process system/cps function/process.owl# reaction http://OntoCAPE/chemical process system/CPS function/process.owl#Reaction http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Reaction http://ontocape/chemical_process_system/cps_function/process.owl#reaction reaction</span></li>
+<li><strong>ReusableWasteProduct</strong> (<em>Class</em>) — <code>ReusableWasteProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ReusableWasteProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ReusableWasteProduct</a> — <em>comment:</em> A ReusableWasteProduct is a WasteProduct that can be reused for production.
+  <span class='search-tokens' style='display:none'>Reusable Waste Product ReusableWasteProduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Reusable Waste Product http:// ontocape/chemical process system/cps function/process.owl# reusable waste product http://OntoCAPE/chemical process system/CPS function/process.owl#ReusableWasteProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ReusableWasteProduct http://ontocape/chemical_process_system/cps_function/process.owl#reusablewasteproduct reusable waste product reusablewasteproduct</span></li>
+<li><strong>Subsystem</strong> (<em>Class</em>) — <code>Subsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#Subsystem">http://OntoCAPE/upper_level/system.owl#Subsystem</a> — <em>comment:</em> A Subsystem is a System that is a constituent of another System.
+  <span class='search-tokens' style='display:none'>Subsystem http:// OntoCAPE/upper level/system.owl# Subsystem http:// ontocape/upper level/system.owl# subsystem http://OntoCAPE/upper level/system.owl#Subsystem http://OntoCAPE/upper_level/system.owl#Subsystem http://ontocape/upper_level/system.owl#subsystem subsystem</span></li>
+<li><strong>isPropertyOf</strong> (<em>ObjectProperty</em>) — <code>isPropertyOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isPropertyOf">http://OntoCAPE/upper_level/system.owl#isPropertyOf</a> — <em>comment:</em> The relation isPropertyOf links a Property instance to a System instance.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Property Of http:// ontocape/upper level/system.owl#is property of http://OntoCAPE/upper level/system.owl#isPropertyOf http://OntoCAPE/upper_level/system.owl#isPropertyOf http://ontocape/upper_level/system.owl#ispropertyof is Property Of is property of isPropertyOf ispropertyof</span></li>
+<li><strong>RawMaterial</strong> (<em>Class</em>) — <code>RawMaterial</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial</a> — <em>comment:</em> A RawMaterial is a Material that enters a ProcessStep.
+  <span class='search-tokens' style='display:none'>Raw Material RawMaterial http:// OntoCAPE/chemical process system/CPS function/process.owl# Raw Material http:// ontocape/chemical process system/cps function/process.owl# raw material http://OntoCAPE/chemical process system/CPS function/process.owl#RawMaterial http://OntoCAPE/chemical_process_system/CPS_function/process.owl#RawMaterial http://ontocape/chemical_process_system/cps_function/process.owl#rawmaterial raw material rawmaterial</span></li>
+<li><strong>Mixing</strong> (<em>Class</em>) — <code>Mixing</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Mixing">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Mixing</a> — <em>comment:</em> Mixing in terms of unit operations is a special type of combination which results in a mixture which is required for further processing. It is usually accomplished by means of stirrer.
+  <span class='search-tokens' style='display:none'>Mixing http:// OntoCAPE/chemical process system/CPS function/process.owl# Mixing http:// ontocape/chemical process system/cps function/process.owl# mixing http://OntoCAPE/chemical process system/CPS function/process.owl#Mixing http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Mixing http://ontocape/chemical_process_system/cps_function/process.owl#mixing mixing</span></li>
+<li><strong>ExtensibleValueSet</strong> (<em>Class</em>) — <code>ExtensibleValueSet</code> — <a href="http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet">http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet</a> — <em>comment:</em> An ExtensibleValueSet is a ValueEnumeration which, unlike a FixedValueSet, is not defined by an (exhaustive) enumeration of its instances. Thus, the number of possible values may change at run time.
+  <span class='search-tokens' style='display:none'>Extensible Value Set ExtensibleValueSet extensible value set extensiblevalueset http:// OntoCAPE/upper level/system.owl# Extensible Value Set http:// ontocape/upper level/system.owl# extensible value set http://OntoCAPE/upper level/system.owl#ExtensibleValueSet http://OntoCAPE/upper_level/system.owl#ExtensibleValueSet http://ontocape/upper_level/system.owl#extensiblevalueset</span></li>
+<li><strong>PressureChangeOfGas</strong> (<em>Class</em>) — <code>PressureChangeOfGas</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfGas">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfGas</a>
+  <span class='search-tokens' style='display:none'>Pressure Change Of Gas PressureChangeOfGas http:// OntoCAPE/chemical process system/CPS function/process.owl# Pressure Change Of Gas http:// ontocape/chemical process system/cps function/process.owl# pressure change of gas http://OntoCAPE/chemical process system/CPS function/process.owl#PressureChangeOfGas http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfGas http://ontocape/chemical_process_system/cps_function/process.owl#pressurechangeofgas pressure change of gas pressurechangeofgas</span></li>
+<li><strong>By-product</strong> (<em>Class</em>) — <code>By-product</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#By-product">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#By-product</a> — <em>comment:</em> A Byproduct is an EndProduct whose production is unavoidable while a CoreProduct is produced.
+  <span class='search-tokens' style='display:none'>By product By-product by product by-product http:// OntoCAPE/chemical process system/CPS function/process.owl# By product http:// ontocape/chemical process system/cps function/process.owl# by product http://OntoCAPE/chemical process system/CPS function/process.owl#By product http://OntoCAPE/chemical_process_system/CPS_function/process.owl#By-product http://ontocape/chemical_process_system/cps_function/process.owl#by-product</span></li>
+<li><strong>hasValue</strong> (<em>ObjectProperty</em>) — <code>hasValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasValue">http://OntoCAPE/upper_level/system.owl#hasValue</a> — <em>comment:</em> The hasValue relation designates the Values of a Property.
+  <span class='search-tokens' style='display:none'>has Value has value hasValue hasvalue http:// OntoCAPE/upper level/system.owl#has Value http:// ontocape/upper level/system.owl#has value http://OntoCAPE/upper level/system.owl#hasValue http://OntoCAPE/upper_level/system.owl#hasValue http://ontocape/upper_level/system.owl#hasvalue</span></li>
+<li><strong>isDirectSubsystemOf</strong> (<em>ObjectProperty</em>) — <code>isDirectSubsystemOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf">http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf</a> — <em>comment:</em> The relation isDirectlySubsystemOf links a Subsystem to its direct Supersystem.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Direct Subsystem Of http:// ontocape/upper level/system.owl#is direct subsystem of http://OntoCAPE/upper level/system.owl#isDirectSubsystemOf http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf http://ontocape/upper_level/system.owl#isdirectsubsystemof is Direct Subsystem Of is direct subsystem of isDirectSubsystemOf isdirectsubsystemof</span></li>
+<li><strong>Leaching</strong> (<em>Class</em>) — <code>Leaching</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Leaching">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Leaching</a> — <em>comment:</em> Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction
+  <span class='search-tokens' style='display:none'>Leaching http:// OntoCAPE/chemical process system/CPS function/process.owl# Leaching http:// ontocape/chemical process system/cps function/process.owl# leaching http://OntoCAPE/chemical process system/CPS function/process.owl#Leaching http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Leaching http://ontocape/chemical_process_system/cps_function/process.owl#leaching leaching</span></li>
+<li><strong>hasSubsystem</strong> (<em>ObjectProperty</em>) — <code>hasSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasSubsystem">http://OntoCAPE/upper_level/system.owl#hasSubsystem</a> — <em>comment:</em> The relation hasSubsystem denotes the relation between a Supersystem and its Subsystem.
+  <span class='search-tokens' style='display:none'>has Subsystem has subsystem hasSubsystem hassubsystem http:// OntoCAPE/upper level/system.owl#has Subsystem http:// ontocape/upper level/system.owl#has subsystem http://OntoCAPE/upper level/system.owl#hasSubsystem http://OntoCAPE/upper_level/system.owl#hasSubsystem http://ontocape/upper_level/system.owl#hassubsystem</span></li>
+<li><strong>UnitOperation</strong> (<em>Class</em>) — <code>UnitOperation</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#UnitOperation">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#UnitOperation</a> — <em>comment:</em> A UnitOperation is a basic step in a process. This basic step might comprise mixing, separation, enthalpy change and many more to achieve the desired product.
+  <span class='search-tokens' style='display:none'>Unit Operation UnitOperation http:// OntoCAPE/chemical process system/CPS function/process.owl# Unit Operation http:// ontocape/chemical process system/cps function/process.owl# unit operation http://OntoCAPE/chemical process system/CPS function/process.owl#UnitOperation http://OntoCAPE/chemical_process_system/CPS_function/process.owl#UnitOperation http://ontocape/chemical_process_system/cps_function/process.owl#unitoperation unit operation unitoperation</span></li>
+<li><strong>contains</strong> (<em>ObjectProperty</em>) — <code>contains</code> — <a href="http://OntoCAPE/upper_level/system.owl#contains">http://OntoCAPE/upper_level/system.owl#contains</a> — <em>comment:</em> "The Contains relation constitutes an alternative to the hasSubsystem relation. It should be used instead of hasSubsystem 
+  <span class='search-tokens' style='display:none'>contains http:// OntoCAPE/upper level/system.owl#contains http:// ontocape/upper level/system.owl#contains http://OntoCAPE/upper level/system.owl#contains http://OntoCAPE/upper_level/system.owl#contains http://ontocape/upper_level/system.owl#contains</span></li>
+<li><strong>-   if the hasSubsystem relation causes performance problems, or</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    if the has Subsystem relation causes performance problems, or     if the has subsystem relation causes performance problems, or     if the hasSubsystem relation causes performance problems, or -   if the hasSubsystem relation causes performance problems, or -   if the hassubsystem relation causes performance problems, or</span></li>
+<li><strong>-   if only one side of the aggregation relation is of interest, namely the indication of the constituting elements of a supersystem"</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    if only one side of the aggregation relation is of interest, namely the indication of the constituting elements of a supersystem" -   if only one side of the aggregation relation is of interest, namely the indication of the constituting elements of a supersystem"</span></li>
+<li><strong>ScalarValue</strong> (<em>Class</em>) — <code>ScalarValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#ScalarValue">http://OntoCAPE/upper_level/system.owl#ScalarValue</a> — <em>comment:</em> A ScalarValue is the value of a ScalarQuantity.
+  <span class='search-tokens' style='display:none'>Scalar Value ScalarValue http:// OntoCAPE/upper level/system.owl# Scalar Value http:// ontocape/upper level/system.owl# scalar value http://OntoCAPE/upper level/system.owl#ScalarValue http://OntoCAPE/upper_level/system.owl#ScalarValue http://ontocape/upper_level/system.owl#scalarvalue scalar value scalarvalue</span></li>
+<li><strong>is_at_numbered_tray</strong> (<em>DatatypeProperty</em>) — <code>is_at_numbered_tray</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#is_at_numbered_tray">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#is_at_numbered_tray</a>
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/chemical process system/CPS function/process.owl#is at numbered tray http:// ontocape/chemical process system/cps function/process.owl#is at numbered tray http://OntoCAPE/chemical process system/CPS function/process.owl#is at numbered tray http://OntoCAPE/chemical_process_system/CPS_function/process.owl#is_at_numbered_tray http://ontocape/chemical_process_system/cps_function/process.owl#is_at_numbered_tray is at numbered tray is_at_numbered_tray</span></li>
+<li><strong>Combination</strong> (<em>Class</em>) — <code>Combination</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Combination">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Combination</a> — <em>comment:</em> A combination in terms of unit operation means to get together different process steps to achieve a particular one.
+  <span class='search-tokens' style='display:none'>Combination combination http:// OntoCAPE/chemical process system/CPS function/process.owl# Combination http:// ontocape/chemical process system/cps function/process.owl# combination http://OntoCAPE/chemical process system/CPS function/process.owl#Combination http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Combination http://ontocape/chemical_process_system/cps_function/process.owl#combination</span></li>
+<li><strong>IntermediateProduct</strong> (<em>Class</em>) — <code>IntermediateProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct</a> — <em>comment:</em> An IntermediateProduct is a ChemicalProduct that is produced in a ProcessStep and is used in another ProcessStep in the whole processing system.
+  <span class='search-tokens' style='display:none'>Intermediate Product IntermediateProduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Intermediate Product http:// ontocape/chemical process system/cps function/process.owl# intermediate product http://OntoCAPE/chemical process system/CPS function/process.owl#IntermediateProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#IntermediateProduct http://ontocape/chemical_process_system/cps_function/process.owl#intermediateproduct intermediate product intermediateproduct</span></li>
+<li><strong>InternalProperties</strong> (<em>Class</em>) — <code>InternalProperties</code> — <a href="http://OntoCAPE/upper_level/system.owl#InternalProperties">http://OntoCAPE/upper_level/system.owl#InternalProperties</a> — <em>comment:</em> The 'internal Properties' of a System are the Properties of its constituent Subsystems. They can be specified by means of a query class and thus inferred by reasoner. Such a query class must be defined individually for each System instance. The query class InternalProperties exemplarily demonstrates this approach for a sample System S.
+  <span class='search-tokens' style='display:none'>Internal Properties InternalProperties http:// OntoCAPE/upper level/system.owl# Internal Properties http:// ontocape/upper level/system.owl# internal properties http://OntoCAPE/upper level/system.owl#InternalProperties http://OntoCAPE/upper_level/system.owl#InternalProperties http://ontocape/upper_level/system.owl#internalproperties internal properties internalproperties</span></li>
+<li><strong>FlashVaporRatio</strong> (<em>Class</em>) — <code>FlashVaporRatio</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#FlashVaporRatio">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#FlashVaporRatio</a>
+  <span class='search-tokens' style='display:none'>Flash Vapor Ratio FlashVaporRatio flash vapor ratio flashvaporratio http:// OntoCAPE/chemical process system/CPS function/process.owl# Flash Vapor Ratio http:// ontocape/chemical process system/cps function/process.owl# flash vapor ratio http://OntoCAPE/chemical process system/CPS function/process.owl#FlashVaporRatio http://OntoCAPE/chemical_process_system/CPS_function/process.owl#FlashVaporRatio http://ontocape/chemical_process_system/cps_function/process.owl#flashvaporratio</span></li>
+<li><strong>numericalValue</strong> (<em>DatatypeProperty</em>) — <code>numericalValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#numericalValue">http://OntoCAPE/upper_level/system.owl#numericalValue</a> — <em>comment:</em> The attribute numericalValue specifies the number part of a QuantitativeValue.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#numerical Value http:// ontocape/upper level/system.owl#numerical value http://OntoCAPE/upper level/system.owl#numericalValue http://OntoCAPE/upper_level/system.owl#numericalValue http://ontocape/upper_level/system.owl#numericalvalue numerical Value numerical value numericalValue numericalvalue</span></li>
+<li><strong>hasDirectSubsystem</strong> (<em>ObjectProperty</em>) — <code>hasDirectSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem">http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem</a> — <em>comment:</em> The relation hasDirectSubsystem refers from a Supersystem to its direct Subsystem.
+  <span class='search-tokens' style='display:none'>has Direct Subsystem has direct subsystem hasDirectSubsystem hasdirectsubsystem http:// OntoCAPE/upper level/system.owl#has Direct Subsystem http:// ontocape/upper level/system.owl#has direct subsystem http://OntoCAPE/upper level/system.owl#hasDirectSubsystem http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem http://ontocape/upper_level/system.owl#hasdirectsubsystem</span></li>
+<li><strong>PropertySet</strong> (<em>Class</em>) — <code>PropertySet</code> — <a href="http://OntoCAPE/upper_level/system.owl#PropertySet">http://OntoCAPE/upper_level/system.owl#PropertySet</a> — <em>comment:</em> A Property set constitutes an (unordered) collection of Properties, which may be of different types.
+  <span class='search-tokens' style='display:none'>Property Set PropertySet http:// OntoCAPE/upper level/system.owl# Property Set http:// ontocape/upper level/system.owl# property set http://OntoCAPE/upper level/system.owl#PropertySet http://OntoCAPE/upper_level/system.owl#PropertySet http://ontocape/upper_level/system.owl#propertyset property set propertyset</span></li>
+<li><strong>PhysicalQuantity</strong> (<em>Class</em>) — <code>PhysicalQuantity</code> — <a href="http://OntoCAPE/upper_level/system.owl#PhysicalQuantity">http://OntoCAPE/upper_level/system.owl#PhysicalQuantity</a> — <em>comment:</em> A PhysicalQuantity is a Property that has quantifiable Values. The concept includes scalars as well as vectors and higher-order tensors. Moreover, it comprises both physical quantities, such as mass or velocity, and nonphysical quantities, such as amount of money or rate of inflation
+  <span class='search-tokens' style='display:none'>Physical Quantity PhysicalQuantity http:// OntoCAPE/upper level/system.owl# Physical Quantity http:// ontocape/upper level/system.owl# physical quantity http://OntoCAPE/upper level/system.owl#PhysicalQuantity http://OntoCAPE/upper_level/system.owl#PhysicalQuantity http://ontocape/upper_level/system.owl#physicalquantity physical quantity physicalquantity</span></li>
+<li><strong>Aspect</strong> (<em>Class</em>) — <code>Aspect</code> — <a href="http://OntoCAPE/upper_level/system.owl#Aspect">http://OntoCAPE/upper_level/system.owl#Aspect</a> — <em>comment:</em> An aspect represents a particular viewpoint of a system. An instance of the aspect class explicitly denominates that viewpoint.
+  <span class='search-tokens' style='display:none'>Aspect aspect http:// OntoCAPE/upper level/system.owl# Aspect http:// ontocape/upper level/system.owl# aspect http://OntoCAPE/upper level/system.owl#Aspect http://OntoCAPE/upper_level/system.owl#Aspect http://ontocape/upper_level/system.owl#aspect</span></li>
+<li><strong>isSuccessorOf</strong> (<em>ObjectProperty</em>) — <code>isSuccessorOf</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf">http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf</a> — <em>comment:</em> The relation isSuccessorOf identifies all Devices and DirectedConnections that are successors of the considered one.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/network system.owl#is Successor Of http:// ontocape/upper level/network system.owl#is successor of http://OntoCAPE/upper level/network system.owl#isSuccessorOf http://OntoCAPE/upper_level/network_system.owl#isSuccessorOf http://ontocape/upper_level/network_system.owl#issuccessorof is Successor Of is successor of isSuccessorOf issuccessorof</span></li>
+<li><strong>Continuous</strong> (<em>Individual</em>) — <code>Continuous</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous</a>
+  <span class='search-tokens' style='display:none'>Continuous continuous http:// OntoCAPE/chemical process system/CPS function/process.owl# Continuous http:// ontocape/chemical process system/cps function/process.owl# continuous http://OntoCAPE/chemical process system/CPS function/process.owl#Continuous http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Continuous http://ontocape/chemical_process_system/cps_function/process.owl#continuous</span></li>
+<li><strong>value</strong> (<em>DatatypeProperty</em>) — <code>value</code> — <a href="http://OntoCAPE/upper_level/system.owl#value">http://OntoCAPE/upper_level/system.owl#value</a> — <em>comment:</em> The Value attribute holds the actual value of a QualitativeValue.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#value http:// ontocape/upper level/system.owl#value http://OntoCAPE/upper level/system.owl#value http://OntoCAPE/upper_level/system.owl#value http://ontocape/upper_level/system.owl#value value</span></li>
+<li><strong>isModeledBy</strong> (<em>ObjectProperty</em>) — <code>isModeledBy</code> — <a href="http://OntoCAPE/upper_level/system.owl#isModeledBy">http://OntoCAPE/upper_level/system.owl#isModeledBy</a> — <em>comment:</em> The relation isModeldBy points from a modeled System to its Model.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Modeled By http:// ontocape/upper level/system.owl#is modeled by http://OntoCAPE/upper level/system.owl#isModeledBy http://OntoCAPE/upper_level/system.owl#isModeledBy http://ontocape/upper_level/system.owl#ismodeledby is Modeled By is modeled by isModeledBy ismodeledby</span></li>
+<li><strong>leaves</strong> (<em>ObjectProperty</em>) — <code>leaves</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#leaves">http://OntoCAPE/upper_level/network_system.owl#leaves</a> — <em>comment:</em> The relation Leaves connects an outgoing DirectedConnection to its source Device.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/network system.owl#leaves http:// ontocape/upper level/network system.owl#leaves http://OntoCAPE/upper level/network system.owl#leaves http://OntoCAPE/upper_level/network_system.owl#leaves http://ontocape/upper_level/network_system.owl#leaves leaves</span></li>
+<li><strong>isBackdropOf</strong> (<em>ObjectProperty</em>) — <code>isBackdropOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isBackdropOf">http://OntoCAPE/upper_level/system.owl#isBackdropOf</a> — <em>comment:</em> The isBackdropOf relation states that the Value serves as a backdrop for the observation of some other Value.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Backdrop Of http:// ontocape/upper level/system.owl#is backdrop of http://OntoCAPE/upper level/system.owl#isBackdropOf http://OntoCAPE/upper_level/system.owl#isBackdropOf http://ontocape/upper_level/system.owl#isbackdropof is Backdrop Of is backdrop of isBackdropOf isbackdropof</span></li>
+<li><strong>Object</strong> (<em>Class</em>) — <code>Object</code> — <a href="http://meta_model/fundamental_concepts/fundamental_concepts.owl#Object">http://meta_model/fundamental_concepts/fundamental_concepts.owl#Object</a>
+  <span class='search-tokens' style='display:none'>Object http://meta model/fundamental concepts/fundamental concepts.owl# Object http://meta model/fundamental concepts/fundamental concepts.owl# object http://meta model/fundamental concepts/fundamental concepts.owl#Object http://meta_model/fundamental_concepts/fundamental_concepts.owl#Object http://meta_model/fundamental_concepts/fundamental_concepts.owl#object object</span></li>
+<li><strong>EndProduct</strong> (<em>Class</em>) — <code>EndProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EndProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EndProduct</a> — <em>comment:</em> An EndProduct is an OutputProduct that is valuable.
+  <span class='search-tokens' style='display:none'>End Product EndProduct end product endproduct http:// OntoCAPE/chemical process system/CPS function/process.owl# End Product http:// ontocape/chemical process system/cps function/process.owl# end product http://OntoCAPE/chemical process system/CPS function/process.owl#EndProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EndProduct http://ontocape/chemical_process_system/cps_function/process.owl#endproduct</span></li>
+<li><strong>comprisesDirectly</strong> (<em>ObjectProperty</em>) — <code>comprisesDirectly</code> — <a href="http://OntoCAPE/upper_level/system.owl#comprisesDirectly">http://OntoCAPE/upper_level/system.owl#comprisesDirectly</a> — <em>comment:</em> The relation ComprisesDirectly indicates the direct members of a PropertySet.
+  <span class='search-tokens' style='display:none'>comprises Directly comprises directly comprisesDirectly comprisesdirectly http:// OntoCAPE/upper level/system.owl#comprises Directly http:// ontocape/upper level/system.owl#comprises directly http://OntoCAPE/upper level/system.owl#comprisesDirectly http://OntoCAPE/upper_level/system.owl#comprisesDirectly http://ontocape/upper_level/system.owl#comprisesdirectly</span></li>
+<li><strong>isDirectlyRelatedTo</strong> (<em>ObjectProperty</em>) — <code>isDirectlyRelatedTo</code> — <a href="http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo">http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo</a> — <em>comment:</em> The relation isDirectlyRelatedTo subsumes all kinds of direct inter-system relations.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Directly Related To http:// ontocape/upper level/system.owl#is directly related to http://OntoCAPE/upper level/system.owl#isDirectlyRelatedTo http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo http://ontocape/upper_level/system.owl#isdirectlyrelatedto is Directly Related To is directly related to isDirectlyRelatedTo isdirectlyrelatedto</span></li>
+<li><strong>BatchProcess</strong> (<em>Class</em>) — <code>BatchProcess</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#BatchProcess">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#BatchProcess</a> — <em>comment:</em> A BatchProcess indicates the batch mode of operation applied to the Process.
+  <span class='search-tokens' style='display:none'>Batch Process BatchProcess batch process batchprocess http:// OntoCAPE/chemical process system/CPS function/process.owl# Batch Process http:// ontocape/chemical process system/cps function/process.owl# batch process http://OntoCAPE/chemical process system/CPS function/process.owl#BatchProcess http://OntoCAPE/chemical_process_system/CPS_function/process.owl#BatchProcess http://ontocape/chemical_process_system/cps_function/process.owl#batchprocess</span></li>
+<li><strong>Supersystem</strong> (<em>Class</em>) — <code>Supersystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#Supersystem">http://OntoCAPE/upper_level/system.owl#Supersystem</a> — <em>comment:</em> A Supersystem is a System that has some constituent Subsystems.
+  <span class='search-tokens' style='display:none'>Supersystem http:// OntoCAPE/upper level/system.owl# Supersystem http:// ontocape/upper level/system.owl# supersystem http://OntoCAPE/upper level/system.owl#Supersystem http://OntoCAPE/upper_level/system.owl#Supersystem http://ontocape/upper_level/system.owl#supersystem supersystem</span></li>
+<li><strong>ScalarQuantity</strong> (<em>Class</em>) — <code>ScalarQuantity</code> — <a href="http://OntoCAPE/upper_level/system.owl#ScalarQuantity">http://OntoCAPE/upper_level/system.owl#ScalarQuantity</a> — <em>comment:</em> A ScalarQuantity is a scalar-valued PhysicalQuantity.
+  <span class='search-tokens' style='display:none'>Scalar Quantity ScalarQuantity http:// OntoCAPE/upper level/system.owl# Scalar Quantity http:// ontocape/upper level/system.owl# scalar quantity http://OntoCAPE/upper level/system.owl#ScalarQuantity http://OntoCAPE/upper_level/system.owl#ScalarQuantity http://ontocape/upper_level/system.owl#scalarquantity scalar quantity scalarquantity</span></li>
+<li><strong>isComposedOfSubsystem</strong> (<em>ObjectProperty</em>) — <code>isComposedOfSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem">http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem</a> — <em>comment:</em> The relation isComposedOf indicates the non-sharable, direct Subsystem of a Supersystem.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Composed Of Subsystem http:// ontocape/upper level/system.owl#is composed of subsystem http://OntoCAPE/upper level/system.owl#isComposedOfSubsystem http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem http://ontocape/upper_level/system.owl#iscomposedofsubsystem is Composed Of Subsystem is composed of subsystem isComposedOfSubsystem iscomposedofsubsystem</span></li>
+<li><strong>ElementarySystem</strong> (<em>Class</em>) — <code>ElementarySystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#ElementarySystem">http://OntoCAPE/upper_level/system.owl#ElementarySystem</a> — <em>comment:</em> An ElementarySystem is a Subsystem that cannot further partitioned into Subsystems.
+  <span class='search-tokens' style='display:none'>Elementary System ElementarySystem elementary system elementarysystem http:// OntoCAPE/upper level/system.owl# Elementary System http:// ontocape/upper level/system.owl# elementary system http://OntoCAPE/upper level/system.owl#ElementarySystem http://OntoCAPE/upper_level/system.owl#ElementarySystem http://ontocape/upper_level/system.owl#elementarysystem</span></li>
+<li><strong>hasDimension</strong> (<em>ObjectProperty</em>) — <code>hasDimension</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasDimension">http://OntoCAPE/upper_level/system.owl#hasDimension</a> — <em>comment:</em> The relation hasDimension specifies the PhysicalDimension of a PhysicalQuantity or a UnitOfMeasure.
+  <span class='search-tokens' style='display:none'>has Dimension has dimension hasDimension hasdimension http:// OntoCAPE/upper level/system.owl#has Dimension http:// ontocape/upper level/system.owl#has dimension http://OntoCAPE/upper level/system.owl#hasDimension http://OntoCAPE/upper_level/system.owl#hasDimension http://ontocape/upper_level/system.owl#hasdimension</span></li>
+<li><strong>process.owl</strong> (<em>Entity</em>) — <code>process.owl</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl">http://OntoCAPE/chemical_process_system/CPS_function/process.owl</a> — <em>comment:</em> "The ontology module 'process' provides concepts a functional description of an chemical process system at an early stage of design.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/chemical process system/CPS function/process.owl http:// ontocape/chemical process system/cps function/process.owl http://OntoCAPE/chemical process system/CPS function/process.owl http://OntoCAPE/chemical_process_system/CPS_function/process.owl http://ontocape/chemical_process_system/cps_function/process.owl process.owl</span></li>
+<li><strong>The following classes and relations from other ontology modules are used within 'process':</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>The following classes and relations from other ontology modules are used within 'process': the following classes and relations from other ontology modules are used within 'process':</span></li>
+<li>**    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/material.owl#Material"">    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/material.owl# Material"">      <owl: class rdf:about=""http:// ontocape/material/material.owl# material"">      <owl:Class rdf:about=""http://OntoCAPE/material/material.owl#Material"">      <owl:class rdf:about=""http://ontocape/material/material.owl#material"">    </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork""> ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl# Reaction Network"">   <owl: class rdf:about=""http:// ontocape/material/phase system/phase system.owl# reaction network"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#ReactionNetwork"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork"">   <owl:class rdf:about=""http://ontocape/material/phase_system/phase_system.owl#reactionnetwork""> </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#MultiphaseSystem""> ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl# Multiphase System"">   <owl: class rdf:about=""http:// ontocape/material/phase system/phase system.owl# multiphase system"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#MultiphaseSystem"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#MultiphaseSystem"">   <owl:class rdf:about=""http://ontocape/material/phase_system/phase_system.owl#multiphasesystem""> </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#SinglePhase""> ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl# Single Phase"">   <owl: class rdf:about=""http:// ontocape/material/phase system/phase system.owl# single phase"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#SinglePhase"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#SinglePhase"">   <owl:class rdf:about=""http://ontocape/material/phase_system/phase_system.owl#singlephase""> </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#SinglePhaseInMultiphaseSystem""> ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl# Single Phase In Multiphase System"">   <owl: class rdf:about=""http:// ontocape/material/phase system/phase system.owl# single phase in multiphase system"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#SinglePhaseInMultiphaseSystem"">   <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#SinglePhaseInMultiphaseSystem"">   <owl:class rdf:about=""http://ontocape/material/phase_system/phase_system.owl#singlephaseinmultiphasesystem""> </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/upper_level/system.owl#ScalarQuantity""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/upper level/system.owl# Scalar Quantity"">  <owl: class rdf:about=""http:// ontocape/upper level/system.owl# scalar quantity"">  <owl:Class rdf:about=""http://OntoCAPE/upper level/system.owl#ScalarQuantity"">  <owl:Class rdf:about=""http://OntoCAPE/upper_level/system.owl#ScalarQuantity"">  <owl:class rdf:about=""http://ontocape/upper_level/system.owl#scalarquantity""></span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/upper_level/network_system.owl#DirectedConnection""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/upper level/network system.owl# Directed Connection"">  <owl: class rdf:about=""http:// ontocape/upper level/network system.owl# directed connection"">  <owl:Class rdf:about=""http://OntoCAPE/upper level/network system.owl#DirectedConnection"">  <owl:Class rdf:about=""http://OntoCAPE/upper_level/network_system.owl#DirectedConnection"">  <owl:class rdf:about=""http://ontocape/upper_level/network_system.owl#directedconnection""></span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl# Reaction Network"">  <owl: class rdf:about=""http:// ontocape/material/phase system/phase system.owl# reaction network"">  <owl:Class rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#ReactionNetwork"">  <owl:Class rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#ReactionNetwork"">  <owl:class rdf:about=""http://ontocape/material/phase_system/phase_system.owl#reactionnetwork""></span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/upper_level/network_system.owl#Device""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/upper level/network system.owl# Device"">  <owl: class rdf:about=""http:// ontocape/upper level/network system.owl# device"">  <owl:Class rdf:about=""http://OntoCAPE/upper level/network system.owl#Device"">  <owl:Class rdf:about=""http://OntoCAPE/upper_level/network_system.owl#Device"">  <owl:class rdf:about=""http://ontocape/upper_level/network_system.owl#device""></span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/upper_level/system.owl#Property""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/upper level/system.owl# Property"">  <owl: class rdf:about=""http:// ontocape/upper level/system.owl# property"">  <owl:Class rdf:about=""http://OntoCAPE/upper level/system.owl#Property"">  <owl:Class rdf:about=""http://OntoCAPE/upper_level/system.owl#Property"">  <owl:class rdf:about=""http://ontocape/upper_level/system.owl#property""></span></li>
+<li>**    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    </span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#hasStateOfAggregation"">   ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl#has State Of Aggregation"">     <owl: object property rdf:about=""http:// ontocape/material/phase system/phase system.owl#has state of aggregation"">     <owl:ObjectProperty rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#hasStateOfAggregation"">     <owl:ObjectProperty rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#hasStateOfAggregation"">     <owl:objectproperty rdf:about=""http://ontocape/material/phase_system/phase_system.owl#hasstateofaggregation"">   </span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem"">    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#is Composed Of Subsystem"">      <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#is composed of subsystem"">      <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#isComposedOfSubsystem"">      <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isComposedOfSubsystem"">      <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#iscomposedofsubsystem"">    </span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasProperty"">    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#has Property"">      <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#has property"">      <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#hasProperty"">      <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasProperty"">      <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#hasproperty"">    </span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/material/material.owl#thermodynamicBehavior""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/material/material.owl#thermodynamic Behavior"">  <owl: object property rdf:about=""http:// ontocape/material/material.owl#thermodynamic behavior"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/material/material.owl#thermodynamicBehavior"">  <owl:objectproperty rdf:about=""http://ontocape/material/material.owl#thermodynamicbehavior""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#enters""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/network system.owl#enters"">  <owl: object property rdf:about=""http:// ontocape/upper level/network system.owl#enters"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/network system.owl#enters"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#enters"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/network_system.owl#enters""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#leaves""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/network system.owl#leaves"">  <owl: object property rdf:about=""http:// ontocape/upper level/network system.owl#leaves"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/network system.owl#leaves"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#leaves"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/network_system.owl#leaves""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasDimension""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#has Dimension"">  <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#has dimension"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#hasDimension"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasDimension"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#hasdimension""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isSubsystemOf""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#is Subsystem Of"">  <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#is subsystem of"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#isSubsystemOf"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isSubsystemOf"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#issubsystemof""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#has Direct Subsystem"">  <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#has direct subsystem"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#hasDirectSubsystem"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#hasDirectSubsystem"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#hasdirectsubsystem""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#is Direct Subsystem Of"">  <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#is direct subsystem of"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#isDirectSubsystemOf"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isDirectSubsystemOf"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#isdirectsubsystemof""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/system.owl#is Directly Related To"">  <owl: object property rdf:about=""http:// ontocape/upper level/system.owl#is directly related to"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/system.owl#isDirectlyRelatedTo"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/system.owl#isDirectlyRelatedTo"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/system.owl#isdirectlyrelatedto""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#hasOutput""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/network system.owl#has Output"">  <owl: object property rdf:about=""http:// ontocape/upper level/network system.owl#has output"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/network system.owl#hasOutput"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#hasOutput"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/network_system.owl#hasoutput""></span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#hasInput""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/upper level/network system.owl#has Input"">  <owl: object property rdf:about=""http:// ontocape/upper level/network system.owl#has input"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper level/network system.owl#hasInput"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/upper_level/network_system.owl#hasInput"">  <owl:objectproperty rdf:about=""http://ontocape/upper_level/network_system.owl#hasinput""></span></li>
+<li>** ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> </span></li>
+<li>** <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#liquid""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <phase system: State Of Aggregation rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl#liquid"">  <phase system: state of aggregation rdf:about=""http:// ontocape/material/phase system/phase system.owl#liquid"">  <phase system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#liquid"">  <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#liquid"">  <phase_system:stateofaggregation rdf:about=""http://ontocape/material/phase_system/phase_system.owl#liquid""></span></li>
+<li>** <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#gaseous""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <phase system: State Of Aggregation rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl#gaseous"">  <phase system: state of aggregation rdf:about=""http:// ontocape/material/phase system/phase system.owl#gaseous"">  <phase system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#gaseous"">  <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#gaseous"">  <phase_system:stateofaggregation rdf:about=""http://ontocape/material/phase_system/phase_system.owl#gaseous""></span></li>
+<li>** <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#solid""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <phase system: State Of Aggregation rdf:about=""http:// OntoCAPE/material/phase system/phase system.owl#solid"">  <phase system: state of aggregation rdf:about=""http:// ontocape/material/phase system/phase system.owl#solid"">  <phase system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase system/phase system.owl#solid"">  <phase_system:StateOfAggregation rdf:about=""http://OntoCAPE/material/phase_system/phase_system.owl#solid"">  <phase_system:stateofaggregation rdf:about=""http://ontocape/material/phase_system/phase_system.owl#solid""></span></li>
+<li>** <der_dim:Mechanics rdf:about=""der_dim;#pressure""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <der dim: Mechanics rdf:about=""der dim;#pressure"">  <der dim: mechanics rdf:about=""der dim;#pressure"">  <der dim:Mechanics rdf:about=""der dim;#pressure"">  <der_dim:Mechanics rdf:about=""der_dim;#pressure"">  <der_dim:mechanics rdf:about=""der_dim;#pressure""></span></li>
+<li>** <phys_dim:SupplementaryDimension rdf:about=""phys_dim;#identity_dimension""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <phys dim: Supplementary Dimension rdf:about=""phys dim;#identity dimension"">  <phys dim: supplementary dimension rdf:about=""phys dim;#identity dimension"">  <phys dim:SupplementaryDimension rdf:about=""phys dim;#identity dimension"">  <phys_dim:SupplementaryDimension rdf:about=""phys_dim;#identity_dimension"">  <phys_dim:supplementarydimension rdf:about=""phys_dim;#identity_dimension""></span></li>
+<li>** ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> </span></li>
+<li>** The following classes and relations from the Meta Model are refined within 'process':<em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>  The following classes and relations from the  Meta  Model are refined within 'process':   the following classes and relations from the  meta  model are refined within 'process':  The following classes and relations from the Meta Model are refined within 'process':  the following classes and relations from the meta model are refined within 'process':</span></li>
+<li>** ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> </span></li>
+<li>** <owl:Class rdf:about=""http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Class rdf:about=""http:// OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl# Value Set"">  <owl: class rdf:about=""http:// ontocape/meta model/fundamental concepts/fundamental concepts.owl# value set"">  <owl:Class rdf:about=""http://OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#ValueSet"">  <owl:Class rdf:about=""http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet"">  <owl:class rdf:about=""http://ontocape/meta_model/fundamental_concepts/fundamental_concepts.owl#valueset""></span></li>
+<li>** ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> </span></li>
+<li>** <owl:ObjectProperty rdf:about=""http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType""><em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'> <owl: Object Property rdf:about=""http:// OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#is Of Type"">  <owl: object property rdf:about=""http:// ontocape/meta model/fundamental concepts/fundamental concepts.owl#is of type"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#isOfType"">  <owl:ObjectProperty rdf:about=""http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType"">  <owl:objectproperty rdf:about=""http://ontocape/meta_model/fundamental_concepts/fundamental_concepts.owl#isoftype""></span></li>
+<li>**    ** (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    </span></li>
+<li>**    "<em><em> (</em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    "</span></li>
+<li><strong>isValueOf</strong> (<em>ObjectProperty</em>) — <code>isValueOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isValueOf">http://OntoCAPE/upper_level/system.owl#isValueOf</a> — <em>comment:</em> The relation isValueOf assigns a Value to a Property.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Value Of http:// ontocape/upper level/system.owl#is value of http://OntoCAPE/upper level/system.owl#isValueOf http://OntoCAPE/upper_level/system.owl#isValueOf http://ontocape/upper_level/system.owl#isvalueof is Value Of is value of isValueOf isvalueof</span></li>
+<li><strong>hasOutput</strong> (<em>ObjectProperty</em>) — <code>hasOutput</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#hasOutput">http://OntoCAPE/upper_level/network_system.owl#hasOutput</a> — <em>comment:</em> The relation hasOutput connects a Device to an outgoing DirectedConnection.
+  <span class='search-tokens' style='display:none'>has Output has output hasOutput hasoutput http:// OntoCAPE/upper level/network system.owl#has Output http:// ontocape/upper level/network system.owl#has output http://OntoCAPE/upper level/network system.owl#hasOutput http://OntoCAPE/upper_level/network_system.owl#hasOutput http://ontocape/upper_level/network_system.owl#hasoutput</span></li>
+<li><strong>hasPressureDifference</strong> (<em>ObjectProperty</em>) — <code>hasPressureDifference</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasPressureDifference">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasPressureDifference</a> — <em>comment:</em> The relation hasPressureDifference indicates the intended difference between two pressure state.
+  <span class='search-tokens' style='display:none'>has Pressure Difference has pressure difference hasPressureDifference haspressuredifference http:// OntoCAPE/chemical process system/CPS function/process.owl#has Pressure Difference http:// ontocape/chemical process system/cps function/process.owl#has pressure difference http://OntoCAPE/chemical process system/CPS function/process.owl#hasPressureDifference http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasPressureDifference http://ontocape/chemical_process_system/cps_function/process.owl#haspressuredifference</span></li>
+<li><strong>KeyChemicalComponentConversionRatio</strong> (<em>Class</em>) — <code>KeyChemicalComponentConversionRatio</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#KeyChemicalComponentConversionRatio">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#KeyChemicalComponentConversionRatio</a>
+  <span class='search-tokens' style='display:none'>Key Chemical Component Conversion Ratio KeyChemicalComponentConversionRatio http:// OntoCAPE/chemical process system/CPS function/process.owl# Key Chemical Component Conversion Ratio http:// ontocape/chemical process system/cps function/process.owl# key chemical component conversion ratio http://OntoCAPE/chemical process system/CPS function/process.owl#KeyChemicalComponentConversionRatio http://OntoCAPE/chemical_process_system/CPS_function/process.owl#KeyChemicalComponentConversionRatio http://ontocape/chemical_process_system/cps_function/process.owl#keychemicalcomponentconversionratio key chemical component conversion ratio keychemicalcomponentconversionratio</span></li>
+<li><strong>license</strong> (<em>AnnotationProperty</em>) — <code>license</code> — <a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a>
+  <span class='search-tokens' style='display:none'>http://purl.org/dc/terms/license license</span></li>
+<li><strong>TopLevelSystem</strong> (<em>Class</em>) — <code>TopLevelSystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#TopLevelSystem">http://OntoCAPE/upper_level/system.owl#TopLevelSystem</a> — <em>comment:</em> A TopLevelSystem is a Supersystem that is not a constituent of some other System.
+  <span class='search-tokens' style='display:none'>Top Level System TopLevelSystem http:// OntoCAPE/upper level/system.owl# Top Level System http:// ontocape/upper level/system.owl# top level system http://OntoCAPE/upper level/system.owl#TopLevelSystem http://OntoCAPE/upper_level/system.owl#TopLevelSystem http://ontocape/upper_level/system.owl#toplevelsystem top level system toplevelsystem</span></li>
+<li><strong>sameAs</strong> (<em>ObjectProperty</em>) — <code>sameAs</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#sameAs">http://OntoCAPE/upper_level/network_system.owl#sameAs</a> — <em>comment:</em> The relation denotes a correspondence between a Connection and its placeholder in a composition hierarchy
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/network system.owl#same As http:// ontocape/upper level/network system.owl#same as http://OntoCAPE/upper level/network system.owl#sameAs http://OntoCAPE/upper_level/network_system.owl#sameAs http://ontocape/upper_level/network_system.owl#sameas same As same as sameAs sameas</span></li>
+<li><strong>PhaseChange</strong> (<em>Class</em>) — <code>PhaseChange</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PhaseChange">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PhaseChange</a> — <em>comment:</em> PhaseChange is a specialization of EnthalpyChange an usually it is applied for the purpose of heat exchange between spatially separated phases
+  <span class='search-tokens' style='display:none'>Phase Change PhaseChange http:// OntoCAPE/chemical process system/CPS function/process.owl# Phase Change http:// ontocape/chemical process system/cps function/process.owl# phase change http://OntoCAPE/chemical process system/CPS function/process.owl#PhaseChange http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PhaseChange http://ontocape/chemical_process_system/cps_function/process.owl#phasechange phase change phasechange</span></li>
+<li><strong>isExclusivelySubsystemOf</strong> (<em>ObjectProperty</em>) — <code>isExclusivelySubsystemOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf">http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf</a> — <em>comment:</em> The relation isExclusivelySubsystemOf links a non-sharable Subsystem to its direct Supersystem.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Exclusively Subsystem Of http:// ontocape/upper level/system.owl#is exclusively subsystem of http://OntoCAPE/upper level/system.owl#isExclusivelySubsystemOf http://OntoCAPE/upper_level/system.owl#isExclusivelySubsystemOf http://ontocape/upper_level/system.owl#isexclusivelysubsystemof is Exclusively Subsystem Of is exclusively subsystem of isExclusivelySubsystemOf isexclusivelysubsystemof</span></li>
+<li><strong>ProcessState</strong> (<em>Class</em>) — <code>ProcessState</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState</a> — <em>comment:</em> A ProcessState represents the collectivity of properties of a CertainMaterialAmount  which is produced in the associating process step.
+  <span class='search-tokens' style='display:none'>Process State ProcessState http:// OntoCAPE/chemical process system/CPS function/process.owl# Process State http:// ontocape/chemical process system/cps function/process.owl# process state http://OntoCAPE/chemical process system/CPS function/process.owl#ProcessState http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ProcessState http://ontocape/chemical_process_system/cps_function/process.owl#processstate process state processstate</span></li>
+<li><strong>hasVapourRatio</strong> (<em>ObjectProperty</em>) — <code>hasVapourRatio</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasVapourRatio">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasVapourRatio</a> — <em>comment:</em> The relation hasVaporRatio indicates the liquid-vapor ratio of a particular mixture at a certain state within a vessel.
+  <span class='search-tokens' style='display:none'>has Vapour Ratio has vapour ratio hasVapourRatio hasvapourratio http:// OntoCAPE/chemical process system/CPS function/process.owl#has Vapour Ratio http:// ontocape/chemical process system/cps function/process.owl#has vapour ratio http://OntoCAPE/chemical process system/CPS function/process.owl#hasVapourRatio http://OntoCAPE/chemical_process_system/CPS_function/process.owl#hasVapourRatio http://ontocape/chemical_process_system/cps_function/process.owl#hasvapourratio</span></li>
+<li><strong>FirstLevelSubsystem</strong> (<em>Class</em>) — <code>FirstLevelSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#FirstLevelSubsystem">http://OntoCAPE/upper_level/system.owl#FirstLevelSubsystem</a> — <em>comment:</em> A Subsystem at the first level of decomposition.
+  <span class='search-tokens' style='display:none'>First Level Subsystem FirstLevelSubsystem first level subsystem firstlevelsubsystem http:// OntoCAPE/upper level/system.owl# First Level Subsystem http:// ontocape/upper level/system.owl# first level subsystem http://OntoCAPE/upper level/system.owl#FirstLevelSubsystem http://OntoCAPE/upper_level/system.owl#FirstLevelSubsystem http://ontocape/upper_level/system.owl#firstlevelsubsystem</span></li>
+<li><strong>hasUnitOfMeasure</strong> (<em>ObjectProperty</em>) — <code>hasUnitOfMeasure</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure">http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure</a> — <em>comment:</em> The relation hasUnitOfMeasure establishes the UnitOfMeasure of a ScalarValue.
+  <span class='search-tokens' style='display:none'>has Unit Of Measure has unit of measure hasUnitOfMeasure hasunitofmeasure http:// OntoCAPE/upper level/system.owl#has Unit Of Measure http:// ontocape/upper level/system.owl#has unit of measure http://OntoCAPE/upper level/system.owl#hasUnitOfMeasure http://OntoCAPE/upper_level/system.owl#hasUnitOfMeasure http://ontocape/upper_level/system.owl#hasunitofmeasure</span></li>
+<li><strong>OutputProduct</strong> (<em>Class</em>) — <code>OutputProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct</a> — <em>comment:</em> An OutputProduct is a Material that is output by a ProcessStep.
+  <span class='search-tokens' style='display:none'>Output Product OutputProduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Output Product http:// ontocape/chemical process system/cps function/process.owl# output product http://OntoCAPE/chemical process system/CPS function/process.owl#OutputProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#OutputProduct http://ontocape/chemical_process_system/cps_function/process.owl#outputproduct output product outputproduct</span></li>
+<li><strong>EnthalpyChange</strong> (<em>Class</em>) — <code>EnthalpyChange</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange</a> — <em>comment:</em> EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
+  <span class='search-tokens' style='display:none'>Enthalpy Change EnthalpyChange enthalpy change enthalpychange http:// OntoCAPE/chemical process system/CPS function/process.owl# Enthalpy Change http:// ontocape/chemical process system/cps function/process.owl# enthalpy change http://OntoCAPE/chemical process system/CPS function/process.owl#EnthalpyChange http://OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange http://ontocape/chemical_process_system/cps_function/process.owl#enthalpychange</span></li>
+<li><strong>AspectSystem</strong> (<em>Class</em>) — <code>AspectSystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#AspectSystem">http://OntoCAPE/upper_level/system.owl#AspectSystem</a> — <em>comment:</em> An AspectSystem is an ExclusiveSubsystem that contains those system components, relationships, and constraints that are of relevance to a particular Aspect.
+  <span class='search-tokens' style='display:none'>Aspect System AspectSystem aspect system aspectsystem http:// OntoCAPE/upper level/system.owl# Aspect System http:// ontocape/upper level/system.owl# aspect system http://OntoCAPE/upper level/system.owl#AspectSystem http://OntoCAPE/upper_level/system.owl#AspectSystem http://ontocape/upper_level/system.owl#aspectsystem</span></li>
+<li><strong>Process</strong> (<em>Class</em>) — <code>Process</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process</a> — <em>comment:</em> An AggregatedProcessStep representing the entire function of the Process considered
+  <span class='search-tokens' style='display:none'>Process http:// OntoCAPE/chemical process system/CPS function/process.owl# Process http:// ontocape/chemical process system/cps function/process.owl# process http://OntoCAPE/chemical process system/CPS function/process.owl#Process http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Process http://ontocape/chemical_process_system/cps_function/process.owl#process process</span></li>
+<li><strong>ModeOfOperation</strong> (<em>Class</em>) — <code>ModeOfOperation</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ModeOfOperation">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ModeOfOperation</a>
+  <span class='search-tokens' style='display:none'>Mode Of Operation ModeOfOperation http:// OntoCAPE/chemical process system/CPS function/process.owl# Mode Of Operation http:// ontocape/chemical process system/cps function/process.owl# mode of operation http://OntoCAPE/chemical process system/CPS function/process.owl#ModeOfOperation http://OntoCAPE/chemical_process_system/CPS_function/process.owl#ModeOfOperation http://ontocape/chemical_process_system/cps_function/process.owl#modeofoperation mode of operation modeofoperation</span></li>
+<li><strong>hasCharacteristic</strong> (<em>ObjectProperty</em>) — <code>hasCharacteristic</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasCharacteristic">http://OntoCAPE/upper_level/system.owl#hasCharacteristic</a> — <em>comment:</em> The hasCharacteristic relation constitutes a shorthand notation for the specification of a ConstantProperty and its Value.
+  <span class='search-tokens' style='display:none'>has Characteristic has characteristic hasCharacteristic hascharacteristic http:// OntoCAPE/upper level/system.owl#has Characteristic http:// ontocape/upper level/system.owl#has characteristic http://OntoCAPE/upper level/system.owl#hasCharacteristic http://OntoCAPE/upper_level/system.owl#hasCharacteristic http://ontocape/upper_level/system.owl#hascharacteristic</span></li>
+<li><strong>identity_dimension</strong> (<em>Individual</em>) — <code>identity_dimension</code> — <a href="http://OntoCAPE/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension">http://OntoCAPE/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension</a>
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/supporting concepts/physical dimension/physical dimension.owl#identity dimension http:// ontocape/supporting concepts/physical dimension/physical dimension.owl#identity dimension http://OntoCAPE/supporting concepts/physical dimension/physical dimension.owl#identity dimension http://OntoCAPE/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension http://ontocape/supporting_concepts/physical_dimension/physical_dimension.owl#identity_dimension identity dimension identity_dimension</span></li>
+<li><strong>FeatureSpace</strong> (<em>Class</em>) — <code>FeatureSpace</code> — <a href="http://meta_model/fundamental_concepts/fundamental_concepts.owl#FeatureSpace">http://meta_model/fundamental_concepts/fundamental_concepts.owl#FeatureSpace</a>
+  <span class='search-tokens' style='display:none'>Feature Space FeatureSpace feature space featurespace http://meta model/fundamental concepts/fundamental concepts.owl# Feature Space http://meta model/fundamental concepts/fundamental concepts.owl# feature space http://meta model/fundamental concepts/fundamental concepts.owl#FeatureSpace http://meta_model/fundamental_concepts/fundamental_concepts.owl#FeatureSpace http://meta_model/fundamental_concepts/fundamental_concepts.owl#featurespace</span></li>
+<li><strong>ValueEnumeration</strong> (<em>Class</em>) — <code>ValueEnumeration</code> — <a href="http://OntoCAPE/upper_level/system.owl#ValueEnumeration">http://OntoCAPE/upper_level/system.owl#ValueEnumeration</a> — <em>comment:</em> A ValueEnumeration specifies a (finite) set of possible values of a QualitativeValue.
+  <span class='search-tokens' style='display:none'>Value Enumeration ValueEnumeration http:// OntoCAPE/upper level/system.owl# Value Enumeration http:// ontocape/upper level/system.owl# value enumeration http://OntoCAPE/upper level/system.owl#ValueEnumeration http://OntoCAPE/upper_level/system.owl#ValueEnumeration http://ontocape/upper_level/system.owl#valueenumeration value enumeration valueenumeration</span></li>
+<li><strong>DirectedConnection</strong> (<em>Class</em>) — <code>DirectedConnection</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#DirectedConnection">http://OntoCAPE/upper_level/network_system.owl#DirectedConnection</a> — <em>comment:</em> DirectedConnection is a specialization of Connection and represents likewise the connecting element between Devices. However, the usage of DirectedConnection implies the indication of a directed interconnection.
+  <span class='search-tokens' style='display:none'>Directed Connection DirectedConnection directed connection directedconnection http:// OntoCAPE/upper level/network system.owl# Directed Connection http:// ontocape/upper level/network system.owl# directed connection http://OntoCAPE/upper level/network system.owl#DirectedConnection http://OntoCAPE/upper_level/network_system.owl#DirectedConnection http://ontocape/upper_level/network_system.owl#directedconnection</span></li>
+<li><strong>isConnectedTo</strong> (<em>ObjectProperty</em>) — <code>isConnectedTo</code> — <a href="http://OntoCAPE/upper_level/system.owl#isConnectedTo">http://OntoCAPE/upper_level/system.owl#isConnectedTo</a> — <em>comment:</em> The relation isConnectedTo represents topological connectivity between System.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Connected To http:// ontocape/upper level/system.owl#is connected to http://OntoCAPE/upper level/system.owl#isConnectedTo http://OntoCAPE/upper_level/system.owl#isConnectedTo http://ontocape/upper_level/system.owl#isconnectedto is Connected To is connected to isConnectedTo isconnectedto</span></li>
+<li><strong>comprises</strong> (<em>ObjectProperty</em>) — <code>comprises</code> — <a href="http://OntoCAPE/upper_level/system.owl#comprises">http://OntoCAPE/upper_level/system.owl#comprises</a> — <em>comment:</em> The relation Comprises indicates the members of a PropertySet.
+  <span class='search-tokens' style='display:none'>comprises http:// OntoCAPE/upper level/system.owl#comprises http:// ontocape/upper level/system.owl#comprises http://OntoCAPE/upper level/system.owl#comprises http://OntoCAPE/upper_level/system.owl#comprises http://ontocape/upper_level/system.owl#comprises</span></li>
+<li><strong>AggregatedProcessStep</strong> (<em>Class</em>) — <code>AggregatedProcessStep</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep</a> — <em>comment:</em> An AggregatedProcessStep is a ProcessStep which consists of a number of ProcessSteps in a certain sequence.
+  <span class='search-tokens' style='display:none'>Aggregated Process Step AggregatedProcessStep aggregated process step aggregatedprocessstep http:// OntoCAPE/chemical process system/CPS function/process.owl# Aggregated Process Step http:// ontocape/chemical process system/cps function/process.owl# aggregated process step http://OntoCAPE/chemical process system/CPS function/process.owl#AggregatedProcessStep http://OntoCAPE/chemical_process_system/CPS_function/process.owl#AggregatedProcessStep http://ontocape/chemical_process_system/cps_function/process.owl#aggregatedprocessstep</span></li>
+<li><strong>CompositeSystem</strong> (<em>Class</em>) — <code>CompositeSystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#CompositeSystem">http://OntoCAPE/upper_level/system.owl#CompositeSystem</a> — <em>comment:</em> A CompositeSystem is a System that is composed of other Systems.
+  <span class='search-tokens' style='display:none'>Composite System CompositeSystem composite system compositesystem http:// OntoCAPE/upper level/system.owl# Composite System http:// ontocape/upper level/system.owl# composite system http://OntoCAPE/upper level/system.owl#CompositeSystem http://OntoCAPE/upper_level/system.owl#CompositeSystem http://ontocape/upper_level/system.owl#compositesystem</span></li>
+<li><strong>representsAspectOf</strong> (<em>ObjectProperty</em>) — <code>representsAspectOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#representsAspectOf">http://OntoCAPE/upper_level/system.owl#representsAspectOf</a> — <em>comment:</em> The relation representsAspectOf links a AspectSystem to its respective System.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#represents Aspect Of http:// ontocape/upper level/system.owl#represents aspect of http://OntoCAPE/upper level/system.owl#representsAspectOf http://OntoCAPE/upper_level/system.owl#representsAspectOf http://ontocape/upper_level/system.owl#representsaspectof represents Aspect Of represents aspect of representsAspectOf representsaspectof</span></li>
+<li><strong>isRelatedTo</strong> (<em>ObjectProperty</em>) — <code>isRelatedTo</code> — <a href="http://OntoCAPE/upper_level/system.owl#isRelatedTo">http://OntoCAPE/upper_level/system.owl#isRelatedTo</a> — <em>comment:</em> The relation isRelatedTo subsumes all kinds of inter-system relations.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Related To http:// ontocape/upper level/system.owl#is related to http://OntoCAPE/upper level/system.owl#isRelatedTo http://OntoCAPE/upper_level/system.owl#isRelatedTo http://ontocape/upper_level/system.owl#isrelatedto is Related To is related to isRelatedTo isrelatedto</span></li>
+<li><strong>hasAspectSystem</strong> (<em>ObjectProperty</em>) — <code>hasAspectSystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#hasAspectSystem">http://OntoCAPE/upper_level/system.owl#hasAspectSystem</a> — <em>comment:</em> The relation hasAspectSystem designates the AspectSystems of a System.
+  <span class='search-tokens' style='display:none'>has Aspect System has aspect system hasAspectSystem hasaspectsystem http:// OntoCAPE/upper level/system.owl#has Aspect System http:// ontocape/upper level/system.owl#has aspect system http://OntoCAPE/upper level/system.owl#hasAspectSystem http://OntoCAPE/upper_level/system.owl#hasAspectSystem http://ontocape/upper_level/system.owl#hasaspectsystem</span></li>
+<li><strong>Separation</strong> (<em>Class</em>) — <code>Separation</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Separation">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Separation</a> — <em>comment:</em> Separation in terms of unit operation means to achieve single components of a mixture by means of physical of chemical phenomenon.
+  <span class='search-tokens' style='display:none'>Separation http:// OntoCAPE/chemical process system/CPS function/process.owl# Separation http:// ontocape/chemical process system/cps function/process.owl# separation http://OntoCAPE/chemical process system/CPS function/process.owl#Separation http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Separation http://ontocape/chemical_process_system/cps_function/process.owl#separation separation</span></li>
+<li><strong>Value</strong> (<em>Class</em>) — <code>Value</code> — <a href="http://OntoCAPE/upper_level/system.owl#Value">http://OntoCAPE/upper_level/system.owl#Value</a> — <em>comment:</em> The Value class denotes the different values of a Property.
+  <span class='search-tokens' style='display:none'>Value http:// OntoCAPE/upper level/system.owl# Value http:// ontocape/upper level/system.owl# value http://OntoCAPE/upper level/system.owl#Value http://OntoCAPE/upper_level/system.owl#Value http://ontocape/upper_level/system.owl#value value</span></li>
+<li><strong>NetworkSystem</strong> (<em>Class</em>) — <code>NetworkSystem</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#NetworkSystem">http://OntoCAPE/upper_level/network_system.owl#NetworkSystem</a> — <em>comment:</em> A NetworkSystem is a system that is composed of some Connections and some Devices.
+  <span class='search-tokens' style='display:none'>Network System NetworkSystem http:// OntoCAPE/upper level/network system.owl# Network System http:// ontocape/upper level/network system.owl# network system http://OntoCAPE/upper level/network system.owl#NetworkSystem http://OntoCAPE/upper_level/network_system.owl#NetworkSystem http://ontocape/upper_level/network_system.owl#networksystem network system networksystem</span></li>
+<li><strong>FixedValueSet</strong> (<em>Class</em>) — <code>FixedValueSet</code> — <a href="http://OntoCAPE/upper_level/system.owl#FixedValueSet">http://OntoCAPE/upper_level/system.owl#FixedValueSet</a> — <em>comment:</em> A FixedValueSet is a ValueEnumeration that is defined by an exhaustive enumeration of its instances. Thus, the number of possible values is fixed.
+  <span class='search-tokens' style='display:none'>Fixed Value Set FixedValueSet fixed value set fixedvalueset http:// OntoCAPE/upper level/system.owl# Fixed Value Set http:// ontocape/upper level/system.owl# fixed value set http://OntoCAPE/upper level/system.owl#FixedValueSet http://OntoCAPE/upper_level/system.owl#FixedValueSet http://ontocape/upper_level/system.owl#fixedvalueset</span></li>
+<li><strong>System</strong> (<em>Class</em>) — <code>System</code> — <a href="http://OntoCAPE/upper_level/system.owl#System">http://OntoCAPE/upper_level/system.owl#System</a> — <em>comment:</em> The System class denotes all kind of systems, which may be physical or abstract
+  <span class='search-tokens' style='display:none'>System http:// OntoCAPE/upper level/system.owl# System http:// ontocape/upper level/system.owl# system http://OntoCAPE/upper level/system.owl#System http://OntoCAPE/upper_level/system.owl#System http://ontocape/upper_level/system.owl#system system</span></li>
+<li><strong>PressureChange</strong> (<em>Class</em>) — <code>PressureChange</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChange">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChange</a> — <em>comment:</em> By means of a PressureChange a heat content of a particular fluid may be exchanged which may be used for heating or cooling purposes in terms of unit operations.
+  <span class='search-tokens' style='display:none'>Pressure Change PressureChange http:// OntoCAPE/chemical process system/CPS function/process.owl# Pressure Change http:// ontocape/chemical process system/cps function/process.owl# pressure change http://OntoCAPE/chemical process system/CPS function/process.owl#PressureChange http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChange http://ontocape/chemical_process_system/cps_function/process.owl#pressurechange pressure change pressurechange</span></li>
+<li><strong>SystemEnvironment</strong> (<em>Class</em>) — <code>SystemEnvironment</code> — <a href="http://OntoCAPE/upper_level/system.owl#SystemEnvironment">http://OntoCAPE/upper_level/system.owl#SystemEnvironment</a> — <em>comment:</em> The ImmediateEnvironment of a given System S consists of all Systems that are directly related to S. It can be specified by means of a query class. As the environment concept is relative, such a query class must be defined individually for each System instance. The query class SystemEnvironment exemplarily demonstrates the approach for sample System S.
+  <span class='search-tokens' style='display:none'>System Environment SystemEnvironment http:// OntoCAPE/upper level/system.owl# System Environment http:// ontocape/upper level/system.owl# system environment http://OntoCAPE/upper level/system.owl#SystemEnvironment http://OntoCAPE/upper_level/system.owl#SystemEnvironment http://ontocape/upper_level/system.owl#systemenvironment system environment systemenvironment</span></li>
+<li><strong>Port</strong> (<em>Class</em>) — <code>Port</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#Port">http://OntoCAPE/upper_level/network_system.owl#Port</a> — <em>comment:</em> Ports represents the interfaces through which Devices are connected to Connections. A Port may have certain attributes that characterize the type of the connection.
+  <span class='search-tokens' style='display:none'>Port http:// OntoCAPE/upper level/network system.owl# Port http:// ontocape/upper level/network system.owl# port http://OntoCAPE/upper level/network system.owl#Port http://OntoCAPE/upper_level/network_system.owl#Port http://ontocape/upper_level/network_system.owl#port port</span></li>
+<li><strong>ExclusiveSubsystem</strong> (<em>Class</em>) — <code>ExclusiveSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#ExclusiveSubsystem">http://OntoCAPE/upper_level/system.owl#ExclusiveSubsystem</a> — <em>comment:</em> An ExclusiveSubsystem is a direct subsystem of a CompositeSystem; it cannot be a direct subsystem of any other System.
+  <span class='search-tokens' style='display:none'>Exclusive Subsystem ExclusiveSubsystem exclusive subsystem exclusivesubsystem http:// OntoCAPE/upper level/system.owl# Exclusive Subsystem http:// ontocape/upper level/system.owl# exclusive subsystem http://OntoCAPE/upper level/system.owl#ExclusiveSubsystem http://OntoCAPE/upper_level/system.owl#ExclusiveSubsystem http://ontocape/upper_level/system.owl#exclusivesubsystem</span></li>
+<li><strong>PressureChangeOfLiquid</strong> (<em>Class</em>) — <code>PressureChangeOfLiquid</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfLiquid">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfLiquid</a>
+  <span class='search-tokens' style='display:none'>Pressure Change Of Liquid PressureChangeOfLiquid http:// OntoCAPE/chemical process system/CPS function/process.owl# Pressure Change Of Liquid http:// ontocape/chemical process system/cps function/process.owl# pressure change of liquid http://OntoCAPE/chemical process system/CPS function/process.owl#PressureChangeOfLiquid http://OntoCAPE/chemical_process_system/CPS_function/process.owl#PressureChangeOfLiquid http://ontocape/chemical_process_system/cps_function/process.owl#pressurechangeofliquid pressure change of liquid pressurechangeofliquid</span></li>
+<li><strong>ValueSet</strong> (<em>Class</em>) — <code>ValueSet</code> — <a href="http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet">http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet</a>
+  <span class='search-tokens' style='display:none'>Value Set ValueSet http:// OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl# Value Set http:// ontocape/meta model/fundamental concepts/fundamental concepts.owl# value set http://OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#ValueSet http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#ValueSet http://ontocape/meta_model/fundamental_concepts/fundamental_concepts.owl#valueset value set valueset</span></li>
+<li><strong>isOfType</strong> (<em>ObjectProperty</em>) — <code>isOfType</code> — <a href="http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType">http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType</a>
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#is Of Type http:// ontocape/meta model/fundamental concepts/fundamental concepts.owl#is of type http://OntoCAPE/meta model/fundamental concepts/fundamental concepts.owl#isOfType http://OntoCAPE/meta_model/fundamental_concepts/fundamental_concepts.owl#isOfType http://ontocape/meta_model/fundamental_concepts/fundamental_concepts.owl#isoftype is Of Type is of type isOfType isoftype</span></li>
+<li><strong>SecondLevelSubsystem</strong> (<em>Class</em>) — <code>SecondLevelSubsystem</code> — <a href="http://OntoCAPE/upper_level/system.owl#SecondLevelSubsystem">http://OntoCAPE/upper_level/system.owl#SecondLevelSubsystem</a> — <em>comment:</em> A Subsystem at the second level of decomposition.
+  <span class='search-tokens' style='display:none'>Second Level Subsystem SecondLevelSubsystem http:// OntoCAPE/upper level/system.owl# Second Level Subsystem http:// ontocape/upper level/system.owl# second level subsystem http://OntoCAPE/upper level/system.owl#SecondLevelSubsystem http://OntoCAPE/upper_level/system.owl#SecondLevelSubsystem http://ontocape/upper_level/system.owl#secondlevelsubsystem second level subsystem secondlevelsubsystem</span></li>
+<li><strong>models</strong> (<em>ObjectProperty</em>) — <code>models</code> — <a href="http://OntoCAPE/upper_level/system.owl#models">http://OntoCAPE/upper_level/system.owl#models</a> — <em>comment:</em> The relation 'models' links a Model to the modeled System.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#models http:// ontocape/upper level/system.owl#models http://OntoCAPE/upper level/system.owl#models http://OntoCAPE/upper_level/system.owl#models http://ontocape/upper_level/system.owl#models models</span></li>
+<li><strong>Device</strong> (<em>Class</em>) — <code>Device</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#Device">http://OntoCAPE/upper_level/network_system.owl#Device</a> — <em>comment:</em> Devices are the crucial elements of a NetworkSystem, holding the major functionality.
+  <span class='search-tokens' style='display:none'>Device device http:// OntoCAPE/upper level/network system.owl# Device http:// ontocape/upper level/network system.owl# device http://OntoCAPE/upper level/network system.owl#Device http://OntoCAPE/upper_level/network_system.owl#Device http://ontocape/upper_level/network_system.owl#device</span></li>
+<li><strong>WasteProduct</strong> (<em>Class</em>) — <code>WasteProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#WasteProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#WasteProduct</a> — <em>comment:</em> A WasteProduct is an OutputProduct that has no value.
+  <span class='search-tokens' style='display:none'>Waste Product WasteProduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Waste Product http:// ontocape/chemical process system/cps function/process.owl# waste product http://OntoCAPE/chemical process system/CPS function/process.owl#WasteProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#WasteProduct http://ontocape/chemical_process_system/cps_function/process.owl#wasteproduct waste product wasteproduct</span></li>
+<li><strong>S</strong> (<em>Individual</em>) — <code>S</code> — <a href="http://OntoCAPE/upper_level/system.owl#S">http://OntoCAPE/upper_level/system.owl#S</a> — <em>comment:</em> Sample system; used for the construction of the query classes SystemEnvironment and InternalProperties.
+  <span class='search-tokens' style='display:none'>S http:// OntoCAPE/upper level/system.owl#S http:// ontocape/upper level/system.owl#s http://OntoCAPE/upper level/system.owl#S http://OntoCAPE/upper_level/system.owl#S http://ontocape/upper_level/system.owl#s s</span></li>
+<li><strong>enters</strong> (<em>ObjectProperty</em>) — <code>enters</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#enters">http://OntoCAPE/upper_level/network_system.owl#enters</a> — <em>comment:</em> The relation Enters interconnects an ingoing DirectedConnection  to its target Device.
+  <span class='search-tokens' style='display:none'>enters http:// OntoCAPE/upper level/network system.owl#enters http:// ontocape/upper level/network system.owl#enters http://OntoCAPE/upper level/network system.owl#enters http://OntoCAPE/upper_level/network_system.owl#enters http://ontocape/upper_level/network_system.owl#enters</span></li>
+<li><strong>SystemInterface</strong> (<em>Class</em>) — <code>SystemInterface</code> — <a href="http://OntoCAPE/upper_level/system.owl#SystemInterface">http://OntoCAPE/upper_level/system.owl#SystemInterface</a> — <em>comment:</em> The class SystemInterface represents the interface through which a System can be connected to another System.
+  <span class='search-tokens' style='display:none'>System Interface SystemInterface http:// OntoCAPE/upper level/system.owl# System Interface http:// ontocape/upper level/system.owl# system interface http://OntoCAPE/upper level/system.owl#SystemInterface http://OntoCAPE/upper_level/system.owl#SystemInterface http://ontocape/upper_level/system.owl#systeminterface system interface systeminterface</span></li>
+<li><strong>Property</strong> (<em>Class</em>) — <code>Property</code> — <a href="http://OntoCAPE/upper_level/system.owl#Property">http://OntoCAPE/upper_level/system.owl#Property</a> — <em>comment:</em> The Property class represents the individual properties (traits, qualities) of a System, which distinguish the System from others. Typical examples are Size, Color, or Weight, which are modeled as subclasses of Property.
+  <span class='search-tokens' style='display:none'>Property http:// OntoCAPE/upper level/system.owl# Property http:// ontocape/upper level/system.owl# property http://OntoCAPE/upper level/system.owl#Property http://OntoCAPE/upper_level/system.owl#Property http://ontocape/upper_level/system.owl#property property</span></li>
+<li><strong>hasInput</strong> (<em>ObjectProperty</em>) — <code>hasInput</code> — <a href="http://OntoCAPE/upper_level/network_system.owl#hasInput">http://OntoCAPE/upper_level/network_system.owl#hasInput</a> — <em>comment:</em> The relation hasInput connects a Device to an incoming DirectedConnection.
+  <span class='search-tokens' style='display:none'>has Input has input hasInput hasinput http:// OntoCAPE/upper level/network system.owl#has Input http:// ontocape/upper level/network system.owl#has input http://OntoCAPE/upper level/network system.owl#hasInput http://OntoCAPE/upper_level/network_system.owl#hasInput http://ontocape/upper_level/network_system.owl#hasinput</span></li>
+<li><strong>NonExhaustiveValueSet</strong> (<em>Class</em>) — <code>NonExhaustiveValueSet</code> — <a href="http://meta_model/fundamental_concepts/fundamental_concepts.owl#NonExhaustiveValueSet">http://meta_model/fundamental_concepts/fundamental_concepts.owl#NonExhaustiveValueSet</a>
+  <span class='search-tokens' style='display:none'>Non Exhaustive Value Set NonExhaustiveValueSet http://meta model/fundamental concepts/fundamental concepts.owl# Non Exhaustive Value Set http://meta model/fundamental concepts/fundamental concepts.owl# non exhaustive value set http://meta model/fundamental concepts/fundamental concepts.owl#NonExhaustiveValueSet http://meta_model/fundamental_concepts/fundamental_concepts.owl#NonExhaustiveValueSet http://meta_model/fundamental_concepts/fundamental_concepts.owl#nonexhaustivevalueset non exhaustive value set nonexhaustivevalueset</span></li>
+<li><strong>PhysicalConstant</strong> (<em>Class</em>) — <code>PhysicalConstant</code> — <a href="http://OntoCAPE/upper_level/system.owl#PhysicalConstant">http://OntoCAPE/upper_level/system.owl#PhysicalConstant</a> — <em>comment:</em> A PhysicalConstant is a ScalarQuantity, the Value of which is believed to be both universal in nature and invariant over time. Examples are the elementary charge, the gravitational constant, Planck's constant, and the speed of light in the vacuum.
+  <span class='search-tokens' style='display:none'>Physical Constant PhysicalConstant http:// OntoCAPE/upper level/system.owl# Physical Constant http:// ontocape/upper level/system.owl# physical constant http://OntoCAPE/upper level/system.owl#PhysicalConstant http://OntoCAPE/upper_level/system.owl#PhysicalConstant http://ontocape/upper_level/system.owl#physicalconstant physical constant physicalconstant</span></li>
+<li><strong>isSubsystemOf</strong> (<em>ObjectProperty</em>) — <code>isSubsystemOf</code> — <a href="http://OntoCAPE/upper_level/system.owl#isSubsystemOf">http://OntoCAPE/upper_level/system.owl#isSubsystemOf</a> — <em>comment:</em> The relation isSubsystemOf refers from a Subsystem to its Supersystem.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Subsystem Of http:// ontocape/upper level/system.owl#is subsystem of http://OntoCAPE/upper level/system.owl#isSubsystemOf http://OntoCAPE/upper_level/system.owl#isSubsystemOf http://ontocape/upper_level/system.owl#issubsystemof is Subsystem Of is subsystem of isSubsystemOf issubsystemof</span></li>
+<li><strong>TemperatureChange</strong> (<em>Class</em>) — <code>TemperatureChange</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#TemperatureChange">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#TemperatureChange</a> — <em>comment:</em> TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
+  <span class='search-tokens' style='display:none'>Temperature Change TemperatureChange http:// OntoCAPE/chemical process system/CPS function/process.owl# Temperature Change http:// ontocape/chemical process system/cps function/process.owl# temperature change http://OntoCAPE/chemical process system/CPS function/process.owl#TemperatureChange http://OntoCAPE/chemical_process_system/CPS_function/process.owl#TemperatureChange http://ontocape/chemical_process_system/cps_function/process.owl#temperaturechange temperature change temperaturechange</span></li>
+<li><strong>containsDirectly</strong> (<em>ObjectProperty</em>) — <code>containsDirectly</code> — <a href="http://OntoCAPE/upper_level/system.owl#containsDirectly">http://OntoCAPE/upper_level/system.owl#containsDirectly</a> — <em>comment:</em> "The relation containsDirectly is an alternative to the hasDirectSubsystem relation. It should be used instead of hasDirectSubsystem 
+  <span class='search-tokens' style='display:none'>contains Directly contains directly containsDirectly containsdirectly http:// OntoCAPE/upper level/system.owl#contains Directly http:// ontocape/upper level/system.owl#contains directly http://OntoCAPE/upper level/system.owl#containsDirectly http://OntoCAPE/upper_level/system.owl#containsDirectly http://ontocape/upper_level/system.owl#containsdirectly</span></li>
+<li><strong>-   if the hasDirectSubsystem relation causes performance problems, or</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    if the has Direct Subsystem relation causes performance problems, or     if the has direct subsystem relation causes performance problems, or     if the hasDirectSubsystem relation causes performance problems, or -   if the hasDirectSubsystem relation causes performance problems, or -   if the hasdirectsubsystem relation causes performance problems, or</span></li>
+<li><strong>-   if only one side of the aggregation relation is of interest, namely the indication of the direct constituents Supersystem."</strong> (<em>Entity</em>) — `` — &lt;&gt;
+  <span class='search-tokens' style='display:none'>    if only one side of the aggregation relation is of interest, namely the indication of the direct constituents  Supersystem."     if only one side of the aggregation relation is of interest, namely the indication of the direct constituents  supersystem."     if only one side of the aggregation relation is of interest, namely the indication of the direct constituents Supersystem." -   if only one side of the aggregation relation is of interest, namely the indication of the direct constituents Supersystem." -   if only one side of the aggregation relation is of interest, namely the indication of the direct constituents supersystem."</span></li>
+<li><strong>Splitting</strong> (<em>Class</em>) — <code>Splitting</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Splitting">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Splitting</a>
+  <span class='search-tokens' style='display:none'>Splitting http:// OntoCAPE/chemical process system/CPS function/process.owl# Splitting http:// ontocape/chemical process system/cps function/process.owl# splitting http://OntoCAPE/chemical process system/CPS function/process.owl#Splitting http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Splitting http://ontocape/chemical_process_system/cps_function/process.owl#splitting splitting</span></li>
+<li><strong>QualitativeValue</strong> (<em>Class</em>) — <code>QualitativeValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#QualitativeValue">http://OntoCAPE/upper_level/system.owl#QualitativeValue</a> — <em>comment:</em> A QualitativeValue is a value that is not (numerically) quantifiable.
+  <span class='search-tokens' style='display:none'>Qualitative Value QualitativeValue http:// OntoCAPE/upper level/system.owl# Qualitative Value http:// ontocape/upper level/system.owl# qualitative value http://OntoCAPE/upper level/system.owl#QualitativeValue http://OntoCAPE/upper_level/system.owl#QualitativeValue http://ontocape/upper_level/system.owl#qualitativevalue qualitative value qualitativevalue</span></li>
+<li><strong>Co-product</strong> (<em>Class</em>) — <code>Co-product</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Co-product">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Co-product</a> — <em>comment:</em> A Co- product is an EndProduct whose production is unintended.
+  <span class='search-tokens' style='display:none'>Co product Co-product co product co-product http:// OntoCAPE/chemical process system/CPS function/process.owl# Co product http:// ontocape/chemical process system/cps function/process.owl# co product http://OntoCAPE/chemical process system/CPS function/process.owl#Co product http://OntoCAPE/chemical_process_system/CPS_function/process.owl#Co-product http://ontocape/chemical_process_system/cps_function/process.owl#co-product</span></li>
+<li><strong>isObservedAgainstBackdrop</strong> (<em>ObjectProperty</em>) — <code>isObservedAgainstBackdrop</code> — <a href="http://OntoCAPE/upper_level/system.owl#isObservedAgainstBackdrop">http://OntoCAPE/upper_level/system.owl#isObservedAgainstBackdrop</a> — <em>comment:</em> The isObservedAgainstBackdrop relation maps a Value against a backdrop Value.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#is Observed Against Backdrop http:// ontocape/upper level/system.owl#is observed against backdrop http://OntoCAPE/upper level/system.owl#isObservedAgainstBackdrop http://OntoCAPE/upper_level/system.owl#isObservedAgainstBackdrop http://ontocape/upper_level/system.owl#isobservedagainstbackdrop is Observed Against Backdrop is observed against backdrop isObservedAgainstBackdrop isobservedagainstbackdrop</span></li>
+<li><strong>qualitativeValue</strong> (<em>ObjectProperty</em>) — <code>qualitativeValue</code> — <a href="http://OntoCAPE/upper_level/system.owl#qualitativeValue">http://OntoCAPE/upper_level/system.owl#qualitativeValue</a> — <em>comment:</em> The relation qualitativeValue specifies the actual value of a QualitativeValue.
+  <span class='search-tokens' style='display:none'>http:// OntoCAPE/upper level/system.owl#qualitative Value http:// ontocape/upper level/system.owl#qualitative value http://OntoCAPE/upper level/system.owl#qualitativeValue http://OntoCAPE/upper_level/system.owl#qualitativeValue http://ontocape/upper_level/system.owl#qualitativevalue qualitative Value qualitative value qualitativeValue qualitativevalue</span></li>
+<li><strong>NonReusableWasteProduct</strong> (<em>Class</em>) — <code>NonReusableWasteProduct</code> — <a href="http://OntoCAPE/chemical_process_system/CPS_function/process.owl#NonReusableWasteProduct">http://OntoCAPE/chemical_process_system/CPS_function/process.owl#NonReusableWasteProduct</a> — <em>comment:</em> A NonReusableWasteProduct is a waste product that can not be reused.
+  <span class='search-tokens' style='display:none'>Non Reusable Waste Product NonReusableWasteProduct http:// OntoCAPE/chemical process system/CPS function/process.owl# Non Reusable Waste Product http:// ontocape/chemical process system/cps function/process.owl# non reusable waste product http://OntoCAPE/chemical process system/CPS function/process.owl#NonReusableWasteProduct http://OntoCAPE/chemical_process_system/CPS_function/process.owl#NonReusableWasteProduct http://ontocape/chemical_process_system/cps_function/process.owl#nonreusablewasteproduct non reusable waste product nonreusablewasteproduct</span></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
