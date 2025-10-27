@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted http://purl.obolibrary.org/obo/IAO_0000005: 0.8876153230667114
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001006: 0.8875613212585449
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001059: 0.8842065334320068
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001030: 0.8836222887039185
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001093: 0.8788645267486572
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001032: 0.8786925673484802
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001051: 0.8762001991271973
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001100: 0.8754702806472778
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001004: 0.8731634616851807
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001061: 0.8731288909912109
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001017: 0.8726083040237427
+predicted http://purl.obolibrary.org/obo/IAO_0000640: 0.8723750114440918
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001002: 0.8723216652870178
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001003: 0.8698673248291016
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000194: 0.8668802976608276
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000211: 0.8667222857475281
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000118: 0.8657045960426331
+predicted http://purl.obolibrary.org/obo/IAO_0000121: 0.8641176819801331
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139: 0.8637173175811768
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010029: 0.8635256886482239

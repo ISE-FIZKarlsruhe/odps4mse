@@ -1,0 +1,9 @@
+http://purl.org/net/p-plan#isStepOfPlan
+http://purl.org/net/p-plan#correspondsToStep
+http://purl.org/net/p-plan#isPreceededBy
+http://purl.org/net/p-plan#hasOutputVar
+http://purl.org/net/p-plan#isOutputVarOf
+http://purl.org/net/p-plan#isVariableOfPlan
+http://purl.org/net/p-plan#correspondsToVariable
+http://purl.org/net/p-plan#isInputVarOf
+http://purl.org/net/p-plan#hasInputVar

@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001051: 0.9094201326370239
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010028: 0.8959474563598633
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030: 0.8936620950698853
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001002: 0.8887726068496704
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001030: 0.8875643014907837
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010029: 0.8816565275192261
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010038: 0.8814489841461182
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010037: 0.8789945244789124
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.8780179023742676
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010033: 0.8772603273391724
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000227: 0.8750517964363098
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000153: 0.8731755614280701
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010041: 0.8723382353782654
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010035: 0.8705232739448547
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010036: 0.868496835231781
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010039: 0.8669846057891846
+predicted http://purls.helmholtz-metadaten.de/mwo/MWO_0001093: 0.866419792175293
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010031: 0.8661691546440125
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001023: 0.8660696744918823
+predicted https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010034: 0.8631813526153564

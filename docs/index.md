@@ -26,7 +26,7 @@ You’ll find extracted patterns and reusable modules derived from ontologies su
 ## How to start
 
 1. Create a new [`issue`](https://github.com/ISE-FIZKarlsruhe/odps4mse/issues) describing your pattern idea or contribution.  
-2. Copy the template from [`patterns/template.md`](https://github.com/ISE-FIZKarlsruhe/odps4mse/patterns/template.md) into a new folder for your pattern.  
+2. Copy the template from [`Patterns/template.md`](https://github.com/ISE-FIZKarlsruhe/odps4mse/blob/main/Patterns/template.md) into a new folder for your pattern.  
 3. Fill the template with all key information (motivation, intent, competency questions, diagram, examples, references).  
 4. Add a link to your new pattern in the appropriate index page or collection.
 

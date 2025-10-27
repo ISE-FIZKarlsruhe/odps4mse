@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 9
+Predicted: 20
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.9000037312507629
+predicted http://purl.obolibrary.org/obo/OBI_0000011: 0.8981689214706421
+predicted http://purl.obolibrary.org/obo/OBI_0000312: 0.8777679204940796
+predicted http://purl.obolibrary.org/obo/OBI_0200000: 0.8757256269454956
+predicted http://purl.obolibrary.org/obo/IAO_0000572: 0.8733909130096436
+predicted http://purl.obolibrary.org/obo/STATO_0000034: 0.8727655410766602
+predicted http://purl.obolibrary.org/obo/OBI_0000299: 0.8725902438163757
+predicted http://purl.obolibrary.org/obo/OBI_0000047: 0.8713212013244629
+predicted http://purl.obolibrary.org/obo/OBI_0000401: 0.8710711002349854
+predicted http://purl.obolibrary.org/obo/RO_0000079: 0.8699303865432739
+predicted http://purl.obolibrary.org/obo/BFO_0000034: 0.8695929646492004
+predicted http://purl.obolibrary.org/obo/STATO_0000289: 0.8682469129562378
+predicted http://purl.obolibrary.org/obo/OBI_0200166: 0.8681578636169434
+predicted http://purl.obolibrary.org/obo/OBI_0200171: 0.8665238618850708
+predicted http://purl.obolibrary.org/obo/IAO_0000310: 0.8658034801483154
+predicted http://purl.obolibrary.org/obo/OBI_0200184: 0.8651018142700195
+predicted http://purl.obolibrary.org/obo/RO_0000085: 0.8648384213447571
+predicted http://purl.obolibrary.org/obo/OBI_0002135: 0.8642348647117615
+predicted http://purl.obolibrary.org/obo/STATO_0000110: 0.8641526103019714
+predicted http://purl.obolibrary.org/obo/OBI_0000272: 0.86370849609375

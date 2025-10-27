@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.2500
+Recall: 0.6250
+F1-score: 0.3571
+GroundTruth: 8
+Predicted: 20
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.9078705310821533
+predicted https://w3id.org/pmd/co/belongsToProject: 0.9036241173744202
+predicted https://w3id.org/pmd/co/process: 0.9026554822921753
+predicted https://w3id.org/pmd/co/executedBy: 0.902503490447998
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.8991348147392273
+predicted https://w3id.org/pmd/co/nextProcess: 0.8924952745437622
+predicted https://w3id.org/pmd/co/superordinateProcess: 0.8891586661338806
+predicted https://w3id.org/pmd/co/previousProcess: 0.8874577283859253
+predicted https://w3id.org/pmd/co/output: 0.8853453397750854
+predicted https://w3id.org/pmd/co/NodeInfo: 0.8842597603797913
+predicted https://w3id.org/pmd/co/ClassificationDocument: 0.8829004168510437
+predicted https://w3id.org/pmd/co/SimulationProcess: 0.8807307481765747
+predicted https://w3id.org/pmd/co/executes: 0.8794671893119812
+predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.8779734969139099
+predicted https://w3id.org/pmd/co/Process: 0.8773021101951599
+predicted https://w3id.org/pmd/co/outputOf: 0.8742735385894775
+predicted https://w3id.org/pmd/co/Medium: 0.8738216161727905
+predicted https://w3id.org/pmd/co/input: 0.8730366826057434
+predicted https://w3id.org/pmd/co/AssemblingProcess: 0.8718041777610779
+predicted https://w3id.org/pmd/co/TestingMachine: 0.8688426613807678

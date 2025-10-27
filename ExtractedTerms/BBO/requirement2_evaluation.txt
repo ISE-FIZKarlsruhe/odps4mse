@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#InputOutputSpecification: 0.8926718235015869
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcess: 0.8795974254608154
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Agent: 0.8743005990982056
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Tool: 0.8727657794952393
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#WorkProcedureDocument: 0.8714675903320312
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#supports: 0.8700692653656006
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#FlowElement: 0.8698594570159912
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_ioSpecification: 0.8681784868240356
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SequenceFlow: 0.8672865629196167
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Process: 0.8669319152832031
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Factory: 0.8650022149085999
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#ManufacturingFacility: 0.8643942475318909
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcessStartEvent: 0.8641088008880615
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#InputSet: 0.8630276918411255
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outgoing: 0.8616549968719482
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#HumanResource: 0.861548900604248
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SoftwareResource: 0.8607654571533203
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Escalation: 0.8605863451957703
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#isExecutable: 0.8600890040397644
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Parameter: 0.8597608208656311

@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted https://w3id.org/pko#ExpertiseLevel: 0.8697414398193359
+predicted https://w3id.org/pko#Action: 0.8648465871810913
+predicted https://w3id.org/pko#UserQuestionOccurrence: 0.8568363785743713
+predicted https://w3id.org/pko#ProcedureStatus: 0.8566012978553772
+predicted https://w3id.org/pko#wasConfirmedBy: 0.8548142910003662
+predicted https://w3id.org/pko#wasExecutedBy: 0.8543301820755005
+predicted https://w3id.org/pko#Function: 0.8543283939361572
+predicted https://w3id.org/pko#wasModifiedBy: 0.8506696224212646
+predicted https://w3id.org/pko#feedbackOnProcedure: 0.8491590619087219
+predicted https://w3id.org/pko#requiresAction: 0.8481940031051636
+predicted https://w3id.org/pko#wasEncounteredBy: 0.8478965163230896
+predicted https://w3id.org/pko#isAdoptedBy: 0.8469662666320801
+predicted https://w3id.org/pko#feedbackOnProcedureExecution: 0.8462545871734619
+predicted https://w3id.org/pko#wasProvidedBy: 0.8445229530334473
+predicted https://w3id.org/pko#Procedure: 0.8438845872879028
+predicted https://w3id.org/pko#hasStep: 0.8435063362121582
+predicted https://w3id.org/pko#requiresFunction: 0.841683030128479
+predicted https://w3id.org/pko#requiresTool: 0.8414266109466553
+predicted https://w3id.org/pko#hasEncounteredError: 0.8411524295806885
+predicted https://w3id.org/pko#hasExpectedDuration: 0.8411524295806885

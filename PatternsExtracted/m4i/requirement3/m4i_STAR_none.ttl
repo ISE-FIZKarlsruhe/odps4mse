@@ -1,0 +1,298 @@
+@prefix : <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/nfdi4ing/metadata4ing#> .
+
+<http://w3id.org/nfdi4ing/metadata4ing#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms.owl> ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An account of the resource."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Beschreibung"@de ,
+                                                                                       "description"@en .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty ;
+                                           rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURI
+xsd:anyURI rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype ;
+         rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
+:hasEmployedTool rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isEmployedToolIn ;
+                 rdfs:domain :ProcessingStep ;
+                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that is used within a given processing step"@en ,
+                                                                  "verweist auf ein Werkzeug, das in einem Arbeitsschritt verwendet wurde"@de ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has employed tool"@en ,
+                                                                 "hat eingesetztes Werkzeug"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#inProject
+:inProject rdf:type owl:ObjectProperty ;
+           owl:inverseOf :projectParticipant ;
+           rdfs:range <https://schema.org/Project> ;
+           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a person or an organization with a project."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "associated to project"@en ,
+                                                           "gehört zu Projekt"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn
+:isEmployedToolIn rdf:type owl:ObjectProperty ;
+                  rdfs:range :ProcessingStep ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a processing step the tool has been used in"@en ,
+                                                                   "verweist auf einen Arbeitsschritt, in dem das Werkzeug eingesetzt wurde"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "is employed tool"@en ,
+                                                                  "ist eingesetztes Werkzeug"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#projectParticipant
+:projectParticipant rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://schema.org/Project> ;
+                    rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A property that connects a project with a person or an organisation."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hat Projektmitglied"@de ,
+                                                                    "project participant"@en .
+
+
+###  http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> rdf:type owl:ObjectProperty ;
+                                  rdfs:isDefinedBy <http://www.w3.org/ns/prov.owl> ;
+                                  rdfs:label "Agent"@de ,
+                                             "agent"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "The prov:agent property is used to reference an agent that had a role in an activity."@en ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label"@en ,
+                                                                                      "changed by m4i: set foaf:Agent in range of this property"@en ,
+                                                                                      "changed by m4i: simplified definition"@en .
+
+
+###  http://www.w3.org/ns/prov#qualifiedAssociation
+<http://www.w3.org/ns/prov#qualifiedAssociation> rdf:type owl:ObjectProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/ns/prov#> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Allows to specify more information (e.g. a role) about an association between an agent (e.g. a person) and an Activity (e.g. a processing step)."@en ,
+                                                                                                  "Ermöglicht die Angabe weiterer Informationen (z.B. einer Rolle) zu einer Verknüpfung zwischen einem Agenten (z.B. einer Person) und einer Aktivität (z.B. einem Prozessschritt)."@de ;
+                                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german label, added skos:prefLabel, added skos:definition, skos:example and skos:note"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#example> """Example application in m4i:
+:SomeProcess
+    a m4i:ProcessingStep; 
+    obo:RO_0000057 :SomePerson;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent   :SomePerson;
+        prov:hadRole :SomeRole;
+        rdfs:comment \":SomePerson had the :SomeRole in this :SomeProcess\"@en
+    ].
+
+The direct relation between an activity and an agent expressed with 'has participant' (http://purl.obolibrary.org/obo/RO_0000057) does not give details about the agent's role in that activity. Using the property prov:qualifiedAssociation one can point to a blank node (cf. https://en.wikipedia.org/w/index.php?title=Blank_node&oldid=1015446558) containing additional information about the participation relation.
+"""@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#note> "In metadata4ing use obo:RO_0000057 as unqualified form for the relation between an activity and an agent."@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "näher beschriebene Verbindung"@de ,
+                                                                                                 "qualified association"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction
+:UsageInstruction rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ProcessingStep ;
+                  rdfs:range xsd:string ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Textual description of a processing step within a research process to enable or facilitate its reproducibility"@en ,
+                                                                   "Textuelle Beschreibung eines Verarbeitungsschritts innerhalb eines Forschungsprozesses, um dessen Reproduzierbarkeit zu erleichtern oder zu ermöglichen"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Verwendungshinweis"@de ,
+                                                                  "usage instruction"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription
+:hasVariableDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string ;
+                        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Textual and human readable description of a variable in a research context"@en ,
+                                                                         "Textuelle und menschenlesbare Beschreibung einer Variablen im Forschungskontext"@de ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has variable description"@en ,
+                                                                        "hat Variablenbeschreibung"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#startOfProject
+:startOfProject rdf:type owl:DatatypeProperty ;
+                rdfs:domain <https://schema.org/Project> ;
+                rdfs:range xsd:date ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Startdatum eines Projekts"@de ,
+                                                                 "start date of a project"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektstartdatum"@de ,
+                                                                "project start date"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep
+:ProcessingStep rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Specific action undertaken during research"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Arbeitsschritt"@de ,
+                                                                "processing step"@en .
+
+
+###  https://schema.org/Project
+<https://schema.org/Project> rdf:type owl:Class ;
+                             rdfs:comment "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim"@en ,
+                                          "Ein typischerweise kollektives Unterfangen zum Erreichen eines vorab geplanten Ziels"@de ;
+                             rdfs:isDefinedBy <https://schema.org.owl> ;
+                             <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added German definition, added language tag to English definition, shortened definition"@en ,
+                                                                                 "changed by m4i: use of skos:prefLabel instead of rdfs:label, added German label, added language tag to English label"@en ;
+                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Project"@en ,
+                                                                             "Projekt"@de .
+
+
+###  https://schema.org/ResearchProject
+<https://schema.org/ResearchProject> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://schema.org/Project> ;
+                                     rdfs:comment "A research project"@en ,
+                                                  "ein Forschungsprojekt"@de ;
+                                     rdfs:isDefinedBy <https://schema.org.owl> ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added German definition, added language tag to English definition"@en ,
+                                                                                         "changed by m4i: changed label to \"research project\" (no CamelCase)"@en ,
+                                                                                         "changed by m4i: use of skos:prefLabel instead of rdfs:label, added German label, added language tag to English label"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Forschungsprojekt"@de ,
+                                                                                     "research project"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Editor rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+        <http://www.w3.org/2004/02/skos/core#definition> "A person who oversees the details related to the publication format of the resource"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Herausgeber*in"@de ,
+                                                        "editor"@en ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote> "Note: if the Editor is to be credited in place of multiple creators, the Editor's name may be supplied as Creator, with \"(Ed.)\" appended to the name."@en .
+
+
+:ProjectLeader rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Person officially designated as head of project team or sub-project team instrumental in the work necessary to development of the resource"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektleiter*in"@de ,
+                                                               "project leader"@en ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "The Project Leader is not \"removed\" from the work that resulted in the resource; he or she remains intimately involved"@en .
+
+
+:ProjectManager rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Person officially designated as manager of a project. Project may consist of one or many project teams and sub-teams."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektmanager*in"@de ,
+                                                                "project manager"@en ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "The manager of a project normally has more administrative responsibility than actual work involvement."@en .
+
+
+:ProjectMember rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Person on the membership list of a designated project/project team"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Projektmitglied"@de ,
+                                                               "project member"@en ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "This vocabulary may or may not indicate the quality, quantity, or substance of the person's involvement."@en .
+
+
+:RelatedPerson rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A person without a specifically defined role in the development of the resource, but who is someone the author wishes to recognize"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "related person"@en ,
+                                                               "zugehörige Person"@de ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "This person could be an author's intellectual mentor, a person providing intellectual leadership in the discipline or subject domain, etc."@en .
+
+
+:ResearchGroup rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Typically refers to a group of individuals with a lab, department, or divisionthathas a specifically defined focus of activity."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Forschungsgruppe"@de ,
+                                                               "research group"@en ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> """May operate at a narrower level of scope; may or may not hold less administrative responsibility than a project team.
+
+Example: Space Research & Planetary Sciences Division of the University of Bern (WP Unibe)
+
+Source: https://doi.org/10.26302/SSHADE/EXPERIMENT_OP_20201104_001"""@en .
+
+
+:Supervisor rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf?page=40"^^xsd:anyURI ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Betreuer*in"@de ,
+                                                            "supervisor"@en .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

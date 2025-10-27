@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0500
+Recall: 0.1250
+F1-score: 0.0714
+GroundTruth: 8
+Predicted: 20
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.9044923186302185
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.9012446403503418
+predicted http://w3id.org/nfdi4ing/metadata4ing#realizesMethod: 0.8974659442901611
+predicted http://purl.obolibrary.org/obo/RO_0000057: 0.885947585105896
+predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.8835313320159912
+predicted http://purl.obolibrary.org/obo/RO_0000056: 0.8822916746139526
+predicted http://w3id.org/nfdi4ing/metadata4ing#implementsMethod: 0.8798754811286926
+predicted http://w3id.org/nfdi4ing/metadata4ing#implementedByTool: 0.8763992786407471
+predicted http://w3id.org/nfdi4ing/metadata4ing#Supervisor: 0.8658678531646729
+predicted http://purl.obolibrary.org/obo/RO_0002233: 0.864818811416626
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasParameter: 0.8634670972824097
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.8609694838523865
+predicted http://purl.obolibrary.org/obo/BFO_0000015: 0.8604322671890259
+predicted http://purl.obolibrary.org/obo/RO_0002234: 0.8583130836486816
+predicted http://purl.obolibrary.org/obo/RO_0002352: 0.8534440398216248
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentModified: 0.8484580516815186
+predicted http://purl.obolibrary.org/obo/RO_0002353: 0.8483141660690308
+predicted http://w3id.org/nfdi4ing/metadata4ing#startOfProject: 0.8481205701828003
+predicted http://www.molmod.info/semantics/pims-ii.ttl#Property: 0.8472806811332703
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasDateAssignmentCreated: 0.8470609188079834

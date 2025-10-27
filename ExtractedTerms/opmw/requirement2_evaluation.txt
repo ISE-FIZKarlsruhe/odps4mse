@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1500
+Recall: 0.6000
+F1-score: 0.2400
+GroundTruth: 5
+Predicted: 20
+predicted http://www.opmw.org/ontology/WorkflowTemplateProcess: 0.8699285387992859
+predicted http://www.opmw.org/ontology/DataVariable: 0.866992712020874
+predicted http://www.opmw.org/ontology/hasExecutionDiagram: 0.864134669303894
+predicted http://www.opmw.org/ontology/WorkflowTemplate: 0.8638317584991455
+predicted http://www.opmw.org/ontology/hasTemplateDiagram: 0.8636541962623596
+predicted http://www.opmw.org/ontology/WorkflowExecutionProcess: 0.8636252880096436
+predicted http://www.opmw.org/ontology/WorkflowTemplateArtifact: 0.863036036491394
+predicted http://www.opmw.org/ontology/ParameterVariable: 0.8606749773025513
+predicted http://www.opmw.org/ontology/WorkflowExecutionArtifact: 0.8580257892608643
+predicted http://www.opmw.org/ontology/correspondsToTemplateProcess: 0.8576973676681519
+predicted http://www.opmw.org/ontology/WorkflowExecutionAccount: 0.8524725437164307
+predicted http://www.opmw.org/ontology/correspondsToTemplateArtifact: 0.839415967464447
+predicted http://www.opmw.org/ontology/hasExecutableComponent: 0.837813675403595
+predicted http://www.opmw.org/ontology/createdInWorkflowSystem: 0.837426483631134
+predicted http://www.opmw.org/ontology/correspondsToTemplate: 0.8344449996948242
+predicted http://www.opmw.org/ontology/executedInWorkflowSystem: 0.834334671497345
+predicted http://www.opmw.org/ontology/uses: 0.8333825469017029
+predicted http://www.opmw.org/ontology/hasNativeSystemTemplate: 0.830325186252594
+predicted http://www.opmw.org/ontology/hasSize: 0.8291752934455872
+predicted http://www.opmw.org/ontology/hasOriginalLogFile: 0.8262451887130737

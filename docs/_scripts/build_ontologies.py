@@ -682,6 +682,10 @@ def build_patterns_index(pattern_pages):
     with open_virtual(Path("ProcessODPs.md"), "w") as f:
         print("# Process ODPs\n", file=f)
         print("Here is the list of Ontology Design Patterns (ODPs) aligned with process modeling requirements in the Materials Science and Engineering (MSE) domain.\n", file=f)
+        print("It aligns with the three core requirements identified in the paper:\n", file=f)
+        print("1. **Requirement 1: Process Structure** — Model processes, sub-processes, steps, and execution order.\n", file=f) 
+        print("2. **Requirement 2: Data & Resources** — Capture inputs, outputs, and parameters per step (e.g., temperature, pressure, atmosphere, instruments, calibration).\n", file=f)
+        print("3. **Requirement 3: Project & Roles** — Represent project goals, stages, agents, and their roles (e.g., synthesis, microscopy, simulation).\n", file=f)
         if not pattern_pages:
             print("_No patterns found under `Patterns/`._", file=f)
         else:

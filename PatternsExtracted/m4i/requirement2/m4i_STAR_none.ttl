@@ -1,0 +1,344 @@
+@prefix : <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/nfdi4ing/metadata4ing#> .
+
+<http://w3id.org/nfdi4ing/metadata4ing#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms.owl> ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An account of the resource."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Beschreibung"@de ,
+                                                                                       "description"@en .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
+                                 rdfs:isDefinedBy <http://purl.org/dc/terms.owl> ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> "A name given to the resource."@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Titel"@de ,
+                                                                                 "title"@en .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty ;
+                                                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimal
+xsd:decimal rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:isDefinedBy <http://www.w3.org/2001/xmlschema.owl> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/RO_0000056
+<http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "ist beteiligt an"@de ,
+                                                                                            "participates in"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000057
+<http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added a property chain axiom for use with prov:qualifiedAssociation"@en ,
+                                                                                                "changed by m4i: added german labels, added skos:prefLabel"@en ,
+                                                                                                "changed by m4i: copied obo:IAO_0000115 to a skos:definition"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "has participant"@en ,
+                                                                                            "hat Teilnehmer"@de .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002233
+<http://purl.obolibrary.org/obo/RO_0002233> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                            owl:inverseOf <http://purl.obolibrary.org/obo/RO_0002352> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "(x has input y) means x takes specific input as y for further processes"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "has input"@en ,
+                                                                                            "hat Input"@de .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+<http://purl.obolibrary.org/obo/RO_0002234> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                            owl:inverseOf <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "(x has output y) means x provides specific output y for the result or further processes"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "has output"@en ,
+                                                                                            "hat Output"@de .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002352
+<http://purl.obolibrary.org/obo/RO_0002352> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "(x input of y) means x is a specific input of y to carry out further processes"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Input von"@de ,
+                                                                                            "input of"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002353
+<http://purl.obolibrary.org/obo/RO_0002353> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "(x output of y) means x is the specific output of y as the result or further processes"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Output von"@de ,
+                                                                                            "output of"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool
+:hasEmployedTool rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://schema.org/instrument> ;
+                 owl:inverseOf :isEmployedToolIn ;
+                 rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that is used within a given processing step"@en ,
+                                                                  "verweist auf ein Werkzeug, das in einem Arbeitsschritt verwendet wurde"@de ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has employed tool"@en ,
+                                                                 "hat eingesetztes Werkzeug"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Points to a parameter of a given method or tool."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "has parameter"@en ,
+                                                              "hat Parameter"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#implementedByTool
+:implementedByTool rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :implementsMethod ;
+                   rdfs:domain :Method ;
+                   rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Points to a tool that implements a given method"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "implemented by"@en ,
+                                                                   "wird implementiert durch"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#implementsMethod
+:implementsMethod rdf:type owl:ObjectProperty ;
+                  rdfs:range :Method ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is implemented by a given tool"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "implementiert"@de ,
+                                                                  "implements"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn
+:isEmployedToolIn rdf:type owl:ObjectProperty ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Points to a processing step the tool has been used in"@en ,
+                                                                   "verweist auf einen Arbeitsschritt, in dem das Werkzeug eingesetzt wurde"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "is employed tool"@en ,
+                                                                  "ist eingesetztes Werkzeug"@de .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#realizesMethod
+:realizesMethod rdf:type owl:ObjectProperty ;
+                rdfs:range :Method ;
+                rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Points to a method that is used within a given processing step"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert Methode"@de ,
+                                                                "realizes method"@en .
+
+
+###  https://schema.org/instrument
+<https://schema.org/instrument> rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                rdfs:isDefinedBy <https://schema.org.owl> ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "points to an object that helped the agent perform the action (e.g., John wrote a book with a pen)"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added different skos:prefLabel, added german label"@en ,
+                                                                                    "changed by m4i: domain changed to prov:Activity from schema:Action"@en ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "nutzt Instrument"@de ,
+                                                                                "uses instrument"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction
+:UsageInstruction rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Textual description of a processing step within a research process to enable or facilitate its reproducibility"@en ,
+                                                                   "Textuelle Beschreibung eines Verarbeitungsschritts innerhalb eines Forschungsprozesses, um dessen Reproduzierbarkeit zu erleichtern oder zu ermöglichen"@de ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Verwendungshinweis"@de ,
+                                                                  "usage instruction"@en .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasSymbol
+:hasSymbol rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string ;
+           rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+           <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/schema/qudt/symbol> ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Buchstabe oder Zeichenkette, die eine Variable repräsentiert"@de ,
+                                                            "Letter or string that denotes a variable"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "has symbol"@en ,
+                                                           "hat Symbol"@de .
+
+
+###  https://ptb.de/si/hasCoverageFactor
+<https://ptb.de/si/hasCoverageFactor> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://ptb.de/si/ExpandedUnc> ;
+                                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                                   owl:onDatatype xsd:decimal ;
+                                                   owl:withRestrictions ( [ xsd:minInclusive 1.0
+                                                                          ]
+                                                                        )
+                                                 ] ;
+                                      rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "points to the coverage factor, i.e., to a factor (greater than or equal to unity) by which the expanded uncertainty relates to the standard uncertainty"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "has coverage factor"@en ,
+                                                                                      "hat Überdeckungsfaktor"@de .
+
+
+###  https://ptb.de/si/hasCoverageProbability
+<https://ptb.de/si/hasCoverageProbability> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:decimal ;
+                                                        owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                               ]
+                                                                               [ xsd:maxInclusive 1.0
+                                                                               ]
+                                                                             )
+                                                      ] ;
+                                           rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "points to the probability (between 0 and 1) ascribed to the event of the actual value falling within the range asserted by the given uncertainty declaration"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "has coverage probability"@en ,
+                                                                                           "hat Deckungswahrscheinlichkeit"@de .
+
+
+###  https://ptb.de/si/hasUncertainty
+<https://ptb.de/si/hasUncertainty> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://ptb.de/si/ExpandedUnc> ;
+                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                owl:onDatatype xsd:decimal ;
+                                                owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                       ]
+                                                                     )
+                                              ] ;
+                                   rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "absolute magnitude of the indicated uncertainty"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has uncertainty"@en ,
+                                                                                   "hat Unsicherheit"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#Method
+:Method rdf:type owl:Class ;
+        rdfs:isDefinedBy <http://w3id.org/nfdi4ing/metadata4ing.owl> ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Abstract description of a method for analysis, generation and transformation of data and material objects like, e.g., 'Fourier Transform Infrared Spectroscopy' or 'Molecular Dynamics Simulation'. Note that while values for relevant parameters should be provided, m4i:Method does not refer to the actual execution of the process that is described (use m4i:ProcessingStep for that), but rather a description of the underlying principle."@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Methode"@de ,
+                                                        "method"@en .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#Property
+<http://www.molmod.info/semantics/pims-ii.ttl#Property> rdf:type owl:Class ;
+                                                        rdfs:isDefinedBy <http://www.molmod.info/semantics/pims-ii.ttl.owl> ;
+                                                        <http://www.w3.org/2004/02/skos/core#broader> <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                                        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://emmo.info/emmo#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba> ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "Property, i.e., a variable that can be considered (as an investigated property, i.e., target property) within a processing step"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, adjusted german labels" ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Eigenschaft"@de ,
+                                                                                                        "Property"@en .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class ;
+                                         rdfs:isDefinedBy <http://www.w3.org/ns/dcat#> ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: added skos:prefLabel, added german labels, removed redundant notes, removed other languages than english in comment, label, changeNote and definition"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Verteilung"@de ,
+                                                                                         "distribution"@en .
+
+
+###  https://ptb.de/si/ExpandedUnc
+<https://ptb.de/si/ExpandedUnc> rdf:type owl:Class ;
+                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://ptb.de/si/hasCoverageFactor> ;
+                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://ptb.de/si/hasCoverageProbability> ;
+                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://ptb.de/si/hasUncertainty> ;
+                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
+                                rdfs:isDefinedBy <https://ptb.de/si.owl> ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "Structure for stating an expanded measurement, model, or simulation uncertainty, e.g., to be applied to an si:Real quantity value"@en ;
+                                <http://www.w3.org/2004/02/skos/core#editorialNote> "changed by m4i: harmonized spelling to OBO naming conventions (lower case, space separated), added skos:prefLabel" ;
+                                <http://www.w3.org/2004/02/skos/core#prefLabel> "erweiterte Unsicherheit"@de ,
+                                                                                "expanded uncertainty"@en .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

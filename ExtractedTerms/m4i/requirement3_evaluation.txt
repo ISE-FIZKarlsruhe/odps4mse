@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1500
+Recall: 0.2500
+F1-score: 0.1875
+GroundTruth: 12
+Predicted: 20
+predicted https://schema.org/Project: 0.8913086652755737
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectLeader: 0.8889666795730591
+predicted http://www.w3.org/ns/prov#qualifiedAssociation: 0.8885973691940308
+predicted http://w3id.org/nfdi4ing/metadata4ing#Supervisor: 0.8879773616790771
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectManager: 0.8862384557723999
+predicted http://w3id.org/nfdi4ing/metadata4ing#inProject: 0.884087324142456
+predicted http://w3id.org/nfdi4ing/metadata4ing#UsageInstruction: 0.8837988376617432
+predicted http://w3id.org/nfdi4ing/metadata4ing#projectParticipant: 0.882469654083252
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep: 0.8790255188941956
+predicted http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup: 0.8781591057777405
+predicted http://www.w3.org/ns/prov#agent: 0.8763778209686279
+predicted http://w3id.org/nfdi4ing/metadata4ing#ProjectMember: 0.8755512833595276
+predicted https://schema.org/ResearchProject: 0.8693224191665649
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasEmployedTool: 0.8685154318809509
+predicted http://w3id.org/nfdi4ing/metadata4ing#isEmployedToolIn: 0.8681730031967163
+predicted http://purl.org/dc/terms/description: 0.8664112091064453
+predicted http://w3id.org/nfdi4ing/metadata4ing#hasVariableDescription: 0.8655147552490234
+predicted http://w3id.org/nfdi4ing/metadata4ing#Editor: 0.8649634718894958
+predicted http://w3id.org/nfdi4ing/metadata4ing#RelatedPerson: 0.864897608757019
+predicted http://w3id.org/nfdi4ing/metadata4ing#startOfProject: 0.8640856146812439

@@ -1,0 +1,15 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 9
+predicted http://purl.org/net/p-plan#isStepOfPlan: 0.861642599105835
+predicted http://purl.org/net/p-plan#isVariableOfPlan: 0.8497135639190674
+predicted http://purl.org/net/p-plan#hasOutputVar: 0.8289355039596558
+predicted http://purl.org/net/p-plan#correspondsToStep: 0.8265011310577393
+predicted http://purl.org/net/p-plan#isOutputVarOf: 0.8251893520355225
+predicted http://purl.org/net/p-plan#correspondsToVariable: 0.8219602108001709
+predicted http://purl.org/net/p-plan#isPreceededBy: 0.8034896850585938
+predicted http://purl.org/net/p-plan#hasInputVar: 0.7947054505348206
+predicted http://purl.org/net/p-plan#isInputVarOf: 0.7946314215660095

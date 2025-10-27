@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted https://w3id.org/pko#Procedure: 0.8820949792861938
+predicted https://w3id.org/pko#ProcedureStatus: 0.8722423315048218
+predicted https://w3id.org/pko#StepExecution: 0.871646523475647
+predicted https://w3id.org/pko#ProcedureExecutionStatus: 0.8692860007286072
+predicted https://w3id.org/pko#ProcedureExecution: 0.8685876131057739
+predicted https://w3id.org/pko#executesStep: 0.8662850260734558
+predicted https://w3id.org/pko#nextStepExecution: 0.8642704486846924
+predicted https://w3id.org/pko#Function: 0.8632375001907349
+predicted https://w3id.org/pko#ProcedureType: 0.862917423248291
+predicted https://w3id.org/pko#hasStep: 0.8627146482467651
+predicted https://w3id.org/pko#previousStepExecution: 0.8621310591697693
+predicted https://w3id.org/pko#StepVerification: 0.86127769947052
+predicted https://w3id.org/pko#executesProcedure: 0.8585186004638672
+predicted https://w3id.org/pko#hasIssueOccurrence: 0.8574920892715454
+predicted https://w3id.org/pko#hasFirstStep: 0.8553536534309387
+predicted https://w3id.org/pko#UserQuestionOccurrence: 0.8549986481666565
+predicted https://w3id.org/pko#hasFallbackStep: 0.854758620262146
+predicted https://w3id.org/pko#requiresTool: 0.8532002568244934
+predicted https://w3id.org/pko#requiresFunction: 0.8518984913825989
+predicted https://w3id.org/pko#hasStepVerification: 0.8514296412467957

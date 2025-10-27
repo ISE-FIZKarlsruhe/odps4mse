@@ -8,6 +8,4 @@ bin/
 *.tmp.json
 
 .github/token.txt
-ExtractedTerms/*
-ODPs/ExtractedTerms/*
 Latex/*

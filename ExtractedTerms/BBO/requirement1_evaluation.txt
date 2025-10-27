@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.0000
+Recall: 0.0000
+F1-score: 0.0000
+GroundTruth: 0
+Predicted: 20
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcess: 0.9084011912345886
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcessStartEvent: 0.8914021849632263
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#isExecutable: 0.8832830190658569
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Process: 0.8831536769866943
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#SequenceFlow: 0.8799813985824585
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_process: 0.8776155710220337
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#WorkProcedureDocument: 0.8746964931488037
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#supports: 0.8720573782920837
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#FlowElement: 0.8714048862457275
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Agent: 0.8712012767791748
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Task: 0.8697102665901184
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Tool: 0.8685576915740967
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#ExecutableScript: 0.8673703670501709
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Property: 0.8656587600708008
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Escalation: 0.8639428615570068
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Scheme: 0.8624593019485474
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#ScriptTask: 0.8623771667480469
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#Enterprise: 0.8597660064697266
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_property: 0.8592034578323364
+predicted https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalManualTask: 0.8590983748435974

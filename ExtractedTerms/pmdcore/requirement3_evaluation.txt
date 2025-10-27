@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1500
+Recall: 0.7500
+F1-score: 0.2500
+GroundTruth: 4
+Predicted: 20
+predicted https://w3id.org/pmd/co/Project: 0.9120335578918457
+predicted https://w3id.org/pmd/co/process: 0.8938313722610474
+predicted https://w3id.org/pmd/co/ProjectIdentifier: 0.8910583257675171
+predicted https://w3id.org/pmd/co/belongsToProject: 0.8774573802947998
+predicted https://w3id.org/pmd/co/LaboratoryRole: 0.8715060949325562
+predicted https://w3id.org/pmd/co/participant: 0.8681386709213257
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.8669130802154541
+predicted https://w3id.org/pmd/co/OperatorRole: 0.8658335208892822
+predicted http://purl.obolibrary.org/obo/IAO_0000121: 0.8641176819801331
+predicted https://w3id.org/pmd/co/SimulationProcess: 0.8628909587860107
+predicted https://w3id.org/pmd/co/Image: 0.8622541427612305
+predicted https://w3id.org/pmd/co/TransformativeAnalysisProcess: 0.8593194484710693
+predicted https://w3id.org/pmd/co/InitiatorRole: 0.8592354655265808
+predicted http://purl.obolibrary.org/obo/RO_0000087: 0.8592045307159424
+predicted https://w3id.org/pmd/co/DepartmentRole: 0.8581839799880981
+predicted https://w3id.org/pmd/co/RelatedProjectIdentifier: 0.8564584851264954
+predicted https://w3id.org/pmd/co/ClassificationDocument: 0.8530398607254028
+predicted https://w3id.org/pmd/co/AnalysingProcess: 0.8515487313270569
+predicted https://w3id.org/pmd/co/Object: 0.851270318031311
+predicted http://purl.obolibrary.org/obo/IAO_0000078: 0.8502944707870483

@@ -1,0 +1,10 @@
+IRI,Similarity
+http://purl.org/net/p-plan#isOutputVarOf,0.8823
+http://purl.org/net/p-plan#hasOutputVar,0.8754
+http://purl.org/net/p-plan#isStepOfPlan,0.8660
+http://purl.org/net/p-plan#isVariableOfPlan,0.8606
+http://purl.org/net/p-plan#correspondsToStep,0.8589
+http://purl.org/net/p-plan#correspondsToVariable,0.8508
+http://purl.org/net/p-plan#isInputVarOf,0.8480
+http://purl.org/net/p-plan#hasInputVar,0.8406
+http://purl.org/net/p-plan#isPreceededBy,0.8314

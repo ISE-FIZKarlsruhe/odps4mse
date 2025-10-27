@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1500
+Recall: 0.3333
+F1-score: 0.2069
+GroundTruth: 9
+Predicted: 20
+predicted https://w3id.org/pmd/co/outputOf: 0.9080182909965515
+predicted https://w3id.org/pmd/co/inputOf: 0.9059879183769226
+predicted https://w3id.org/pmd/co/ProcessDescription: 0.900510847568512
+predicted https://w3id.org/pmd/co/NodeInfo: 0.8917993307113647
+predicted https://w3id.org/pmd/co/output: 0.8913798928260803
+predicted https://w3id.org/pmd/co/SimulationProcess: 0.8902639746665955
+predicted https://w3id.org/pmd/co/process: 0.8863552808761597
+predicted https://w3id.org/pmd/co/input: 0.8849576711654663
+predicted https://w3id.org/pmd/co/Object: 0.8816453218460083
+predicted https://w3id.org/pmd/co/NodeModel: 0.8809118270874023
+predicted https://w3id.org/pmd/co/belongsToProject: 0.8758140802383423
+predicted https://w3id.org/pmd/co/subordinateProcess: 0.8737568855285645
+predicted https://w3id.org/pmd/co/ProcessIdentifier: 0.8737124800682068
+predicted https://w3id.org/pmd/co/Medium: 0.8736855983734131
+predicted https://w3id.org/pmd/co/TestingMachine: 0.8728077411651611
+predicted https://w3id.org/pmd/co/ClassificationDocument: 0.8716203570365906
+predicted https://w3id.org/pmd/co/Process: 0.8709170818328857
+predicted https://w3id.org/pmd/co/Image: 0.8705062866210938
+predicted https://w3id.org/pmd/co/superordinateProcess: 0.8695530295372009
+predicted https://w3id.org/pmd/co/QualifyingNodeAnnotation: 0.8681516647338867

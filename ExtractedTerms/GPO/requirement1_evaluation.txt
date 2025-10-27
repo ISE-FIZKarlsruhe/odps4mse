@@ -1,0 +1,26 @@
+Evaluation Metrics:
+Precision: 0.1000
+Recall: 0.1667
+F1-score: 0.1250
+GroundTruth: 12
+Predicted: 20
+predicted https://gpo.ontology.link/GPO_ee8c37fd_9f2c_4047_b25d_4149894bd7c0: 0.8737850189208984
+predicted https://gpo.ontology.link/GPO_fa9835d6_b82e_49a7_9bbb_1cb822da2b8b: 0.8658210039138794
+predicted http://emmo.info/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77: 0.8620472550392151
+predicted http://emmo.info/emmo#EMMO_4d2ca841_6cb1_4710_a756_5b989746bca2: 0.8581200838088989
+predicted http://emmo.info/emmo#EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3: 0.850691556930542
+predicted https://gpo.ontology.link/GPO_9e05fb71_a666_49a9_b6b1_53595999ede1: 0.8501712083816528
+predicted http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce: 0.84952712059021
+predicted http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a: 0.848534107208252
+predicted https://gpo.ontology.link/GPO_01cd2578_8730_4ac9_a555_9112728ea939: 0.8468698263168335
+predicted https://gpo.ontology.link/GPO_2559152a_08b8_47ac_8c3e_10d706c8ecb0: 0.8439639806747437
+predicted http://emmo.info/emmo#EMMO_9bbab0be_f9cc_4f46_9f46_0fd271911b79: 0.8436324596405029
+predicted http://emmo.info/emmo#EMMO_65a007dc_2550_46b0_b394_3346c67fbb69: 0.8426792025566101
+predicted http://emmo.info/emmo#EMMO_d64920b5_acd0_4e29_893e_ae03b3d7cdaf: 0.8416367769241333
+predicted http://emmo.info/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d: 0.8400176763534546
+predicted http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a: 0.8340063095092773
+predicted http://emmo.info/emmo#EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840: 0.8329241275787354
+predicted http://emmo.info/emmo#EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b: 0.8326107263565063
+predicted http://emmo.info/emmo#EMMO_057e7d57_aff0_49de_911a_8861d85cef40: 0.8322172164916992
+predicted http://emmo.info/emmo#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7: 0.8291915059089661
+predicted http://emmo.info/emmo#EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6: 0.8289480805397034
