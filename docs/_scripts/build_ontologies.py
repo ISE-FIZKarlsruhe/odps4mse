@@ -554,7 +554,7 @@ def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -
         if infile.suffix.lower() == ".ttl":
             print("## Visualization\n", file=f)
             print("```ontoink", file=f)
-            print(f"source: {rel_root_dir}/{infile.name}", file=f)
+            print(f"source: ../{rel_root_dir}/{infile.name}", file=f)
             print("```\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
@@ -655,7 +655,7 @@ def make_pattern_page(infile: Path, ontology: str, requirement: str, all_terms_a
         if infile.suffix.lower() == ".ttl":
             print("## Visualization\n", file=f)
             print("```ontoink", file=f)
-            print(f"source: {rel_src}", file=f)
+            print(f"source: ../{rel_src}", file=f)
             print("```\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
