@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/nfdi4ing/metadata4ing#"
+     xml:base="http://w3id.org/nfdi4ing/metadata4ing"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/nfdi4ing/metadata4ing#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <skos:definition xml:lang="en">a core relation that holds between a part and its whole</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:editorialNote xml:lang="en">changed by m4i: copied obo:IAO_0000115 to a skos:definition</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Teil von</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">part of</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <skos:definition xml:lang="en">a core relation that holds between a whole and its part</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:editorialNote xml:lang="en">changed by m4i: copied obo:IAO_0000115 to a skos:definition</skos:editorialNote>
+        <skos:prefLabel xml:lang="en">has part</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat Teil</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <skos:definition xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</skos:definition>
+        <skos:prefLabel xml:lang="de">ist Voraussetzung für Schritt</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">precedes</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002224 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002224">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Componency"/>
+        <skos:altLabel xml:lang="en">started by</skos:altLabel>
+        <skos:definition xml:lang="en">x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) &lt; ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">beginnt mit</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">starts with</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002230 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002230">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <skos:altLabel xml:lang="en">finished by</skos:altLabel>
+        <skos:definition xml:lang="en">x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) &gt; α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">endet mit</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ends with</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <skos:closeMatch rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Process"/>
+        <skos:definition xml:lang="en">Process, i.e., a physical entity with a temporal evolution that &apos;has a meaning for the ontologist&apos;</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Prozess</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">process</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <skos:definition>To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added german labels, added skos:prefLabel</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">realisierbare Entität</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">realizable entity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep -->
+
+    <owl:Class rdf:about="http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/nfdi4ing/metadata4ing.owl"/>
+        <skos:definition xml:lang="en">Specific action undertaken during research</skos:definition>
+        <skos:prefLabel xml:lang="de">Arbeitsschritt</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">processing step</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov.owl"/>
+        <skos:closeMatch rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Action"/>
+        <skos:definition xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</skos:definition>
+        <skos:definition xml:lang="de">Eine Aktivität ist etwas, das über einen Zeitraum und mit oder an Entitäten erfolgt; dazu kann das Verbrauchen, Verarbeiten, Transformieren, Modifizieren, Relokalisieren, Verwenden, oder die Genese von Entitäten gehören.</skos:definition>
+        <skos:editorialNote xml:lang="en">changed by m4i: added skos:prefLabel, added german label</skos:editorialNote>
+        <skos:prefLabel xml:lang="en">Activity</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Aktivität</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/xmlschema.owl"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,11 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+State	State	Class	http://purl.org/wild/vocab#State			
+inWorkflowInstance	inWorkflowInstance	ObjectProperty	http://purl.org/wild/vocab#inWorkflowInstance			
+hasState	hasState	ObjectProperty	http://purl.org/wild/vocab#hasState			
+ActivityInstance	ActivityInstance	Class	http://purl.org/wild/vocab#ActivityInstance			
+ActiveOrInitialisedInstanceState	ActiveOrInitialisedInstanceState	Class	http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState			
+vocab	vocab	Entity	http://purl.org/wild/vocab			
+activityInstanceOf	activityInstanceOf	ObjectProperty	http://purl.org/wild/vocab#activityInstanceOf			
+VirtualInstanceState	VirtualInstanceState	Class	http://purl.org/wild/vocab#VirtualInstanceState			
+workflowInstanceOf	workflowInstanceOf	ObjectProperty	http://purl.org/wild/vocab#workflowInstanceOf			
+WorkflowInstance	WorkflowInstance	Class	http://purl.org/wild/vocab#WorkflowInstance			

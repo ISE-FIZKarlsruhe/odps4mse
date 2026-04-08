@@ -1,0 +1,3207 @@
+@prefix : <https://www.irit.fr/recherches/MELODI/ontologies/BBO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.irit.fr/recherches/MELODI/ontologies/BBO> .
+
+<https://www.irit.fr/recherches/MELODI/ontologies/BBO> rdf:type owl:Ontology ;
+                                                        owl:versionIRI <https://www.irit.fr/recherches/MELODI/ontologies/BBO> ;
+                                                        owl:imports <http://purl.obolibrary.org/obo/uo/releases/2018-05-20/uo.owl> ;
+                                                        <http://www.geneontology.org/formats/oboInOwl#created_by> "Amina ANNANE, Nathalie Aussenac and Mouna Kamel" ;
+                                                        rdfs:comment """BBO is a business process ontology. The core element of BBO is a formalization of a BPMN 2.0 fragment (namely Chapter 10 of BPMN 2.0 specification). BPMN 2.0 is state-of-the-art meta-model of business processes.
+
+Copyright © 2019 MELODI @ Toulouse Institute of Computer Science Research""" ;
+                                                        rdfs:label "BBO" ,
+                                                                   "BPMNbasedOntology" ;
+                                                        owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#belongs
+:belongs rdf:type owl:ObjectProperty ;
+         owl:inverseOf :groups ;
+         rdfs:domain :Person ;
+         rdfs:range :Group .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#dependsOn
+:dependsOn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Activity ;
+           rdfs:range :Activity ;
+           rdfs:comment "If an Activity A dependsOn an Activity B, A can not start before completing B." ;
+           rdfs:label "dependsOn" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#describes
+:describes rdf:type owl:ObjectProperty ;
+           rdfs:domain :WorkProcedureDocument ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Activity
+                                      :Process
+                                    )
+                      ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#groups
+:groups rdf:type owl:ObjectProperty ;
+        rdfs:domain :Group ;
+        rdfs:range :Person .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_activationCondition
+:has_activationCondition rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :has_complexGateway ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :ComplexGateway ;
+                         rdfs:range :Expression ;
+                         rdfs:comment """Determines which combination of incoming tokens will be synchronized for
+activation of the Gateway."""@en ;
+                         rdfs:label "has_activationCondition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_activity
+:has_activity rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:range :Activity ;
+              rdfs:comment "[IRIT]denotes the activity related to the source element"@en ;
+              rdfs:label "has_activity"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_activityRef
+:has_activityRef rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :CompensateEventDefinition ;
+                 rdfs:range :Activity ;
+                 rdfs:comment """For a Start Event:
+This Event “catches” the compensation for an Event Sub-Process. No further
+information is REQUIRED. The Event Sub-Process will provide the Id necessary
+to match the Compensation Event with the Event that threw the compensation,
+or the compensation will have been a broadcast.
+For an End Event:
+The Activity to be compensated MAY be supplied. If an Activity is not supplied,
+then the compensation is broadcast to all completed Activities in the current Sub-
+Process (if present), or the entire Process instance (if at the global level).
+For an Intermediate Event within normal flow:
+The Activity to be compensated MAY be supplied. If an Activity is not supplied,
+then the compensation is broadcast to all completed Activities in the current Sub-
+Process (if present), or the entire Process instance (if at the global level). This
+“throws” the compensation.
+For an Intermediate Event attached to the boundary of an Activity:
+This Event “catches” the compensation. No further information is REQUIRED. The
+Activity the Event is attached to will provide the Id necessary to match the
+Compensation Event with the Event that threw the compensation, or the
+compensation will have been a broadcast."""@en ;
+                 rdfs:label "has_activityRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_boundaryEventRef
+:has_boundaryEventRef rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :is_attachedToRef ;
+                      rdfs:domain :Activity ;
+                      rdfs:range :BoundaryEvent ;
+                      rdfs:comment """This references the Intermediate Events that are attached to the
+boundary of the Activity."""@en ;
+                      rdfs:label "has_boundaryEventRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_callActivity
+:has_callActivity rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :has_calledElement ;
+                  rdfs:domain :CallableElement ;
+                  rdfs:range :CallActivity .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_callableElement
+:has_callableElement rdf:type owl:ObjectProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :InputOutputBinding
+                                                 :Interface
+                                               )
+                                 ] ;
+                     rdfs:range :CallableElement ;
+                     rdfs:label "has_callableElement"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_calledElement
+:has_calledElement rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :CallActivity ;
+                   rdfs:range :CallableElement ;
+                   rdfs:comment """The element to be called, which will be either a Process or a
+GlobalTask."""@en ;
+                   rdfs:label "has_calledElement"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_completionCondition
+:has_completionCondition rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :AdHocSubProcess
+                                                     :MultiInstanceLoopCharacteristics
+                                                   )
+                                     ] ;
+                         rdfs:range :Expression ;
+                         rdfs:comment "This attribute defines a boolean Expression that when evaluated to true, cancels the remaining Activity instances and produces a token."@en ;
+                         rdfs:label "has_completionCondition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_complexBehaviorDefinition
+:has_complexBehaviorDefinition rdf:type owl:ObjectProperty ;
+                               owl:inverseOf :has_multiInstanceLoopCharacteristics ;
+                               rdfs:domain :MultiInstanceLoopCharacteristics ;
+                               rdfs:range :ComplexBehaviorDefinition .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_complexGateway
+:has_complexGateway rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Expression ;
+                    rdfs:range :ComplexGateway ;
+                    rdfs:comment "[IRIT] references the ComplexGateway which is concerned with the Expression"@en ;
+                    rdfs:label "has_complexGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_condition
+:has_condition rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :ComplexBehaviorDefinition
+                                           :ConditionalEventDefinition
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :Expression
+                                          :FormalExpression
+                                        )
+                          ] ;
+               rdfs:comment "This relation has two source concepts. The definition is related to the source concept: (1) conditionalEventDefinition: The Expression might be underspecified and provided in the form of natural language. For executable Processes (isExecutable = true), if the trigger is Conditional, then a FormalExpression MUST be entered. (2) complexBehaviorDefinition: This attribute defines a boolean Expression that when evaluated to true, cancels the remaining Activity instances and produces a token."@en ;
+               rdfs:label "has_condition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_conditionExpression
+:has_conditionExpression rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :has_sequenceFlow ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :SequenceFlow ;
+                         rdfs:range :Expression ;
+                         rdfs:comment """An optional boolean Expression that acts as a gating condition. A token will only
+be placed on this Sequence Flow if this conditionExpression evaluates to
+true."""@en ;
+                         rdfs:label "has_conditionExpression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_container
+:has_container rdf:type owl:ObjectProperty ;
+               owl:inverseOf :has_flowElements ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :FlowElement ;
+               rdfs:range :FlowElementsContainer ;
+               rdfs:comment "[IRIT] this relation references the FlowElementContainer that includes the FlowElement"@en ;
+               rdfs:label "has_container"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_dataResourceInput
+:has_dataResourceInput rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ThrowEvent ;
+                       rdfs:range :DataResource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_dataResourceOutput
+:has_dataResourceOutput rdf:type owl:ObjectProperty ;
+                        rdfs:domain :CatchEvent ;
+                        rdfs:range :DataResource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_default
+:has_default rdf:type owl:ObjectProperty ;
+             owl:inverseOf :has_defaultElement ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Activity
+                                         :ComplexGateway
+                                         :ExclusiveGateway
+                                         :InclusiveGateway
+                                       )
+                         ] ;
+             rdfs:range :SequenceFlow ;
+             rdfs:comment "The Sequence Flow that will receive a token when none of the conditionExpressions on other outgoing Sequence Flows evaluate to true. The default Sequence Flow should not have a conditionExpression. Any such Expression SHALL be ignored."@en ;
+             rdfs:label "has_default"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_defaultElement
+:has_defaultElement rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SequenceFlow ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Activity
+                                               :ComplexGateway
+                                               :ExclusiveGateway
+                                               :InclusiveGateway
+                                             )
+                               ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_errorRef
+:has_errorRef rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :ErrorEventDefinition
+                                          :Operation
+                                        )
+                          ] ;
+              rdfs:range :Error ;
+              rdfs:comment "for an Operation instance: specifies errors that the Operation may return. An Operation MAY refer to zero or more Error elements."@en ,
+                           "for an ErrorEventDefinition instance: If the trigger is an Error, then an Error payload MAY be provided." ;
+              rdfs:label "has_errorRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_escalationRef
+:has_escalationRef rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :EscalationEventDefinition ;
+                   rdfs:range :Escalation ;
+                   rdfs:comment "If the trigger is an Escalation, then an Escalation payload MAY be provided."@en ;
+                   rdfs:label "has_escalationRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_event
+:has_event rdf:type owl:ObjectProperty ;
+           rdfs:domain :ComplexBehaviorDefinition ;
+           rdfs:range :ImplicitThrowEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_eventDefinition
+:has_eventDefinition rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :has_eventDefinitionEvent ;
+                     rdfs:domain :Event ;
+                     rdfs:range :EventDefinition ;
+                     rdfs:comment """Defines the event EventDefinitions that are triggers expected for a catch Event. These EventDefinitions are only valid inside the current Event.
+• If there is no EventDefinition defined, then this is considered a catch None Event and the Event will not have an internal marker (see Figure 10.91).
+• If there is more than one EventDefinition defined, this is considered a catch Multiple Event and the Event will have the pentagon internal marker (see Figure 10.90).
+This is an ordered set."""@en ;
+                     rdfs:label "has_eventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_eventDefinitionEvent
+:has_eventDefinitionEvent rdf:type owl:ObjectProperty ;
+                          rdfs:domain :EventDefinition ;
+                          rdfs:range :Event .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_exclusiveGateway
+:has_exclusiveGateway rdf:type owl:ObjectProperty ;
+                      rdfs:domain :SequenceFlow ;
+                      rdfs:range :ExclusiveGateway ;
+                      rdfs:comment "[IRIT] specifies the exclusive gateway referenced by the default sequence flow"@en ;
+                      rdfs:label "has_exclusiveGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_expression
+:has_expression rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:range :Expression ;
+                rdfs:comment """The Expression that evaluates the value used to bind the
+ResourceParameter. (ResourceParameterBinding)"""@en ;
+                rdfs:label "has_expression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_flowElements
+:has_flowElements rdf:type owl:ObjectProperty ;
+                  rdfs:domain :FlowElementsContainer ;
+                  rdfs:range :FlowElement ;
+                  rdfs:comment """This association specifies the particular flow elements contained in a
+FlowElementContainer. Flow elements are Events, Gateways, Sequence
+Flows, Activities, Data Objects, Data Associations, and Choreography
+Activities."""@en ;
+                  rdfs:label "has_flowElements"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_inMessageRef
+:has_inMessageRef rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Operation ;
+                  rdfs:range :Message .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_inclusiveGateway
+:has_inclusiveGateway rdf:type owl:ObjectProperty ;
+                      rdfs:domain :SequenceFlow ;
+                      rdfs:range :InclusiveGateway ;
+                      rdfs:comment "[IRIT] specifies the inclusive gateway referenced by the default sequence flow"@en ;
+                      rdfs:label "has_inclusiveGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_incoming
+:has_incoming rdf:type owl:ObjectProperty ;
+              owl:inverseOf :has_targetRef ;
+              rdfs:domain :FlowNode ;
+              rdfs:range :SequenceFlow ;
+              rdfs:comment "identifies the incoming Sequence Flow of the FlowNode."@en ;
+              rdfs:label "has_incoming"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_inputResourceItem
+:has_inputResourceItem rdf:type owl:ObjectProperty ;
+                       rdfs:domain :MultiInstanceLoopCharacteristics ;
+                       rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_inputResourceRef
+:has_inputResourceRef rdf:type owl:ObjectProperty ;
+                      rdfs:domain :InputOutputBinding ;
+                      rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_inputSet
+:has_inputSet rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :InputOutputSpecification
+                                          :ThrowEvent
+                                        )
+                          ] ;
+              rdfs:range :InputSet ;
+              rdfs:comment "A reference to the InputSets defined by the InputOutputSpecification. Every InputOutputSpecification MUST define at least one InputSet."@en ;
+              rdfs:label "has_inputSet"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_interfaceOperation
+:has_interfaceOperation rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :has_operationInterface ;
+                        rdfs:domain :Interface ;
+                        rdfs:range :Operation .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_ioBinding
+:has_ioBinding rdf:type owl:ObjectProperty ;
+               rdfs:domain :CallableElement ;
+               rdfs:range :InputOutputBinding ;
+               rdfs:comment "The InputOutputBinding defines a combination of one InputSet and one OutputSet in order to bind this to an operation defined in an interface."@en ;
+               rdfs:label "has_ioBinding"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_ioSpecification
+:has_ioSpecification rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :Activity
+                                                 :CallableElement
+                                                 :InputSet
+                                                 :OutputSet
+                                               )
+                                 ] ;
+                     rdfs:range :InputOutputSpecification ;
+                     rdfs:comment """The InputOutputSpecification defines the inputs and outputs and the InputSets and OutputSets for the Activity. See page 211 for more information on the InputOutputSpecification.
+
+"""@en ;
+                     rdfs:label "has_ioSpecification"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_job
+:has_job rdf:type owl:ObjectProperty ;
+         rdfs:domain :Person ;
+         rdfs:range :Job .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_leader
+:has_leader rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_leaderOf ;
+            rdfs:domain :Group ;
+            rdfs:range :Person .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopActivity
+:has_loopActivity rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :has_loopCharacteristics ;
+                  rdfs:domain :LoopCharacteristics ;
+                  rdfs:range :Activity .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopCardinality
+:has_loopCardinality rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MultiInstanceLoopCharacteristics ;
+                     rdfs:range :Expression .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopCharacteristics
+:has_loopCharacteristics rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Activity ;
+                         rdfs:range :LoopCharacteristics ;
+                         rdfs:comment """An Activity MAY be performed once or MAY be repeated. If repeated,
+the Activity MUST have loopCharacteristics that define the repetition
+criteria (if the isExecutable attribute of the Process is set to
+true)."""@en ;
+                         rdfs:label "has_loopCharacteristics"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopCondition
+:has_loopCondition rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :StandardLoopCharacteristics ;
+                   rdfs:range :Expression ;
+                   rdfs:comment "A boolean Expression that controls the loop. The Activity will only loop as long as this condition is true. The looping behavior MAY be underspecified, meaning that the modeler can simply document the condition, in which case the loop cannot be formally executed."@en ;
+                   rdfs:label "has_loopCondition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopResourceInputRef
+:has_loopResourceInputRef rdf:type owl:ObjectProperty ;
+                          rdfs:domain :MultiInstanceLoopCharacteristics ;
+                          rdfs:range :ResourceCollection .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_loopResourceOutputRef
+:has_loopResourceOutputRef rdf:type owl:ObjectProperty ;
+                           rdfs:domain :MultiInstanceLoopCharacteristics ;
+                           rdfs:range :ResourceCollection .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_messageRef
+:has_messageRef rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :MessageEventDefinition
+                                            :ReceiveTask
+                                            :SendTask
+                                          )
+                            ] ;
+                rdfs:range :Message ;
+                rdfs:comment "The Message MUST be supplied (if the isExecutable attribute of the Process is set to true)."@en ;
+                rdfs:label "has_messageRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_multiInstanceLoopCharacteristics
+:has_multiInstanceLoopCharacteristics rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :ComplexBehaviorDefinition ;
+                                      rdfs:range :MultiInstanceLoopCharacteristics .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_nextFlowNode
+:has_nextFlowNode rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :has_previousFlowNode ;
+                  rdfs:domain :FlowNode ;
+                  rdfs:range :FlowNode ;
+                  owl:propertyChainAxiom ( :has_outgoing
+                                           :has_targetRef
+                                         ) .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_noneBehaviorEventRef
+:has_noneBehaviorEventRef rdf:type owl:ObjectProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :MultiInstanceLoopCharacteristics ;
+                          rdfs:range :EventDefinition ;
+                          rdfs:label "has_noneBehaviorEventRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_oneBehaviorEventRef
+:has_oneBehaviorEventRef rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :MultiInstanceLoopCharacteristics ;
+                         rdfs:range :EventDefinition ;
+                         rdfs:comment "The EventDefinition which is thrown when behavior is set to one and the first internal Activity instance has completed."@en ;
+                         rdfs:label "has_oneBehaviorEventRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_operationInterface
+:has_operationInterface rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Operation ;
+                        rdfs:range :Interface .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_operationRef
+:has_operationRef rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :InputOutputBinding
+                                              :MessageEventDefinition
+                                              :ReceiveTask
+                                              :SendTask
+                                              :ServiceTask
+                                            )
+                              ] ;
+                  rdfs:range :Operation ;
+                  rdfs:comment "This attribute specifies the operation that is invoked"@en ;
+                  rdfs:label "has_operationRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outMessageRef
+:has_outMessageRef rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Operation ;
+                   rdfs:range :Message .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outgoing
+:has_outgoing rdf:type owl:ObjectProperty ;
+              owl:inverseOf :has_sourceRef ;
+              rdfs:domain :FlowNode ;
+              rdfs:range :SequenceFlow ;
+              rdfs:comment "identifies the outgoing Sequence Flow of the FlowNode."@en ;
+              rdfs:label "has_outgoing"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outputResourceItem
+:has_outputResourceItem rdf:type owl:ObjectProperty ;
+                        rdfs:domain :MultiInstanceLoopCharacteristics ;
+                        rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outputResourceRef
+:has_outputResourceRef rdf:type owl:ObjectProperty ;
+                       rdfs:domain :InputOutputBinding ;
+                       rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_outputSet
+:has_outputSet rdf:type owl:ObjectProperty ;
+               rdfs:domain :InputOutputSpecification ;
+               rdfs:range :OutputSet ;
+               rdfs:comment "A reference to the OutputSets defined by the InputOutputSpecification. Every InputOutputSpecification MUST define at least one OutputSet."@en ;
+               rdfs:label "has_outputSet"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameter
+:has_parameter rdf:type owl:ObjectProperty ;
+               rdfs:domain :ParameterValueBinding ;
+               rdfs:range :Parameter .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameterExpectedValue
+:has_parameterExpectedValue rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ParameterValueBinding ;
+                            rdfs:range :ParameterExpectedValue .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameterRef
+:has_parameterRef rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:range :ResourceParameter ;
+                  rdfs:comment "Reference to the parameter defined by the Resource."@en ;
+                  rdfs:label "has_parameterRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameterValue
+:has_parameterValue rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ParameterValueBinding ;
+                    rdfs:range :ParameterValue .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameterValueBindingInput
+:has_parameterValueBindingInput rdf:type owl:ObjectProperty ;
+                                rdfs:domain :InputOutputSpecification ;
+                                rdfs:range :ParameterValueBinding .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_parameterValueBindingOutput
+:has_parameterValueBindingOutput rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :InputOutputSpecification ;
+                                 rdfs:range :ParameterValueBinding .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_part
+:has_part rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_partOf .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_prefix
+:has_prefix rdf:type owl:ObjectProperty ;
+            rdfs:domain :UnitOfMeasure ;
+            rdfs:range <http://purl.obolibrary.org/obo/UO_0000046> ;
+            rdfs:comment "This relation allows to specifiy the prefix (centi, mili, etc.) of a given unit of measure."@en ;
+            rdfs:label "has_prefix" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_previousFlowNode
+:has_previousFlowNode rdf:type owl:ObjectProperty ;
+                      rdfs:domain :FlowNode ;
+                      rdfs:range :FlowNode ;
+                      owl:propertyChainAxiom ( :has_incoming
+                                               :has_sourceRef
+                                             ) .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_process
+:has_process rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range :Process ;
+             rdfs:comment "the process assigned to the resource role"@en ;
+             rdfs:label "has_process"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_property
+:has_property rdf:type owl:ObjectProperty ;
+              owl:inverseOf :has_propertyElement ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Activity
+                                          :Event
+                                          :Process
+                                        )
+                          ] ;
+              rdfs:range :Property ;
+              rdfs:comment "Modeler-defined properties MAY be added to a Process. These properties are contained within the Process. All Tasks and Sub-Processes SHALL have access to these properties."@en ;
+              rdfs:label "has_property"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_propertyElement
+:has_propertyElement rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Property ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Activity
+                                                :Event
+                                                :Process
+                                              )
+                                ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_rendering
+:has_rendering rdf:type owl:ObjectProperty ;
+               owl:inverseOf :has_renderingTask ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :GlobalUserTask
+                                           :UserTask
+                                         )
+                           ] ;
+               rdfs:range :Rendering .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_renderingTask
+:has_renderingTask rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Rendering ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :GlobalUserTask
+                                              :UserTask
+                                            )
+                              ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resource
+:has_resource rdf:type owl:ObjectProperty ;
+              rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceInputRef
+:has_resourceInputRef rdf:type owl:ObjectProperty ;
+                      rdfs:domain :InputSet ;
+                      rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceInputs
+:has_resourceInputs rdf:type owl:ObjectProperty ;
+                    rdfs:domain :InputOutputSpecification ;
+                    rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceOutputRef
+:has_resourceOutputRef rdf:type owl:ObjectProperty ;
+                       rdfs:domain :OutputSet ;
+                       rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceOutputs
+:has_resourceOutputs rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InputOutputSpecification ;
+                     rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceParameterBindings
+:has_resourceParameterBindings rdf:type owl:ObjectProperty ;
+                               rdfs:comment """This defines the Parameter bindings used for the
+Resource assignment (see below). Is only applicable if a
+resourceRef is specified."""@en ;
+                               rdfs:label "has_resourceParameterBindings"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resourceParameters
+:has_resourceParameters rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Resource ;
+                        rdfs:range :ResourceParameter ;
+                        rdfs:comment "This model association specifies the definition of the parameters needed at runtime to resolve the Resource."@en ;
+                        rdfs:label "has_resourceParameters"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_sequenceFlow
+:has_sequenceFlow rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :ConditionExpression
+                                              :FlowNode
+                                            )
+                              ] ;
+                  rdfs:range :SequenceFlow ;
+                  rdfs:comment "[IRIT] specifies the SequenceFlow of the FlowNode"@en ;
+                  rdfs:label "has_sequenceFlow"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_signalRef
+:has_signalRef rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :SignalEventDefinition ;
+               rdfs:range :Signal ;
+               rdfs:comment "[IRIT] specifies the Signal of the SignalEventDefinition"@en ;
+               rdfs:label "has_signalRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_source
+:has_source rdf:type owl:ObjectProperty ;
+            rdfs:domain :LinkEventDefinition ;
+            rdfs:range :LinkEventDefinition ;
+            rdfs:comment """Used to reference the corresponding 'catch' or 'target' LinkEventDefinition, when
+this LinkEventDefinition represents a 'throw' or 'source' LinkEventDefinition.""" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_sourceRef
+:has_sourceRef rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :SequenceFlow ;
+               rdfs:range :FlowNode ;
+               rdfs:comment """The FlowNode that the Sequence Flow is connecting from.
+For a Process: Of the types of FlowNode, only Activities, Gateways, and Events can be the source. However, Activities that are Event Sub-Processes are not allowed to be a source.
+For a Choreography: Of the types of FlowNode, only Choreography Activities, Gateways, and Events can be the source."""@en ;
+               rdfs:label "has_sourceRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_state
+:has_state rdf:type owl:ObjectProperty ;
+           rdfs:domain :Resource ;
+           rdfs:range :ResourceState .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_subordinatedJob
+:has_subordinatedJob rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Job ;
+                     rdfs:range :Job .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_superiorJob
+:has_superiorJob rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Job ;
+                 rdfs:range :Job .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_supportedInterfaceRefs
+:has_supportedInterfaceRefs rdf:type owl:ObjectProperty ;
+                            rdfs:domain :CallableElement ;
+                            rdfs:range :Interface ;
+                            rdfs:comment "The Interfaces describing the external behavior provided by this element."@en ;
+                            rdfs:label "has_supportedInterfaceRefs"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_target
+:has_target rdf:type owl:ObjectProperty ;
+            rdfs:domain :LinkEventDefinition ;
+            rdfs:range :LinkEventDefinition ;
+            rdfs:comment """Used to reference the corresponding 'throw' or 'source' LinkEventDefinition,
+when this LinkEventDefinition represents a 'catch' or 'target' LinkEventDefinition.""" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_targetRef
+:has_targetRef rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :SequenceFlow ;
+               rdfs:range :FlowNode ;
+               rdfs:comment """The FlowNode that the Sequence Flow is connecting to.
+For a Process: Of the types of FlowNode, only Activities, Gateways, and Events can be the target. However, Activities that are Event Sub-Processes are not allowed to be a target.
+For a Choreography: Of the types of FlowNode, only Choreography Activities, Gateways, and Events can be the target."""@en ;
+               rdfs:label "has_targetRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_timeCycle
+:has_timeCycle rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :TimerEventDefinition ;
+               rdfs:range :Expression ;
+               owl:propertyDisjointWith :has_timeDate ,
+                                        :has_timeDuration ;
+               rdfs:comment "If the trigger is a Timer, then a timeCycle MAY be entered. Timer attributes are mutually exclusive and if any of the other Timer attributes is set, timeCycle MUST NOT be set (if the isExecutable attribute of the Process is set to true). The return type of the attribute timeCycle MUST conform to the ISO-8601 format for recurring time interval representations."@en ;
+               rdfs:label "has_timeCycle"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_timeDate
+:has_timeDate rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :TimerEventDefinition ;
+              rdfs:range :Expression ;
+              owl:propertyDisjointWith :has_timeDuration ;
+              rdfs:comment "If the trigger is a Timer, then a timeDate MAY be entered. Timer attributes are mutually exclusive and if any of the other Timer attributes is set, timeDate MUST NOT be set (if the isExecutable attribute of the Process is set to true). The return type of the attribute timeDate MUST conform to the ISO-8601 format for date and time representations."@en ;
+              rdfs:label "has_timeDate"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_timeDuration
+:has_timeDuration rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :TimerEventDefinition ;
+                  rdfs:range :Expression ;
+                  rdfs:comment """If the trigger is a Timer, then a timeDuration MAY be entered. Timer attributes are mutually exclusive and if any of the other Timer attributes is set, timeDuration MUST NOT be set (if the isExecutable attribute of the Process is set to true).
+The return type of the attribute timeDuration MUST conform to the ISO-8601 format for time interval representations."""@en ;
+                  rdfs:label "has_timeDuration"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_unit
+:has_unit rdf:type owl:ObjectProperty ;
+          rdfs:domain :UnitOfMeasure ;
+          rdfs:range <http://purl.obolibrary.org/obo/UO_0000000> .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_unitOfMeasure
+:has_unitOfMeasure rdf:type owl:ObjectProperty ;
+                   rdfs:domain :QuantitativeParameter ;
+                   rdfs:range :UnitOfMeasure .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_attachedToRef
+:is_attachedToRef rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :BoundaryEvent ;
+                  rdfs:range :Activity ;
+                  rdfs:comment "Denotes the Activity that boundary Event is attached to."@en ;
+                  rdfs:label "attachedToRef"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_composedOf
+:is_composedOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :WorkProduct ;
+               rdfs:range :Resource .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_installedOn
+:is_installedOn rdf:type owl:ObjectProperty ;
+                rdfs:domain :SoftwareResource ;
+                rdfs:range :Computer .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_leaderOf
+:is_leaderOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Person ;
+             rdfs:range :Group .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_partOf
+:is_partOf rdf:type owl:ObjectProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#is_responsibleFor
+:is_responsibleFor rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Agent
+                                               :Role
+                                             )
+                               ] ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :Activity
+                                              :Process
+                                            )
+                              ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#plays
+:plays rdf:type owl:ObjectProperty ;
+       rdfs:domain :Agent ;
+       rdfs:range :Role .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#supports
+:supports rdf:type owl:ObjectProperty ;
+          rdfs:domain :Process ;
+          rdfs:range :Process ;
+          rdfs:comment """Modelers can declare that they intend all executions or performances
+of one Process to also be valid for another Process. This means they
+expect all the executions or performances of the first Processes to also
+follow the steps laid out in the second Process."""@en ;
+          rdfs:label "supports"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#takesPlaceAt
+:takesPlaceAt rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Activity
+                                          :Process
+                                        )
+                          ] ;
+              rdfs:range :ManufacturingFacility ;
+              rdfs:comment "Allows to specifiy where the activity or the process will take place" ;
+              rdfs:label "takesPlaceAt" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#body
+:body rdf:type owl:DatatypeProperty ;
+      rdfs:domain :FormalExpression ;
+      rdfs:comment "The body of the Expression."@en ;
+      rdfs:label "body"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#cancelRemainingInstances
+:cancelRemainingInstances rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :AdHocSubProcess ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:comment "This attribute is used only if ordering is parallel. It determines whether running instances are cancelled when the completionCondition becomes true."@en ;
+                          rdfs:label "cancelRemainingInstances"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#completionQuantity
+:completionQuantity rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Activity ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment """This attribute defines the number of tokens that MUST be generated from the Activity. This number of tokens will be sent done any outgoing Sequence Flow (assuming any Sequence Flow conditions are satisfied).
+Note that any value for the attribute that is greater than 1 is an advanced type of modeling and should be used with caution."""@en ;
+                    rdfs:label "completionQuantity"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#createdOn
+:createdOn rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#errorCode
+:errorCode rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Error ;
+           rdfs:range xsd:string ;
+           rdfs:comment """For an End Event:
+If the result is an Error, then the errorCode MUST be supplied (if the processType attribute of the Process is set to executable) This “throws” the Error.
+For an Intermediate Event within normal flow:
+If the trigger is an Error, then the errorCode MUST be entered (if the processType attribute of the Process is set to executable). This “throws” the Error.
+For an Intermediate Event attached to the boundary of an Activity:
+If the trigger is an Error, then the errorCode MAY be entered. This Event “catches” the Error. If there is no errorCode, then any error SHALL trigger the Event. If there is an errorCode, then only an Error that matches the errorCode SHALL trigger the Event."""@en ;
+           rdfs:label "errorCode"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#escalationCode
+:escalationCode rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Escalation ;
+                rdfs:range xsd:string ;
+                rdfs:comment """For an End Event:
+If the Result is an Escalation, then the escalationCode MUST be supplied (if the processType attribute of the Process is set to executable). This “throws” the Escalation.
+For an Intermediate Event within normal flow: If the trigger is an Escalation, then the escalationCode MUST be entered (if the processType attribute of the Process is set to executable). This “throws” the Escalation. For an Intermediate Event attached to the boundary of an Activity: If the trigger is an Escalation, then the escalationCode MAY be entered. This Event “catches” the Escalation. If there is no escalationCode, then any Escalation SHALL trigger the Event. If there is an escalationCode, then only an Escalation that matches the escalationCode SHALL trigger the Event."""@en ;
+                rdfs:label "escalationCode"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#id
+:id rdf:type owl:DatatypeProperty ,
+             owl:FunctionalProperty ;
+    rdfs:range xsd:string ;
+    rdfs:comment "This attribute is used to uniquely identify BPMN elements. The id is REQUIRED if this element is referenced or intended to be referenced by something else. If the element is not currently referenced and is never intended to be referenced, the id MAY be omitted."@en ;
+    rdfs:label "id"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#implementation
+:implementation rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :GlobalBusinessRuleTask
+                                            :GlobalUserTask
+                                            :ReceiveTask
+                                            :SendTask
+                                            :ServiceTask
+                                            :UserTask
+                                          )
+                            ] ;
+                rdfs:comment "This attribute specifies the technology that will be used to send and receive the Messages. Valid values are ##unspecified for leaving the implementation technology open, ##WebService for the Web service technology or a URI identifying any other technology or coordination protocol. A Web service is the default technology."@en ;
+                rdfs:label "implementation"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#instantiate
+:instantiate rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :EventBasedGateway
+                                         :ReceiveTask
+                                       )
+                         ] ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "When true, receipt of one of the Events will instantiate the Process instance."@en ;
+             rdfs:label "instantiate"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isClosed
+:isClosed rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Process ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "A boolean value specifying whether interactions, such as sending and receiving Messages and Events, not modeled in the Process can occur when the Process is executed or performed. If the value is true, they MAY NOT occur. If the value is false, they MAY occur."@en ;
+          rdfs:label "isClosed"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isExecutable
+:isExecutable rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Process ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment """An optional Boolean value specifying whether the Process is executable.
+An executable Process is a private Process that has been modeled for the purpose of being executed according to the semantics of Chapter 14 (see page 426). Of course, during the development cycle of the Process, there will be stages where the Process does not have enough detail to be “executable.”
+A non-executable Process is a private Process that has been modeled for the purpose of documenting Process behavior at a modeler-defined level of detail. Thus, information needed for execution, such as formal condition expressions are typically not included in a non-executable Process.
+For public Processes, no value has the same semantics as if the value were false. The value MAY not be true for public Processes."""@en ;
+              rdfs:label "isExecutable"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isForCompensation
+:isForCompensation rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Activity ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment """A flag that identifies whether this Activity is intended for the purposes of compensation.
+If false, then this Activity executes as a result of normal execution flow.
+If true, this Activity is only activated when a Compensation Event is detected and initiated under Compensation Event visibility scope (see page 281 for more information on scopes)."""@en ;
+                   rdfs:label "isForCompensation"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isImmediate
+:isImmediate rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :SequenceFlow ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment """An optional boolean value specifying whether Activities or Choreography Activities not in the model containing the Sequence Flow can occur between the elements connected by the Sequence Flow. If the value is true, they MAY NOT occur. If the value is false, they MAY occur. Also see the isClosed attribute on Process, Choreography, and Collaboration. When the attribute has no value, the
+default semantics depends on the kind of model containing Sequence Flows:
+• For non-executable Processes (public Processes and non-executable private Processes) and Choreographies no value has the same semantics as if the value were false.
+• For an executable Processes no value has the same semantics as if the value were true.
+• For executable Processes, the attribute MUST NOT be false."""@en ;
+             rdfs:label "isImmediate"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isRequired
+:isRequired rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ResourceParameter ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Specifies, if a parameter is optional or mandatory."@en ;
+            rdfs:label "isRequired"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#isSequential
+:isSequential rdf:type owl:DatatypeProperty ;
+              rdfs:domain :MultiInstanceLoopCharacteristics ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "This attribute is a flag that controls whether the Activity instances will execute sequentially or in parallel."@en ;
+              rdfs:label "isSequential"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#language
+:language rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :FormalExpression ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Overrides the Expression language specified in the Definitions. The language MUST be specified in a URI format."@en ;
+          rdfs:label "language"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#lastName
+:lastName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Person ;
+          rdfs:range xsd:string .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#loopMaximum
+:loopMaximum rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :StandardLoopCharacteristics ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "Serves as a cap on the number of iterations."@en ;
+             rdfs:label "loopMaximum"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#maxValue
+:maxValue rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#method
+:method rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Transaction ;
+        rdfs:comment "The method is an attribute that defines the Transaction method used to commit or cancel a Transaction. For executable Processes, it SHOULD be set to a technology specific URI, e.g., http://schemas.xmlsoap.org/ws/2004/10/wsat for WSAtomicTransaction, or http://docs.oasis-open.org/ws-tx/wsba/2006/06/AtomicOutcome for WS-BusinessActivity."@en ;
+        rdfs:label "method"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#minValue
+:minValue rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The descriptive name of the element."@en ;
+      rdfs:label "name"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#parallelMultiple
+:parallelMultiple rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CatchEvent ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "This attribute is only relevant when the catch Event has more than EventDefinition (Multiple). If this value is true, then all of the types of triggers that are listed in the catch Event MUST be triggered before the Process is instantiated."@en ;
+                  rdfs:label "parallelMultiple"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#processType
+:processType rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#script
+:script rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :ScriptTask ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The modeler MAY include a script that can be run when the Task is performed. If a script is not included, then the Task will act as the equivalent of an Abstract Task."@en ;
+        rdfs:label "script"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#scriptFormat
+:scriptFormat rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :ScriptTask ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Defines the format of the script. This attribute value MUST be specified with a mime-type format. And it MUST be specified if a script is provided."@en ;
+              rdfs:label "scriptFormat"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#scriptLanguage
+:scriptLanguage rdf:type owl:DatatypeProperty ;
+                rdfs:domain :GlobalScriptTask ;
+                rdfs:range xsd:string ;
+                rdfs:comment ""@en ;
+                rdfs:label "scriptLanguage"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#startQuantity
+:startQuantity rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range xsd:integer ;
+               rdfs:comment " This attribute defines the number of tokens that MUST arrive before the Activity can begin. Note that any value for the attribute that is greater than 1 is an advanced type of modeling and should be used with caution."@en ;
+               rdfs:label "startQuantity"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#state
+:state rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Process ;
+       rdfs:range xsd:string .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#testBefore
+:testBefore rdf:type owl:DatatypeProperty ;
+            rdfs:domain :StandardLoopCharacteristics ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Flag that controls whether the loop condition is evaluated at the beginning (testBefore = true) or at the end (testBefore = false) of the loop iteration."@en ;
+            rdfs:label "testBefore"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#value
+:value rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#waitForCompletion
+:waitForCompletion rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CompensateEventDefinition ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "For a throw Compensation Event, this flag determines whether the throw Intermediate Event waits for the triggered compensation to complete (the default), or just triggers the compensation and immediately continues (the BPMN 1.2 behavior)."@en ;
+                   rdfs:label "waitForCompletion"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/UO_0000000
+<http://purl.obolibrary.org/obo/UO_0000000> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000046
+<http://purl.obolibrary.org/obo/UO_0000046> rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf :FlowNode ,
+                          [ rdf:type owl:Class ;
+                            owl:complementOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_outgoing ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :ConditionalSequenceFlow
+                                             ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_default ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :SequenceFlow
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_ioSpecification ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :InputOutputSpecification
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_loopCharacteristics ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :LoopCharacteristics
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :takesPlaceAt ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :ManufacturingFacility
+                          ] ;
+          owl:disjointWith :Event ,
+                           :Gateway ;
+          rdfs:comment "Work that a company or organization performs using business processes. An activity can be atomic or non-atomic (compound). The types of activities that are a part of a Process Model are: Process, Sub-Process, and Task."@en ;
+          rdfs:label "Activity"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#AdHocSubProcess
+:AdHocSubProcess rdf:type owl:Class ;
+                 rdfs:subClassOf :SubProcess ,
+                                 [ rdf:type owl:Class ;
+                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :has_flowElements ;
+                                                      owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( :EndEvent
+                                                                                         :StartEvent
+                                                                                       )
+                                                                         ]
+                                                    ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_flowElements ;
+                                   owl:someValuesFrom :Activity
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_completionCondition ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Expression
+                                 ] ;
+                 rdfs:comment "An Ad-Hoc Sub-Process is a specialized type of Sub-Process that is a group of Activities that have no REQUIRED sequence relationships. A set of Activities can be defined for the Process, but the sequence and number of performances for the Activities is determined by the performers of the Activities."@en ;
+                 rdfs:label "AdHocSubProcess"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:comment "Person or a Software that performs an activity"@en ;
+       rdfs:label "Agent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#AllMultiInstanceLoopCharacteristics
+:AllMultiInstanceLoopCharacteristics rdf:type owl:Class ;
+                                     rdfs:subClassOf :MultiInstanceLoopCharacteristics ;
+                                     rdfs:comment """All: no Event is ever thrown, a token is produced after completion of all instances.
+Any thrown Events can be caught by boundary Events on the Multi-Instance Activity."""@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#BoundaryEvent
+:BoundaryEvent rdf:type owl:Class ;
+               rdfs:subClassOf :CatchEvent ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :is_attachedToRef ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Activity
+                               ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#BusinessRuleTask
+:BusinessRuleTask rdf:type owl:Class ;
+                  rdfs:subClassOf :Task ;
+                  rdfs:comment "A Business Rule Task provides a mechanism for the Process to provide input to a Business Rules Engine and to get the output of calculations that the Business Rules Engine might provide. The InputOutputSpecification of the Task (see page 211) will allow the Process to send data to and receive data from the Business Rules Engine."@en ;
+                  rdfs:label "BusinessRuleTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CallActivity
+:CallActivity rdf:type owl:Class ;
+              rdfs:subClassOf :Activity ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_calledElement ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :CallableElement
+                              ] ;
+              rdfs:comment "A Call Activity identifies a point in the Process where a global Process or a Global Task is used. The Call Activity acts as a ‘wrapper’ for the invocation of a global Process or Global Task within the execution. The activation of a call Activity results in the transfer of control to the called global Process or Global Task."@en ;
+              rdfs:label "CallActivity"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CallableElement
+:CallableElement rdf:type owl:Class ;
+                 rdfs:subClassOf :RootElement ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_ioSpecification ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :InputOutputSpecification
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :name ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "CallableElement is the abstract super class of all Activities that have been defined outside of a Process or Choreography but which can be called (or reused), by a Call Activity, from within a Process or Choreography. It MAY reference Interfaces that define the service operations that it provides. The BPMN elements that can be called by Call Activities (i.e., are CallableElements) are: Process and GlobalTask (see Figure 10.43)."@en ;
+                 rdfs:label "CallableElement"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CancelEvent
+:CancelEvent rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_eventDefinition ;
+                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                          owl:onClass :CancelEventDefinition
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Event ;
+             owl:disjointWith :IntermediateCatchEvent ,
+                              :IntermediateThrowEvent ,
+                              :InterruptingEventSubProcessStartEvent ,
+                              :NonEventSubProcessStartEvent ,
+                              :NonInterruptingBoundaryEvent ,
+                              :NonInterruptingEventSubProcessStartEvent ,
+                              :ProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CancelEventDefinition
+:CancelEventDefinition rdf:type owl:Class ;
+                       rdfs:subClassOf :EventDefinition ;
+                       rdfs:comment "Cancel Events are only used in the context of modeling Transaction Sub-Processes (see page 178 for more details on Transactions). There are two variations: a catch Intermediate Event and an End Event."@en ;
+                       rdfs:label "CancelEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CatchEvent
+:CatchEvent rdf:type owl:Class ;
+            rdfs:subClassOf :Event ;
+            rdfs:comment "Events that catch a trigger. All Start Events and some Intermediate Events are catching Events."@en ;
+            rdfs:label "CatchEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Cell
+:Cell rdf:type owl:Class ;
+      rdfs:subClassOf :ManufacturingFacility ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :is_partOf ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Shop
+                      ] ;
+      rdfs:comment "/"@en ;
+      rdfs:label "Cell"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CompensateEventDefinition
+:CompensateEventDefinition rdf:type owl:Class ;
+                           rdfs:subClassOf :EventDefinition ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_activityRef ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Activity
+                                           ] ;
+                           rdfs:comment "Compensation Events are used in the context of triggering or handling compensation (see page 302 for more details on compensation). There are four variations: a Start Event, both a catch and throw Intermediate Event, and an End Event."@en ;
+                           rdfs:label "CompensateEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#CompensationEvent
+:CompensationEvent rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :has_eventDefinition ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :CompensateEventDefinition
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :Event ;
+                   owl:disjointWith :IntermediateCatchEvent ,
+                                    :NonEventSubProcessStartEvent ,
+                                    :NonInterruptingBoundaryEvent ,
+                                    :NonInterruptingEventSubProcessStartEvent ,
+                                    :ProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ComplexBehaviorDefinition
+:ComplexBehaviorDefinition rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_condition ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :FormalExpression
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_multiInstanceLoopCharacteristics ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :MultiInstanceLoopCharacteristics
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_event ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :ImplicitThrowEvent
+                                           ] ;
+                           rdfs:comment "This element controls when and which Events are thrown in case behavior of the Multi-Instance Activity is set to complex."@en ;
+                           rdfs:label "ComplexBehaviorDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ComplexGateway
+:ComplexGateway rdf:type owl:Class ;
+                rdfs:subClassOf :Gateway ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :has_activationCondition ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :Expression
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :has_default ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :SequenceFlow
+                                ] ;
+                rdfs:comment "The Complex Gateway can be used to model complex synchronization behavior. An Expression activationCondition is used to describe the precise behavior. For example, this Expression could specify that tokens on three out of five incoming Sequence Flows are needed to activate the Gateway. What tokens are produced by the Gateway is determined by conditions on the outgoing Sequence Flows as in the split behavior of the Inclusive Gateway. If tokens arrive later on the two remaining Sequence Flows, those tokens cause a reset of the Gateway and new token can be produced on the outgoing Sequence Flows. To determine whether it needs to wait for additional tokens before it can reset, the Gateway uses the synchronization semantics of the Inclusive Gateway."@en ;
+                rdfs:label "ComplexGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ComplexMultiInstanceLoopCharacteristics
+:ComplexMultiInstanceLoopCharacteristics rdf:type owl:Class ;
+                                         rdfs:subClassOf :MultiInstanceLoopCharacteristics ;
+                                         rdfs:comment """Complex: the complexBehaviorDefinitions are consulted to determine if and which Events to throw.
+Any thrown Events can be caught by boundary Events on the Multi-Instance Activity."""@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Component
+:Component rdf:type owl:Class ;
+           rdfs:subClassOf :MaterialResource ;
+           rdfs:comment "/"@en ;
+           rdfs:label "Component"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Computer
+:Computer rdf:type owl:Class ;
+          rdfs:subClassOf :MaterialResource ;
+          rdfs:label "Computer"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConditionExpression
+:ConditionExpression rdf:type owl:Class ;
+                     rdfs:subClassOf :Expression ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has_sequenceFlow ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :SequenceFlow
+                                     ] ;
+                     rdfs:comment "/"@en ;
+                     rdfs:label "ConditionExpression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConditionalEvent
+:ConditionalEvent rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_eventDefinition ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onClass :ConditionalEventDefinition
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Event ;
+                  owl:disjointWith :EndEvent ,
+                                   :IntermediateThrowEvent ,
+                                   :NonEventSubProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConditionalEventDefinition
+:ConditionalEventDefinition rdf:type owl:Class ;
+                            rdfs:subClassOf :EventDefinition ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_condition ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :Expression
+                                            ] ;
+                            rdfs:comment "/"@en ;
+                            rdfs:label "ConditionalEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConditionalSequenceFlow
+:ConditionalSequenceFlow rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :SequenceFlow
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :has_conditionExpression ;
+                                                                      owl:someValuesFrom :Expression
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :SequenceFlow ;
+                         owl:disjointWith :DefaultSequenceFlow .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConsumableResource
+:ConsumableResource rdf:type owl:Class ;
+                    rdfs:subClassOf :Resource ;
+                    rdfs:comment "/"@en ;
+                    rdfs:label "ConsumableResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ConvergingGateway
+:ConvergingGateway rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Gateway
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :has_incoming ;
+                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :SequenceFlow
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :has_outgoing ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :SequenceFlow
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :Gateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DataResource
+:DataResource rdf:type owl:Class ;
+              rdfs:subClassOf :Resource ;
+              rdfs:comment "/"@en ;
+              rdfs:label "DataResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Database
+:Database rdf:type owl:Class ;
+          rdfs:subClassOf :DataResource ;
+          rdfs:comment "/"@en ;
+          rdfs:label "Database"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DefaultSequenceFlow
+:DefaultSequenceFlow rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :SequenceFlow
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :has_defaultElement ;
+                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onClass [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( :Activity
+                                                                                              :ComplexGateway
+                                                                                              :ExclusiveGateway
+                                                                                              :InclusiveGateway
+                                                                                            )
+                                                                              ]
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :SequenceFlow .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf :MaterialResource ;
+        rdfs:comment "/"@en ;
+        rdfs:label "Device"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DivergingGateway
+:DivergingGateway rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Gateway
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_outgoing ;
+                                                               owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                               owl:onClass :SequenceFlow
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_incoming ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onClass :SequenceFlow
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Gateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DocumentResource
+:DocumentResource rdf:type owl:Class ;
+                  rdfs:subClassOf :DataResource ;
+                  rdfs:comment "/"@en ;
+                  rdfs:label "DocumentResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent
+:EndEvent rdf:type owl:Class ;
+          rdfs:subClassOf :ThrowEvent ,
+                          [ rdf:type owl:Class ;
+                            owl:complementOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_outgoing ;
+                                               owl:someValuesFrom :SequenceFlow
+                                             ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_incoming ;
+                            owl:someValuesFrom :SequenceFlow
+                          ] ;
+          owl:disjointWith :LinkEvent ,
+                           :ParallelMultipleEvent ,
+                           :TimerEvent ;
+          rdfs:comment "As the name implies, the End Event indicates where a Process will end. In terms of Sequence Flows, the End Event ends the flow of the Process, and thus, will not have any outgoing Sequence Flows—no Sequence Flow can connect from an End Event."@en ;
+          rdfs:label "EndEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Enterprise
+:Enterprise rdf:type owl:Class ;
+            rdfs:subClassOf :ManufacturingFacility ;
+            rdfs:comment "/"@en ;
+            rdfs:label "Enterprise"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EquipmentDraw
+:EquipmentDraw rdf:type owl:Class ;
+               rdfs:subClassOf :TechnicalDocument ;
+               rdfs:comment "Type of technical documentation containing the design information of a material resource."@en ;
+               rdfs:label "EquipmentDraw"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Error
+:Error rdf:type owl:Class ;
+       rdfs:subClassOf :RootElement ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :name ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ;
+       rdfs:comment "An Error represents the content of an Error Event or the Fault of a failed Operation. An ItemDefinition is used to specify the structure of the Error. An Error is generated when there is a critical problem in the processing of an Activity or when the execution of an Operation failed."@en ;
+       rdfs:label "Error"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ErrorEvent
+:ErrorEvent rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :has_eventDefinition ;
+                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass :ErrorEventDefinition
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :Event ;
+            owl:disjointWith :IntermediateCatchEvent ,
+                             :IntermediateThrowEvent ,
+                             :NonEventSubProcessStartEvent ,
+                             :NonInterruptingBoundaryEvent ,
+                             :NonInterruptingEventSubProcessStartEvent ,
+                             :ProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ErrorEventDefinition
+:ErrorEventDefinition rdf:type owl:Class ;
+                      rdfs:subClassOf :EventDefinition ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_errorRef ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :Error
+                                      ] ;
+                      rdfs:comment "/"@en ;
+                      rdfs:label "ErrorEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Escalation
+:Escalation rdf:type owl:Class ;
+            rdfs:subClassOf :RootElement ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :name ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment "An Escalation identifies a business situation that a Process might need to react to. An ItemDefinition is used to specify the structure of the Escalation."@en ;
+            rdfs:label "Escalation"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EscalationEvent
+:EscalationEvent rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :has_eventDefinition ;
+                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                              owl:onClass :EscalationEventDefinition
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Event ;
+                 owl:disjointWith :IntermediateCatchEvent ,
+                                  :NonEventSubProcessStartEvent ,
+                                  :ProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EscalationEventDefinition
+:EscalationEventDefinition rdf:type owl:Class ;
+                           rdfs:subClassOf :EventDefinition ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_escalationRef ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Escalation
+                                           ] ;
+                           rdfs:comment "/"@en ;
+                           rdfs:label "EscalationEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :FlowNode ;
+       owl:disjointWith :Gateway ;
+       rdfs:comment "An Event is something that “happens” during the course of a Process. These Events affect the flow of the Process and usually have a cause or an impact and in general require or allow for a reaction. The term “event” is general enough to cover many things in a Process. The start of an Activity, the end of an Activity, the change of state of a document, a Message that arrives, etc., all could be considered Events."@en ;
+       rdfs:label "Event"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EventBasedGateway
+:EventBasedGateway rdf:type owl:Class ;
+                   rdfs:subClassOf :Gateway ,
+                                   [ rdf:type owl:Class ;
+                                     owl:complementOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has_outgoing ;
+                                                        owl:someValuesFrom :ConditionalSequenceFlow
+                                                      ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_outgoing ;
+                                     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :SequenceFlow
+                                   ] ;
+                   rdfs:comment "The Event-Based Gateway represents a branching point in the Process where the alternative paths that follow the Gateway are based on Events that occur, rather than the evaluation of Expressions using Process data (as with an Exclusive or Inclusive Gateway). A specific Event, usually the receipt of a Message, determines the path that will be taken. Basically, the decision is made by another Participant, based on data that is not visible to Process, thus, requiring the use of the Event-Based Gateway."@en ;
+                   rdfs:label "EventBasedGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EventDefinition
+:EventDefinition rdf:type owl:Class ;
+                 rdfs:subClassOf :RootElement ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_eventDefinitionEvent ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Event
+                                 ] ;
+                 rdfs:comment """Event Definitions refers to the triggers of Catch Events (Start and receive Intermediate Events) and the Results of Throw Events (End Events and send Intermediate Events). The types of Event Definitions are: CancelEventDefinition, CompensationEventDefinition, ConditionalEventDefinition ErrorEventDefinition, EscalationEventDefinition, MessageEventDefinitio, LinkEventDefinition, SignalEventDefinition, TerminateEventDefinition, an TimerEventDefinition (see Table 10.93). A None Event is determined by an Event that does not specify an
+ Event Definition. A Multiple Event is determined by an Event that specifies more than one Event Definition. The different types of Events (Start, End, and Intermediate) utilize a subset of the available types of Event Definitions."""@en ;
+                 rdfs:label "EventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EventSubProcess
+:EventSubProcess rdf:type owl:Class ;
+                 rdfs:subClassOf :SubProcess ,
+                                 [ rdf:type owl:Class ;
+                                   owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_incoming ;
+                                                   owl:someValuesFrom :SequenceFlow
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_outgoing ;
+                                                   owl:someValuesFrom :SequenceFlow
+                                                 ]
+                                               )
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_flowElements ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :EventSubProcessStartEvent
+                                 ] ;
+                 rdfs:comment "EventBasedSubProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#EventSubProcessStartEvent
+:EventSubProcessStartEvent rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SubProcessStartEvent
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :has_eventDefinition ;
+                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                             owl:unionOf ( :CompensateEventDefinition
+                                                                                                           :ConditionalEventDefinition
+                                                                                                           :ErrorEventDefinition
+                                                                                                           :EscalationEventDefinition
+                                                                                                           :MessageEventDefinition
+                                                                                                           :SignalEventDefinition
+                                                                                                         )
+                                                                                           ]
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SubProcessStartEvent ;
+                           rdfs:comment "The StartEvent of an EventBasedSubProcess" ;
+                           rdfs:label "EventSubProcessStartEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ExclusiveEventBasedGateway
+:ExclusiveEventBasedGateway rdf:type owl:Class ;
+                            rdfs:subClassOf :EventBasedGateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ExclusiveGateway
+:ExclusiveGateway rdf:type owl:Class ;
+                  rdfs:subClassOf :Gateway ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_default ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :SequenceFlow
+                                  ] ;
+                  rdfs:comment "A diverging Exclusive Gateway (Decision) is used to create alternative paths within a Process flow. This is basically the “diversion point in the road” for a Process. For a given instance of the Process, only one of the paths can be taken."@en ;
+                  rdfs:label "ExclusiveGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ExecutablePrivateProcess
+:ExecutablePrivateProcess rdf:type owl:Class ;
+                          rdfs:subClassOf :PrivateProcess ;
+                          rdfs:label "ExecutableBusinessProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ExecutableScript
+:ExecutableScript rdf:type owl:Class ;
+                  rdfs:subClassOf :DocumentResource ;
+                  rdfs:comment "/"@en ;
+                  rdfs:label "ExecutableScript"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Expression
+:Expression rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_complexGateway ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :ComplexGateway
+                            ] ;
+            rdfs:comment "The Expression class is used to specify an Expression using natural-language text. These Expressions are not executable. The natural language text is captured using the documentation attribute, inherited from BaseElement."@en ;
+            rdfs:label "Expression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Factory
+:Factory rdf:type owl:Class ;
+         rdfs:subClassOf :ManufacturingFacility ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_partOf ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Enterprise
+                         ] ;
+         rdfs:comment "/"@en ;
+         rdfs:label "Factory"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#FlowElement
+:FlowElement rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_container ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :FlowElementsContainer
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :name ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ;
+             rdfs:comment "FlowElement is the abstract super class for all elements that can appear in a Process flow, which are FlowNodes (see page 99, which consist of Activities (see page 151), Choreography Activities (see page 321) Gateways (see page 287), and Events (see page 233), Data Objects (see page 205), Data Associations (see page 221), and Sequence Flows (see page 97)."@en ;
+             rdfs:label "FlowElement"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#FlowElementsContainer
+:FlowElementsContainer rdf:type owl:Class ;
+                       rdfs:comment "/"@en ;
+                       rdfs:label "FlowElementsContainer"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#FlowNode
+:FlowNode rdf:type owl:Class ;
+          rdfs:subClassOf :FlowElement ;
+          owl:disjointWith :SequenceFlow ;
+          rdfs:comment "The FlowNode element is used to provide a single element as the source and target Sequence Flow associations (see Figure 8.35) instead of the individual associations of the elements that can connect to Sequence Flows (see the section above). Only the Gateway, Activity, Choreography Activity, and Event elements can connect to Sequence Flows and thus, these elements are the only ones that are sub-classes of FlowNode."@en ;
+          rdfs:label "FlowNode"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#FormalExpression
+:FormalExpression rdf:type owl:Class ;
+                  rdfs:subClassOf :Expression ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :language ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ;
+                  rdfs:comment "The FormalExpression class is used to specify an executable Expression using a specified Expression language. A natural-language description of the Expression can also be specified, in addition to the formal specification."@en ;
+                  rdfs:label "FormalExpression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Gateway
+:Gateway rdf:type owl:Class ;
+         rdfs:subClassOf :FlowNode ,
+                         [ rdf:type owl:Class ;
+                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                           owl:onProperty :has_incoming ;
+                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                           owl:onClass :SequenceFlow
+                                         ]
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :has_outgoing ;
+                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                           owl:onClass :SequenceFlow
+                                         ]
+                                       )
+                         ] ;
+         rdfs:comment "Gateways are used to control how Sequence Flows interact as they converge and diverge within a Process. If the flow does not need to be controlled, then a Gateway is not needed. The term “Gateway” implies that there is a gating mechanism that either allows or disallows passage through the Gateway--that is, as tokens arrive at a Gateway, they can be merged together on input and/or split apart on output as the Gateway mechanisms are invoked."@en ;
+         rdfs:label "Gateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalBusinessRuleTask
+:GlobalBusinessRuleTask rdf:type owl:Class ;
+                        rdfs:subClassOf :GlobalTask ;
+                        rdfs:comment "/"@en ;
+                        rdfs:label "GlobalBusinessRuleTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalManualTask
+:GlobalManualTask rdf:type owl:Class ;
+                  rdfs:subClassOf :GlobalTask ;
+                  rdfs:comment "/"@en ;
+                  rdfs:label "GlobalManualTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalScriptTask
+:GlobalScriptTask rdf:type owl:Class ;
+                  rdfs:subClassOf :GlobalTask ;
+                  rdfs:comment "/"@en ;
+                  rdfs:label "GlobalScriptTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalTask
+:GlobalTask rdf:type owl:Class ;
+            rdfs:subClassOf :CallableElement ;
+            rdfs:comment "A Global Task is a reusable, atomic Task definition that can be called from within any Process by a Call Activity."@en ;
+            rdfs:label "GlobalTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#GlobalUserTask
+:GlobalUserTask rdf:type owl:Class ;
+                rdfs:subClassOf :GlobalTask ;
+                rdfs:comment "/"@en ;
+                rdfs:label "GlobalUserTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf :HumanResource ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :groups ;
+                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Person
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_leader ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Person
+                       ] ;
+       owl:disjointWith :Person ;
+       rdfs:comment "The Group class represents a collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions). [Definition extracted from FOAF Vocabulary Specification 0.99]"@en ;
+       rdfs:label "Group"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#HumanResource
+:HumanResource rdf:type owl:Class ;
+               rdfs:subClassOf :Agent ,
+                               :Resource ;
+               owl:disjointWith :WorkProduct ;
+               rdfs:comment "Human agents contributing to the execution of business processes."@en ;
+               rdfs:label "HumanResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ImplicitThrowEvent
+:ImplicitThrowEvent rdf:type owl:Class ;
+                    rdfs:subClassOf :ThrowEvent ;
+                    rdfs:comment "A sub-type of throw Event is the ImplicitThrowEvent. This is a non-graphical Event that is used for Multi-Instance Activities (see page 191)."@en ;
+                    rdfs:label "ImplicitThrowEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InclusiveGateway
+:InclusiveGateway rdf:type owl:Class ;
+                  rdfs:subClassOf :Gateway ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_default ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :SequenceFlow
+                                  ] ;
+                  rdfs:comment "A diverging Inclusive Gateway (Inclusive Decision) can be used to create alternative but also parallel paths within a Process flow. Unlike the Exclusive Gateway, all condition Expressions are evaluated. The true evaluation of one condition Expression does not exclude the evaluation of other condition Expressions. All Sequence Flows with a true evaluation will be traversed by a token. Since each path is considered to be independent, all combinations of the paths MAY be taken, from zero to all. However, it should be designed so that at least one path is taken."@en ;
+                  rdfs:label "InclusiveGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InputOutputBinding
+:InputOutputBinding rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_inputResourceRef ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :Resource
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_operationRef ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :Operation
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_outputResourceRef ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :Resource
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_callableElement ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :CallableElement
+                                    ] ;
+                    rdfs:comment "When a CallableElement is exposed as a Service, it has to define one or more InputOutputBinding elements. An InputOutputBinding element binds one Input and one Output of the InputOutputSpecification to an Operation of a Service Interface."@en ;
+                    rdfs:label "InputOutputBinding"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InputOutputSpecification
+:InputOutputSpecification rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_inputSet ;
+                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :InputSet
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_outputSet ;
+                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :OutputSet
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_activity ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :Activity
+                                          ] ;
+                          rdfs:comment "/"@en ;
+                          rdfs:label "InputOutputSpecification"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InputSet
+:InputSet rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_ioSpecification ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :InputOutputSpecification
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
+          rdfs:comment "An InputSet is a collection of Resource elements that together define a valid set of Resources  for an InputOutputSpecification. An InputOutputSpecification MUST have at least one InputSet element. An InputSet MAY reference zero or more Resource elements. A single Resource MAY be associated with multiple InputSet elements, but it MUST always be referenced by at least one InputSet."@en ;
+          rdfs:label "InputSet"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:subClassOf :RootElement ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_interfaceOperation ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Operation
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :name ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:comment "An interface defines a set of operations that are implemented by Services."@en ;
+           rdfs:label "Interface"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent
+:IntermediateCatchEvent rdf:type owl:Class ;
+                        rdfs:subClassOf :CatchEvent ;
+                        owl:disjointWith :NoneEvent ,
+                                         :TerminateEvent ;
+                        rdfs:comment """A Message Intermediate Event can be used to either send a Message or receive a Message. When used to “catch” the Message,
+then the Event marker MUST be unfilled (see the lower figure on the right)."""@en ;
+                        rdfs:label "IntermediateCatchEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateEvent
+:IntermediateEvent rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:unionOf ( :BoundaryEvent
+                                                       :IntermediateCatchEvent
+                                                       :IntermediateThrowEvent
+                                                     )
+                                       ] ;
+                   rdfs:subClassOf :Event ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_outgoing ;
+                                     owl:someValuesFrom :SequenceFlow
+                                   ] ;
+                   rdfs:comment "The Intermediate Event indicates where something happens (an Event) somewhere between the start and end of a Process. It will affect the flow of the Process, but will not start or (directly) terminate the process." ;
+                   rdfs:label "IntermediateEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateThrowEvent
+:IntermediateThrowEvent rdf:type owl:Class ;
+                        rdfs:subClassOf :ThrowEvent ;
+                        owl:disjointWith :ParallelMultipleEvent ,
+                                         :TerminateEvent ,
+                                         :TimerEvent ;
+                        rdfs:comment "A Message Intermediate Event can be used to either send a Message or receive a Message."@en ;
+                        rdfs:label "IntermediateThrowEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InterruptingBoundaryEvent
+:InterruptingBoundaryEvent rdf:type owl:Class ;
+                           rdfs:subClassOf :BoundaryEvent ;
+                           owl:disjointWith :LinkEvent ,
+                                            :NoneEvent ,
+                                            :TerminateEvent ;
+                           rdfs:comment "the Activity attached to this event should be cancelled"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#InterruptingEventSubProcessStartEvent
+:InterruptingEventSubProcessStartEvent rdf:type owl:Class ;
+                                       rdfs:subClassOf :EventSubProcessStartEvent ;
+                                       owl:disjointWith :LinkEvent ,
+                                                        :NoneEvent ,
+                                                        :TerminateEvent ;
+                                       rdfs:label "InterruptingEventSubProcessStartEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Job
+:Job rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :has_superiorJob ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :Job
+                     ] ;
+     rdfs:label "Job" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#LinkEvent
+:LinkEvent rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has_eventDefinition ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :LinkEventDefinition
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Event ;
+           owl:disjointWith :NonEventSubProcessStartEvent ,
+                            :NonInterruptingBoundaryEvent ,
+                            :NonInterruptingEventSubProcessStartEvent ,
+                            :ProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#LinkEventDefinition
+:LinkEventDefinition rdf:type owl:Class ;
+                     rdfs:subClassOf :EventDefinition ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has_source ;
+                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :LinkEventDefinition
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has_target ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :LinkEventDefinition
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :name ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ;
+                     rdfs:comment "A Link Event is a mechanism for connecting two sections of a Process. Link Events can be used to create looping situations or to avoid long Sequence Flow lines. The use of Link Events is limited to a single Process level (i.e., they cannot link a parent Process with a Sub-Process)."@en ;
+                     rdfs:label "LinkEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#LoopCharacteristics
+:LoopCharacteristics rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has_loopActivity ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :Activity
+                                     ] ;
+                     rdfs:comment "Activities MAY be repeated sequentially, essentially behaving like a loop. The presence of LoopCharacteristics signifies that the Activity has looping behavior. LoopCharacteristics is an abstract class. Concrete subclasses define specific kinds of looping behavior."@en ;
+                     rdfs:label "LoopCharacteristics"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ManualTask
+:ManualTask rdf:type owl:Class ;
+            rdfs:subClassOf :Task ;
+            rdfs:comment "A Manual Task is a Task that is expected to be performed without the aid of any business process execution engine or any application. An example of this could be a telephone technician installing a telephone at a customer location."@en ;
+            rdfs:label "ManualTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ManufacturingFacility
+:ManufacturingFacility rdf:type owl:Class ;
+                       rdfs:subClassOf owl:Thing ;
+                       rdfs:comment "/"@en ;
+                       rdfs:label "ManufacturingFacility"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#MaterialResource
+:MaterialResource rdf:type owl:Class ;
+                  rdfs:subClassOf :Resource ;
+                  rdfs:comment "a physical resource"@en ;
+                  rdfs:label "MaterialResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Message
+:Message rdf:type owl:Class ;
+         rdfs:subClassOf :RootElement ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :name ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment "A Message represents the content of a communication between two Participants. In BPMN 2.0, a Message is a graphical decorator (it was a supporting element in BPMN 1.2). An ItemDefinition is used to specify the Message structure."@en ;
+         rdfs:label "Message"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#MessageEventDefinition
+:MessageEventDefinition rdf:type owl:Class ;
+                        rdfs:subClassOf :EventDefinition ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :has_messageRef ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :Message
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :has_operationRef ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :Operation
+                                        ] ;
+                        rdfs:comment "/"@en ;
+                        rdfs:label "MessageEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#MixedGateway
+:MixedGateway rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Gateway
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_incoming ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass :SequenceFlow
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_outgoing ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass :SequenceFlow
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Gateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#MultiInstanceLoopCharacteristics
+:MultiInstanceLoopCharacteristics rdf:type owl:Class ;
+                                  rdfs:subClassOf :LoopCharacteristics ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_completionCondition ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :Expression
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_inputResourceItem ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :Resource
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_loopCardinality ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :Expression
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_loopResourceInputRef ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :ResourceCollection
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_loopResourceOutputRef ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :ResourceCollection
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_noneBehaviorEventRef ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :EventDefinition
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_oneBehaviorEventRef ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :EventDefinition
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :has_outputResourceItem ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :Resource
+                                                  ] ;
+                                  rdfs:comment "The MultiInstanceLoopCharacteristics class allows for creation of a desired number of Activity instances. The instances MAY execute in parallel or MAY be sequential. Either an Expression is used to specify or calculate the desired number of instances or a data driven setup can be used. In that case a data input can be specified, which is able to handle a collection of data. The number of items in the collection determines the number of Activity instances. This data input can be produced by an input Data Association. The modeler can also configure this loop to control the tokens produced."@en ;
+                                  rdfs:label "MultiInstanceLoopCharacteristics"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#MultipleEvent
+:MultipleEvent rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :has_eventDefinition ;
+                                                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass :EventDefinition
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Event ;
+               owl:disjointWith :NonEventSubProcessStartEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NonEventSubProcessStartEvent
+:NonEventSubProcessStartEvent rdf:type owl:Class ;
+                              rdfs:subClassOf :SubProcessStartEvent ;
+                              owl:disjointWith :SignalEvent ,
+                                               :TerminateEvent ,
+                                               :TimerEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NonExecutableBusinessProcess
+:NonExecutableBusinessProcess rdf:type owl:Class ;
+                              rdfs:subClassOf :PrivateProcess ;
+                              rdfs:label "NonExecutableBusinessProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NonInterruptingBoundaryEvent
+:NonInterruptingBoundaryEvent rdf:type owl:Class ;
+                              rdfs:subClassOf :BoundaryEvent ;
+                              owl:disjointWith :NoneEvent ,
+                                               :TerminateEvent ;
+                              rdfs:comment "the Activity attached to this event should not be cancelled"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NonInterruptingEventSubProcessStartEvent
+:NonInterruptingEventSubProcessStartEvent rdf:type owl:Class ;
+                                          rdfs:subClassOf :EventSubProcessStartEvent ;
+                                          owl:disjointWith :NoneEvent ,
+                                                           :TerminateEvent ;
+                                          rdfs:label "InterruptingEventSubProcessStartEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NoneEvent
+:NoneEvent rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                      [ rdf:type owl:Class ;
+                                                        owl:complementOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :has_eventDefinition ;
+                                                                           owl:someValuesFrom :EventDefinition
+                                                                         ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Event .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NoneMultiInstanceLoopCharacteristics
+:NoneMultiInstanceLoopCharacteristics rdf:type owl:Class ;
+                                      rdfs:subClassOf :MultiInstanceLoopCharacteristics ;
+                                      rdfs:comment """None: the EventDefinition which is associated through the noneEvent association will be thrown for each instance completing.
+Any thrown Events can be caught by boundary Events on the Multi-Instance Activity."""@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#NormalSequenceFlow
+:NormalSequenceFlow rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :SequenceFlow
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:complementOf [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( :ConditionalSequenceFlow
+                                                                                                  :DefaultSequenceFlow
+                                                                                                )
+                                                                                  ]
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :SequenceFlow .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#OneMultiInstanceLoopCharacteristics
+:OneMultiInstanceLoopCharacteristics rdf:type owl:Class ;
+                                     rdfs:subClassOf :MultiInstanceLoopCharacteristics ;
+                                     rdfs:comment """One: the EventDefinition referenced through the oneEvent association will be thrown upon the first instance completing.
+Any thrown Events can be caught by boundary Events on the Multi-Instance Activity."""@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Operation
+:Operation rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_inMessageRef ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Message
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_operationInterface ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Interface
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_outMessageRef ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Message
+                           ] ;
+           rdfs:comment "An Operation defines Messages that are consumed and, optionally, produced when the Operation is called. It can also define zero or more errors that are returned when operation fails. The Operation inherits the attributes and model associations of BaseElement"@en ;
+           rdfs:label "Operation"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#OutputSet
+:OutputSet rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_ioSpecification ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :InputOutputSpecification
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :name ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:comment "An OutputSet is a collection of Resource elements that together can be produced as output from an Activity or Event. An InputOutputSpecification element MUST define at least OutputSet element. An OutputSet MAY reference zero or more Resource elements. A single Resource output MAY be associated with multiple OutputSet elements, but it MUST always be referenced by at least one OutputSet."@en ;
+           rdfs:label "OutputSet"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParallelAdHocSubProcess
+:ParallelAdHocSubProcess rdf:type owl:Class ;
+                         rdfs:subClassOf :AdHocSubProcess ;
+                         rdfs:comment "all the Activities of the Sub-Process can be performed in parallel" ;
+                         rdfs:label "ParallelAdHocSubProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParallelEventBasedGateway
+:ParallelEventBasedGateway rdf:type owl:Class ;
+                           rdfs:subClassOf :EventBasedGateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParallelGateway
+:ParallelGateway rdf:type owl:Class ;
+                 rdfs:subClassOf :Gateway ;
+                 rdfs:comment "A Parallel Gateway is used to synchronize (combine) parallel flows and to create parallel flows."@en ;
+                 rdfs:label "ParallelGateway"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParallelMultipleEvent
+:ParallelMultipleEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :MultipleEvent ;
+                       rdfs:comment "all of the types of EventDefinition that are listed in the Event MUST be triggered." ;
+                       rdfs:label "ParallelMultipleEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:comment "A specific characteristic of an object that may have different values"@en ;
+           rdfs:label "Parameter" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParameterExpectedValue
+:ParameterExpectedValue rdf:type owl:Class ;
+                        rdfs:label "ParameterExpectedValue" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParameterValue
+:ParameterValue rdf:type owl:Class ;
+                rdfs:label "ParameterValue" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ParameterValueBinding
+:ParameterValueBinding rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_parameter ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :Parameter
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_parameterExpectedValue ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :ParameterExpectedValue
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_parameterValue ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :ParameterValue
+                                       ] ;
+                       rdfs:comment "An abstract class that binds a parameter to its value, and eventually its expected value."@en ;
+                       rdfs:label "ParameterValueBinding" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :HumanResource ;
+        rdfs:comment "Human individual"@en ;
+        rdfs:label "Person"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#PrivateProcess
+:PrivateProcess rdf:type owl:Class ;
+                rdfs:subClassOf :Process ;
+                rdfs:comment "A process that is internal to a specific organization and is the type of process that has been generally called a workflow or BPM process." ;
+                rdfs:label "PrivateProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf :CallableElement ,
+                         :FlowElementsContainer ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :takesPlaceAt ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :ManufacturingFacility
+                         ] ;
+         rdfs:comment "A sequence or flow of Activities in an organization with the objective of carrying out work. In BPMN, a Process is depicted as a graph of Flow Elements, which are a set of Activities, Events, Gateways, and Sequence Flow that adhere to a finite execution semantics."@en ;
+         rdfs:label "Process"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ProcessStartEvent
+:ProcessStartEvent rdf:type owl:Class ;
+                   rdfs:subClassOf :StartEvent ;
+                   owl:disjointWith :TerminateEvent .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Property
+:Property rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_propertyElement ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass [ rdf:type owl:Class ;
+                                          owl:unionOf ( :Activity
+                                                        :Event
+                                                        :Process
+                                                      )
+                                        ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
+          rdfs:comment "Modeler-defined properties MAY be added to a Process. These properties are contained within the Process. All Tasks and Sub-Processes SHALL have access to these properties."@en ;
+          rdfs:label "Property"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#PublicProcess
+:PublicProcess rdf:type owl:Class ;
+               rdfs:subClassOf :Process ;
+               rdfs:label "PublicProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#QualitativeParameter
+:QualitativeParameter rdf:type owl:Class ;
+                      rdfs:subClassOf :Parameter ;
+                      owl:disjointWith :QuantitativeParameter ;
+                      rdfs:comment "parameters that have only qualitative values"@en ;
+                      rdfs:label "QualitativeParameter"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#QuantitativeParameter
+:QuantitativeParameter rdf:type owl:Class ;
+                       rdfs:subClassOf :Parameter ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_unitOfMeasure ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :UnitOfMeasure
+                                       ] ;
+                       rdfs:comment "parameters that have only quantitative values"@en ;
+                       rdfs:label "QuantitativeParameter"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ReceiveTask
+:ReceiveTask rdf:type owl:Class ;
+             rdfs:subClassOf :Task ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_messageRef ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Message
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_operationRef ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Operation
+                             ] ;
+             rdfs:comment "A Receive Task is a simple Task that is designed to wait for a Message to arrive from an external Participant (relative to the Process). Once the Message has been received, the Task is completed."@en ;
+             rdfs:label "ReceiveTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Rendering
+:Rendering rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_renderingTask ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass [ rdf:type owl:Class ;
+                                           owl:unionOf ( :GlobalUserTask
+                                                         :UserTask
+                                                       )
+                                         ]
+                           ] ;
+           rdfs:label "Rendering" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Resource
+:Resource rdf:type owl:Class ;
+          rdfs:subClassOf :RootElement ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
+          rdfs:comment "The Resource class is used to specify resources that can be referenced by Activities. These Resources can be Human Resources as well as any other resource assigned to Activities during Process execution time. The definition of a Resource is “abstract,” because it only defines the Resource, without detailing how e.g., actual user IDs are associated at runtime. Multiple Activities can utilize the same Resource."@en ;
+          rdfs:label "Resource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ResourceCollection
+:ResourceCollection rdf:type owl:Class ;
+                    rdfs:comment "An abstract class that groups a set of resources"@en ;
+                    rdfs:label "ResourceCollection" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ResourceParameter
+:ResourceParameter rdf:type owl:Class ;
+                   rdfs:subClassOf :Parameter ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_resource ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Resource
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :name ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
+                                   ] ;
+                   rdfs:comment "A parameter related to a specific resource, only one resource"@en ;
+                   rdfs:label "ResourceParameter"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ResourceState
+:ResourceState rdf:type owl:Class ;
+               rdfs:label "ResourceState" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Role
+:Role rdf:type owl:Class ;
+      rdfs:label "Role" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#RootElement
+:RootElement rdf:type owl:Class ;
+             rdfs:comment """RootElement is the abstract super class for all BPMN elements that are contained within Definitions. When contained within Definitions, these elements have their own defined life-cycle and are not deleted with the deletion of other elements. Examples of concrete RootElements include Collaboration, Process, and Choreography. Depending on their use, RootElements can be referenced by multiple other elements (i.e., they can be reused). Some RootElements MAY be contained within other elements instead of Definitions. This is done to avoid the maintenance overhead of an independent life-cycle. For example, an EventDefinition would be contained in a Process since it is used only there. In this case the EventDefinition would be dependent on the tool life-cycle of
+the Process."""@en ;
+             rdfs:label "RootElement"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Scheme
+:Scheme rdf:type owl:Class ;
+        rdfs:subClassOf :TechnicalDocument ;
+        rdfs:comment "/"@en ;
+        rdfs:label "Scheme"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ScriptTask
+:ScriptTask rdf:type owl:Class ;
+            rdfs:subClassOf :Task ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :script ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :scriptFormat ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment "A Script Task is executed by a business process engine. The modeler or implementer defines a script in a language that the engine can interpret. When the Task is ready to start, the engine will execute the script. When the script is completed, the Task will also be completed."@en ;
+            rdfs:label "ScriptTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SendTask
+:SendTask rdf:type owl:Class ;
+          rdfs:subClassOf :Task ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_messageRef ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Message
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_operationRef ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Operation
+                          ] ;
+          rdfs:comment "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed."@en ;
+          rdfs:label "SendTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SequenceFlow
+:SequenceFlow rdf:type owl:Class ;
+              rdfs:subClassOf :FlowElement ,
+                              [ rdf:type owl:Class ;
+                                owl:complementOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :has_conditionExpression ;
+                                                                          owl:someValuesFrom :Expression
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :has_sourceRef ;
+                                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                               owl:unionOf ( :EventBasedGateway
+                                                                                                             :ParallelGateway
+                                                                                                           )
+                                                                                             ]
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_sourceRef ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :FlowNode
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_targetRef ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :FlowNode
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_conditionExpression ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Expression
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_defaultElement ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass [ rdf:type owl:Class ;
+                                              owl:unionOf ( :Activity
+                                                            :ComplexGateway
+                                                            :ExclusiveGateway
+                                                            :InclusiveGateway
+                                                          )
+                                            ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isImmediate ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:boolean
+                              ] ;
+              rdfs:comment "A connecting object that shows the order in which activities are performed in a Process and is represented with a solid graphical line. Each Flow has only one source and only one target. A Sequence Flow can cross the boundaries between Lanes of a Pool but cannot cross the boundaries of a Pool."@en ;
+              rdfs:label "SequenceFlow"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :SequenceFlow ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Class ;
+                         owl:complementOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :has_conditionExpression ;
+                                                                   owl:someValuesFrom :Expression
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :has_sourceRef ;
+                                                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( :EventBasedGateway
+                                                                                                      :ParallelGateway
+                                                                                                    )
+                                                                                      ]
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ]
+                       ] ;
+   rdfs:comment """A source Gateway MUST NOT be of type Parallel or Event (for a conditional sequence flow) (p.97)
+
+We have added this restriction to the SequenceFlow class rather than the ConditionalSequenceFlow class to state that it is inconsistent to have a SequenceFlow which is at the same time Conditional and has parallel or eventbased gateway source. Otherwise, it would be possible to have such a SequenceFlow classified as a NormalSequenceFlow."""
+ ] .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SequentialAdHocSubProcess
+:SequentialAdHocSubProcess rdf:type owl:Class ;
+                           rdfs:subClassOf :AdHocSubProcess ;
+                           rdfs:comment "only one Activity can be performed at a time" ;
+                           rdfs:label "SequentialAdHocSubProcess" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ServiceTask
+:ServiceTask rdf:type owl:Class ;
+             rdfs:subClassOf :Task ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_operationRef ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Operation
+                             ] ;
+             rdfs:comment "A Service Task is a Task that uses some sort of service, which could be a Web service or an automated application."@en ;
+             rdfs:label "ServiceTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Shop
+:Shop rdf:type owl:Class ;
+      rdfs:subClassOf :ManufacturingFacility ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :is_partOf ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Factory
+                      ] ;
+      rdfs:comment "/"@en ;
+      rdfs:label "Shop"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Signal
+:Signal rdf:type owl:Class ;
+        rdfs:subClassOf :RootElement ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :name ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ;
+        rdfs:comment "A BPMN Signal is similar to a signal flare that shot into the sky for anyone who might be interested to notice and then react. Thus, there is a source of the Signal, but no specific intended target."@en ;
+        rdfs:label "Signal"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SignalEvent
+:SignalEvent rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_eventDefinition ;
+                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                          owl:onClass :SignalEventDefinition
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Event .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SignalEventDefinition
+:SignalEventDefinition rdf:type owl:Class ;
+                       rdfs:subClassOf :EventDefinition ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_signalRef ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :Signal
+                                       ] ;
+                       rdfs:comment "/"@en ;
+                       rdfs:label "SignalEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SoftwareResource
+:SoftwareResource rdf:type owl:Class ;
+                  rdfs:subClassOf :Agent ,
+                                  :Resource ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :is_installedOn ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Computer
+                                  ] ;
+                  rdfs:comment "A software used by an agent to perform a process, or a software agent that executes specific tasks."@en ;
+                  rdfs:label "SoftwareResource"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SparePart
+:SparePart rdf:type owl:Class ;
+           rdfs:subClassOf :MaterialResource ;
+           rdfs:comment "/"@en ;
+           rdfs:label "SparePart"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#StandardLoopCharacteristics
+:StandardLoopCharacteristics rdf:type owl:Class ;
+                             rdfs:subClassOf :LoopCharacteristics ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_loopCondition ;
+                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :Expression
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :loopMaximum ;
+                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] ;
+                             rdfs:comment "The StandardLoopCharacteristics class defines looping behavior based on a boolean condition. The Activity will loop as long as the boolean condition is true. The condition is evaluated for every loop iteration, and MAY be evaluated at the beginning or at the end of the iteration. In addition, a numeric cap can be optionally specified. The number of iterations MAY NOT exceed this cap."@en ;
+                             rdfs:label "StandardLoopCharacteristics"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#StartEvent
+:StartEvent rdf:type owl:Class ;
+            rdfs:subClassOf :CatchEvent ,
+                            [ rdf:type owl:Class ;
+                              owl:complementOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :has_incoming ;
+                                                 owl:someValuesFrom :SequenceFlow
+                                               ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_outgoing ;
+                              owl:someValuesFrom :SequenceFlow
+                            ] ;
+            rdfs:comment """As the name implies, the Start Event indicates where a particular Process will start. In terms of Sequence Flows, the Start Event starts the flow of the Process, and thus, will not have any incoming Sequence Flows—no Sequence Flow can connect to a Start Event.
+flow of the Process and does not have any incoming Sequence Flow, but can have a Trigger. The Start Event is displayed as a circle, drawn with a single thin line."""@en ;
+            rdfs:label "StartEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Station
+:Station rdf:type owl:Class ;
+         rdfs:subClassOf :ManufacturingFacility ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_partOf ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Cell
+                         ] ;
+         rdfs:comment "/"@en ;
+         rdfs:label "Station"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcess
+:SubProcess rdf:type owl:Class ;
+            rdfs:subClassOf :Activity ,
+                            :FlowElementsContainer ;
+            rdfs:comment "A Process that is included within another Process."@en ;
+            rdfs:label "SubProcess"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#SubProcessStartEvent
+:SubProcessStartEvent rdf:type owl:Class ;
+                      rdfs:subClassOf :StartEvent ;
+                      rdfs:label "SubProcessStartEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf :Activity ;
+      rdfs:comment "An atomic activity that is included within a Process. A Task is used when the work in the Process is not broken down to a finer level of Process Model detail. Generally, an end-user, an application, or both will perform the Task. A Task object shares the same shape as the Sub-Process, which is a rectangle that has rounded corners."@en ;
+      rdfs:label "Task"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TechnicalDocument
+:TechnicalDocument rdf:type owl:Class ;
+                   rdfs:subClassOf :DocumentResource ;
+                   rdfs:comment "Specific type of document containing technical information about material or software resources such as the user manual."@en ;
+                   rdfs:label "TechnicalDocument"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Telecommand
+:Telecommand rdf:type owl:Class ;
+             rdfs:subClassOf :DataResource ;
+             rdfs:comment "/"@en ;
+             rdfs:label "Telecommand"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TerminateEvent
+:TerminateEvent rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :has_eventDefinition ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :TerminateEventDefinition
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Event .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TerminateEventDefinition
+:TerminateEventDefinition rdf:type owl:Class ;
+                          rdfs:subClassOf :EventDefinition ;
+                          rdfs:comment "/"@en ;
+                          rdfs:label "TerminateEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#ThrowEvent
+:ThrowEvent rdf:type owl:Class ;
+            rdfs:subClassOf :Event ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_inputSet ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :InputSet
+                            ] ;
+            rdfs:comment "Events that throw a Result. All End Events and some Intermediate Events are throwing Events that MAY eventually be caught by another Event. Typically the trigger carries information out of the scope where the throw Event occurred into the scope of the catching Events. The throwing of a trigger MAY be either implicit as defined by this standard or an extension to it or explicit by a throw Event"@en ;
+            rdfs:label "ThrowEvent"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TimeExpression
+:TimeExpression rdf:type owl:Class ;
+                rdfs:subClassOf :Expression ;
+                rdfs:comment "An expression that specifies a duration, a specific date, or a cycle"@en ;
+                rdfs:label "TimeExpression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TimerEvent
+:TimerEvent rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :has_eventDefinition ;
+                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass :TimerEventDefinition
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :Event ;
+            rdfs:label "TimerEvent" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#TimerEventDefinition
+:TimerEventDefinition rdf:type owl:Class ;
+                      rdfs:subClassOf :EventDefinition ,
+                                      [ rdf:type owl:Class ;
+                                        owl:complementOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeCycle ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeDate ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                              )
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :has_timeDuration ;
+                                                                                  owl:someValuesFrom :Expression
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                      ] ,
+                                      [ rdf:type owl:Class ;
+                                        owl:complementOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeCycle ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeDuration ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                              )
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :has_timeDate ;
+                                                                                  owl:someValuesFrom :Expression
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                      ] ,
+                                      [ rdf:type owl:Class ;
+                                        owl:complementOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeDate ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :has_timeDuration ;
+                                                                                                  owl:someValuesFrom :Expression
+                                                                                                ]
+                                                                                              )
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :has_timeCycle ;
+                                                                                  owl:someValuesFrom :Expression
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_timeCycle ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :Expression
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_timeDate ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :Expression
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_timeDuration ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :Expression
+                                      ] ;
+                      rdfs:comment "/"@en ;
+                      rdfs:label "TimerEventDefinition"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:subClassOf :MaterialResource ;
+      rdfs:comment "/"@en ;
+      rdfs:label "Tool"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Transaction
+:Transaction rdf:type owl:Class ;
+             rdfs:subClassOf :SubProcess ;
+             rdfs:comment "A Sub-Process that represents a set of coordinated activities carried out by independent, loosely-coupled systems in accordance with a contractually defined business relationship. This coordination leads to an agreed, consistent, and verifiable outcome across all participants."@en ;
+             rdfs:label "Transaction"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#UnderspecifiedExpression
+:UnderspecifiedExpression rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :Expression
+                                                                     [ rdf:type owl:Class ;
+                                                                       owl:complementOf :FormalExpression
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :Expression ;
+                          rdfs:label "UnderspecifiedExpression"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#UnitOfMeasure
+:UnitOfMeasure rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :has_unit ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://purl.obolibrary.org/obo/UO_0000000>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :has_prefix ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://purl.obolibrary.org/obo/UO_0000046>
+                               ] ;
+               rdfs:label "UnitOfMeasure" .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#UnspecifiedGateway
+:UnspecifiedGateway rdf:type owl:Class ;
+                    rdfs:subClassOf :Gateway .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#UserManual
+:UserManual rdf:type owl:Class ;
+            rdfs:subClassOf :TechnicalDocument ;
+            rdfs:comment "A user guide intended to give assistance to people using a particular system. Most user guides contain both a written guide and associated images. In the case of computer applications, it is usual to include screenshots of the human-machine interface(s), and hardware manuals often include clear, simplified diagrams."@en ;
+            rdfs:label "UserGuide"@en ,
+                       "UserManual"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#UserTask
+:UserTask rdf:type owl:Class ;
+          rdfs:subClassOf :Task ;
+          rdfs:comment "A User Task is a typical “workflow” Task where a human performer performs the Task with the assistance of a software application and is scheduled through a task list manager of some sort."@en ;
+          rdfs:label "UserTask"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#WorkProcedureDocument
+:WorkProcedureDocument rdf:type owl:Class ;
+                       rdfs:subClassOf :TechnicalDocument ;
+                       rdfs:comment "A document that describes a business process (or a work procedure)"@en ;
+                       rdfs:label "WorkProcedureDocument"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#WorkProduct
+:WorkProduct rdf:type owl:Class ;
+             rdfs:subClassOf :Resource .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ConsumableResource
+                :DataResource
+                :HumanResource
+                :MaterialResource
+                :SoftwareResource
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

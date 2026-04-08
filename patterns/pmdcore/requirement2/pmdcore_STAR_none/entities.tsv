@@ -1,0 +1,48 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+co	co	Entity	https://w3id.org/pmd/co			
+comment	comment	Entity	http://www.w3.org/2000/01/rdf-schema#comment			
+IAO_0000119	IAO_0000119	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000119			
+organizational term	IAO_0000121	Entity	http://purl.obolibrary.org/obo/IAO_0000121			
+altLabel	altLabel	AnnotationProperty	http://www.w3.org/2004/02/skos/core#altLabel			
+example to be eventually removed	IAO_0000002	Entity	http://purl.obolibrary.org/obo/IAO_0000002			
+boolean	boolean	Entity	http://www.w3.org/2001/XMLSchema#boolean			
+IAO_0000114	IAO_0000114	Entity	http://purl.obolibrary.org/obo/IAO_0000114			
+characteristic of	characteristicOf	ObjectProperty	https://w3id.org/pmd/co/characteristicOf	is characteristic of		
+Object	Object	Class	https://w3id.org/pmd/co/Object			
+IAO_0000115	IAO_0000115	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000115			
+Set Point	SetPoint	Class	https://w3id.org/pmd/co/SetPoint			
+requires discussion	IAO_0000428	Entity	http://purl.obolibrary.org/obo/IAO_0000428			
+output	output	ObjectProperty	https://w3id.org/pmd/co/output	has output		
+metadata incomplete	IAO_0000123	Entity	http://purl.obolibrary.org/obo/IAO_0000123			
+definitionSource	definitionSource	AnnotationProperty	https://w3id.org/pmd/co/definitionSource			
+IAO_0000111	IAO_0000111	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000111			
+output of	outputOf	ObjectProperty	https://w3id.org/pmd/co/outputOf	is output of		
+Sekundärdaten	SecondaryData	Class	https://w3id.org/pmd/co/SecondaryData			
+participant of	participantOf	ObjectProperty	https://w3id.org/pmd/co/participantOf	is participant of		
+Primary Data	PrimaryData	Class	https://w3id.org/pmd/co/PrimaryData			
+characteristic	characteristic	ObjectProperty	https://w3id.org/pmd/co/characteristic	has characteristic		
+input of	inputOf	ObjectProperty	https://w3id.org/pmd/co/inputOf	is input of		
+Material Property	MaterialProperty	Class	https://w3id.org/pmd/co/MaterialProperty			
+input	input	ObjectProperty	https://w3id.org/pmd/co/input	has input		
+Messwert	Measurement	Class	https://w3id.org/pmd/co/Measurement			
+isRuleEnabled	isRuleEnabled	AnnotationProperty	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled			
+string	string	Entity	http://www.w3.org/2001/XMLSchema#string			
+wasDerivedFrom	wasDerivedFrom	ObjectProperty	http://www.w3.org/ns/prov#wasDerivedFrom			
+value	value	DatatypeProperty	https://w3id.org/pmd/co/value			
+Material Related	MaterialRelated	Class	https://w3id.org/pmd/co/MaterialRelated			
+metadata complete	IAO_0000120	Entity	http://purl.obolibrary.org/obo/IAO_0000120			
+PlainLiteral	PlainLiteral	Entity	http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral			
+Metadata	Metadata	Class	https://w3id.org/pmd/co/Metadata			
+composed of	composedOf	ObjectProperty	https://w3id.org/pmd/co/composedOf			
+definition	definition	AnnotationProperty	http://www.w3.org/2004/02/skos/core#definition			
+ready for release	IAO_0000122	Entity	http://purl.obolibrary.org/obo/IAO_0000122			
+IAO_0000117	IAO_0000117	AnnotationProperty	http://purl.obolibrary.org/obo/IAO_0000117			
+to be replaced with external ontology term	IAO_0000423	Entity	http://purl.obolibrary.org/obo/IAO_0000423			
+Value Object	ValueObject	Class	https://w3id.org/pmd/co/ValueObject			
+example	example	AnnotationProperty	http://www.w3.org/2004/02/skos/core#example			
+uncurated	IAO_0000124	Entity	http://purl.obolibrary.org/obo/IAO_0000124			
+isDefinedBy	isDefinedBy	Entity	http://www.w3.org/2000/01/rdf-schema#isDefinedBy			
+composes	composes	ObjectProperty	https://w3id.org/pmd/co/composes			
+participant	participant	ObjectProperty	https://w3id.org/pmd/co/participant	has participant		
+pending final vetting	IAO_0000125	Entity	http://purl.obolibrary.org/obo/IAO_0000125			
+label	label	Entity	http://www.w3.org/2000/01/rdf-schema#label			

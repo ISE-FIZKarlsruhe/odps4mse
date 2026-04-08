@@ -1,0 +1,1773 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ise-fizkarlsruhe.github.io/odps4mse/patterns/WILD/requirement1/WILD_STAR_none/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>WILD · requirement1 · WILD_STAR_none - Ontology Design Patterns for Materials Science and Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../overrides/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wild-requirement1-wild_star_none" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-header__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ontology Design Patterns for Materials Science and Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WILD · requirement1 · WILD_STAR_none
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../ProcessODPs/" class="md-tabs__link">
+          
+  
+  
+  Patterns
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../terms/find/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Find Terms
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../community/" class="md-tabs__link">
+          
+  
+  
+  Community
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../cite/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cite
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Ontology Design Patterns for Materials Science and Engineering" class="md-nav__button md-logo" aria-label="Ontology Design Patterns for Materials Science and Engineering" data-md-component="logo">
+      &nbsp;
+    </a>
+    Ontology Design Patterns for Materials Science and Engineering
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/odps4mse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patterns
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Patterns
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ProcessODPs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Process ODPs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ontologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontologies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../terms/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Find Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Community
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Community
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vote & Propose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes &amp; Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qc-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QC Report
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="wild-requirement1-wild_star_none">WILD · requirement1 · WILD_STAR_none</h1>
+<ul>
+<li><strong>Source:</strong> <code>Patterns/WILD/requirement1/WILD_STAR_none.ttl</code>  ·  <strong><a href="WILD_STAR_none.ttl">Download</a></strong></li>
+</ul>
+<p><span class='search-tokens' style='display:none'>atomic activity http://purl.org/wild/vocab# has http://purl.org/wild/vocab#has descendant child composite conditional workflow model accompanying http://purl.org/list/vocab#accompanying parallel instance of http://purl.org/wild/vocab#activity contains http://purl.org/wild/vocab#contains sequential vocab http://purl.org/wild/vocab</span></p>
+<h2 id="visualization">Visualization</h2>
+<div id="ontoink-graph-13" class="ontoink-container" data-ontoink-graph="eyJub2RlcyI6IFt7ImRhdGEiOiB7ImlkIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1BhcmFsbGVsQWN0aXZpdHkiLCAibGFiZWwiOiAiUGFyYWxsZWxBY3Rpdml0eSIsICJ0eXBlIjogIkNsYXNzIiwgImNvbG9yIjogIiNGREZEQzgiLCAic2hhcGUiOiAicmVjdGFuZ2xlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNQYXJhbGxlbEFjdGl2aXR5IiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJsYWJlbCI6ICJDb21wb3NpdGVBY3Rpdml0eSIsICJ0eXBlIjogIkNsYXNzIiwgImNvbG9yIjogIiNGREZEQzgiLCAic2hhcGUiOiAicmVjdGFuZ2xlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjU2VxdWVudGlhbEFjdGl2aXR5IiwgImxhYmVsIjogIlNlcXVlbnRpYWxBY3Rpdml0eSIsICJ0eXBlIjogIkNsYXNzIiwgImNvbG9yIjogIiNGREZEQzgiLCAic2hhcGUiOiAicmVjdGFuZ2xlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNTZXF1ZW50aWFsQWN0aXZpdHkiLCAic291cmNlIjogIiIsICJuYW1lc3BhY2UiOiAiIn19LCB7ImRhdGEiOiB7ImlkIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0NoaWxkQWN0aXZpdHkiLCAibGFiZWwiOiAiaGFzQ2hpbGRBY3Rpdml0eSIsICJ0eXBlIjogIkluZGl2aWR1YWwiLCAiY29sb3IiOiAiI0U2RTZFNiIsICJzaGFwZSI6ICJlbGxpcHNlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXR5IiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBY3Rpdml0eSIsICJsYWJlbCI6ICJBY3Rpdml0eSIsICJ0eXBlIjogIkNsYXNzIiwgImNvbG9yIjogIiNGREZEQzgiLCAic2hhcGUiOiAicmVjdGFuZ2xlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBY3Rpdml0eSIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzQ2hpbGRBY3Rpdml0aWVzIiwgImxhYmVsIjogImhhc0NoaWxkQWN0aXZpdGllcyIsICJ0eXBlIjogIkluZGl2aWR1YWwiLCAiY29sb3IiOiAiI0U2RTZFNiIsICJzaGFwZSI6ICJlbGxpcHNlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXRpZXMiLCAic291cmNlIjogIiIsICJuYW1lc3BhY2UiOiAiIn19LCB7ImRhdGEiOiB7ImlkIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0Rlc2NlbmRhbnRBY3Rpdml0eSIsICJsYWJlbCI6ICJoYXNEZXNjZW5kYW50QWN0aXZpdHkiLCAidHlwZSI6ICJJbmRpdmlkdWFsIiwgImNvbG9yIjogIiNFNkU2RTYiLCAic2hhcGUiOiAiZWxsaXBzZSIsICJpcmkiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzRGVzY2VuZGFudEFjdGl2aXR5IiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNjb250YWluc0FjdGl2aXR5IiwgImxhYmVsIjogImNvbnRhaW5zQWN0aXZpdHkiLCAidHlwZSI6ICJJbmRpdmlkdWFsIiwgImNvbG9yIjogIiNFNkU2RTYiLCAic2hhcGUiOiAiZWxsaXBzZSIsICJpcmkiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjY29udGFpbnNBY3Rpdml0eSIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgImxhYmVsIjogIm5zMjp2b2NhYi5vd2wiLCAidHlwZSI6ICJJbmRpdmlkdWFsIiwgImNvbG9yIjogIiNFNkU2RTYiLCAic2hhcGUiOiAiZWxsaXBzZSIsICJpcmkiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNhY3Rpdml0eUluc3RhbmNlT2YiLCAibGFiZWwiOiAiYWN0aXZpdHlJbnN0YW5jZU9mIiwgInR5cGUiOiAiSW5kaXZpZHVhbCIsICJjb2xvciI6ICIjRTZFNkU2IiwgInNoYXBlIjogImVsbGlwc2UiLCAiaXJpIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2FjdGl2aXR5SW5zdGFuY2VPZiIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29uZGl0aW9uYWxBY3Rpdml0eSIsICJsYWJlbCI6ICJDb25kaXRpb25hbEFjdGl2aXR5IiwgInR5cGUiOiAiQ2xhc3MiLCAiY29sb3IiOiAiI0ZERkRDOCIsICJzaGFwZSI6ICJyZWN0YW5nbGUiLCAiaXJpIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0NvbmRpdGlvbmFsQWN0aXZpdHkiLCAic291cmNlIjogIiIsICJuYW1lc3BhY2UiOiAiIn19LCB7ImRhdGEiOiB7ImlkIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDIvMDcvb3dsI1RyYW5zaXRpdmVQcm9wZXJ0eSIsICJsYWJlbCI6ICJvd2w6VHJhbnNpdGl2ZVByb3BlcnR5IiwgInR5cGUiOiAiQ2xhc3MiLCAiY29sb3IiOiAiI0ZERkRDOCIsICJzaGFwZSI6ICJyZWN0YW5nbGUiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDIvMDcvb3dsI1RyYW5zaXRpdmVQcm9wZXJ0eSIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjV29ya2Zsb3dNb2RlbCIsICJsYWJlbCI6ICJXb3JrZmxvd01vZGVsIiwgInR5cGUiOiAiQ2xhc3MiLCAiY29sb3IiOiAiI0ZERkRDOCIsICJzaGFwZSI6ICJyZWN0YW5nbGUiLCAiaXJpIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1dvcmtmbG93TW9kZWwiLCAic291cmNlIjogIiIsICJuYW1lc3BhY2UiOiAiIn19LCB7ImRhdGEiOiB7ImlkIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0F0b21pY0FjdGl2aXR5IiwgImxhYmVsIjogImhhc0F0b21pY0FjdGl2aXR5IiwgInR5cGUiOiAiSW5kaXZpZHVhbCIsICJjb2xvciI6ICIjRTZFNkU2IiwgInNoYXBlIjogImVsbGlwc2UiLCAiaXJpIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0F0b21pY0FjdGl2aXR5IiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBdG9taWNBY3Rpdml0eSIsICJsYWJlbCI6ICJBdG9taWNBY3Rpdml0eSIsICJ0eXBlIjogIkNsYXNzIiwgImNvbG9yIjogIiNGREZEQzgiLCAic2hhcGUiOiAicmVjdGFuZ2xlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBdG9taWNBY3Rpdml0eSIsICJzb3VyY2UiOiAiIiwgIm5hbWVzcGFjZSI6ICIifX0sIHsiZGF0YSI6IHsiaWQiOiAiaHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nIiwgImxhYmVsIjogIm5zMTphY2NvbXBhbnlpbmciLCAidHlwZSI6ICJJbmRpdmlkdWFsIiwgImNvbG9yIjogIiNFNkU2RTYiLCAic2hhcGUiOiAiZWxsaXBzZSIsICJpcmkiOiAiaHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nIiwgInNvdXJjZSI6ICIiLCAibmFtZXNwYWNlIjogIiJ9fSwgeyJkYXRhIjogeyJpZCI6ICJodHRwOi8vcHVybC5vcmcvbGlzdC92b2NhYi5vd2wiLCAibGFiZWwiOiAibnMzOnZvY2FiLm93bCIsICJ0eXBlIjogIkluZGl2aWR1YWwiLCAiY29sb3IiOiAiI0U2RTZFNiIsICJzaGFwZSI6ICJlbGxpcHNlIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvbGlzdC92b2NhYi5vd2wiLCAic291cmNlIjogIiIsICJuYW1lc3BhY2UiOiAiIn19XSwgImVkZ2VzIjogW3siZGF0YSI6IHsiaWQiOiAiZV8wIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNQYXJhbGxlbEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOnN1YkNsYXNzT2YiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNzdWJDbGFzc09mIiwgImVkZ2VUeXBlIjogInN1YmNsYXNzIiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzM3NDE1MSIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzEiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1NlcXVlbnRpYWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29tcG9zaXRlQWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpzdWJDbGFzc09mIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjc3ViQ2xhc3NPZiIsICJlZGdlVHlwZSI6ICJzdWJjbGFzcyIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMzNzQxNTEiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOnJhbmdlIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjcmFuZ2UiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzMiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0NoaWxkQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0NoaWxkQWN0aXZpdGllcyIsICJsYWJlbCI6ICJuczE6YWNjb21wYW55aW5nIiwgImlyaSI6ICJodHRwOi8vcHVybC5vcmcvbGlzdC92b2NhYiNhY2NvbXBhbnlpbmciLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzQiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0Rlc2NlbmRhbnRBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpyYW5nZSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI3JhbmdlIiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV81IiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNjb250YWluc0FjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV82IiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNhY3Rpdml0eUluc3RhbmNlT2YiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0FjdGl2aXR5IiwgImxhYmVsIjogInJkZnM6cmFuZ2UiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNyYW5nZSIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfNyIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29tcG9zaXRlQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0FjdGl2aXR5IiwgImxhYmVsIjogInJkZnM6c3ViQ2xhc3NPZiIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI3N1YkNsYXNzT2YiLCAiZWRnZVR5cGUiOiAic3ViY2xhc3MiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMzc0MTUxIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfOCIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29uZGl0aW9uYWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjUGFyYWxsZWxBY3Rpdml0eSIsICJsYWJlbCI6ICJvd2w6ZGlzam9pbnRXaXRoIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAyLzA3L293bCNkaXNqb2ludFdpdGgiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzkiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0Rlc2NlbmRhbnRBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMi8wNy9vd2wjVHJhbnNpdGl2ZVByb3BlcnR5IiwgImxhYmVsIjogInJkZjp0eXBlIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjdHlwZSIsICJlZGdlVHlwZSI6ICJyZGYtdHlwZSIsICJsaW5lU3R5bGUiOiAiZGFzaGVkIiwgImxpbmVDb2xvciI6ICIjOWNhM2FmIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMX19LCB7ImRhdGEiOiB7ImlkIjogImVfMTAiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0FjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8xMSIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjUGFyYWxsZWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgImxhYmVsIjogInJkZnM6aXNEZWZpbmVkQnkiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNpc0RlZmluZWRCeSIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMTIiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1BhcmFsbGVsQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1NlcXVlbnRpYWxBY3Rpdml0eSIsICJsYWJlbCI6ICJvd2w6ZGlzam9pbnRXaXRoIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAyLzA3L293bCNkaXNqb2ludFdpdGgiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzEzIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgImxhYmVsIjogInJkZnM6aXNEZWZpbmVkQnkiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNpc0RlZmluZWRCeSIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMTQiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2NvbnRhaW5zQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1dvcmtmbG93TW9kZWwiLCAibGFiZWwiOiAicmRmczpkb21haW4iLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNkb21haW4iLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzE1IiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOmRvbWFpbiIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2RvbWFpbiIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMTYiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1NlcXVlbnRpYWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgImxhYmVsIjogInJkZnM6aXNEZWZpbmVkQnkiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNpc0RlZmluZWRCeSIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMTciLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0Rlc2NlbmRhbnRBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29tcG9zaXRlQWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpkb21haW4iLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNkb21haW4iLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzE4IiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNEZXNjZW5kYW50QWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpzdWJQcm9wZXJ0eU9mIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjc3ViUHJvcGVydHlPZiIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMTkiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0F0b21pY0FjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb21wb3NpdGVBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOmRvbWFpbiIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2RvbWFpbiIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMjAiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0F0b21pY0FjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOnN1YkNsYXNzT2YiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNzdWJDbGFzc09mIiwgImVkZ2VUeXBlIjogInN1YmNsYXNzIiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzM3NDE1MSIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzIxIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNoYXNDaGlsZEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yMiIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzRGVzY2VuZGFudEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yMyIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzQXRvbWljQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bCIsICJsYWJlbCI6ICJyZGZzOmlzRGVmaW5lZEJ5IiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjaXNEZWZpbmVkQnkiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzI0IiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBdG9taWNBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29tcG9zaXRlQWN0aXZpdHkiLCAibGFiZWwiOiAib3dsOmRpc2pvaW50V2l0aCIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMi8wNy9vd2wjZGlzam9pbnRXaXRoIiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yNSIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjYWN0aXZpdHlJbnN0YW5jZU9mIiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yNiIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29uZGl0aW9uYWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29tcG9zaXRlQWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpzdWJDbGFzc09mIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjc3ViQ2xhc3NPZiIsICJlZGdlVHlwZSI6ICJzdWJjbGFzcyIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMzNzQxNTEiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yNyIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjY29udGFpbnNBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQWN0aXZpdHkiLCAibGFiZWwiOiAicmRmczpyYW5nZSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI3JhbmdlIiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yOCIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nIiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvbGlzdC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8yOSIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQ29uZGl0aW9uYWxBY3Rpdml0eSIsICJ0YXJnZXQiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIub3dsIiwgImxhYmVsIjogInJkZnM6aXNEZWZpbmVkQnkiLCAiaXJpIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDEvcmRmLXNjaGVtYSNpc0RlZmluZWRCeSIsICJlZGdlVHlwZSI6ICJvYmplY3QtcHJvcGVydHkiLCAibGluZVN0eWxlIjogInNvbGlkIiwgImxpbmVDb2xvciI6ICIjMjU2M2ViIiwgImFycm93U2hhcGUiOiAidHJpYW5nbGUiLCAiZWRnZVdpZHRoIjogMn19LCB7ImRhdGEiOiB7ImlkIjogImVfMzAiLCAic291cmNlIjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2hhc0F0b21pY0FjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNBdG9taWNBY3Rpdml0eSIsICJsYWJlbCI6ICJyZGZzOnJhbmdlIiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjcmFuZ2UiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzMxIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNXb3JrZmxvd01vZGVsIiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2wiLCAibGFiZWwiOiAicmRmczppc0RlZmluZWRCeSIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2lzRGVmaW5lZEJ5IiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX0sIHsiZGF0YSI6IHsiaWQiOiAiZV8zMiIsICJzb3VyY2UiOiAiaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQXRvbWljQWN0aXZpdHkiLCAidGFyZ2V0IjogImh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bCIsICJsYWJlbCI6ICJyZGZzOmlzRGVmaW5lZEJ5IiwgImlyaSI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjaXNEZWZpbmVkQnkiLCAiZWRnZVR5cGUiOiAib2JqZWN0LXByb3BlcnR5IiwgImxpbmVTdHlsZSI6ICJzb2xpZCIsICJsaW5lQ29sb3IiOiAiIzI1NjNlYiIsICJhcnJvd1NoYXBlIjogInRyaWFuZ2xlIiwgImVkZ2VXaWR0aCI6IDJ9fSwgeyJkYXRhIjogeyJpZCI6ICJlXzMzIiwgInNvdXJjZSI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNDb25kaXRpb25hbEFjdGl2aXR5IiwgInRhcmdldCI6ICJodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYiNTZXF1ZW50aWFsQWN0aXZpdHkiLCAibGFiZWwiOiAib3dsOmRpc2pvaW50V2l0aCIsICJpcmkiOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMi8wNy9vd2wjZGlzam9pbnRXaXRoIiwgImVkZ2VUeXBlIjogIm9iamVjdC1wcm9wZXJ0eSIsICJsaW5lU3R5bGUiOiAic29saWQiLCAibGluZUNvbG9yIjogIiMyNTYzZWIiLCAiYXJyb3dTaGFwZSI6ICJ0cmlhbmdsZSIsICJlZGdlV2lkdGgiOiAyfX1dLCAic2hhY2wiOiBbXSwgIm5hbWVzcGFjZXMiOiB7ImJyaWNrIjogImh0dHBzOi8vYnJpY2tzY2hlbWEub3JnL3NjaGVtYS9CcmljayMiLCAiY3N2dyI6ICJodHRwOi8vd3d3LnczLm9yZy9ucy9jc3Z3IyIsICJkYyI6ICJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIsICJkY2F0IjogImh0dHA6Ly93d3cudzMub3JnL25zL2RjYXQjIiwgImRjbWl0eXBlIjogImh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS8iLCAiZGN0ZXJtcyI6ICJodHRwOi8vcHVybC5vcmcvZGMvdGVybXMvIiwgImRjYW0iOiAiaHR0cDovL3B1cmwub3JnL2RjL2RjYW0vIiwgImRvYXAiOiAiaHR0cDovL3VzZWZ1bGluYy5jb20vbnMvZG9hcCMiLCAiZm9hZiI6ICJodHRwOi8veG1sbnMuY29tL2ZvYWYvMC4xLyIsICJnZW8iOiAiaHR0cDovL3d3dy5vcGVuZ2lzLm5ldC9vbnQvZ2Vvc3BhcnFsIyIsICJvZHJsIjogImh0dHA6Ly93d3cudzMub3JnL25zL29kcmwvMi8iLCAib3JnIjogImh0dHA6Ly93d3cudzMub3JnL25zL29yZyMiLCAicHJvZiI6ICJodHRwOi8vd3d3LnczLm9yZy9ucy9keC9wcm9mLyIsICJwcm92IjogImh0dHA6Ly93d3cudzMub3JnL25zL3Byb3YjIiwgInFiIjogImh0dHA6Ly9wdXJsLm9yZy9saW5rZWQtZGF0YS9jdWJlIyIsICJzY2hlbWEiOiAiaHR0cHM6Ly9zY2hlbWEub3JnLyIsICJzaCI6ICJodHRwOi8vd3d3LnczLm9yZy9ucy9zaGFjbCMiLCAic2tvcyI6ICJodHRwOi8vd3d3LnczLm9yZy8yMDA0LzAyL3Nrb3MvY29yZSMiLCAic29zYSI6ICJodHRwOi8vd3d3LnczLm9yZy9ucy9zb3NhLyIsICJzc24iOiAiaHR0cDovL3d3dy53My5vcmcvbnMvc3NuLyIsICJ0aW1lIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDYvdGltZSMiLCAidmFubiI6ICJodHRwOi8vcHVybC5vcmcvdm9jYWIvdmFubi8iLCAidm9pZCI6ICJodHRwOi8vcmRmcy5vcmcvbnMvdm9pZCMiLCAid2dzIjogImh0dHBzOi8vd3d3LnczLm9yZy8yMDAzLzAxL2dlby93Z3M4NF9wb3MjIn0sICJhY3RpdmVOYW1lc3BhY2VzIjoge30sICJub2RlU3R5bGVzIjogeyJDbGFzcyI6IFsicmVjdGFuZ2xlIiwgIiNGREZEQzgiXSwgIkluZGl2aWR1YWwiOiBbImVsbGlwc2UiLCAiI0U2RTZFNiJdLCAiTGl0ZXJhbCI6IFsiZWxsaXBzZSIsICIjOTNEMDUzIl0sICJEYXRhdHlwZSI6IFsiZGlhbW9uZCIsICIjOTNEMDUzIl0sICJTSEFDTCBTaGFwZSI6IFsicm91bmQtcmVjdGFuZ2xlIiwgIiNBNUYzRkMiXX0sICJlZGdlU3R5bGVzIjogeyJvYmplY3QtcHJvcGVydHkiOiB7ImxpbmVTdHlsZSI6ICJzb2xpZCIsICJjb2xvciI6ICIjMjU2M2ViIiwgImFycm93IjogInRyaWFuZ2xlIiwgIndpZHRoIjogMn0sICJkYXRhLXByb3BlcnR5IjogeyJsaW5lU3R5bGUiOiAic29saWQiLCAiY29sb3IiOiAiIzE2YTM0YSIsICJhcnJvdyI6ICJ0cmlhbmdsZSIsICJ3aWR0aCI6IDEuNX0sICJyZGYtdHlwZSI6IHsibGluZVN0eWxlIjogImRhc2hlZCIsICJjb2xvciI6ICIjOWNhM2FmIiwgImFycm93IjogInRyaWFuZ2xlIiwgIndpZHRoIjogMX0sICJzdWJjbGFzcyI6IHsibGluZVN0eWxlIjogInNvbGlkIiwgImNvbG9yIjogIiMzNzQxNTEiLCAiYXJyb3ciOiAidHJpYW5nbGUiLCAid2lkdGgiOiAyfSwgInNoYWNsLWNvbnN0cmFpbnQiOiB7ImxpbmVTdHlsZSI6ICJkYXNoZWQiLCAiY29sb3IiOiAiIzA4OTFiMiIsICJhcnJvdyI6ICJ0cmlhbmdsZSIsICJ3aWR0aCI6IDN9fSwgInJhd1R0bCI6ICJAcHJlZml4IDogPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiIz4gLlxuQHByZWZpeCBvd2w6IDxodHRwOi8vd3d3LnczLm9yZy8yMDAyLzA3L293bCM+IC5cbkBwcmVmaXggcmRmOiA8aHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIz4gLlxuQHByZWZpeCB4bWw6IDxodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2U+IC5cbkBwcmVmaXggeHNkOiA8aHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjPiAuXG5AcHJlZml4IHJkZnM6IDxodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjPiAuXG5AYmFzZSA8aHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWI+IC5cblxuPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiPiByZGY6dHlwZSBvd2w6T250b2xvZ3kgLlxuXG4jIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjI1xuIyAgICBBbm5vdGF0aW9uIHByb3BlcnRpZXNcbiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nXG48aHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nPiByZGY6dHlwZSBvd2w6QW5ub3RhdGlvblByb3BlcnR5IDtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy9saXN0L3ZvY2FiLm93bD4gLlxuXG5cbiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjXG4jICAgIE9iamVjdCBQcm9wZXJ0aWVzXG4jIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjI1xuXG4jIyMgIGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI2FjdGl2aXR5SW5zdGFuY2VPZlxuOmFjdGl2aXR5SW5zdGFuY2VPZiByZGY6dHlwZSBvd2w6T2JqZWN0UHJvcGVydHkgO1xuICAgICAgICAgICAgICAgICAgICByZGZzOnJhbmdlIDpBY3Rpdml0eSA7XG4gICAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjY29udGFpbnNBY3Rpdml0eVxuOmNvbnRhaW5zQWN0aXZpdHkgcmRmOnR5cGUgb3dsOk9iamVjdFByb3BlcnR5IDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6ZG9tYWluIDpXb3JrZmxvd01vZGVsIDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6cmFuZ2UgOkFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzQXRvbWljQWN0aXZpdHlcbjpoYXNBdG9taWNBY3Rpdml0eSByZGY6dHlwZSBvd2w6T2JqZWN0UHJvcGVydHkgO1xuICAgICAgICAgICAgICAgICAgIHJkZnM6ZG9tYWluIDpDb21wb3NpdGVBY3Rpdml0eSA7XG4gICAgICAgICAgICAgICAgICAgcmRmczpyYW5nZSA6QXRvbWljQWN0aXZpdHkgO1xuICAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzQ2hpbGRBY3Rpdml0eVxuOmhhc0NoaWxkQWN0aXZpdHkgcmRmOnR5cGUgb3dsOk9iamVjdFByb3BlcnR5IDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6c3ViUHJvcGVydHlPZiA6aGFzRGVzY2VuZGFudEFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6ZG9tYWluIDpDb21wb3NpdGVBY3Rpdml0eSA7XG4gICAgICAgICAgICAgICAgICByZGZzOnJhbmdlIDpBY3Rpdml0eSA7XG4gICAgICAgICAgICAgICAgICA8aHR0cDovL3B1cmwub3JnL2xpc3Qvdm9jYWIjYWNjb21wYW55aW5nPiA6aGFzQ2hpbGRBY3Rpdml0aWVzIDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjaGFzRGVzY2VuZGFudEFjdGl2aXR5XG46aGFzRGVzY2VuZGFudEFjdGl2aXR5IHJkZjp0eXBlIG93bDpPYmplY3RQcm9wZXJ0eSAsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG93bDpUcmFuc2l0aXZlUHJvcGVydHkgO1xuICAgICAgICAgICAgICAgICAgICAgICByZGZzOmRvbWFpbiA6Q29tcG9zaXRlQWN0aXZpdHkgO1xuICAgICAgICAgICAgICAgICAgICAgICByZGZzOnJhbmdlIDpBY3Rpdml0eSA7XG4gICAgICAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjXG4jICAgIENsYXNzZXNcbiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQWN0aXZpdHlcbjpBY3Rpdml0eSByZGY6dHlwZSBvd2w6Q2xhc3MgO1xuICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjQXRvbWljQWN0aXZpdHlcbjpBdG9taWNBY3Rpdml0eSByZGY6dHlwZSBvd2w6Q2xhc3MgO1xuICAgICAgICAgICAgICAgIHJkZnM6c3ViQ2xhc3NPZiA6QWN0aXZpdHkgO1xuICAgICAgICAgICAgICAgIG93bDpkaXNqb2ludFdpdGggOkNvbXBvc2l0ZUFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICByZGZzOmlzRGVmaW5lZEJ5IDxodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2w+IC5cblxuXG4jIyMgIGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0NvbXBvc2l0ZUFjdGl2aXR5XG46Q29tcG9zaXRlQWN0aXZpdHkgcmRmOnR5cGUgb3dsOkNsYXNzIDtcbiAgICAgICAgICAgICAgICAgICByZGZzOnN1YkNsYXNzT2YgOkFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgICByZGZzOmlzRGVmaW5lZEJ5IDxodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2w+IC5cblxuXG4jIyMgIGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI0NvbmRpdGlvbmFsQWN0aXZpdHlcbjpDb25kaXRpb25hbEFjdGl2aXR5IHJkZjp0eXBlIG93bDpDbGFzcyA7XG4gICAgICAgICAgICAgICAgICAgICByZGZzOnN1YkNsYXNzT2YgOkNvbXBvc2l0ZUFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgICAgIG93bDpkaXNqb2ludFdpdGggOlBhcmFsbGVsQWN0aXZpdHkgLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6U2VxdWVudGlhbEFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjUGFyYWxsZWxBY3Rpdml0eVxuOlBhcmFsbGVsQWN0aXZpdHkgcmRmOnR5cGUgb3dsOkNsYXNzIDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6c3ViQ2xhc3NPZiA6Q29tcG9zaXRlQWN0aXZpdHkgO1xuICAgICAgICAgICAgICAgICAgb3dsOmRpc2pvaW50V2l0aCA6U2VxdWVudGlhbEFjdGl2aXR5IDtcbiAgICAgICAgICAgICAgICAgIHJkZnM6aXNEZWZpbmVkQnkgPGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiLm93bD4gLlxuXG5cbiMjIyAgaHR0cDovL3B1cmwub3JnL3dpbGQvdm9jYWIjU2VxdWVudGlhbEFjdGl2aXR5XG46U2VxdWVudGlhbEFjdGl2aXR5IHJkZjp0eXBlIG93bDpDbGFzcyA7XG4gICAgICAgICAgICAgICAgICAgIHJkZnM6c3ViQ2xhc3NPZiA6Q29tcG9zaXRlQWN0aXZpdHkgO1xuICAgICAgICAgICAgICAgICAgICByZGZzOmlzRGVmaW5lZEJ5IDxodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2w+IC5cblxuXG4jIyMgIGh0dHA6Ly9wdXJsLm9yZy93aWxkL3ZvY2FiI1dvcmtmbG93TW9kZWxcbjpXb3JrZmxvd01vZGVsIHJkZjp0eXBlIG93bDpDbGFzcyA7XG4gICAgICAgICAgICAgICByZGZzOmlzRGVmaW5lZEJ5IDxodHRwOi8vcHVybC5vcmcvd2lsZC92b2NhYi5vd2w+IC5cblxuXG4jIyMgIEdlbmVyYXRlZCBieSB0aGUgT1dMIEFQSSAodmVyc2lvbiA0LjUuMjkpIGh0dHBzOi8vZ2l0aHViLmNvbS9vd2xjcy9vd2xhcGlcbiIsICJzaGFwZVR0bCI6ICIiLCAidmFsaWRhdGlvbiI6IG51bGx9" data-show-legend="true" data-show-ns="true">
+  <div class="ov-toolbar">
+    <div class="ov-toolbar-group">
+      <button class="ov-btn" onclick="ontoink.zoomIn('ontoink-graph-13')" title="Zoom in">+</button>
+      <button class="ov-btn" onclick="ontoink.zoomOut('ontoink-graph-13')" title="Zoom out">&minus;</button>
+      <button class="ov-btn" onclick="ontoink.fit('ontoink-graph-13')" title="Fit to view">Fit</button>
+      <button class="ov-btn" onclick="ontoink.fullscreen('ontoink-graph-13')" title="Fullscreen">&#x26F6;</button>
+    </div>
+    <div class="ov-toolbar-group">
+      <button class="ov-btn" onclick="ontoink.exportPNG('ontoink-graph-13')" title="Export PNG">PNG</button>
+      <button class="ov-btn" onclick="ontoink.exportSVG('ontoink-graph-13')" title="Export SVG">SVG</button>
+      <button class="ov-btn" onclick="ontoink.downloadTTL('ontoink-graph-13')" title="Download TTL">TTL</button>
+    </div>
+    <div class="ov-toolbar-group">
+      <button class="ov-btn" onclick="ontoink.toggleColors('ontoink-graph-13')" title="Color settings">Colors</button>
+      <button class="ov-btn ov-btn-accent" onclick="ontoink.toggleEditor('ontoink-graph-13')" title="Edit TTL & Validate">Edit &amp; Validate</button>
+    </div>
+  </div>
+  <div class="ov-canvas-wrap" style="position:relative;width:100%;height:500px;">
+    <div class="ov-canvas" style="width:100%;height:100%;"></div>
+    <div class="ov-legend-overlay ov-draggable" style="bottom:12px;left:12px;"></div>
+    <div class="ov-ns-overlay ov-draggable" style="bottom:12px;right:12px;"></div>
+  </div>
+  <div class="ov-editor-panel" style="display:none;">
+    <div class="ov-editor-split">
+      <div class="ov-editor-left">
+        <div class="ov-editor-header">TTL Editor</div>
+        <textarea class="ov-editor-textarea"></textarea>
+      </div>
+      <div class="ov-editor-right">
+        <div class="ov-editor-header">Validation Results</div>
+        <div class="ov-validation-output"></div>
+      </div>
+    </div>
+    <div class="ov-editor-actions">
+      <button class="ov-btn ov-btn-primary" onclick="ontoink.validate('ontoink-graph-13')">Validate</button>
+      <button class="ov-btn" onclick="ontoink.updateGraph('ontoink-graph-13')">Update Graph</button>
+      <button class="ov-btn" onclick="ontoink.resetEditor('ontoink-graph-13')">Reset</button>
+    </div>
+  </div>
+</div>
+
+<h2 id="classes-properties">Classes &amp; Properties</h2>
+<div data-search-exclude>
+- **AtomicActivity** (*Class*) — `AtomicActivity` — <http://purl.org/wild/vocab#AtomicActivity>
+  <span class='search-tokens' style='display:none'>Atomic Activity AtomicActivity atomic activity atomicactivity http://purl.org/wild/vocab# Atomic Activity http://purl.org/wild/vocab# atomic activity http://purl.org/wild/vocab#AtomicActivity http://purl.org/wild/vocab#atomicactivity</span>
+- **hasAtomicActivity** (*ObjectProperty*) — `hasAtomicActivity` — <http://purl.org/wild/vocab#hasAtomicActivity>
+  <span class='search-tokens' style='display:none'>has Atomic Activity has atomic activity hasAtomicActivity hasatomicactivity http://purl.org/wild/vocab#has Atomic Activity http://purl.org/wild/vocab#has atomic activity http://purl.org/wild/vocab#hasAtomicActivity http://purl.org/wild/vocab#hasatomicactivity</span>
+- **hasDescendantActivity** (*ObjectProperty*) — `hasDescendantActivity` — <http://purl.org/wild/vocab#hasDescendantActivity>
+  <span class='search-tokens' style='display:none'>has Descendant Activity has descendant activity hasDescendantActivity hasdescendantactivity http://purl.org/wild/vocab#has Descendant Activity http://purl.org/wild/vocab#has descendant activity http://purl.org/wild/vocab#hasDescendantActivity http://purl.org/wild/vocab#hasdescendantactivity</span>
+- **hasChildActivity** (*ObjectProperty*) — `hasChildActivity` — <http://purl.org/wild/vocab#hasChildActivity>
+  <span class='search-tokens' style='display:none'>has Child Activity has child activity hasChildActivity haschildactivity http://purl.org/wild/vocab#has Child Activity http://purl.org/wild/vocab#has child activity http://purl.org/wild/vocab#hasChildActivity http://purl.org/wild/vocab#haschildactivity</span>
+- **CompositeActivity** (*Class*) — `CompositeActivity` — <http://purl.org/wild/vocab#CompositeActivity>
+  <span class='search-tokens' style='display:none'>Composite Activity CompositeActivity composite activity compositeactivity http://purl.org/wild/vocab# Composite Activity http://purl.org/wild/vocab# composite activity http://purl.org/wild/vocab#CompositeActivity http://purl.org/wild/vocab#compositeactivity</span>
+- **ConditionalActivity** (*Class*) — `ConditionalActivity` — <http://purl.org/wild/vocab#ConditionalActivity>
+  <span class='search-tokens' style='display:none'>Conditional Activity ConditionalActivity conditional activity conditionalactivity http://purl.org/wild/vocab# Conditional Activity http://purl.org/wild/vocab# conditional activity http://purl.org/wild/vocab#ConditionalActivity http://purl.org/wild/vocab#conditionalactivity</span>
+- **WorkflowModel** (*Class*) — `WorkflowModel` — <http://purl.org/wild/vocab#WorkflowModel>
+  <span class='search-tokens' style='display:none'>Workflow Model WorkflowModel http://purl.org/wild/vocab# Workflow Model http://purl.org/wild/vocab# workflow model http://purl.org/wild/vocab#WorkflowModel http://purl.org/wild/vocab#workflowmodel workflow model workflowmodel</span>
+- **accompanying** (*AnnotationProperty*) — `accompanying` — <http://purl.org/list/vocab#accompanying>
+  <span class='search-tokens' style='display:none'>accompanying http://purl.org/list/vocab#accompanying</span>
+- **ParallelActivity** (*Class*) — `ParallelActivity` — <http://purl.org/wild/vocab#ParallelActivity>
+  <span class='search-tokens' style='display:none'>Parallel Activity ParallelActivity http://purl.org/wild/vocab# Parallel Activity http://purl.org/wild/vocab# parallel activity http://purl.org/wild/vocab#ParallelActivity http://purl.org/wild/vocab#parallelactivity parallel activity parallelactivity</span>
+- **activityInstanceOf** (*ObjectProperty*) — `activityInstanceOf` — <http://purl.org/wild/vocab#activityInstanceOf>
+  <span class='search-tokens' style='display:none'>activity Instance Of activity instance of activityInstanceOf activityinstanceof http://purl.org/wild/vocab#activity Instance Of http://purl.org/wild/vocab#activity instance of http://purl.org/wild/vocab#activityInstanceOf http://purl.org/wild/vocab#activityinstanceof</span>
+- **containsActivity** (*ObjectProperty*) — `containsActivity` — <http://purl.org/wild/vocab#containsActivity>
+  <span class='search-tokens' style='display:none'>contains Activity contains activity containsActivity containsactivity http://purl.org/wild/vocab#contains Activity http://purl.org/wild/vocab#contains activity http://purl.org/wild/vocab#containsActivity http://purl.org/wild/vocab#containsactivity</span>
+- **SequentialActivity** (*Class*) — `SequentialActivity` — <http://purl.org/wild/vocab#SequentialActivity>
+  <span class='search-tokens' style='display:none'>Sequential Activity SequentialActivity http://purl.org/wild/vocab# Sequential Activity http://purl.org/wild/vocab# sequential activity http://purl.org/wild/vocab#SequentialActivity http://purl.org/wild/vocab#sequentialactivity sequential activity sequentialactivity</span>
+- **Activity** (*Class*) — `Activity` — <http://purl.org/wild/vocab#Activity>
+  <span class='search-tokens' style='display:none'>Activity activity http://purl.org/wild/vocab# Activity http://purl.org/wild/vocab# activity http://purl.org/wild/vocab#Activity http://purl.org/wild/vocab#activity</span>
+- **vocab** (*Entity*) — `vocab` — <http://purl.org/wild/vocab>
+  <span class='search-tokens' style='display:none'>http://purl.org/wild/vocab vocab</span>
+</div>
+
+<h2 id="metrics">Metrics</h2>
+<p>See metrics (not indexed by search): <a href="metrics/">metrics</a></p>
+<h2 id="qc-report">QC Report</h2>
+<p>See the full report (not indexed by search): <a href="report/">report</a></p>
+<hr />
+<div class="odp-quick-form" style="margin-top:2rem">
+<h3>Feedback on this pattern</h3>
+<p style="font-size:.88rem;color:var(--odp-text-muted);margin-bottom:1rem">Is this pattern useful for your work? Found an issue? Let us know.</p>
+<div style="display:flex;gap:.6rem;flex-wrap:wrap">
+<a class="odp-vote-btn" href="https://github.com/ISE-FIZKarlsruhe/odps4mse/issues/new?title=%5BFeedback%5D+WILD%2Frequirement1%2FWILD_STAR_none&labels=feedback&body=Regarding+**WILD%2Frequirement1%2FWILD_STAR_none**%0A%0A" target="_blank">
+Give Feedback</a>
+<a class="odp-vote-btn" href="https://github.com/ISE-FIZKarlsruhe/odps4mse/issues/new?template=propose-pattern.yml&title=%5BPattern+Proposal%5D+Extend+WILD%2Frequirement1%2FWILD_STAR_none" target="_blank">
+Propose Extension</a>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      <a href="https://www.fiz-karlsruhe.de/en/bereiche/information-service-engineering" target="_blank">Information Service Engineering Group at FIZ Karlsruhe</a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.code.copy", "toc.follow", "navigation.top", "navigation.tabs", "navigation.sections", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.4/dist/cytoscape.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-svg@0.4.0/cytoscape-svg.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/lib/codemirror.min.css">
+<script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/lib/codemirror.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/mode/turtle/turtle.min.js"></script>
+<style>
+/* ontoink — Interactive ontology visualization & validation */
+
+:root {
+  --ov-font: 'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+  --ov-border: #d1d5db;
+  --ov-bg: #fafafa;
+  --ov-bg-toolbar: #f3f4f6;
+  --ov-accent: #0891b2;
+  --ov-pass: #16a34a;
+  --ov-fail: #dc2626;
+  --ov-radius: 8px;
+}
+
+/* ── Container ─────────────────────────────────────────────────── */
+
+.ontoink-container {
+  position: relative;
+  border: 1px solid var(--ov-border);
+  border-radius: var(--ov-radius);
+  margin: 1.5em 0;
+  background: var(--ov-bg);
+  overflow: hidden;
+  font-family: var(--ov-font);
+}
+.ontoink-container:fullscreen { background: #fff; }
+.ontoink-container:fullscreen .ov-canvas { height: calc(100vh - 60px) !important; }
+.ov-canvas { background: #fff; }
+
+/* ── Toolbar ───────────────────────────────────────────────────── */
+
+.ov-toolbar {
+  display: flex; gap: 6px; padding: 6px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  background: var(--ov-bg-toolbar);
+  border-radius: var(--ov-radius) var(--ov-radius) 0 0;
+  flex-wrap: wrap; align-items: center;
+}
+.ov-toolbar-group {
+  display: flex; gap: 3px; align-items: center;
+}
+.ov-toolbar-group:not(:last-child)::after {
+  content: ""; display: block; width: 1px; height: 20px;
+  background: #d1d5db; margin-left: 6px;
+}
+
+.ov-btn {
+  padding: 4px 12px; border: 1px solid var(--ov-border); border-radius: 4px;
+  background: #fff; cursor: pointer; font-size: 13px; font-family: var(--ov-font);
+  color: #374151; transition: background .12s, border-color .12s; line-height: 1.5; white-space: nowrap;
+}
+.ov-btn:hover { background: #e5e7eb; border-color: #9ca3af; }
+.ov-btn:active { background: #d1d5db; }
+.ov-btn-primary { background: var(--ov-accent); color: #fff; border-color: var(--ov-accent); }
+.ov-btn-primary:hover { background: #0e7490; }
+.ov-btn-accent { border-color: var(--ov-accent); color: var(--ov-accent); font-weight: 600; }
+.ov-btn-accent:hover { background: #ecfeff; }
+
+/* ── Popup ─────────────────────────────────────────────────────── */
+
+.ov-popup {
+  position: absolute; z-index: 1000; background: #fff; border: 1px solid var(--ov-border);
+  border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.08);
+  padding: 14px 18px; max-width: 400px; min-width: 220px; font-size: 13px; color: #1f2937;
+  animation: ov-popup-in .15s ease-out;
+}
+@keyframes ov-popup-in { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+.ov-popup-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.ov-popup-label { font-weight: 600; font-size: 14px; flex: 1; word-break: break-word; }
+.ov-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; color: #374151; white-space: nowrap; border: 1px solid rgba(0,0,0,.1); }
+.ov-popup-close { background: none; border: none; font-size: 18px; cursor: pointer; color: #9ca3af; padding: 0 2px; line-height: 1; }
+.ov-popup-close:hover { color: #374151; }
+.ov-popup-iri { margin: 4px 0 6px; padding: 5px 8px; background: #f9fafb; border-radius: 6px; font-size: 11px; word-break: break-all; border: 1px solid #e5e7eb; }
+.ov-popup-iri a { color: #2563eb; text-decoration: none; }
+.ov-popup-iri a:hover { text-decoration: underline; }
+.ov-popup-meta { font-size: 12px; color: #6b7280; margin: 2px 0 6px; }
+.ov-popup-section { margin: 8px 0 4px; font-size: 12px; }
+.ov-popup-edges { margin: 4px 0 0 16px; padding: 0; font-size: 12px; color: #4b5563; }
+.ov-popup-edges li { margin: 2px 0; }
+.ov-popup-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.ov-chip { padding: 3px 10px; border: 1px solid var(--ov-border); border-radius: 6px; background: #f9fafb; cursor: pointer; font-size: 12px; font-family: var(--ov-font); color: #374151; transition: background .12s; white-space: nowrap; }
+.ov-chip:hover { background: #e5e7eb; }
+
+/* ── Draggable Overlay Boxes (legend + prefixes inside canvas) ── */
+
+.ov-canvas-wrap { position: relative; overflow: hidden; }
+
+.ov-draggable {
+  position: absolute;
+  z-index: 100;
+  background: rgba(255,255,255,.93);
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  font-family: var(--ov-font);
+  max-width: 280px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: box-shadow .15s;
+}
+.ov-draggable:hover { box-shadow: 0 4px 16px rgba(0,0,0,.12); }
+.ov-draggable .ov-overlay-body { overflow: auto; }
+
+.ov-overlay-head {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 12px; font-weight: 700; color: #1f2937;
+  user-select: none;
+}
+.ov-overlay-head span { flex: 1; }
+.ov-overlay-close {
+  background: none; border: none; font-size: 16px; cursor: pointer;
+  color: #9ca3af; padding: 0 2px; line-height: 1;
+}
+.ov-overlay-close:hover { color: #374151; }
+.ov-overlay-body { padding: 8px 10px; }
+.ov-overlay-cols { display: flex; gap: 20px; }
+.ov-overlay-col { min-width: 90px; }
+.ov-overlay-col-title {
+  font-size: 9px; font-weight: 700; color: #9ca3af;
+  text-transform: uppercase; letter-spacing: .7px; margin-bottom: 4px;
+}
+.ov-oentry {
+  display: flex; align-items: center; gap: 6px;
+  margin: 3px 0; font-size: 11px; color: #374151; line-height: 1.2;
+}
+.ov-oentry svg { flex-shrink: 0; }
+
+/* Namespace overlay */
+.ov-ns-tags { display: flex; flex-wrap: wrap; gap: 4px; max-width: 260px; }
+.ov-ns-tag {
+  display: inline-block; font-size: 10px; color: #4b5563;
+  background: #f3f4f6; padding: 2px 6px; border-radius: 3px;
+  border: 1px solid #e5e7eb; line-height: 1.3;
+}
+.ov-ns-tag b { color: #3730a3; font-weight: 600; }
+.ov-ns-dim { opacity: .45; }
+.ov-ns-toggle {
+  font-size: 9px; color: var(--ov-accent); background: none;
+  border: 1px solid var(--ov-accent); border-radius: 3px;
+  padding: 1px 5px; cursor: pointer; font-family: var(--ov-font);
+  font-weight: 600;
+}
+.ov-ns-toggle:hover { background: #ecfeff; }
+
+/* Resize handle */
+.ov-resize-handle {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 14px; height: 14px;
+  cursor: nwse-resize;
+  background: linear-gradient(135deg, transparent 50%, #9ca3af 50%, #9ca3af 60%, transparent 60%, transparent 70%, #9ca3af 70%, #9ca3af 80%, transparent 80%);
+  border-radius: 0 0 10px 0;
+  opacity: 0.5;
+}
+.ov-draggable:hover .ov-resize-handle { opacity: 1; }
+
+/* ── Color Panel ───────────────────────────────────────────────── */
+
+.ov-color-panel {
+  position: absolute; top: 42px; right: 8px; z-index: 900;
+  background: #fff; border: 1px solid var(--ov-border); border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15); padding: 0; min-width: 200px;
+  animation: ov-popup-in .15s ease-out;
+}
+.ov-color-panel-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px 8px; border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+.ov-color-section { padding: 8px 14px; }
+.ov-color-section:not(:last-child) { border-bottom: 1px solid #f3f4f6; }
+.ov-color-section-title {
+  font-size: 10px; font-weight: 700; color: #9ca3af;
+  text-transform: uppercase; letter-spacing: .6px; margin-bottom: 6px;
+}
+.ov-color-row {
+  display: flex; align-items: center; gap: 8px;
+  margin: 4px 0; font-size: 12px; color: #374151;
+}
+.ov-color-input {
+  width: 28px; height: 22px; border: 1px solid #d1d5db;
+  border-radius: 4px; padding: 0; cursor: pointer; background: none;
+}
+.ov-color-input::-webkit-color-swatch-wrapper { padding: 2px; }
+.ov-color-input::-webkit-color-swatch { border: none; border-radius: 2px; }
+
+/* ── Editor Panel ──────────────────────────────────────────────── */
+
+.ov-editor-panel { border-top: 2px solid var(--ov-accent); background: #f9fafb; }
+.ov-editor-split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 300px; }
+.ov-editor-left { border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; }
+.ov-editor-right { display: flex; flex-direction: column; overflow: auto; }
+.ov-editor-header { padding: 6px 12px; font-size: 12px; font-weight: 700; color: #374151; background: #f3f4f6; border-bottom: 1px solid #e5e7eb; text-transform: uppercase; letter-spacing: .5px; }
+.ov-editor-textarea { width: 100%; height: 300px; border: none; resize: none; font-family: 'Fira Code','JetBrains Mono','Cascadia Code',monospace; font-size: 13px; padding: 10px 12px; background: #fff; color: #1f2937; line-height: 1.5; }
+.ov-editor-textarea:focus { outline: none; }
+.ov-editor-left .CodeMirror { height: 300px; font-family: 'Fira Code','JetBrains Mono','Cascadia Code',monospace; font-size: 13px; border: none; }
+.ov-editor-actions { display: flex; gap: 6px; padding: 8px 12px; border-top: 1px solid #e5e7eb; background: #f3f4f6; }
+
+/* ── Validation ────────────────────────────────────────────────── */
+
+.ov-validation-output { padding: 12px; font-size: 13px; overflow: auto; max-height: 280px; }
+.ov-val-pass { color: var(--ov-pass); font-weight: 600; padding: 8px 12px; background: #f0fdf4; border-radius: 6px; border: 1px solid #bbf7d0; }
+.ov-val-fail { color: var(--ov-fail); font-weight: 600; padding: 8px 12px; background: #fef2f2; border-radius: 6px; border: 1px solid #fecaca; margin-bottom: 8px; }
+.ov-val-info { color: #6b7280; padding: 8px 12px; background: #f9fafb; border-radius: 6px; font-style: italic; }
+.ov-val-icon { font-size: 16px; margin-right: 4px; }
+.ov-val-list { margin: 4px 0 0 8px; padding: 0 0 0 16px; color: #374151; font-weight: 400; font-size: 12px; }
+.ov-val-list li { margin: 6px 0; line-height: 1.4; }
+
+/* ── Error ─────────────────────────────────────────────────────── */
+
+.ov-error { color: var(--ov-fail); background: #fef2f2; border: 1px solid #fecaca; padding: 16px; border-radius: var(--ov-radius); margin: 1em 0; font-family: var(--ov-font); font-size: 13px; }
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .ov-editor-split { grid-template-columns: 1fr; }
+  .ov-editor-left { border-right: none; border-bottom: 1px solid #e5e7eb; }
+  .ov-legend-content { flex-direction: column; gap: 8px; }
+}
+
+</style>
+<script>
+/**
+ * ontoink.js v0.2.0 — Interactive ontology visualization with formal notation,
+ * draggable legend/prefix overlays, inline TTL editing, SHACL validation, and color customization.
+ */
+var ontoink = (function () {
+  "use strict";
+
+  var instances = {};
+
+  // ── Helpers ──────────────────────────────────────────────────────────────
+
+  function esc(s) { return s ? s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;") : ""; }
+  function copyText(t, btn) { navigator.clipboard.writeText(t).catch(function(){}); var o=btn.textContent; btn.textContent="Copied!"; setTimeout(function(){btn.textContent=o;},1200); }
+  function removePopup(c) { var o=c.querySelector(".ov-popup"); if(o) o.remove(); }
+
+  // ── Drag support for overlay boxes ──────────────────────────────────────
+
+  function makeDraggable(el) {
+    var ox, oy, sx, sy, dragging = false;
+    var handle = el.querySelector(".ov-overlay-head") || el;
+    handle.style.cursor = "grab";
+    handle.addEventListener("mousedown", function(e) {
+      if (e.target.tagName === "BUTTON" || e.target.tagName === "INPUT") return;
+      dragging = true; handle.style.cursor = "grabbing";
+      var rect = el.getBoundingClientRect();
+      var parentRect = el.parentElement.getBoundingClientRect();
+      ox = rect.left - parentRect.left; oy = rect.top - parentRect.top;
+      sx = e.clientX; sy = e.clientY;
+      e.preventDefault();
+    });
+    document.addEventListener("mousemove", function(e) {
+      if (!dragging) return;
+      el.style.left = (ox + e.clientX - sx) + "px";
+      el.style.top = (oy + e.clientY - sy) + "px";
+      el.style.bottom = "auto"; el.style.right = "auto";
+    });
+    document.addEventListener("mouseup", function() { if (dragging) { dragging = false; handle.style.cursor = "grab"; } });
+
+    // Resize handle
+    var resizer = document.createElement("div");
+    resizer.className = "ov-resize-handle";
+    el.appendChild(resizer);
+    var rw, rh, rsx, rsy, resizing = false;
+    resizer.addEventListener("mousedown", function(e) {
+      resizing = true; rw = el.offsetWidth; rh = el.offsetHeight; rsx = e.clientX; rsy = e.clientY;
+      e.preventDefault(); e.stopPropagation();
+    });
+    document.addEventListener("mousemove", function(e) {
+      if (!resizing) return;
+      el.style.width = Math.max(140, rw + e.clientX - rsx) + "px";
+      el.style.maxWidth = "none";
+    });
+    document.addEventListener("mouseup", function() { resizing = false; });
+  }
+
+  // ── Canvas 2D drawing for export overlays ───────────────────────────────
+
+  function drawRoundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.arcTo(x+w,y,x+w,y+r,r);
+    ctx.lineTo(x+w,y+h-r); ctx.arcTo(x+w,y+h,x+w-r,y+h,r);
+    ctx.lineTo(x+r,y+h); ctx.arcTo(x,y+h,x,y+h-r,r);
+    ctx.lineTo(x,y+r); ctx.arcTo(x,y,x+r,y,r);
+    ctx.closePath();
+  }
+
+  var EDGE_DEFS_EXPORT = {
+    "object-property": { l:"Object Property", c:"#2563eb", dash:false, fill:true, bold:false },
+    "data-property":   { l:"Data Property",   c:"#16a34a", dash:true,  fill:false, bold:false },
+    "rdf-type":        { l:"rdf:type",         c:"#9ca3af", dash:true,  fill:false, bold:false },
+    "subclass":        { l:"rdfs:subClassOf",  c:"#374151", dash:false, fill:true,  bold:false },
+    "shacl-constraint":{ l:"SHACL Constraint", c:"#0891b2", dash:true,  fill:true,  bold:true },
+  };
+
+  function drawLegendBox(ctx, data, x, y, s) {
+    var font = function(w, sz) { return w+" "+(sz*s)+"px Inter,Segoe UI,system-ui,sans-serif"; };
+    var pad = 12*s, row = 20*s, iconSz = 14*s, gap = 8*s, r = 8*s;
+
+    var usedTypes = {}, usedEdge = {};
+    data.nodes.forEach(function(n) { usedTypes[n.data.type] = n.data.color; });
+    data.edges.forEach(function(e) { usedEdge[e.data.edgeType] = true; });
+    var nodeKeys = Object.keys(usedTypes), edgeKeys = Object.keys(usedEdge);
+    var maxRows = Math.max(nodeKeys.length, edgeKeys.length);
+    var boxW = 300*s, boxH = pad*2 + row*(maxRows+2);
+
+    // Background
+    drawRoundRect(ctx, x, y, boxW, boxH, r);
+    ctx.fillStyle = "rgba(255,255,255,0.95)"; ctx.fill();
+    ctx.strokeStyle = "#d1d5db"; ctx.lineWidth = 1.5*s; ctx.stroke();
+
+    var ty = y + pad;
+    ctx.font = font("700",12); ctx.fillStyle = "#1f2937";
+    ctx.fillText("Legend", x+pad, ty+12*s); ty += row+2*s;
+
+    var col1 = x+pad, col2 = x + boxW/2 + 4*s;
+
+    // Nodes column
+    ctx.font = font("700",8.5); ctx.fillStyle = "#9ca3af";
+    ctx.fillText("NODES", col1, ty+9*s);
+    var ny = ty + row*0.8;
+    nodeKeys.forEach(function(t) {
+      var c = usedTypes[t], ix = col1, iy = ny+1*s;
+      if (t === "Class") {
+        ctx.fillStyle = c; ctx.fillRect(ix, iy, iconSz, iconSz*0.65);
+        ctx.strokeStyle = "#555"; ctx.lineWidth = 1.5*s; ctx.strokeRect(ix, iy, iconSz, iconSz*0.65);
+      } else if (t === "Individual") {
+        ctx.fillStyle = c; ctx.strokeStyle = "#999"; ctx.lineWidth = 1*s;
+        ctx.beginPath(); ctx.arc(ix+iconSz/2, iy+iconSz*0.32, iconSz*0.32, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      } else if (t === "Literal") {
+        ctx.fillStyle = c; ctx.strokeStyle = "#6a9"; ctx.lineWidth = 1*s;
+        ctx.setLineDash([3*s,2*s]);
+        ctx.beginPath(); ctx.ellipse(ix+iconSz/2, iy+iconSz*0.32, iconSz*0.45, iconSz*0.28, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+        ctx.setLineDash([]);
+      } else {
+        ctx.fillStyle = c; ctx.fillRect(ix, iy, iconSz, iconSz*0.65);
+        ctx.strokeStyle = "#888"; ctx.lineWidth = 1*s; ctx.strokeRect(ix, iy, iconSz, iconSz*0.65);
+      }
+      ctx.font = font("400",10); ctx.fillStyle = "#374151";
+      ctx.fillText(t, ix+iconSz+gap, ny+10*s);
+      ny += row*0.85;
+    });
+
+    // Edges column
+    ctx.font = font("700",8.5); ctx.fillStyle = "#9ca3af";
+    ctx.fillText("EDGES", col2, ty+9*s);
+    var ey = ty + row*0.8;
+    edgeKeys.forEach(function(t) {
+      var d = EDGE_DEFS_EXPORT[t] || {l:t,c:"#999",dash:false,fill:true,bold:false};
+      var lx = col2, ly = ey+7*s, len = 24*s;
+      ctx.strokeStyle = d.c; ctx.lineWidth = (d.bold?2.5:1.5)*s;
+      if (d.dash) ctx.setLineDash([4*s,2*s]); else ctx.setLineDash([]);
+      ctx.beginPath(); ctx.moveTo(lx,ly); ctx.lineTo(lx+len,ly); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = d.fill ? d.c : "#fff"; ctx.strokeStyle = d.c; ctx.lineWidth = 1*s;
+      ctx.beginPath(); ctx.moveTo(lx+len,ly); ctx.lineTo(lx+len-5*s,ly-3.5*s); ctx.lineTo(lx+len-5*s,ly+3.5*s); ctx.closePath(); ctx.fill(); ctx.stroke();
+      ctx.font = font("400",10); ctx.fillStyle = "#374151";
+      ctx.fillText(d.l, lx+len+gap+2*s, ey+10*s);
+      ey += row*0.85;
+    });
+
+    return boxH;
+  }
+
+  function drawNsBox(ctx, data, x, y, s) {
+    var font = function(w, sz) { return w+" "+(sz*s)+"px Inter,Segoe UI,system-ui,sans-serif"; };
+    var pad = 10*s, row = 16*s, r = 8*s;
+    var ns = data.activeNamespaces || {};
+    var keys = Object.keys(ns).sort();
+    if (!keys.length) return 0;
+
+    var boxW = 300*s, boxH = pad*2 + row*(keys.length+1);
+
+    drawRoundRect(ctx, x, y, boxW, boxH, r);
+    ctx.fillStyle = "rgba(255,255,255,0.95)"; ctx.fill();
+    ctx.strokeStyle = "#d1d5db"; ctx.lineWidth = 1.5*s; ctx.stroke();
+
+    var ty = y + pad;
+    ctx.font = font("700",10); ctx.fillStyle = "#1f2937";
+    ctx.fillText("Prefixes", x+pad, ty+10*s); ty += row+2*s;
+
+    keys.forEach(function(p) {
+      ctx.font = font("600",9); ctx.fillStyle = "#3730a3";
+      ctx.fillText(p+":", x+pad, ty+9*s);
+      var pw = ctx.measureText(p+": ").width;
+      ctx.font = font("400",8.5); ctx.fillStyle = "#6b7280";
+      ctx.fillText(ns[p], x+pad+pw, ty+9*s);
+      ty += row*0.85;
+    });
+
+    return boxH;
+  }
+
+  // ── Popup ────────────────────────────────────────────────────────────────
+
+  function buildPopup(d, cy) {
+    var bc = { Class:"#FDFDC8", Individual:"#E6E6E6", Literal:"#93D053", "SHACL Shape":"#A5F3FC" };
+    var html = '<div class="ov-popup-head"><span class="ov-popup-label">' + esc(d.label) + '</span><span class="ov-badge" style="background:' + (bc[d.type]||"#eee") + '">' + esc(d.type) + '</span><button class="ov-popup-close">&times;</button></div>';
+    if (d.iri) html += '<div class="ov-popup-iri"><a href="' + esc(d.iri) + '" target="_blank">' + esc(d.iri) + '</a></div>';
+    if (d.source) html += '<div class="ov-popup-meta">Ontology: <strong>' + esc(d.source) + '</strong></div>';
+    var node = cy.getElementById(d.id), edges = node.connectedEdges();
+    if (edges.length) {
+      html += '<div class="ov-popup-section"><strong>Connections:</strong><ul class="ov-popup-edges">';
+      edges.forEach(function(e) { var ed=e.data(), oth=ed.source===d.id?ed.target:ed.source; html+='<li>'+(ed.source===d.id?"\u2192":"\u2190")+' <em>'+esc(ed.label)+'</em> '+esc(cy.getElementById(oth).data("label")||oth)+'</li>'; });
+      html += '</ul></div>';
+    }
+    var shacl = instances[node.cy().container().closest(".ontoink-container").id]?.data?.shacl || [];
+    var rel = shacl.filter(function(c){return c.targetClass===d.iri;});
+    if (rel.length) {
+      html += '<div class="ov-popup-section"><strong>SHACL Constraints:</strong><ul class="ov-popup-edges">';
+      rel.forEach(function(c) { var cd = c.minCount!=null?"["+c.minCount+".."+(c.maxCount!=null?c.maxCount:"*")+"]":""; html+='<li>'+esc(c.pathLabel||c.path||"")+' '+cd+(c.message?'<br><small>'+esc(c.message)+'</small>':'')+'</li>'; });
+      html += '</ul></div>';
+    }
+    html += '<div class="ov-popup-actions"><button class="ov-chip" data-action="copy-label">Copy Label</button>';
+    if (d.iri) html += '<button class="ov-chip" data-action="copy-iri">Copy IRI</button>';
+    return html + '</div>';
+  }
+
+  // ── Legend overlay (inside canvas) ──────────────────────────────────────
+
+  function buildLegendOverlay(container, data) {
+    var el = container.querySelector(".ov-legend-overlay");
+    if (!el) return;
+    if (container.getAttribute("data-show-legend") === "false") { el.style.display = "none"; return; }
+
+    var usedTypes = {}, usedEdge = {};
+    data.nodes.forEach(function(n) { usedTypes[n.data.type] = n.data.color; });
+    data.edges.forEach(function(e) { usedEdge[e.data.edgeType] = true; });
+
+    var icons = {
+      Class:        '<svg width="18" height="13"><rect x="1" y="1" width="16" height="11" rx="2" fill="'+(usedTypes.Class||"#FDFDC8")+'" stroke="#555" stroke-width="1.5"/></svg>',
+      Individual:   '<svg width="18" height="13"><ellipse cx="9" cy="6.5" rx="7" ry="5" fill="#E6E6E6" stroke="#999" stroke-width="1"/></svg>',
+      Literal:      '<svg width="18" height="13"><ellipse cx="9" cy="6.5" rx="7" ry="4" fill="#93D053" stroke="#6a9" stroke-width="1" stroke-dasharray="2,1"/></svg>',
+      Datatype:     '<svg width="18" height="13"><polygon points="9,1 17,6.5 9,12 1,6.5" fill="#93D053" stroke="#6a9" stroke-width="1"/></svg>',
+      "SHACL Shape":'<svg width="18" height="13"><rect x="1" y="1" width="16" height="11" rx="5" fill="#A5F3FC" stroke="#0891b2" stroke-width="1"/></svg>',
+    };
+    var edgeDefs = {
+      "object-property": { l:"Object Property", c:"#2563eb", d:"", f:true },
+      "data-property":   { l:"Data Property",   c:"#16a34a", d:"3,2", f:false },
+      "rdf-type":        { l:"rdf:type",         c:"#9ca3af", d:"4,2", f:false },
+      "subclass":        { l:"rdfs:subClassOf",  c:"#374151", d:"", f:true },
+      "shacl-constraint":{ l:"SHACL Constraint", c:"#0891b2", d:"4,2", f:true },
+    };
+
+    var html = '<div class="ov-overlay-head"><span>Legend</span><button class="ov-overlay-close" onclick="this.closest(\'.ov-legend-overlay\').style.display=\'none\'">&times;</button></div>';
+    html += '<div class="ov-overlay-body"><div class="ov-overlay-cols">';
+
+    html += '<div class="ov-overlay-col"><div class="ov-overlay-col-title">Nodes</div>';
+    Object.keys(usedTypes).forEach(function(t) { html += '<div class="ov-oentry">' + (icons[t]||icons.Class) + '<span>' + esc(t) + '</span></div>'; });
+    html += '</div>';
+
+    html += '<div class="ov-overlay-col"><div class="ov-overlay-col-title">Edges</div>';
+    Object.keys(usedEdge).forEach(function(t) {
+      var d = edgeDefs[t] || { l:t, c:"#999", d:"", f:true };
+      var da = d.d ? ' stroke-dasharray="'+d.d+'"' : '';
+      html += '<div class="ov-oentry"><svg width="34" height="12"><line x1="0" y1="6" x2="22" y2="6" stroke="'+d.c+'" stroke-width="'+(t==="shacl-constraint"?2.5:1.5)+'"'+da+'/><polygon points="22,2 32,6 22,10" fill="'+(d.f?d.c:"none")+'" stroke="'+d.c+'" stroke-width="0.8"/></svg><span>'+esc(d.l)+'</span></div>';
+    });
+    html += '</div></div></div>';
+    el.innerHTML = html;
+    el.style.display = "";
+    makeDraggable(el);
+  }
+
+  function buildNsOverlay(container, data) {
+    var el = container.querySelector(".ov-ns-overlay");
+    if (!el) return;
+    if (container.getAttribute("data-show-ns") === "false") { el.style.display = "none"; return; }
+
+    var activeNs = data.activeNamespaces || {};
+    var allNs = data.namespaces || {};
+    var activeKeys = Object.keys(activeNs).sort();
+    var allKeys = Object.keys(allNs).sort();
+    if (activeKeys.length === 0 && allKeys.length === 0) { el.style.display = "none"; return; }
+
+    var cid = container.id;
+    var hasHidden = allKeys.length > activeKeys.length;
+    var html = '<div class="ov-overlay-head"><span>Prefixes</span>';
+    if (hasHidden) html += '<button class="ov-ns-toggle" onclick="ontoink.toggleAllNs(\'' + cid + '\')">Show all</button>';
+    html += '<button class="ov-overlay-close" onclick="this.closest(\'.ov-ns-overlay\').style.display=\'none\'">&times;</button></div>';
+    html += '<div class="ov-overlay-body"><div class="ov-ns-tags">';
+    activeKeys.forEach(function(p) { html += '<span class="ov-ns-tag"><b>' + esc(p) + ':</b> ' + esc(activeNs[p]) + '</span>'; });
+    if (hasHidden) {
+      html += '<span class="ov-ns-all" style="display:none;">';
+      allKeys.forEach(function(p) { if (!activeNs[p]) html += '<span class="ov-ns-tag ov-ns-dim"><b>' + esc(p) + ':</b> ' + esc(allNs[p]) + '</span>'; });
+      html += '</span>';
+    }
+    html += '</div></div>';
+    el.innerHTML = html;
+    el.style.display = "";
+    makeDraggable(el);
+  }
+
+  // ── Init Graph ──────────────────────────────────────────────────────────
+
+  function initGraph(containerId) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    var b64 = container.getAttribute("data-ontoink-graph");
+    if (!b64) return;
+    var data; try { data = JSON.parse(atob(b64)); } catch(e) { return; }
+    var canvas = container.querySelector(".ov-canvas");
+    if (!canvas) return;
+
+    var cy = cytoscape({
+      container: canvas,
+      elements: { nodes: data.nodes, edges: data.edges },
+      style: [
+        { selector: "node", style: { "label":"data(label)","background-color":"data(color)","shape":"data(shape)","text-valign":"center","text-halign":"center","width":"label","height":"label","padding":"14px","font-size":"12px","font-family":"'Inter','Segoe UI',system-ui,sans-serif","text-wrap":"wrap","text-max-width":"160px","border-width":1,"border-color":"#aaa","border-opacity":0.6,"color":"#222" }},
+        { selector: 'node[type="Class"]', style: { "font-weight":"600","border-width":2,"border-color":"#666","shape":"rectangle" }},
+        { selector: 'node[type="Individual"]', style: { "shape":"ellipse" }},
+        { selector: 'node[type="Literal"]', style: { "shape":"ellipse","font-style":"italic","font-size":"11px","border-style":"dashed","border-color":"#6a9" }},
+        { selector: 'node[type="Datatype"]', style: { "shape":"diamond" }},
+        { selector: 'node[type="SHACL Shape"]', style: { "shape":"round-rectangle","border-color":"#0891b2" }},
+        { selector: "node:selected", style: { "border-width":3,"border-color":"#0891b2" }},
+        { selector: "edge[edgeType='object-property']", style: { "label":"data(label)","curve-style":"bezier","target-arrow-shape":"triangle","target-arrow-fill":"filled","source-arrow-shape":"circle","source-arrow-fill":"filled","line-color":"#2563eb","target-arrow-color":"#2563eb","source-arrow-color":"#2563eb","width":2,"font-size":"10px","text-rotation":"autorotate","text-margin-y":-10,"color":"#2563eb","text-background-color":"#fff","text-background-opacity":0.9,"text-background-padding":"2px","font-family":"'Inter','Segoe UI',system-ui,sans-serif" }},
+        { selector: "edge[edgeType='data-property']", style: { "label":"data(label)","curve-style":"bezier","target-arrow-shape":"triangle","target-arrow-fill":"hollow","source-arrow-shape":"circle","source-arrow-fill":"hollow","line-color":"#16a34a","target-arrow-color":"#16a34a","source-arrow-color":"#16a34a","width":1.5,"font-size":"10px","text-rotation":"autorotate","text-margin-y":-10,"color":"#16a34a","text-background-color":"#fff","text-background-opacity":0.9,"text-background-padding":"2px","font-family":"'Inter','Segoe UI',system-ui,sans-serif" }},
+        { selector: "edge[edgeType='rdf-type']", style: { "label":"data(label)","curve-style":"bezier","target-arrow-shape":"triangle","target-arrow-fill":"hollow","line-style":"dashed","line-color":"#9ca3af","target-arrow-color":"#9ca3af","width":1,"font-size":"9px","text-rotation":"autorotate","text-margin-y":-10,"color":"#888","text-background-color":"#fff","text-background-opacity":0.9,"text-background-padding":"2px","font-family":"'Inter','Segoe UI',system-ui,sans-serif" }},
+        { selector: "edge[edgeType='subclass']", style: { "label":"data(label)","curve-style":"bezier","target-arrow-shape":"triangle","target-arrow-fill":"filled","line-color":"#374151","target-arrow-color":"#374151","width":2,"font-size":"9px","text-rotation":"autorotate","text-margin-y":-10,"color":"#555","text-background-color":"#fff","text-background-opacity":0.9,"text-background-padding":"2px","font-family":"'Inter','Segoe UI',system-ui,sans-serif" }},
+        { selector: "edge[edgeType='shacl-constraint']", style: { "label":"data(label)","curve-style":"bezier","target-arrow-shape":"triangle","target-arrow-fill":"filled","line-style":"dashed","line-color":"#0891b2","target-arrow-color":"#0891b2","width":3,"font-size":"11px","font-weight":"bold","text-rotation":"autorotate","text-margin-y":-12,"color":"#0891b2","text-background-color":"#fff","text-background-opacity":0.95,"text-background-padding":"3px","font-family":"'Inter','Segoe UI',system-ui,sans-serif" }},
+      ],
+      layout: { name:"dagre", rankDir:"BT", nodeSep:60, rankSep:80, edgeSep:20, animate:false, fit:true, padding:30 },
+      wheelSensitivity: 0.3, minZoom: 0.15, maxZoom: 5,
+    });
+
+    instances[containerId] = { cy:cy, data:data, editor:null, originalTtl:data.rawTtl||"" };
+
+    cy.on("tap", "node", function(evt) {
+      removePopup(container);
+      var d=evt.target.data(), pos=evt.renderedPosition;
+      var popup=document.createElement("div"); popup.className="ov-popup"; popup.innerHTML=buildPopup(d,cy);
+      var cR=canvas.getBoundingClientRect(), pR=container.getBoundingClientRect();
+      popup.style.left=(cR.left-pR.left+pos.x+15)+"px"; popup.style.top=(cR.top-pR.top+pos.y-15)+"px";
+      container.appendChild(popup);
+      requestAnimationFrame(function(){var r=popup.getBoundingClientRect();if(r.right>pR.right-10)popup.style.left=(parseFloat(popup.style.left)-r.width-30)+"px";if(r.bottom>pR.bottom-10)popup.style.top=(parseFloat(popup.style.top)-r.height)+"px";});
+      popup.querySelector(".ov-popup-close").addEventListener("click",function(){popup.remove();});
+      popup.querySelectorAll(".ov-chip").forEach(function(b){b.addEventListener("click",function(){copyText(b.dataset.action==="copy-iri"?d.iri:d.label,b);});});
+    });
+    cy.on("tap", function(e) { if(e.target===cy) removePopup(container); });
+
+    buildLegendOverlay(container, data);
+    buildNsOverlay(container, data);
+
+    var ta = container.querySelector(".ov-editor-textarea");
+    if (ta && data.rawTtl) ta.value = data.rawTtl;
+    if (data.validation) { var o=container.querySelector(".ov-validation-output"); if(o) renderValidation(o,data.validation); }
+  }
+
+  // ── Editor ──────────────────────────────────────────────────────────────
+
+  function toggleEditor(id) {
+    var c=document.getElementById(id),p=c.querySelector(".ov-editor-panel"),inst=instances[id]; if(!p)return;
+    var v=p.style.display!=="none"; p.style.display=v?"none":"block";
+    if(!v&&!inst.editor&&typeof CodeMirror!=="undefined"){inst.editor=CodeMirror.fromTextArea(c.querySelector(".ov-editor-textarea"),{mode:"turtle",lineNumbers:true,lineWrapping:true,theme:"default",viewportMargin:Infinity});inst.editor.setSize(null,"300px");}
+  }
+  function getEditorValue(id) { var i=instances[id]; if(!i)return""; if(i.editor)return i.editor.getValue(); var t=document.getElementById(id).querySelector(".ov-editor-textarea"); return t?t.value:""; }
+
+  // ── Validation ──────────────────────────────────────────────────────────
+
+  function validate(id) {
+    var inst=instances[id]; if(!inst)return;
+    var outEl=document.getElementById(id).querySelector(".ov-validation-output"); if(!outEl)return;
+    var ttl=getEditorValue(id), sc=inst.data.shacl||[];
+    if(!sc.length){renderValidation(outEl,{conforms:null,violations:[],report:"No SHACL shapes defined."});return;}
+    var parsed=parseTtlMinimal(ttl), triples=parsed.triples, violations=[];
+    sc.forEach(function(c){
+      if(!c.targetClass||!c.path)return;
+      var ti=[];
+      triples.forEach(function(t){if(t.p==="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"&&t.o===c.targetClass)ti.push(t.s);});
+      if(!ti.length)triples.forEach(function(t){if(t.p==="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")triples.forEach(function(t2){if(t2.s===t.o&&t2.p==="http://www.w3.org/2000/01/rdf-schema#subClassOf"&&t2.o===c.targetClass)ti.push(t.s);});});
+      ti.forEach(function(inst){var cnt=0;triples.forEach(function(t){if(t.s===inst&&t.p===c.path)cnt++;});
+        if(c.minCount!=null&&cnt<c.minCount)violations.push({focusNode:inst,path:c.path,message:c.message||("Expected min "+c.minCount+" for "+(c.pathLabel||c.path)+", found "+cnt)});
+        if(c.maxCount!=null&&cnt>c.maxCount)violations.push({focusNode:inst,path:c.path,message:c.message||("Expected max "+c.maxCount+" for "+(c.pathLabel||c.path)+", found "+cnt)});
+      });
+    });
+    renderValidation(outEl,{conforms:!violations.length,violations:violations,report:violations.length?violations.length+" violation(s) found.":"All constraints satisfied."});
+  }
+  function renderValidation(el,r){
+    if(r.conforms===null){el.innerHTML='<div class="ov-val-info">'+esc(r.report)+'</div>';return;}
+    var h=r.conforms?'<div class="ov-val-pass"><span class="ov-val-icon">&#x2714;</span> Conforms</div>':'<div class="ov-val-fail"><span class="ov-val-icon">&#x2718;</span> '+esc(r.report)+'</div>';
+    if(!r.conforms){h+='<ul class="ov-val-list">';(r.violations||[]).forEach(function(v){h+='<li><strong>'+esc((v.focusNode||"").split("/").pop().split("#").pop())+'</strong>: '+esc(v.message)+'</li>';});h+='</ul>';}
+    el.innerHTML=h;
+  }
+
+  // ── TTL Parser ──────────────────────────────────────────────────────────
+
+  function parseTtlMinimal(ttl){var pf={},tr=[];var re=/@prefix\s+(\w*)\s*:\s*<([^>]+)>\s*\./g,m;while((m=re.exec(ttl))!==null)pf[m[1]]=m[2];
+    function res(t){t=t.trim();if(t[0]==="<"&&t[t.length-1]===">")return t.slice(1,-1);if(t==="a")return"http://www.w3.org/1999/02/22-rdf-syntax-ns#type";var ci=t.indexOf(":");if(ci>=0){var p=t.substring(0,ci);if(pf[p]!==undefined)return pf[p]+t.substring(ci+1);}return t;}
+    var lines=ttl.split("\n").map(function(l){var inA=false;for(var i=0;i<l.length;i++){if(l[i]==="<")inA=true;if(l[i]===">")inA=false;if(l[i]==="#"&&!inA)return l.substring(0,i);}return l;});
+    var cl=lines.join("\n").replace(/@prefix[^.]*\.\s*/g,"").replace(/@base[^.]*\.\s*/g,"");
+    cl.split(/\.\s*(?=\S|$)/).forEach(function(st){st=st.trim();if(!st)return;var tk=tokenize(st);if(tk.length<3)return;var s=res(tk[0]),i=1;
+      while(i<tk.length-1){var p=res(tk[i]);i++;while(i<tk.length){var o=tk[i];i++;if(o===";")break;if(o===",")continue;tr.push({s:s,p:p,o:res(o)});if(i<tk.length&&tk[i]===","){i++;continue;}if(i<tk.length&&tk[i]===";"){i++;break;}}}});
+    return{triples:tr,prefixes:pf};}
+  function tokenize(t){var tk=[],i=0;while(i<t.length){while(i<t.length&&/\s/.test(t[i]))i++;if(i>=t.length)break;
+    if(t[i]==="<"){var e=t.indexOf(">",i);if(e<0)e=t.length-1;tk.push(t.substring(i,e+1));i=e+1;}
+    else if(t[i]==='"'){var j=i+1;while(j<t.length&&t[j]!=='"'){if(t[j]==="\\")j++;j++;}j++;while(j<t.length&&(t[j]==="@"||t[j]==="^")){if(t[j]==="@"){j++;while(j<t.length&&/[a-zA-Z-]/.test(t[j]))j++;}if(j<t.length&&t[j]==="^"&&t[j+1]==="^"){j+=2;if(t[j]==="<")j=t.indexOf(">",j)+1;else while(j<t.length&&/\S/.test(t[j])&&t[j]!==";"&&t[j]!==",")j++;}}tk.push(t.substring(i,j));i=j;}
+    else if(t[i]===";"||t[i]===","){tk.push(t[i]);i++;}
+    else{var s=i;while(i<t.length&&!/[\s;,]/.test(t[i]))i++;tk.push(t.substring(s,i));}}return tk;}
+
+  // ── Ontology source detection ──────────────────────────────────────────
+
+  var OC=[["purl.obolibrary.org/obo/BFO_","BFO","#F556CB"],["purl.obolibrary.org/obo/IAO_","IAO","#F6A252"],["purl.obolibrary.org/obo/RO_","RO","#F43F5E"],["purl.obolibrary.org/obo/OBI_","OBI","#F5D5B1"],["nfdi.fiz-karlsruhe.de/ontology/","nfdicore","#7777BB"],["w3id.org/pmd/","PMD","#46CAD3"],["qudt.org/","QUDT","#C9DBFE"],["schema.org/","schema","#E8D44D"],["xmlns.com/foaf/","FOAF","#4682B4"]];
+  function detectSource(u){for(var i=0;i<OC.length;i++)if(u.indexOf(OC[i][0])>=0)return{name:OC[i][1],color:OC[i][2]};return{name:"",color:"#FDFDC8"};}
+  function uriLabel(u,pf){if(pf){var bp="",bu="";for(var p in pf)if(u.indexOf(pf[p])===0&&pf[p].length>bu.length){bp=p;bu=pf[p];}if(bu)return bp?(bp+":"+u.substring(bu.length)):u.substring(bu.length);}var l=u.indexOf("#")>=0?u.split("#").pop():u.split("/").pop();var s=detectSource(u);return s.name?(s.name.toLowerCase()+":"+l):l;}
+  function litVal(r){if(r[0]==='"'){var e=r.lastIndexOf('"');if(e>0)return r.substring(1,e);}return r;}
+  function hashStr(s){var h=0;for(var i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return h;}
+
+  // ── Update Graph ───────────────────────────────────────────────────────
+
+  function updateGraph(id){var inst=instances[id];if(!inst)return;var p=parseTtlMinimal(getEditorValue(id)),tr=p.triples,pf=p.prefixes;
+    var labels={},nodes={},edges=[],classes={};
+    var RT="http://www.w3.org/1999/02/22-rdf-syntax-ns#type",SC="http://www.w3.org/2000/01/rdf-schema#subClassOf",RL="http://www.w3.org/2000/01/rdf-schema#label";
+    tr.forEach(function(t){if(t.p===RL&&t.o[0]==='"')labels[t.s]=litVal(t.o);});
+    tr.forEach(function(t){if(t.p===RT)classes[t.o]=true;if(t.p===SC){classes[t.s]=true;classes[t.o]=true;}});
+    function en(u){if(nodes[u]||u[0]==='"')return;var ic=classes[u]||false,s=detectSource(u);nodes[u]={data:{id:u,label:labels[u]||uriLabel(u,pf),type:ic?"Class":"Individual",color:ic?s.color:"#E6E6E6",shape:ic?"rectangle":"ellipse",iri:u,source:s.name,namespace:""}};}
+    tr.forEach(function(t){
+      if(t.p===RL){var li="lit_"+Math.abs(hashStr(t.s+t.p+t.o))%999999;if(!nodes[li])nodes[li]={data:{id:li,label:litVal(t.o),type:"Literal",color:"#93D053",shape:"ellipse",iri:"",source:"",namespace:""}};en(t.s);edges.push({data:{id:"e_"+edges.length,source:t.s,target:li,label:uriLabel(t.p,pf),iri:t.p,edgeType:"data-property"}});return;}
+      en(t.s);if(t.o[0]==='"'){var li2="lit_"+Math.abs(hashStr(t.s+t.p+t.o))%999999;if(!nodes[li2])nodes[li2]={data:{id:li2,label:litVal(t.o),type:"Literal",color:"#93D053",shape:"ellipse",iri:"",source:"",namespace:""}};edges.push({data:{id:"e_"+edges.length,source:t.s,target:li2,label:uriLabel(t.p,pf),iri:t.p,edgeType:"data-property"}});}
+      else{en(t.o);var et=t.p===RT?"rdf-type":t.p===SC?"subclass":"object-property";var sm=null;(inst.data.shacl||[]).forEach(function(c){if(c.path===t.p)sm=c;});
+        if(sm){var cd="["+(sm.minCount!=null?sm.minCount:0)+".."+(sm.maxCount!=null?sm.maxCount:"*")+"]";edges.push({data:{id:"e_"+edges.length,source:t.s,target:t.o,label:uriLabel(t.p,pf)+" "+cd,iri:t.p,edgeType:"shacl-constraint",cardinality:cd,message:sm.message||""}});}
+        else edges.push({data:{id:"e_"+edges.length,source:t.s,target:t.o,label:uriLabel(t.p,pf),iri:t.p,edgeType:et}});}
+    });
+    var cy=inst.cy;cy.elements().remove();cy.add(Object.values(nodes).concat(edges));
+    cy.layout({name:"dagre",rankDir:"BT",nodeSep:60,rankSep:80,animate:false,fit:true,padding:30}).run();
+    var c=document.getElementById(id);
+    buildLegendOverlay(c,{nodes:Object.values(nodes),edges:edges,namespaces:pf,activeNamespaces:pf,shacl:inst.data.shacl});
+    buildNsOverlay(c,{namespaces:pf,activeNamespaces:pf});
+  }
+
+  function resetEditor(id){var inst=instances[id];if(!inst)return;
+    if(inst.editor)inst.editor.setValue(inst.originalTtl);else{var ta=document.getElementById(id).querySelector(".ov-editor-textarea");if(ta)ta.value=inst.originalTtl;}
+    inst.cy.elements().remove();inst.cy.add(inst.data.nodes.concat(inst.data.edges));
+    inst.cy.layout({name:"dagre",rankDir:"BT",nodeSep:60,rankSep:80,animate:false,fit:true,padding:30}).run();
+    var c=document.getElementById(id);buildLegendOverlay(c,inst.data);buildNsOverlay(c,inst.data);
+    var o=c.querySelector(".ov-validation-output");if(o&&inst.data.validation)renderValidation(o,inst.data.validation);
+  }
+
+  // ── Color Customization ────────────────────────────────────────────────
+
+  function toggleColors(id){
+    var c=document.getElementById(id),ex=c.querySelector(".ov-color-panel");if(ex){ex.remove();return;}
+    var inst=instances[id];if(!inst)return;
+    var sources={},types={};
+    inst.cy.nodes().forEach(function(n){var d=n.data();if(d.source)sources[d.source]=d.color;types[d.type]=d.color;});
+    var panel=document.createElement("div");panel.className="ov-color-panel";
+    var h='<div class="ov-color-panel-head"><strong>Colors</strong><button class="ov-popup-close" onclick="this.closest(\'.ov-color-panel\').remove()">&times;</button></div>';
+    h+='<div class="ov-color-section"><div class="ov-color-section-title">Node Types</div>';
+    Object.keys(types).forEach(function(t){h+='<div class="ov-color-row"><input type="color" value="'+types[t]+'" data-kind="type" data-key="'+esc(t)+'" class="ov-color-input"><span>'+esc(t)+'</span></div>';});
+    h+='</div>';
+    if(Object.keys(sources).length){h+='<div class="ov-color-section"><div class="ov-color-section-title">Namespaces</div>';
+      Object.keys(sources).sort().forEach(function(s){h+='<div class="ov-color-row"><input type="color" value="'+sources[s]+'" data-kind="source" data-key="'+esc(s)+'" class="ov-color-input"><span>'+esc(s)+'</span></div>';});
+      h+='</div>';}
+    panel.innerHTML=h;c.appendChild(panel);
+    panel.querySelectorAll(".ov-color-input").forEach(function(inp){inp.addEventListener("input",function(){
+      var kind=inp.dataset.kind,key=inp.dataset.key,col=inp.value;
+      inst.cy.nodes().forEach(function(n){var d=n.data();if(kind==="type"&&d.type===key)n.data("color",col);if(kind==="source"&&d.source===key&&d.type==="Class")n.data("color",col);});
+    });});
+  }
+
+  // ── Toolbar ─────────────────────────────────────────────────────────────
+
+  function zoomIn(id){var cy=instances[id]?.cy;if(cy)cy.zoom({level:cy.zoom()*1.25,renderedPosition:{x:cy.width()/2,y:cy.height()/2}});}
+  function zoomOut(id){var cy=instances[id]?.cy;if(cy)cy.zoom({level:cy.zoom()/1.25,renderedPosition:{x:cy.width()/2,y:cy.height()/2}});}
+  function fit(id){var cy=instances[id]?.cy;if(cy)cy.fit(null,30);}
+  function fullscreen(id){var el=document.getElementById(id);if(document.fullscreenElement===el)document.exitFullscreen();else el.requestFullscreen().catch(function(){});}
+
+  // ── Export (draws legend/prefixes at their overlay positions) ───────────
+
+  function exportPNG(id){
+    var inst=instances[id];if(!inst)return;
+    var c=document.getElementById(id);
+    var legendEl=c.querySelector(".ov-legend-overlay");
+    var nsEl=c.querySelector(".ov-ns-overlay");
+    var showLegend = legendEl && legendEl.style.display !== "none";
+    var showNs = nsEl && nsEl.style.display !== "none";
+    var scale=3;
+    var graphUrl=inst.cy.png({scale:scale,bg:"#ffffff",full:true});
+
+    var graphImg=new Image();
+    graphImg.onload=function(){
+      // Measure legend and ns box heights
+      var legendH = 0, nsH = 0, pad = 16*scale, boxGap = 8*scale;
+      var tempC = document.createElement("canvas"); tempC.width = graphImg.width; tempC.height = 1;
+      var tempCtx = tempC.getContext("2d");
+      if (showLegend) legendH = drawLegendBox(tempCtx, inst.data, 0, 0, scale);
+      if (showNs) nsH = drawNsBox(tempCtx, inst.data, 0, 0, scale);
+
+      var extraH = 0;
+      if (showLegend || showNs) extraH = pad + (showLegend ? legendH + boxGap : 0) + (showNs ? nsH : 0) + pad;
+
+      var finalCanvas=document.createElement("canvas");
+      finalCanvas.width=graphImg.width;
+      finalCanvas.height=graphImg.height + extraH;
+      var ctx=finalCanvas.getContext("2d");
+      ctx.fillStyle="#fff";ctx.fillRect(0,0,finalCanvas.width,finalCanvas.height);
+      ctx.drawImage(graphImg,0,0);
+
+      // Draw legend and ns below the graph, side by side if they fit, stacked otherwise
+      var bx = pad, by = graphImg.height + pad;
+      if (showLegend) {
+        drawLegendBox(ctx, inst.data, bx, by, scale);
+      }
+      if (showNs) {
+        // Place ns box to the right of legend if both fit, otherwise below
+        var nsX = showLegend ? bx + 310*scale : bx;
+        var nsY = (showLegend && nsX + 310*scale < graphImg.width) ? by : by + (showLegend ? legendH + boxGap : 0);
+        drawNsBox(ctx, inst.data, nsX, nsY, scale);
+      }
+
+      var a=document.createElement("a");a.href=finalCanvas.toDataURL("image/png");a.download=id+".png";a.click();
+    };
+    graphImg.src=graphUrl;
+  }
+
+  function exportSVG(id){
+    var inst=instances[id];if(!inst)return;
+    var cy=inst.cy;
+    // For SVG: render the graph, then append a legend group below
+    try{
+      var svgStr=cy.svg({scale:1,full:true,bg:"#fff"});
+      // Parse SVG, get dimensions, add legend below
+      var parser=new DOMParser();
+      var doc=parser.parseFromString(svgStr,"image/svg+xml");
+      var svgEl=doc.querySelector("svg");
+      var origW=parseFloat(svgEl.getAttribute("width"))||800;
+      var origH=parseFloat(svgEl.getAttribute("height"))||600;
+
+      // Build legend as SVG group
+      var usedTypes={},usedEdge={};
+      inst.data.nodes.forEach(function(n){usedTypes[n.data.type]=n.data.color;});
+      inst.data.edges.forEach(function(e){usedEdge[e.data.edgeType]=true;});
+      var nodeKeys=Object.keys(usedTypes),edgeKeys=Object.keys(usedEdge);
+      var ns=inst.data.activeNamespaces||{};var nsKeys=Object.keys(ns).sort();
+
+      var legendY=origH+10, pad=12, row=18, legendH=pad*2+row*(Math.max(nodeKeys.length,edgeKeys.length)+2);
+      var nsExtraH = nsKeys.length ? row*(nsKeys.length+2)+8 : 0;
+      var totalH = origH + legendH + nsExtraH + 30;
+      svgEl.setAttribute("height", totalH);
+      // Also update viewBox if present, or remove clip
+      var vb = svgEl.getAttribute("viewBox");
+      if (vb) {
+        var parts = vb.split(/[\s,]+/);
+        parts[3] = totalH;
+        svgEl.setAttribute("viewBox", parts.join(" "));
+      }
+
+      var g=doc.createElementNS("http://www.w3.org/2000/svg","g");
+      g.setAttribute("transform","translate("+pad+","+legendY+")");
+
+      // Legend box background
+      var rect=doc.createElementNS("http://www.w3.org/2000/svg","rect");
+      rect.setAttribute("x","0");rect.setAttribute("y","0");rect.setAttribute("width",Math.min(origW-pad*2,320));rect.setAttribute("height",legendH);
+      rect.setAttribute("rx","8");rect.setAttribute("fill","rgba(255,255,255,0.95)");rect.setAttribute("stroke","#d1d5db");rect.setAttribute("stroke-width","1.5");
+      g.appendChild(rect);
+
+      // Title
+      var title=doc.createElementNS("http://www.w3.org/2000/svg","text");
+      title.setAttribute("x",pad);title.setAttribute("y",pad+12);title.setAttribute("font-family","Inter,Segoe UI,sans-serif");title.setAttribute("font-size","12");title.setAttribute("font-weight","700");title.setAttribute("fill","#1f2937");
+      title.textContent="Legend";g.appendChild(title);
+
+      // Node entries
+      var ty=pad+row+6;
+      var hdr=doc.createElementNS("http://www.w3.org/2000/svg","text");
+      hdr.setAttribute("x",pad);hdr.setAttribute("y",ty+9);hdr.setAttribute("font-family","Inter,sans-serif");hdr.setAttribute("font-size","8.5");hdr.setAttribute("font-weight","700");hdr.setAttribute("fill","#9ca3af");
+      hdr.textContent="NODES";g.appendChild(hdr);ty+=row*0.8;
+
+      nodeKeys.forEach(function(t){
+        var c=usedTypes[t];
+        if(t==="Class"){var r2=doc.createElementNS("http://www.w3.org/2000/svg","rect");r2.setAttribute("x",pad);r2.setAttribute("y",ty);r2.setAttribute("width","14");r2.setAttribute("height","9");r2.setAttribute("rx","1");r2.setAttribute("fill",c);r2.setAttribute("stroke","#555");r2.setAttribute("stroke-width","1.5");g.appendChild(r2);}
+        else if(t==="Individual"){var ci=doc.createElementNS("http://www.w3.org/2000/svg","circle");ci.setAttribute("cx",pad+7);ci.setAttribute("cy",ty+4.5);ci.setAttribute("r","5");ci.setAttribute("fill",c);ci.setAttribute("stroke","#999");g.appendChild(ci);}
+        else if(t==="Literal"){var el2=doc.createElementNS("http://www.w3.org/2000/svg","ellipse");el2.setAttribute("cx",pad+7);el2.setAttribute("cy",ty+4.5);el2.setAttribute("rx","7");el2.setAttribute("ry","4");el2.setAttribute("fill",c);el2.setAttribute("stroke","#6a9");el2.setAttribute("stroke-dasharray","2,1");g.appendChild(el2);}
+        var lbl=doc.createElementNS("http://www.w3.org/2000/svg","text");lbl.setAttribute("x",pad+22);lbl.setAttribute("y",ty+9);lbl.setAttribute("font-family","Inter,sans-serif");lbl.setAttribute("font-size","10");lbl.setAttribute("fill","#374151");lbl.textContent=t;g.appendChild(lbl);
+        ty+=row*0.85;
+      });
+
+      // Edge entries
+      var col2=160;ty=pad+row+6;
+      var hdr2=doc.createElementNS("http://www.w3.org/2000/svg","text");hdr2.setAttribute("x",col2);hdr2.setAttribute("y",ty+9);hdr2.setAttribute("font-family","Inter,sans-serif");hdr2.setAttribute("font-size","8.5");hdr2.setAttribute("font-weight","700");hdr2.setAttribute("fill","#9ca3af");hdr2.textContent="EDGES";g.appendChild(hdr2);ty+=row*0.8;
+
+      edgeKeys.forEach(function(t){
+        var d=EDGE_DEFS_EXPORT[t]||{l:t,c:"#999",dash:false,fill:true,bold:false};
+        var line=doc.createElementNS("http://www.w3.org/2000/svg","line");
+        line.setAttribute("x1",col2);line.setAttribute("y1",ty+7);line.setAttribute("x2",col2+24);line.setAttribute("y2",ty+7);
+        line.setAttribute("stroke",d.c);line.setAttribute("stroke-width",d.bold?"2.5":"1.5");
+        if(d.dash)line.setAttribute("stroke-dasharray","4,2");g.appendChild(line);
+        var arrow=doc.createElementNS("http://www.w3.org/2000/svg","polygon");
+        arrow.setAttribute("points",(col2+24)+","+(ty+7)+" "+(col2+19)+","+(ty+3.5)+" "+(col2+19)+","+(ty+10.5));
+        arrow.setAttribute("fill",d.fill?d.c:"none");arrow.setAttribute("stroke",d.c);arrow.setAttribute("stroke-width","0.8");g.appendChild(arrow);
+        var lbl2=doc.createElementNS("http://www.w3.org/2000/svg","text");lbl2.setAttribute("x",col2+32);lbl2.setAttribute("y",ty+10);lbl2.setAttribute("font-family","Inter,sans-serif");lbl2.setAttribute("font-size","10");lbl2.setAttribute("fill","#374151");lbl2.textContent=d.l;g.appendChild(lbl2);
+        ty+=row*0.85;
+      });
+
+      // Extend background rect if present
+      var bgRect = svgEl.querySelector("rect");
+      if (bgRect && bgRect.getAttribute("fill") === "#fff") {
+        bgRect.setAttribute("height", totalH);
+      }
+
+      svgEl.appendChild(g);
+
+      // Namespace group
+      if(nsKeys.length){
+        var g2=doc.createElementNS("http://www.w3.org/2000/svg","g");
+        g2.setAttribute("transform","translate("+pad+","+(legendY+legendH+8)+")");
+        var nsH=pad*2+row*(nsKeys.length+1);
+        var r3=doc.createElementNS("http://www.w3.org/2000/svg","rect");r3.setAttribute("x","0");r3.setAttribute("y","0");r3.setAttribute("width",Math.min(origW-pad*2,320));r3.setAttribute("height",nsH);r3.setAttribute("rx","8");r3.setAttribute("fill","rgba(255,255,255,0.95)");r3.setAttribute("stroke","#d1d5db");r3.setAttribute("stroke-width","1.5");g2.appendChild(r3);
+        var t3=doc.createElementNS("http://www.w3.org/2000/svg","text");t3.setAttribute("x",pad);t3.setAttribute("y",pad+10);t3.setAttribute("font-family","Inter,sans-serif");t3.setAttribute("font-size","10");t3.setAttribute("font-weight","700");t3.setAttribute("fill","#1f2937");t3.textContent="Prefixes";g2.appendChild(t3);
+        var ny2=pad+row+2;
+        nsKeys.forEach(function(p){
+          var t4=doc.createElementNS("http://www.w3.org/2000/svg","text");t4.setAttribute("x",pad);t4.setAttribute("y",ny2+9);t4.setAttribute("font-family","Inter,sans-serif");t4.setAttribute("font-size","9");
+          var ts1=doc.createElementNS("http://www.w3.org/2000/svg","tspan");ts1.setAttribute("font-weight","600");ts1.setAttribute("fill","#3730a3");ts1.textContent=p+": ";t4.appendChild(ts1);
+          var ts2=doc.createElementNS("http://www.w3.org/2000/svg","tspan");ts2.setAttribute("fill","#6b7280");ts2.textContent=ns[p];t4.appendChild(ts2);
+          g2.appendChild(t4);ny2+=row*0.85;
+        });
+        svgEl.appendChild(g2);
+      }
+
+      var finalSvg=new XMLSerializer().serializeToString(svgEl);
+      var b=new Blob([finalSvg],{type:"image/svg+xml"});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=id+".svg";a.click();URL.revokeObjectURL(a.href);
+    }catch(e){console.error(e);alert("SVG export failed.");}
+  }
+
+  function downloadTTL(id){var inst=instances[id];if(!inst)return;var ttl=inst.editor?inst.editor.getValue():inst.originalTtl;if(!ttl){alert("No TTL data.");return;}var b=new Blob([ttl],{type:"text/turtle"});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=id+".ttl";a.click();URL.revokeObjectURL(a.href);}
+
+  function toggleAllNs(id){var c=document.getElementById(id);if(!c)return;var a=c.querySelector(".ov-ns-all"),b=c.querySelector(".ov-ns-toggle");if(!a)return;var h=a.style.display==="none";a.style.display=h?"inline":"none";if(b)b.textContent=h?"Hide unused":"Show all";}
+
+  // ── Auto-init ──────────────────────────────────────────────────────────
+
+  document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".ontoink-container").forEach(function(el){initGraph(el.id);});});
+
+  return { zoomIn:zoomIn, zoomOut:zoomOut, fit:fit, fullscreen:fullscreen, exportPNG:exportPNG, exportSVG:exportSVG, downloadTTL:downloadTTL, toggleEditor:toggleEditor, validate:validate, updateGraph:updateGraph, resetEditor:resetEditor, toggleAllNs:toggleAllNs, toggleColors:toggleColors };
+})();
+
+</script>
+</body>
+</html>

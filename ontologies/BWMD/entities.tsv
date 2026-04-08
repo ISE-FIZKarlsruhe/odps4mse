@@ -1,0 +1,804 @@
+LABEL	LOCAL	TYPE	IRI	ALT_LABELS	SYNONYMS	COMMENT
+ObjectAggregate	ObjectAggregate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ObjectAggregate			Class defined by the Basic Formal Ontology (BFO)
+CastingRelatedSubprocess	CastingRelatedSubprocess	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingRelatedSubprocess			Casting related subprocesses, that are not described within PrimaryShapingOfLiquidState (e.g. the act of melting, the act of casting the melt into the mold...)
+ProducerName	ProducerName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProducerName			Name of the producer of any kind of product
+Strontium	Strontium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Strontium			
+Magnesium	Magnesium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Magnesium			
+Rubidium	Rubidium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rubidium			
+Ratio	Ratio	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Ratio			
+Xenon	Xenon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Xenon			
+StrainRelatedQuantity	StrainRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StrainRelatedQuantity			
+Caesium	Caesium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Caesium			
+IndentationForceBrinell	IndentationForceBrinell	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IndentationForceBrinell			Applied indentation force within the Brinell indentation process
+HeatingEquipment	HeatingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatingEquipment			
+NickelAlloy	NickelAlloy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NickelAlloy			
+SolutionAnnealingDuration	SolutionAnnealingDuration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolutionAnnealingDuration			The duration of the solution annealing process, i.e. of the time spent at the solution annealing temperature
+Process	Process	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Process			Class defined by the Basic Formal Ontology (BFO)
+MarkAndLabelBlankAccordingToWithdrawalPlan	MarkAndLabelBlankAccordingToWithdrawalPlan	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MarkAndLabelBlankAccordingToWithdrawalPlan			The process of marking and labeling any kind of blank according to some kind of withdrawal plan
+Milling	Milling	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Milling			
+HotTensileTest	HotTensileTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HotTensileTest			
+Phase	Phase	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Phase			
+ThermophysicalExperiment	ThermophysicalExperiment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermophysicalExperiment			
+DensityAsSupposed	DensityAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DensityAsSupposed			density as supposed
+Zirconium	Zirconium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Zirconium			
+Density	Density	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Density			Density: Mass/Volume
+Lead	Lead	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Lead			
+MatterObject	MatterObject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MatterObject			
+CompressionForming	CompressionForming	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CompressionForming			
+File	File	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#File			
+Coating	Coating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Coating			
+DecimalSeparatorComma	DecimalSeparatorComma	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DecimalSeparatorComma			
+GrainStructure	GrainStructure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrainStructure			
+MaterialSurfaceStructureInfo	MaterialSurfaceStructureInfo	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfaceStructureInfo			
+Rhenium	Rhenium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rhenium			
+GrindingAndPolishingEquipment	GrindingAndPolishingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrindingAndPolishingEquipment			Grinding and polishing equipment (e.g. used for metallographic specimen preparation)
+Velocity	Velocity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Velocity			
+TensileTest	TensileTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TensileTest			A uniaxial tensile test
+SpecificDataFormat	SpecificDataFormat	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecificDataFormat			Any kind of specific data format, e.g. file types like .txt, .xls, .png, .pdf, ...
+LabInfrastructureEquipment	LabInfrastructureEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LabInfrastructureEquipment			
+Polonium	Polonium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Polonium			
+FatigueTestSpecimen	FatigueTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FatigueTestSpecimen			
+SpecimenPreparation	SpecimenPreparation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenPreparation			
+BaseUnit	BaseUnit	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BaseUnit			
+InertGasAtmosphere	InertGasAtmosphere	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InertGasAtmosphere			An inert gas atmosphere in some kind of chamber, which is used within a process
+MaterialNamingConventionJIS	MaterialNamingConventionJIS	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionJIS			
+PrecipitateMeanDistance	PrecipitateMeanDistance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrecipitateMeanDistance			
+Consumable	Consumable	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Consumable			"Consumables are products that consumers use recurrently, i.e., items which ""get used up"" or discarded."
+Potassium	Potassium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Potassium			
+DirectEnergyDeposition	DirectEnergyDeposition	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DirectEnergyDeposition			
+Interpolation	Interpolation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Interpolation			
+RealizableEntity	RealizableEntity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RealizableEntity			Class defined by the Basic Formal Ontology (BFO)
+HeatTreatment	HeatTreatment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTreatment			
+TrueStress	TrueStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TrueStress			
+MaterialTemperatureAsIs	MaterialTemperatureAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialTemperatureAsIs			
+ArtificialAgingTemperature	ArtificialAgingTemperature	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ArtificialAgingTemperature			The temperature controlled during artificial aging
+ThermomechanicalFatigueTest	ThermomechanicalFatigueTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermomechanicalFatigueTest			
+Europium	Europium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Europium			
+ThermalSpraying	ThermalSpraying	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermalSpraying			
+ProcessExecution	ProcessExecution	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessExecution			The process of executing any kind of process
+ColumnNumber	ColumnNumber	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ColumnNumber			
+NotchEdgeLength	NotchEdgeLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NotchEdgeLength			
+MoldTemperatureAsIs	MoldTemperatureAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MoldTemperatureAsIs			Temperature of the mold as is during permanent mold casting
+PersonName	PersonName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PersonName			
+ProcessBoundary	ProcessBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessBoundary			Class defined by the Basic Formal Ontology (BFO)
+MaterialNamingConvention	MaterialNamingConvention	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConvention			
+TXTFile	TXTFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TXTFile			
+AmountOfSubstanceQuantity	AmountOfSubstanceQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AmountOfSubstanceQuantity			
+RoundBlank	RoundBlank	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RoundBlank			A round blank (a cylinder shaped object with height typically smaller than diameter)
+CognitiveProcess	CognitiveProcess	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CognitiveProcess			
+Table	Table	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Table			Any kind of table
+HeatTreatmentQuantity	HeatTreatmentQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTreatmentQuantity			
+Niobium	Niobium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Niobium			
+IndustryProject	IndustryProject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IndustryProject			
+Preparation	Preparation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Preparation			
+DrilledHole	DrilledHole	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DrilledHole			A drilled hole in a technological product.
+ImageStack	ImageStack	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImageStack			A series of images, that form a vertical stack (e.g. a series of images generated by tomography).
+WeightFraction	WeightFraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WeightFraction			
+Lanthanum	Lanthanum	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Lanthanum			
+ObjectLens	ObjectLens	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ObjectLens			Object lens of a light microscope
+ObjectAggregateName	ObjectAggregateName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ObjectAggregateName			Name of a specific object aggregate
+MaterialStructureInfo	MaterialStructureInfo	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialStructureInfo			
+Disposition	Disposition	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Disposition			Class defined by the Basic Formal Ontology (BFO)
+Cooling	Cooling	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cooling			The process of cooling any kind of object
+ChemicalComposition	ChemicalComposition	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ChemicalComposition			
+StressRelievingHeatTreatment	StressRelievingHeatTreatment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StressRelievingHeatTreatment			
+VolumeFraction	VolumeFraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VolumeFraction			
+ProjectNumber	ProjectNumber	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProjectNumber			
+SpecimenGeometryParameter	SpecimenGeometryParameter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenGeometryParameter			
+Site	Site	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Site			An immaterial region bound by an object
+MaterialExtrusion	MaterialExtrusion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialExtrusion			
+OriginalGaugeLength	OriginalGaugeLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OriginalGaugeLength			Original gauge length of the test piece
+HeatTreatmentFurnace	HeatTreatmentFurnace	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTreatmentFurnace			A furnace used for the heat treatment of objects
+Chromium	Chromium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Chromium			
+Abrading	Abrading	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Abrading			
+Sodium	Sodium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sodium			
+MaterialDataSet	MaterialDataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialDataSet			A data set containing material specific data
+EmbeddingEquipment	EmbeddingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EmbeddingEquipment			Equipment or machine used to embed a metallographic specimen in an embedding compound (e.g. resin)
+PressingOfGranulesOrPowder	PressingOfGranulesOrPowder	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PressingOfGranulesOrPowder			
+FractureToughnessTest	FractureToughnessTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FractureToughnessTest			
+Notch	Notch	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Notch			A notch in a technological product.
+Documenting	Documenting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Documenting			
+JPGImage	JPGImage	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#JPGImage			
+Erbium	Erbium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Erbium			
+MeasurementLocation	MeasurementLocation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MeasurementLocation			The location (a point) at which some quantity is measured
+PrecipitateFeretDiameter	PrecipitateFeretDiameter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrecipitateFeretDiameter			
+PersonMiddleName	PersonMiddleName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PersonMiddleName			
+SeparatingCastPartFromMold	SeparatingCastPartFromMold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SeparatingCastPartFromMold			The act of separating the cast part from the mold.
+YieldStress	YieldStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#YieldStress			
+SpatialRegion	SpatialRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpatialRegion			Class defined by the Basic Formal Ontology (BFO)
+MetallographicPreparation	MetallographicPreparation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicPreparation			
+Thulium	Thulium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Thulium			
+DimensionlessRatio	DimensionlessRatio	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DimensionlessRatio			
+HeatTransferCoefficientMeltAndMold	HeatTransferCoefficientMeltAndMold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTransferCoefficientMeltAndMold			Heat transfer coefficient between melt and mold
+RemoveObjectFromMachine	RemoveObjectFromMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RemoveObjectFromMachine			The process of removing any kind of object from a machine.
+MaterialSurfaceTemperatureAsIsTop	MaterialSurfaceTemperatureAsIsTop	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfaceTemperatureAsIsTop			
+MachinePreparation	MachinePreparation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MachinePreparation			Preparation process of some kind of machine
+Tin	Tin	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tin			
+LoadCell	LoadCell	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LoadCell			
+TestExecution	TestExecution	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TestExecution			The process of executing any kind of test
+ThreeDimensionalFieldData	ThreeDimensionalFieldData	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThreeDimensionalFieldData			Any kind of three dimensional field data
+StrainRate	StrainRate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StrainRate			
+TimeToCastingAfterMoldPositioning	TimeToCastingAfterMoldPositioning	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TimeToCastingAfterMoldPositioning			Time duration until the start of the casting process since the mold has been positioned
+WMVFile	WMVFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WMVFile			Windows Media-Audio/-Video file
+InductionHeatingSystem	InductionHeatingSystem	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InductionHeatingSystem			
+Sintering	Sintering	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sintering			
+Radium	Radium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Radium			
+STEPFile	STEPFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#STEPFile			
+hasInfo	hasInfo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasInfo			
+SpecimenWidth	SpecimenWidth	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenWidth			
+ImageMetadataSet	ImageMetadataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImageMetadataSet			Metadata set included in images. E.g. microscopes write the process specific metadata into the image file.
+ElectricCurrentErodingWire	ElectricCurrentErodingWire	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricCurrentErodingWire			Electric current applied during a wire eroding process
+CylindricalFatigueTestSpecimen	CylindricalFatigueTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CylindricalFatigueTestSpecimen			
+SolutionAnnealing	SolutionAnnealing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolutionAnnealing			Solution annealing is used to homogenize the material. The temperature is sufficiently high to deliberately dissolve certain phases (e.g. gamma' in superalloys)
+NotchedFatigueTestSpecimen	NotchedFatigueTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NotchedFatigueTestSpecimen			
+ZeroDimensionalTemporalRegion	ZeroDimensionalTemporalRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZeroDimensionalTemporalRegion			Class defined by the Basic Formal Ontology (BFO)
+Separating	Separating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Separating			
+Occurrent	Occurrent	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Occurrent			Class defined by the Basic Formal Ontology (BFO)
+ProjectShortName	ProjectShortName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProjectShortName			
+ComponentTestTensileLoading	ComponentTestTensileLoading	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ComponentTestTensileLoading			Some kind of component test applying a tensile load
+ThermocoupleWireTypeK	ThermocoupleWireTypeK	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermocoupleWireTypeK			Thermocouple of type K
+Boron	Boron	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Boron			
+Software	Software	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Software			
+ControlSoftware	ControlSoftware	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ControlSoftware			
+isOfType	isOfType	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isOfType			
+Treating	Treating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Treating			
+IndentationDurationBrinell	IndentationDurationBrinell	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IndentationDurationBrinell			Duration of the application of the indentation force during Brinell testing
+MetallographicGrindingDisc	MetallographicGrindingDisc	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicGrindingDisc			Grinding disc/wheel used for metallographic specimen preparation
+PoissonRatio	PoissonRatio	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PoissonRatio			
+YCoordinate	YCoordinate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#YCoordinate			Y coordinate of cartesian coordinate system
+AnalysisOfResultingSpectraAndComparisonWithReferenceSpectra	AnalysisOfResultingSpectraAndComparisonWithReferenceSpectra	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AnalysisOfResultingSpectraAndComparisonWithReferenceSpectra			The process of analysing the resulting spectra from some kind of spectroscopy process and comparing them to reference spectra (e.g. in a LIBS process)
+Comment	Comment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Comment			
+Silver	Silver	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Silver			
+SolutionAnnealingTemperatureAsSupposed	SolutionAnnealingTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolutionAnnealingTemperatureAsSupposed			The solution heat treatment temperature as supposed
+QuantityKind	QuantityKind	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#QuantityKind			
+CrossheadSeparationRate	CrossheadSeparationRate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CrossheadSeparationRate			Displacement of the crossheads per time (e.g. in a tensile test)
+ChemicalSolution	ChemicalSolution	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ChemicalSolution			
+ProcessDataSet	ProcessDataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessDataSet			Any kind of data set, that is the output of a process (e.g. raw data, analysed data, files, quantities...)
+MaterialNamingConventionUNS	MaterialNamingConventionUNS	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionUNS			
+Titanium	Titanium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Titanium			
+Specimen	Specimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Specimen			
+TransitionRadius	TransitionRadius	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TransitionRadius			
+MaterialJetting	MaterialJetting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialJetting			
+Extrapolation	Extrapolation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Extrapolation			
+OpticalStrainMeasurementSystem	OpticalStrainMeasurementSystem	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OpticalStrainMeasurementSystem			Any kind of optical strain measurement system (e.g. Aramis)
+Event	Event	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Event			
+DensityAsIs	DensityAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DensityAsIs			Density as is
+Promethium	Promethium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Promethium			
+Cadmium	Cadmium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cadmium			
+PermanentMold	PermanentMold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PermanentMold			The permanent mold, into which the melt is casted. Permanent refers to the fact, that the mold is used several times (in industrie ca. 100,000 times)
+AverageHardnessBrinell	AverageHardnessBrinell	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AverageHardnessBrinell			An average value of several Brinell hardness measurements
+FiatObjectPartName	FiatObjectPartName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FiatObjectPartName			Name of a fiat object part
+EndDateTime	EndDateTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EndDateTime			
+PrimaryShapingFromLiquidState	PrimaryShapingFromLiquidState	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrimaryShapingFromLiquidState			
+PermanentMoldCasting	PermanentMoldCasting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PermanentMoldCasting			Permanent mold casting, i.e. a permanent (e.g. copper or steel) mold is used
+ProjectFullName	ProjectFullName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProjectFullName			
+Francium	Francium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Francium			
+GeometricMeasurement	GeometricMeasurement	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GeometricMeasurement			
+Dilatometry	Dilatometry	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Dilatometry			
+Mercury	Mercury	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Mercury			
+TemperatureMeasuredByThermocouple	TemperatureMeasuredByThermocouple	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TemperatureMeasuredByThermocouple			
+Bar	Bar	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Bar			
+NonDestructiveTestingRelatedQuantity	NonDestructiveTestingRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonDestructiveTestingRelatedQuantity			Quantities related to nondestructive testing processes
+hasOperator	hasOperator	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasOperator			
+CyclicYieldStress	CyclicYieldStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CyclicYieldStress			
+ArtificialAgingDuration	ArtificialAgingDuration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ArtificialAgingDuration			The duration of the artificial aging process
+Pressure	Pressure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Pressure			
+Hardness	Hardness	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Hardness			
+EBSDDetector	EBSDDetector	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EBSDDetector			An EBSD (electron backscatter diffraction) detector for the SEM
+isInputFor	isInputFor	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isInputFor			
+Indium	Indium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Indium			
+VoxelEdgeLength	VoxelEdgeLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VoxelEdgeLength			Edge length of a voxel
+Fluorine	Fluorine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Fluorine			
+hasQuantityKind	hasQuantityKind	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasQuantityKind			
+MaterialStructureRelatedObject	MaterialStructureRelatedObject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialStructureRelatedObject			
+ComponentTestCompressiveLoading	ComponentTestCompressiveLoading	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ComponentTestCompressiveLoading			Some kind of component test applying a compressive load
+Time	Time	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Time			
+QuasiStaticTensileTest	QuasiStaticTensileTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#QuasiStaticTensileTest			
+Annealing	Annealing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Annealing			
+TensionForming	TensionForming	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TensionForming			
+Diameter	Diameter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Diameter			
+MeasurementEquipment	MeasurementEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MeasurementEquipment			
+hasTemporalInfo	hasTemporalInfo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasTemporalInfo			
+Platinum	Platinum	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Platinum			
+SpecimenDiameterAtFracture	SpecimenDiameterAtFracture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenDiameterAtFracture			
+ComputerTomograph	ComputerTomograph	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ComputerTomograph			
+Gadolinium	Gadolinium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Gadolinium			
+NonDestructiveTesting	NonDestructiveTesting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonDestructiveTesting			A nondestructive testing process
+PoreVolume	PoreVolume	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PoreVolume			
+FeedSpeed	FeedSpeed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FeedSpeed			Characteristic speed within a turning process to advance the cutting tool
+EmbeddingMetallographicSpecimen	EmbeddingMetallographicSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EmbeddingMetallographicSpecimen			Process of embedding a metallographic specimen in e.g. bakelite resin or epoxy resin
+Aluminium	Aluminium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Aluminium			
+CastingSimulation	CastingSimulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingSimulation			A casting simulation
+FreeForging	FreeForging	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FreeForging			
+TechnologicalProduct	TechnologicalProduct	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TechnologicalProduct			
+SpecimenCrossSectionAreaAtFracture	SpecimenCrossSectionAreaAtFracture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenCrossSectionAreaAtFracture			
+ServohydraulicTestingMachine	ServohydraulicTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ServohydraulicTestingMachine			
+Palladium	Palladium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Palladium			
+EmbeddingCompound	EmbeddingCompound	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EmbeddingCompound			Metallographic empbedding compound (e.g. resin)
+Role	Role	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Role			Class defined by the Basic Formal Ontology (BFO)
+Molecule	Molecule	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Molecule			
+TensileTestingMachine	TensileTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TensileTestingMachine			
+MaterialNamingConventionENMaterialNumber	MaterialNamingConventionENMaterialNumber	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionENMaterialNumber			
+Angle	Angle	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Angle			
+MechanicalWorkshopEquipment	MechanicalWorkshopEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MechanicalWorkshopEquipment			Any kind of equipment within a mechanical workshop
+EngineeringStress	EngineeringStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringStress			The engineering stress: Force/OriginalArea
+WireEroding	WireEroding	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WireEroding			Wire eroding (cutting) process
+Continuant	Continuant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Continuant			Class defined by the Basic Formal Ontology (BFO)
+CoolingWaterConnection	CoolingWaterConnection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CoolingWaterConnection			
+TechnicalStress	TechnicalStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TechnicalStress			
+GravityCasting	GravityCasting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GravityCasting			
+CoolingEmulsionWithWaterAndOil	CoolingEmulsionWithWaterAndOil	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CoolingEmulsionWithWaterAndOil			Cooling emulsion containing water and oil used for wire eroding
+EngineeringStrainInLoadingDirection	EngineeringStrainInLoadingDirection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringStrainInLoadingDirection			The engineering strain in loading direction (e.g. in a uniaxial tensile test)
+Helium	Helium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Helium			
+AluminiumAlloy	AluminiumAlloy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AluminiumAlloy			Any kind of aluminium alloy
+NotchRadius	NotchRadius	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NotchRadius			
+MaterialMesoStructure	MaterialMesoStructure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialMesoStructure			
+Literal	Literal	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Literal			
+Neodymium	Neodymium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Neodymium			
+MaterialVolumeStructureInfo	MaterialVolumeStructureInfo	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialVolumeStructureInfo			
+Regulation	Regulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Regulation			
+BrinellIndentation	BrinellIndentation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BrinellIndentation			An indentation process according to Brinell
+Building	Building	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Building			
+Atom	Atom	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Atom			
+PhysicsModel	PhysicsModel	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PhysicsModel			
+ConsumableName	ConsumableName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ConsumableName			Name of a consumable
+ConcentrationOfSubstance	ConcentrationOfSubstance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ConcentrationOfSubstance			
+Person	Person	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Person			
+YoungsModulus	YoungsModulus	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#YoungsModulus			
+ExcelSheetName	ExcelSheetName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ExcelSheetName			
+CastingMachine	CastingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingMachine			
+Oxygen	Oxygen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Oxygen			
+WeldedConnection	WeldedConnection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WeldedConnection			
+Temperature	Temperature	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Temperature			
+Furnace	Furnace	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Furnace			
+SpecificHeatCapacity	SpecificHeatCapacity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecificHeatCapacity			
+TechnicalStrain	TechnicalStrain	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TechnicalStrain			
+ArtificialAgingTemperatureAsSupposed	ArtificialAgingTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ArtificialAgingTemperatureAsSupposed			The artificial aging temperature as supposed
+CompositionRelatedQuantity	CompositionRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CompositionRelatedQuantity			Any kind of quantity, that describes the composition of materials
+MachiningWithGeometricallyDeterminedEdge	MachiningWithGeometricallyDeterminedEdge	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MachiningWithGeometricallyDeterminedEdge			
+WeightConcentration	WeightConcentration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WeightConcentration			
+Quality	Quality	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Quality			Class defined by the Basic Formal Ontology (BFO)
+CADFile	CADFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CADFile			
+TimeToInductionSwitchOff	TimeToInductionSwitchOff	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TimeToInductionSwitchOff			Time duration during a casting process until the induction heating system is switched off since the start of the casting process
+VatPolymerization	VatPolymerization	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VatPolymerization			
+FieldData	FieldData	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FieldData			Some kind of field data (tables, columns, matrices...)
+ObjectSet	ObjectSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ObjectSet			
+Length	Length	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Length			
+ShrinkagePore	ShrinkagePore	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ShrinkagePore			
+MatCalcSimulation	MatCalcSimulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MatCalcSimulation			A simulation using the software MatCalc
+TensileTestSpecimen	TensileTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TensileTestSpecimen			
+Samarium	Samarium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Samarium			
+CylindricalTensileTestSpecimen	CylindricalTensileTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CylindricalTensileTestSpecimen			
+hasIdentifier	hasIdentifier	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasIdentifier			Indicates properties, such as IDs, names etc. which are used to identify objects, processes etc.
+DecimalSeparator	DecimalSeparator	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DecimalSeparator			
+hasOutput	hasOutput	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasOutput			
+GeometryInfo	GeometryInfo	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GeometryInfo			Data set containing geometric information content
+ReductionOfAreaAtFracture	ReductionOfAreaAtFracture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ReductionOfAreaAtFracture			
+SpecimenRelatedQuantity	SpecimenRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenRelatedQuantity			
+InitialMoldTemperatureInSimulation	InitialMoldTemperatureInSimulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InitialMoldTemperatureInSimulation			Initial mold temperature in e.g. a casting simulation
+IWMLabelsID	IWMLabelsID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IWMLabelsID			Permanent and unique ID for specimens at the Fraunhofer IWM
+LowCycleFatigueTest	LowCycleFatigueTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LowCycleFatigueTest			
+PlanarImageSet	PlanarImageSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PlanarImageSet			A series of images taken in a plane, which form a set of images (e.g. images of a microsection or a fracture surface)
+MechanicalTestingRelatedQuantity	MechanicalTestingRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MechanicalTestingRelatedQuantity			
+Report	Report	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Report			
+SIUnit	SIUnit	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SIUnit			
+ShearModulus	ShearModulus	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ShearModulus			
+MicrostructuralQuantity	MicrostructuralQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MicrostructuralQuantity			
+Frequency	Frequency	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Frequency			
+MaterialMicrostructure	MaterialMicrostructure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialMicrostructure			
+PreProcessing	PreProcessing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PreProcessing			
+XRayTube	XRayTube	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#XRayTube			An x-ray tube, e.g. used in a computer tomograph
+CastPart	CastPart	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastPart			Object resulting from a casting process
+ProcedureName	ProcedureName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcedureName			Name of a procedure (e.g. norm, standard, internal procedure)
+Nickel	Nickel	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Nickel			
+CastIronMaterial	CastIronMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastIronMaterial			
+isComposedOf	isComposedOf	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isComposedOf			
+WeightRatio	WeightRatio	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WeightRatio			
+ElasticConstant	ElasticConstant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElasticConstant			
+Gallium	Gallium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Gallium			
+Entity	Entity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Entity			
+Mass	Mass	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Mass			
+GrindingAndPolishingSuspension	GrindingAndPolishingSuspension	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrindingAndPolishingSuspension			Suspension used during grinding or polishing of metallographic specimens (e.g. diamond suspension)
+SoftwareScript	SoftwareScript	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SoftwareScript			
+URLToFolder	URLToFolder	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#URLToFolder			The URL to a folder in a file system
+InfrastructureEquipmentSet	InfrastructureEquipmentSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InfrastructureEquipmentSet			
+CreepTest	CreepTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CreepTest			
+DocumentFile	DocumentFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DocumentFile			
+Equipment	Equipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Equipment			
+MaterialSurfaceTemperatureAsIsBottom	MaterialSurfaceTemperatureAsIsBottom	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfaceTemperatureAsIsBottom			
+ProcessSetup	ProcessSetup	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessSetup			
+Heating	Heating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Heating			The process of heating any kind of object
+Summary	Summary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Summary			
+NumberOfHeaderLinesInTable	NumberOfHeaderLinesInTable	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NumberOfHeaderLinesInTable			
+CastingPressure	CastingPressure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingPressure			Applied pressure during the casting process
+AnalysedDataSet	AnalysedDataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AnalysedDataSet			Any kind of analysed data set. This usually means, that it is the result of some kind of postprocessing/analysis process of a raw data file.
+hasStructuralQuantity	hasStructuralQuantity	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasStructuralQuantity			
+SpecificationOfAnalysedChemicalElementsInLIBSProcess	SpecificationOfAnalysedChemicalElementsInLIBSProcess	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecificationOfAnalysedChemicalElementsInLIBSProcess			Specification of the analysed chemical elements in a LIBS (laser induced plasma spectroscopy) process.
+SolidificationDuration	SolidificationDuration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolidificationDuration			Time duration between a fully liquid material state and a fully solidified material state during cooling.
+Magnetization	Magnetization	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Magnetization			
+SheetLamination	SheetLamination	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SheetLamination			
+Sheet	Sheet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sheet			
+MaterialNanoStructure	MaterialNanoStructure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNanoStructure			
+OneDimensionalFieldData	OneDimensionalFieldData	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OneDimensionalFieldData			Any kind of one dimensional field data
+ObjectID	ObjectID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ObjectID			
+Iridium	Iridium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Iridium			
+Tempering	Tempering	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tempering			
+DendriteArmSpacing	DendriteArmSpacing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DendriteArmSpacing			
+HardeningByColdforming	HardeningByColdforming	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HardeningByColdforming			
+Holmium	Holmium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Holmium			
+DigitalCamera	DigitalCamera	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DigitalCamera			A digital camera used within a process setup
+HighVoltageCurrentConnection	HighVoltageCurrentConnection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HighVoltageCurrentConnection			
+MagnesiumMaterial	MagnesiumMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MagnesiumMaterial			
+VickersIndentation	VickersIndentation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VickersIndentation			An indentation process according to Vickers
+CommaDelimiter	CommaDelimiter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CommaDelimiter			
+hasStringLiteral	hasStringLiteral	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasStringLiteral			
+ElectricCurrent	ElectricCurrent	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricCurrent			
+TrueStrain	TrueStrain	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TrueStrain			
+TimeToFloodingOfMoldChamber	TimeToFloodingOfMoldChamber	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TimeToFloodingOfMoldChamber			Time duration until the mold chamber is flooded
+GrowingCrystals	GrowingCrystals	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrowingCrystals			
+ProcessEvaluation	ProcessEvaluation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessEvaluation			
+HeatResistantGloves	HeatResistantGloves	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatResistantGloves			Heat resistant gloves, e.g. used to remove objects from a heat treatment furnace.
+CameraEquipment	CameraEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CameraEquipment			Any kind of camera equipment
+CircumferentialTurningSpeed	CircumferentialTurningSpeed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CircumferentialTurningSpeed			Characteristic velocity of a turning process (circumferential velocity)
+Column	Column	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Column			A column (e.g. in a table)
+MaterialDefect	MaterialDefect	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialDefect			
+CastingMeltIntoMold	CastingMeltIntoMold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingMeltIntoMold			The act of casting the melt into the mold.
+Argon	Argon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Argon			
+GripSystem	GripSystem	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GripSystem			
+MetallographicEquipment	MetallographicEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicEquipment			Equipment used within metallographic processes (e.g. polishing, grinding, embedding...)
+Cluster	Cluster	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cluster			
+GrainBoundary	GrainBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrainBoundary			
+MountingOfSpecimenInTestingMachine	MountingOfSpecimenInTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MountingOfSpecimenInTestingMachine			
+CastingQuantity	CastingQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingQuantity			
+RelationalQuality	RelationalQuality	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RelationalQuality			Class defined by the Basic Formal Ontology (BFO)
+MoldTemperatureAsSupposed	MoldTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MoldTemperatureAsSupposed			Temperature of the mold as supposed during permanent mold casting
+SelectiveLaserMelting	SelectiveLaserMelting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SelectiveLaserMelting			
+Resistance	Resistance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Resistance			
+HardnessBrinell	HardnessBrinell	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HardnessBrinell			Hardness according to Brinell
+SoftwareVersion	SoftwareVersion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SoftwareVersion			
+ThermocoupleWire	ThermocoupleWire	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermocoupleWire			A thermocouple is an electrical device consisting of two dissimilar electrical conductors forming an electrical junction. A thermocouple produces a temperature-dependent voltage as a result of the thermoelectric effect, and this voltage can be interpreted to measure temperature. Thermocouples are a widely used type of temperature sensor.
+Silicon	Silicon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Silicon			
+PrimaryShaping	PrimaryShaping	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrimaryShaping			
+ShrinkageAdjustment	ShrinkageAdjustment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ShrinkageAdjustment			A multiplication factor (unitless), that determines the volume during solidification in Flow3D
+Rp03	Rp03	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rp03			
+Server	Server	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Server			
+PhysicalQuantity	PhysicalQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PhysicalQuantity			
+ErodingWire	ErodingWire	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ErodingWire			Wire used within a wire eroding process
+MechanicalWorkshop	MechanicalWorkshop	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MechanicalWorkshop			A workshop dealing with mechanical manufacturing processes such as turning, wire eroding, separating, sawing...
+PNGImage	PNGImage	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PNGImage			
+ChemicalElement	ChemicalElement	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ChemicalElement			
+SpecificallyDependentContinuant	SpecificallyDependentContinuant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecificallyDependentContinuant			Class defined by the Basic Formal Ontology (BFO)
+Krypton	Krypton	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Krypton			
+Hafnium	Hafnium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Hafnium			
+SystemOfUnits	SystemOfUnits	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SystemOfUnits			
+Conclusion	Conclusion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Conclusion			
+TurningToolRadius	TurningToolRadius	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TurningToolRadius			The radius at the edge of a turning tool
+Sandforming	Sandforming	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sandforming			
+Delimiter	Delimiter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Delimiter			
+containsValuesOfType	containsValuesOfType	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#containsValuesOfType			
+Etchant	Etchant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Etchant			Etchant, e.g. used to etch metallographic specimens
+Vanadium	Vanadium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Vanadium			
+hasPart	hasPart	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasPart			
+NumberOfCycles	NumberOfCycles	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NumberOfCycles			
+PowerXRayTube	PowerXRayTube	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PowerXRayTube			Power of x-ray tube (e.g. in a computer tomograph)
+MaterialSurfacTemperatureAsIs	MaterialSurfacTemperatureAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfacTemperatureAsIs			
+Area	Area	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Area			
+NotchDepth	NotchDepth	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NotchDepth			
+Sawing	Sawing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sawing			
+Rp02	Rp02	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rp02			
+SuperimposedVibration	SuperimposedVibration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SuperimposedVibration			Superimposed vibration during the casting process
+GenerelExperimentRelatedProcess	GenerelExperimentRelatedProcess	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GenerelExperimentRelatedProcess			
+LightMicroscopy	LightMicroscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LightMicroscopy			
+Inclusion	Inclusion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Inclusion			
+precedes	precedes	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#precedes			
+Turning	Turning	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Turning			
+MaximumMeltTemperatureAsIs	MaximumMeltTemperatureAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaximumMeltTemperatureAsIs			Maximum value of the melt temperature measured during a casting process.
+InlensEnergySelectedBackscatterDetector	InlensEnergySelectedBackscatterDetector	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InlensEnergySelectedBackscatterDetector			An inlens selected backscatter detector for the SEM
+MaterialStructureRelatedFiatObjectPart	MaterialStructureRelatedFiatObjectPart	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialStructureRelatedFiatObjectPart			
+ProcessProfile	ProcessProfile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessProfile			Class defined by the Basic Formal Ontology (BFO)
+BaseElementOfComposition	BaseElementOfComposition	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BaseElementOfComposition			Is the base element of a chemical composition, e.g. Ni in Ni-alloys, Al in Al-alloys.
+GrindingAndPolishing	GrindingAndPolishing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrindingAndPolishing			
+TemporalDataSet	TemporalDataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TemporalDataSet			
+HeatTransferCoefficientSolidifiedMetalAndMold	HeatTransferCoefficientSolidifiedMetalAndMold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTransferCoefficientSolidifiedMetalAndMold			Heat transfer coefficient between solidified metal and atmosphere
+FatigueTest	FatigueTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FatigueTest			
+LIBSMeasurementSystem	LIBSMeasurementSystem	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LIBSMeasurementSystem			A measurement system for the laser induced plasma spectroscopy (LIBS) process
+OneDimensionalContinuantFiatBoundary	OneDimensionalContinuantFiatBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OneDimensionalContinuantFiatBoundary			Class defined by the Basic Formal Ontology (BFO)
+MarkingExtensometerPositionOnSpecimenWithPen	MarkingExtensometerPositionOnSpecimenWithPen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MarkingExtensometerPositionOnSpecimenWithPen			
+Force	Force	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Force			
+StructuralQuantity	StructuralQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StructuralQuantity			
+SteelMaterial	SteelMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SteelMaterial			
+SelectiveLaserSintering	SelectiveLaserSintering	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SelectiveLaserSintering			
+StressRelatedQuantity	StressRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StressRelatedQuantity			
+Cleaning	Cleaning	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cleaning			
+InputFileGeneration	InputFileGeneration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InputFileGeneration			The process of generating an input file for a simulation
+Berylium	Berylium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Berylium			
+ElectricCharge	ElectricCharge	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricCharge			
+MetallographicSpecimen	MetallographicSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicSpecimen			
+XLSFile	XLSFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#XLSFile			
+SpecimenThickness	SpecimenThickness	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenThickness			
+HeatTransferCoefficientRelatedQuantity	HeatTransferCoefficientRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTransferCoefficientRelatedQuantity			Specific heat transfer coefficients
+Cooler	Cooler	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cooler			
+MountingOfTestPieceInTestingMachine	MountingOfTestPieceInTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MountingOfTestPieceInTestingMachine			The process of mounting some kind of test piece in a testing machine
+Calcium	Calcium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Calcium			
+TestSetup	TestSetup	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TestSetup			
+LaserFlashAnalysis	LaserFlashAnalysis	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LaserFlashAnalysis			
+CellSizeDiscretization	CellSizeDiscretization	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CellSizeDiscretization			Characteristic length of the discretization in a finite difference code for cast simulations (e.g. Flow3D)
+History	History	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#History			Class defined by the Basic Formal Ontology (BFO)
+ImageGeneration	ImageGeneration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImageGeneration			An image generation process, e.g. during tomography
+TwoDimensionalContinuantFiatBoundary	TwoDimensionalContinuantFiatBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TwoDimensionalContinuantFiatBoundary			Class defined by the Basic Formal Ontology (BFO)
+ExtensometerDisplacement	ExtensometerDisplacement	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ExtensometerDisplacement			
+PublicProject	PublicProject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PublicProject			
+ISOStandard	ISOStandard	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ISOStandard			
+Scandium	Scandium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Scandium			
+WithdrawalPlan	WithdrawalPlan	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#WithdrawalPlan			A data set containg the information content of a withdrawal plan (e.g. PDFFile, CADFile...)
+RemovalOfTestPieceFromTestingMachine	RemovalOfTestPieceFromTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RemovalOfTestPieceFromTestingMachine			
+ThermomechanicalTreatment	ThermomechanicalTreatment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermomechanicalTreatment			
+TemporalRegion	TemporalRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TemporalRegion			Class defined by the Basic Formal Ontology (BFO)
+chronologicalConnection	chronologicalConnection	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#chronologicalConnection			
+Bromine	Bromine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Bromine			
+PDFFile	PDFFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PDFFile			
+MaterialNamingConventionGOST	MaterialNamingConventionGOST	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionGOST			
+SpatiotemporalRegion	SpatiotemporalRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpatiotemporalRegion			Class defined by the Basic Formal Ontology (BFO)
+InputFile	InputFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InputFile			An input file is a file with no specific file ending, that is used as input for a simulation
+TechnologicalProductRelatedFiatObjectPart	TechnologicalProductRelatedFiatObjectPart	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TechnologicalProductRelatedFiatObjectPart			
+MaterialNamingConventionOther	MaterialNamingConventionOther	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionOther			
+InitialMeltTemperatureInSimulation	InitialMeltTemperatureInSimulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InitialMeltTemperatureInSimulation			
+Iron	Iron	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Iron			
+Germanium	Germanium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Germanium			
+hasValue	hasValue	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasValue			
+Quenching	Quenching	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Quenching			
+Decarburization	Decarburization	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Decarburization			
+FurnaceGripSystem	FurnaceGripSystem	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FurnaceGripSystem			
+Voltage	Voltage	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Voltage			
+Tomography	Tomography	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tomography			A tomography process
+Precipitate	Precipitate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Precipitate			
+Thallium	Thallium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Thallium			
+DataAcquisitionSoftware	DataAcquisitionSoftware	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataAcquisitionSoftware			
+SpecificTextualInput	SpecificTextualInput	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecificTextualInput			
+Iodine	Iodine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Iodine			
+hasTextualInfo	hasTextualInfo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasTextualInfo			Specific textual input (such as comments, descriptions) is attached to any kind of entity
+Extensometer	Extensometer	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Extensometer			
+Publication	Publication	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Publication			
+Extruding	Extruding	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Extruding			
+DOCXFile	DOCXFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DOCXFile			
+SpecimenName	SpecimenName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenName			
+NormalizationHeatTreatment	NormalizationHeatTreatment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NormalizationHeatTreatment			
+TinMaterial	TinMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TinMaterial			
+ZCoordinate	ZCoordinate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZCoordinate			Z coordinate of cartesian coordinate system
+UnitSymbol	UnitSymbol	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#UnitSymbol			
+Lithium	Lithium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Lithium			
+PreprocessingSoftware	PreprocessingSoftware	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PreprocessingSoftware			Software used for preprocessing
+SolutionAnnealingDurationAsSupposed	SolutionAnnealingDurationAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolutionAnnealingDurationAsSupposed			The duration of the solution annealing process as supposed.
+CrossheadDisplacementAfterFracture	CrossheadDisplacementAfterFracture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CrossheadDisplacementAfterFracture			The displacement of the machine crosshead after fracture
+Yttrium	Yttrium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Yttrium			
+bwmd-ontology	bwmd-ontology	Entity	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology			
+ProcessEndDateTime	ProcessEndDateTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessEndDateTime			Date and time at the end of a process
+Cobalt	Cobalt	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cobalt			
+Unit	Unit	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Unit			
+ElectronBeamMelting	ElectronBeamMelting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectronBeamMelting			
+ZIPFile	ZIPFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZIPFile			Any kind of ZIP-File
+Radon	Radon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Radon			
+PrecipitateDistance	PrecipitateDistance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrecipitateDistance			
+PreliminaryForce	PreliminaryForce	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PreliminaryForce			A preliminary applied force, e.g. in a tensile test to ensure the alignment of the test piece and the grip system.
+AdditiveManufacturing	AdditiveManufacturing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AdditiveManufacturing			
+Selenium	Selenium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Selenium			
+MaximumTensileStrength	MaximumTensileStrength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaximumTensileStrength			
+DataTransformation	DataTransformation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataTransformation			
+NickelBasedSuperalloy	NickelBasedSuperalloy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NickelBasedSuperalloy			
+PrecipitatePhaseFraction	PrecipitatePhaseFraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrecipitatePhaseFraction			The phase fraction of some kind of precipitate.
+CastingEquipment	CastingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingEquipment			Casting related equipment
+MaterialNamingConventionENShortName	MaterialNamingConventionENShortName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionENShortName			
+Grating	Grating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Grating			
+FlatTensileTestSpecimen	FlatTensileTestSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FlatTensileTestSpecimen			
+ElectromechanicalTestingMachine	ElectromechanicalTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectromechanicalTestingMachine			
+ProcessStartDateTime	ProcessStartDateTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessStartDateTime			Date and time at the start of a process
+MaximumTensileForce	MaximumTensileForce	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaximumTensileForce			The maximum value of a tensile force (e.g. in a tensile test)
+PercentageElongationAfterFracture	PercentageElongationAfterFracture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PercentageElongationAfterFracture			permanent elongation of the gauge length after fracture, (Lu − Lo), expressed as a percentage of the original gauge length
+Capacitance	Capacitance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Capacitance			
+DateTime	DateTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DateTime			
+MaterialNamingConventionAISI	MaterialNamingConventionAISI	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionAISI			
+MicroscopeEquipment	MicroscopeEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MicroscopeEquipment			Microscope related equipment as microscopes and accessories
+DecimalSeparatorDot	DecimalSeparatorDot	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DecimalSeparatorDot			
+TransmissionElectronMicroscopy	TransmissionElectronMicroscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TransmissionElectronMicroscopy			
+MachiningWithGeometricallyUndeterminedEdge	MachiningWithGeometricallyUndeterminedEdge	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MachiningWithGeometricallyUndeterminedEdge			
+Concluding	Concluding	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Concluding			
+Zinc	Zinc	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Zinc			
+VolumeRatio	VolumeRatio	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VolumeRatio			
+GasPore	GasPore	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GasPore			
+EquipmentSet	EquipmentSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EquipmentSet			
+Granulate	Granulate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Granulate			
+Name	Name	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Name			
+PersonalProtectiveEquipment	PersonalProtectiveEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PersonalProtectiveEquipment			Some kind of personal protective equipment
+SpecimenCooling	SpecimenCooling	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenCooling			The process of cooling a specimen
+FerrousMaterial	FerrousMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FerrousMaterial			
+InvestmentCasting	InvestmentCasting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InvestmentCasting			
+TwoDimensionalSpatialRegion	TwoDimensionalSpatialRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TwoDimensionalSpatialRegion			Class defined by the Basic Formal Ontology (BFO)
+TestingTime	TestingTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TestingTime			
+ThreeDimensionalSpatialRegion	ThreeDimensionalSpatialRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThreeDimensionalSpatialRegion			Class defined by the Basic Formal Ontology (BFO)
+Energy	Energy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Energy			
+PowderBedFusion	PowderBedFusion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PowderBedFusion			
+HighPurityAluminiumMaterial	HighPurityAluminiumMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HighPurityAluminiumMaterial			A high purity aluminium material
+VolumeConcentration	VolumeConcentration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#VolumeConcentration			
+ForceInLoadingDirection	ForceInLoadingDirection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ForceInLoadingDirection			
+OriginalCrossSectionalAreaOfTheParallelLength	OriginalCrossSectionalAreaOfTheParallelLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OriginalCrossSectionalAreaOfTheParallelLength			Original cross-sectional area of the parallel length (e.g. according to DIN ISO 6892-1:2017-02)
+SEMCathode	SEMCathode	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SEMCathode			A cathode installed within the SEM
+BrinellIndenter	BrinellIndenter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BrinellIndenter			A specific indenter for Brinell testing
+RawDataSet	RawDataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RawDataSet			Any kind of raw data set. Raw data refers to the original data set.
+SpecimenLength	SpecimenLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenLength			
+Microscopy	Microscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Microscopy			
+Ruthenium	Ruthenium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Ruthenium			
+Laptop	Laptop	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Laptop			
+Indentation	Indentation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Indentation			
+Object	Object	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Object			Class defined by the Basic Formal Ontology (BFO)
+AtomicFraction	AtomicFraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AtomicFraction			
+PersonFirstName	PersonFirstName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PersonFirstName			
+HeatTransferCoefficientMeltAndAtmosphere	HeatTransferCoefficientMeltAndAtmosphere	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTransferCoefficientMeltAndAtmosphere			Heat transfer coefficient between melt and atmosphere
+Summarising	Summarising	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Summarising			
+InfrastructureEquipment	InfrastructureEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InfrastructureEquipment			
+PowerLawHardeningQuantity	PowerLawHardeningQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PowerLawHardeningQuantity			
+BinderJetting	BinderJetting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BinderJetting			
+PostProcessing	PostProcessing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PostProcessing			
+Second	Second	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Second			
+ThermoCamera	ThermoCamera	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThermoCamera			Camera to measure the surface temperature of objects
+LineDetector	LineDetector	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LineDetector			A line detector, e.g. used in a computer tomograph
+BrinellTestingEquipment	BrinellTestingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BrinellTestingEquipment			Any kind of Brinell testing equipment/machine
+Amount	Amount	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Amount			
+MountMachineWithObject	MountMachineWithObject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MountMachineWithObject			The process of mounting a machine with any kind of object (e.g. a turning machine)
+CompositeMaterial	CompositeMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CompositeMaterial			
+Phosphorus	Phosphorus	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Phosphorus			
+Block	Block	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Block			
+HardnessTestingEquipment	HardnessTestingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HardnessTestingEquipment			Any kind of hardness testing equipment/machine (e.g. Brinell, Vickers, Rockwell)
+Reshaping	Reshaping	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Reshaping			
+Manufacturing	Manufacturing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Manufacturing			
+SimulationSoftware	SimulationSoftware	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SimulationSoftware			
+Antimony	Antimony	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Antimony			
+ZincMaterial	ZincMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZincMaterial			
+ErodingWireDiameter	ErodingWireDiameter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ErodingWireDiameter			Diameter of an eroding wire
+SpecimenID	SpecimenID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenID			A specimen ID
+SubprocessSet	SubprocessSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SubprocessSet			
+ScanningElectronMicroscopy	ScanningElectronMicroscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ScanningElectronMicroscopy			
+AreaDetector	AreaDetector	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AreaDetector			An area detector, e.g. used in a computer tomograph
+IWMMicrosectionID	IWMMicrosectionID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IWMMicrosectionID			Permanent ID for microsections at the Fraunhofer IWM
+ZeroDimensionalContinuantFiatBoundary	ZeroDimensionalContinuantFiatBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZeroDimensionalContinuantFiatBoundary			Class defined by the Basic Formal Ontology (BFO)
+PrecipitateRadius	PrecipitateRadius	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrecipitateRadius			
+Solution	Solution	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Solution			
+Project	Project	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Project			
+Nitrogen	Nitrogen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Nitrogen			
+NickelMaterial	NickelMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NickelMaterial			
+Volume	Volume	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Volume			
+MechanicalExperiment	MechanicalExperiment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MechanicalExperiment			
+Hydrogen	Hydrogen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Hydrogen			
+EquipmentName	EquipmentName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EquipmentName			Name of an equipment
+CastingTemperatureAsSupposed	CastingTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingTemperatureAsSupposed			Temperature of the melting during casting as supposed????
+ForceRelatedQuantity	ForceRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ForceRelatedQuantity			
+FiatObjectPart	FiatObjectPart	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FiatObjectPart			Class defined by the Basic Formal Ontology (BFO)
+MaterialEntity	MaterialEntity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialEntity			Class defined by the Basic Formal Ontology (BFO)
+TestingMachine	TestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TestingMachine			
+SpecimenCrossSectionArea	SpecimenCrossSectionArea	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenCrossSectionArea			
+DataEvaluation	DataEvaluation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataEvaluation			The process of evaluating some kind of data
+SpecimenDiameter	SpecimenDiameter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenDiameter			
+RatioOfSubstances	RatioOfSubstances	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RatioOfSubstances			
+Osmium	Osmium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Osmium			
+Neon	Neon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Neon			
+hasUnitSymbol	hasUnitSymbol	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasUnitSymbol			
+Barium	Barium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Barium			
+LocalProcessTime	LocalProcessTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LocalProcessTime			Local process time. Local refers to the local machine time or to a reference time at the start of the process.
+ActuatorEquipment	ActuatorEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ActuatorEquipment			
+Grinding	Grinding	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Grinding			
+MeasurementRelatedFiatObjectPart	MeasurementRelatedFiatObjectPart	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MeasurementRelatedFiatObjectPart			Measurement related fiat object part, e.g. measurement range or measurement location
+Gold	Gold	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Gold			
+OrderID	OrderID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OrderID			Order ID belonging to a process
+IWMPersonShortName	IWMPersonShortName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IWMPersonShortName			
+Ytterbium	Ytterbium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Ytterbium			
+Pore	Pore	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Pore			
+Joining	Joining	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Joining			
+TwoDimensionalFieldData	TwoDimensionalFieldData	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TwoDimensionalFieldData			Any kind of two dimensional field data, e.g. an Excel sheet, a table...
+ProcessParameterSet	ProcessParameterSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessParameterSet			"A set of parameters, that is used to control a process. Those are usually quantities of type ""as supposed""."
+refersTo	refersTo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#refersTo			
+ProjectName	ProjectName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProjectName			
+hasAttachedDataSet	hasAttachedDataSet	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasAttachedDataSet			
+Calorimetry	Calorimetry	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Calorimetry			
+SoftwareArchitecture	SoftwareArchitecture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SoftwareArchitecture			
+ProcessID	ProcessID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessID			
+ZeroDimensionalSpatialRegion	ZeroDimensionalSpatialRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ZeroDimensionalSpatialRegion			Class defined by the Basic Formal Ontology (BFO)
+Powder	Powder	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Powder			
+CrackPath	CrackPath	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CrackPath			
+CentrifugalCasting	CentrifugalCasting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CentrifugalCasting			
+Fraction	Fraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Fraction			
+TransmissionElectronMicroscope	TransmissionElectronMicroscope	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TransmissionElectronMicroscope			Transmission electron microscope
+SingleEdgeNotchTensionSpecimen	SingleEdgeNotchTensionSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SingleEdgeNotchTensionSpecimen			
+Simulation	Simulation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Simulation			
+MaterialSurfaceTemperatureAsSupposed	MaterialSurfaceTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfaceTemperatureAsSupposed			
+ContinuousCasting	ContinuousCasting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ContinuousCasting			
+TechnologicalProductRelatedSite	TechnologicalProductRelatedSite	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TechnologicalProductRelatedSite			A site related to a technological product
+LaserInducedPlasmaSpectroscopy	LaserInducedPlasmaSpectroscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LaserInducedPlasmaSpectroscopy			A laser induced plasma spectroscopy process: Minimal invasive process to measure the chemical composition on the material surface (or in a small volume) in high speed.
+MetallographicPolishingProcedure	MetallographicPolishingProcedure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicPolishingProcedure			Metallographic polishing procedure
+Crack	Crack	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Crack			
+Polishing	Polishing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Polishing			
+MaterialSurfaceTemperatureAsIsMiddle	MaterialSurfaceTemperatureAsIsMiddle	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialSurfaceTemperatureAsIsMiddle			
+Component	Component	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Component			Some kind of component
+Quantity	Quantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Quantity			Physikalische und nichtphysikalische Größen
+IntegratedHeatingFurnace	IntegratedHeatingFurnace	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IntegratedHeatingFurnace			A heating furnace, that is integrated in the casting machine
+GenericallyDependentContinuant	GenericallyDependentContinuant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GenericallyDependentContinuant			Class defined by the Basic Formal Ontology (BFO)
+FractureMechanicsTest	FractureMechanicsTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FractureMechanicsTest			
+Description	Description	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Description			A descriptive text
+NonFerrousMaterial	NonFerrousMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonFerrousMaterial			
+DataReduction	DataReduction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataReduction			
+InformationContentEntity	InformationContentEntity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InformationContentEntity			Any kind of information content entity (e.g. files, data sets...)
+ImageSet	ImageSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImageSet			A set of images
+SecondaryDendriteArmSpacing	SecondaryDendriteArmSpacing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SecondaryDendriteArmSpacing			
+hasStructuralInfo	hasStructuralInfo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasStructuralInfo			
+SimulationQuantity	SimulationQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SimulationQuantity			Simulation specific quantities
+OneDimensionalTemporalRegion	OneDimensionalTemporalRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OneDimensionalTemporalRegion			Class defined by the Basic Formal Ontology (BFO)
+isUnitSymbolForUnit	isUnitSymbolForUnit	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isUnitSymbolForUnit			
+Sulfur	Sulfur	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Sulfur			
+Melting	Melting	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Melting			The act of melting a solid state material within a casting process
+AverageHardnessVickers	AverageHardnessVickers	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AverageHardnessVickers			The average value of a series of hardness measurements according to the Vickers indentation process
+Function	Function	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Function			Class defined by the Basic Formal Ontology (BFO)
+MaterialNamingConventionSS	MaterialNamingConventionSS	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionSS			
+PrimaryShapingfromGranularOrPowerderyState	PrimaryShapingfromGranularOrPowerderyState	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PrimaryShapingfromGranularOrPowerderyState			
+DataExport	DataExport	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataExport			The process of exporting data (e.g. from a output file generated by some simulation software)
+refersToElementSymbol	refersToElementSymbol	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#refersToElementSymbol			
+CompressedAirConnection	CompressedAirConnection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CompressedAirConnection			
+Molybdenum	Molybdenum	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Molybdenum			
+HardeningExponent	HardeningExponent	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HardeningExponent			
+FileName	FileName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FileName			Name of a file
+RemovalOfSpecimenFromTestingMachine	RemovalOfSpecimenFromTestingMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RemovalOfSpecimenFromTestingMachine			The process of removing a specimen from a testing machine
+OrganicMaterial	OrganicMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OrganicMaterial			
+IDNumber	IDNumber	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IDNumber			
+DiameterBrinellIndenter	DiameterBrinellIndenter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DiameterBrinellIndenter			The diameter of a Brinell indenter
+hasParticipant	hasParticipant	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasParticipant			
+ElectricalConductance	ElectricalConductance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricalConductance			
+RelaxationTest	RelaxationTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RelaxationTest			
+PercentagePlasticExtensionAtMaximumForce	PercentagePlasticExtensionAtMaximumForce	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PercentagePlasticExtensionAtMaximumForce			Percentage plastic extension at maximum force.
+ElectricDischargeMachine	ElectricDischargeMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricDischargeMachine			Machine used for an electric discharge process (e.g. wire eroding)
+URL	URL	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#URL			
+Spectroscopy	Spectroscopy	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Spectroscopy			Some kind of spectroscopy (interaction between matter and electromagnetic radiation) process
+MeasurementRange	MeasurementRange	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MeasurementRange			"Measurement range: The area/volume in which the measurement
+is performed."
+Identifier	Identifier	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Identifier			
+CopperMaterial	CopperMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CopperMaterial			
+ArtificialAgingDurationAsSupposed	ArtificialAgingDurationAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ArtificialAgingDurationAsSupposed			The duration of the artificial aging process as supposed.
+Tungsten	Tungsten	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tungsten			
+Desktop	Desktop	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Desktop			
+SelectiveHeatSintering	SelectiveHeatSintering	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SelectiveHeatSintering			
+EngineeringStrain	EngineeringStrain	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringStrain			The engineering strain
+DerivedUnit	DerivedUnit	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DerivedUnit			
+UniformElongation	UniformElongation	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#UniformElongation			
+Tantalum	Tantalum	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tantalum			
+TurningMachine	TurningMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TurningMachine			A turning machine to perform a turning process
+Abstract	Abstract	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Abstract			
+MetallographicSection	MetallographicSection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallographicSection			
+MaterialStructure	MaterialStructure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialStructure			
+LuminousIntensity	LuminousIntensity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LuminousIntensity			
+PersonLastName	PersonLastName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PersonLastName			
+ShearForming	ShearForming	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ShearForming			
+HighCycleFatigueTest	HighCycleFatigueTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HighCycleFatigueTest			
+OpticalDisplacementAsIs	OpticalDisplacementAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OpticalDisplacementAsIs			An optically measured displacement as is e.g. by using digital image correlation
+EtchingDuration	EtchingDuration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EtchingDuration			Time duration to etch a metallographic specimen
+Number	Number	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Number			
+HeatAffectedZone	HeatAffectedZone	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatAffectedZone			
+HighPurityNickelMaterial	HighPurityNickelMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HighPurityNickelMaterial			
+TemperingForColors	TemperingForColors	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TemperingForColors			
+NonDestructiveTestingEquipment	NonDestructiveTestingEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonDestructiveTestingEquipment			Equipment used for nondestructive testing
+ContinuantFiatBoundary	ContinuantFiatBoundary	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ContinuantFiatBoundary			Class defined by the Basic Formal Ontology (BFO)
+AmountOfSubstance	AmountOfSubstance	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AmountOfSubstance			
+hasControlInfo	hasControlInfo	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasControlInfo			
+ExtensometerDisplacementAsIs	ExtensometerDisplacementAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ExtensometerDisplacementAsIs			
+Cerium	Cerium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Cerium			
+RegionOfInterest	RegionOfInterest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RegionOfInterest			
+MagneticFlux	MagneticFlux	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MagneticFlux			
+Tellurium	Tellurium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Tellurium			
+MaterialNamingConventionAFNOR	MaterialNamingConventionAFNOR	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionAFNOR			
+NonMetallicMaterial	NonMetallicMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonMetallicMaterial			
+GrainSize	GrainSize	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GrainSize			
+CSVFile	CSVFile	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CSVFile			
+Experiment	Experiment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Experiment			
+EngineeringStressInLoadingDirection	EngineeringStressInLoadingDirection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringStressInLoadingDirection			The engineering stress component in loading direction (e.g. in a uniaxial tensile test)
+CompactTensionSpecimen	CompactTensionSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CompactTensionSpecimen			
+Bismuth	Bismuth	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Bismuth			
+CornerCrackSpecimen	CornerCrackSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CornerCrackSpecimen			
+Chlorine	Chlorine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Chlorine			
+hasIntegerLiteral	hasIntegerLiteral	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasIntegerLiteral			
+EngineeringObject	EngineeringObject	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringObject			
+HeatTransferCoefficientMoldAndAtmosphere	HeatTransferCoefficientMoldAndAtmosphere	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HeatTransferCoefficientMoldAndAtmosphere			Heat transfer coefficient between mold and atmosphere
+isDefinedBy	isDefinedBy	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isDefinedBy			A reference, that indicates that something is defined by something else. E.g. the location/shape of a geometric feature is defined by the CAD file.
+FormatDescription	FormatDescription	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FormatDescription			
+SpecimenHeating	SpecimenHeating	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SpecimenHeating			The process of heating a specimen
+Diagram	Diagram	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Diagram			
+NumberFraction	NumberFraction	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NumberFraction			
+ImmaterialEntity	ImmaterialEntity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImmaterialEntity			Class defined by the Basic Formal Ontology (BFO)
+isRepresentativeFor	isRepresentativeFor	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#isRepresentativeFor			E.g. a process quantity or material data set is representative for a certain temporal state of an object
+Copper	Copper	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Copper			
+MicroscopeAccessory	MicroscopeAccessory	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MicroscopeAccessory			Microscope related accessory (e.g. light fixture, object lenses...)
+XCoordinate	XCoordinate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#XCoordinate			X coordinate of cartesian coordinate system
+MaterialNamingConventionBS	MaterialNamingConventionBS	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MaterialNamingConventionBS			
+ProcessQuantity	ProcessQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ProcessQuantity			
+Technetium	Technetium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Technetium			
+TemperatureRelatedQuantity	TemperatureRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TemperatureRelatedQuantity			
+GeneralGeometricQuantity	GeneralGeometricQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GeneralGeometricQuantity			
+GaugeLength	GaugeLength	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#GaugeLength			
+s	s	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#s			
+LightMicroscope	LightMicroscope	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LightMicroscope			Light microscope
+TIFFImage	TIFFImage	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TIFFImage			
+ComponentTest	ComponentTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ComponentTest			Some kind of component test
+CrossheadDisplacement	CrossheadDisplacement	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CrossheadDisplacement			Displacement of the crosshead, e.g. in a tensile test
+Etching	Etching	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Etching			Etching of metallographic specimens
+MechanicalQuantity	MechanicalQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MechanicalQuantity			
+LiquidNitrogenTank	LiquidNitrogenTank	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LiquidNitrogenTank			A tank filled with liquid nitrogen (e.g. used at a scanning electron microscope)
+DirectMetalLaserSintering	DirectMetalLaserSintering	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DirectMetalLaserSintering			
+Astatine	Astatine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Astatine			
+Fractography	Fractography	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Fractography			A fractographic analysis process, which typically includes other microscopy processes.
+Carbon	Carbon	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Carbon			
+ImportCAMDataAndMountMachine	ImportCAMDataAndMountMachine	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ImportCAMDataAndMountMachine			The process of importing CAM data and mounting a machine
+Drilling	Drilling	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Drilling			
+Concentration	Concentration	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Concentration			
+AverageGrainSize	AverageGrainSize	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AverageGrainSize			
+SelectiveHeatTreatment	SelectiveHeatTreatment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SelectiveHeatTreatment			
+InlensSecondaryElectronDetector	InlensSecondaryElectronDetector	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InlensSecondaryElectronDetector			An inlens secondary electron detector for the SEM
+Image	Image	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Image			
+hasRealLiteral	hasRealLiteral	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasRealLiteral			
+LightFixture	LightFixture	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LightFixture			
+ConsumableRelatedQuantity	ConsumableRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ConsumableRelatedQuantity			A structural quantity related to some kind of consumable
+DensityRelatedQuantity	DensityRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DensityRelatedQuantity			Quantity of Quantity kind density
+FatigueCrackPropagationTest	FatigueCrackPropagationTest	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FatigueCrackPropagationTest			
+Procedure	Procedure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Procedure			
+DataSet	DataSet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DataSet			Any kind of data set
+Pipe	Pipe	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Pipe			
+SemicolonDelimiter	SemicolonDelimiter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SemicolonDelimiter			
+LCFSpecimen	LCFSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#LCFSpecimen			
+SimulationStep	SimulationStep	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SimulationStep			
+MetallicMaterial	MetallicMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MetallicMaterial			
+NonMetallicInclusion	NonMetallicInclusion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NonMetallicInclusion			
+Rolling	Rolling	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rolling			
+CrucibleTemperatureAsSupposed	CrucibleTemperatureAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CrucibleTemperatureAsSupposed			The temperature of the crucible as supposed during the casting process
+Dysprosium	Dysprosium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Dysprosium			
+SurfaceFinishing	SurfaceFinishing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SurfaceFinishing			The process of finishing the surface of some kind of object (e.g. polishing, grinding...)
+SolutionAnnealingTemperature	SolutionAnnealingTemperature	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SolutionAnnealingTemperature			The temperature at which the solution annealing process is performed
+TurningTool	TurningTool	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TurningTool			The tool used to machine the object within a turning process
+SoftwareName	SoftwareName	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SoftwareName			
+inAccordanceWith	inAccordanceWith	ObjectProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#inAccordanceWith			
+hasDoubleLiteral	hasDoubleLiteral	DatatypeProperty	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#hasDoubleLiteral			
+Lutetium	Lutetium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Lutetium			
+SoftwareTool	SoftwareTool	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#SoftwareTool			
+AluminiumMaterial	AluminiumMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#AluminiumMaterial			Any kind of aluminium material (e.g. an alloy or high purity aluminium)
+Rp01	Rp01	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rp01			
+StructuralInfo	StructuralInfo	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StructuralInfo			
+ThreeDimensionalXRayComputerTomography	ThreeDimensionalXRayComputerTomography	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ThreeDimensionalXRayComputerTomography			Three dimensional x-ray computer tomography
+OneDimensionalSpatialRegion	OneDimensionalSpatialRegion	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#OneDimensionalSpatialRegion			Class defined by the Basic Formal Ontology (BFO)
+TimeRelatedQuantity	TimeRelatedQuantity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TimeRelatedQuantity			
+ExtensometerDisplacementAsSupposed	ExtensometerDisplacementAsSupposed	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ExtensometerDisplacementAsSupposed			
+IndependentContinuant	IndependentContinuant	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IndependentContinuant			Class defined by the Basic Formal Ontology (BFO)
+StrainRateInLoadingDirection	StrainRateInLoadingDirection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StrainRateInLoadingDirection			
+Ingot	Ingot	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Ingot			An ingot is often used as raw material for a casting process
+Figure	Figure	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Figure			
+StartDateTime	StartDateTime	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#StartDateTime			
+Analysing	Analysing	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Analysing			
+HardnessVickers	HardnessVickers	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#HardnessVickers			The hardness determined by a Vickers indentation process
+BaseQuantityKind	BaseQuantityKind	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#BaseQuantityKind			
+RadiationProtectedWall	RadiationProtectedWall	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#RadiationProtectedWall			A wall to protect humans from radiation, e.g. x-ray
+MachineSoftware	MachineSoftware	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#MachineSoftware			Machine specific software, e.g. used to control the process or acquire data
+ArtificialAging	ArtificialAging	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ArtificialAging			
+Rhodium	Rhodium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Rhodium			
+EngineeringMaterial	EngineeringMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#EngineeringMaterial			
+Arsenic	Arsenic	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Arsenic			
+Prasedoymium	Prasedoymium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Prasedoymium			
+FractureMechanicsSpecimen	FractureMechanicsSpecimen	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FractureMechanicsSpecimen			
+Manganese	Manganese	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Manganese			
+ScanningElectronMicroscope	ScanningElectronMicroscope	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ScanningElectronMicroscope			Scanning electron microscope
+ChemicalElementSymbol	ChemicalElementSymbol	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ChemicalElementSymbol			Symbol of a chemical element (e.g. H for hydrogen, Si for silicon Al for Aluminium, Fe for iron)
+PreliminaryStress	PreliminaryStress	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#PreliminaryStress			A preliminary applied stress, e.g. in a tensile test to ensure the alignment of the test piece and the grip system.
+ElectricalConnection	ElectricalConnection	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ElectricalConnection			
+Grain	Grain	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Grain			
+NumberDensity	NumberDensity	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#NumberDensity			
+FumeHood	FumeHood	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#FumeHood			Fume hood to suck off toxic gases in the air, e.g. during etching of metallographic specimens.
+Power	Power	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Power			
+TabDelimiter	TabDelimiter	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#TabDelimiter			
+ITEquipment	ITEquipment	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ITEquipment			
+DepthOfCut	DepthOfCut	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#DepthOfCut			Depth of cut is a process quantity for a turning process characterizing the depth of the machined cut.
+CastingTemperatureAsIs	CastingTemperatureAsIs	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CastingTemperatureAsIs			Temperature of the melting at the moment the casting process starts (as is)
+ExcelSheet	ExcelSheet	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#ExcelSheet			An excel sheet
+Terbium	Terbium	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#Terbium			
+InorganicMaterial	InorganicMaterial	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#InorganicMaterial			
+CartesianCoordinate	CartesianCoordinate	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#CartesianCoordinate			Cartesian coordinates (e.g. x, y, z)
+IngotID	IngotID	Class	https://www.iwm.fraunhofer.de/ontologies/bwmd-ontology#IngotID			ID of an ingot (e.g. used as raw material for a casting process)

@@ -1,0 +1,32 @@
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+SELECT
+  (COALESCE(STR(?lab), ?LOCAL) AS ?LABEL)
+  ?LOCAL
+  (COALESCE(?typeShort, "Entity") AS ?TYPE)
+  (STR(?e) AS ?IRI)
+  ("" AS ?ALT_LABELS)
+  ("" AS ?SYNONYMS)
+  (SAMPLE(STR(?com)) AS ?COMMENT)
+WHERE {
+  ?e ?p ?o .
+  FILTER(isIRI(?e))
+  OPTIONAL { ?e rdfs:label ?lab . }
+  OPTIONAL { ?e rdfs:comment ?com . }
+  BIND(STR(?e) AS ?s)
+  BIND( REPLACE(?s, "^.*#", "") AS ?fragHash )
+  BIND( REPLACE(?s, "^.*/", "") AS ?fragSlash )
+  BIND( IF(CONTAINS(?s, "#"), ?fragHash, ?fragSlash) AS ?LOCAL )
+  OPTIONAL { ?e rdf:type ?t . }
+  BIND(
+    IF(?t = owl:Class, "Class",
+    IF(?t = owl:ObjectProperty, "ObjectProperty",
+    IF(?t = owl:DatatypeProperty, "DatatypeProperty",
+    IF(?t = owl:AnnotationProperty, "AnnotationProperty",
+    IF(?t = owl:NamedIndividual, "Individual", "Entity"))))) AS ?typeShort
+  )
+}
+GROUP BY ?e ?lab ?LOCAL ?typeShort
+ORDER BY LCASE(COALESCE(STR(?lab), ?LOCAL))
