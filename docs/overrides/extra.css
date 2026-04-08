@@ -116,9 +116,18 @@
   transform: translateY(-3px);
 }
 .odp-card-icon {
-  font-size: 2rem;
-  margin-bottom: .75rem;
   display: block;
+  margin-bottom: .75rem;
+  line-height: 1;
+}
+.odp-card-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--odp-primary-light);
+  transition: fill var(--odp-transition);
+}
+.odp-card:hover .odp-card-icon svg {
+  fill: var(--odp-accent);
 }
 .odp-card h3 {
   font-size: 1.05rem;
