@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://ise-fizkarlsruhe.github.io/odps4mse/
+    about: Browse the full documentation and interactive tools
+  - name: Community Hub
+    url: https://ise-fizkarlsruhe.github.io/odps4mse/community/
+    about: Vote for domains, propose patterns, and shape the roadmap

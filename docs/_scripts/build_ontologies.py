@@ -485,6 +485,25 @@ def discover_patterns():
     log(f"Scanned Patterns -> {cnt} files; total tuples: {len(found)}")
     return found
 
+# ================= Feedback widget =================
+REPO_BASE = "https://github.com/ISE-FIZKarlsruhe/odps4mse"
+
+def _write_feedback_widget(f, item_name: str, item_type: str):
+    """Append a feedback / vote widget at the bottom of a generated page."""
+    import urllib.parse
+    safe_name = urllib.parse.quote(item_name, safe='')
+    title_prefix = "Pattern" if item_type == "pattern" else "Ontology"
+    print("\n---\n", file=f)
+    print('<div class="odp-quick-form" style="margin-top:2rem">', file=f)
+    print(f'<h3>Feedback on this {item_type}</h3>', file=f)
+    print(f'<p style="font-size:.88rem;color:var(--odp-text-muted);margin-bottom:1rem">Is this {item_type} useful for your work? Found an issue? Let us know.</p>', file=f)
+    print('<div style="display:flex;gap:.6rem;flex-wrap:wrap">', file=f)
+    print(f'<a class="odp-vote-btn" href="{REPO_BASE}/issues/new?title=%5BFeedback%5D+{safe_name}&labels=feedback&body=Regarding+**{safe_name}**%0A%0A" target="_blank">', file=f)
+    print(f'Give Feedback</a>', file=f)
+    print(f'<a class="odp-vote-btn" href="{REPO_BASE}/issues/new?template=propose-pattern.yml&title=%5B{title_prefix}+Proposal%5D+Extend+{safe_name}" target="_blank">', file=f)
+    print(f'Propose Extension</a>', file=f)
+    print('</div></div>\n', file=f)
+
 # ================= Page builders =================
 def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -> Path:
     name = infile.stem
@@ -569,6 +588,8 @@ def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -
             print("See the full report (not indexed by search): [report](report/)", file=f)
         elif not EXTRACT_WITH_RDFLIB_ONLY:
             print("\n!!! warning \"QC report\"\n    ROBOT report could not be generated.\n", file=f)
+        # Feedback widget
+        _write_feedback_widget(f, name, "ontology")
     return page_rel
 
 def build_ontology_index(pages_with_dirs):
@@ -670,6 +691,8 @@ def make_pattern_page(infile: Path, ontology: str, requirement: str, all_terms_a
             print("See the full report (not indexed by search): [report](report/)", file=f)
         elif not EXTRACT_WITH_RDFLIB_ONLY:
             print("\n!!! warning \"QC report\"\n    ROBOT report could not be generated.\n", file=f)
+        # Feedback widget
+        _write_feedback_widget(f, f"{ontology}/{requirement}/{name}", "pattern")
     return page_rel
 
 def build_patterns_index(pattern_pages):

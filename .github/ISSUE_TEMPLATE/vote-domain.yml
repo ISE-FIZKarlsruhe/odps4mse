@@ -1,0 +1,56 @@
+name: "\U0001F5F3 Vote for a Domain / Pattern Area"
+description: Tell us which ODP domain should be prioritized next
+title: "[Vote] "
+labels: ["vote", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for helping shape the future of ODPs4MSE!**
+        Your vote helps us prioritize which pattern areas to develop next.
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Which domain should we prioritize?
+      description: Select the pattern area you'd most like to see developed.
+      options:
+        - "Material Composition (phases, microstructures, chemical composition)"
+        - "Measurement & Characterization (XRD, SEM, TEM, spectroscopy)"
+        - "Simulation & Computation (DFT, MD, FEM, workflows)"
+        - "Provenance & Reproducibility (data lineage, FAIR principles)"
+        - "Standards & Compliance (DIN, ISO, ASTM)"
+        - "Other (describe below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your use case
+      description: Briefly describe how you would use patterns in this domain.
+      placeholder: "e.g., We model XRD experiments and need a pattern for measurement setup, parameters, and result interpretation..."
+    validations:
+      required: true
+
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional)
+      description: Your institution or project (helps us understand the community).
+      placeholder: "e.g., KIT, NFDI-MatWerk, TU Dresden..."
+
+  - type: input
+    id: expertise
+    attributes:
+      label: Area of expertise (optional)
+      placeholder: "e.g., materials characterization, ontology engineering, process modeling..."
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Would you be willing to help?
+      options:
+        - label: "I'd be happy to review or co-develop patterns in this area"
+        - label: "I can provide example data or competency questions"
+        - label: "I can suggest relevant ontologies to extract from"

@@ -1,65 +1,104 @@
-# Ontology Design Patterns
+---
+hide:
+  - toc
+---
 
-Dive into a comprehensive repository of **Ontology Design Patterns (ODPs)** — reusable solutions to common ontology modeling challenges.  
-Explore, contribute, and collaborate with a global community of ontology practitioners. Together, we create smarter, more connected data ecosystems.
+<div class="odp-hero">
+  <h1>Ontology Design Patterns for MSE</h1>
+  <p>Reusable solutions for modeling processes, data, and projects in Materials Science & Engineering. Explore patterns, search terms, and shape what comes next.</p>
+  <div class="odp-hero-actions">
+    <a href="ProcessODPs/" class="odp-btn odp-btn-white">Browse Patterns</a>
+    <a href="terms/find/" class="odp-btn odp-btn-outline">Search Terms</a>
+    <a href="community/" class="odp-btn odp-btn-outline">Vote & Contribute</a>
+  </div>
+</div>
 
-> **Featured paper**  
-> **Semantic Representation of Processes with Ontology Design Patterns**  
-> *Ebrahim Norouzi, Sven Hertling, Jörg Waitelonis, and Harald Sack*  
-> arXiv:2509.23776 — <https://arxiv.org/abs/2509.23776>
+<div class="odp-stats">
+  <div class="odp-stat">
+    <span class="odp-stat-num">12</span>
+    <span class="odp-stat-label">Ontologies</span>
+  </div>
+  <div class="odp-stat">
+    <span class="odp-stat-num">8</span>
+    <span class="odp-stat-label">ODPs</span>
+  </div>
+  <div class="odp-stat">
+    <span class="odp-stat-num">3</span>
+    <span class="odp-stat-label">Requirements</span>
+  </div>
+  <div class="odp-stat">
+    <span class="odp-stat-num">5</span>
+    <span class="odp-stat-label">Planned Domains</span>
+  </div>
+</div>
+
+<h2 class="odp-section-title">Explore</h2>
+
+<div class="odp-cards">
+
+<a href="ProcessODPs/" class="odp-card">
+  <span class="odp-card-icon">:material-graph-outline:</span>
+  <h3>Process ODPs</h3>
+  <p>Browse extracted patterns organized by ontology and requirement — process structure, data flows, and project roles.</p>
+</a>
+
+<a href="ontologies/" class="odp-card">
+  <span class="odp-card-icon">:material-file-tree:</span>
+  <h3>Ontologies</h3>
+  <p>Explore source ontologies with interactive visualizations, quality reports, and downloadable files.</p>
+</a>
+
+<a href="terms/find/" class="odp-card">
+  <span class="odp-card-icon">:material-magnify:</span>
+  <h3>Find Terms</h3>
+  <p>Search across all terms with filters by type, source ontology, and fuzzy matching.</p>
+</a>
+
+<a href="community/" class="odp-card">
+  <span class="odp-card-icon">:material-vote:</span>
+  <h3>Community Hub</h3>
+  <p>Vote for domains, propose new patterns, and help shape the future of this catalog.</p>
+</a>
+
+</div>
 
 ---
 
-## What's in scope?
+<h2 class="odp-section-title">Three Core Requirements</h2>
 
-This repository focuses on ODPs for **process modeling** in Materials Science & Engineering (MSE).  
-It aligns with the three core requirements identified in the paper:
+This project addresses three fundamental modeling needs in MSE, identified in our [featured paper](https://arxiv.org/abs/2509.23776):
 
-1. **Process Structure** — Model processes, sub-processes, steps, and execution order.  
-2. **Data & Resources** — Capture inputs, outputs, and parameters per step (e.g., temperature, pressure, atmosphere, instruments, calibration).  
-3. **Project & Roles** — Represent project goals, stages, agents, and their roles (e.g., synthesis, microscopy, simulation).
+<div class="odp-cards">
 
-You'll find extracted patterns and reusable modules derived from ontologies such as **P-PLAN**, **PMDcore**, **M4I**, **OPMW**, and **GPO**.
+<div class="odp-card">
+  <span class="odp-card-icon">:material-swap-horizontal:</span>
+  <h3>Req 1: Process Structure</h3>
+  <p>Model processes, sub-processes, steps, and execution order.</p>
+</div>
+
+<div class="odp-card">
+  <span class="odp-card-icon">:material-flask:</span>
+  <h3>Req 2: Data & Resources</h3>
+  <p>Capture inputs, outputs, and parameters — temperature, pressure, instruments, calibration.</p>
+</div>
+
+<div class="odp-card">
+  <span class="odp-card-icon">:material-account-group:</span>
+  <h3>Req 3: Project & Roles</h3>
+  <p>Represent goals, stages, agents, and roles — synthesis, microscopy, simulation.</p>
+</div>
+
+</div>
 
 !!! info "More patterns coming"
-    This is an evolving collection. We are actively developing patterns for material composition, measurement, simulation, and provenance. See the [Roadmap](roadmap.md) for details.
+    We are actively developing patterns for material composition, measurement, simulation, provenance, and standards compliance. **[Vote for what matters to you](community/)** or see the [Roadmap](roadmap/).
 
 ---
 
-## Quick links
+<h2 class="odp-section-title">Cite this Work</h2>
 
-- [Process ODPs](ProcessODPs.md) — Browse all extracted patterns by ontology and requirement.
-- [Ontologies](ontologies/index.md) — Explore source ontologies with metrics and quality reports.
-- [Find Terms](terms/find.md) — Search across all terms with filters and fuzzy matching.
-- [Roadmap](roadmap.md) — Planned patterns and long-term vision.
+> **Semantic Representation of Processes with Ontology Design Patterns**
+> *Ebrahim Norouzi, Sven Hertling, Jorg Waitelonis, and Harald Sack*
+> arXiv:2509.23776 — [https://arxiv.org/abs/2509.23776](https://arxiv.org/abs/2509.23776)
 
----
-
-## How to start
-
-1. Create a new [`issue`](https://github.com/ISE-FIZKarlsruhe/odps4mse/issues) describing your pattern idea or contribution.  
-2. Copy the template from [`Patterns/template.md`](https://github.com/ISE-FIZKarlsruhe/odps4mse/blob/main/Patterns/template.md) into a new folder for your pattern.  
-3. Fill the template with all key information (motivation, intent, competency questions, diagram, examples, references).  
-4. Add a link to your new pattern in the appropriate index page or collection.
-
-> Tip: If your pattern targets one of the three requirements above, mention it explicitly so others can discover it quickly.
-
-See the [Contributing Guide](contributing.md) for full details.
-
----
-
-## Cite this work
-
-If this repository or its methodology helps your research, please cite:
-
-```bibtex
-@article{norouzi2025semantic,
-  title={Semantic Representation of Processes with Ontology Design Patterns},
-  author={Norouzi, Ebrahim and Hertling, Sven and Waitelonis, J{\"o}rg and Sack, Harald},
-  journal={arXiv preprint arXiv:2509.23776},
-  year={2025},
-  url={https://arxiv.org/abs/2509.23776}
-}
-```
-
-See the [Citation page](cite.md) for APA, RIS, and copy-to-clipboard options.
+See the [Citation page](cite/) for BibTeX, APA, RIS, and copy-to-clipboard options.

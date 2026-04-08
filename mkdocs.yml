@@ -4,36 +4,52 @@ repo_url: https://github.com/ISE-FIZKarlsruhe/odps4mse
 theme:
   name: material
   custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github
   features:
     - content.code.copy
     - toc.follow
     - navigation.top
+    - navigation.tabs
+    - navigation.sections
     - header.autohide
   palette:
     - scheme: default
+      primary: indigo
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
+      primary: indigo
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
+extra_css:
+  - overrides/extra.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       linenums: true
   - pymdownx.superfences:
       preserve_tabs: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search:
       separator: '[\\s\\-_/]+|(?=[A-Z][a-z])'
       lang: en
-      exclude: true
-      boost: 2.0
   - gen-files:
       scripts:
         - docs/gen.py
@@ -41,10 +57,13 @@ plugins:
   - ontoink
 
 nav:
-  - Introduction: index.md
-  - Process ODPs: ProcessODPs.md
-  - Ontologies: ontologies/index.md
+  - Home: index.md
+  - Patterns:
+    - Process ODPs: ProcessODPs.md
+    - Ontologies: ontologies/index.md
   - Find Terms: terms/find.md
+  - Community:
+    - Vote & Propose: community.md
+    - Roadmap: roadmap.md
+    - Contributing: contributing.md
   - Cite: cite.md
-  - Roadmap: roadmap.md
-  - Contributing: contributing.md

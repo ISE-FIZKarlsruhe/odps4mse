@@ -1,0 +1,56 @@
+name: "\U0001F30D Suggest an Ontology to Include"
+description: Recommend an ontology from which patterns should be extracted
+title: "[Ontology] "
+labels: ["ontology", "suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Know an ontology that should be in our catalog?**
+        We extract patterns from ontologies across the MSE domain. Suggest one we're missing.
+
+  - type: input
+    id: ontology-name
+    attributes:
+      label: Ontology name
+      placeholder: "e.g., CHMO (Chemical Methods Ontology)"
+    validations:
+      required: true
+
+  - type: input
+    id: ontology-url
+    attributes:
+      label: URL or IRI
+      placeholder: "e.g., https://github.com/rsc-ontologies/rsc-cmo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain-area
+    attributes:
+      label: Domain area
+      options:
+        - "Process modeling"
+        - "Materials characterization"
+        - "Simulation & computation"
+        - "Chemical composition"
+        - "Standards & compliance"
+        - "Provenance & metadata"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this ontology be included?
+      placeholder: "e.g., CHMO covers experimental techniques relevant to MSE characterization workflows..."
+    validations:
+      required: true
+
+  - type: input
+    id: format
+    attributes:
+      label: Format
+      description: What serialization format is the ontology available in?
+      placeholder: "e.g., OWL/XML, Turtle, OBO"

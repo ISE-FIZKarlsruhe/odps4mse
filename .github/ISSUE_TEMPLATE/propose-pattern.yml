@@ -1,0 +1,71 @@
+name: "\U0001F4A1 Propose a New Pattern"
+description: Suggest a new ontology design pattern for the collection
+title: "[Pattern Proposal] "
+labels: ["proposal", "pattern"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Propose a new Ontology Design Pattern!**
+        Help us grow the catalog by describing a modeling challenge and your proposed solution.
+
+  - type: input
+    id: pattern-name
+    attributes:
+      label: Pattern name
+      placeholder: "e.g., Measurement Setup Pattern"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: requirement
+    attributes:
+      label: Which requirement does this address?
+      options:
+        - "Req 1: Process Structure (processes, steps, execution order)"
+        - "Req 2: Data & Resources (inputs, outputs, parameters)"
+        - "Req 3: Project & Roles (goals, agents, roles)"
+        - "New requirement (describe below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What modeling problem does this pattern solve?
+      placeholder: "Describe the challenge you face when modeling this aspect of MSE..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: competency-questions
+    attributes:
+      label: Competency questions
+      description: What questions should someone be able to answer using this pattern?
+      placeholder: |
+        - What instrument was used for the measurement?
+        - What parameters were configured?
+        - What was the output format?
+
+  - type: textarea
+    id: related-ontologies
+    attributes:
+      label: Related ontologies or standards
+      description: Are there existing ontologies, vocabularies, or standards this should align with?
+      placeholder: "e.g., CHMO, SIO, QUDT, SSN/SOSA..."
+
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional)
+      placeholder: "e.g., FIZ Karlsruhe, KIT, EMMC..."
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: I can contribute
+      options:
+        - label: "I can provide a draft TTL file for this pattern"
+        - label: "I can provide example instance data"
+        - label: "I'd like to co-author this pattern"

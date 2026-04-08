@@ -1,0 +1,344 @@
+/* ===== ODPs4MSE Custom Theme ===== */
+
+/* ---------- Root palette overrides ---------- */
+:root {
+  --odp-primary: #1565c0;
+  --odp-primary-light: #1e88e5;
+  --odp-accent: #00897b;
+  --odp-accent-light: #26a69a;
+  --odp-surface: #f8f9fb;
+  --odp-surface-dark: #1e1e2e;
+  --odp-text-muted: #546e7a;
+  --odp-radius: 12px;
+  --odp-radius-sm: 8px;
+  --odp-shadow: 0 2px 12px rgba(0,0,0,.08);
+  --odp-shadow-hover: 0 6px 24px rgba(0,0,0,.12);
+  --odp-transition: .25s cubic-bezier(.4,0,.2,1);
+}
+[data-md-color-scheme="slate"] {
+  --odp-surface: #1e1e2e;
+  --odp-text-muted: #90a4ae;
+  --odp-shadow: 0 2px 12px rgba(0,0,0,.3);
+  --odp-shadow-hover: 0 6px 24px rgba(0,0,0,.4);
+}
+
+/* ---------- Hero banner ---------- */
+.odp-hero {
+  background: linear-gradient(135deg, var(--odp-primary) 0%, var(--odp-accent) 100%);
+  color: #fff;
+  border-radius: var(--odp-radius);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.odp-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.odp-hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 .6rem 0;
+  color: #fff !important;
+}
+.odp-hero p {
+  font-size: 1.1rem;
+  opacity: .92;
+  max-width: 640px;
+  margin: 0 0 1.2rem 0;
+  line-height: 1.6;
+}
+.odp-hero .odp-hero-actions {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.odp-hero .odp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .65rem 1.4rem;
+  border-radius: var(--odp-radius-sm);
+  font-weight: 600;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: all var(--odp-transition);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.odp-btn-white {
+  background: #fff;
+  color: var(--odp-primary);
+}
+.odp-btn-white:hover {
+  background: rgba(255,255,255,.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
+.odp-btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,.5);
+}
+.odp-btn-outline:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,.1);
+}
+
+/* ---------- Feature cards grid ---------- */
+.odp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+.odp-card {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--odp-radius);
+  padding: 1.5rem;
+  transition: all var(--odp-transition);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+.odp-card:hover {
+  border-color: var(--odp-primary-light);
+  box-shadow: var(--odp-shadow-hover);
+  transform: translateY(-3px);
+}
+.odp-card-icon {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  display: block;
+}
+.odp-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 .4rem 0;
+}
+.odp-card p {
+  font-size: .88rem;
+  color: var(--odp-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---------- Stats ribbon ---------- */
+.odp-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+.odp-stat {
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--odp-radius-sm);
+}
+.odp-stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--odp-primary);
+  display: block;
+}
+.odp-stat-label {
+  font-size: .82rem;
+  color: var(--odp-text-muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* ---------- Section headings ---------- */
+.odp-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2.5rem 0 .5rem 0;
+  padding-bottom: .4rem;
+  border-bottom: 3px solid var(--odp-accent);
+  display: inline-block;
+}
+
+/* ---------- Vote / feedback button ---------- */
+.odp-vote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1.2rem;
+  border-radius: var(--odp-radius-sm);
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid var(--odp-accent);
+  background: transparent;
+  color: var(--odp-accent);
+  text-decoration: none;
+  transition: all var(--odp-transition);
+}
+.odp-vote-btn:hover {
+  background: var(--odp-accent);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,137,123,.25);
+}
+.odp-vote-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ---------- Domain voting cards ---------- */
+.odp-vote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.odp-vote-card {
+  background: var(--md-default-bg-color);
+  border: 2px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--odp-radius);
+  padding: 1.4rem;
+  transition: all var(--odp-transition);
+  position: relative;
+}
+.odp-vote-card:hover {
+  border-color: var(--odp-accent-light);
+  box-shadow: var(--odp-shadow);
+}
+.odp-vote-card h4 {
+  margin: 0 0 .4rem 0;
+  font-size: 1rem;
+}
+.odp-vote-card p {
+  font-size: .85rem;
+  color: var(--odp-text-muted);
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+.odp-vote-card .odp-vote-btn {
+  font-size: .82rem;
+  padding: .45rem 1rem;
+}
+.odp-vote-card .odp-tag {
+  display: inline-block;
+  padding: .15rem .5rem;
+  border-radius: 4px;
+  font-size: .72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  margin-bottom: .6rem;
+}
+.odp-tag-planned { background: #e3f2fd; color: #1565c0; }
+.odp-tag-available { background: #e8f5e9; color: #2e7d32; }
+.odp-tag-proposed { background: #fff3e0; color: #e65100; }
+[data-md-color-scheme="slate"] .odp-tag-planned { background: #0d47a1; color: #bbdefb; }
+[data-md-color-scheme="slate"] .odp-tag-available { background: #1b5e20; color: #c8e6c9; }
+[data-md-color-scheme="slate"] .odp-tag-proposed { background: #bf360c; color: #ffe0b2; }
+
+/* ---------- Expert quick-form ---------- */
+.odp-quick-form {
+  background: var(--odp-surface);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--odp-radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.odp-quick-form h3 {
+  margin: 0 0 .8rem 0;
+  font-size: 1.1rem;
+}
+.odp-quick-form label {
+  display: block;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+  color: var(--md-default-fg-color);
+}
+.odp-quick-form input,
+.odp-quick-form select,
+.odp-quick-form textarea {
+  width: 100%;
+  padding: .6rem .8rem;
+  border: 1.5px solid var(--md-default-fg-color--lighter);
+  border-radius: var(--odp-radius-sm);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: .9rem;
+  margin-bottom: .8rem;
+  transition: border-color var(--odp-transition);
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.odp-quick-form input:focus,
+.odp-quick-form select:focus,
+.odp-quick-form textarea:focus {
+  outline: none;
+  border-color: var(--odp-primary-light);
+}
+.odp-quick-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.odp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+}
+@media (max-width: 600px) {
+  .odp-form-row { grid-template-columns: 1fr; }
+}
+.odp-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1.6rem;
+  border-radius: var(--odp-radius-sm);
+  font-size: .92rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(135deg, var(--odp-primary), var(--odp-accent));
+  color: #fff;
+  transition: all var(--odp-transition);
+}
+.odp-submit-btn:hover {
+  box-shadow: 0 4px 16px rgba(21,101,192,.3);
+  transform: translateY(-1px);
+}
+
+/* ---------- Admonition polish ---------- */
+.md-typeset .admonition, .md-typeset details {
+  border-radius: var(--odp-radius-sm);
+}
+
+/* ---------- Smooth scroll ---------- */
+html { scroll-behavior: smooth; }
+
+/* ---------- Better tables ---------- */
+.md-typeset table:not([class]) {
+  border-radius: var(--odp-radius-sm);
+  overflow: hidden;
+  box-shadow: var(--odp-shadow);
+}
+.md-typeset table:not([class]) thead {
+  background: var(--odp-primary);
+  color: #fff;
+}
+.md-typeset table:not([class]) th {
+  color: #fff !important;
+  font-weight: 600;
+}
