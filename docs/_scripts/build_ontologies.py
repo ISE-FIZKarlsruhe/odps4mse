@@ -773,11 +773,11 @@ def build_all_terms_page(all_terms: list):
     })();""", file=f)
         print("</script>", file=f)
     # Finder UI — enhanced with filters, fuzzy matching, result highlighting, keyboard nav
-    find_rel = Path(“terms/find.md”)
-    with open_virtual(find_rel, “w”) as f:
-        print(“# Find Terms\n”, file=f)
-        print(“> Search across all ontologies and patterns. Filter by type, source, or requirement.\n”, file=f)
-        print(“””<style>
+    find_rel = Path("terms/find.md")
+    with open_virtual(find_rel, "w") as f:
+        print("# Find Terms\n", file=f)
+        print("> Search across all ontologies and patterns. Filter by type, source, or requirement.\n", file=f)
+        print("""<style>
 #search-box{display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center}
 #q{flex:1;min-width:200px;padding:0.7rem 1rem;font-size:1rem;border:2px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);transition:border-color .2s}
 #q:focus{outline:none;border-color:var(--md-accent-fg-color)}
@@ -803,24 +803,24 @@ mark{background:var(--md-accent-fg-color--transparent);color:inherit;padding:0 2
 .view-toggle button.active{background:var(--md-accent-fg-color);color:#fff;border-color:var(--md-accent-fg-color)}
 </style>
 
-<div id=”search-box”>
-  <input id=”q” placeholder=”Search terms… (e.g., process, temperature, agent)” autocomplete=”off”>
-  <button id=”clear-btn” title=”Clear search”>Clear</button>
+<div id="search-box">
+  <input id="q" placeholder="Search terms… (e.g., process, temperature, agent)" autocomplete="off">
+  <button id="clear-btn" title="Clear search">Clear</button>
 </div>
-<div class=”filters”>
-  <select id=”f-type”><option value=””>All types</option></select>
-  <select id=”f-source”><option value=””>All sources</option></select>
-  <select id=”f-kind”><option value=””>Ontologies & Patterns</option><option value=”Ontology”>Ontologies only</option><option value=”Pattern”>Patterns only</option></select>
+<div class="filters">
+  <select id="f-type"><option value="">All types</option></select>
+  <select id="f-source"><option value="">All sources</option></select>
+  <select id="f-kind"><option value="">Ontologies & Patterns</option><option value="Ontology">Ontologies only</option><option value="Pattern">Patterns only</option></select>
 </div>
-<div class=”view-toggle”>
-  <button id=”view-grouped” class=”active” title=”Group by source”>Grouped</button>
-  <button id=”view-flat” title=”Show all results”>Flat list</button>
+<div class="view-toggle">
+  <button id="view-grouped" class="active" title="Group by source">Grouped</button>
+  <button id="view-flat" title="Show all results">Flat list</button>
 </div>
-<div id=”stats”></div>
-<div id=”results”></div>
-“””, file=f)
-        print(“<script>”, file=f)
-        print(r”””(function(){
+<div id="stats"></div>
+<div id="results"></div>
+""", file=f)
+        print("<script>", file=f)
+        print(r"""(function(){
 const $ = sel => document.querySelector(sel);
 const results = $('#results');
 const stats = $('#stats');
@@ -863,11 +863,11 @@ function renderCard(r, tokens, base){
   const source = `${r.SOURCE_KIND || ''}: ${r.SOURCE_NAME || ''}`;
   const comment = r.COMMENT ? highlight(r.COMMENT.substring(0, 200), tokens) : '';
   const alt = r.ALT_LABELS ? highlight(r.ALT_LABELS, tokens) : '';
-  return `<div class=”term-card”>
-    <div><span class=”term-label”>${label}</span><span class=”term-type”>${typ}</span></div>
-    <div class=”term-meta”><code>${local}</code> &mdash; <a href=”${link}”>${source}</a></div>
-    ${comment ? `<div class=”term-comment”>${comment}</div>` : ''}
-    ${alt ? `<div class=”term-meta”>Also: ${alt}</div>` : ''}
+  return `<div class="term-card">
+    <div><span class="term-label">${label}</span><span class="term-type">${typ}</span></div>
+    <div class="term-meta"><code>${local}</code> &mdash; <a href="${link}">${source}</a></div>
+    ${comment ? `<div class="term-comment">${comment}</div>` : ''}
+    ${alt ? `<div class="term-meta">Also: ${alt}</div>` : ''}
   </div>`;
 }
 
@@ -882,10 +882,10 @@ function renderGrouped(subset, tokens){
   let html = '';
   for(const key of Object.keys(groups).sort()){
     const g = groups[key];
-    html += `<div class=”source-group”><h3>${key} (${g.items.length})</h3>`;
+    html += `<div class="source-group"><h3>${key} (${g.items.length})</h3>`;
     const shown = g.items.slice(0, 20);
     for(const r of shown) html += renderCard(r, tokens, base);
-    if(g.items.length > 20) html += `<p style=”opacity:0.6”>… and ${g.items.length - 20} more</p>`;
+    if(g.items.length > 20) html += `<p style="opacity:0.6">… and ${g.items.length - 20} more</p>`;
     html += '</div>';
   }
   return html;
@@ -897,7 +897,7 @@ function renderFlat(subset, tokens){
   let html = '';
   const shown = subset.slice(0, MAX);
   for(const r of shown) html += renderCard(r, tokens, base);
-  if(subset.length > MAX) html += `<p style=”opacity:0.6”>Showing ${MAX} of ${subset.length} results.</p>`;
+  if(subset.length > MAX) html += `<p style="opacity:0.6">Showing ${MAX} of ${subset.length} results.</p>`;
   return html;
 }
 
@@ -913,8 +913,8 @@ fetch('../all-terms.json')
     if(r.TYPE) allTypes.add(r.TYPE);
     if(r.SOURCE_NAME) allSources.add(r.SOURCE_NAME);
   }
-  for(const t of [...allTypes].sort()) fType.innerHTML += `<option value=”${t}”>${t}</option>`;
-  for(const s of [...allSources].sort()) fSource.innerHTML += `<option value=”${s}”>${s}</option>`;
+  for(const t of [...allTypes].sort()) fType.innerHTML += `<option value="${t}">${t}</option>`;
+  for(const s of [...allSources].sort()) fSource.innerHTML += `<option value="${s}">${s}</option>`;
   stats.textContent = `${rows.length} terms loaded. Start typing to search.`;
 })
 .catch(err=>{
@@ -945,7 +945,7 @@ function doSearch(){
   stats.textContent = `${subset.length} terms found across ${ontoCount} ontologies and ${patCount} patterns.`;
 
   if(!subset.length){
-    results.innerHTML = '<div class=”no-results”>No matching terms found. Try a different query or adjust filters.</div>';
+    results.innerHTML = '<div class="no-results">No matching terms found. Try a different query or adjust filters.</div>';
     return;
   }
 
@@ -967,8 +967,8 @@ document.addEventListener('keydown', (e)=>{
   if(e.key === '/' && document.activeElement !== input){ e.preventDefault(); input.focus(); }
   if(e.key === 'Escape' && document.activeElement === input){ input.blur(); }
 });
-})();”””, file=f)
-        print(“</script>”, file=f)
+})();""", file=f)
+        print("</script>", file=f)
 
 
 # ================= Main =================
