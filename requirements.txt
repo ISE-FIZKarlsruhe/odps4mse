@@ -3,3 +3,4 @@ mkdocs-gen-files
 mkdocs-macros-plugin
 pandas
 rdflib
+ontoink

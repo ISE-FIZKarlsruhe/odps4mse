@@ -25,7 +25,11 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: ontoink
+          class: ontoink
+          format: !!python/name:ontoink.fence
 
 plugins:
   - search:
@@ -37,11 +41,13 @@ plugins:
       scripts:
         - docs/gen.py
   - macros
-
-         
+  - ontoink
 
 nav:
   - Introduction: index.md
   - Process ODPs: ProcessODPs.md
-  - Ontologies: ontologies/index.md   # auto-generated 
+  - Ontologies: ontologies/index.md
   - Find Terms: terms/find.md
+  - Cite: cite.md
+  - Roadmap: roadmap.md
+  - Contributing: contributing.md

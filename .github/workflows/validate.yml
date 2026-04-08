@@ -1,0 +1,93 @@
+name: Validate Ontologies & Patterns
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "Ontologies/**"
+      - "Patterns/**"
+      - "ODPs/**"
+  push:
+    branches: [main]
+    paths:
+      - "Ontologies/**"
+      - "Patterns/**"
+      - "ODPs/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java (for ROBOT)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install ROBOT
+        run: |
+          curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+          echo '#!/usr/bin/env bash' > robot
+          echo 'set -euo pipefail' >> robot
+          echo 'java -Xmx4G -jar "$(dirname "$0")/robot.jar" "$@"' >> robot
+          chmod +x robot
+          sudo mv robot robot.jar /usr/local/bin/
+          robot --version
+
+      - name: Validate OWL files
+        run: |
+          echo "=== Validating Ontology files ==="
+          errors=0
+          for f in Ontologies/*.owl Ontologies/*.ttl; do
+            [ -f "$f" ] || continue
+            echo "Checking: $f"
+            if ! robot report -i "$f" --fail-on ERROR --output /dev/null 2>&1; then
+              echo "::error file=$f::ROBOT report found errors in $f"
+              errors=$((errors + 1))
+            fi
+          done
+          echo "=== Validating Pattern files ==="
+          for f in $(find Patterns -name '*.ttl' -o -name '*.owl' 2>/dev/null); do
+            echo "Checking: $f"
+            if ! robot report -i "$f" --fail-on ERROR --output /dev/null 2>&1; then
+              echo "::warning file=$f::ROBOT report found issues in $f"
+            fi
+          done
+          echo "=== Validating ODP files ==="
+          for f in ODPs/*.ttl ODPs/*.owl; do
+            [ -f "$f" ] || continue
+            echo "Checking: $f"
+            if ! robot report -i "$f" --fail-on ERROR --output /dev/null 2>&1; then
+              echo "::warning file=$f::ROBOT report found issues in $f"
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "::error::$errors ontology file(s) have errors"
+            exit 1
+          fi
+          echo "All validations passed."
+
+      - name: Check for syntax errors in TTL files
+        run: |
+          pip install rdflib
+          python3 -c "
+          import sys, glob
+          from rdflib import Graph
+          errors = []
+          for pattern in ['Ontologies/*.ttl', 'Patterns/**/*.ttl', 'ODPs/*.ttl']:
+              for f in glob.glob(pattern, recursive=True):
+                  try:
+                      g = Graph()
+                      g.parse(f, format='turtle')
+                      print(f'OK: {f} ({len(g)} triples)')
+                  except Exception as e:
+                      errors.append((f, str(e)))
+                      print(f'FAIL: {f}: {e}')
+          if errors:
+              print(f'\n{len(errors)} file(s) failed parsing.')
+              sys.exit(1)
+          print('\nAll TTL files parsed successfully.')
+          "

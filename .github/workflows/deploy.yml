@@ -25,8 +25,7 @@ jobs:
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           else
-            # Fallback if no requirements.txt present
-            pip install mkdocs-material mkdocs-gen-files mkdocs-macros-plugin pandas rdflib
+            pip install mkdocs-material mkdocs-gen-files mkdocs-macros-plugin pandas rdflib ontoink
           fi
 
       - name: Set up Java (for ROBOT)

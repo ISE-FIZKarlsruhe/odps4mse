@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: Ontology Design Patterns for Materials Science and Engineering
+message: >-
+  If you use this repository or methodology in your research,
+  please cite the associated paper.
+type: software
+authors:
+  - given-names: Ebrahim
+    family-names: Norouzi
+    orcid: "https://orcid.org/0000-0003-2780-4821"
+  - given-names: Sven
+    family-names: Hertling
+  - given-names: Jörg
+    family-names: Waitelonis
+  - given-names: Harald
+    family-names: Sack
+repository-code: "https://github.com/ISE-FIZKarlsruhe/odps4mse"
+url: "https://ise-fizkarlsruhe.github.io/odps4mse/"
+license: MIT
+preferred-citation:
+  type: article
+  title: Semantic Representation of Processes with Ontology Design Patterns
+  authors:
+    - given-names: Ebrahim
+      family-names: Norouzi
+    - given-names: Sven
+      family-names: Hertling
+    - given-names: Jörg
+      family-names: Waitelonis
+    - given-names: Harald
+      family-names: Sack
+  year: 2025
+  journal: "arXiv preprint arXiv:2509.23776"
+  url: "https://arxiv.org/abs/2509.23776"

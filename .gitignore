@@ -9,3 +9,4 @@ bin/
 
 .github/token.txt
 Latex/*
+.claude/*

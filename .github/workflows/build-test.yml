@@ -1,0 +1,73 @@
+name: Build Test (PR)
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Set up Java (for ROBOT)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install ROBOT
+        run: |
+          curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+          echo '#!/usr/bin/env bash' > robot
+          echo 'set -euo pipefail' >> robot
+          echo 'java -Xmx4G -jar "$(dirname "$0")/robot.jar" "$@"' >> robot
+          chmod +x robot
+          sudo mv robot robot.jar /usr/local/bin/
+          robot --version
+
+      - name: Build site (dry run)
+        env:
+          ONTOLOGY_DIRS: Ontologies
+          PATTERNS_DIR: "Patterns"
+          MEASURE_LEVEL: extended
+        run: mkdocs build --clean --strict
+
+      - name: Check for broken internal links
+        run: |
+          python3 -c "
+          import os, re, sys
+          site = 'site'
+          broken = []
+          for root, dirs, files in os.walk(site):
+              for f in files:
+                  if not f.endswith('.html'):
+                      continue
+                  path = os.path.join(root, f)
+                  with open(path, 'r', encoding='utf-8', errors='ignore') as fh:
+                      content = fh.read()
+                  for m in re.finditer(r'href=\"([^\"#]+?)\"', content):
+                      href = m.group(1)
+                      if href.startswith(('http', 'mailto', 'javascript', '//')):
+                          continue
+                      target = os.path.normpath(os.path.join(root, href))
+                      if not os.path.exists(target) and not os.path.exists(target + '/index.html'):
+                          if not os.path.exists(target.rstrip('/')):
+                              broken.append((path, href))
+          if broken:
+              print(f'Found {len(broken)} potentially broken internal links:')
+              for p, h in broken[:20]:
+                  print(f'  {p} -> {h}')
+              # Warning only, don't fail the build
+          else:
+              print('No broken internal links found.')
+          "

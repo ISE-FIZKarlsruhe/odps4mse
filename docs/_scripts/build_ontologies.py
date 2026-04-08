@@ -550,6 +550,12 @@ def make_ontology_page(infile: Path, rel_root_dir: str, all_terms_accum: list) -
         print(f"- **Source:** `{rel_root_dir}/{infile.name}`  ·  **[Download]({download_name})**\n", file=f)
         if page_tokens:
             print(f"<span class='search-tokens' style='display:none'>{page_tokens}</span>\n", file=f)
+        # Ontoink visualization for TTL ontologies
+        if infile.suffix.lower() == ".ttl":
+            print("## Visualization\n", file=f)
+            print("```ontoink", file=f)
+            print(f"source: {rel_root_dir}/{infile.name}", file=f)
+            print("```\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
             print("<div data-search-exclude>", file=f)
@@ -645,6 +651,12 @@ def make_pattern_page(infile: Path, ontology: str, requirement: str, all_terms_a
         print(f"- **Source:** `{rel_src}`  ·  **[Download]({download_name})**\n", file=f)
         if page_tokens:
             print(f"<span class='search-tokens' style='display:none'>{page_tokens}</span>\n", file=f)
+        # Ontoink visualization for TTL patterns
+        if infile.suffix.lower() == ".ttl":
+            print("## Visualization\n", file=f)
+            print("```ontoink", file=f)
+            print(f"source: {rel_src}", file=f)
+            print("```\n", file=f)
         if entities_ok and entities_md:
             print("## Classes & Properties\n", file=f)
             print("<div data-search-exclude>", file=f)
@@ -760,90 +772,203 @@ def build_all_terms_page(all_terms: list):
     });
     })();""", file=f)
         print("</script>", file=f)
-    # Finder UI
-    find_rel = Path("terms/find.md")
-    with open_virtual(find_rel, "w") as f:
-        print("# Find Terms\n", file=f)
-        print("> Type a word (e.g., **input**) to see **ontologies** and **patterns** that contain matching terms.\n", file=f)
-        print("<input id='q' placeholder='Search term…' style='width:100%;padding:0.6rem;font-size:1rem'>", file=f)
-        print("<div id='stats' style='margin-top:0.5rem;opacity:0.7'></div>", file=f)
-        print("<div id='results' style='margin-top:1rem'></div>\n", file=f)
-        print("<script>", file=f)
-        print(r"""(function(){
-        const $ = sel => document.querySelector(sel);
-        const results = $('#results');
-        const stats = $('#stats');
-        const input = $('#q');
+    # Finder UI — enhanced with filters, fuzzy matching, result highlighting, keyboard nav
+    find_rel = Path(“terms/find.md”)
+    with open_virtual(find_rel, “w”) as f:
+        print(“# Find Terms\n”, file=f)
+        print(“> Search across all ontologies and patterns. Filter by type, source, or requirement.\n”, file=f)
+        print(“””<style>
+#search-box{display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center}
+#q{flex:1;min-width:200px;padding:0.7rem 1rem;font-size:1rem;border:2px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);transition:border-color .2s}
+#q:focus{outline:none;border-color:var(--md-accent-fg-color)}
+#clear-btn{padding:0.7rem 1rem;border:none;border-radius:8px;background:var(--md-default-fg-color--lightest);color:var(--md-default-fg-color);cursor:pointer;font-size:0.9rem}
+#clear-btn:hover{background:var(--md-accent-fg-color);color:#fff}
+.filters{display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.5rem}
+.filters select{padding:0.4rem 0.6rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:6px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font-size:0.85rem}
+#stats{margin-top:0.5rem;font-size:0.85rem;opacity:0.7}
+#results{margin-top:1rem}
+.term-card{border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;padding:0.8rem 1rem;margin-bottom:0.5rem;transition:box-shadow .15s}
+.term-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.term-label{font-weight:600;font-size:1.05rem}
+.term-type{display:inline-block;padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem;font-weight:500;margin-left:0.5rem;background:var(--md-accent-fg-color--transparent);color:var(--md-accent-fg-color)}
+.term-meta{font-size:0.85rem;color:var(--md-default-fg-color--light);margin-top:0.3rem}
+.term-meta a{color:var(--md-accent-fg-color)}
+.term-comment{font-size:0.85rem;margin-top:0.3rem;font-style:italic;opacity:0.8}
+mark{background:var(--md-accent-fg-color--transparent);color:inherit;padding:0 2px;border-radius:2px}
+.source-group{margin-top:1.5rem}
+.source-group h3{margin-bottom:0.5rem;border-bottom:2px solid var(--md-accent-fg-color);padding-bottom:0.3rem;display:inline-block}
+.no-results{text-align:center;padding:2rem;opacity:0.6;font-size:1.1rem}
+.view-toggle{display:flex;gap:0.3rem;margin-top:0.5rem}
+.view-toggle button{padding:0.3rem 0.7rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:4px;background:none;color:var(--md-default-fg-color);cursor:pointer;font-size:0.8rem}
+.view-toggle button.active{background:var(--md-accent-fg-color);color:#fff;border-color:var(--md-accent-fg-color)}
+</style>
 
-        /* Compute site base from current URL, e.g. "/odps4mse/" or "/" */
-        function siteBase(){
-        const parts = window.location.pathname.split('/').filter(Boolean);
-        // e.g., /odps4mse/terms/find/ -> ["odps4mse","terms","find"]
-        return parts.length ? ('/' + parts[0] + '/') : '/';
-        }
+<div id=”search-box”>
+  <input id=”q” placeholder=”Search terms… (e.g., process, temperature, agent)” autocomplete=”off”>
+  <button id=”clear-btn” title=”Clear search”>Clear</button>
+</div>
+<div class=”filters”>
+  <select id=”f-type”><option value=””>All types</option></select>
+  <select id=”f-source”><option value=””>All sources</option></select>
+  <select id=”f-kind”><option value=””>Ontologies & Patterns</option><option value=”Ontology”>Ontologies only</option><option value=”Pattern”>Patterns only</option></select>
+</div>
+<div class=”view-toggle”>
+  <button id=”view-grouped” class=”active” title=”Group by source”>Grouped</button>
+  <button id=”view-flat” title=”Show all results”>Flat list</button>
+</div>
+<div id=”stats”></div>
+<div id=”results”></div>
+“””, file=f)
+        print(“<script>”, file=f)
+        print(r”””(function(){
+const $ = sel => document.querySelector(sel);
+const results = $('#results');
+const stats = $('#stats');
+const input = $('#q');
+const clearBtn = $('#clear-btn');
+const fType = $('#f-type');
+const fSource = $('#f-source');
+const fKind = $('#f-kind');
+const viewGrouped = $('#view-grouped');
+const viewFlat = $('#view-flat');
+let viewMode = 'grouped';
 
-        function groupBySource(rows){
-        const out = { Ontology: {}, Pattern: {} };
-        for(const r of rows){
-            const kind = (r.SOURCE_KIND || '').trim();
-            const name = (r.SOURCE_NAME || '').trim();
-            if(!out[kind]) continue;
-            if(!out[kind][name]) out[kind][name] = r.LINK; // stored as "patterns/.../"
-        }
-        return out;
-        }
+function siteBase(){
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  return parts.length ? ('/' + parts[0] + '/') : '/';
+}
 
-        function render(groups){
-        const base = siteBase();
-        const kinds = ["Ontology","Pattern"];
-        let html = "";
-        for(const k of kinds){
-            const g = groups[k];
-            const names = Object.keys(g||{}).sort((a,b)=>a.localeCompare(b));
-            html += `<h3>${k}s (${names.length})</h3>`;
-            if(!names.length){ html += "<p><em>None</em></p>"; continue; }
-            html += "<ul>";
-            for(const n of names){
-            const link = base + g[n].replace(/^\/+/, ''); // normalize
-            html += `<li><a href="${link}">${n}</a></li>`;
-            }
-            html += "</ul>";
-        }
-        results.innerHTML = html;
-        }
+/* Fuzzy match: splits query into tokens; all tokens must appear somewhere */
+function fuzzyMatch(r, tokens){
+  const hay = [r.LABEL, r.LOCAL, r.IRI, r.ALT_LABELS, r.SYNONYMS, r.COMMENT]
+    .map(x => (x||'').toLowerCase()).join(' ');
+  return tokens.every(t => hay.includes(t));
+}
 
-        let DATA = [];
-        fetch('../all-terms.json')
-        .then(r=>{ if(!r.ok) throw new Error('Failed to load all-terms.json: ' + r.status); return r.json(); })
-        .then(rows=>{
-            DATA = rows;
-            stats.textContent = `Loaded ${rows.length} terms.`;
-        })
-        .catch(err=>{
-            stats.textContent = 'Error: ' + err.message;
-            console.error(err);
-        });
+function highlight(text, tokens){
+  if(!text || !tokens.length) return text || '';
+  let s = text.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  for(const t of tokens){
+    const re = new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')','gi');
+    s = s.replace(re, '<mark>$1</mark>');
+  }
+  return s;
+}
 
-        function norm(s){ return (s||"").toLowerCase(); }
-        function matches(r, q){
-        if(!q) return false;
-        const fields = [r.LABEL, r.LOCAL, r.IRI, r.ALT_LABELS, r.SYNONYMS, r.COMMENT];
-        return fields.some(x => (x||"").toLowerCase().includes(q));
-        }
+function renderCard(r, tokens, base){
+  const label = highlight(r.LABEL || r.LOCAL || '', tokens);
+  const local = r.LOCAL ? highlight(r.LOCAL, tokens) : '';
+  const typ = r.TYPE || 'Entity';
+  const link = base + (r.LINK || '').replace(/^\/+/, '');
+  const source = `${r.SOURCE_KIND || ''}: ${r.SOURCE_NAME || ''}`;
+  const comment = r.COMMENT ? highlight(r.COMMENT.substring(0, 200), tokens) : '';
+  const alt = r.ALT_LABELS ? highlight(r.ALT_LABELS, tokens) : '';
+  return `<div class=”term-card”>
+    <div><span class=”term-label”>${label}</span><span class=”term-type”>${typ}</span></div>
+    <div class=”term-meta”><code>${local}</code> &mdash; <a href=”${link}”>${source}</a></div>
+    ${comment ? `<div class=”term-comment”>${comment}</div>` : ''}
+    ${alt ? `<div class=”term-meta”>Also: ${alt}</div>` : ''}
+  </div>`;
+}
 
-        let lastQ = "";
-        input.addEventListener('input', ()=>{
-        const q = norm(input.value);
-        if(q === lastQ) return;
-        lastQ = q;
-        if(!q){ results.innerHTML = ""; stats.textContent=""; return; }
-        const subset = DATA.filter(r => matches(r,q));
-        const groups = groupBySource(subset);
-        stats.textContent = `Query “${input.value}”: ${subset.length} matching terms; ${Object.keys(groups.Ontology||{}).length} ontologies, ${Object.keys(groups.Pattern||{}).length} patterns.`;
-        render(groups);
-        });
-        })();""", file=f)
-        print("</script>", file=f)
+function renderGrouped(subset, tokens){
+  const base = siteBase();
+  const groups = {};
+  for(const r of subset){
+    const key = `${r.SOURCE_KIND}: ${r.SOURCE_NAME}`;
+    if(!groups[key]) groups[key] = {link: r.LINK, items: []};
+    groups[key].items.push(r);
+  }
+  let html = '';
+  for(const key of Object.keys(groups).sort()){
+    const g = groups[key];
+    html += `<div class=”source-group”><h3>${key} (${g.items.length})</h3>`;
+    const shown = g.items.slice(0, 20);
+    for(const r of shown) html += renderCard(r, tokens, base);
+    if(g.items.length > 20) html += `<p style=”opacity:0.6”>… and ${g.items.length - 20} more</p>`;
+    html += '</div>';
+  }
+  return html;
+}
+
+function renderFlat(subset, tokens){
+  const base = siteBase();
+  const MAX = 100;
+  let html = '';
+  const shown = subset.slice(0, MAX);
+  for(const r of shown) html += renderCard(r, tokens, base);
+  if(subset.length > MAX) html += `<p style=”opacity:0.6”>Showing ${MAX} of ${subset.length} results.</p>`;
+  return html;
+}
+
+let DATA = [];
+let allTypes = new Set();
+let allSources = new Set();
+
+fetch('../all-terms.json')
+.then(r=>{ if(!r.ok) throw new Error('Failed to load all-terms.json: ' + r.status); return r.json(); })
+.then(rows=>{
+  DATA = rows;
+  for(const r of rows){
+    if(r.TYPE) allTypes.add(r.TYPE);
+    if(r.SOURCE_NAME) allSources.add(r.SOURCE_NAME);
+  }
+  for(const t of [...allTypes].sort()) fType.innerHTML += `<option value=”${t}”>${t}</option>`;
+  for(const s of [...allSources].sort()) fSource.innerHTML += `<option value=”${s}”>${s}</option>`;
+  stats.textContent = `${rows.length} terms loaded. Start typing to search.`;
+})
+.catch(err=>{
+  stats.textContent = 'Error: ' + err.message;
+});
+
+function doSearch(){
+  const raw = input.value.trim();
+  const tokens = raw.toLowerCase().split(/\s+/).filter(Boolean);
+  const typeF = fType.value;
+  const sourceF = fSource.value;
+  const kindF = fKind.value;
+
+  if(!tokens.length && !typeF && !sourceF && !kindF){
+    results.innerHTML = '';
+    stats.textContent = `${DATA.length} terms loaded. Start typing to search.`;
+    return;
+  }
+
+  let subset = DATA;
+  if(tokens.length) subset = subset.filter(r => fuzzyMatch(r, tokens));
+  if(typeF) subset = subset.filter(r => r.TYPE === typeF);
+  if(sourceF) subset = subset.filter(r => r.SOURCE_NAME === sourceF);
+  if(kindF) subset = subset.filter(r => r.SOURCE_KIND === kindF);
+
+  const ontoCount = new Set(subset.filter(r=>r.SOURCE_KIND==='Ontology').map(r=>r.SOURCE_NAME)).size;
+  const patCount = new Set(subset.filter(r=>r.SOURCE_KIND==='Pattern').map(r=>r.SOURCE_NAME)).size;
+  stats.textContent = `${subset.length} terms found across ${ontoCount} ontologies and ${patCount} patterns.`;
+
+  if(!subset.length){
+    results.innerHTML = '<div class=”no-results”>No matching terms found. Try a different query or adjust filters.</div>';
+    return;
+  }
+
+  results.innerHTML = viewMode === 'grouped' ? renderGrouped(subset, tokens) : renderFlat(subset, tokens);
+}
+
+let debounce;
+input.addEventListener('input', ()=>{ clearTimeout(debounce); debounce = setTimeout(doSearch, 150); });
+fType.addEventListener('change', doSearch);
+fSource.addEventListener('change', doSearch);
+fKind.addEventListener('change', doSearch);
+clearBtn.addEventListener('click', ()=>{ input.value=''; fType.value=''; fSource.value=''; fKind.value=''; doSearch(); input.focus(); });
+
+viewGrouped.addEventListener('click', ()=>{ viewMode='grouped'; viewGrouped.classList.add('active'); viewFlat.classList.remove('active'); doSearch(); });
+viewFlat.addEventListener('click', ()=>{ viewMode='flat'; viewFlat.classList.add('active'); viewGrouped.classList.remove('active'); doSearch(); });
+
+/* Keyboard shortcut: press / to focus search */
+document.addEventListener('keydown', (e)=>{
+  if(e.key === '/' && document.activeElement !== input){ e.preventDefault(); input.focus(); }
+  if(e.key === 'Escape' && document.activeElement === input){ input.blur(); }
+});
+})();”””, file=f)
+        print(“</script>”, file=f)
 
 
 # ================= Main =================

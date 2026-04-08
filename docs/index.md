@@ -10,7 +10,7 @@ Explore, contribute, and collaborate with a global community of ontology practit
 
 ---
 
-## What’s in scope?
+## What's in scope?
 
 This repository focuses on ODPs for **process modeling** in Materials Science & Engineering (MSE).  
 It aligns with the three core requirements identified in the paper:
@@ -19,7 +19,19 @@ It aligns with the three core requirements identified in the paper:
 2. **Data & Resources** — Capture inputs, outputs, and parameters per step (e.g., temperature, pressure, atmosphere, instruments, calibration).  
 3. **Project & Roles** — Represent project goals, stages, agents, and their roles (e.g., synthesis, microscopy, simulation).
 
-You’ll find extracted patterns and reusable modules derived from ontologies such as **P-PLAN**, **PMDcore**, **M4I**, **OPMW**, and **GPO**.
+You'll find extracted patterns and reusable modules derived from ontologies such as **P-PLAN**, **PMDcore**, **M4I**, **OPMW**, and **GPO**.
+
+!!! info "More patterns coming"
+    This is an evolving collection. We are actively developing patterns for material composition, measurement, simulation, and provenance. See the [Roadmap](roadmap.md) for details.
+
+---
+
+## Quick links
+
+- [Process ODPs](ProcessODPs.md) — Browse all extracted patterns by ontology and requirement.
+- [Ontologies](ontologies/index.md) — Explore source ontologies with metrics and quality reports.
+- [Find Terms](terms/find.md) — Search across all terms with filters and fuzzy matching.
+- [Roadmap](roadmap.md) — Planned patterns and long-term vision.
 
 ---
 
@@ -31,6 +43,8 @@ You’ll find extracted patterns and reusable modules derived from ontologies su
 4. Add a link to your new pattern in the appropriate index page or collection.
 
 > Tip: If your pattern targets one of the three requirements above, mention it explicitly so others can discover it quickly.
+
+See the [Contributing Guide](contributing.md) for full details.
 
 ---
 
@@ -46,3 +60,6 @@ If this repository or its methodology helps your research, please cite:
   year={2025},
   url={https://arxiv.org/abs/2509.23776}
 }
+```
+
+See the [Citation page](cite.md) for APA, RIS, and copy-to-clipboard options.
